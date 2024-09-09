@@ -1,0 +1,38 @@
+# editor directories and files
+.idea
+.vscode
+
+# dependencies
+node_modules
+
+# compiled output
+dist
+dist-dev
+build
+cache
+.cache
+.temp
+.tmp
+.turbo
+
+# log and lock files
+*.log
+yarn.lock
+package-lock.json
+
+# local env files
+.env.local
+.env.*.local
+
+# misc
+.DS_Store
+
+# other
+/coverage
+/src/client/shared.ts
+/src/node/shared.ts
+*.tgz
+.vite_opt_cache
+examples-temp
+pnpm-global
+*.timestamp-*.mjs
