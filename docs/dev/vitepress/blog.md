@@ -89,28 +89,28 @@ MiniSearch其實已經很好用了，把provider設成local就好。也可以選
 ### favicon
 > config.mts > head
 
-site.webmanifest要放在根目錄，不然會報錯。
+這邊的href要連網址，不然在非首頁的其他頁面會讀不到。
 
 ```ts
 [
     'link',
-    { rel: 'apple-touch-icon', sizes: '180x180', href: 'fav/apple-touch-icon.png' }
+    { rel: 'apple-touch-icon', sizes: '180x180', href: 'https://haruowang.vercel.app/fav/apple-touch-icon.png' }
 ],
 [
     'link',
-    { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'fav/favicon-32x32.png' }
+    { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'https://haruowang.vercel.app/fav/favicon-32x32.png' }
 ],
 [
     'link',
-    { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'fav/favicon-16x16.png' }
+    { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'https://haruowang.vercel.app/fav/favicon-16x16.png' }
 ],
 [
     'link',
-    { rel: 'manifest', href: 'site.webmanifest' }
+    { rel: 'manifest', href: 'https://haruowang.vercel.app/site.webmanifest' }
 ],
 [
     'link',
-    { rel: 'mask-icon', href: 'fav/safari-pinned-tab.svg', color: '#5bbad5' }
+    { rel: 'mask-icon', href: 'https://haruowang.vercel.app/fav/safari-pinned-tab.svg', color: '#5bbad5' }
 ],
 [
     'link',
