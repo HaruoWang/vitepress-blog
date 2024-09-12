@@ -10,3 +10,4 @@
 - 《台灣島。鏈》獎助計畫落選一次
 - 《若水NFT藝術獎》落選一次
 - 《Solana Write-a-thon》徵文落選
+- 用thirdweb快速開發dapp，但是踩坑

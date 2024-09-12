@@ -27,15 +27,15 @@ export default defineConfig({
     ],
     [
       'link',
-      { rel: 'apple-touch-icon', sizes: '180x180', href: 'https://haruowang.vercel.app/fav/apple-touch-icon.png' }
+      { rel: 'apple-touch-icon', sizes: '180x180', href: 'https://haruowang.vercel.app/apple-touch-icon.png' }
     ],
     [
       'link',
-      { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'https://haruowang.vercel.app/fav/favicon-32x32.png' }
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'https://haruowang.vercel.app/favicon-32x32.png' }
     ],
     [
       'link',
-      { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'https://haruowang.vercel.app/fav/favicon-16x16.png' }
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'https://haruowang.vercel.app/favicon-16x16.png' }
     ],
     [
       'link',
@@ -43,7 +43,7 @@ export default defineConfig({
     ],
     [
       'link',
-      { rel: 'mask-icon', href: 'https://haruowang.vercel.appfav/safari-pinned-tab.svg', color: '#5bbad5' }
+      { rel: 'mask-icon', href: 'https://haruowang.vercel.app/safari-pinned-tab.svg', color: '#5bbad5' }
     ],
     [
       'link',
@@ -130,7 +130,7 @@ export default defineConfig({
               { text: 'Font', link: '/pov/font/the-type' },
               { text: 'Color', link: '/pov/color/cie' },
               { text: 'Thinking', link: '/' },
-              { text: 'Participation', link: '/' },
+              { text: 'Participation', link: '/pov/participation/susu' },
               { text: 'Other', link: '/' },
             ]
           }
@@ -152,9 +152,9 @@ export default defineConfig({
         items: [
           {
             items: [
-              { text: 'Knowledge', link: '/' },
-              { text: 'Development', link: '/' },
-              { text: 'Gitcoin Grants', link: '/' },
+              { text: 'Knowledge', link: '/web3/knowledge/web3' },
+              { text: 'Development', link: '/web3/development/thirdweb' },
+              { text: 'Gitcoin Grants', link: '/web3/gitcoin-grants/gg18' },
             ]
           }
         ]
@@ -175,8 +175,8 @@ export default defineConfig({
         items: [
           {
             items: [
-              { text: 'Japan', link: '/' },
-              { text: 'English', link: '/' },
+              { text: 'Japan', link: '/global/japan/n4' },
+              { text: 'English', link: '/global/english/toeic' },
             ]
           }
         ]
@@ -186,7 +186,7 @@ export default defineConfig({
         items: [
           {
             items: [
-              { text: 'Finance', link: '/' },
+              { text: 'Finance', link: '/wealth/finance/securities-specialist' },
               { text: 'Dwelling', link: '/' },
             ]
           }
@@ -225,6 +225,7 @@ export default defineConfig({
           items: [
             { text: '互聯網大學心得分享', link: '/about/career/xchange' },
             { text: '凌華策展經歷分享', link: '/about/career/adlink' },
+            { text: 'Postman黑客松第三名', link: '/about/career/postman' },
             { text: '數位人才探索計畫', link: '/about/career/google-mkt' },
           ]
         },
@@ -235,31 +236,31 @@ export default defineConfig({
           text: 'Art',
           collapsed: false,
           items: [
-            { text: '幀議人物', link: '/pov/art/video-artist' },
-            { text: '松學校', link: '/pov/art/arthon' },
-            { text: 'IAST', link: '/pov/art/iast' },
+            { text: '幀議人物：影像藝術家36選', link: '/pov/art/video-artist' },
+            { text: '松學校導讀：重點筆記', link: '/pov/art/arthon' },
+            { text: '臺灣獨立藝術空間檔案計劃', link: '/pov/art/iast' },
           ]
         },
         {
           text: 'Publication',
           collapsed: false,
           items: [
-            { text: '草率季', link: '/pov/publication/tabf' },
-            { text: '蘭蘭', link: '/pov/publication/lalan' },
+            { text: '藝術書展草率季之關鍵字', link: '/pov/publication/tabf' },
+            { text: '林小乙的裝幀美學', link: '/pov/publication/lalan' },
           ]
         },
         {
           text: 'Font',
           collapsed: false,
           items: [
-            { text: 'The Type', link: '/pov/font/the-type' },
+            { text: 'The Type：字型知識補帖', link: '/pov/font/the-type' },
           ]
         },
         {
           text: 'Color',
           collapsed: false,
           items: [
-            { text: 'Cie', link: '/pov/color/cie' },
+            { text: '淺介CIE 1931與1976', link: '/pov/color/cie' },
           ]
         },
         {
@@ -273,7 +274,8 @@ export default defineConfig({
           text: 'Participation',
           collapsed: false,
           items: [
-            { text: '🚧建設中🚧', },
+            { text: '我在晃晃，聽麻子開講', link: '/pov/participation/susu' },
+            { text: '小聚小記：數位皮夾', link: '/pov/participation/did' },
           ]
         },
         {
@@ -312,21 +314,22 @@ export default defineConfig({
           text: 'Knowledge',
           collapsed: false,
           items: [
-            { text: '🚧建設中🚧', },
+            { text: 'Web3知識庫', link: '/web3/knowledge/web3' },
           ]
         },
         {
           text: 'Development',
           collapsed: false,
           items: [
-            { text: '🚧建設中🚧', },
+            { text: '用thirdweb快速開發dapp', link: '/web3/development/thirdweb' },
           ]
         },
         {
           text: 'Gitcoin Grants',
           collapsed: false,
           items: [
-            { text: '🚧建設中🚧', },
+            { text: '我和GG18失之交臂的經驗分享', link: '/web3/gitcoin-grants/gg18' },
+            { text: '我和GG19舊雨重逢的經驗分享', link: '/web3/gitcoin-grants/gg19' },
           ]
         },
       ],
@@ -354,19 +357,19 @@ export default defineConfig({
           text: 'Japan',
           collapsed: false,
           items: [
-            { text: 'N4', link: '/' },
-            { text: 'Travel', link: '/' },
-            { text: 'Work', link: '/' },
-            { text: 'ShuTube', link: '/' },
+            { text: '出口日語N4文法', link: '/global/japan/n4' },
+            { text: '東京藝文展館指南', link: '/global/japan/art-guide' },
+            { text: 'JobMenta商用日文', link: '/global/japan/work' },
+            { text: '内田秀のVlog', link: '/global/japan/shutube' },
           ]
         },
         {
           text: 'English',
           collapsed: false,
           items: [
-            { text: 'TOEIC', link: '/' },
-            { text: 'Axios', link: '/' },
-            { text: '東吳英文系小學堂', link: '/' },
+            { text: 'WORD UP藍色證書教材', link: '/global/english/toeic' },
+            { text: 'Axios Daily', link: '/global/english/axios' },
+            { text: '東吳英文小學堂', link: '/global/english/scu' },
           ]
         },
       ],
@@ -376,14 +379,15 @@ export default defineConfig({
           text: 'Finance',
           collapsed: false,
           items: [
-            { text: '現在學React還來得及嗎：UI', link: '/' },
+            { text: '證券投資與財務分析', link: '/wealth/finance/securities-specialist' },
+            { text: '台灣經濟四百年', link: '/wealth/finance/taiwan400' },
           ]
         },
         {
           text: 'Dwelling',
           collapsed: false,
           items: [
-            { text: '現在學React還來得及嗎：UI', link: '/' },
+            { text: '🚧建設中🚧', },
           ]
         },
       ],
