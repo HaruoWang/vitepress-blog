@@ -24,7 +24,7 @@ head:
       content: 觀看空總《臺灣獨立藝術空間檔案計畫》之摘要整理
   - - meta
     - name: twitter:image
-      content: /og-image.webp
+      content: https://haruowang.vercel.app/og-image.webp
 ---
 
 # 臺灣獨立藝術空間檔案計劃

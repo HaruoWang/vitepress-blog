@@ -24,7 +24,7 @@ head:
       content: 四的和諧是七和弦，Drop the drone, and then?
   - - meta
     - name: twitter:image
-      content: /og-image.webp
+      content: https://haruowang.vercel.app/og-image.webp
 ---
 
 # 【Threnoscope Work：Singular Point】

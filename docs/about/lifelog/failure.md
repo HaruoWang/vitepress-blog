@@ -24,7 +24,7 @@ head:
       content: 2024年開始，Haruo Wang的失敗整理
   - - meta
     - name: twitter:image
-      content: /og-image.webp
+      content: https://haruowang.vercel.app/og-image.webp
 ---
 
 # 那些我曾經歷的挫敗

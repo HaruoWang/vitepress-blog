@@ -24,7 +24,7 @@ head:
       content: 觀看數位藝術基金會《松學校導讀》之摘要整理
   - - meta
     - name: twitter:image
-      content: /og-image.webp
+      content: https://haruowang.vercel.app/og-image.webp
 ---
 
 # 【松學校導讀：重點筆記】

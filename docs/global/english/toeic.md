@@ -24,7 +24,7 @@ head:
       content: 透過WORD UP複習多益藍證的學習筆記
   - - meta
     - name: twitter:image
-      content: /og-image.webp
+      content: https://haruowang.vercel.app/og-image.webp
 ---
 
 # WORD UP藍色證書教材

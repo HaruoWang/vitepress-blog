@@ -24,7 +24,7 @@ head:
       content: 2024年3月「網路自由小聚」的重點筆記
   - - meta
     - name: twitter:image
-      content: /og-image.webp
+      content: https://haruowang.vercel.app/og-image.webp
 ---
 
 # 【小聚小記：數位皮夾】

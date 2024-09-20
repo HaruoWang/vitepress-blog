@@ -24,7 +24,7 @@ head:
       content: 輸入npx thirdweb create app --vite（KryptoCamp影片裡的舊版是npx thirdweb create app --evm），新建前端頁面
   - - meta
     - name: twitter:image
-      content: /development/th5.webp
+      content: https://haruowang.vercel.app/development/th5.webp
 ---
 
 # 用thirdweb快速開發dapp，但是踩坑

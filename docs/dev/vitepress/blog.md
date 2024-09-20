@@ -24,7 +24,7 @@ head:
       content: 使用VitePress開發部落格的經驗分享
   - - meta
     - name: twitter:image
-      content: /og-image.webp
+      content: https://haruowang.vercel.app/og-image.webp
 ---
 
 # 用VitePress玩轉SSG

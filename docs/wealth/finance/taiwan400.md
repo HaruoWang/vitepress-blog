@@ -24,7 +24,7 @@ head:
       content: 吳聰敏教授《台灣經濟四百年》之課程筆記
   - - meta
     - name: twitter:image
-      content: /og-image.webp
+      content: https://haruowang.vercel.app/og-image.webp
 ---
 
 # 台灣經濟四百年

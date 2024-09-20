@@ -24,7 +24,7 @@ head:
       content: 參與2024年Google數位人才探索計畫的知識點整理
   - - meta
     - name: twitter:image
-      content: /career/gm1.webp
+      content: https://haruowang.vercel.app/career/gm1.webp
 ---
 
 # 【數位人才探索計畫：數位行銷學程筆記】

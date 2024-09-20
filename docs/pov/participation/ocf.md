@@ -24,7 +24,7 @@ head:
       content: Open Source想做的不只利他，更要利己。Bob以石頭湯（拋磚引玉）的故事勉勵聽眾：你也可以是下一個把胡蘿蔔丟進鍋的人
   - - meta
     - name: twitter:image
-      content: /participation/oc1.webp
+      content: https://haruowang.vercel.app/participation/oc1.webp
 ---
 
 # 開源十年，短講速寫

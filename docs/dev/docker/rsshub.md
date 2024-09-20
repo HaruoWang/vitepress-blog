@@ -24,7 +24,7 @@ head:
       content: 使用Docker Compose將RSSHub架設到Cloudflare，並取得開源貢獻之經驗分享
   - - meta
     - name: twitter:image
-      content: /docker/do1.webp
+      content: https://haruowang.vercel.app/docker/do1.webp
 ---
 
 # 自架RSSHub到Cloudflare

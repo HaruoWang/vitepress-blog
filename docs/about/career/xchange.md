@@ -24,7 +24,7 @@ head:
       content: 透過XChange各場講座、工作坊及讀書會，學習職場UX知識和新創產業樣態。並於結業時與組員共同完成郵局APP介面再設計，體驗產品設計流程
   - - meta
     - name: twitter:image
-      content: /career/xc1.webp
+      content: https://haruowang.vercel.app/career/xc1.webp
 ---
 
 # 【互聯網大學心得分享：藝大生的UIUX之旅】

@@ -24,7 +24,7 @@ head:
       content: 觀看《東吳英文小學堂》的學習筆記
   - - meta
     - name: twitter:image
-      content: /og-image.webp
+      content: https://haruowang.vercel.app/og-image.webp
 ---
 
 # 東吳英文小學堂

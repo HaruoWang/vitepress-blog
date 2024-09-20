@@ -24,7 +24,7 @@ head:
       content: 爬梳36位影像藝術家的生平，透過文字介紹
   - - meta
     - name: twitter:image
-      content: /og-image.webp
+      content: https://haruowang.vercel.app/og-image.webp
 ---
 
 # 【幀議人物：影像藝術家36選】

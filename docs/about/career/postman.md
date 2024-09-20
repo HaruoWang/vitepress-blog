@@ -24,7 +24,7 @@ head:
       content: 獲得Postman Flowsオンラインハッカソン第三名的專案紀錄
   - - meta
     - name: twitter:image
-      content: /career/po1.webp
+      content: https://haruowang.vercel.app/career/po1.webp
 ---
 
 # 【Postman黑客松：隔日沖能換幾袋泡麵？】

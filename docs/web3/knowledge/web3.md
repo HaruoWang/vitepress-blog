@@ -24,7 +24,7 @@ head:
       content: Haruo Wang的Web3關鍵字整理
   - - meta
     - name: twitter:image
-      content: /og-image.webp
+      content: https://haruowang.vercel.app/og-image.webp
 ---
 
 # Web3知識庫

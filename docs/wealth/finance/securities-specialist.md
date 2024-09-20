@@ -24,7 +24,7 @@ head:
       content: 證券商業務員資格測驗教科書之筆記
   - - meta
     - name: twitter:image
-      content: /og-image.webp
+      content: https://haruowang.vercel.app/og-image.webp
 ---
 
 # 證券投資與財務分析

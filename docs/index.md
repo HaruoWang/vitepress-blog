@@ -24,7 +24,7 @@ head:
       content: Digital Garden of Haruo Wang
   - - meta
     - name: twitter:image
-      content: /og-image.webp
+      content: https://haruowang.vercel.app/og-image.webp
 
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home

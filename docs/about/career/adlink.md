@@ -24,7 +24,7 @@ head:
       content: 2023年2月開始，我在凌華教育基金會實習，職務是協助公司策劃面向內部員工的展覽
   - - meta
     - name: twitter:image
-      content: /career/ad2.webp
+      content: https://haruowang.vercel.app/career/ad2.webp
 ---
 
 # 【凌華策展經歷分享：藝術行政的一身絕活】

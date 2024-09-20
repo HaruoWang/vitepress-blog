@@ -24,7 +24,7 @@ head:
       content: Podcast《字談字暢》的重點筆記
   - - meta
     - name: twitter:image
-      content: /og-image.webp
+      content: https://haruowang.vercel.app/og-image.webp
 ---
 
 # 【The Type：字型知識補帖】

@@ -24,7 +24,7 @@ head:
       content: 作為Live Coding學習者，於王道銀行藝廊演出的過程紀錄
   - - meta
     - name: twitter:image
-      content: /performance/ob4.webp
+      content: https://haruowang.vercel.app/performance/ob4.webp
 ---
 
 # 【形塑空響：編織中的開放空間】

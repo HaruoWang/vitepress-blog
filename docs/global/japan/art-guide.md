@@ -24,7 +24,7 @@ head:
       content: 《美術手帖》2012年5月特集的景點蒐集
   - - meta
     - name: twitter:image
-      content: /og-image.webp
+      content: https://haruowang.vercel.app/og-image.webp
 ---
 
 # 東京藝文展館指南

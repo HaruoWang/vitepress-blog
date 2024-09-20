@@ -24,7 +24,7 @@ head:
       content: 對於Haruo Wang的十三道價值觀提問
   - - meta
     - name: twitter:image
-      content: /og-image.webp
+      content: https://haruowang.vercel.app/og-image.webp
 ---
 
 # 普魯斯特問卷

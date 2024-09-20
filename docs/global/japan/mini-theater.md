@@ -24,7 +24,7 @@ head:
       content: 由JFF Theater介紹的影廳整理
   - - meta
     - name: twitter:image
-      content: /og-image.webp
+      content: https://haruowang.vercel.app/og-image.webp
 ---
 
 # 日本迷你電影院

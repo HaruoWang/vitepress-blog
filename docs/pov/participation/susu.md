@@ -24,7 +24,7 @@ head:
       content: 麻子大哥在反杜邦運動凱道現場被《人間》記者蔡明德拍下，與諸多「怨」字標牌一同定格的背影，果然如房慧真所述有震懾力
   - - meta
     - name: twitter:image
-      content: /participation/su3.webp
+      content: https://haruowang.vercel.app/participation/su3.webp
 ---
 
 # 我在晃晃，聽麻子開講

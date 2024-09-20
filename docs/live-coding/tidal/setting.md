@@ -24,7 +24,7 @@ head:
       content: SuperCollider回報錯誤訊息，怎麼辦？這時候可以在SuperCollider輸入以下指令後執行：
   - - meta
     - name: twitter:image
-      content: /tidal/se1.webp
+      content: https://haruowang.vercel.app/tidal/se1.webp
 ---
 
 # Tidal x VScode 環境設定

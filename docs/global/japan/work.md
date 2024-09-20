@@ -24,7 +24,7 @@ head:
       content: Yourator商用日文單字小書中的生難字整理
   - - meta
     - name: twitter:image
-      content: /og-image.webp
+      content: https://haruowang.vercel.app/og-image.webp
 ---
 
 # JobMenta商用日文

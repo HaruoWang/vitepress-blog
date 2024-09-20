@@ -24,7 +24,7 @@ head:
       content: 觀看聲優內田秀生活影片的摘要整理
   - - meta
     - name: twitter:image
-      content: /og-image.webp
+      content: https://haruowang.vercel.app/og-image.webp
 ---
 
 # 内田秀のVlog
