@@ -1,3 +1,26 @@
+---
+description: Haruo Wang的Web3關鍵字整理
+head:
+  - - meta
+    - property: og:title
+      content: Web3知識庫
+  - - meta
+    - name: og:description
+      content: Haruo Wang的Web3關鍵字整理
+  - - meta
+    - name: og:image
+      content: /og-image.webp
+  - - meta
+    - property: twitter:title
+      content: Web3知識庫
+  - - meta
+    - name: twitter:description
+      content: Haruo Wang的Web3關鍵字整理
+  - - meta
+    - name: twitter:image
+      content: /og-image.webp
+---
+
 # Web3知識庫
 
 <p><Badge type="info" text="🌿 Budding" /></P>
@@ -90,7 +113,7 @@
 - 圖靈完備：憑藉某幾行指令就可以解決所有可計算問題
 - 奧地利學派：認為貨幣「自身」應有價值。以海耶克為首，和凱因斯是對頭
 
-## 零時小學校筆記
+## 零時小筆記
 
 - Hypercerts：超證／影響力證書，可以讓企業認購 
 - Hypercerts採用ERC-1155

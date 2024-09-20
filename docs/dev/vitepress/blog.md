@@ -1,3 +1,26 @@
+---
+description: 使用VitePress開發部落格的經驗分享
+head:
+  - - meta
+    - property: og:title
+      content: 用VitePress玩轉SSG
+  - - meta
+    - name: og:description
+      content: 使用VitePress開發部落格的經驗分享
+  - - meta
+    - name: og:image
+      content: /og-image.webp
+  - - meta
+    - property: twitter:title
+      content: 用VitePress玩轉SSG
+  - - meta
+    - name: twitter:description
+      content: 使用VitePress開發部落格的經驗分享
+  - - meta
+    - name: twitter:image
+      content: /og-image.webp
+---
+
 # 用VitePress玩轉SSG
 
 <p><Badge type="info" text="🌿 Budding" /></P>
@@ -165,6 +188,8 @@ MiniSearch其實已經很好用了，把provider設成local就好。也可以選
 ]
 ```
 
+OGgraph這邊後來我抽出部分讓各頁用frontmatter處理，才不會每頁都只讀到首頁的資訊。
+
 ### GA4
 > config.mts > head
 
@@ -223,3 +248,5 @@ YouTube提供的iframe沒有RWD，所以要另外寫一個div搭配CSS。
 //以GA4的Badge為例
 <img src="https://img.shields.io/badge/-GA4-E37400?style=for-the-badge&logo=google%20analytics&logoColor=fff" alt="Google Analytics" style="display: inline">
 ```
+
+## [專案連結](https://github.com/HaruoWang/vitepress-blog)

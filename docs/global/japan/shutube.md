@@ -1,3 +1,26 @@
+---
+description: 觀看聲優內田秀生活影片的摘要整理
+head:
+  - - meta
+    - property: og:title
+      content: 内田秀のVlog｜Feed Me, Haruo
+  - - meta
+    - name: og:description
+      content: 觀看聲優內田秀生活影片的摘要整理
+  - - meta
+    - name: og:image
+      content: /og-image.webp
+  - - meta
+    - property: twitter:title
+      content: 内田秀のVlog｜Feed Me, Haruo
+  - - meta
+    - name: twitter:description
+      content: 觀看聲優內田秀生活影片的摘要整理
+  - - meta
+    - name: twitter:image
+      content: /og-image.webp
+---
+
 # 内田秀のVlog
 
 <p><Badge type="info" text="🌱 Seedlings" /></P>

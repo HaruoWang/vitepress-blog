@@ -1,3 +1,26 @@
+---
+description: Yxy空間和XYZ空間不同之處在於，它「能夠」詮釋色彩三要素。將代表明度的函數Y拿掉之後，原本是三維空間的Yxy空間，便成了大家熟知的「馬蹄圖」
+head:
+  - - meta
+    - property: og:title
+      content: 淺介CIE 1931與1976
+  - - meta
+    - name: og:description
+      content: Yxy空間和XYZ空間不同之處在於，它「能夠」詮釋色彩三要素。將代表明度的函數Y拿掉之後，原本是三維空間的Yxy空間，便成了大家熟知的「馬蹄圖」
+  - - meta
+    - name: og:image
+      content: /color/ci3.webp
+  - - meta
+    - property: twitter:title
+      content: 淺介CIE 1931與1976
+  - - meta
+    - name: twitter:description
+      content: Yxy空間和XYZ空間不同之處在於，它「能夠」詮釋色彩三要素。將代表明度的函數Y拿掉之後，原本是三維空間的Yxy空間，便成了大家熟知的「馬蹄圖」
+  - - meta
+    - name: twitter:image
+      content: /color/ci3.webp
+---
+
 # 淺介CIE 1931與1976
 
 <p><Badge type="info" text="🌳 Evergreen" /></P>

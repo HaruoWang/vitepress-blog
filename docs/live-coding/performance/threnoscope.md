@@ -1,3 +1,26 @@
+---
+description: 四的和諧是七和弦，Drop the drone, and then?
+head:
+  - - meta
+    - property: og:title
+      content: Threnoscope Work：Singular Point
+  - - meta
+    - name: og:description
+      content: 四的和諧是七和弦，Drop the drone, and then?
+  - - meta
+    - name: og:image
+      content: /og-image.webp
+  - - meta
+    - property: twitter:title
+      content: Threnoscope Work：Singular Point
+  - - meta
+    - name: twitter:description
+      content: 四的和諧是七和弦，Drop the drone, and then?
+  - - meta
+    - name: twitter:image
+      content: /og-image.webp
+---
+
 # 【Threnoscope Work：Singular Point】
 
 <p><Badge type="info" text="🌳 Evergreen" /></P>

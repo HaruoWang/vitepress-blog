@@ -1,3 +1,26 @@
+---
+description: 透過XChange各場講座、工作坊及讀書會，學習職場UX知識和新創產業樣態。並於結業時與組員共同完成郵局APP介面再設計，體驗產品設計流程
+head:
+  - - meta
+    - property: og:title
+      content: 互聯網大學心得分享：藝大生的UIUX之旅
+  - - meta
+    - name: og:description
+      content: 透過XChange各場講座、工作坊及讀書會，學習職場UX知識和新創產業樣態。並於結業時與組員共同完成郵局APP介面再設計，體驗產品設計流程
+  - - meta
+    - name: og:image
+      content: /career/xc1.webp
+  - - meta
+    - property: twitter:title
+      content: 互聯網大學心得分享：藝大生的UIUX之旅
+  - - meta
+    - name: twitter:description
+      content: 透過XChange各場講座、工作坊及讀書會，學習職場UX知識和新創產業樣態。並於結業時與組員共同完成郵局APP介面再設計，體驗產品設計流程
+  - - meta
+    - name: twitter:image
+      content: /career/xc1.webp
+---
+
 # 【互聯網大學心得分享：藝大生的UIUX之旅】
 
 <p><Badge type="info" text="🌳 Evergreen" /></P>

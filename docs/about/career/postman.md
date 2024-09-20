@@ -1,3 +1,26 @@
+---
+description: 獲得Postman Flowsオンラインハッカソン第三名的專案紀錄
+head:
+  - - meta
+    - property: og:title
+      content: Postman黑客松：隔日沖能換幾袋泡麵？
+  - - meta
+    - name: og:description
+      content: 獲得Postman Flowsオンラインハッカソン第三名的專案紀錄
+  - - meta
+    - name: og:image
+      content: /career/po1.webp
+  - - meta
+    - property: twitter:title
+      content: Postman黑客松：隔日沖能換幾袋泡麵？
+  - - meta
+    - name: twitter:description
+      content: 獲得Postman Flowsオンラインハッカソン第三名的專案紀錄
+  - - meta
+    - name: twitter:image
+      content: /career/po1.webp
+---
+
 # 【Postman黑客松：隔日沖能換幾袋泡麵？】
 
 <p><Badge type="info" text="🌳 Evergreen" /></P>

@@ -1,3 +1,26 @@
+---
+description: 如果世上只有一段旋律能與林小乙的作品相互輝映，行文此刻的我會選擇日本雙人組合「Chouchou」的音樂
+head:
+  - - meta
+    - property: og:title
+      content: 從《蘭蘭》窺探林小乙的裝幀美學
+  - - meta
+    - name: og:description
+      content: 如果世上只有一段旋律能與林小乙的作品相互輝映，行文此刻的我會選擇日本雙人組合「Chouchou」的音樂
+  - - meta
+    - name: og:image
+      content: /publication/la1.webp
+  - - meta
+    - property: twitter:title
+      content: 從《蘭蘭》窺探林小乙的裝幀美學
+  - - meta
+    - name: twitter:description
+      content: 如果世上只有一段旋律能與林小乙的作品相互輝映，行文此刻的我會選擇日本雙人組合「Chouchou」的音樂
+  - - meta
+    - name: twitter:image
+      content: /publication/la1.webp
+---
+
 # 從《蘭蘭》窺探林小乙的裝幀美學
 
 <p><Badge type="info" text="🌳 Evergreen" /></P>

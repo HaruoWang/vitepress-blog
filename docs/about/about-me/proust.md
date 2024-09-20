@@ -1,3 +1,26 @@
+---
+description: 對於Haruo Wang的十三道價值觀提問
+head:
+  - - meta
+    - property: og:title
+      content: 普魯斯特問卷｜Feed Me, Haruo
+  - - meta
+    - name: og:description
+      content: 對於Haruo Wang的十三道價值觀提問
+  - - meta
+    - name: og:image
+      content: /og-image.webp
+  - - meta
+    - property: twitter:title
+      content: 普魯斯特問卷｜Feed Me, Haruo
+  - - meta
+    - name: twitter:description
+      content: 對於Haruo Wang的十三道價值觀提問
+  - - meta
+    - name: twitter:image
+      content: /og-image.webp
+---
+
 # 普魯斯特問卷
 
 <p><Badge type="info" text="🌳 Evergreen" /></P>

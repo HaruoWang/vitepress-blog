@@ -1,3 +1,26 @@
+---
+description: 以React官方教學為主，從Components由簡入深，跟隨Haruo在iThome鐵人賽中一同成長
+head:
+  - - meta
+    - property: og:title
+      content: 現在學React還來得及嗎：R3F
+  - - meta
+    - name: og:description
+      content: 以React官方教學為主，從Components由簡入深，跟隨Haruo在iThome鐵人賽中一同成長
+  - - meta
+    - name: og:image
+      content: /og-image.webp
+  - - meta
+    - property: twitter:title
+      content: 現在學React還來得及嗎：R3F
+  - - meta
+    - name: twitter:description
+      content: 以React官方教學為主，從Components由簡入深，跟隨Haruo在iThome鐵人賽中一同成長
+  - - meta
+    - name: twitter:image
+      content: /og-image.webp
+---
+
 # 【現在學React還來得及嗎：R3F】
 
 <p><Badge type="info" text="🌳 Evergreen" /></P>

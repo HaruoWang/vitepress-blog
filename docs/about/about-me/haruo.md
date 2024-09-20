@@ -1,3 +1,26 @@
+---
+description: 主修印刷出版及色彩，學士論文爬梳草率季。關注影像理論和軟體研究，自學前端、親近Web3。認同Live Coding與開源文化交織的關係
+head:
+  - - meta
+    - property: og:title
+      content: 關於我｜Feed Me, Haruo
+  - - meta
+    - name: og:description
+      content: 主修印刷出版及色彩，學士論文爬梳草率季。關注影像理論和軟體研究，自學前端、親近Web3。認同Live Coding與開源文化交織的關係
+  - - meta
+    - name: og:image
+      content: /og-image.webp
+  - - meta
+    - property: twitter:title
+      content: 關於我｜Feed Me, Haruo
+  - - meta
+    - name: twitter:description
+      content: 主修印刷出版及色彩，學士論文爬梳草率季。關注影像理論和軟體研究，自學前端、親近Web3。認同Live Coding與開源文化交織的關係
+  - - meta
+    - name: twitter:image
+      content: /og-image.webp
+---
+
 # 關於我
 
 <p><Badge type="info" text="🌿 Budding" /></P>

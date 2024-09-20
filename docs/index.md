@@ -1,4 +1,25 @@
 ---
+description: Digital Garden of Haruo Wang
+head:
+  - - meta
+    - property: og:title
+      content: Feed Me, Haruo
+  - - meta
+    - name: og:description
+      content: Digital Garden of Haruo Wang
+  - - meta
+    - name: og:image
+      content: /og-image.webp
+  - - meta
+    - property: twitter:title
+      content: Feed Me, Haruo
+  - - meta
+    - name: twitter:description
+      content: Digital Garden of Haruo Wang
+  - - meta
+    - name: twitter:image
+      content: /og-image.webp
+
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 

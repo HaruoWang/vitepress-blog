@@ -1,3 +1,26 @@
+---
+description: Podcast《字談字暢》的重點筆記
+head:
+  - - meta
+    - property: og:title
+      content: The Type：字型知識補帖
+  - - meta
+    - name: og:description
+      content: Podcast《字談字暢》的重點筆記
+  - - meta
+    - name: og:image
+      content: /og-image.webp
+  - - meta
+    - property: twitter:title
+      content: The Type：字型知識補帖
+  - - meta
+    - name: twitter:description
+      content: Podcast《字談字暢》的重點筆記
+  - - meta
+    - name: twitter:image
+      content: /og-image.webp
+---
+
 # 【The Type：字型知識補帖】
 
 <p><Badge type="info" text="🌱 Seedlings" /></P>

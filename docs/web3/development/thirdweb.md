@@ -1,3 +1,26 @@
+---
+description: 輸入npx thirdweb create app --vite（KryptoCamp影片裡的舊版是npx thirdweb create app --evm），新建前端頁面
+head:
+  - - meta
+    - property: og:title
+      content: 用thirdweb快速開發dapp，但是踩坑
+  - - meta
+    - name: og:description
+      content: 輸入npx thirdweb create app --vite（KryptoCamp影片裡的舊版是npx thirdweb create app --evm），新建前端頁面
+  - - meta
+    - name: og:image
+      content: /development/th5.webp
+  - - meta
+    - property: twitter:title
+      content: 用thirdweb快速開發dapp，但是踩坑
+  - - meta
+    - name: twitter:description
+      content: 輸入npx thirdweb create app --vite（KryptoCamp影片裡的舊版是npx thirdweb create app --evm），新建前端頁面
+  - - meta
+    - name: twitter:image
+      content: /development/th5.webp
+---
+
 # 用thirdweb快速開發dapp，但是踩坑
 
 <p><Badge type="info" text="🌿 Budding" /></P>

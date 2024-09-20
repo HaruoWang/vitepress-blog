@@ -1,3 +1,26 @@
+---
+description: 2024年3月「網路自由小聚」的重點筆記
+head:
+  - - meta
+    - property: og:title
+      content: 小聚小記：數位皮夾
+  - - meta
+    - name: og:description
+      content: 2024年3月「網路自由小聚」的重點筆記
+  - - meta
+    - name: og:image
+      content: /og-image.webp
+  - - meta
+    - property: twitter:title
+      content: 小聚小記：數位皮夾
+  - - meta
+    - name: twitter:description
+      content: 2024年3月「網路自由小聚」的重點筆記
+  - - meta
+    - name: twitter:image
+      content: /og-image.webp
+---
+
 # 【小聚小記：數位皮夾】
 
 <p><Badge type="info" text="🌳 Evergreen" /></P>

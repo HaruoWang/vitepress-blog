@@ -1,3 +1,26 @@
+---
+description: 爬梳36位影像藝術家的生平，透過文字介紹
+head:
+  - - meta
+    - property: og:title
+      content: 幀議人物：影像藝術家36選
+  - - meta
+    - name: og:description
+      content: 爬梳36位影像藝術家的生平，透過文字介紹
+  - - meta
+    - name: og:image
+      content: /og-image.webp
+  - - meta
+    - property: twitter:title
+      content: 幀議人物：影像藝術家36選
+  - - meta
+    - name: twitter:description
+      content: 爬梳36位影像藝術家的生平，透過文字介紹
+  - - meta
+    - name: twitter:image
+      content: /og-image.webp
+---
+
 # 【幀議人物：影像藝術家36選】
 
 <p><Badge type="info" text="🌳 Evergreen" /></P>

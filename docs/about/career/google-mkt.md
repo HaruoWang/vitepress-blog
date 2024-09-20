@@ -1,3 +1,26 @@
+---
+description: 參與2024年Google數位人才探索計畫的知識點整理
+head:
+  - - meta
+    - property: og:title
+      content: 數位人才探索計畫：數位行銷學程筆記
+  - - meta
+    - name: og:description
+      content: 參與2024年Google數位人才探索計畫的知識點整理
+  - - meta
+    - name: og:image
+      content: /career/gm1.webp
+  - - meta
+    - property: twitter:title
+      content: 數位人才探索計畫：數位行銷學程筆記
+  - - meta
+    - name: twitter:description
+      content: 參與2024年Google數位人才探索計畫的知識點整理
+  - - meta
+    - name: twitter:image
+      content: /career/gm1.webp
+---
+
 # 【數位人才探索計畫：數位行銷學程筆記】
 
 <p><Badge type="info" text="🌳 Evergreen" /></P>

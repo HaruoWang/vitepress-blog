@@ -1,3 +1,26 @@
+---
+description: SuperCollider回報錯誤訊息，怎麼辦？這時候可以在SuperCollider輸入以下指令後執行：
+head:
+  - - meta
+    - property: og:title
+      content: Tidal x VScode 環境設定
+  - - meta
+    - name: og:description
+      content: SuperCollider回報錯誤訊息，怎麼辦？這時候可以在SuperCollider輸入以下指令後執行：
+  - - meta
+    - name: og:image
+      content: /tidal/se1.webp
+  - - meta
+    - property: twitter:title
+      content: Tidal x VScode 環境設定
+  - - meta
+    - name: twitter:description
+      content: SuperCollider回報錯誤訊息，怎麼辦？這時候可以在SuperCollider輸入以下指令後執行：
+  - - meta
+    - name: twitter:image
+      content: /tidal/se1.webp
+---
+
 # Tidal x VScode 環境設定
 
 <p><Badge type="info" text="🌳 Evergreen" /></P>

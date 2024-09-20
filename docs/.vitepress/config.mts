@@ -9,6 +9,7 @@ export default defineConfig({
   lang: 'zh-TW',
   title: title,
   description: des,
+  cleanUrls: true, 
   sitemap: {
     hostname: url
   },
@@ -67,35 +68,11 @@ export default defineConfig({
     ],
     [
       'meta',
-      { property: 'og:title', content: title }
-    ],
-    [
-      'meta',
-      { property: 'og:description', content: des }
-    ],
-    [
-      'meta',
-      { property: 'og:image', content: '/og-image.webp' }
-    ],
-    [
-      'meta',
       { property: 'twitter:card', content: 'summary_large_image' }
     ],
     [
       'meta',
       { property: 'twitter:domain', content: url }
-    ],
-    [
-      'meta',
-      { property: 'twitter:title', content: title }
-    ],
-    [
-      'meta',
-      { property: 'twitter:description', content: des }
-    ],
-    [
-      'meta',
-      { property: 'twitter:image', content: '/og-image.webp' }
     ],
   ],
   markdown: {
@@ -143,6 +120,7 @@ export default defineConfig({
             items: [
               { text: 'React', link: '/dev/react/ui' },
               { text: 'VitePress', link: '/dev/vitepress/blog' },
+              { text: 'Docker', link: '/dev/docker/rsshub' },
             ]
           }
         ]
@@ -153,7 +131,7 @@ export default defineConfig({
           {
             items: [
               { text: 'Knowledge', link: '/web3/knowledge/web3' },
-              { text: 'Development', link: '/web3/development/thirdweb' },
+              { text: 'Development', link: '/web3/development/chip' },
               { text: 'Gitcoin Grants', link: '/web3/gitcoin-grants/gg18' },
             ]
           }
@@ -275,7 +253,10 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: '我在晃晃，聽麻子開講', link: '/pov/participation/susu' },
+            { text: '開源十年，短講速寫', link: '/pov/participation/ocf' },
+            { text: 'V神紀錄片，首映小便箋', link: '/pov/participation/vitalik' },
             { text: '小聚小記：數位皮夾', link: '/pov/participation/did' },
+            { text: '小聚小記：AI基本法', link: '/pov/participation/ailaw' },
           ]
         },
         {
@@ -307,6 +288,13 @@ export default defineConfig({
             { text: '用VitePress玩轉SSG', link: '/dev/vitepress/blog' },
           ]
         },
+        {
+          text: 'Docker',
+          collapsed: false,
+          items: [
+            { text: '自架RSSHub到Cloudflare', link: '/dev/docker/rsshub' },
+          ]
+        },
       ],
 
       '/web3/': [
@@ -321,6 +309,7 @@ export default defineConfig({
           text: 'Development',
           collapsed: false,
           items: [
+            { text: '第一次開發NFT就上手', link: '/web3/development/chip' },
             { text: '用thirdweb快速開發dapp', link: '/web3/development/thirdweb' },
           ]
         },
@@ -361,6 +350,7 @@ export default defineConfig({
             { text: '東京藝文展館指南', link: '/global/japan/art-guide' },
             { text: 'JobMenta商用日文', link: '/global/japan/work' },
             { text: '内田秀のVlog', link: '/global/japan/shutube' },
+            { text: '日本迷你電影院', link: '/global/japan/mini-theater' },
           ]
         },
         {
