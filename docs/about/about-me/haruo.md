@@ -1,6 +1,12 @@
 ---
 description: 主修印刷出版及色彩，學士論文爬梳草率季。關注影像理論和軟體研究，自學前端、親近Web3。認同Live Coding與開源文化交織的關係
 head:
+  - - link
+    - rel: canonical
+      href: https://haruowang.vercel.app/about/about-me/haruo
+  - - meta
+    - property: og:url
+      content: https://haruowang.vercel.app/about/about-me/haruo
   - - meta
     - property: og:title
       content: 關於我｜Feed Me, Haruo

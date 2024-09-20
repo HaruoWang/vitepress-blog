@@ -1,12 +1,18 @@
 ---
-description: 2024年，Haruo Wang的失敗整理
+description: 2024年開始，Haruo Wang的失敗整理
 head:
+  - - link
+    - rel: canonical
+      href: https://haruowang.vercel.app/about/lifelog/failure
+  - - meta
+    - property: og:url
+      content: https://haruowang.vercel.app/about/lifelog/failure
   - - meta
     - property: og:title
       content: 那些我曾經歷的挫敗｜Feed Me, Haruo
   - - meta
     - name: og:description
-      content: 2024年，Haruo Wang的失敗整理
+      content: 2024年開始，Haruo Wang的失敗整理
   - - meta
     - name: og:image
       content: /og-image.webp
@@ -15,7 +21,7 @@ head:
       content: 那些我曾經歷的挫敗｜Feed Me, Haruo
   - - meta
     - name: twitter:description
-      content: 2024年，Haruo Wang的失敗整理
+      content: 2024年開始，Haruo Wang的失敗整理
   - - meta
     - name: twitter:image
       content: /og-image.webp

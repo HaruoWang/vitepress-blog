@@ -1,6 +1,12 @@
 ---
 description: 對於Haruo Wang的十三道價值觀提問
 head:
+  - - link
+    - rel: canonical
+      href: https://haruowang.vercel.app/about/about-me/proust
+  - - meta
+    - property: og:url
+      content: https://haruowang.vercel.app/about/about-me/proust
   - - meta
     - property: og:title
       content: 普魯斯特問卷｜Feed Me, Haruo

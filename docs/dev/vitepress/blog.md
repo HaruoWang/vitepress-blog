@@ -1,6 +1,12 @@
 ---
 description: 使用VitePress開發部落格的經驗分享
 head:
+  - - link
+    - rel: canonical
+      href: https://haruowang.vercel.app/dev/vitepress/blog
+  - - meta
+    - property: og:url
+      content: https://haruowang.vercel.app/dev/vitepress/blog
   - - meta
     - property: og:title
       content: 用VitePress玩轉SSG

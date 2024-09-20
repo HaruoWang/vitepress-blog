@@ -1,6 +1,12 @@
 ---
 description: Vitalik形容以太坊上線時就像有了生命。站在Dmitriy的立場來想，看著兒子成長至今的經歷，大概會是比以太坊更不可思議的奇蹟吧
 head:
+  - - link
+    - rel: canonical
+      href: https://haruowang.vercel.app/pov/participation/vitalik
+  - - meta
+    - property: og:url
+      content: https://haruowang.vercel.app/pov/participation/vitalik
   - - meta
     - property: og:title
       content: V神紀錄片，首映小便箋

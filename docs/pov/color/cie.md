@@ -1,6 +1,12 @@
 ---
 description: Yxy空間和XYZ空間不同之處在於，它「能夠」詮釋色彩三要素。將代表明度的函數Y拿掉之後，原本是三維空間的Yxy空間，便成了大家熟知的「馬蹄圖」
 head:
+  - - link
+    - rel: canonical
+      href: https://haruowang.vercel.app/pov/color/cie
+  - - meta
+    - property: og:url
+      content: https://haruowang.vercel.app/pov/color/cie
   - - meta
     - property: og:title
       content: 淺介CIE 1931與1976

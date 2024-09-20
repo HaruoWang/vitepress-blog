@@ -1,6 +1,12 @@
 ---
 description: 每日閱讀Axios英文新聞的學習筆記
 head:
+  - - link
+    - rel: canonical
+      href: https://haruowang.vercel.app/global/english/axios
+  - - meta
+    - property: og:url
+      content: https://haruowang.vercel.app/global/english/axios
   - - meta
     - property: og:title
       content: Axios Daily｜Feed Me, Haruo

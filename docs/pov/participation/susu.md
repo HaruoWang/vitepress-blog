@@ -1,6 +1,12 @@
 ---
 description: 麻子大哥在反杜邦運動凱道現場被《人間》記者蔡明德拍下，與諸多「怨」字標牌一同定格的背影，果然如房慧真所述有震懾力
 head:
+  - - link
+    - rel: canonical
+      href: https://haruowang.vercel.app/pov/participation/susu
+  - - meta
+    - property: og:url
+      content: https://haruowang.vercel.app/pov/participation/susu
   - - meta
     - property: og:title
       content: 我在晃晃，聽麻子開講

@@ -1,6 +1,12 @@
 ---
 description: 本想說管線（L-system）和基板（Shader）這兩個frame也許可以相疊。測試失敗的下一步是，把L-system的動畫直接做成gif
 head:
+  - - link
+    - rel: canonical
+      href: https://haruowang.vercel.app/web3/development/chip
+  - - meta
+    - property: og:url
+      content: https://haruowang.vercel.app/web3/development/chip
   - - meta
     - property: og:title
       content: 第一次開發NFT就上手

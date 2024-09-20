@@ -1,6 +1,12 @@
 ---
 description: 爬梳36位影像藝術家的生平，透過文字介紹
 head:
+  - - link
+    - rel: canonical
+      href: https://haruowang.vercel.app/pov/art/video-artist
+  - - meta
+    - property: og:url
+      content: https://haruowang.vercel.app/pov/art/video-artist
   - - meta
     - property: og:title
       content: 幀議人物：影像藝術家36選

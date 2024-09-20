@@ -1,6 +1,12 @@
 ---
 description: 作為Live Coding學習者，於王道銀行藝廊演出的過程紀錄
 head:
+  - - link
+    - rel: canonical
+      href: https://haruowang.vercel.app/live-coding/performance/obank
+  - - meta
+    - property: og:url
+      content: https://haruowang.vercel.app/live-coding/performance/obank
   - - meta
     - property: og:title
       content: 形塑空響：編織中的開放空間

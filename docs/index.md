@@ -1,6 +1,12 @@
 ---
 description: Digital Garden of Haruo Wang
 head:
+  - - link
+    - rel: canonical
+      href: https://haruowang.vercel.app
+  - - meta
+    - property: og:url
+      content: https://haruowang.vercel.app  
   - - meta
     - property: og:title
       content: Feed Me, Haruo

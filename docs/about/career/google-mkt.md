@@ -1,6 +1,12 @@
 ---
 description: 參與2024年Google數位人才探索計畫的知識點整理
 head:
+  - - link
+    - rel: canonical
+      href: https://haruowang.vercel.app/about/career/google-mkt
+  - - meta
+    - property: og:url
+      content: https://haruowang.vercel.app/about/career/google-mkt
   - - meta
     - property: og:title
       content: 數位人才探索計畫：數位行銷學程筆記

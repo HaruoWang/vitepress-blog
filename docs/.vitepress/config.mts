@@ -1,14 +1,13 @@
 import { defineConfig } from 'vitepress'
 
 let title = 'Feed Me, Haruo'
-let des = 'Digital Garden of Haruo Wang'
 let url = 'https://haruowang.vercel.app'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-TW',
   title: title,
-  description: des, 
+  cleanUrls: true, 
   sitemap: {
     hostname: url
   },
@@ -54,24 +53,12 @@ export default defineConfig({
       { name: 'theme-color', content: '#ffffff' }
     ],
     [
-      'link',
-      { rel: 'canonical', href: url }
-    ],
-    [
-      'meta',
-      { property: 'og:url', content: url }
-    ],
-    [
       'meta',
       { property: 'og:type', content: 'website' }
     ],
     [
       'meta',
       { property: 'twitter:card', content: 'summary_large_image' }
-    ],
-    [
-      'meta',
-      { property: 'twitter:domain', content: url }
     ],
   ],
   markdown: {

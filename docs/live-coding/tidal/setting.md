@@ -1,6 +1,12 @@
 ---
 description: SuperCollider回報錯誤訊息，怎麼辦？這時候可以在SuperCollider輸入以下指令後執行：
 head:
+  - - link
+    - rel: canonical
+      href: https://haruowang.vercel.app/live-coding/tidal/setting
+  - - meta
+    - property: og:url
+      content: https://haruowang.vercel.app/live-coding/tidal/setting
   - - meta
     - property: og:title
       content: Tidal x VScode 環境設定

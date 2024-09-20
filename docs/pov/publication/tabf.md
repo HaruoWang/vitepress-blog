@@ -1,6 +1,12 @@
 ---
 description: 當草率季選擇以「臺北藝術書展」為名時，便宣告了它企圖與紐約、倫敦、東京或上海藝術書展等大型Art Book Fair齊名的決心
 head:
+  - - link
+    - rel: canonical
+      href: https://haruowang.vercel.app/pov/publication/tabf
+  - - meta
+    - property: og:url
+      content: https://haruowang.vercel.app/pov/publication/tabf
   - - meta
     - property: og:title
       content: 藝術書展「草率季」之關鍵字
