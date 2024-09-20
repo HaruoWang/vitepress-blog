@@ -3,10 +3,10 @@ description: 當草率季選擇以「臺北藝術書展」為名時，便宣告�
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/pov/publication/tabf
+      href: https://haruowang.vercel.app/pov/publication/tabf.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/pov/publication/tabf
+      content: https://haruowang.vercel.app/pov/publication/tabf.html
   - - meta
     - property: og:title
       content: 藝術書展「草率季」之關鍵字

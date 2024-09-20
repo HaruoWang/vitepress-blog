@@ -3,10 +3,10 @@ description: 主修印刷出版及色彩，學士論文爬梳草率季。關注�
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/about/about-me/haruo
+      href: https://haruowang.vercel.app/about/about-me/haruo.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/about/about-me/haruo
+      content: https://haruowang.vercel.app/about/about-me/haruo.html
   - - meta
     - property: og:title
       content: 關於我｜Feed Me, Haruo

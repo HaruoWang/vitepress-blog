@@ -3,10 +3,10 @@ description: 2024年開始，Haruo Wang的失敗整理
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/about/lifelog/failure
+      href: https://haruowang.vercel.app/about/lifelog/failure.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/about/lifelog/failure
+      content: https://haruowang.vercel.app/about/lifelog/failure.html
   - - meta
     - property: og:title
       content: 那些我曾經歷的挫敗｜Feed Me, Haruo

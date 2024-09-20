@@ -3,10 +3,10 @@ description: 觀看數位藝術基金會《松學校導讀》之摘要整理
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/pov/art/arthon
+      href: https://haruowang.vercel.app/pov/art/arthon.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/pov/art/arthon
+      content: https://haruowang.vercel.app/pov/art/arthon.html
   - - meta
     - property: og:title
       content: 松學校導讀：重點筆記

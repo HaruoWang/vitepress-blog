@@ -3,10 +3,10 @@ description: 吳聰敏教授《台灣經濟四百年》之課程筆記
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/wealth/finance/taiwan400
+      href: https://haruowang.vercel.app/wealth/finance/taiwan400.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/wealth/finance/taiwan400
+      content: https://haruowang.vercel.app/wealth/finance/taiwan400.html
   - - meta
     - property: og:title
       content: 台灣經濟四百年

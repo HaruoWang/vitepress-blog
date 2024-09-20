@@ -3,10 +3,10 @@ description: 2024年9月「網路自由小聚」的重點筆記
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/pov/participation/ailaw
+      href: https://haruowang.vercel.app/pov/participation/ailaw.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/pov/participation/ailaw
+      content: https://haruowang.vercel.app/pov/participation/ailaw.html
   - - meta
     - property: og:title
       content: 小聚小記：AI基本法

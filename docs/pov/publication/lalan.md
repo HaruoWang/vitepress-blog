@@ -3,10 +3,10 @@ description: 如果世上只有一段旋律能與林小乙的作品相互輝映�
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/pov/publication/lalan
+      href: https://haruowang.vercel.app/pov/publication/lalan.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/pov/publication/lalan
+      content: https://haruowang.vercel.app/pov/publication/lalan.html
   - - meta
     - property: og:title
       content: 從《蘭蘭》窺探林小乙的裝幀美學

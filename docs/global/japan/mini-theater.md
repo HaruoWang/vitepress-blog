@@ -3,10 +3,10 @@ description: 由JFF Theater介紹的影廳整理
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/global/japan/mini-theater
+      href: https://haruowang.vercel.app/global/japan/mini-theater.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/global/japan/mini-theater
+      content: https://haruowang.vercel.app/global/japan/mini-theater.html
   - - meta
     - property: og:title
       content: 日本迷你電影院｜Feed Me, Haruo

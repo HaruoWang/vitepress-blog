@@ -3,10 +3,10 @@ description: 觀看聲優內田秀生活影片的摘要整理
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/global/japan/shutube
+      href: https://haruowang.vercel.app/global/japan/shutube.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/global/japan/shutube
+      content: https://haruowang.vercel.app/global/japan/shutube.html
   - - meta
     - property: og:title
       content: 内田秀のVlog｜Feed Me, Haruo

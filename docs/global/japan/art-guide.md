@@ -3,10 +3,10 @@ description: 《美術手帖》2012年5月特集的景點蒐集
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/global/japan/art-guide
+      href: https://haruowang.vercel.app/global/japan/art-guide.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/global/japan/art-guide
+      content: https://haruowang.vercel.app/global/japan/art-guide.html
   - - meta
     - property: og:title
       content: 東京藝文展館指南｜Feed Me, Haruo

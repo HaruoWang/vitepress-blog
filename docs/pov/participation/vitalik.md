@@ -3,10 +3,10 @@ description: Vitalik形容以太坊上線時就像有了生命。站在Dmitriy�
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/pov/participation/vitalik
+      href: https://haruowang.vercel.app/pov/participation/vitalik.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/pov/participation/vitalik
+      content: https://haruowang.vercel.app/pov/participation/vitalik.html
   - - meta
     - property: og:title
       content: V神紀錄片，首映小便箋

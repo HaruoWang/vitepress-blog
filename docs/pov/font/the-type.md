@@ -3,10 +3,10 @@ description: Podcast《字談字暢》的重點筆記
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/pov/font/the-type
+      href: https://haruowang.vercel.app/pov/font/the-type.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/pov/font/the-type
+      content: https://haruowang.vercel.app/pov/font/the-type.html
   - - meta
     - property: og:title
       content: The Type：字型知識補帖

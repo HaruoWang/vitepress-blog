@@ -3,10 +3,10 @@ description: 觀看《東吳英文小學堂》的學習筆記
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/global/english/scu
+      href: https://haruowang.vercel.app/global/english/scu.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/global/english/scu
+      content: https://haruowang.vercel.app/global/english/scu.html
   - - meta
     - property: og:title
       content: 東吳英文小學堂｜Feed Me, Haruo

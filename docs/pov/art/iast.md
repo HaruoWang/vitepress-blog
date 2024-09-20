@@ -3,10 +3,10 @@ description: 觀看空總《臺灣獨立藝術空間檔案計畫》之摘要整�
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/pov/art/iast
+      href: https://haruowang.vercel.app/pov/art/iast.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/pov/art/iast
+      content: https://haruowang.vercel.app/pov/art/iast.html
   - - meta
     - property: og:title
       content: 臺灣獨立藝術空間檔案計劃

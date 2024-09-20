@@ -3,10 +3,10 @@ description: 輸入npx thirdweb create app --vite（KryptoCamp影片裡的舊版
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/web3/development/thirdweb
+      href: https://haruowang.vercel.app/web3/development/thirdweb.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/web3/development/thirdweb
+      content: https://haruowang.vercel.app/web3/development/thirdweb.html
   - - meta
     - property: og:title
       content: 用thirdweb快速開發dapp，但是踩坑

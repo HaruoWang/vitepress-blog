@@ -3,10 +3,10 @@ description: 2023年2月開始，我在凌華教育基金會實習，職務是�
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/about/career/adlink
+      href: https://haruowang.vercel.app/about/career/adlink.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/about/career/adlink
+      content: https://haruowang.vercel.app/about/career/adlink.html
   - - meta
     - property: og:title
       content: 凌華策展經歷分享：藝術行政的一身絕活

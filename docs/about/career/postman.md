@@ -3,10 +3,10 @@ description: 獲得Postman Flowsオンラインハッカソン第三名的專案
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/about/career/postman
+      href: https://haruowang.vercel.app/about/career/postman.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/about/career/postman
+      content: https://haruowang.vercel.app/about/career/postman.html
   - - meta
     - property: og:title
       content: Postman黑客松：隔日沖能換幾袋泡麵？

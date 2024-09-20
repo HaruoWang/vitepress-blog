@@ -3,10 +3,10 @@ description: 本想說管線（L-system）和基板（Shader）這兩個frame也
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/web3/development/chip
+      href: https://haruowang.vercel.app/web3/development/chip.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/web3/development/chip
+      content: https://haruowang.vercel.app/web3/development/chip.html
   - - meta
     - property: og:title
       content: 第一次開發NFT就上手

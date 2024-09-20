@@ -3,10 +3,10 @@ description: 四的和諧是七和弦，Drop the drone, and then?
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/live-coding/performance/threnoscope
+      href: https://haruowang.vercel.app/live-coding/performance/threnoscope.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/live-coding/performance/threnoscope
+      content: https://haruowang.vercel.app/live-coding/performance/threnoscope.html
   - - meta
     - property: og:title
       content: Threnoscope Work：Singular Point

@@ -3,10 +3,10 @@ description: 證券商業務員資格測驗教科書之筆記
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/wealth/finance/securities-specialist
+      href: https://haruowang.vercel.app/wealth/finance/securities-specialist.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/wealth/finance/securities-specialist
+      content: https://haruowang.vercel.app/wealth/finance/securities-specialist.html
   - - meta
     - property: og:title
       content: 證券投資與財務分析

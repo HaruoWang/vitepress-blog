@@ -3,10 +3,10 @@ description: Yxy空間和XYZ空間不同之處在於，它「能夠」詮釋色�
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/pov/color/cie
+      href: https://haruowang.vercel.app/pov/color/cie.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/pov/color/cie
+      content: https://haruowang.vercel.app/pov/color/cie.html
   - - meta
     - property: og:title
       content: 淺介CIE 1931與1976

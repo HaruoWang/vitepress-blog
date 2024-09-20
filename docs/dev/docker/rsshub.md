@@ -3,10 +3,10 @@ description: 使用Docker Compose將RSSHub架設到Cloudflare，並取得開源�
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/dev/docker/rsshub
+      href: https://haruowang.vercel.app/dev/docker/rsshub.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/dev/docker/rsshub
+      content: https://haruowang.vercel.app/dev/docker/rsshub.html
   - - meta
     - property: og:title
       content: 自架RSSHub到Cloudflare

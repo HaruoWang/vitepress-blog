@@ -3,10 +3,10 @@ description: Yourator商用日文單字小書中的生難字整理
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/global/japan/work
+      href: https://haruowang.vercel.app/global/japan/work.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/global/japan/work
+      content: https://haruowang.vercel.app/global/japan/work.html
   - - meta
     - property: og:title
       content: JobMenta商用日文｜Feed Me, Haruo

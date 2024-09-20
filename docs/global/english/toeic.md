@@ -3,10 +3,10 @@ description: 透過WORD UP複習多益藍證的學習筆記
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/global/english/toeic
+      href: https://haruowang.vercel.app/global/english/toeic.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/global/english/toeic
+      content: https://haruowang.vercel.app/global/english/toeic.html
   - - meta
     - property: og:title
       content: WORD UP藍色證書教材｜Feed Me, Haruo

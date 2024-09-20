@@ -3,10 +3,10 @@ description: 麻子大哥在反杜邦運動凱道現場被《人間》記者蔡�
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/pov/participation/susu
+      href: https://haruowang.vercel.app/pov/participation/susu.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/pov/participation/susu
+      content: https://haruowang.vercel.app/pov/participation/susu.html
   - - meta
     - property: og:title
       content: 我在晃晃，聽麻子開講

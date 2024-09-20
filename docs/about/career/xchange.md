@@ -3,10 +3,10 @@ description: 透過XChange各場講座、工作坊及讀書會，學習職場UX�
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/about/career/xchange
+      href: https://haruowang.vercel.app/about/career/xchange.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/about/career/xchange
+      content: https://haruowang.vercel.app/about/career/xchange.html
   - - meta
     - property: og:title
       content: 互聯網大學心得分享：藝大生的UIUX之旅

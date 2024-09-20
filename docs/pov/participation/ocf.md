@@ -3,10 +3,10 @@ description: Open Source想做的不只利他，更要利己。Bob以石頭湯�
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/pov/participation/ocf
+      href: https://haruowang.vercel.app/pov/participation/ocf.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/pov/participation/ocf
+      content: https://haruowang.vercel.app/pov/participation/ocf.html
   - - meta
     - property: og:title
       content: 開源十年，短講速寫

@@ -3,10 +3,10 @@ description: SuperCollider回報錯誤訊息，怎麼辦？這時候可以在Sup
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/live-coding/tidal/setting
+      href: https://haruowang.vercel.app/live-coding/tidal/setting.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/live-coding/tidal/setting
+      content: https://haruowang.vercel.app/live-coding/tidal/setting.html
   - - meta
     - property: og:title
       content: Tidal x VScode 環境設定

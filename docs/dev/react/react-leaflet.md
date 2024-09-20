@@ -3,10 +3,10 @@ description: 以React官方教學為主，從Components由簡入深，跟隨Haru
 head:
   - - link
     - rel: canonical
-      href: https://haruowang.vercel.app/dev/react/react-leaflet
+      href: https://haruowang.vercel.app/dev/react/react-leaflet.html
   - - meta
     - property: og:url
-      content: https://haruowang.vercel.app/dev/react/react-leaflet
+      content: https://haruowang.vercel.app/dev/react/react-leaflet.html
   - - meta
     - property: og:title
       content: 現在學React還來得及嗎：地圖
