@@ -8,8 +8,7 @@ let url = 'https://haruowang.vercel.app'
 export default defineConfig({
   lang: 'zh-TW',
   title: title,
-  description: des,
-  cleanUrls: true, 
+  description: des, 
   sitemap: {
     hostname: url
   },
