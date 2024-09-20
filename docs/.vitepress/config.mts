@@ -59,6 +59,14 @@ export default defineConfig({
       'meta',
       { property: 'twitter:card', content: 'summary_large_image' }
     ],
+    [
+      'meta',
+      { property: 'twitter:site', content: '@WangHaruo' }
+    ],
+    [
+      'meta',
+      { property: 'twitter:creator', content: '@WangHaruo' }
+    ],
   ],
   markdown: {
     image: {
