@@ -16,7 +16,7 @@ head:
   - - meta
     - name: og:image
       content: /og-image.webp
- - - meta
+  - - meta
     - property: twitter:title
       content: 超迷你文學獎：空白機票
   - - meta
