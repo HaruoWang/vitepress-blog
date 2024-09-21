@@ -16,7 +16,7 @@ head:
   - - meta
     - name: og:image
       content: /og-image.webp
- - - meta
+  - - meta
     - property: twitter:title
       content: 愛動物的人：試讀短評
   - - meta
