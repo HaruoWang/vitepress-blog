@@ -123,3 +123,7 @@ divest的名詞是divestment，很近似0912的divestiture。
 - RFK Jr：環境律師，反疫苗，現支持川普
 - alleged：被指控的
 - thorough：徹底
+
+## 0921｜最重南瓜
+- vie to：爭奪
+- gourd：葫蘆

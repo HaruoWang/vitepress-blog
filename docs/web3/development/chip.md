@@ -129,11 +129,17 @@ void main() {
 
 有時我們會看到GLSL這個稱呼。其實GLSL是由OpenGL開發、類似C語言的著色語言。
 
-這次的創作中，我則是援引了[GLSL Noise Algorithms](https://gist.github.com/patriciogonzalezvivo/670c22f3966e662d2f83)頁面裡，由Ian McEwan, Stefan Gustavson打造的Simplex 3D Noise。真的是前人種樹，後人乘涼。
+在整個程式碼開頭可以看到的GL_ES，是著色器的API。uniform用來傳值，varying用來傳會變的值，通常是材質座標。gl_FragColor代表像素顏色。
 
-另外還有做出讓波紋可以跟隨滑鼠做變化的功能。
+日後可以再更了解一下Swizzling，可透過分量來重組向量。
+
+這次的創作中，我則是援引了[GLSL Noise Algorithms](https://gist.github.com/patriciogonzalezvivo/670c22f3966e662d2f83)頁面裡，由Ian McEwan, Stefan Gustavson打造的Simplex 3D Noise。真的是前人種樹，後人乘涼。而話說Perlin Noise的起源其實和電影《電子世界爭霸戰》有關。
+
+另外還有做出讓波紋可以跟隨滑鼠做變化的功能。寫隨機時還發現Unity的frac到了Shader要寫成fract。 
 
 本想說管線（L-system）和基板（Shader）這兩個frame也許可以相疊。測試失敗的下一步是，把L-system的動畫直接做成gif。
+
+然而拿gif當遮罩還是花了我不少時間，最後是透過foreignobject才遮得到div。
 
 取名階段時，想到了cheap as chips這段俚語，便打定要在作品中放進和薯片相關的事物。
 

@@ -31,6 +31,10 @@ head:
 
 <p><Badge type="info" text="🌳 Evergreen" /></P>
 
+::: info 2022/08
+獲得《聯合文學》編輯部評選前十
+:::
+
 FROM：新北市 
 
 TO：宇部市

@@ -99,7 +99,7 @@ export default defineConfig({
               { text: 'Publication', link: '/pov/publication/tabf' },
               { text: 'Font', link: '/pov/font/the-type' },
               { text: 'Color', link: '/pov/color/cie' },
-              { text: 'Thinking', link: '/' },
+              { text: 'Thinking', link: '/pov/thinking/tourist' },
               { text: 'Participation', link: '/pov/participation/susu' },
               { text: 'Other', link: '/pov/other/ticket' },
             ]
@@ -218,6 +218,7 @@ export default defineConfig({
           items: [
             { text: '藝術書展草率季之關鍵字', link: '/pov/publication/tabf' },
             { text: '林小乙的裝幀美學', link: '/pov/publication/lalan' },
+            { text: '從製稿到估價，一起來印Riso吧', link: '/pov/publication/riso' },
           ]
         },
         {
@@ -238,7 +239,15 @@ export default defineConfig({
           text: 'Thinking',
           collapsed: false,
           items: [
-            { text: '🚧建設中🚧', },
+            { text: '《觀光客的哲學》筆記', link: '/pov/thinking/tourist' },
+            { text: '紙上地景：徒步者的藝術家書籍', link: '/pov/thinking/walking' },
+            { text: '速度與時延：薄邱尼', link: '/pov/thinking/boccioni' },
+            { text: '為了不要忘記：《明室》心得', link: '/pov/thinking/lucida' },
+            { text: '當夏椿不再失色：《平家物語》', link: '/pov/thinking/heike' },
+            { text: '《動物化的後現代》導讀', link: '/pov/thinking/dbanimal' },
+            { text: '從後現代角度看《駭客任務》', link: '/pov/thinking/matrix' },
+            { text: '千賀健史《自殺潮》淺介', link: '/pov/thinking/kenji' },
+            { text: '該如何看待薩爾加多', link: '/pov/thinking/salgado' },
           ]
         },
         {
@@ -258,6 +267,13 @@ export default defineConfig({
           items: [
             { text: '超迷你文學獎：空白機票', link: '/pov/other/ticket' },
             { text: '愛動物的人：試讀短評', link: '/pov/other/animal' },
+            { text: '從不倦怠：橫尾忠則', link: '/pov/other/yokoo' },
+            { text: '菊地信義的《裝幀人生》', link: '/pov/other/kikuchi' },
+            { text: '不期而遇：《菜場搜神記》', link: '/pov/other/suling' },
+            { text: '你不能不知道的台藝圖文系友', link: '/pov/other/gca' },
+            { text: '吳清友的生命之旅', link: '/pov/other/eslite' },
+            { text: '大一生在日星：訪談張介冠', link: '/pov/other/rixing' },
+            { text: 'moom bookshop參訪心得', link: '/pov/other/moom' },
           ]
         },
       ],
