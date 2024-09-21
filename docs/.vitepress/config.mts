@@ -101,7 +101,7 @@ export default defineConfig({
               { text: 'Color', link: '/pov/color/cie' },
               { text: 'Thinking', link: '/' },
               { text: 'Participation', link: '/pov/participation/susu' },
-              { text: 'Other', link: '/' },
+              { text: 'Other', link: '/pov/other/ticket' },
             ]
           }
         ]
@@ -256,7 +256,7 @@ export default defineConfig({
           text: 'Other',
           collapsed: false,
           items: [
-            { text: '🚧建設中🚧', },
+            { text: '超迷你文學獎：空白機票', link: '/pov/other/ticket' },
           ]
         },
       ],
