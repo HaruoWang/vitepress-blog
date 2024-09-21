@@ -16,13 +16,24 @@ head:
   - - meta
     - name: og:image
       content: /og-image.webp
+ - - meta
+    - property: twitter:title
+      content: 超迷你文學獎：空白機票
+  - - meta
+    - name: twitter:description
+      content: 獲得《聯合文學》編輯部評選前十
+  - - meta
+    - name: twitter:image
+      content: https://haruowang.vercel.app/og-image.webp
 ---
 
 # 【超迷你文學獎：空白機票】
 
 <p><Badge type="info" text="🌳 Evergreen" /></P>
 
-FROM：新北市 TO：宇部市
+FROM：新北市 
+
+TO：宇部市
 
 求學以來，生活圈始終固守在島嶼北端。要說對海外沒有一絲嚮往，顯然是自欺欺人。
 

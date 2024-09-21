@@ -257,6 +257,7 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: '超迷你文學獎：空白機票', link: '/pov/other/ticket' },
+            { text: '愛動物的人：試讀短評', link: '/pov/other/animal' },
           ]
         },
       ],
