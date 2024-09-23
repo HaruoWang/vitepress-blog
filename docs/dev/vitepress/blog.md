@@ -223,7 +223,9 @@ reference: [只抄](https://zhichao.org/posts/4d69f1)
 
 照官方描述，先`pnpm add vitepress-plugin-rss`。
 
-設定一些基本資訊後，`pnpm run docs:build`，到生產環境的dist資料夾裡即可找到feed。
+設定一些基本資訊後，`pnpm run docs:build`，在生產環境的dist資料夾裡即可找到你的rss.xml。
+
+結果XML頁面跳出警告EntityRef。把出錯那行的`&`改成`&amp;`就好了。
 
 ## 其他妙招
 
