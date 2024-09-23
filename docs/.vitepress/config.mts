@@ -10,7 +10,7 @@ let RSS: RSSOptions = {
   baseUrl,
   description: 'Digital Garden of Haruo Wang',
   copyright: copyright,
-  filename: 'feed',
+  filename: 'rss.xml',
 }
 
 // https://vitepress.dev/reference/site-config
