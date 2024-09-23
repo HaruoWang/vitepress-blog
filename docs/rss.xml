@@ -4,7 +4,7 @@
         <title>Feed Me, Haruo</title>
         <link>https://haruowang.vercel.app</link>
         <description>Digital Garden of Haruo Wang</description>
-        <lastBuildDate>Mon, 23 Sep 2024 05:29:50 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Sep 2024 05:50:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <copyright>Copyright © 2024-present Haruo Wang</copyright>
@@ -12,7 +12,7 @@
             <title><![CDATA[用VitePress玩轉SSG]]></title>
             <link>https://haruowang.vercel.app/dev/vitepress/blog.html</link>
             <guid>https://haruowang.vercel.app/dev/vitepress/blog.html</guid>
-            <pubDate>Mon, 23 Sep 2024 05:21:05 GMT</pubDate>
+            <pubDate>Mon, 23 Sep 2024 05:41:44 GMT</pubDate>
             <description><![CDATA[使用VitePress開發部落格的經驗分享]]></description>
             <content:encoded><![CDATA[<h1 id="用vitepress玩轉ssg" tabindex="-1">用VitePress玩轉SSG <a class="header-anchor" href="#用vitepress玩轉ssg" aria-label="Permalink to &quot;用VitePress玩轉SSG&quot;"></a></h1>
 <p><Badge type="info" text="🌿 Budding" /></P>
@@ -188,7 +188,8 @@
 </blockquote>
 <p>使用<a href="https://www.npmjs.com/package/vitepress-plugin-rss" target="_blank" rel="noreferrer">vitepress-plugin-rss</a>。</p>
 <p>照官方描述，先<code>pnpm add vitepress-plugin-rss</code>。</p>
-<p>設定一些基本資訊後，<code>pnpm run docs:build</code>，到生產環境的dist資料夾裡即可找到feed。</p>
+<p>設定一些基本資訊後，<code>pnpm run docs:build</code>，在生產環境的dist資料夾裡即可找到你的rss.xml。</p>
+<p>結果XML頁面跳出警告EntityRef。把出錯那行的<code>&amp;</code>改成<code>&amp;amp;</code>就好了。</p>
 <h2 id="其他妙招" tabindex="-1">其他妙招 <a class="header-anchor" href="#其他妙招" aria-label="Permalink to &quot;其他妙招&quot;"></a></h2>
 <h3 id="嵌入yt影片" tabindex="-1">嵌入YT影片 <a class="header-anchor" href="#嵌入yt影片" aria-label="Permalink to &quot;嵌入YT影片&quot;"></a></h3>
 <blockquote>
