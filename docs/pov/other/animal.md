@@ -9,7 +9,7 @@ head:
       content: https://haruowang.vercel.app/pov/other/animal.html
   - - meta
     - property: og:title
-      content: 愛動物的人：試讀短評
+      content: 《愛動物的人》：試讀短評
   - - meta
     - name: og:description
       content: 獲得啟明出版禮券1000點
@@ -18,7 +18,7 @@ head:
       content: /og-image.webp
   - - meta
     - property: twitter:title
-      content: 愛動物的人：試讀短評
+      content: 《愛動物的人》：試讀短評
   - - meta
     - name: twitter:description
       content: 獲得啟明出版禮券1000點
@@ -27,7 +27,7 @@ head:
       content: https://haruowang.vercel.app/og-image.webp
 ---
 
-# 【愛動物的人：試讀短評】
+# 【《愛動物的人》：試讀短評】
 
 <p><Badge type="info" text="🌳 Evergreen" /></P>
 

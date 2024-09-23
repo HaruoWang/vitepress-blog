@@ -127,3 +127,12 @@ divest的名詞是divestment，很近似0912的divestiture。
 ## 0921｜最重南瓜
 - vie to：爭奪
 - gourd：葫蘆
+
+## 0922｜美國利率
+- Treasury Yield：公債殖利率
+- mortgage：抵押
+
+## 0923｜高通買英特爾
+- takeover：併購
+- CHIPS Act：晶片與科學法
+- sheer size：龐大規模

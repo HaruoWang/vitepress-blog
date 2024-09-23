@@ -132,3 +132,15 @@ head:
 - 96年，江之翠劇場曾和瑞士噪音團體怒罵沼澤共演
 - 江之翠劇場的主理人是周逸昌，在地比較沒拍到
 - 11年，立方在威尼斯策畫《聲音圖景》；14年策畫《造音翻土》
+ 
+## 穆克吉的檔案數位化
+### Noopur DESAI
+- AAA重視pedagogy、行為藝術等主題
+- MUKHERJEE在Badora學習
+- 曾駐村於歐洲陶瓷藝術中心、Kasauli Art Centre
+- 經常使用黃麻進行雕塑，後來試過陶瓷和銅
+- 受"Living Traditions of Indian Art"影響
+### Samira BOSE
+- 提到其作品像是朝四面八方生長
+- 80年代開始更常於正式空間展出，變成追求精準位置
+- BOSE的文章可見於《非主流南亞攝影》（ASAP Connect）

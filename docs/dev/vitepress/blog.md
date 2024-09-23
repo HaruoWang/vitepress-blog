@@ -216,6 +216,15 @@ reference: [只抄](https://zhichao.org/posts/4d69f1)
 ]
 ```
 
+### RSS Feed
+> config.mts
+
+使用[vitepress-plugin-rss](https://www.npmjs.com/package/vitepress-plugin-rss)。
+
+照官方描述，先`pnpm add vitepress-plugin-rss`。
+
+設定一些基本資訊後，`pnpm run docs:build`，到生產環境的dist資料夾裡即可找到feed。
+
 ## 其他妙招
 
 ### 嵌入YT影片

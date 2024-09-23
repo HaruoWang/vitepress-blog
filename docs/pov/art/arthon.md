@@ -51,3 +51,7 @@ head:
 - 資料庫反轉符號學，將歷時性和共時性的明確／隱晦關係顛倒
 - Rosalind Krauss認為錄像是自戀的媒體
 - 資料庫電影創作者：Greenaway、Vertov
+
+## 賦予形體的Chimera
+- 根據Jean-Louis Fischer研究，Teratology一詞在1830年後出現
+- Max Marcuzzi稱「怪物學是最寬廣的生物學」

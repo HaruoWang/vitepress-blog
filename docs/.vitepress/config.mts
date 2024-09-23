@@ -1,14 +1,27 @@
 import { defineConfig } from 'vitepress'
+import { RSSOptions, RssPlugin } from 'vitepress-plugin-rss'
 
 let title = 'Feed Me, Haruo'
-let url = 'https://haruowang.vercel.app'
+let baseUrl = 'https://haruowang.vercel.app'
+let copyright = 'Copyright © 2024-present Haruo Wang'
+
+let RSS: RSSOptions = {
+  title: title,
+  baseUrl,
+  description: 'Digital Garden of Haruo Wang',
+  copyright: copyright,
+  filename: 'feed',
+}
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-TW',
   title: title,
+  vite: {
+    plugins: [RssPlugin(RSS)]
+  },
   sitemap: {
-    hostname: url
+    hostname: baseUrl
   },
   head: [
     [
@@ -266,7 +279,7 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: '超迷你文學獎：空白機票', link: '/pov/other/ticket' },
-            { text: '愛動物的人：試讀短評', link: '/pov/other/animal' },
+            { text: '《愛動物的人》：試讀短評', link: '/pov/other/animal' },
             { text: '從不倦怠：橫尾忠則', link: '/pov/other/yokoo' },
             { text: '菊地信義的《裝幀人生》', link: '/pov/other/kikuchi' },
             { text: '不期而遇：《菜場搜神記》', link: '/pov/other/suling' },
@@ -406,7 +419,7 @@ export default defineConfig({
     },
 
     footer: {
-      copyright: 'Copyright © 2024-present Haruo Wang'
+      copyright: copyright
     }
   }
 })
