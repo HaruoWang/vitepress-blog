@@ -29,7 +29,7 @@ head:
 
 # 東吳英文小學堂
 
-<p><Badge type="info" text="🌱 Seedlings" /></P>
+<p><Badge type="info" text="🌿 Budding" /></P>
 
 ## 白鯨記
 - 白鯨記被評論家視為酷兒小說
@@ -42,3 +42,15 @@ head:
 - 林紓 & 魏易：清末民初的翻譯拍檔
 - Ezra Pound：意象派詩人，翻譯《國泰集》
 - 馬悅然：曾任諾獎評委的瑞典漢學家
+
+## 福爾摩斯教文學
+- Joseph Bell：Sherlock Holmes的原型
+- 最初連載於《Strand Magazine》
+- the Speckled Band：經典探案花斑帶
+
+## 猩球崛起
+- 在電影中，母親是缺席的
+- John Donne和Locke都寫過猿猴性侵的故事
+- Tarzan在猿猴的語言中，意為白皮膚
+- 可以將黑猩猩視為人類的doppelganger
+- 「視覺合作假說」來自小林洋美和幸島司郎，後由Tomasello提出

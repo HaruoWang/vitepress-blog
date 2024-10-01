@@ -37,7 +37,7 @@ hero:
     src: /haruo.webp
     alt: Haruo Wang
   actions:
-    - theme: brand
+    - theme: alt
       text: About Me
       link: /about/about-me/haruo
     - theme: alt

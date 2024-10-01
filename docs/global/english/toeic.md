@@ -45,13 +45,18 @@ head:
 - qualify：有資格
 - statesmanship：政治家風度
 - recession：衰退
+### 連字形容詞
+- state-of-the-art：先進的
+- talk-of-the-town：受到談論的
+- down-for-the-count：失敗的
+- pick-of-the-litter：最佳選擇的
 ### 片語
 - take on：與...較量
 - have to do with：與...有關
 - in advance：事先
+### 時態
+- 通篇使用未來式時，子句會用到未來進行式
 
 ::: details Tips
 implement是動詞！
 :::
-
-## 閱讀測驗

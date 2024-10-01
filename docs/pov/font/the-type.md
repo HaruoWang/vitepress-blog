@@ -32,7 +32,6 @@ head:
 <p><Badge type="info" text="🌱 Seedlings" /></P>
 
 ## 大家都不容易
-
 - 方正蠻常做「多文種」
 - 方正的排版軟體叫飛翔
 - 雷丁的字體碩士要做拉丁+另一語種
@@ -48,3 +47,9 @@ head:
 - Adobe-Japan1：統整外字規格
 - 一般日文字型會做到Adobe-Japan1-3
 - 方正蘭亭黑Pro Global：方正第一款全球字庫
+
+## 多文種就在您身邊
+- 戰國棟：TypeMeet大連的統籌兼主持人
+- 厲致謙：3type創始人，設計Meiloi Sans
+- 由小林章監製，蒙納的翔鶴黑體被Eric推薦
+- 滿文和傳統蒙文要豎排，藏文要橫排

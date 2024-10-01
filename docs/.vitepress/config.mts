@@ -171,7 +171,7 @@ export default defineConfig({
           {
             items: [
               { text: 'Finance', link: '/wealth/finance/securities-specialist' },
-              { text: 'Dwelling', link: '/' },
+              { text: 'Dwelling', link: '/wealth/dwelling/home' },
             ]
           }
         ]
@@ -255,6 +255,7 @@ export default defineConfig({
             { text: '《觀光客的哲學》筆記', link: '/pov/thinking/tourist' },
             { text: '紙上地景：徒步者的藝術家書籍', link: '/pov/thinking/walking' },
             { text: '速度與時延：薄邱尼', link: '/pov/thinking/boccioni' },
+            { text: '《少女歌劇再生產評論集》筆記', link: '/pov/thinking/revue' },
             { text: '為了不要忘記：《明室》心得', link: '/pov/thinking/lucida' },
             { text: '當夏椿不再失色：《平家物語》', link: '/pov/thinking/heike' },
             { text: '《動物化的後現代》導讀', link: '/pov/thinking/dbanimal' },
@@ -352,6 +353,7 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: 'Tidal x VScode 環境設定', link: '/live-coding/tidal/setting' },
+            { text: 'Strudel Work：Persecution Of The Masses', link: '/live-coding/tidal/potm' },
           ]
         },
         {
@@ -374,6 +376,7 @@ export default defineConfig({
             { text: 'JobMenta商用日文', link: '/global/japan/work' },
             { text: '内田秀のVlog', link: '/global/japan/shutube' },
             { text: '日本迷你電影院', link: '/global/japan/mini-theater' },
+            { text: '《相機女孩漫遊東京》筆記', link: '/global/japan/shutter-girl' },
           ]
         },
         {
@@ -400,7 +403,8 @@ export default defineConfig({
           text: 'Dwelling',
           collapsed: false,
           items: [
-            { text: '🚧建設中🚧', },
+            { text: '居家裝修學習筆記', link: '/wealth/dwelling/home' },
+            { text: '房屋租賃買賣筆記', link: '/wealth/dwelling/house' },
           ]
         },
       ],
@@ -411,7 +415,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/HaruoWang/' }
+      { icon: 'github', link: 'https://github.com/HaruoWang' }
     ],
 
     search: {

@@ -125,7 +125,7 @@ divest的名詞是divestment，很近似0912的divestiture。
 - thorough：徹底
 
 ## 0921｜最重南瓜
-- vie to：爭奪
+- vie：爭奪
 - gourd：葫蘆
 
 ## 0922｜美國利率
@@ -136,3 +136,54 @@ divest的名詞是divestment，很近似0912的divestiture。
 - takeover：併購
 - CHIPS Act：晶片與科學法
 - sheer size：龐大規模
+
+## 0924｜亞馬遜電動車
+- Bengaluru：邦加羅爾
+- invest：投資
+- C40：城市氣候領導聯盟
+
+::: details Tips
+調查是investigate。
+:::
+
+## 0925｜少數黨領袖的重要
+- bailout：紓困
+- stopgap：權宜之計
+- GOP：共和黨（大老黨）
+- omnibus：彙整
+- lame-duck：跛腳鴨
+- vacate：撤除
+- hardliner：強硬派
+- oust：趕下臺
+- tantamount：等同
+
+## 0926｜OpenAI營利化
+- turmoil：動盪
+- provision：條款
+- have a stake in：持有股份
+- imminent：迫在眉睫的
+
+## 0927｜Newsmax和解Smartmatic
+- settle：和解
+- defamation：誹謗
+- perpetrator：犯行者
+
+## 0928｜黃仁勳聊AI電網
+- Jensen：老黃
+- contend：主張
+- power grid：電網
+- Bipartisan Policy Center：兩黨政策中心
+- inextricable：難分難解的
+
+## 0929｜年輕人轉右派
+- cohort：群體
+- predecessor：前輩
+
+## 0930｜海倫颶風
+- meteorologist：氣象學家
+- biblical devastation：聖經式的毀滅
+- ominous：不祥的
+
+::: details Tips
+omnious很近似0925的omnibus。
+:::

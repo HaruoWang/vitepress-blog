@@ -55,3 +55,22 @@ head:
 ## 賦予形體的Chimera
 - 根據Jean-Louis Fischer研究，Teratology一詞在1830年後出現
 - Max Marcuzzi稱「怪物學是最寬廣的生物學」
+
+## 改變邏輯的機器
+- 50年代末期，Frank Rosenblatt發明感知機（Mark I Perceptron）
+- 兩大AI：符號主義（Symbolic）、聯結主義（Connectionist）
+- DNN的三層：輸入層、隱藏層、輸出層
+- Charles Peirce的三種推論：演繹、歸納、溯因
+- Matteo Pasquinelli認為AI有「弱溯因」能力
+- 隱喻才是「強溯因」，Eco稱「沒有演算法是為了隱喻存在」
+
+## 殘酷劇場與再現的關閉
+- 浪漫主義否定劇場的想像，在意空缺和死亡
+- 殘酷劇場在意「生命自身」，而非再現
+- 亞陶想回到戲劇的原初狀態，破除文字性，回歸感官性
+- 殘酷劇場可以發生在每一個當下，是積極的遺忘
+
+## 缺席的美學
+- 堆（the pile）：911廢墟中的物件
+- 911博物館沒有重建雙子星，只是用水池留下足跡（the footprints）
+- 「藝術提出一個問題，設計提供一個答案」
