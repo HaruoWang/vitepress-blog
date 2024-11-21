@@ -45,6 +45,8 @@ head:
 - qualify：有資格
 - statesmanship：政治家風度
 - recession：衰退
+- defendant：被告
+- imparting：傳授
 ### 連字形容詞
 - state-of-the-art：先進的
 - talk-of-the-town：受到談論的
@@ -54,8 +56,10 @@ head:
 - take on：與...較量
 - have to do with：與...有關
 - in advance：事先
+- on account for：由於
 ### 時態
 - 通篇使用未來式時，子句會用到未來進行式
+- will be + Ving
 
 ::: details Tips
 implement是動詞！

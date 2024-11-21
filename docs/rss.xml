@@ -4,490 +4,639 @@
         <title>Feed Me, Haruo</title>
         <link>https://haruowang.vercel.app</link>
         <description>Digital Garden of Haruo Wang</description>
-        <lastBuildDate>Tue, 01 Oct 2024 06:24:37 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 21 Nov 2024 14:47:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <copyright>Copyright © 2024-present Haruo Wang</copyright>
         <item>
-            <title><![CDATA[【Strudel Work：Persecution Of The Masses】]]></title>
-            <link>https://haruowang.vercel.app/live-coding/tidal/potm.html</link>
-            <guid>https://haruowang.vercel.app/live-coding/tidal/potm.html</guid>
-            <pubDate>Tue, 01 Oct 2024 06:21:57 GMT</pubDate>
-            <description><![CDATA[Using Strudel to cover Shiro Sagisu's Persecution Of The Masses]]></description>
-            <content:encoded><![CDATA[<h1 id="【strudel-work-persecution-of-the-masses】" tabindex="-1">【Strudel Work：Persecution Of The Masses】 <a class="header-anchor" href="#【strudel-work-persecution-of-the-masses】" aria-label="Permalink to &quot;【Strudel Work：Persecution Of The Masses】&quot;"></a></h1>
+            <title><![CDATA[第一次微調GPT就上手]]></title>
+            <link>https://haruowang.vercel.app/dev/react/jotaro.html</link>
+            <guid>https://haruowang.vercel.app/dev/react/jotaro.html</guid>
+            <pubDate>Thu, 21 Nov 2024 13:58:05 GMT</pubDate>
+            <description><![CDATA[即便一查發現OpenAI的微調限免時間延長到10/31，還是必須花5美金（時價161元台幣），將帳號升級到階層一才能使用……並且要稍微等個一兩天才會開通權限]]></description>
+            <content:encoded><![CDATA[<h1 id="第一次微調gpt就上手" tabindex="-1">第一次微調GPT就上手 <a class="header-anchor" href="#第一次微調gpt就上手" aria-label="Permalink to &quot;第一次微調GPT就上手&quot;"></a></h1>
 <p><Badge type="info" text="🌳 Evergreen" /></P>
-<div class="videobox">
-    <iframe frameborder="0" src="https://www.youtube.com/embed/LcXZvQNIc6U" allowFullScreen>
-    </iframe>
-</div>
-<h2 id="cpm" tabindex="-1">CPM <a class="header-anchor" href="#cpm" aria-label="Permalink to &quot;CPM&quot;"></a></h2>
-<ul>
-<li>cpm = bpm / bpc</li>
-<li>bpc: How many beats are required to complete a cycle? The smaller the number, the faster the speed.</li>
-</ul>
-<h2 id="drum" tabindex="-1">Drum <a class="header-anchor" href="#drum" aria-label="Permalink to &quot;Drum&quot;"></a></h2>
-<ul>
-<li>stack(sound.bank)</li>
-<li>e.g. <code>stack(s(&quot;&lt;hh ~&gt;*8&quot;).bank(&quot;LinnDrum&quot;), s(&quot;&lt;bd&gt;*8&quot;).bank(&quot;RolandTR909&quot;));</code></li>
-</ul>
-<h2 id="note" tabindex="-1">Note <a class="header-anchor" href="#note" aria-label="Permalink to &quot;Note&quot;"></a></h2>
-<ul>
-<li>cat.note.sound</li>
-<li>e.g. <code>cat(&quot;&lt;eb3!2 f3@2&gt;*4&quot;, &quot;&lt;c3&gt;*4&quot;).note().n(3).s(&quot;gm_synth_bass_1&quot;);</code></li>
-</ul>
-<h2 id="tips" tabindex="-1">Tips <a class="header-anchor" href="#tips" aria-label="Permalink to &quot;Tips&quot;"></a></h2>
-<ul>
-<li>~ / -: rests</li>
-<li>!: replicate</li>
-<li>@: elongate</li>
-<li>n(3).s(&quot;gm_synth_bass_1&quot;) = s(&quot;gm_synth_bass_1&quot;:3)</li>
-<li>transpose(+-12): pitch shifting</li>
-<li>arrange.cpm(cpm): as an integration</li>
-</ul>
-<h2 id="demo" tabindex="-1">Demo <a class="header-anchor" href="#demo" aria-label="Permalink to &quot;Demo&quot;"></a></h2>
-<div class="videobox one1">
-    <iframe src="https://strudel.cc/?ObIDhpp7APMx"></iframe>
-</div>]]></content:encoded>
+<p><img src="/react/jo1.webp" alt="JotaroGPT" loading="lazy"></p>
+<h2 id="微調訓練" tabindex="-1">微調訓練 <a class="header-anchor" href="#微調訓練" aria-label="Permalink to &quot;微調訓練&quot;"></a></h2>
+<p>對前端有些理解的話就會覺得這個挑戰不算困難。</p>
+<p>首先Git clone完<a href="https://github.com/vercel-labs/shooketh" target="_blank" rel="noreferrer">repo</a>之後pnpm i，再pnpm run dev。</p>
+<p>此時會遇到500 error，記得申請OpenAI的金鑰，並把.env.example改成.env。</p>
+<p>準備好訓練資料data.jsonl後，修改fine-tune.ts，輸入pnpm run tune重新微調自己的模型。結果CMD提示我Fine-tuning jobs cannot be created on an Explore plan.</p>
+<p>即便一查發現OpenAI的微調限免時間延長到10/31，還是必須花5美金（時價161元台幣），將帳號升級到階層一才能使用……並且要稍微等個一兩天才會開通權限。</p>
+<p>既然都要試玩4o，想說那就讓GPT來幫我生成訓練內容。</p>
+<h2 id="提問內容" tabindex="-1">提問內容 <a class="header-anchor" href="#提問內容" aria-label="Permalink to &quot;提問內容&quot;"></a></h2>
+<p>以下列出我的簡單提問，ChatGPT每次大約會回答二十條：</p>
+<blockquote>
+<p>我想要微調（fine tune）出能夠以《JOJO的奇妙冒險：星塵鬥士》中主角「空條承太郎」身分和口吻回答提問的gpt。可以幫我透過類似以下範例的jsonl格式，想出至少一百條message的jsonl嗎？（user是提問的使用者，assistant是此gpt的回覆。所以兩者的content之間要有問答關係）</p>
+</blockquote>
+<blockquote>
+<p>範例：{&quot;messages&quot;: [{&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;Jotaro GPT&quot;}, {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;太慢了太慢了，『世界』才是最強的替身，即使不停止時間，光是速度和力量，也遠超你的『白金之星』。&quot;}, {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;看來和我的白金之星是同類型的替身呢，雖然活動距離不長，但動作卻精準而有力。&quot;}]}</p>
+</blockquote>
+<blockquote>
+<p>目前還不到一百條，請幫我繼續生成，並在content中適時加入更多和《JOJO的奇妙冒險：星塵鬥士》有關的角色、替身、技能或名台詞，如「波魯納雷夫」、「阿布德爾」、「伊奇」、「流星指刺」、「隱者之紫」、「難不成是……歐拉歐拉嗎？」、「呀咧呀咧」。</p>
+</blockquote>
+<blockquote>
+<p>加入其他作品關鍵字後繼續生成：如「史比特瓦根財團」、「死神13」、「恩雅婆婆」、「歐因哥與波因哥」、「小野大輔」、「子安武人」、「大衛社」、「荒木飛呂彥」。</p>
+</blockquote>
+<blockquote>
+<p>加入其他作品關鍵字後繼續生成：如「黃金精神」、「空條徐倫」、「廣瀨康一」、「埃及九榮神」、「半徑20米的綠寶石水花」、「廁所是波魯納雷夫的舞台」、「人類的讚歌是勇氣的讚歌」、「榮耀永遠屬於星塵遠征軍」。</p>
+</blockquote>
+<blockquote>
+<p>加入「替身使者會被替身使者吸引」、「皇帝」與「吊人」、「歐拉3頁」等關鍵字後繼續生成。</p>
+</blockquote>
+<p>GPT算是回應得相當不錯。只要糾正一些明顯的錯誤，像是把二喬寫成「老爹」這種就好。</p>
+<p>把安娜蘇的替身名改回「怒海潛將」，重新run tune，給OpenAI一點時間。完事後將route.ts裡的model改成訓練好的模型，system改成你設定的。途中一樣有可以用suppressHydrationWarning解決的bug，並要將stroke-width這種寫法改成駝峰。剩下就是慢慢調UI的時間了——</p>
+<h2 id="參考文獻" tabindex="-1">參考文獻 <a class="header-anchor" href="#參考文獻" aria-label="Permalink to &quot;參考文獻&quot;"></a></h2>
+<p><a href="https://vercel.com/guides/fine-tuning-openai-nextjs" target="_blank" rel="noreferrer">Fine-tuning GPT with OpenAI, Next.js and Vercel AI SDK</a></p>
+<h2 id="專案連結" tabindex="-1"><a href="https://jotarogpt.vercel.app" target="_blank" rel="noreferrer">專案連結</a> <a class="header-anchor" href="#專案連結" aria-label="Permalink to &quot;[專案連結](https://jotarogpt.vercel.app)&quot;"></a></h2>
+]]></content:encoded>
+            <enclosure url="https://haruowang.vercel.app/react/jo1.webp" length="0" type="image/webp"/>
         </item>
         <item>
-            <title><![CDATA[《相機女孩漫遊東京》筆記]]></title>
-            <link>https://haruowang.vercel.app/global/japan/shutter-girl.html</link>
-            <guid>https://haruowang.vercel.app/global/japan/shutter-girl.html</guid>
-            <pubDate>Tue, 01 Oct 2024 01:08:24 GMT</pubDate>
-            <description><![CDATA[漫畫《相機女孩漫遊東京》中出現的景點整理]]></description>
-            <content:encoded><![CDATA[<h1 id="《相機女孩漫遊東京》筆記" tabindex="-1">《相機女孩漫遊東京》筆記 <a class="header-anchor" href="#《相機女孩漫遊東京》筆記" aria-label="Permalink to &quot;《相機女孩漫遊東京》筆記&quot;"></a></h1>
+            <title><![CDATA[區塊鏈愛好者年會筆記]]></title>
+            <link>https://haruowang.vercel.app/pov/participation/tabei.html</link>
+            <guid>https://haruowang.vercel.app/pov/participation/tabei.html</guid>
+            <pubDate>Thu, 21 Nov 2024 13:52:38 GMT</pubDate>
+            <description><![CDATA[他的公司在做安全和託管，同時於側鏈Liquid Network發行LBTC來增加比特幣的流動性和穩定性。相較於前述的閃電網絡，Liquid將市場更著眼於交易所這樣的大客戶]]></description>
+            <content:encoded><![CDATA[<h1 id="區塊鏈愛好者年會筆記" tabindex="-1">區塊鏈愛好者年會筆記 <a class="header-anchor" href="#區塊鏈愛好者年會筆記" aria-label="Permalink to &quot;區塊鏈愛好者年會筆記&quot;"></a></h1>
 <p><Badge type="info" text="🌳 Evergreen" /></P>
-<p><img src="/japan/sg1.webp" alt="相機女孩漫遊東京地圖" loading="lazy"></p>
-<h2 id="隅田公園" tabindex="-1">隅田公園 <a class="header-anchor" href="#隅田公園" aria-label="Permalink to &quot;隅田公園&quot;"></a></h2>
+<p>很高興有這個機會來政大公企中心補充新知。</p>
+<h2 id="bitcoin" tabindex="-1">Bitcoin <a class="header-anchor" href="#bitcoin" aria-label="Permalink to &quot;Bitcoin&quot;"></a></h2>
+<p>從開場影片不難感受出，本場議程主要圍繞的是比特幣。</p>
+<p>從各路OG口中蹦出的關鍵字，有使用「雙向支付通道」，能增加虛擬幣擴展性的L2方案「閃電網絡」，和肇因於中國三大金融機構制裁，導致BTC狂瀉超過三成的「五一九事件」等。會場氣氛繼續醞釀。</p>
+<h2 id="blockstream" tabindex="-1">Blockstream <a class="header-anchor" href="#blockstream" aria-label="Permalink to &quot;Blockstream&quot;"></a></h2>
+<p>第九屆年會海報上的重磅嘉賓Adam Back率先登場。</p>
+<p>他的公司在做安全和託管，同時於側鏈Liquid Network發行LBTC來增加比特幣的流動性和穩定性。相較於前述的閃電網絡，Liquid將市場更著眼於交易所這樣的大客戶。</p>
+<p>而像是日本加密金融公司Crypto Garage，就曾在自家平台Settlenet上，透過Liquid來交易穩定幣JPYS。不過近年能查到的日圓穩定幣資訊，似乎都是DCJPY / GYEN / Tochika（存款擔保的數位貨幣）和JPYC（資金轉移型穩定幣）這些，Settlenet的官網也下架了。</p>
+<p>至於CMSTR，則是第一個完全被NASDAQ認可的代幣，還可以在SideSwap直接和BTC做點對點交易。</p>
+<p>此外Dr. Back還提及，即使對比特幣感到悲觀，投資人仍還是可以從資產撥個3%來投資。而他認為最佳的配置是9.5%。</p>
+<p>看看將引來更多傳統投資者的IBIT，這番言論值得深思。</p>
+<h2 id="rwa" tabindex="-1">RWA <a class="header-anchor" href="#rwa" aria-label="Permalink to &quot;RWA&quot;"></a></h2>
+<p>在接下來的講座中，由多位產業代表負責為會眾指點迷津。</p>
+<h3 id="台銀" tabindex="-1">台銀 <a class="header-anchor" href="#台銀" aria-label="Permalink to &quot;台銀&quot;"></a></h3>
+<p>特別提及銀行和新創合作的前景要注重「責任分攤」。</p>
+<h3 id="echox" tabindex="-1">EchoX <a class="header-anchor" href="#echox" aria-label="Permalink to &quot;EchoX&quot;"></a></h3>
+<p>之前就稍微知道EchoX有做日本生意，而東海的那一端最近在Web3衝得很快。</p>
+<p>像Circle就在政策助威下與SBI Holdings推行USDC合法化，而大阪更有著加密交易所ODX。</p>
+<p>作為亞洲境外金融中心之一，日本的動向備受關注。</p>
+<h3 id="元大" tabindex="-1">元大 <a class="header-anchor" href="#元大" aria-label="Permalink to &quot;元大&quot;"></a></h3>
+<p>2003，首檔ETF成立，走出不同於共同基金的路。</p>
+<p>現在，有什麼能讓不支息的穩定幣更吸引別人？</p>
+<p>元大發問者提到其上司希望未來能達成「基金即現金」，讓資產流動時不再有時間差。</p>
+<p>這勢必是可供開發者和熱錢探究的解方之一。</p>
+<h2 id="payfi" tabindex="-1">PayFi <a class="header-anchor" href="#payfi" aria-label="Permalink to &quot;PayFi&quot;"></a></h2>
+<h3 id="bsos" tabindex="-1">BSOS <a class="header-anchor" href="#bsos" aria-label="Permalink to &quot;BSOS&quot;"></a></h3>
+<p>Tether去年淨賺62億美金，今年只花了前三季就來到77億，超過Circle和DeFi裡最賺的MakerDAO。</p>
+<p>我個人蠻受CEO那句「只要有時間差就需要有金融支持」所啟發。</p>
+<h3 id="兩個大事件" tabindex="-1">兩個大事件 <a class="header-anchor" href="#兩個大事件" aria-label="Permalink to &quot;兩個大事件&quot;"></a></h3>
 <ul>
-<li>適合拍晴空塔</li>
-<li>內有牛嶋神社</li>
-<li>離淺草站最近</li>
+<li>PayPal成功將穩定幣PYUSD轉到EY（安永會計事務所）的Coinbase帳戶</li>
+<li>Stripe花11億美金收購Bridge.xyz，是Web3目前規模最大的一次收購</li>
 </ul>
-<h2 id="築地" tabindex="-1">築地 <a class="header-anchor" href="#築地" aria-label="Permalink to &quot;築地&quot;"></a></h2>
+<h2 id="vc" tabindex="-1">VC <a class="header-anchor" href="#vc" aria-label="Permalink to &quot;VC&quot;"></a></h2>
+<h3 id="amber" tabindex="-1">Amber <a class="header-anchor" href="#amber" aria-label="Permalink to &quot;Amber&quot;"></a></h3>
+<p>RGB協議：使用「客戶端驗證」和「一次性密封」的開源協議，安全性高。</p>
+<h3 id="兩個香港術語" tabindex="-1">兩個香港術語 <a class="header-anchor" href="#兩個香港術語" aria-label="Permalink to &quot;兩個香港術語&quot;"></a></h3>
 <ul>
-<li>該地帶被稱作明石町</li>
-<li>鏑木清方曾繪製相關畫作</li>
-<li>築地本願寺的建築具印度風格</li>
-<li>本願寺咖啡還有「18品早餐」</li>
+<li>VASP（虛擬資產服務提供者）</li>
+<li>VATP（虛擬資產交易平台）</li>
 </ul>
-<h2 id="神田" tabindex="-1">神田 <a class="header-anchor" href="#神田" aria-label="Permalink to &quot;神田&quot;"></a></h2>
-<ul>
-<li>萬世橋站現為「mAAch ecute」複合空間</li>
-<li>松榮亭的招牌是「西式炸什錦餅」，漱石最愛</li>
-<li>正岡子規：獺祭書屋主人，對野球影響很大</li>
-</ul>
-<h2 id="田端文士村" tabindex="-1">田端文士村 <a class="header-anchor" href="#田端文士村" aria-label="Permalink to &quot;田端文士村&quot;"></a></h2>
-<ul>
-<li>室生犀星和萩原朔太郎都與芥川有深厚交情</li>
-<li>離田端站最近</li>
-</ul>
-<h2 id="等等力溪谷" tabindex="-1">等等力溪谷 <a class="header-anchor" href="#等等力溪谷" aria-label="Permalink to &quot;等等力溪谷&quot;"></a></h2>
-<ul>
-<li>內有不動瀑布和傳統茶屋「雪月花」</li>
-<li>離等等力站最近</li>
-</ul>
-<h2 id="本鄉" tabindex="-1">本鄉 <a class="header-anchor" href="#本鄉" aria-label="Permalink to &quot;本鄉&quot;"></a></h2>
-<ul>
-<li>樋口一葉居住於此，師事半井桃水</li>
-<li>東大主校區即位於此</li>
-<li>炭團坂有坪內逍遙的故居</li>
-<li>離宮澤賢治舊居遺址也不遠</li>
-</ul>
-<h2 id="小名木川" tabindex="-1">小名木川 <a class="header-anchor" href="#小名木川" aria-label="Permalink to &quot;小名木川&quot;"></a></h2>
-<ul>
-<li>被家康開墾來運鹽，因此又名鹽道</li>
-<li>常出現在名畫的萬年橋正是橫跨其上</li>
-<li>接到隅田川，後者夏天有煙火大會</li>
-<li>離清澄白河站最近</li>
-</ul>
-<h2 id="椎名町" tabindex="-1">椎名町 <a class="header-anchor" href="#椎名町" aria-label="Permalink to &quot;椎名町&quot;"></a></h2>
-<ul>
-<li>常磐莊便位於此</li>
-<li>還有東京写真工芸社</li>
-<li>赤塚不二夫承租過紫雲莊</li>
-</ul>
-<h2 id="池袋" tabindex="-1">池袋 <a class="header-anchor" href="#池袋" aria-label="Permalink to &quot;池袋&quot;"></a></h2>
-<ul>
-<li>亂步的書房在立教大學</li>
-<li>被稱作「幻影城」</li>
-<li>亂步名句：「現世如夢，夜夢方真」</li>
-<li>附近還有東京藝術劇場</li>
-<li>池袋三原堂有甜點「亂步之藏」和「薯蘋饅頭」</li>
-<li>池袋蒙帕納斯：30年代的藝術區，由小熊秀雄所稱</li>
-<li>熊谷守一美術館也在豐島區一帶</li>
-</ul>
-<h2 id="淺草" tabindex="-1">淺草 <a class="header-anchor" href="#淺草" aria-label="Permalink to &quot;淺草&quot;"></a></h2>
-<ul>
-<li>十二月中有羽子板市</li>
-<li>羽子板用來為女孩祈福，如破魔箭之於男孩</li>
-<li>淺草寺附近有明星廣場和花屋敷樂園</li>
-<li>還有原是神社新年活動的淺草流鏑馬</li>
-</ul>
-<h2 id="神樂坂" tabindex="-1">神樂坂 <a class="header-anchor" href="#神樂坂" aria-label="Permalink to &quot;神樂坂&quot;"></a></h2>
-<ul>
-<li>可以在東京大神宮祈求結緣</li>
-<li>其屬於東京五社之一</li>
-<li>兵庫橫丁有老街道</li>
-<li>離飯田橋站最近</li>
-</ul>
-<h2 id="吉野梅鄉" tabindex="-1">吉野梅鄉 <a class="header-anchor" href="#吉野梅鄉" aria-label="Permalink to &quot;吉野梅鄉&quot;"></a></h2>
-<ul>
-<li>二、三月可去賞梅</li>
-<li>有間青梅和服博物館</li>
-</ul>
-<h2 id="弁天洞窟" tabindex="-1">弁天洞窟 <a class="header-anchor" href="#弁天洞窟" aria-label="Permalink to &quot;弁天洞窟&quot;"></a></h2>
-<ul>
-<li>在威光寺裡，可以繞一圈做胎內巡禮</li>
-<li>離京王讀賣樂園站最近，適合順便看巨人二軍球賽</li>
-</ul>
-<h2 id="舊古河庭園" tabindex="-1">舊古河庭園 <a class="header-anchor" href="#舊古河庭園" aria-label="Permalink to &quot;舊古河庭園&quot;"></a></h2>
-<ul>
-<li>五、六月有春季玫瑰節</li>
-<li>離上中里站最近</li>
-</ul>
-<h2 id="西荻窪" tabindex="-1">西荻窪 <a class="header-anchor" href="#西荻窪" aria-label="Permalink to &quot;西荻窪&quot;"></a></h2>
-<ul>
-<li>很多骨董店</li>
-<li>駱駝：玻璃名店</li>
-</ul>
-<h2 id="都電回憶廣場" tabindex="-1">都電回憶廣場 <a class="header-anchor" href="#都電回憶廣場" aria-label="Permalink to &quot;都電回憶廣場&quot;"></a></h2>
-<ul>
-<li>荒川線是東京現存唯一的公營路面電車</li>
-<li>明美製菓有「都電最中餅」</li>
-<li>和梶原站相連的梶原書店已經拆了</li>
-<li>離荒川車庫前最近</li>
-</ul>
-<h2 id="城南島海濱公園" tabindex="-1">城南島海濱公園 <a class="header-anchor" href="#城南島海濱公園" aria-label="Permalink to &quot;城南島海濱公園&quot;"></a></h2>
-<ul>
-<li>有汽車露營區</li>
-<li>離羽田很近，適合航空迷</li>
-<li>離大森海岸站最近</li>
-</ul>
-<h2 id="世田谷" tabindex="-1">世田谷 <a class="header-anchor" href="#世田谷" aria-label="Permalink to &quot;世田谷&quot;"></a></h2>
-<ul>
-<li>蘆花恆春園：德冨蘆花的舊宅</li>
-<li>德冨蘆花和托爾斯泰往來甚密</li>
-<li>離蘆花公園站最近</li>
-<li>年尾年頭有「襤褸市」，必吃代官餅</li>
-<li>世田谷線是東京現存唯一的私營路面電車</li>
-<li>離上町站最近</li>
-</ul>
-<h2 id="互動地圖" tabindex="-1">互動地圖 <a class="header-anchor" href="#互動地圖" aria-label="Permalink to &quot;互動地圖&quot;"></a></h2>
-<div class="videobox four3">
-    <iframe src="https://www.google.com/maps/d/embed?mid=1-40Aiz8mzgNjQbv2tE59jv_sAvu8lh4&ehbc=2E312F"></iframe>
-</div>]]></content:encoded>
-            <enclosure url="https://haruowang.vercel.app/japan/sg1.webp" length="0" type="image/webp"/>
-        </item>
-        <item>
-            <title><![CDATA[《少女歌劇再生產評論集》筆記]]></title>
-            <link>https://haruowang.vercel.app/pov/thinking/revue.html</link>
-            <guid>https://haruowang.vercel.app/pov/thinking/revue.html</guid>
-            <pubDate>Fri, 27 Sep 2024 15:28:31 GMT</pubDate>
-            <description><![CDATA[「2024少歌Only」評論文集之重點整理]]></description>
-            <content:encoded><![CDATA[<h1 id="《少女歌劇再生產評論集》筆記" tabindex="-1">《少女歌劇再生產評論集》筆記 <a class="header-anchor" href="#《少女歌劇再生產評論集》筆記" aria-label="Permalink to &quot;《少女歌劇再生產評論集》筆記&quot;"></a></h1>
-<p><Badge type="info" text="🌳 Evergreen" /></P>
-<h2 id="舞台少女們的畢業舞會" tabindex="-1">舞台少女們的畢業舞會 <a class="header-anchor" href="#舞台少女們的畢業舞會" aria-label="Permalink to &quot;舞台少女們的畢業舞會&quot;"></a></h2>
-<h3 id="作者-耿耿" tabindex="-1">作者：耿耿 <a class="header-anchor" href="#作者-耿耿" aria-label="Permalink to &quot;作者：耿耿&quot;"></a></h3>
-<ul>
-<li>單挑的日文是一騎打ち（いっきうち）</li>
-<li>迷宮組是西洋劍和步兵劍的碰撞</li>
-<li>劇場版猶如畢業舞會，將舞台私有化</li>
-</ul>
-<h2 id="高塔與舞台的荊棘路" tabindex="-1">高塔與舞台的荊棘路 <a class="header-anchor" href="#高塔與舞台的荊棘路" aria-label="Permalink to &quot;高塔與舞台的荊棘路&quot;"></a></h2>
-<h3 id="作者-mikopatche" tabindex="-1">作者：mikopatche <a class="header-anchor" href="#作者-mikopatche" aria-label="Permalink to &quot;作者：mikopatche&quot;"></a></h3>
-<ul>
-<li>塔羅牌的高塔（the tower）和意外有關</li>
-</ul>
-<h2 id="「命運舞台」的造價" tabindex="-1">「命運舞台」的造價 <a class="header-anchor" href="#「命運舞台」的造價" aria-label="Permalink to &quot;「命運舞台」的造價&quot;"></a></h2>
-<h3 id="作者-止水" tabindex="-1">作者：止水 <a class="header-anchor" href="#作者-止水" aria-label="Permalink to &quot;作者：止水&quot;"></a></h3>
-<p>這篇切入的角度很有趣，讓人注意到孕育舞台少女的環境。</p>
-<ul>
-<li>港區女子：在富裕地區活動的年輕女性</li>
-<li>3A1R：赤坂、麻布、青山、六本木</li>
-<li>LDK：客廳、餐廳、廚房</li>
-<li>不動產評價：買賣事例、收益換算、再建築</li>
-</ul>
-<p>ACG世界觀有奇人異事不稀奇，但沒想到華戀家要四千萬台幣啊。</p>
-<h2 id="少女歌劇包場主辦心得與指南" tabindex="-1">少女歌劇包場主辦心得與指南 <a class="header-anchor" href="#少女歌劇包場主辦心得與指南" aria-label="Permalink to &quot;少女歌劇包場主辦心得與指南&quot;"></a></h2>
-<h3 id="作者-馬步蜥蜴" tabindex="-1">作者：馬步蜥蜴 <a class="header-anchor" href="#作者-馬步蜥蜴" aria-label="Permalink to &quot;作者：馬步蜥蜴&quot;"></a></h3>
-<p>本評論集有兩篇文在聊包場，令人不禁對參與、甚至舉辦有些心癢。等廻天上映時，先看「馬步洗包場幫」有何動作吧。</p>
-<h3 id="包場小技巧" tabindex="-1">包場小技巧 <a class="header-anchor" href="#包場小技巧" aria-label="Permalink to &quot;包場小技巧&quot;"></a></h3>
-<ul>
-<li>三階段：意願調查、正式報名、匯款</li>
-<li>也可以採用更有效率的報名匯款合一</li>
-<li>以匯款順序作為排位或抽獎依據很不錯</li>
-<li>可以考慮要不要辦映後聚餐</li>
-</ul>
-<h3 id="包場小八卦" tabindex="-1">包場小八卦 <a class="header-anchor" href="#包場小八卦" aria-label="Permalink to &quot;包場小八卦&quot;"></a></h3>
-<ul>
-<li>美麗華和in89資訊較透明</li>
-<li>查帳推薦台新和玉山</li>
-<li>車庫娛樂和樂聲有合作</li>
-</ul>
-<h2 id="光戀的客體關係詮釋" tabindex="-1">光戀的客體關係詮釋 <a class="header-anchor" href="#光戀的客體關係詮釋" aria-label="Permalink to &quot;光戀的客體關係詮釋&quot;"></a></h2>
-<h3 id="作者-董彧" tabindex="-1">作者：董彧 <a class="header-anchor" href="#作者-董彧" aria-label="Permalink to &quot;作者：董彧&quot;"></a></h3>
-<p>從《精神現象學》一路寫到精神分析，驗證我心中所感：評論家或創作者都該去了解心理防衛機轉。</p>
-<h3 id="讀者反應" tabindex="-1">讀者反應 <a class="header-anchor" href="#讀者反應" aria-label="Permalink to &quot;讀者反應&quot;"></a></h3>
-<ul>
-<li>諾曼霍蘭德（Norman N. Holland）將文學批評分成三個範疇：作者人格分析、讀者反應分析、角色人格分析</li>
-<li>少女歌劇的劇情即是對劇中劇《Starlight》的讀者反應分析</li>
-</ul>
-<h3 id="原初依賴" tabindex="-1">原初依賴 <a class="header-anchor" href="#原初依賴" aria-label="Permalink to &quot;原初依賴&quot;"></a></h3>
-<ul>
-<li>黑格爾的「嗜欲」：當嬰兒發現欲望會傷害人</li>
-<li>有「原初依賴創傷」會對關係缺乏控制感</li>
-<li>「兩個人的夢想無法實現」——愛對神樂光來說是零和的</li>
-<li>神樂光從真晝身上感受到「攻擊性可以不殺死客體」</li>
-<li>設置律法：華戀讓自己被拋棄不再顯得沒道理</li>
-<li>精神分析將精神病視為「失去客體」，如同失去閃耀</li>
-<li>思覺失調：意識到愛會傷人並使自己空虛</li>
-<li>憂鬱症：認為比起因自身的愛傷人，不如用恨</li>
-</ul>
-<h3 id="客體關係" tabindex="-1">客體關係 <a class="header-anchor" href="#客體關係" aria-label="Permalink to &quot;客體關係&quot;"></a></h3>
-<ul>
-<li>由克萊恩（Melanie Klein）提出</li>
-<li>投射性認同：由內而外。例如把吃不飽歸咎於壞乳房</li>
-<li>內攝：由外而內。例如把被好乳房餵飽歸功於自己</li>
-<li>分裂：好乳房和壞乳房之間沒有灰色地帶</li>
-<li>偏執─類分裂心理位置：由投射性認同、內攝和分裂組成</li>
-<li>憂鬱心理位置：認知到乳房並不是非黑即白，想要補償</li>
-<li>修復：創造力源於試圖修復和客體的關係</li>
-</ul>
-<h3 id="無意識人格結構" tabindex="-1">無意識人格結構 <a class="header-anchor" href="#無意識人格結構" aria-label="Permalink to &quot;無意識人格結構&quot;"></a></h3>
-<ul>
-<li>由費爾貝恩（Ronald Fairbairn）提出</li>
-<li>無意識人格結構：為避免精神病，以最大恨壓制最大愛</li>
-<li>原欲我：追逐興奮客體（客體誘惑我的部分／我愛的部分）</li>
-<li>反原欲我：連結拒斥客體（客體抗拒我的部分／我恨的部分）</li>
-</ul>
-<h2 id="追逐無意義" tabindex="-1">追逐無意義 <a class="header-anchor" href="#追逐無意義" aria-label="Permalink to &quot;追逐無意義&quot;"></a></h2>
-<h3 id="作者-魚子" tabindex="-1">作者：魚子 <a class="header-anchor" href="#作者-魚子" aria-label="Permalink to &quot;作者：魚子&quot;"></a></h3>
-<ul>
-<li>創作亦是於追逐無意義後再生產</li>
-</ul>
-<h2 id="舞台和現實的界線" tabindex="-1">舞台和現實的界線 <a class="header-anchor" href="#舞台和現實的界線" aria-label="Permalink to &quot;舞台和現實的界線&quot;"></a></h2>
-<h3 id="作者-chow-cyrus" tabindex="-1">作者：Chow Cyrus <a class="header-anchor" href="#作者-chow-cyrus" aria-label="Permalink to &quot;作者：Chow Cyrus&quot;"></a></h3>
-<ul>
-<li>「沒有人要知道誰為蝙蝠車的輪胎充氣」——Grant Morrison</li>
-<li>安德露：於手遊中登場的鼴鼠，和艾露一同經營地下劇場</li>
-<li>動畫第一集開場時有多重凝視</li>
-</ul>
-<h2 id="不平等的衝突" tabindex="-1">不平等的衝突 <a class="header-anchor" href="#不平等的衝突" aria-label="Permalink to &quot;不平等的衝突&quot;"></a></h2>
-<h3 id="作者-羊毛" tabindex="-1">作者：羊毛 <a class="header-anchor" href="#作者-羊毛" aria-label="Permalink to &quot;作者：羊毛&quot;"></a></h3>
-<ul>
-<li>少歌的場景總是表現出不平等，特別是階梯等高低位置</li>
-<li>劇場版讓選拔不再如場域理論般同一化，使不平等重新定義</li>
-</ul>
-<h2 id="一起打造舞台吧" tabindex="-1">一起打造舞台吧 <a class="header-anchor" href="#一起打造舞台吧" aria-label="Permalink to &quot;一起打造舞台吧&quot;"></a></h2>
-<h3 id="作者-李翔宇" tabindex="-1">作者：李翔宇 <a class="header-anchor" href="#作者-李翔宇" aria-label="Permalink to &quot;作者：李翔宇&quot;"></a></h3>
-<ul>
-<li>應援場來自歌舞伎的「大向こう」文化</li>
-<li>馬薩拉的原型來自印度，被日本模仿後加入紙吹雪</li>
-<li>閱讀創造：包含聯想、補充、豐富、強化</li>
-<li>蕉鹿之夢：比喻人生如夢，也是少歌同人誌</li>
-</ul>
-<h2 id="從超越論到臨在" tabindex="-1">從超越論到臨在 <a class="header-anchor" href="#從超越論到臨在" aria-label="Permalink to &quot;從超越論到臨在&quot;"></a></h2>
-<h3 id="作者-李佾學" tabindex="-1">作者：李佾學 <a class="header-anchor" href="#作者-李佾學" aria-label="Permalink to &quot;作者：李佾學&quot;"></a></h3>
-<ul>
-<li>王爾德認為莎士比亞很擅長用服裝指涉人物性格</li>
-<li>大場奈奈身穿的軍服指涉226事件</li>
-<li>華戀戰勝奈奈：代表revue結果不隨可視強度的民主性</li>
-<li>「透過欲望的的可視化重新配享了觀眾的感受性」</li>
-<li>選拔要爭奪Top Star，屬於超越意義體系</li>
-<li>「下克上」是為了打破原有關係，讓世界變得沒有更多外部</li>
-<li>電視版之概念是「超越論的」；劇場版之概念是「臨在的」</li>
-<li>輪迴系主角和《金閣寺》的溝口一樣，注視著不變的超越性之美</li>
-<li>無法被通約的一次性才是美，所以奈奈不能讓舞台混入常態性</li>
-<li>《金閣寺》指出「超越論內涵著臨在的渴望本身」</li>
-<li>不再依靠他人言語的純那超克了自己</li>
-<li>巴洛克文體：接納外部性，保持交流</li>
-</ul>
-<p>特別喜歡後記中那一句「長頸鹿皆有斑紋，但位置從未一致。」</p>
-<p>或許有天，不務正業的我也能找到燃燒自己的機會。</p>
+<h3 id="tonx" tabindex="-1">TONX <a class="header-anchor" href="#tonx" aria-label="Permalink to &quot;TONX&quot;"></a></h3>
+<p>斯拉夫人的APP設計哲學是All-in-one的Super APP，因此Telegram上面有Mini Apps，甚至可以買eSIM。</p>
+<h2 id="singapore" tabindex="-1">Singapore <a class="header-anchor" href="#singapore" aria-label="Permalink to &quot;Singapore&quot;"></a></h2>
+<h3 id="tabei" tabindex="-1">Tabei <a class="header-anchor" href="#tabei" aria-label="Permalink to &quot;Tabei&quot;"></a></h3>
+<p>談到Project Guardian是公私合作的RWA計畫，包含花旗、標普等機構皆有參與。而DBS推出過星展數位交易平台。</p>
+<h3 id="coinseeker" tabindex="-1">Coinseeker <a class="header-anchor" href="#coinseeker" aria-label="Permalink to &quot;Coinseeker&quot;"></a></h3>
+<p>相當於給創投看的Web3資料庫。</p>
+<p>CEO聊到TOKEN2049每年在新加坡和杜拜各舉行一次，規模最大。</p>
+<h3 id="berru" tabindex="-1">Berru <a class="header-anchor" href="#berru" aria-label="Permalink to &quot;Berru&quot;"></a></h3>
+<p>與新加坡第一個，也是最大的合規交易所Coinhako合作，為企業提供公司註冊、管理等秘書服務。</p>
+<h3 id="gsg" tabindex="-1">GSG <a class="header-anchor" href="#gsg" aria-label="Permalink to &quot;GSG&quot;"></a></h3>
+<p>聊到新加坡的金管會叫MAS（新加坡金管局），也是Project Guardian的推手。</p>
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[房屋租賃買賣筆記]]></title>
-            <link>https://haruowang.vercel.app/wealth/dwelling/house.html</link>
-            <guid>https://haruowang.vercel.app/wealth/dwelling/house.html</guid>
-            <pubDate>Tue, 24 Sep 2024 15:24:12 GMT</pubDate>
-            <description><![CDATA[從租房到買賣房的知識點整理]]></description>
-            <content:encoded><![CDATA[<h1 id="房屋租賃買賣筆記" tabindex="-1">房屋租賃買賣筆記 <a class="header-anchor" href="#房屋租賃買賣筆記" aria-label="Permalink to &quot;房屋租賃買賣筆記&quot;"></a></h1>
-<p><Badge type="info" text="🌱 Seedlings" /></P>
-<h2 id="租賃" tabindex="-1">租賃 <a class="header-anchor" href="#租賃" aria-label="Permalink to &quot;租賃&quot;"></a></h2>
+            <title><![CDATA[《臺灣自然寫作選》心得]]></title>
+            <link>https://haruowang.vercel.app/pov/thinking/nature.html</link>
+            <guid>https://haruowang.vercel.app/pov/thinking/nature.html</guid>
+            <pubDate>Thu, 21 Nov 2024 13:51:36 GMT</pubDate>
+            <description><![CDATA[「我像一位天真的自然書寫讀者，持續期待與觀察這個文類的演化與火花，這是老去的上一代唯一能做的事。演化安靜，卻從不回頭。」]]></description>
+            <content:encoded><![CDATA[<h1 id="《臺灣自然寫作選》心得" tabindex="-1">《臺灣自然寫作選》心得 <a class="header-anchor" href="#《臺灣自然寫作選》心得" aria-label="Permalink to &quot;《臺灣自然寫作選》心得&quot;"></a></h1>
+<p><Badge type="info" text="🌳 Evergreen" /></P>
+<blockquote>
+<p>「我像一位天真的自然書寫讀者，持續期待與觀察這個文類的演化與火花，這是老去的上一代唯一能做的事。演化安靜，卻從不回頭。」——吳明益</p>
+</blockquote>
+<p>在散文和小說之外，環境史亦是自然寫作的重要一環。吳明益老師首先於前言提及兩位先驅：沃斯特（Donald Worster）及克羅斯比（Alfred W. Crosby）。一位從美國西部延伸到行星史，一位則以「哥倫布大交換」來引出生態殖民主義。而其實在環境史被納入學術正典前，寫出「野性蘊藏著世界的救贖」之李奧波（Aldo Leopold），就在1949年透過《沙郡年記》做出嘗試。</p>
+<p>還有兩位學者不約而同地，都在談論「宰制」。米爾布雷斯（Lester W. Milbrath）的「宰制性社會」很直觀；艾斯勒（Riane Eisler）除了將近代社會比作具「宰制力量」的「宰制關係社會」，亦於《聖餐杯與刀刃》中，稱遠古社會為擁有「實現力量」之「夥伴關係社會」。</p>
+<p>國際浪潮外，本土政治所帶來的影響同樣不容忽視。1980年，時任行政院長孫運璿指示應保護紅樹林，而蘭嶼卻迎來核廢料第一期。兩年後，首座國家公園在墾丁落成，與影響深遠的「全球大自然憲章」互相呼應。85、86年，則各別有因應大里三晃農藥事件而生，最早的民間環保團體「吾愛吾村公害防衛會」，以及於反杜邦運動中留下文獻，第一份反公害刊物《鄉情》月刊的亮相。</p>
+<h2 id="環保報導文學" tabindex="-1">環保報導文學 <a class="header-anchor" href="#環保報導文學" aria-label="Permalink to &quot;環保報導文學&quot;"></a></h2>
+<p>於是臺灣自然寫作「從人文到非人」的歷程，便始於80年代。由專欄集結而成，1983年出版的《我們只有一個地球》被視為最早文本。而晨星出版陳銘民推出的「自然公園書系」，則是進一步推波助瀾。書單其中可見王家祥和陳玉峯的名字，兩人的行文風格其實都較屬於傳統的環保報導文學。前者在《臺灣自然寫作選》中登場三回，和劉克襄並列最多，並時常書寫到荒野和前文提及的李奧波。更為大眾所知的作品，或許是魏德聖導演《台灣三部曲》的靈感來源《倒風內海》。其還著有歷史奇幻小說《小矮人之謎》、《魔神仔》等作。2004年搬至都蘭照料流浪貓狗，持續關懷自然的實踐中。後者致力森林保育，寫過玉山圓柏和秀姑坪，文筆中帶有更深的理性。並為柯金源導演的紀錄片《神殿》配音，更以《台灣生態史話15講》的卡帶，啟發當年聽眾心靈。陳教授亦是一眾自然寫作者中，特別看重921地震對土地之影響的。</p>
+<p>曾參與制定「台灣貓節」的貓奴心岱，也是那個時代便投入自然報導之作家。採用「新新聞學」筆法寫就，刻劃恆春林區管理處副技師林火星之心路，呈現出瓊麻產業史的《美麗新世界》，讓她蟬聯時報文學獎的「報導文學甄選獎」。作為繩索主要原料的瓊麻，曾能在經由日本轉運至利物浦的過程中製造大量利益。然而農民卻始終只能作為「山奴」，被掌權者所剝削，或流淚看著中美演習的坦克輾過田野，直到麻繩沒落。</p>
+<h2 id="簡樸生活文學" tabindex="-1">簡樸生活文學 <a class="header-anchor" href="#簡樸生活文學" aria-label="Permalink to &quot;簡樸生活文學&quot;"></a></h2>
+<p>陳冠學和孟東籬的路數則屬簡樸生活文學，有點像是隱逸派。妙的是兩人的文章都出現過宗教要素。個人對於陳冠學的《九月十日》別具感觸。閱讀該文時，彷彿和作者一同在別名為芒的菅茅中迷茫。從典雅的字裡行間遇見屏東糞箕湖的潘家人時，也確有柳暗花明又一村之感。孟東籬在《愛生哲學芻議》裡藉由比較「愛生」（Biophilia）和「愛死」（Necrophilia）來傳達自身提倡的環境倫理，其豐富情史和一些令人直呼「やばい」的發言，也使眾人確信他著實「愛戀這個世界」。而Biophilia一詞也被威爾森（E.O. Wilson）所用，稱之為「親生命性」。這位和道金斯（Richard Dawkins）有過論戰的螞蟻先生，另外還提出日後被《馴羊記》所引用的「孤寂世」（Eremocene）。</p>
+<h2 id="自然寫作的未來" tabindex="-1">自然寫作的未來 <a class="header-anchor" href="#自然寫作的未來" aria-label="Permalink to &quot;自然寫作的未來&quot;"></a></h2>
+<p>到了徐振輔和《馴羊記》登上文壇之時，最常為大眾聽聞的自然寫作者也許已是吳明益了。最後一篇選錄進來，不只是老「吳」賣瓜的《忘川》融合蝶類知識及希臘神話，打造出和傳統自然寫作滋味十分不同的新觀點，替2003年編完的《臺灣自然寫作選》留下豹尾。</p>
+<p>接下來呢？若要依我自身觀察，幫近年這類型的創作歸納出關鍵字，我會說是「生態」和「登山」。從投身西藏探查雪豹，跨足不同文體和歷史場景的《馴羊記》，到黃瀚嶢書寫知本溼地，同樣摘下金典獎的《沒口之河》，2024年還有新秀林敬峰入圍即是肯定，甚至觸及到標本和烹飪話題的《山獸與雜魚》。此外，《看不見的雨林》與《橫斷臺灣》等，剛好都來自森林系系友的暢銷書籍，也是一大亮點。讀者對於動植物的好奇並沒有停。</p>
+<p>至於登山，一個讓我印象深刻的點是臉譜籌畫的「meters山岳文學書系」。這本身就是相關市場具足夠規模的證明。在《雪水消融的季節》和《群山之島與不去會死的他們》系列各自斬獲影視獎項之時，劉宸君的《我所告訴你關於那座山的一切》與郭熊的《走進布農的山》，同樣被金典獎所眷顧。另外還有《爛頭殼》導演兼DJ陳德政參與K2遠征的報導作品《神在的地方》。</p>
+<p>這說明山依舊是那樣危險又極具魅力。而未來的自然寫作更會多元並立。</p>
+<h2 id="參考文獻" tabindex="-1">參考文獻 <a class="header-anchor" href="#參考文獻" aria-label="Permalink to &quot;參考文獻&quot;"></a></h2>
 <ul>
-<li>公證時至少要帶三份租賃契約書</li>
-<li>兩押一租：因為押金不能超過兩個月</li>
-<li>不定期租約：租期一年以上但沒簽約，或租約到期沒更新</li>
-<li>不定期租約裡沒有「買賣不破租賃」</li>
-<li>租屋調解是免費的</li>
-<li>報稅時注意，目前租金扣除額最高12萬，房貸30萬</li>
-<li>房東的租賃所得如果分離課稅會比較透明</li>
-</ul>
-<h2 id="買賣" tabindex="-1">買賣 <a class="header-anchor" href="#買賣" aria-label="Permalink to &quot;買賣&quot;"></a></h2>
-<ul>
-<li>房市三大檔期：329、520、928</li>
-<li>價金信託：銀行版的履約保證。更有公信，卻也更不彈性</li>
-<li>新成屋自備款建議抓三成；裝潢建議抓一坪4-8萬</li>
-<li>簽約→用印→完稅→交屋，整個流程通常要抓45天</li>
-</ul>
-<h3 id="稅務" tabindex="-1">稅務 <a class="header-anchor" href="#稅務" aria-label="Permalink to &quot;稅務&quot;"></a></h3>
-<ul>
-<li>契稅：房屋移轉時要繳</li>
-<li>土地增值稅：土地移轉時要繳</li>
-<li>印花稅：對特殊憑證或文件徵收</li>
-<li>新北市是最慢通過囤房稅的直轄市</li>
-</ul>
-<h2 id="黑話" tabindex="-1">黑話 <a class="header-anchor" href="#黑話" aria-label="Permalink to &quot;黑話&quot;"></a></h2>
-<ul>
-<li>冒泡：成交</li>
-<li>冒大泡：成交金額高</li>
-<li>全泡：買賣雙方都是同仲介找的</li>
-<li>半泡：買賣雙方是不同仲介找的</li>
-<li>開底合一：開價即底價，不讓你殺價</li>
-<li>SAKURA：看房臨演</li>
+<li>吳明益（2003）。臺灣自然寫作選。二魚文化</li>
+<li>康瓅揚（2022）。臺灣自然導向文學的非人轉向。國立臺灣大學臺灣文學研究所</li>
 </ul>
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[居家裝修學習筆記]]></title>
-            <link>https://haruowang.vercel.app/wealth/dwelling/home.html</link>
-            <guid>https://haruowang.vercel.app/wealth/dwelling/home.html</guid>
-            <pubDate>Tue, 24 Sep 2024 15:14:53 GMT</pubDate>
-            <description><![CDATA[從建材到施工的知識點整理]]></description>
-            <content:encoded><![CDATA[<h1 id="居家裝修學習筆記" tabindex="-1">居家裝修學習筆記 <a class="header-anchor" href="#居家裝修學習筆記" aria-label="Permalink to &quot;居家裝修學習筆記&quot;"></a></h1>
-<p><Badge type="info" text="🌱 Seedlings" /></P>
-<h2 id="建材" tabindex="-1">建材 <a class="header-anchor" href="#建材" aria-label="Permalink to &quot;建材&quot;"></a></h2>
-<h3 id="地板" tabindex="-1">地板 <a class="header-anchor" href="#地板" aria-label="Permalink to &quot;地板&quot;"></a></h3>
+            <title><![CDATA[【Win95俄羅斯方塊：開發紀錄】]]></title>
+            <link>https://haruowang.vercel.app/dev/react/w95.html</link>
+            <guid>https://haruowang.vercel.app/dev/react/w95.html</guid>
+            <pubDate>Thu, 21 Nov 2024 11:55:25 GMT</pubDate>
+            <description><![CDATA[Cursor和v0聽久了，這次發現bolt可以線上秀出程式執行結果，決定一試]]></description>
+            <content:encoded><![CDATA[<h1 id="【win95俄羅斯方塊-開發紀錄】" tabindex="-1">【Win95俄羅斯方塊：開發紀錄】 <a class="header-anchor" href="#【win95俄羅斯方塊-開發紀錄】" aria-label="Permalink to &quot;【Win95俄羅斯方塊：開發紀錄】&quot;"></a></h1>
+<p><Badge type="info" text="🌳 Evergreen" /></P>
+<p><img src="/react/w91.webp" alt="Windows 95 Tetris" loading="lazy"></p>
+<p>Cursor和v0聽久了，這次發現bolt可以線上秀出程式執行結果，決定一試。</p>
+<p>這次挑戰開發的是「Windows 95風格的俄羅斯方塊」。基本架構請bolt幫我寫好，就可以專注在調整細節。</p>
+<h2 id="controls" tabindex="-1">Controls <a class="header-anchor" href="#controls" aria-label="Permalink to &quot;Controls&quot;"></a></h2>
+<p>雖說俄羅斯方塊的遊玩方式很簡單，但原有程式碼中並沒有給使用者「如何操作」的指南，所以我另外寫了「按向上的箭頭是旋轉」等提示，以「▲ Rotate」呈現。</p>
+<h2 id="pause" tabindex="-1">Pause <a class="header-anchor" href="#pause" aria-label="Permalink to &quot;Pause&quot;"></a></h2>
+<p>一款遊戲如果不能暫停，那實在是有些太緊湊了，不太人性。因此我另外定義一個布林值isPaused作為判斷，讓play鍵在遊戲途中能化為pause。</p>
+<h2 id="next-piece" tabindex="-1">Next Piece <a class="header-anchor" href="#next-piece" aria-label="Permalink to &quot;Next Piece&quot;"></a></h2>
+<p>原有程式碼中有個明顯問題是「下個方塊」的預覽有bug，研究一番後發現原來是沒有正確斷行，所以每個小方塊都想擠到同一行。加上style={ {gridColumnStart: piece.length == 2 &amp;&amp; j == 0 ? '1' : 'auto'} }即可解決。</p>
+<h2 id="mobile" tabindex="-1">Mobile <a class="header-anchor" href="#mobile" aria-label="Permalink to &quot;Mobile&quot;"></a></h2>
+<p>手機畢竟沒有實體鍵盤，所以另在Controls那寫了幾個供手指點擊的按鈕。</p>
+<h2 id="favicon" tabindex="-1">Favicon <a class="header-anchor" href="#favicon" aria-label="Permalink to &quot;Favicon&quot;"></a></h2>
+<p>從電腦上可以看到俄羅斯方塊在瀏覽器標籤上動起來。</p>
+<p>其實也有專門為React設計的<a href="https://github.com/oflisback/react-favicon" target="_blank" rel="noreferrer">react-favicon</a>，不過我這次是直接用AE Studio提供的<a href="https://www.faviconvideo.com" target="_blank" rel="noreferrer">Animated Favicon Generator</a>。</p>
+<h2 id="font" tabindex="-1">Font <a class="header-anchor" href="#font" aria-label="Permalink to &quot;Font&quot;"></a></h2>
+<p>W95FA好用，而且是OFL授權。</p>
+<h2 id="cursor" tabindex="-1">Cursor <a class="header-anchor" href="#cursor" aria-label="Permalink to &quot;Cursor&quot;"></a></h2>
+<p>既然是90年代的介面，自然要來玩玩<a href="https://tholman.com/cursor-effects" target="_blank" rel="noreferrer">90’s Cursor Effects</a>。</p>
+<h2 id="專案連結" tabindex="-1"><a href="https://w95tetris.vercel.app" target="_blank" rel="noreferrer">專案連結</a> <a class="header-anchor" href="#專案連結" aria-label="Permalink to &quot;[專案連結](https://w95tetris.vercel.app)&quot;"></a></h2>
+]]></content:encoded>
+            <enclosure url="https://haruowang.vercel.app/react/w91.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[【微軟收購史：開發紀錄】]]></title>
+            <link>https://haruowang.vercel.app/dev/react/msft.html</link>
+            <guid>https://haruowang.vercel.app/dev/react/msft.html</guid>
+            <pubDate>Thu, 21 Nov 2024 11:47:52 GMT</pubDate>
+            <description><![CDATA[按照官方給的dotlottie-react，程式碼可以寫到很簡潔，但做不到onScroll的效果。查找之後發現目前還可以用Lottie for React達成，寫法大致如下]]></description>
+            <content:encoded><![CDATA[<h1 id="【微軟收購史-開發紀錄】" tabindex="-1">【微軟收購史：開發紀錄】 <a class="header-anchor" href="#【微軟收購史-開發紀錄】" aria-label="Permalink to &quot;【微軟收購史：開發紀錄】&quot;"></a></h1>
+<p><Badge type="info" text="🌳 Evergreen" /></P>
+<p><img src="/react/ms1.webp" alt="Microsoft's Top-10 Acquisitions" loading="lazy"></p>
+<h2 id="shadecn" tabindex="-1">shadecn <a class="header-anchor" href="#shadecn" aria-label="Permalink to &quot;shadecn&quot;"></a></h2>
+<p>趁這次做side project，來試用心儀已久的shadcn/ui。</p>
+<p>首先照著指示輸入pnpm dlx shadcn@latest init -d，但這個官方指令會跳出&quot;Something went wrong creating a new Next.js project. Please try again.”</p>
+<p>也就是說，必須要先建立next專案。輸入pnpm create next-app@latest my-app --typescript --tailwind –eslint，再按照官方設定來。一個大重點是記得cd進my-app，再執行pnpm dlx shadcn@latest init -d。</p>
+<p>完成後便可以pnpm run dev。這時主控台出現Warning: Extra attributes from the server，在layout.tsx裡的html標籤加入suppressHydrationWarning解決問題。</p>
+<p>可以用pnpm dlx shadcn@latest add button先新增一個按鈕試試看。接下來要注意的就剩下：「每次新增組件時都要先add！」</p>
+<p>在「微軟十大收購」這個網站中，我本來就打算放入數位專題常用的圖表。add chart完之後，在調整XAxis（圖表的X軸）時會跳出警告：”XAxis: Support for defaultProps will be removed from function components in a future major release”，這時要裝一下recharts的alpha版。而recharts其實就是shadcn背後所用到的圖表庫。</p>
+<p>這次還有玩到card、carousel和progress組件等，運用得宜真的會很吸睛。</p>
+<h2 id="lottie" tabindex="-1">Lottie <a class="header-anchor" href="#lottie" aria-label="Permalink to &quot;Lottie&quot;"></a></h2>
+<p>除了長條圖之外，近年一直在UI領域被提及的Lottie也是我打算應用的。但想要不依賴AE來做MG還是有些坑要踩。像是官方提供的Lottie Creator實在太占瀏覽器資源，跑起來很卡。不過這也讓我發現到了Jitter的好，甚至可以直接匯出Lottie檔。</p>
+<p>按照官方給的dotlottie-react，程式碼可以寫到很簡潔，但做不到onScroll的效果。查找之後發現目前還可以用<a href="https://lottiereact.com" target="_blank" rel="noreferrer">Lottie for React</a>達成，寫法大致如下：</p>
+<div class="language-ts vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { useLottie, useLottieInteractivity } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> "lottie-react"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> msftLogo </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> "./msftLogo.json"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> options</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  animationData: msftLogo,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">};</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> style</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  maxWidth: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">640</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">};</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> lottieObj</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> useLottie</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(options, style);</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> Animation</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> useLottieInteractivity</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    lottieObj,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    mode: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"scroll"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    actions: [</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        visibility: [</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        type: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"seek"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        frames: [</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">120</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    ]</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  });</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{Animation}</span></span></code></pre>
+</div><p>現在的Lottie東一個限制西一個限制，尤其是免費版只能上傳十次檔案（不是十個）真的很惱人，所以要借重一些過往的小工具作為輔助。個人很推薦<a href="https://lottiefiles.com/tools/lottie-to-dotlottie" target="_blank" rel="noreferrer">dotLottie轉換器</a>和<a href="https://lottiefiles.github.io/lottie-docs/playground/json_editor" target="_blank" rel="noreferrer">JSON編輯器</a>。</p>
+<h2 id="設定" tabindex="-1">設定 <a class="header-anchor" href="#設定" aria-label="Permalink to &quot;設定&quot;"></a></h2>
+<p>幫網站調標題時發現這個專案的metadata不在next/head裡，要去layout.tsx裡找到export const metadata: Metadata進行修改。</p>
+<p>另外就是部署當下遇到eslint和vercel相互衝突的解法。這部分我稍微取巧了點，直接在.eslintrc.json關閉規則：</p>
+<div class="language-json vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">json</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  "extends"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"next"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  "rules"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    "react/no-unescaped-entities"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"off"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    "@next/next/no-page-custom-font"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"off"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div><h2 id="文本" tabindex="-1">文本 <a class="header-anchor" href="#文本" aria-label="Permalink to &quot;文本&quot;"></a></h2>
+<p>最後列出網站中的文字內容，也算是我選擇這個主題的原因之一：趁機了解並整理一間科技大廠近年的故事。</p>
+<blockquote>
+<p>「自從2000年開始，微軟的併購規模越來越大。其中2022年的動視暴雪一案，付出比LinkedIn昂貴不只兩倍的代價。還是靠著總裁Brad Smith和政府的良好關係，以及讓渡歐盟外「雲端媒體權益」給予育碧的善意，才躲過聯邦貿易委員會（FTC）和英國競爭與市場管理局（CMA）的反壟斷審查。」</p>
+</blockquote>
+<blockquote>
+<p>「回顧往昔的大買賣，不乏能找出敗筆。其中像廣告商aQuantive的62億美元商譽減值，就幾乎把這檔投資賠光了。而Nokia從手機霸主摔落，被HMD和「鴻海小金雞」富智康納入旗下的故事，亦是老生常談。吃下「工程師交友平台」GitHub的決定，更讓開源社群褒貶不一。」</p>
+</blockquote>
+<blockquote>
+<p>「不過，微軟畢竟能在科技圈站穩一席之地，自仍有其高明之處。特別是近年來和OpenAI之間的恩怨情仇，令這間老牌大廠在街談巷議中重現活力。提前部署AI醫療，進補Nuance Communications的效應也正逐漸發酵。了解歷史，梳理資訊。從圖表製作到AI，微軟至2024為止的十大併購，讓我們一探究竟。」</p>
+</blockquote>
+<blockquote>
+<p>「誠如所見，超過10億美元規模的案例目前只有三件。而就是仰仗動視暴雪、LinkedIn和Nuance Communications，讓微軟在目前最大的那些科技收購案中，分別佔據第一、第七和第九名。」</p>
+</blockquote>
+<h2 id="專案連結" tabindex="-1"><a href="https://msft-acquisition.vercel.app" target="_blank" rel="noreferrer">專案連結</a> <a class="header-anchor" href="#專案連結" aria-label="Permalink to &quot;[專案連結](https://msft-acquisition.vercel.app)&quot;"></a></h2>
+]]></content:encoded>
+            <enclosure url="https://haruowang.vercel.app/react/ms1.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[《裝幀時代》重點筆記]]></title>
+            <link>https://haruowang.vercel.app/pov/other/bind60.html</link>
+            <guid>https://haruowang.vercel.app/pov/other/bind60.html</guid>
+            <pubDate>Thu, 21 Nov 2024 10:25:17 GMT</pubDate>
+            <description><![CDATA[文學光啟：六、七零年代時，盛況接近大業書店和文壇社]]></description>
+            <content:encoded><![CDATA[<h1 id="《裝幀時代》重點筆記" tabindex="-1">《裝幀時代》重點筆記 <a class="header-anchor" href="#《裝幀時代》重點筆記" aria-label="Permalink to &quot;《裝幀時代》重點筆記&quot;"></a></h1>
+<p><Badge type="info" text="🌳 Evergreen" /></P>
+<blockquote>
+<p>「對我而言，編排一本書和構思一幅畫並無差別。」——Henri Matisse</p>
+</blockquote>
 <ul>
-<li>SPC：防焰但地況要求高。怕熱易滑，要留伸縮縫</li>
-<li>LVT：比SPC更耐熱，對地況要求低</li>
-<li>海島型超耐磨地板：表層是木紋美耐板</li>
-<li>木地板有三種主要工法：直舖、平舖、架高</li>
-<li>地磚建議用瓷質磚（石英磚），較貴但不易裂</li>
-<li>石質磚適合室內地面，陶質磚適合室內牆壁</li>
-<li>舒適毯：仿木紋捲式地板，方便但也有些缺點</li>
-<li>水泥粉光地板：觸感蠻冷，容易裂開、起砂、變色</li>
-<li>磐多磨：以水泥為底，來自德國的無接縫地板</li>
-<li>磐多磨缺點：貴、不耐刮、易吃色</li>
+<li>台灣美術和世界接軌：1927的台展三少年林玉山、陳進、郭雪湖</li>
+<li>台灣美術的兩次斷代：1949的政權交替和1980的數位普及</li>
+<li>台灣第一間廣告公司：1961的國華廣告</li>
 </ul>
-<h3 id="牆壁" tabindex="-1">牆壁 <a class="header-anchor" href="#牆壁" aria-label="Permalink to &quot;牆壁&quot;"></a></h3>
+<h2 id="裝幀家和他們的產地" tabindex="-1">裝幀家和他們的產地 <a class="header-anchor" href="#裝幀家和他們的產地" aria-label="Permalink to &quot;裝幀家和他們的產地&quot;"></a></h2>
 <ul>
-<li>烤漆玻璃：一才200</li>
-<li>銀狐大理石：一才800-1000</li>
+<li>廖未林與「大業書店」</li>
+<li>龍思良與「文星雜誌」</li>
+<li>黃華成與「遠景遠行」</li>
+<li>高山嵐與「皇冠雜誌」</li>
+<li>朱嘯秋與「文壇月刊」</li>
+<li>陳其茂與「光啟出版社」</li>
 </ul>
-<h3 id="板材" tabindex="-1">板材 <a class="header-anchor" href="#板材" aria-label="Permalink to &quot;板材&quot;"></a></h3>
+<h2 id="廖未林" tabindex="-1">廖未林 <a class="header-anchor" href="#廖未林" aria-label="Permalink to &quot;廖未林&quot;"></a></h2>
 <ul>
-<li>麻六甲木心板：又稱麻仔、噴嚏板</li>
-<li>柳安木：又稱芯仔，比麻仔貴。紅肉蟲比較不愛</li>
-<li>富美家：美耐板大品牌</li>
-<li>透心美耐板：沒黑邊</li>
-<li>LVL：單板層積材。經過膠合，用的比較是人造林</li>
-<li>F3板材：甲醛釋放量平均1.5以下，市面上最便宜</li>
-<li>PVC的壓紋比PP和美耐皿深</li>
-<li>舒然銘版：木料格柵 + 銘木夾板</li>
-<li>氧化鎂板：防火，但用在天花板容易變形。還是矽酸鈣板適合</li>
-<li>FENIX的熱修復據說可以抗細微刮痕</li>
-<li>波音軟片：波音客機以前的裝飾材料，裁切容易，又可做無縫。因為很軟，所以很注重黏貼表面的平整</li>
+<li>擅於配色，並承接「新藝術」風格</li>
+<li>知名作品有《藍與黑》、《心鎖》等</li>
+<li>曾於巴金的「文化生活出版社」打工</li>
+<li>常在杭州藝專參加戲劇活動，學會化妝</li>
+<li>曾和席德進一同居住在臨沂街</li>
+<li>設計第11屆亞洲影展的翠鳳金禾獎盃</li>
 </ul>
-<h2 id="空間" tabindex="-1">空間 <a class="header-anchor" href="#空間" aria-label="Permalink to &quot;空間&quot;"></a></h2>
-<h3 id="浴室" tabindex="-1">浴室 <a class="header-anchor" href="#浴室" aria-label="Permalink to &quot;浴室&quot;"></a></h3>
+<h2 id="龍思良" tabindex="-1">龍思良 <a class="header-anchor" href="#龍思良" aria-label="Permalink to &quot;龍思良&quot;"></a></h2>
 <ul>
-<li>C.S.R：穿鞋防滑係數。建議大於0.55</li>
-<li>C.S.R-B：赤腳防滑係數。建議大於0.6</li>
-<li>小洩：洩水坡度每公尺降1cm</li>
-<li>大洩：洩水坡度每公尺降2cm</li>
-<li>浴室燈的防塵防水等級建議達IP44</li>
-<li>單純IPX4只是防潑濺，固體防護力未知</li>
-<li>自平泥不適合用在浴室，不耐磨</li>
-<li>FRP浴缸：商務旅館常用。用的是玻璃纖維，比壓克力不耐用</li>
+<li>V-10視覺藝術群元老及古龍封面御用畫家</li>
+<li>其封面字體設計和手繪人物受到肯定</li>
+<li>1964，跟黃華成一起進台視當美術指導</li>
+<li>白先勇表示《現代文學》24期的封面「很刺激」</li>
+<li>曾替幼獅主編朱橋開的「文藝沙龍」做室內設計</li>
+<li>七等生在「文藝沙龍」打工過，軍中詩人沙牧也會來買醉</li>
 </ul>
-<h3 id="窗台" tabindex="-1">窗台 <a class="header-anchor" href="#窗台" aria-label="Permalink to &quot;窗台&quot;"></a></h3>
+<h2 id="黃華成" tabindex="-1">黃華成 <a class="header-anchor" href="#黃華成" aria-label="Permalink to &quot;黃華成&quot;"></a></h2>
 <ul>
-<li>飄窗：有270度視野，常改造成收納，要考量防水</li>
-<li>穿梭管：鋁製，直橫互相貫穿。是傳統鐵窗勁敵</li>
+<li>以「設計攝影」風格聞名</li>
+<li>身為《劇場》季刊核心成員</li>
+<li>被莊靈稱為「設計界的拓荒者」</li>
+<li>1974，為「出版小巨人」沈登恩成立的遠景設計封面</li>
+<li>隸屬於只有一人的「大台北畫派」</li>
+<li>其大台北畫派宣言格式仿自《道德經》之81章</li>
 </ul>
-<h3 id="結構" tabindex="-1">結構 <a class="header-anchor" href="#結構" aria-label="Permalink to &quot;結構&quot;"></a></h3>
+<h2 id="高山嵐" tabindex="-1">高山嵐 <a class="header-anchor" href="#高山嵐" aria-label="Permalink to &quot;高山嵐&quot;"></a></h2>
 <ul>
-<li>RC常用於低樓層、SRC用於中、SC用於高</li>
-<li>剪力牆通常是RC結構</li>
-<li>化學錨栓：抗震強，適合施工時長不用趕的建案</li>
-<li>包泥現象：擋土的連續壁中混入泥沙</li>
+<li>於「志文男與皇冠女」中，屬於後者</li>
+<li>會在土紙（金銀紙）上作畫</li>
+<li>擔綱美新處編輯，及《今日世界》雜誌美術設計</li>
+<li>被譽為水彩畫家暨豐年社創辦者藍蔭鼎第一接班人</li>
+<li>因參與《黑白展》結識平鑫濤</li>
+<li>插畫風格類似極簡寫實主義的Charley Harper</li>
+<li>創作台灣第一部紙上電影《幸運草》</li>
 </ul>
-<h2 id="施工" tabindex="-1">施工 <a class="header-anchor" href="#施工" aria-label="Permalink to &quot;施工&quot;"></a></h2>
+<h2 id="楊英風" tabindex="-1">楊英風 <a class="header-anchor" href="#楊英風" aria-label="Permalink to &quot;楊英風&quot;"></a></h2>
 <ul>
-<li>放樣：用雷射測量確認設計圖在現場的位置</li>
-<li>吊筋：骨架上方的垂直角料，透過樓板拉力穩住天花板</li>
-<li>喇叭鎖孔：直徑通常是5.4cm</li>
-<li>裝置距離：到門邊，通常是6cm</li>
-<li>甲蟲：一種拍拍手。讓門板輕按即可開啟</li>
+<li>擔任豐年社美編</li>
+<li>拜於郭柏川門下，並受朝倉文夫啟發</li>
+<li>在師大編《龍安文藝》時遭遇四六事件</li>
+<li>設計藍星徽章和藍星詩獎獎座</li>
 </ul>
-<h3 id="水電" tabindex="-1">水電 <a class="header-anchor" href="#水電" aria-label="Permalink to &quot;水電&quot;"></a></h3>
+<h2 id="梁雲坡" tabindex="-1">梁雲坡 <a class="header-anchor" href="#梁雲坡" aria-label="Permalink to &quot;梁雲坡&quot;"></a></h2>
 <ul>
-<li>排水孔可用氣球灌水堵住</li>
-<li>浸泡式止漏劑易有結晶，排水後要刷洗</li>
-<li>分段火排：可按季節調整水溫，但小公升通常沒有</li>
-<li>2、30坪的空間大約要配電75A</li>
-<li>電箱總安培數至少應達75A，建議100A</li>
-<li>每坪需要的冷氣能力：0.5-0.64kW</li>
-<li>電線品牌中，太平洋廣受好評</li>
-<li>2024電費：每月120度以下，1度1.68元</li>
+<li>藝壇三傑都是梁家人：梁鼎銘、中銘、又銘</li>
+<li>因數學掛零而報考北平藝專</li>
+<li>在文協見過廖未林，兩人都拿過金爵獎</li>
+<li>常用倒影手法</li>
 </ul>
-<h3 id="泥漆" tabindex="-1">泥漆 <a class="header-anchor" href="#泥漆" aria-label="Permalink to &quot;泥漆&quot;"></a></h3>
+<h2 id="朱嘯秋" tabindex="-1">朱嘯秋 <a class="header-anchor" href="#朱嘯秋" aria-label="Permalink to &quot;朱嘯秋&quot;"></a></h2>
 <ul>
-<li>模基：泥作參考基準。相當於麻糬、灰誌、標準餅</li>
-<li>硬底施工：費工費時又貴，品質最好。常用於牆面</li>
-<li>軟底施工：分成乾、濕式等。常用於地板，易膨拱</li>
-<li>對付插座破口：批土+石膏粉補兩次</li>
-<li>第一次比例2：1，第二次批土再多點</li>
-<li>壁癌粉：水 = 3：1</li>
-<li>乳膠漆：可耐濕抹布擦拭</li>
-<li>一底二度：通常是指上一次批土，刷兩次油漆</li>
-<li>防水漆要上一道底漆、兩道面漆</li>
-<li>陰陽角：牆面轉折的凹凸處</li>
+<li>執掌《文壇》，被稱為朱老編</li>
+<li>創辦《詩．散文．木刻》、《青年俱樂部》時接連使用十六開本</li>
+<li>小說家朱西甯將這股大開本風潮稱為「朱嘯秋時代」</li>
+<li>參與「戰鬥木刻」運動</li>
+</ul>
+<h2 id="陳其茂" tabindex="-1">陳其茂 <a class="header-anchor" href="#陳其茂" aria-label="Permalink to &quot;陳其茂&quot;"></a></h2>
+<ul>
+<li>外號是「台灣現代版畫的拓荒者」</li>
+<li>同時是花蓮師專的老師</li>
+<li>《文藝列車》主編一員</li>
+<li>光啟的雷煥章神父會騎車到東海和大學生聊天</li>
+<li>文學光啟：六、七零年代時，盛況接近大業書店和文壇社</li>
 </ul>
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[關於我]]></title>
-            <link>https://haruowang.vercel.app/about/about-me/haruo.html</link>
-            <guid>https://haruowang.vercel.app/about/about-me/haruo.html</guid>
-            <pubDate>Mon, 23 Sep 2024 06:26:31 GMT</pubDate>
-            <description><![CDATA[主修印刷出版及色彩，學士論文爬梳草率季。關注影像理論和軟體研究，自學前端、親近Web3。認同Live Coding與開源文化交織的關係]]></description>
-            <content:encoded><![CDATA[<h1 id="關於我" tabindex="-1">關於我 <a class="header-anchor" href="#關於我" aria-label="Permalink to &quot;關於我&quot;"></a></h1>
+            <title><![CDATA[《重寫臺灣百年新詩史》筆記]]></title>
+            <link>https://haruowang.vercel.app/pov/other/poem100.html</link>
+            <guid>https://haruowang.vercel.app/pov/other/poem100.html</guid>
+            <pubDate>Thu, 21 Nov 2024 10:17:01 GMT</pubDate>
+            <description><![CDATA[相較《台灣新詩史》的「文本主義」，《台灣現代詩史》的「文本至上」更注重文本自身，被本文作者所認同，並收錄了沒那麼主流，曾是夫妻檔的張健和蘇白宇之作品。而洛夫則同時受到兩本詩史之肯定]]></description>
+            <content:encoded><![CDATA[<h1 id="《重寫臺灣百年新詩史》筆記" tabindex="-1">《重寫臺灣百年新詩史》筆記 <a class="header-anchor" href="#《重寫臺灣百年新詩史》筆記" aria-label="Permalink to &quot;《重寫臺灣百年新詩史》筆記&quot;"></a></h1>
+<p><Badge type="info" text="🌳 Evergreen" /></P>
+<ul>
+<li>1925，楊雲萍創辦第一本白話刊物《人人》</li>
+<li>張我軍的台灣第一本新詩集《亂都之戀》，也曾部分刊載於此</li>
+</ul>
+<h2 id="詩史的波瀾風景" tabindex="-1">詩史的波瀾風景 <a class="header-anchor" href="#詩史的波瀾風景" aria-label="Permalink to &quot;詩史的波瀾風景&quot;"></a></h2>
+<ul>
+<li>目前為止，台灣有五本新詩史</li>
+<li>相較《台灣新詩史》的「文本主義」，《台灣現代詩史》的「文本至上」更注重文本自身，被本文作者所認同，並收錄了沒那麼主流，曾是夫妻檔的張健和蘇白宇之作品。而洛夫則同時受到兩本詩史之肯定</li>
+</ul>
+<h2 id="臺灣大陸新詩百年交流史" tabindex="-1">臺灣大陸新詩百年交流史 <a class="header-anchor" href="#臺灣大陸新詩百年交流史" aria-label="Permalink to &quot;臺灣大陸新詩百年交流史&quot;"></a></h2>
+<ul>
+<li>五四時期是所有華文新詩的共同源頭</li>
+<li>沈奇和陳仲義都是關注臺灣詩壇的中國詩評</li>
+</ul>
+<h3 id="三種痛苦" tabindex="-1">三種痛苦 <a class="header-anchor" href="#三種痛苦" aria-label="Permalink to &quot;三種痛苦&quot;"></a></h3>
+<ul>
+<li>洛夫的痛苦：孤身來台，選擇大陸或台灣</li>
+<li>林亨泰的痛苦：從日治到民國的語言轉換</li>
+<li>張我軍的痛苦：類似洛夫，但方向相反</li>
+</ul>
+<h2 id="台灣女詩人互文文本" tabindex="-1">台灣女詩人互文文本 <a class="header-anchor" href="#台灣女詩人互文文本" aria-label="Permalink to &quot;台灣女詩人互文文本&quot;"></a></h2>
+<ul>
+<li>葉紅女性詩獎：華文圈唯一女性詩獎</li>
+<li>女鯨詩社：台灣第一個女性詩社</li>
+<li>李元貞：除了參與女鯨，還創辦「婦女新知雜誌社」，是臺灣婦運先鋒</li>
+<li>克里斯蒂娃將文本分成種動文本（genotext）和現象文本（phenotext），前者被視為拓撲，屬於符號化過程，較深層；後者被視為代數，是人們日常溝通的語言</li>
+</ul>
+<h2 id="笠社政治詩的歷史語境" tabindex="-1">笠社政治詩的歷史語境 <a class="header-anchor" href="#笠社政治詩的歷史語境" aria-label="Permalink to &quot;笠社政治詩的歷史語境&quot;"></a></h2>
+<ul>
+<li>1964年，笠詩刊和吳濁流的台灣文藝創刊</li>
+<li>許世楷：台灣新憲法草案發起人</li>
+<li>李敏勇：拿過國家文藝獎</li>
+</ul>
+<h3 id="三位醫生詩人" tabindex="-1">三位醫生詩人 <a class="header-anchor" href="#三位醫生詩人" aria-label="Permalink to &quot;三位醫生詩人&quot;"></a></h3>
+<ul>
+<li>鄭炯明被陳千武提拔</li>
+<li>關鍵字是「抵抗的詩學」</li>
+<li>鄭炯明的兒子是鄭秉泓</li>
+<li>江自得以病理介入社會</li>
+<li>擔任過阿米巴社長</li>
+<li>相較鄭和江，曾貴海是最激進的</li>
+<li>受《生之慾》影響而投入南方綠色革命</li>
+<li>三人合著過《三稜鏡》</li>
+</ul>
+<h2 id="大陸遷台詩人的主流匯成" tabindex="-1">大陸遷台詩人的主流匯成 <a class="header-anchor" href="#大陸遷台詩人的主流匯成" aria-label="Permalink to &quot;大陸遷台詩人的主流匯成&quot;"></a></h2>
+<ul>
+<li>1951年，新詩週刊由「詩壇三老」 鍾鼎文、葛賢寧、紀弦共同開辦</li>
+<li>鍾鼎文是自立晚報總主筆</li>
+<li>蘇雪林發起省婦協，曾登上文訊創刊號封面</li>
+<li>洛夫和瘂弦曾服務於明德新村的海軍電台</li>
+<li>文曉村是葡萄園詩刊的總編</li>
+<li>野風雜誌由台糖職員所創，走抒情風格</li>
+<li>「天狼星論戰」由余光中對上洛夫</li>
+<li>楊喚曾是葉泥下屬，兩人想過一起辦詩刊</li>
+<li>葉泥還發起過「獵人集」詩人小聚</li>
+<li>《南北笛》季刊是南北部詩人的串聯，不屬於任何詩社和詩派</li>
+<li>作者認為紀弦和覃子豪會賞識本土詩人，可能是因為懂日文。兩人都致力新詩的教育推廣</li>
+<li>黃荷生是紀弦的「路門五傑」之一，經典詩集為《觸覺生活》</li>
+<li>胡楚卿帶花蓮學生編印海鷗詩刊。敻虹投過</li>
+</ul>
+<h2 id="《六十年代詩選》與《七十年代詩選》" tabindex="-1">《六十年代詩選》與《七十年代詩選》 <a class="header-anchor" href="#《六十年代詩選》與《七十年代詩選》" aria-label="Permalink to &quot;《六十年代詩選》與《七十年代詩選》&quot;"></a></h2>
+<ul>
+<li>也斯在1962受前者影響</li>
+<li>楊牧有批評過後者</li>
+<li>「六十年代」只是觀念標示，實則收錄五十年代的作品</li>
+<li>羈魂說《詩朵》是「第一本由香港年青一代所創辦的詩刊。」</li>
+<li>劉以鬯曾主編香港時報的副刊《淺水灣》</li>
+<li>《好望角》和《創世紀》合作密切</li>
+<li>古倉梧曾任漢聲主編，認為三、四十年代的山峰比較明朗，並發表《請走出文字的迷宮》評論《七十年代詩選》</li>
+</ul>
+<h2 id="論散文詩的生成與泯滅" tabindex="-1">論散文詩的生成與泯滅 <a class="header-anchor" href="#論散文詩的生成與泯滅" aria-label="Permalink to &quot;論散文詩的生成與泯滅&quot;"></a></h2>
+<ul>
+<li>劉半農將波特萊爾的Poème en prose翻譯成「散文詩」</li>
+<li>散文詩也有兩個根球，分別是劉半農、魯迅等人對波特萊爾、泰戈爾等文體之臨摹。另一半則是風車詩社的超現實</li>
+<li>秀陶的《白色的衝刺》被商禽視為「驚心」論之濫觴，但本身高呼「散文詩何必獨沽驚心一味」</li>
+<li>驚心的代表是蘇紹連</li>
+<li>紀德的《地糧》影響蘇紹連</li>
+<li>《詩學》將文學分作抒情、敘事、戲劇</li>
+<li>沈臨彬寫各種手記，人稱「方壺漁夫」</li>
+<li>杜十三被白靈稱作跨媒介的「火焰之子」，認為文學該從先驗式第一自然和人造式第二自然轉往聲光電波構築的第三自然</li>
+<li>莫渝熟悉世界散文詩史，曾任笠詩刊主編。積極譯介法文詩，主編《台灣自然生態詩語》</li>
+</ul>
+<h2 id="顏元叔與《中外文學》的批評實踐" tabindex="-1">顏元叔與《中外文學》的批評實踐 <a class="header-anchor" href="#顏元叔與《中外文學》的批評實踐" aria-label="Permalink to &quot;顏元叔與《中外文學》的批評實踐&quot;"></a></h2>
+<ul>
+<li>顏元叔用「定向疊景」來說明葉維廉的詩作</li>
+<li>比起重視形式的新批評，顏元叔更重視主題</li>
+<li>他認為「文學是哲學的戲劇化」，重視詩的道德，所以喜歡余光中的民族情感</li>
+<li>結構字質相對說：由蘭森提出，將結構視為詩可被轉述的「內容」，將字質視為詩的本質，兩者可分開。不同於提倡反諷的布魯克斯</li>
+<li>唐文標事件：認為現代詩太舶來而引發論戰</li>
+<li>中外文學是包容新舊世代的平台</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[2024的生活]]></title>
+            <link>https://haruowang.vercel.app/about/lifelog/2024.html</link>
+            <guid>https://haruowang.vercel.app/about/lifelog/2024.html</guid>
+            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
+            <description><![CDATA[2024年，Haruo Wang的生活要事]]></description>
+            <content:encoded><![CDATA[<h1 id="_2024的生活" tabindex="-1">2024的生活 <a class="header-anchor" href="#_2024的生活" aria-label="Permalink to &quot;2024的生活&quot;"></a></h1>
 <p><Badge type="info" text="🌿 Budding" /></P>
-<h2 id="簡介" tabindex="-1">簡介 <a class="header-anchor" href="#簡介" aria-label="Permalink to &quot;簡介&quot;"></a></h2>
-<p>主修印刷出版及色彩，學士論文爬梳草率季。關注影像理論和軟體研究，自學前端、親近Web3。認同Live Coding與開源文化交織的關係。</p>
-<p>Haruo Wang majored in printing, publishing, and color studies, with his bachelor's thesis explored the Taipei Art Book Fair. He has a keen interest in image theory and software studies, and closely engaging with front-end development and Web3 technologies. He agrees to the intertwined relationship between live coding and open source culture.</p>
-<h2 id="設計" tabindex="-1">設計 <a class="header-anchor" href="#設計" aria-label="Permalink to &quot;設計&quot;"></a></h2>
-<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=Figma&logoColor=fff" alt="Figma" style="display: inline">
-<img src="https://img.shields.io/badge/Blender-F57A3B?style=for-the-badge&logo=blender&logoColor=fff" alt="Blender" style="display: inline">
-<img src="https://img.shields.io/badge/PS-31A8FF?style=for-the-badge&logo=Adobe-Photoshop&logoColor=fff" alt="Adobe Photoshop" style="display: inline">
-<img src="https://img.shields.io/badge/AI-FF9A00?style=for-the-badge&logo=Adobe-Illustrator&logoColor=fff" alt="Adobe Illustrator" style="display: inline">
-<img src="https://img.shields.io/badge/ID-EE3D8F?style=for-the-badge&logo=Adobe-InDesign&logoColor=fff" alt="Adobe InDesign" style="display: inline">
-<img src="https://img.shields.io/badge/PR-EA77FF?style=for-the-badge&logo=Adobe-Premiere-Pro&logoColor=fff" alt="Adobe Premiere Pro" style="display: inline">
-<img src="https://img.shields.io/badge/AE-9999FF?style=for-the-badge&logo=Adobe-After-Effects&logoColor=fff" alt="Adobe After Effects" style="display: inline">
-<h2 id="技術" tabindex="-1">技術 <a class="header-anchor" href="#技術" aria-label="Permalink to &quot;技術&quot;"></a></h2>
-<img src="https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=fff" alt="HTML5" style="display: inline">
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3" alt="CSS3" style="display: inline">
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=333" alt="JavaScript" style="display: inline">
-<img src="https://img.shields.io/badge/p5.js-ED225D?style=for-the-badge&logo=p5.js" alt="p5.js" style="display: inline">
-<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=333" alt="React" style="display: inline">
-<img src="https://img.shields.io/badge/Vercel-333?style=for-the-badge&logo=vercel" alt="Vercel" style="display: inline">
-<img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=fff" alt="Postman" style="display: inline">
-<img src="https://img.shields.io/badge/VS%20CODE-007ACC?style=for-the-badge&logo=VisualStudioCode&logoColor=fff" alt="Visual Studio Code" style="display: inline">
-<img src="https://img.shields.io/badge/-GA4-E37400?style=for-the-badge&logo=google%20analytics&logoColor=fff" alt="Google Analytics" style="display: inline">
-<h2 id="常用語言" tabindex="-1">常用語言 <a class="header-anchor" href="#常用語言" aria-label="Permalink to &quot;常用語言&quot;"></a></h2>
-<p><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HaruoWang&amp;layout=compact" alt="Top Langs" loading="lazy"></p>
+<h2 id="jan" tabindex="-1">Jan <a class="header-anchor" href="#jan" aria-label="Permalink to &quot;Jan&quot;"></a></h2>
+<ul>
+<li>完成臺藝大圖文系學士論文</li>
+<li>參與臺藝大藝教所教育劇場演出</li>
+<li>撰寫北藝大藝跨所及藝管所審查資料</li>
+<li>參與凌華科技年終尾牙</li>
+<li>參與TempoX《積沙成島》沙龍</li>
+</ul>
+<h2 id="feb" tabindex="-1">Feb <a class="header-anchor" href="#feb" aria-label="Permalink to &quot;Feb&quot;"></a></h2>
+<ul>
+<li>於月見ル君想フ聆聽《複鳴 Resonarmonic》</li>
+<li>觀賞黃彥超《娃娃國 娃娃町》表演與座談</li>
+<li>埋首臺藝大圖文系畢業製作</li>
+</ul>
+<h2 id="mar" tabindex="-1">Mar <a class="header-anchor" href="#mar" aria-label="Permalink to &quot;Mar&quot;"></a></h2>
+<ul>
+<li>觀賞張紋瑄《倒數第二個箱子》限定演出</li>
+<li>面試北藝大藝跨所及藝管所</li>
+<li>參與短片與影像教學研習《年尾巴》</li>
+<li>參與網路自由小聚《數位皮夾》</li>
+<li>參與卓新沙龍《短影音當道》</li>
+</ul>
+<h2 id="apr" tabindex="-1">Apr <a class="header-anchor" href="#apr" aria-label="Permalink to &quot;Apr&quot;"></a></h2>
+<ul>
+<li>投稿《聯合文學》小說新人賞</li>
+<li>發表臺藝大圖文系學士論文</li>
+<li>聆聽黃大旺《阿Q正傳》講述表演</li>
+<li>觀賞Gen3《必勝營 Demo Day》</li>
+<li>拍攝專題《潭底》，投件New Wave</li>
+<li>完成臺藝大圖文系畢業製作</li>
+</ul>
+<h2 id="may" tabindex="-1">May <a class="header-anchor" href="#may" aria-label="Permalink to &quot;May&quot;"></a></h2>
+<ul>
+<li>參與校內畢展及新一代設計展</li>
+<li>參與臺北文學季講座《一本雜誌影響時代的潛力》</li>
+<li>投件Postman Japan線上黑客松</li>
+<li>進場觀賞兩部TIDF紀錄片</li>
+<li>研究L系統和Shader，投件《台灣島。鏈》及《若水》</li>
+<li>優化臺藝大圖文系畢業製作</li>
+</ul>
+<h2 id="jun" tabindex="-1">Jun <a class="header-anchor" href="#jun" aria-label="Permalink to &quot;Jun&quot;"></a></h2>
+<ul>
+<li>逛《Starry Memoir》少歌Only</li>
+<li>參與XueDao前端工作坊</li>
+<li>開始數位人才探索計畫</li>
+<li>參與沈柏逸演講《注意力調控》</li>
+<li>受文總邀請觀賞《夏日的文化洋行》</li>
+</ul>
+<h2 id="jul" tabindex="-1">Jul <a class="header-anchor" href="#jul" aria-label="Permalink to &quot;Jul&quot;"></a></h2>
+<ul>
+<li>開始日本書籍reDesign計畫</li>
+<li>參與半路二BAR《暖暖飯糰屋》</li>
+<li>前往臺東市區與都蘭獨旅</li>
+<li>於王道銀行參與《形塑空響》演出</li>
+<li>投稿《愛動物的人》讀後短評</li>
+</ul>
+<h2 id="aug" tabindex="-1">Aug <a class="header-anchor" href="#aug" aria-label="Permalink to &quot;Aug&quot;"></a></h2>
+<ul>
+<li>延續日本書籍reDesign計畫</li>
+<li>參與2024《iThome鐵人賽》</li>
+<li>投件Solana Write-a-thon</li>
+<li>參與楊雨樵《音樂史》新書聽講會</li>
+<li>於剝皮寮觀賞Tshit-thô-lâng影展</li>
+<li>於月見ル君想フ觀賞Sunny Day Service紀錄片</li>
+</ul>
+<h2 id="sep" tabindex="-1">Sep <a class="header-anchor" href="#sep" aria-label="Permalink to &quot;Sep&quot;"></a></h2>
+<ul>
+<li>2024《iThome鐵人賽》完賽</li>
+<li>製作味噌湯、油封秋刀魚、起司鮪魚洋蔥</li>
+<li>製作油豆腐鯖魚、吻仔魚炒飯、豆皮包蛋</li>
+<li>嘗試用thirdweb快速開發dapp</li>
+<li>自架RSSHub，達成開源貢獻</li>
+<li>參與《開源祭》和《耳中手顫鐵汁黑暗》</li>
+<li>參與以太坊紀錄片放映活動</li>
+<li>參與網路自由小聚《AI基本法》</li>
+<li>為部落格加入RSS訂閱功能</li>
+<li>完成書籍reDesign計畫第一階段</li>
+<li>使用Strudel數位cover鷺巢詩郎名曲</li>
+</ul>
+<h2 id="oct" tabindex="-1">Oct <a class="header-anchor" href="#oct" aria-label="Permalink to &quot;Oct&quot;"></a></h2>
+<ul>
+<li>開發微軟十年收購史網站</li>
+<li>開發承太郎GPT，微調4o-mini模型</li>
+<li>開發Win95風格的俄羅斯方塊網站</li>
+<li>攀登芝山岩並拍攝巴勒斯坦遊行</li>
+<li>使用富邦證券新一代API下單</li>
+<li>製作煎蘿蔔糕、避風塘雞肉</li>
+<li>製作米布丁、紅豆大福</li>
+<li>製作鮮蝦沙拉、佃煮昆布、湯圓</li>
+<li>參與《2024影視聽研究交流會》</li>
+<li>參與《製作歐文活字的挑戰》座談</li>
+<li>更換自家後陽台的紗窗網布</li>
+<li>參與北藝策展社首場社團聚會</li>
+</ul>
+<h2 id="nov" tabindex="-1">Nov <a class="header-anchor" href="#nov" aria-label="Permalink to &quot;Nov&quot;"></a></h2>
+<h2 id="dec" tabindex="-1">Dec <a class="header-anchor" href="#dec" aria-label="Permalink to &quot;Dec&quot;"></a></h2>
 ]]></content:encoded>
-            <enclosure url="https://github-readme-stats.vercel.app/api/top-langs/?username=HaruoWang&amp;layout=compact" length="0" type="image//api/top-langs/"/>
+        </item>
+        <item>
+            <title><![CDATA[2024的品味]]></title>
+            <link>https://haruowang.vercel.app/about/taste/2024.html</link>
+            <guid>https://haruowang.vercel.app/about/taste/2024.html</guid>
+            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
+            <description><![CDATA[2024年，Haruo Wang的音樂、影像、閱讀品味]]></description>
+            <content:encoded><![CDATA[<h1 id="_2024的品味" tabindex="-1">2024的品味 <a class="header-anchor" href="#_2024的品味" aria-label="Permalink to &quot;2024的品味&quot;"></a></h1>
+<p><Badge type="info" text="🌿 Budding" /></P>
+<h2 id="jan" tabindex="-1">Jan <a class="header-anchor" href="#jan" aria-label="Permalink to &quot;Jan&quot;"></a></h2>
+<h3 id="what-i-hear" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
+<p>謝銘祐《路》、スリーズブーケ《水彩世界》、芒果醬《我喜歡你》、Ave Mujica《Angles》、キタニタツヤ《聖者の行進》、四分衛《雨和眼淚》、稲本響《名残の指先》、夏之禹《姐姐》、神前曉《以下、回想》、Air《Alone in Kyoto》、コレサワ《これから》、back number《冬と春》、鷺巢詩郎《Instabilite:Orchestre》、回春丹《鮮花》</p>
+<h3 id="what-i-see" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
+<p>《日子》、《蜂巢的幽靈》、《君主計畫：神秘組織與怪獸之謎》、《150米的人生可能》</p>
+<h3 id="what-i-read" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
+<p>《社會參與藝術的十個關鍵概念》</p>
+<h2 id="feb" tabindex="-1">Feb <a class="header-anchor" href="#feb" aria-label="Permalink to &quot;Feb&quot;"></a></h2>
+<h3 id="what-i-hear-1" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-1" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
+<p>Lorne Balfe《Calling Home》、日向敏文《Good Evening, Heartache (Orchestra Version)》、鷺巢詩郎《M10 emotion strings edit》、大原ゆい子《風と行く道》、楠木ともり《アノーイング! さんさんウィーク!》、森英治《Proof》、薬師寺寛邦《楞嚴咒 -第五会- 》、Vivy《Fluorite Eye's Song》、黃嘉千《阿爸食飯》、千住明《The Intrepid》、My Chemical Romance《I Don't Love You》、Coldplay《The Scientist》、菅野洋子《some other time》、Jóhann Jóhannsson《Through Falling Snow》、Mira-Cra Park！《Milk》、關戶剛《ラナラウンド Pt.I (FF7R Ver.)》、倉持武志《YO (Acid Jazz Ver.)》、MyGO!!!!!《詩超絆》、津田朱里《Twinkle Snow '13》、昏鴉《Mickey Mouse》</p>
+<h3 id="what-i-see-1" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-1" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
+<p>《BanG Dream! Its MyGO!!!!!》、《度日》、《錄影帶謀殺案》</p>
+<h3 id="what-i-read-1" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-1" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
+<p>《如何書寫當代藝術》</p>
+<h2 id="mar" tabindex="-1">Mar <a class="header-anchor" href="#mar" aria-label="Permalink to &quot;Mar&quot;"></a></h2>
+<h3 id="what-i-hear-2" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-2" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
+<p>釘宮理惠、堀江由衣、喜多村英梨《プレパレード》、SELFKILL《Where are you going?》、優雅逆轉《五月的雨》、頭部組成者《生育叢林》、步行者《夜光信號》、2HRs《Startide Rising》、藤川千愛《好きになってはいけない理由》、我是機車少女《Yume》、the neverminds《melt》、Angela Aki《この世界のあちこちに》、Habak《Ningún muro consiguió jamás contener la primavera》、Trent Reznor &amp; Atticus Ross《Hand Covers Bruise》、yonige《walk walk》、具島直子《I Love You》、John Carpenter《My Name is Death》、久石讓《大崩壊》、鈴村健一《ババーンと推参! バーンブレイバーン - ブレイバーン》、Lambiris《残光》、菅野祐悟《Panic Sense》、DE DE MOUSE《Memory Lane》、rionos《Viator》 、CHEMISTRY《最期の川》、菅野洋子《Blue feat. Maya》、R-Tiat《暗光》</p>
+<h3 id="what-i-see-2" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-2" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
+<p>《勇氣爆發》、《聖血》、《社群網戰》、《年尾巴》、《霧中風景》、《冥王》、《周處除三害》</p>
+<h3 id="what-i-read-2" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-2" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
+<p>《2017鴻梅新人獎巡迴展作品集無人之地》、《藝術論壇Volume11》、《我將是你的鏡子：世界當代攝影家告白》</p>
+<h2 id="apr" tabindex="-1">Apr <a class="header-anchor" href="#apr" aria-label="Permalink to &quot;Apr&quot;"></a></h2>
+<h3 id="what-i-hear-3" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-3" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
+<p>靴腿《失去愛情的摩托車手》、JADE《Step By Step》、謝震廷feat.徐靖玟《你的行李》、沉舟樂隊《就讓我墜入海底》、SUGIZO feat. GLIM SPANKY《めぐりあい》、蓮ノ空《抱きしめる花びら》、sweet ARMS《ヒトヒラ》、岩崎琢《Rubicon》、芒果醬《小紫aka給我錢》、Eve《心海》、陳勢安《不想說晚安》、P-MODEL《2D OR NOT 2D》、梅林太郎《Yuri on ICE》、林奕匡《高山低谷》、山田珠露《Always in my heart》、鷺巢詩郎《閉塞の拡大》、Cerise Bouquet《Holiday Holiday》、Cocco《Raining》、既定偏離《人生逃避號》、Liella!《シェキラ》、reche《命運》、《ゴジランド》、張瑋瑋《米店》、Ivy to Fraudulent Game《青二才》、菅野陽子《piece by ten》、dress《Is the only》、藤間仁《表裏一体》、藤田淳平《月明り》、佐佐木惠梨《ロッホと旅人》</p>
+<h3 id="what-i-see-3" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-3" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
+<p>《浮光掠影：每個人心中的電影院》、《搬家》、《哥吉拉與金剛：新帝國》、《父親的房間》</p>
+<h3 id="what-i-read-3" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-3" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
+<p>《繩》、《裝幀時代》、《開店指「難」：第一次開獨立書店就 □□！》</p>
+<h2 id="may" tabindex="-1">May <a class="header-anchor" href="#may" aria-label="Permalink to &quot;May&quot;"></a></h2>
+<h3 id="what-i-hear-4" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-4" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
+<p>佐藤直紀《Godzilla-1.0 Last》、夏之禹《Hometown》、KUNTARI《Larynx, Pt. One》、Nirvana《Jesus Doesn't Want Me For A Sunbeam》、시온《O.o》、YEW《จะมอบความรัก》、WAVE9《Wave Night》、鷺巢詩郎《Robe des Champs》、Stephen Sanchez《Until I Found You》、toe《Mother》、Village People《YMCA》、遠藤ナオキ《あなたと私と私たちの夢》、粹垢《阿蘭姊》、ASMRZ《잘자요 아가씨》、CRYCHIC《人間になりたいうた》、Elements Garden《Sense》、The Cecilias《The End of Us》、新川崎(仮)《声なき魚》</p>
+<h3 id="what-i-see-4" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-4" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
+<p>《哥吉拉-1.0》、《到不了的遠方》、《重構破碎凝視》、《帝國浩劫：美國內戰》</p>
+<h3 id="what-i-read-4" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-4" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
+<p>《終點往往在他方》</p>
+<h2 id="jun" tabindex="-1">Jun <a class="header-anchor" href="#jun" aria-label="Permalink to &quot;Jun&quot;"></a></h2>
+<h3 id="what-i-hear-5" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-5" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
+<p>雷光夏《歇業的海水浴場》、陳奕迅《床頭燈》、Ivy to Fraudulent Game《糸遊》、林強《盒子內的時間》、Max Richter《Movement, Before All Flowers》、鷺巢詩郎《Start To Check Up》、Thomas Bangalter《Sangria》、美波《君と僕の154小節戦争》、Naum Gabo《Theme For Great Cites》、MONO《Oath》、꽃별《비익련리（比翼連里）》、SHIN IN RYU《For us, summer is always short》、Jun Futamata《Útdautt lag》、Katamari-Tai Jr.《さくらいろの季節》、谷內秀樹《ミサの孤独》、Pietro Mascagni《Intermezzo From Cavalleria Rusticana》、harmoe《愛と呼ぶなら》、Wolfram《Automatic Dub》、松崎ナオ／鹿の一族《清く、ただしく》、NONA REEVES《DJ! DJ! 〜とどかぬ想い〜》、Alejandro Jodorowsky《Eye of the Beholder》、溝口肇《Tree of Hearts》、菅野洋子《その時まで》、蔡琴《請假裝你會捨不得我》、吉那罐子《把燈關上（摎火扚忒）》、新垣結衣《heavenly days》、gnkosaiBAND《POSSE》</p>
+<h3 id="what-i-see-5" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-5" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
+<p>《我和吸血鬼有份合約》、《正欲》、《高潮》、《虹咲四格第二季》、《夜晚的水母不會游泳》、《聖山》、《夏日的文化洋行》、《見證》、《恐怖分子》、《Girls Band Cry》</p>
+<h3 id="what-i-read-5" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-5" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
+<p>《關鍵1987》、《新活水Vol.19》</p>
+<h2 id="jul" tabindex="-1">Jul <a class="header-anchor" href="#jul" aria-label="Permalink to &quot;Jul&quot;"></a></h2>
+<h3 id="what-i-hear-6" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-6" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
+<p>harmoe《ドキドキトキドキトキメキス♡》、秘部痺れ《Rollercoaster of the Universe》、我地希望《半箭》、Underworld《Between Stars》、石橋英子《Evil Does Not Exist》、LÜCY《Abettor》、濁水溪公社《港都情人》、透明雜誌《E的幽靈》、The CHANG《Holiday》、周杰倫《晴天》、TuT《You Got Me When I Stare At You》、Supercar《Lucky》、先知瑪莉《入睡》、검정치마《EVERYTHING》、楊乃文 feat. 傻子與白痴《思緒的盡頭》、濁水溪公社《孔雀開屏》、伍佰《淚橋》、Agua Blue《土偶》、Paranmaum《Linda Linda》、ZARD《DAN DAN 心魅かれてく》、Lexiu Liu《MAGICIAN》、遠野光《LOVE 2000》、中森明菜《東京砂漠》、麻枝准《夏気球》、MyGO!!!!!《端程山》、Homecomings《euphoria》、陳奕迅《內疚》、Charlene《I’ve Never Been to Me》、Kim Il Du《술 마시러 가는 길 (ballad ver.)》、MAMAMOO+《댕댕》、Ketil Bjørnstad《The Sea V》、Aqours《HAPPY PARTY TRAIN》、鮮于貞娥《what the hell》、徐行《也許我們會再見》、Woodkid《Guns for Hire》、Ludovico Einaudi《Fly》、TOŃ《Wdech/wydech》、山下達郎《Juvenileのテーマ～瞳の中のRainbow～》、Joni Nijo《Dreaming》、沈文程《小河之歌》、圖騰樂團《我在那邊唱》、Einstürzende Neubauten《Sabrina》、天野正道《新たなる旅立ち》、青木陽菜《独奏showtime》</p>
+<h3 id="what-i-see-6" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-6" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
+<p>《邪惡根本不存在》、《爛頭殼》、《長腿》、《奧術》</p>
+<h3 id="what-i-read-6" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-6" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
+<p>《少女歌劇再生產評論集》、《影視聽生活誌011 2024六月號》、《愛動物的人》</p>
+<h2 id="aug" tabindex="-1">Aug <a class="header-anchor" href="#aug" aria-label="Permalink to &quot;Aug&quot;"></a></h2>
+<h3 id="what-i-hear-7" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-7" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
+<p>Seaweed藻《Morning Sun》、The Mercury Program《Marianas》、青木陽菜《Colors of You》、Ivy to Fraudulent Game《賀歌》、河豚子《陳振昌，你是隻猴子》、松崎ナオ《ただ残るイメージ》、Lily Chou-Chou《Arabesque》、村松崇継《彼方の光》、漂流出口《仙人掌的花》、Alex G《Main Theme》、World's End Girlfriend《Les Enfants du paradis》、木嶋真優《鮫 (エスクアロ)》、JPBS《Rainy Day》、スタァライト九九組《Pride》、加藤達也《color temperature 》、我們的日子有限公司《遺書》、JPBS《Green Screen》、真名子新《網户》、Inspirative《Why》、The Darkest Romance《หมุน》、Kevin Colombin《Ending》、你太白了，去曬黑《主意》、蘇打綠《蟬想》、DeVotchKa《The Winner Is》、Thomas Foguenne《Once Again》、I Mean Us《Blue and Gold》、洛天依《摩的大飈客》（公婆版歌詞）、OYEOL《OH NEW SUPER WORLD》、BL!NDMAN《Electric Counterpoint》、London Grammar《Into Gold》、Hooverphonic《Eden》、JRJ Enterprises《水田不要賣》、步行者《橋》、Yufu《The Walls Are Coming In》、野外合作社《復活》、Sunny Day Service《コンビニのコーヒー》、Cozy《21 Grams》、魚條《279自救會》、てつくずおきば《エアーマンが倒せない》、曹永旭《Seorae》、岡本敦郎《みどりの馬車》、AiNA THE END《Love Sick》、戴荃《悟空》</p>
+<h3 id="what-i-see-7" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-7" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
+<p>《驀然回首》、《老狐狸》、《青春電幻物語》、《廣島》、《雨月物語》、《紀錄片：Sunny Day Service》、《蝙蝠俠》</p>
+<h3 id="what-i-read-7" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-7" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
+<p>《女性電影理論》、《觀光客的哲學》</p>
+<h2 id="sep" tabindex="-1">Sep <a class="header-anchor" href="#sep" aria-label="Permalink to &quot;Sep&quot;"></a></h2>
+<h3 id="what-i-hear-8" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-8" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
+<p>Flawed Mangoes《Dramamine》、남혜승、박상희 《그날의 바람》、羽毛田丈史、高見優《キセキ~for ROOKIES instrumental version ~》、洪佩瑜、聲子蟲《你是自由的》、hil《Sorrow_UBW Extend》、水瀬祈《Wishing》、Jung Woo《Love Song》、It's《Fading Person, Fading Love》、YOSHI《理性藝術家》、DRDR《反正我們就這樣》、Riya《神話》、きっとび《ユー》、아소토유니온《THINK ABOUT` CHU》、Mogwai《God Gets You Back》、麥浚龍《天與地的距離》、THE BLACKBAND、汐菜《KISSそれは》、Loveholic《The Flowerpot》、Superfly《Charade》、Adultchild《Sad Thing》、School Food Punishment《light prayer》、OnceGrace Forever《Dance to remember, dance to forget》、The Cure《Alone》、Hania Rani《24.03》、藤澤慶昌《ラジオたいそう》、倒車入庫《先走了》、神前曉《Sleep Well, Vivy》、牛尾憲輔《gentle heart》、Midicronica《San Francisco》、橫山克《Dear My Loneliness and Darkness》、小瀨村晶《Shutter Girl》、929《也許像星星》</p>
+<h3 id="what-i-see-8" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-8" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
+<p>《記憶花園》、《Vitalik：以太坊故事》、《再見機器人》、《擅長逃跑的殿下》</p>
+<h3 id="what-i-read-8" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-8" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
+<p>《幸福之路》、《相機女孩漫遊東京1》</p>
+<h2 id="oct" tabindex="-1">Oct <a class="header-anchor" href="#oct" aria-label="Permalink to &quot;Oct&quot;"></a></h2>
+<h3 id="what-i-hear-9" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-9" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
+<p>草東沒有派對《滔滔》、鐘嵐珠《PHOENIX》、上原步夢《Stellar Stream》、12.8Twelve.eight《Pioneer》、12.8Twelve.eight《Blind》、美波《TIME GRAM》、ミト《White Lies》、橫山克《Tsurune the Movie - The Sound of Origin》、都留教博《End Place》、曹雅雯《抱一個》、Myles Kennedy《How The Story Ends》、戶松遙《ユメセカイ》、葉穎《你哭完該笑了》、渡邊琢磨《Fate》、坂本龍一《Solitude》、雷光夏《紅尾巴》、橋本由香利《En fermant les yeux》、Suneohair《Speed》、HUSH《第三人稱》、橫山克《Again》、Michel Moulinié《Le Ballet Des Mouches》、渋さ知らズ《ひこーき》、SALVALAI《MORAL》、四喜丸子《道》</p>
+<h3 id="what-i-see-9" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-9" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
+<p>《愛麗絲與特蕾絲的虛幻工廠》、《聽海湧》、《東尼瀧谷》、《異形：羅穆路斯》、《藍色巨星》、《塔爾》、《潛行者》、《墜惡真相》、《英雄》、《小丑：雙重瘋狂》</p>
+<h3 id="what-i-read-9" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-9" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
+<p>《臺灣詩學學刊40期》、《臺灣自然寫作選》、《歇斯底里的案件》、《蔡國強又來了！》、《交陪美學論》</p>
+<h2 id="nov" tabindex="-1">Nov <a class="header-anchor" href="#nov" aria-label="Permalink to &quot;Nov&quot;"></a></h2>
+<h2 id="dec" tabindex="-1">Dec <a class="header-anchor" href="#dec" aria-label="Permalink to &quot;Dec&quot;"></a></h2>
+]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[用VitePress玩轉SSG]]></title>
             <link>https://haruowang.vercel.app/dev/vitepress/blog.html</link>
             <guid>https://haruowang.vercel.app/dev/vitepress/blog.html</guid>
-            <pubDate>Mon, 23 Sep 2024 06:26:31 GMT</pubDate>
+            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
             <description><![CDATA[使用VitePress開發部落格的經驗分享]]></description>
             <content:encoded><![CDATA[<h1 id="用vitepress玩轉ssg" tabindex="-1">用VitePress玩轉SSG <a class="header-anchor" href="#用vitepress玩轉ssg" aria-label="Permalink to &quot;用VitePress玩轉SSG&quot;"></a></h1>
 <p><Badge type="info" text="🌿 Budding" /></P>
@@ -701,7 +850,7 @@
             <title><![CDATA[Axios Daily]]></title>
             <link>https://haruowang.vercel.app/global/english/axios.html</link>
             <guid>https://haruowang.vercel.app/global/english/axios.html</guid>
-            <pubDate>Mon, 23 Sep 2024 05:21:05 GMT</pubDate>
+            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
             <description><![CDATA[每日閱讀Axios英文新聞的學習筆記]]></description>
             <content:encoded><![CDATA[<h1 id="axios-daily" tabindex="-1">Axios Daily <a class="header-anchor" href="#axios-daily" aria-label="Permalink to &quot;Axios Daily&quot;"></a></h1>
 <p><Badge type="info" text="🌱 Seedlings" /></P>
@@ -748,6 +897,9 @@
 <li>Reuters：路透社</li>
 <li>obstruction：阻礙</li>
 </ul>
+<details class="details custom-block"><summary>Tips</summary>
+<p>relief是寬慰。</p>
+</details>
 <h2 id="_0915-停播政策" tabindex="-1">0915｜停播政策 <a class="header-anchor" href="#_0915-停播政策" aria-label="Permalink to &quot;0915｜停播政策&quot;"></a></h2>
 <ul>
 <li>blackout：停播</li>
@@ -759,7 +911,7 @@
 <li>avert：避免</li>
 </ul>
 <details class="details custom-block"><summary>Tips</summary>
-<p>抗拒是resist；prevert是變態。</p>
+<p>抗拒是resist；pervert是變態；revert是恢復。</p>
 </details>
 <h2 id="_0916-抖音" tabindex="-1">0916｜抖音 <a class="header-anchor" href="#_0916-抖音" aria-label="Permalink to &quot;0916｜抖音&quot;"></a></h2>
 <ul>
@@ -875,77 +1027,370 @@
 <li>ominous：不祥的</li>
 </ul>
 <details class="details custom-block"><summary>Tips</summary>
-<p>omnious很近似0925的omnibus。</p>
+<p>ominous很近似0925的omnibus。</p>
 </details>
+<h2 id="_1001-sep中譯英" tabindex="-1">1001｜Sep中譯英 <a class="header-anchor" href="#_1001-sep中譯英" aria-label="Permalink to &quot;1001｜Sep中譯英&quot;"></a></h2>
+<ul>
+<li>49.5% correct</li>
+</ul>
+<h2 id="_1002-sep英譯中" tabindex="-1">1002｜Sep英譯中 <a class="header-anchor" href="#_1002-sep英譯中" aria-label="Permalink to &quot;1002｜Sep英譯中&quot;"></a></h2>
+<ul>
+<li>83.0% correct</li>
+</ul>
+<h2 id="_1003-sep中譯英" tabindex="-1">1003｜Sep中譯英 <a class="header-anchor" href="#_1003-sep中譯英" aria-label="Permalink to &quot;1003｜Sep中譯英&quot;"></a></h2>
+<ul>
+<li>94.6% correct</li>
+</ul>
+<h2 id="_1004-sep英譯中" tabindex="-1">1004｜Sep英譯中 <a class="header-anchor" href="#_1004-sep英譯中" aria-label="Permalink to &quot;1004｜Sep英譯中&quot;"></a></h2>
+<ul>
+<li>96.6% correct</li>
+</ul>
+<h2 id="_1005-sep中譯英" tabindex="-1">1005｜Sep中譯英 <a class="header-anchor" href="#_1005-sep中譯英" aria-label="Permalink to &quot;1005｜Sep中譯英&quot;"></a></h2>
+<ul>
+<li>100% correct</li>
+</ul>
+<h2 id="_1006-sep英譯中" tabindex="-1">1006｜Sep英譯中 <a class="header-anchor" href="#_1006-sep英譯中" aria-label="Permalink to &quot;1006｜Sep英譯中&quot;"></a></h2>
+<ul>
+<li>88.2% correct</li>
+</ul>
+<h2 id="_1007-老詹父子" tabindex="-1">1007｜老詹父子 <a class="header-anchor" href="#_1007-老詹父子" aria-label="Permalink to &quot;1007｜老詹父子&quot;"></a></h2>
+<ul>
+<li>draft：選秀</li>
+<li>cardiac：心臟的</li>
+</ul>
+<h2 id="_1008-水門案記者新書" tabindex="-1">1008｜水門案記者新書 <a class="header-anchor" href="#_1008-水門案記者新書" aria-label="Permalink to &quot;1008｜水門案記者新書&quot;"></a></h2>
+<ul>
+<li>peril：危險</li>
+<li>deliver the goods：說到做到</li>
+<li>verbatim：逐字地</li>
+<li>Simon &amp; Schuster：美國六大出版商之一</li>
+<li>pull out all the stops：全力以赴</li>
+<li>endorse：支持</li>
+<li>chronicle：記事</li>
+</ul>
+<details class="details custom-block"><summary>Tips</summary>
+<p>chronicle很近似chronic。</p>
+</details>
+<h2 id="_1009-馬斯克資助" tabindex="-1">1009｜馬斯克資助 <a class="header-anchor" href="#_1009-馬斯克資助" aria-label="Permalink to &quot;1009｜馬斯克資助&quot;"></a></h2>
+<ul>
+<li>outgun：超過</li>
+<li>PAC：政治行動委員會</li>
+<li>veteran：老將</li>
+</ul>
+<h2 id="_1010-遺產月" tabindex="-1">1010｜遺產月 <a class="header-anchor" href="#_1010-遺產月" aria-label="Permalink to &quot;1010｜遺產月&quot;"></a></h2>
+<ul>
+<li>Hispanic：西班牙裔</li>
+<li>Roberto Clemente：海盜隊傳奇</li>
+<li>RBI：打點</li>
+</ul>
+<h2 id="_1011-自殺前的求助" tabindex="-1">1011｜自殺前的求助 <a class="header-anchor" href="#_1011-自殺前的求助" aria-label="Permalink to &quot;1011｜自殺前的求助&quot;"></a></h2>
+<ul>
+<li>stigma：污名</li>
+<li>coalition：聯盟</li>
+<li>ethnic：種族的</li>
+<li>988：美國自殺防治熱線</li>
+</ul>
+<h2 id="_1012-租屋族不急買房" tabindex="-1">1012｜租屋族不急買房 <a class="header-anchor" href="#_1012-租屋族不急買房" aria-label="Permalink to &quot;1012｜租屋族不急買房&quot;"></a></h2>
+<ul>
+<li>take the plunge：下定決心</li>
+<li>amenity：便利（設施）</li>
+<li>HOA fee：社區管理費</li>
+<li>ludicrous：可笑的</li>
+<li>perk：福利</li>
+<li>woo：爭取</li>
+<li>tumble：驟降</li>
+<li>entice：誘惑</li>
+<li>communal：公共的</li>
+</ul>
+<details class="details custom-block"><summary>Tips</summary>
+<p>plunge是驟降，近似tumble。</p>
+</details>
+<h2 id="_1013-podcast政治性" tabindex="-1">1013｜Podcast政治性 <a class="header-anchor" href="#_1013-podcast政治性" aria-label="Permalink to &quot;1013｜Podcast政治性&quot;"></a></h2>
+<ul>
+<li>blitz：突襲</li>
+<li>anecdote：軼事</li>
+<li>banter：戲謔</li>
+<li>dwindling：逐漸減少的</li>
+</ul>
+<h2 id="_1014-哥倫布日與原住民日" tabindex="-1">1014｜哥倫布日與原住民日 <a class="header-anchor" href="#_1014-哥倫布日與原住民日" aria-label="Permalink to &quot;1014｜哥倫布日與原住民日&quot;"></a></h2>
+<ul>
+<li>Columbus：哥倫布</li>
+<li>indigenous：本土的</li>
+<li>Juneteenth：六月節</li>
+</ul>
+<h2 id="_1015-納瓦尼的預言" tabindex="-1">1015｜納瓦尼的預言 <a class="header-anchor" href="#_1015-納瓦尼的預言" aria-label="Permalink to &quot;1015｜納瓦尼的預言&quot;"></a></h2>
+<ul>
+<li>penal：刑事的</li>
+<li>posthumous：死後的</li>
+<li>patriot：愛國者</li>
+<li>testament：遺囑</li>
+<li>unwavering：堅定不移的</li>
+</ul>
+<details class="details custom-block"><summary>Tips</summary>
+<p>penal近似petal和peril。</p>
+</details>
+<h2 id="_1016-喬治亞搖擺州" tabindex="-1">1016｜喬治亞搖擺州 <a class="header-anchor" href="#_1016-喬治亞搖擺州" aria-label="Permalink to &quot;1016｜喬治亞搖擺州&quot;"></a></h2>
+<ul>
+<li>injunction：禁令</li>
+</ul>
+<h2 id="_1017-巨頭與供應鏈" tabindex="-1">1017｜巨頭與供應鏈 <a class="header-anchor" href="#_1017-巨頭與供應鏈" aria-label="Permalink to &quot;1017｜巨頭與供應鏈&quot;"></a></h2>
+<ul>
+<li>lithium：鋰</li>
+<li>(come) on the heels of：緊隨其後</li>
+</ul>
+<h2 id="_1018-網飛訂閱" tabindex="-1">1018｜網飛訂閱 <a class="header-anchor" href="#_1018-網飛訂閱" aria-label="Permalink to &quot;1018｜網飛訂閱&quot;"></a></h2>
+<ul>
+<li>tier：層級</li>
+<li>bellwether：領頭羊</li>
+<li>stalled：停滯</li>
+</ul>
+<h2 id="_1019-川普私人帳戶" tabindex="-1">1019｜川普私人帳戶 <a class="header-anchor" href="#_1019-川普私人帳戶" aria-label="Permalink to &quot;1019｜川普私人帳戶&quot;"></a></h2>
+<ul>
+<li>opaque：不透明的</li>
+<li>liability：責任</li>
+<li>unconstitutional：違憲的</li>
+<li>domestic：國內的</li>
+<li>per diem：每日津貼</li>
+<li>emolument：報酬</li>
+<li>hypocrisy：虛偽</li>
+<li>fruitless：無效的</li>
+</ul>
+<h2 id="_1020-賀錦麗年紀" tabindex="-1">1020｜賀錦麗年紀 <a class="header-anchor" href="#_1020-賀錦麗年紀" aria-label="Permalink to &quot;1020｜賀錦麗年紀&quot;"></a></h2>
+<ul>
+<li>inauguration：就職典禮</li>
+<li>scrutiny：審查</li>
+</ul>
+<h2 id="_1021-上班族的孤獨" tabindex="-1">1021｜上班族的孤獨 <a class="header-anchor" href="#_1021-上班族的孤獨" aria-label="Permalink to &quot;1021｜上班族的孤獨&quot;"></a></h2>
+<ul>
+<li>rack up：累計</li>
+<li>introvert：內向者</li>
+<li>culprit：罪魁禍首</li>
+<li>cringe：尷尬</li>
+<li>chitchat：閒聊</li>
+<li>more bang for one's buck：物美價廉</li>
+</ul>
+<h2 id="_1022-銀翼指控馬斯克" tabindex="-1">1022｜銀翼指控馬斯克 <a class="header-anchor" href="#_1022-銀翼指控馬斯克" aria-label="Permalink to &quot;1022｜銀翼指控馬斯克&quot;"></a></h2>
+<ul>
+<li>infringement：侵權</li>
+<li>reminiscent：懷念的</li>
+<li>evocative：引起的</li>
+<li>capricious：任性的</li>
+<li>arbitrary：隨意的</li>
+<li>veer into：轉向</li>
+<li>rally：集會</li>
+</ul>
+<h2 id="_1023-瓦倫祖拉" tabindex="-1">1023｜瓦倫祖拉 <a class="header-anchor" href="#_1023-瓦倫祖拉" aria-label="Permalink to &quot;1023｜瓦倫祖拉&quot;"></a></h2>
+<ul>
+<li>Fernando Valenzuela：道奇墨西哥名將</li>
+<li>autograph：名人親簽</li>
+<li>cardinal：紅衣主教（鳳頭鳥）</li>
+<li>unorthodox：非正統的</li>
+<li>jersey：球衣</li>
+</ul>
+<h2 id="_1024-俄國資訊戰" tabindex="-1">1024｜俄國資訊戰 <a class="header-anchor" href="#_1024-俄國資訊戰" aria-label="Permalink to &quot;1024｜俄國資訊戰&quot;"></a></h2>
+<ul>
+<li>Kremlin：克里姆林宮</li>
+<li>incompetent：無能的</li>
+<li>exploit：利用</li>
+<li>on par with：不相上下</li>
+<li>adversary：對手</li>
+<li>impede：阻礙</li>
+</ul>
+<details class="details custom-block"><summary>Tips</summary>
+<p>一致的是consistent。</p>
+</details>
+<h2 id="_1025-美國各州計票" tabindex="-1">1025｜美國各州計票 <a class="header-anchor" href="#_1025-美國各州計票" aria-label="Permalink to &quot;1025｜美國各州計票&quot;"></a></h2>
+<ul>
+<li>AP：美聯社</li>
+<li>paralyzed：麻痺的</li>
+<li>hinge：決定於</li>
+</ul>
+<h2 id="_1026-華郵立場" tabindex="-1">1026｜華郵立場 <a class="header-anchor" href="#_1026-華郵立場" aria-label="Permalink to &quot;1026｜華郵立場&quot;"></a></h2>
+<ul>
+<li>resign：辭職</li>
+</ul>
+<h2 id="_1027-以色列空襲" tabindex="-1">1027｜以色列空襲 <a class="header-anchor" href="#_1027-以色列空襲" aria-label="Permalink to &quot;1027｜以色列空襲&quot;"></a></h2>
+<ul>
+<li>retaliatory：報復性的</li>
+<li>stockpile：儲備</li>
+<li>ballistic：彈道的</li>
+<li>arsenal：兵工廠</li>
+<li>replenish：補充</li>
+<li>Hezbollah：真主黨</li>
+<li>convene：召開</li>
+<li>restraint：克制</li>
+</ul>
+<details class="details custom-block"><summary>Tips</summary>
+<p>restraint近似於constraint。</p>
+</details>
+<h2 id="_1028-北韓參戰烏俄" tabindex="-1">1028｜北韓參戰烏俄 <a class="header-anchor" href="#_1028-北韓參戰烏俄" aria-label="Permalink to &quot;1028｜北韓參戰烏俄&quot;"></a></h2>
+<ul>
+<li>incursion：侵入</li>
+<li>press conference：記者會</li>
+<li>pentagon：五角形</li>
+</ul>
+<h2 id="_1029-知名演員被判一年零一天" tabindex="-1">1029｜知名演員被判一年零一天 <a class="header-anchor" href="#_1029-知名演員被判一年零一天" aria-label="Permalink to &quot;1029｜知名演員被判一年零一天&quot;"></a></h2>
+<ul>
+<li>amass：累積</li>
+<li>restitution：賠償</li>
+<li>remorseful：懊悔的</li>
+<li>attorney：律師</li>
+<li>notoriety：惡名</li>
+</ul>
+<details class="details custom-block"><summary>Tips</summary>
+<p>restitution近似constitution。</p>
+</details>
+<h2 id="_1030-裴洛西丈夫攻擊案" tabindex="-1">1030｜裴洛西丈夫攻擊案 <a class="header-anchor" href="#_1030-裴洛西丈夫攻擊案" aria-label="Permalink to &quot;1030｜裴洛西丈夫攻擊案&quot;"></a></h2>
+<ul>
+<li>parole：假釋</li>
+<li>burglary：入室搶劫</li>
+<li>unanimous：一致的</li>
+<li>stifle：壓制</li>
+</ul>
+<details class="details custom-block"><summary>Tips</summary>
+<p>animus是敵意，consistent也是一致的。</p>
+</details>
+<h2 id="_1031-全球威脅" tabindex="-1">1031｜全球威脅 <a class="header-anchor" href="#_1031-全球威脅" aria-label="Permalink to &quot;1031｜全球威脅&quot;"></a></h2>
+<ul>
+<li>bloc：陣營</li>
+<li>rein：韁繩</li>
+<li>contend：競爭</li>
+<li>exacerbate：加劇</li>
+<li>Sikh：錫克人</li>
+<li>breach：違反</li>
+<li>throttle：節流</li>
+<li>exodus：出走</li>
+</ul>
+<h2 id="_1101-oct中譯英" tabindex="-1">1101｜Oct中譯英 <a class="header-anchor" href="#_1101-oct中譯英" aria-label="Permalink to &quot;1101｜Oct中譯英&quot;"></a></h2>
+<ul>
+<li>62.8% correct</li>
+</ul>
+<h2 id="_1102-oct英譯中" tabindex="-1">1102｜Oct英譯中 <a class="header-anchor" href="#_1102-oct英譯中" aria-label="Permalink to &quot;1102｜Oct英譯中&quot;"></a></h2>
+<ul>
+<li>73.6% correct</li>
+</ul>
+<h2 id="_1103-oct中譯英" tabindex="-1">1103｜Oct中譯英 <a class="header-anchor" href="#_1103-oct中譯英" aria-label="Permalink to &quot;1103｜Oct中譯英&quot;"></a></h2>
+<ul>
+<li>89.4% correct</li>
+</ul>
+<h2 id="_1104-oct英譯中" tabindex="-1">1104｜Oct英譯中 <a class="header-anchor" href="#_1104-oct英譯中" aria-label="Permalink to &quot;1104｜Oct英譯中&quot;"></a></h2>
+<ul>
+<li>93.6% correct</li>
+</ul>
+<h2 id="_1105-oct中譯英" tabindex="-1">1105｜Oct中譯英 <a class="header-anchor" href="#_1105-oct中譯英" aria-label="Permalink to &quot;1105｜Oct中譯英&quot;"></a></h2>
+<ul>
+<li>81.8% correct</li>
+</ul>
+<h2 id="_1106-oct英譯中" tabindex="-1">1106｜Oct英譯中 <a class="header-anchor" href="#_1106-oct英譯中" aria-label="Permalink to &quot;1106｜Oct英譯中&quot;"></a></h2>
+<ul>
+<li>87.5% correct</li>
+</ul>
+<h2 id="_1107-sep中譯英" tabindex="-1">1107｜Sep中譯英 <a class="header-anchor" href="#_1107-sep中譯英" aria-label="Permalink to &quot;1107｜Sep中譯英&quot;"></a></h2>
+<ul>
+<li>71.0% correct</li>
+</ul>
+<h2 id="_1108-sep英譯中" tabindex="-1">1108｜Sep英譯中 <a class="header-anchor" href="#_1108-sep英譯中" aria-label="Permalink to &quot;1108｜Sep英譯中&quot;"></a></h2>
+<ul>
+<li>89.7% correct</li>
+</ul>
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[東京藝文展館指南]]></title>
-            <link>https://haruowang.vercel.app/global/japan/art-guide.html</link>
-            <guid>https://haruowang.vercel.app/global/japan/art-guide.html</guid>
-            <pubDate>Mon, 23 Sep 2024 05:21:05 GMT</pubDate>
-            <description><![CDATA[《美術手帖》2012年5月特集的景點蒐集]]></description>
-            <content:encoded><![CDATA[<h1 id="東京藝文展館指南" tabindex="-1">東京藝文展館指南 <a class="header-anchor" href="#東京藝文展館指南" aria-label="Permalink to &quot;東京藝文展館指南&quot;"></a></h1>
-<p><Badge type="info" text="🌱 Seedlings" /></P>
-<h2 id="東京國立近代美術館" tabindex="-1">東京國立近代美術館 <a class="header-anchor" href="#東京國立近代美術館" aria-label="Permalink to &quot;東京國立近代美術館&quot;"></a></h2>
+            <title><![CDATA[東吳英文小學堂]]></title>
+            <link>https://haruowang.vercel.app/global/english/scu.html</link>
+            <guid>https://haruowang.vercel.app/global/english/scu.html</guid>
+            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
+            <description><![CDATA[觀看《東吳英文小學堂》的學習筆記]]></description>
+            <content:encoded><![CDATA[<h1 id="東吳英文小學堂" tabindex="-1">東吳英文小學堂 <a class="header-anchor" href="#東吳英文小學堂" aria-label="Permalink to &quot;東吳英文小學堂&quot;"></a></h1>
+<p><Badge type="info" text="🌿 Budding" /></P>
+<h2 id="白鯨記" tabindex="-1">白鯨記 <a class="header-anchor" href="#白鯨記" aria-label="Permalink to &quot;白鯨記&quot;"></a></h2>
 <ul>
-<li>日本最早的國立美術館</li>
-<li>位於千代田區，離竹橋站最近</li>
-<li>其電影中心似乎已歇業</li>
+<li>白鯨記被評論家視為酷兒小說</li>
+<li>New Bedford：曾是捕鯨中心</li>
+<li>pagan：異教徒</li>
+<li>食人族魚叉手Queequeg：Ishmael的友人</li>
 </ul>
-<h2 id="東京都現代美術館" tabindex="-1">東京都現代美術館 <a class="header-anchor" href="#東京都現代美術館" aria-label="Permalink to &quot;東京都現代美術館&quot;"></a></h2>
+<h2 id="譯起學翻譯" tabindex="-1">譯起學翻譯 <a class="header-anchor" href="#譯起學翻譯" aria-label="Permalink to &quot;譯起學翻譯&quot;"></a></h2>
 <ul>
-<li>日本最大的當代美術館</li>
-<li>位於江東區，離清澄白河站最近</li>
-<li>附設美術圖書室，旁有木場公園</li>
-<li>特色餐點有「100本のスプーン」</li>
+<li>象寄之才：譯者</li>
+<li>林紓 &amp; 魏易：清末民初的翻譯拍檔</li>
+<li>Ezra Pound：意象派詩人，翻譯《國泰集》</li>
+<li>馬悅然：曾任諾獎評委的瑞典漢學家</li>
 </ul>
-<h2 id="清澄ギャラリーコンプレックス" tabindex="-1">清澄ギャラリーコンプレックス <a class="header-anchor" href="#清澄ギャラリーコンプレックス" aria-label="Permalink to &quot;清澄ギャラリーコンプレックス&quot;"></a></h2>
+<h2 id="福爾摩斯教文學" tabindex="-1">福爾摩斯教文學 <a class="header-anchor" href="#福爾摩斯教文學" aria-label="Permalink to &quot;福爾摩斯教文學&quot;"></a></h2>
 <ul>
-<li>2015年被拆除</li>
-<li>其中6、7樓的小山登美夫畫廊，目前遷移至港區六本木</li>
+<li>Joseph Bell：Sherlock Holmes的原型</li>
+<li>最初連載於《Strand Magazine》</li>
+<li>the Speckled Band：經典探案花斑帶</li>
 </ul>
-<h2 id="原美術館" tabindex="-1">原美術館 <a class="header-anchor" href="#原美術館" aria-label="Permalink to &quot;原美術館&quot;"></a></h2>
+<h2 id="猩球崛起" tabindex="-1">猩球崛起 <a class="header-anchor" href="#猩球崛起" aria-label="Permalink to &quot;猩球崛起&quot;"></a></h2>
 <ul>
-<li>目前遷移至原美術館ARC</li>
-<li>ARC位於群馬縣澀川市，離澀川站最近</li>
-<li>原建築由渡邊仁，ARC由磯崎新設計</li>
+<li>在電影中，母親是缺席的</li>
+<li>John Donne和Locke都寫過猿猴性侵的故事</li>
+<li>Tarzan在猿猴的語言中，意為白皮膚</li>
+<li>可以將黑猩猩視為人類的doppelganger</li>
+<li>「視覺合作假說」來自小林洋美和幸島司郎，後由Tomasello提出</li>
 </ul>
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[日本迷你電影院]]></title>
-            <link>https://haruowang.vercel.app/global/japan/mini-theater.html</link>
-            <guid>https://haruowang.vercel.app/global/japan/mini-theater.html</guid>
-            <pubDate>Mon, 23 Sep 2024 05:21:05 GMT</pubDate>
-            <description><![CDATA[由JFF Theater介紹的影廳整理]]></description>
-            <content:encoded><![CDATA[<h1 id="日本迷你電影院" tabindex="-1">日本迷你電影院 <a class="header-anchor" href="#日本迷你電影院" aria-label="Permalink to &quot;日本迷你電影院&quot;"></a></h1>
+            <title><![CDATA[WORD UP藍色證書教材]]></title>
+            <link>https://haruowang.vercel.app/global/english/toeic.html</link>
+            <guid>https://haruowang.vercel.app/global/english/toeic.html</guid>
+            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
+            <description><![CDATA[透過WORD UP複習多益藍證的學習筆記]]></description>
+            <content:encoded><![CDATA[<h1 id="word-up藍色證書教材" tabindex="-1">WORD UP藍色證書教材 <a class="header-anchor" href="#word-up藍色證書教材" aria-label="Permalink to &quot;WORD UP藍色證書教材&quot;"></a></h1>
 <p><Badge type="info" text="🌱 Seedlings" /></P>
-<h2 id="theater-enya" tabindex="-1">THEATER ENYA <a class="header-anchor" href="#theater-enya" aria-label="Permalink to &quot;THEATER ENYA&quot;"></a></h2>
+<h2 id="句子填空" tabindex="-1">句子填空 <a class="header-anchor" href="#句子填空" aria-label="Permalink to &quot;句子填空&quot;"></a></h2>
+<h3 id="單字" tabindex="-1">單字 <a class="header-anchor" href="#單字" aria-label="Permalink to &quot;單字&quot;"></a></h3>
 <ul>
-<li>位於佐賀縣唐津市</li>
-<li>唐津演屋祭：從2021年開始舉行的電影放映活動</li>
-<li>唐津宮日祭：每年11月初舉行，特色是14輛曳山花車</li>
-<li>虹之松原：由唐津藩主寺澤廣高所種植</li>
-<li>日本三大松原：唐津虹之松原、靜岡三保松原、敦賀氣比松原</li>
-<li>大林宣彥《花筐》：於唐津市取景</li>
+<li>subcontracted：分包</li>
+<li>readiness：準備就緒</li>
 </ul>
-<h2 id="桜坂劇場" tabindex="-1">桜坂劇場 <a class="header-anchor" href="#桜坂劇場" aria-label="Permalink to &quot;桜坂劇場&quot;"></a></h2>
+<h3 id="時態" tabindex="-1">時態 <a class="header-anchor" href="#時態" aria-label="Permalink to &quot;時態&quot;"></a></h3>
 <ul>
-<li>位於沖繩縣那霸市</li>
-<li>原是名為珊瑚座的戲劇小屋</li>
-<li>被琉映改造成電影院，2005一度關閉</li>
-<li>現由建設公司株式会社クランク接手</li>
-<li>舉辦工作坊「桜坂市民大学」</li>
-<li>附近有第一牧志公設市場</li>
+<li>完成式搭配since</li>
 </ul>
+<h2 id="段落填空" tabindex="-1">段落填空 <a class="header-anchor" href="#段落填空" aria-label="Permalink to &quot;段落填空&quot;"></a></h2>
+<h3 id="單字-1" tabindex="-1">單字 <a class="header-anchor" href="#單字-1" aria-label="Permalink to &quot;單字&quot;"></a></h3>
+<ul>
+<li>recitation：背誦</li>
+<li>inquiry：詢問</li>
+<li>qualify：有資格</li>
+<li>statesmanship：政治家風度</li>
+<li>recession：衰退</li>
+<li>defendant：被告</li>
+<li>imparting：傳授</li>
+</ul>
+<h3 id="連字形容詞" tabindex="-1">連字形容詞 <a class="header-anchor" href="#連字形容詞" aria-label="Permalink to &quot;連字形容詞&quot;"></a></h3>
+<ul>
+<li>state-of-the-art：先進的</li>
+<li>talk-of-the-town：受到談論的</li>
+<li>down-for-the-count：失敗的</li>
+<li>pick-of-the-litter：最佳選擇的</li>
+</ul>
+<h3 id="片語" tabindex="-1">片語 <a class="header-anchor" href="#片語" aria-label="Permalink to &quot;片語&quot;"></a></h3>
+<ul>
+<li>take on：與...較量</li>
+<li>have to do with：與...有關</li>
+<li>in advance：事先</li>
+<li>on account for：由於</li>
+</ul>
+<h3 id="時態-1" tabindex="-1">時態 <a class="header-anchor" href="#時態-1" aria-label="Permalink to &quot;時態&quot;"></a></h3>
+<ul>
+<li>通篇使用未來式時，子句會用到未來進行式</li>
+<li>will be + Ving</li>
+</ul>
+<details class="details custom-block"><summary>Tips</summary>
+<p>implement是動詞！</p>
+</details>
 ]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[出口日語N4文法]]></title>
             <link>https://haruowang.vercel.app/global/japan/n4.html</link>
             <guid>https://haruowang.vercel.app/global/japan/n4.html</guid>
-            <pubDate>Mon, 23 Sep 2024 05:21:05 GMT</pubDate>
+            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
             <description><![CDATA[跟隨出口仁老師學習N4文法的重點筆記]]></description>
             <content:encoded><![CDATA[<h1 id="出口日語n4文法" tabindex="-1">出口日語N4文法 <a class="header-anchor" href="#出口日語n4文法" aria-label="Permalink to &quot;出口日語N4文法&quot;"></a></h1>
 <p><Badge type="info" text="🌱 Seedlings" /></P>
@@ -1052,13 +1497,233 @@
 <li>肯定時類似てもいいです</li>
 <li>否定時類似てはいけません，但後者更強烈</li>
 </ul>
+<h2 id="たことがあります" tabindex="-1">～たことがあります <a class="header-anchor" href="#たことがあります" aria-label="Permalink to &quot;～たことがあります&quot;"></a></h2>
+<blockquote>
+<p>有做過</p>
+</blockquote>
+<ul>
+<li>た形 + ことがあります</li>
+<li>が換成も就是「也做過」</li>
+<li>「有看過但沒吃過」的第二個が會換成は</li>
+</ul>
+<h2 id="ほうがいいです" tabindex="-1">～ほうがいいです <a class="header-anchor" href="#ほうがいいです" aria-label="Permalink to &quot;～ほうがいいです&quot;"></a></h2>
+<blockquote>
+<p>做…比較好</p>
+</blockquote>
+<ul>
+<li>辭書形／た形  + ほうがいいです</li>
+<li>類似たらいいです，但ほうがいいです的叮囑語氣更強</li>
+</ul>
+<h2 id="すぎます-です" tabindex="-1">～すぎます／です <a class="header-anchor" href="#すぎます-です" aria-label="Permalink to &quot;～すぎます／です&quot;"></a></h2>
+<blockquote>
+<p>太過…</p>
+</blockquote>
+<ul>
+<li>用すぎます視為動詞</li>
+<li>用すぎです視為名詞或な形容詞</li>
+<li><s>ます</s>形 + すぎます／です</li>
+<li><s>い／な</s>形容詞 + すぎます／です</li>
+<li>太沒…：なさすぎます</li>
+</ul>
+<h2 id="なさい" tabindex="-1">～なさい <a class="header-anchor" href="#なさい" aria-label="Permalink to &quot;～なさい&quot;"></a></h2>
+<blockquote>
+<p>命令語氣</p>
+</blockquote>
+<ul>
+<li><s>ます</s>形 + なさい</li>
+<li>晚安的なさい是用來寒暄</li>
+</ul>
+<h2 id="てもいいです" tabindex="-1">～てもいいです <a class="header-anchor" href="#てもいいです" aria-label="Permalink to &quot;～てもいいです&quot;"></a></h2>
+<blockquote>
+<p>可以做</p>
+</blockquote>
+<ul>
+<li>相當於～てもかまいません</li>
+<li>動詞+て，名詞和な形容詞+で，い形容詞+くて</li>
+<li>後三者有即使...也可以的語氣</li>
+</ul>
+<h2 id="てはいけません" tabindex="-1">～てはいけません <a class="header-anchor" href="#てはいけません" aria-label="Permalink to &quot;～てはいけません&quot;"></a></h2>
+<blockquote>
+<p>不可以做</p>
+</blockquote>
+<ul>
+<li>相當於～てはだめです</li>
+<li>動詞+て，名詞和な形容詞+で，い形容詞+くて</li>
+<li>ないでください的語氣較不強硬</li>
+<li>てはなりません的語氣更拘謹</li>
+</ul>
+<details class="details custom-block"><summary>Tips</summary>
+<p>ては的縮約表現是ちゃ。</p>
+</details>
+<h2 id="なくてもいいです" tabindex="-1">～なくてもいいです <a class="header-anchor" href="#なくてもいいです" aria-label="Permalink to &quot;～なくてもいいです&quot;"></a></h2>
+<blockquote>
+<p>可以不做</p>
+</blockquote>
+<ul>
+<li>相當於～なくてもかまいません</li>
+<li>就是～てもいいです的開頭加上「なく」</li>
+<li>動詞+なく，名詞和な形容詞+じゃなく／でなく，い形容詞+くなく</li>
+</ul>
+<h2 id="なくてはいけません" tabindex="-1">～なくてはいけません <a class="header-anchor" href="#なくてはいけません" aria-label="Permalink to &quot;～なくてはいけません&quot;"></a></h2>
+<blockquote>
+<p>一定要</p>
+</blockquote>
+<ul>
+<li>相當於～なければなりません／～ないとだめです</li>
+<li>就是～てはいけません的開頭加上「なく」</li>
+<li>動詞+なく，名詞和な形容詞+じゃなく／でなく，い形容詞+くなく</li>
+</ul>
+<h2 id="ことになります" tabindex="-1">～ことになります <a class="header-anchor" href="#ことになります" aria-label="Permalink to &quot;～ことになります&quot;"></a></h2>
+<blockquote>
+<p>（非只由自己）決定</p>
+</blockquote>
+<ul>
+<li>辭書形／ない形 + ことになります</li>
+</ul>
+<h2 id="ことにします" tabindex="-1">～ことにします <a class="header-anchor" href="#ことにします" aria-label="Permalink to &quot;～ことにします&quot;"></a></h2>
+<blockquote>
+<p>（自己）決定</p>
+</blockquote>
+<ul>
+<li>辭書形／ない形 + ことにします</li>
+</ul>
 ]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[《相機女孩漫遊東京》筆記]]></title>
+            <link>https://haruowang.vercel.app/global/japan/shutter-girl.html</link>
+            <guid>https://haruowang.vercel.app/global/japan/shutter-girl.html</guid>
+            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
+            <description><![CDATA[漫畫《相機女孩漫遊東京》中出現的景點整理]]></description>
+            <content:encoded><![CDATA[<h1 id="《相機女孩漫遊東京》筆記" tabindex="-1">《相機女孩漫遊東京》筆記 <a class="header-anchor" href="#《相機女孩漫遊東京》筆記" aria-label="Permalink to &quot;《相機女孩漫遊東京》筆記&quot;"></a></h1>
+<p><Badge type="info" text="🌳 Evergreen" /></P>
+<p><img src="/japan/sg1.webp" alt="相機女孩漫遊東京地圖" loading="lazy"></p>
+<h2 id="隅田公園" tabindex="-1">隅田公園 <a class="header-anchor" href="#隅田公園" aria-label="Permalink to &quot;隅田公園&quot;"></a></h2>
+<ul>
+<li>適合拍晴空塔</li>
+<li>內有牛嶋神社</li>
+<li>離淺草站最近</li>
+</ul>
+<h2 id="築地" tabindex="-1">築地 <a class="header-anchor" href="#築地" aria-label="Permalink to &quot;築地&quot;"></a></h2>
+<ul>
+<li>該地帶被稱作明石町</li>
+<li>鏑木清方曾繪製相關畫作</li>
+<li>築地本願寺的建築具印度風格</li>
+<li>本願寺咖啡還有「18品早餐」</li>
+</ul>
+<h2 id="神田" tabindex="-1">神田 <a class="header-anchor" href="#神田" aria-label="Permalink to &quot;神田&quot;"></a></h2>
+<ul>
+<li>萬世橋站現為「mAAch ecute」複合空間</li>
+<li>松榮亭的招牌是「西式炸什錦餅」，漱石最愛</li>
+<li>正岡子規：獺祭書屋主人，對野球影響很大</li>
+</ul>
+<h2 id="田端文士村" tabindex="-1">田端文士村 <a class="header-anchor" href="#田端文士村" aria-label="Permalink to &quot;田端文士村&quot;"></a></h2>
+<ul>
+<li>室生犀星和萩原朔太郎都與芥川有深厚交情</li>
+<li>離田端站最近</li>
+</ul>
+<h2 id="等等力溪谷" tabindex="-1">等等力溪谷 <a class="header-anchor" href="#等等力溪谷" aria-label="Permalink to &quot;等等力溪谷&quot;"></a></h2>
+<ul>
+<li>內有不動瀑布和傳統茶屋「雪月花」</li>
+<li>離等等力站最近</li>
+</ul>
+<h2 id="本鄉" tabindex="-1">本鄉 <a class="header-anchor" href="#本鄉" aria-label="Permalink to &quot;本鄉&quot;"></a></h2>
+<ul>
+<li>樋口一葉居住於此，師事半井桃水</li>
+<li>東大主校區即位於此</li>
+<li>炭團坂有坪內逍遙的故居</li>
+<li>離宮澤賢治舊居遺址也不遠</li>
+</ul>
+<h2 id="小名木川" tabindex="-1">小名木川 <a class="header-anchor" href="#小名木川" aria-label="Permalink to &quot;小名木川&quot;"></a></h2>
+<ul>
+<li>被家康開墾來運鹽，因此又名鹽道</li>
+<li>常出現在名畫的萬年橋正是橫跨其上</li>
+<li>接到隅田川，後者夏天有煙火大會</li>
+<li>離清澄白河站最近</li>
+</ul>
+<h2 id="椎名町" tabindex="-1">椎名町 <a class="header-anchor" href="#椎名町" aria-label="Permalink to &quot;椎名町&quot;"></a></h2>
+<ul>
+<li>常磐莊便位於此</li>
+<li>還有東京写真工芸社</li>
+<li>赤塚不二夫承租過紫雲莊</li>
+</ul>
+<h2 id="池袋" tabindex="-1">池袋 <a class="header-anchor" href="#池袋" aria-label="Permalink to &quot;池袋&quot;"></a></h2>
+<ul>
+<li>亂步的書房在立教大學</li>
+<li>被稱作「幻影城」</li>
+<li>亂步名句：「現世如夢，夜夢方真」</li>
+<li>附近還有東京藝術劇場</li>
+<li>池袋三原堂有甜點「亂步之藏」和「薯蘋饅頭」</li>
+<li>池袋蒙帕納斯：30年代的藝術區，由小熊秀雄所稱</li>
+<li>熊谷守一美術館也在豐島區一帶</li>
+</ul>
+<h2 id="淺草" tabindex="-1">淺草 <a class="header-anchor" href="#淺草" aria-label="Permalink to &quot;淺草&quot;"></a></h2>
+<ul>
+<li>十二月中有羽子板市</li>
+<li>羽子板用來為女孩祈福，如破魔箭之於男孩</li>
+<li>淺草寺附近有明星廣場和花屋敷樂園</li>
+<li>還有原是神社新年活動的淺草流鏑馬</li>
+</ul>
+<h2 id="神樂坂" tabindex="-1">神樂坂 <a class="header-anchor" href="#神樂坂" aria-label="Permalink to &quot;神樂坂&quot;"></a></h2>
+<ul>
+<li>可以在東京大神宮祈求結緣</li>
+<li>其屬於東京五社之一</li>
+<li>兵庫橫丁有老街道</li>
+<li>離飯田橋站最近</li>
+</ul>
+<h2 id="吉野梅鄉" tabindex="-1">吉野梅鄉 <a class="header-anchor" href="#吉野梅鄉" aria-label="Permalink to &quot;吉野梅鄉&quot;"></a></h2>
+<ul>
+<li>二、三月可去賞梅</li>
+<li>有間青梅和服博物館</li>
+</ul>
+<h2 id="弁天洞窟" tabindex="-1">弁天洞窟 <a class="header-anchor" href="#弁天洞窟" aria-label="Permalink to &quot;弁天洞窟&quot;"></a></h2>
+<ul>
+<li>在威光寺裡，可以繞一圈做胎內巡禮</li>
+<li>離京王讀賣樂園站最近，適合順便看巨人二軍球賽</li>
+</ul>
+<h2 id="舊古河庭園" tabindex="-1">舊古河庭園 <a class="header-anchor" href="#舊古河庭園" aria-label="Permalink to &quot;舊古河庭園&quot;"></a></h2>
+<ul>
+<li>五、六月有春季玫瑰節</li>
+<li>離上中里站最近</li>
+</ul>
+<h2 id="西荻窪" tabindex="-1">西荻窪 <a class="header-anchor" href="#西荻窪" aria-label="Permalink to &quot;西荻窪&quot;"></a></h2>
+<ul>
+<li>很多骨董店</li>
+<li>駱駝：玻璃名店</li>
+</ul>
+<h2 id="都電回憶廣場" tabindex="-1">都電回憶廣場 <a class="header-anchor" href="#都電回憶廣場" aria-label="Permalink to &quot;都電回憶廣場&quot;"></a></h2>
+<ul>
+<li>荒川線是東京現存唯一的公營路面電車</li>
+<li>明美製菓有「都電最中餅」</li>
+<li>和梶原站相連的梶原書店已經拆了</li>
+<li>離荒川車庫前最近</li>
+</ul>
+<h2 id="城南島海濱公園" tabindex="-1">城南島海濱公園 <a class="header-anchor" href="#城南島海濱公園" aria-label="Permalink to &quot;城南島海濱公園&quot;"></a></h2>
+<ul>
+<li>有汽車露營區</li>
+<li>離羽田很近，適合航空迷</li>
+<li>離大森海岸站最近</li>
+</ul>
+<h2 id="世田谷" tabindex="-1">世田谷 <a class="header-anchor" href="#世田谷" aria-label="Permalink to &quot;世田谷&quot;"></a></h2>
+<ul>
+<li>蘆花恆春園：德冨蘆花的舊宅</li>
+<li>德冨蘆花和托爾斯泰往來甚密</li>
+<li>離蘆花公園站最近</li>
+<li>年尾年頭有「襤褸市」，必吃代官餅</li>
+<li>世田谷線是東京現存唯一的私營路面電車</li>
+<li>離上町站最近</li>
+</ul>
+<h2 id="互動地圖" tabindex="-1">互動地圖 <a class="header-anchor" href="#互動地圖" aria-label="Permalink to &quot;互動地圖&quot;"></a></h2>
+<div class="videobox four3">
+    <iframe src="https://www.google.com/maps/d/embed?mid=1-40Aiz8mzgNjQbv2tE59jv_sAvu8lh4&ehbc=2E312F"></iframe>
+</div>]]></content:encoded>
+            <enclosure url="https://haruowang.vercel.app/japan/sg1.webp" length="0" type="image/webp"/>
         </item>
         <item>
             <title><![CDATA[内田秀のVlog]]></title>
             <link>https://haruowang.vercel.app/global/japan/shutube.html</link>
             <guid>https://haruowang.vercel.app/global/japan/shutube.html</guid>
-            <pubDate>Mon, 23 Sep 2024 05:21:05 GMT</pubDate>
+            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
             <description><![CDATA[觀看聲優內田秀生活影片的摘要整理]]></description>
             <content:encoded><![CDATA[<h1 id="内田秀のvlog" tabindex="-1">内田秀のVlog <a class="header-anchor" href="#内田秀のvlog" aria-label="Permalink to &quot;内田秀のVlog&quot;"></a></h1>
 <p><Badge type="info" text="🌱 Seedlings" /></P>
@@ -1083,36 +1748,59 @@
 <li>有出現在《海街日記》中</li>
 <li>離由比濱站最近</li>
 </ul>
+<h2 id="昭和紀念公園" tabindex="-1">昭和紀念公園 <a class="header-anchor" href="#昭和紀念公園" aria-label="Permalink to &quot;昭和紀念公園&quot;"></a></h2>
+<ul>
+<li>適合賞櫻和賞銀杏，要門票</li>
+<li>離西立川站最近</li>
+</ul>
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[JobMenta商用日文]]></title>
-            <link>https://haruowang.vercel.app/global/japan/work.html</link>
-            <guid>https://haruowang.vercel.app/global/japan/work.html</guid>
-            <pubDate>Mon, 23 Sep 2024 05:21:05 GMT</pubDate>
-            <description><![CDATA[Yourator商用日文單字小書中的生難字整理]]></description>
-            <content:encoded><![CDATA[<h1 id="jobmenta商用日文" tabindex="-1">JobMenta商用日文 <a class="header-anchor" href="#jobmenta商用日文" aria-label="Permalink to &quot;JobMenta商用日文&quot;"></a></h1>
-<p><Badge type="info" text="🌱 Seedlings" /></P>
+            <title><![CDATA[【Strudel Work：Persecution Of The Masses】]]></title>
+            <link>https://haruowang.vercel.app/live-coding/tidal/potm.html</link>
+            <guid>https://haruowang.vercel.app/live-coding/tidal/potm.html</guid>
+            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
+            <description><![CDATA[Using Strudel to cover Shiro Sagisu's Persecution Of The Masses]]></description>
+            <content:encoded><![CDATA[<h1 id="【strudel-work-persecution-of-the-masses】" tabindex="-1">【Strudel Work：Persecution Of The Masses】 <a class="header-anchor" href="#【strudel-work-persecution-of-the-masses】" aria-label="Permalink to &quot;【Strudel Work：Persecution Of The Masses】&quot;"></a></h1>
+<p><Badge type="info" text="🌳 Evergreen" /></P>
+<div class="videobox">
+    <iframe frameborder="0" src="https://www.youtube.com/embed/LcXZvQNIc6U" allowFullScreen>
+    </iframe>
+</div>
+<h2 id="cpm" tabindex="-1">CPM <a class="header-anchor" href="#cpm" aria-label="Permalink to &quot;CPM&quot;"></a></h2>
 <ul>
-<li>アイミツ：比價</li>
-<li>アポ：約見</li>
-<li>アテンド：接待（客戶）</li>
-<li>イニシアチブ：主導權</li>
-<li>打ち合わせ：小型會議</li>
-<li>オンスケ：如期</li>
-<li>キャパ：能力</li>
-<li>キュレーション：蒐集資料</li>
-<li>コンプライアンス：遵守法規</li>
-<li>五⽉⾬式：斷斷續續</li>
-<li>〆切／締め切り：截止期限</li>
+<li>cpm = bpm / bpc</li>
+<li>bpc: How many beats are required to complete a cycle? The smaller the number, the faster the speed.</li>
 </ul>
-]]></content:encoded>
+<h2 id="drum" tabindex="-1">Drum <a class="header-anchor" href="#drum" aria-label="Permalink to &quot;Drum&quot;"></a></h2>
+<ul>
+<li>stack(sound.bank)</li>
+<li>e.g. <code>stack(s(&quot;&lt;hh ~&gt;*8&quot;).bank(&quot;LinnDrum&quot;), s(&quot;&lt;bd&gt;*8&quot;).bank(&quot;RolandTR909&quot;));</code></li>
+</ul>
+<h2 id="note" tabindex="-1">Note <a class="header-anchor" href="#note" aria-label="Permalink to &quot;Note&quot;"></a></h2>
+<ul>
+<li>cat.note.sound</li>
+<li>e.g. <code>cat(&quot;&lt;eb3!2 f3@2&gt;*4&quot;, &quot;&lt;c3&gt;*4&quot;).note().n(3).s(&quot;gm_synth_bass_1&quot;);</code></li>
+</ul>
+<h2 id="tips" tabindex="-1">Tips <a class="header-anchor" href="#tips" aria-label="Permalink to &quot;Tips&quot;"></a></h2>
+<ul>
+<li>~ / -: rests</li>
+<li>!: replicate</li>
+<li>@: elongate</li>
+<li>n(3).s(&quot;gm_synth_bass_1&quot;) = s(&quot;gm_synth_bass_1&quot;:3)</li>
+<li>transpose(+-12): pitch shifting</li>
+<li>arrange.cpm(cpm): as an integration</li>
+</ul>
+<h2 id="demo" tabindex="-1">Demo <a class="header-anchor" href="#demo" aria-label="Permalink to &quot;Demo&quot;"></a></h2>
+<div class="videobox one1">
+    <iframe src="https://strudel.cc/?ObIDhpp7APMx"></iframe>
+</div>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[【松學校導讀：重點筆記】]]></title>
             <link>https://haruowang.vercel.app/pov/art/arthon.html</link>
             <guid>https://haruowang.vercel.app/pov/art/arthon.html</guid>
-            <pubDate>Mon, 23 Sep 2024 05:21:05 GMT</pubDate>
+            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
             <description><![CDATA[觀看數位藝術基金會《松學校導讀》之摘要整理]]></description>
             <content:encoded><![CDATA[<h1 id="【松學校導讀-重點筆記】" tabindex="-1">【松學校導讀：重點筆記】 <a class="header-anchor" href="#【松學校導讀-重點筆記】" aria-label="Permalink to &quot;【松學校導讀：重點筆記】&quot;"></a></h1>
 <p><Badge type="info" text="🌱 Seedlings" /></P>
@@ -1158,7 +1846,7 @@
 <ul>
 <li>浪漫主義否定劇場的想像，在意空缺和死亡</li>
 <li>殘酷劇場在意「生命自身」，而非再現</li>
-<li>亞陶想回到戲劇的原初狀態，破除文字性，回歸感官性</li>
+<li>Artaud想回到戲劇的原初狀態，破除文字性，回歸感官性</li>
 <li>殘酷劇場可以發生在每一個當下，是積極的遺忘</li>
 </ul>
 <h2 id="缺席的美學" tabindex="-1">缺席的美學 <a class="header-anchor" href="#缺席的美學" aria-label="Permalink to &quot;缺席的美學&quot;"></a></h2>
@@ -1167,13 +1855,76 @@
 <li>911博物館沒有重建雙子星，只是用水池留下足跡（the footprints）</li>
 <li>「藝術提出一個問題，設計提供一個答案」</li>
 </ul>
+<h2 id="可變、不變、微變" tabindex="-1">可變、不變、微變 <a class="header-anchor" href="#可變、不變、微變" aria-label="Permalink to &quot;可變、不變、微變&quot;"></a></h2>
+<ul>
+<li>「複製」的演變</li>
+<li>文藝復興後，建築才有複本，設計者才獨立出來</li>
+<li>數位表現主義案例：畢爾包美術館</li>
+</ul>
+<h2 id="rfid" tabindex="-1">RFID <a class="header-anchor" href="#rfid" aria-label="Permalink to &quot;RFID&quot;"></a></h2>
+<ul>
+<li>最初應用在蘇聯對美國大使館的監控</li>
+<li>Katherine Hayles認為科技物也有它的認知過程</li>
+</ul>
+<h2 id="後設博物館" tabindex="-1">後設博物館 <a class="header-anchor" href="#後設博物館" aria-label="Permalink to &quot;後設博物館&quot;"></a></h2>
+<ul>
+<li>BYOD：自攜設備</li>
+<li>來自「由下而上」的生態博物館</li>
+</ul>
+<h2 id="認知組裝體" tabindex="-1">認知組裝體 <a class="header-anchor" href="#認知組裝體" aria-label="Permalink to &quot;認知組裝體&quot;"></a></h2>
+<ul>
+<li>ATSAC：洛杉磯自動交通監控系統</li>
+<li>Viv：由Siri開發者打造，曾是Siri頭號對手</li>
+<li>Sociometer：MIT開發的穿戴式感知裝置，能探知社交時的誠實訊號</li>
+</ul>
+<h2 id="資料在地化" tabindex="-1">資料在地化 <a class="header-anchor" href="#資料在地化" aria-label="Permalink to &quot;資料在地化&quot;"></a></h2>
+<ul>
+<li>datum：基準點</li>
+<li>immutable mobile：不可變的可移動體，由Latour提出。「現象或物件被轉譯到不同脈絡中，在抽象化過程，轉變了存在方式的物件、現象等，以此不同脈絡中的事物，可以匯集在一起並被運算。」</li>
+<li>situated：ANT領域常用，類似local</li>
+<li>local不一定規模較小，而要和global相對來看</li>
+</ul>
+<h2 id="新媒體與社會記憶" tabindex="-1">新媒體與社會記憶 <a class="header-anchor" href="#新媒體與社會記憶" aria-label="Permalink to &quot;新媒體與社會記憶&quot;"></a></h2>
+<ul>
+<li>社會記憶有正規和非正規</li>
+<li>皮克斯認為比起DCP，可編輯檔案的保存價值更高</li>
+</ul>
+<h2 id="談ar實境之敘事" tabindex="-1">談AR實境之敘事 <a class="header-anchor" href="#談ar實境之敘事" aria-label="Permalink to &quot;談AR實境之敘事&quot;"></a></h2>
+<ul>
+<li>Epic Wandering：開放式空間體驗</li>
+<li>MoMAR：旨在透過AR使展覽民主化，致敬MoMA</li>
+</ul>
+<h2 id="the-image-of-objectivity" tabindex="-1">The Image of Objectivity <a class="header-anchor" href="#the-image-of-objectivity" aria-label="Permalink to &quot;The Image of Objectivity&quot;"></a></h2>
+<ul>
+<li>客觀性在19世紀誕生</li>
+</ul>
+<h2 id="論象徵性的物質性" tabindex="-1">論象徵性的物質性 <a class="header-anchor" href="#論象徵性的物質性" aria-label="Permalink to &quot;論象徵性的物質性&quot;"></a></h2>
+<ul>
+<li>文化技術可以製造差異</li>
+<li>海德格認為自動門是某種納粹的起源，讓人不會留心他人</li>
+</ul>
+<h2 id="談虛擬技術的空間介面性" tabindex="-1">談虛擬技術的空間介面性 <a class="header-anchor" href="#談虛擬技術的空間介面性" aria-label="Permalink to &quot;談虛擬技術的空間介面性&quot;"></a></h2>
+<ul>
+<li>Matterport：全景應用</li>
+<li>DIKW：資訊、訊息、知識、智慧</li>
+</ul>
+<h2 id="大社會資訊的承諾與挑戰" tabindex="-1">大社會資訊的承諾與挑戰 <a class="header-anchor" href="#大社會資訊的承諾與挑戰" aria-label="Permalink to &quot;大社會資訊的承諾與挑戰&quot;"></a></h2>
+<ul>
+<li>Social Computing：社會運算（挖掘真實）</li>
+<li>三種資料階級：創造者、收集者、運用者</li>
+</ul>
+<h2 id="時基媒體" tabindex="-1">時基媒體 <a class="header-anchor" href="#時基媒體" aria-label="Permalink to &quot;時基媒體&quot;"></a></h2>
+<ul>
+<li>1994，奈良真實性文件。修正1964的威尼斯憲章，更注重場所精神</li>
+<li>Nelson Goodman將藝術區分為Autographic和Allographic</li>
+</ul>
 ]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[臺灣獨立藝術空間檔案計劃]]></title>
             <link>https://haruowang.vercel.app/pov/art/iast.html</link>
             <guid>https://haruowang.vercel.app/pov/art/iast.html</guid>
-            <pubDate>Mon, 23 Sep 2024 05:21:05 GMT</pubDate>
+            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
             <description><![CDATA[觀看空總《臺灣獨立藝術空間檔案計畫》之摘要整理]]></description>
             <content:encoded><![CDATA[<h1 id="臺灣獨立藝術空間檔案計劃" tabindex="-1">臺灣獨立藝術空間檔案計劃 <a class="header-anchor" href="#臺灣獨立藝術空間檔案計劃" aria-label="Permalink to &quot;臺灣獨立藝術空間檔案計劃&quot;"></a></h1>
 <p><Badge type="info" text="🌱 Seedlings" /></P>
@@ -1321,8 +2072,703 @@
 <li>《星移》有義大利出版社Rizzoli的英文版</li>
 <li>中文版設計是從田園城市出身的林銀玲操刀</li>
 </ul>
+<h2 id="檔案之困" tabindex="-1">檔案之困 <a class="header-anchor" href="#檔案之困" aria-label="Permalink to &quot;檔案之困&quot;"></a></h2>
+<h3 id="李立鈞" tabindex="-1">李立鈞 <a class="header-anchor" href="#李立鈞" aria-label="Permalink to &quot;李立鈞&quot;"></a></h3>
+<ul>
+<li>Foucault：檔案是一種規範性的系統</li>
+<li>研究檔案時要研究的是「當下的邊界」</li>
+<li>Arlette Farge：正因為檔案不意圖供人閱讀，因此有種危險的真實感。應該要反思檔案</li>
+<li>Benjamin：書寫歷史其實是在「引用」歷史，永遠包含著毀壞。Certeau和Freud也有呼應的想法</li>
+<li>Achille Mbembe：檔案化是種涉及剝奪的「公共化」過程</li>
+<li>消滅檔案的方式：毀壞檔案或「文明的」紀念</li>
+<li>援引檔案，為死者代言，將會使其噤聲</li>
+<li>Derrida：檔案包含arkhḗ（起源）之義；檔案熱也是檔案惡</li>
+</ul>
+<h2 id="做為檔案員的藝術家" tabindex="-1">做為檔案員的藝術家 <a class="header-anchor" href="#做為檔案員的藝術家" aria-label="Permalink to &quot;做為檔案員的藝術家&quot;"></a></h2>
+<h3 id="陳慧嶠" tabindex="-1">陳慧嶠 <a class="header-anchor" href="#陳慧嶠" aria-label="Permalink to &quot;陳慧嶠&quot;"></a></h3>
+<ul>
+<li>1995，佩斯畫廊的Peter Boris有來伊通</li>
+<li>1996，IFP在伊通的展覽首次提出當代</li>
+<li>2008，新竹貨運陳先生贊助伊通500萬</li>
+<li>AAA的岩沏零看了《國家氧》後更關注台灣，後來和袁廣鳴結婚</li>
+<li>林壽宇：莊普等人的老師，被稱作「師公」</li>
+</ul>
+<h3 id="姚瑞中" tabindex="-1">姚瑞中 <a class="header-anchor" href="#姚瑞中" aria-label="Permalink to &quot;姚瑞中&quot;"></a></h3>
+<ul>
+<li>張建富事件：北美館長蘇瑞屏認為其作品太迷信而引發衝突</li>
+<li>NO - 1 藝術空間：位於信義區福德街，只存在一年</li>
+<li>北美館辦過《前衛藝術展》的B04曾發生火災</li>
+<li>「出蘆入關」於2021年的關渡藝術節再現</li>
+<li>天打那實驗體：北藝四系所創的地下團體</li>
+<li>「策展人」之名來自陸蓉之</li>
+<li>人民公舍：林經寰所創的替代空間。其團體名為人民公社</li>
+<li>101現代藝術群：盧怡仲、楊茂林、吳天章等人</li>
+<li>秦政德發起文大罷課行動，並陳立過「藝術法西斯」</li>
+<li>張振宇事件：藝文人士抗議北美館長不適任</li>
+<li>游移美術館：竹圍工作室的前身</li>
+<li>土基舍：竹圍工作室附設的小型藝廊</li>
+<li>南條史生將雙年展帶進台灣</li>
+<li>沙湖壢藝術村：高俊宏曾去田調</li>
+<li>20號倉庫：林平曾任總監</li>
+<li>TIVAC：台灣國際視覺藝術中心，全會華所創</li>
+<li>沁報：倪再沁針對2000年大選的創作</li>
+<li>自強貳捌肆：目前在藝大書店二樓</li>
+<li>北川富朗：越後妻有和瀨戶內藝術祭總監</li>
+<li>黃永砯：廈門達達創始人</li>
+<li>郭孟浩：香港第一代行為藝術家，別名蛙王</li>
+</ul>
+<h2 id="北美館館史資料庫的建置與挑戰" tabindex="-1">北美館館史資料庫的建置與挑戰 <a class="header-anchor" href="#北美館館史資料庫的建置與挑戰" aria-label="Permalink to &quot;北美館館史資料庫的建置與挑戰&quot;"></a></h2>
+<h3 id="雷逸婷" tabindex="-1">雷逸婷 <a class="header-anchor" href="#雷逸婷" aria-label="Permalink to &quot;雷逸婷&quot;"></a></h3>
+<ul>
+<li>1986，黃光男建立美術家資料中心</li>
+<li>2016，文獻中心正式啟用</li>
+<li>新展望：台北雙年展的前身</li>
+<li>黑田雷兒：福岡美術館的策展主任</li>
+</ul>
+<h3 id="余思穎" tabindex="-1">余思穎 <a class="header-anchor" href="#余思穎" aria-label="Permalink to &quot;余思穎&quot;"></a></h3>
+<ul>
+<li>1996，「台灣藝術主體性」雙年展有六位策展人，分別是蕭瓊瑞、羅智成、蔡宏明、李俊賢、謝東山、路況</li>
+</ul>
+<h2 id="介紹阿普畫廊與新浜碼頭" tabindex="-1">介紹阿普畫廊與新浜碼頭 <a class="header-anchor" href="#介紹阿普畫廊與新浜碼頭" aria-label="Permalink to &quot;介紹阿普畫廊與新浜碼頭&quot;"></a></h2>
+<h3 id="汪怡君" tabindex="-1">汪怡君 <a class="header-anchor" href="#汪怡君" aria-label="Permalink to &quot;汪怡君&quot;"></a></h3>
+<ul>
+<li>阿普畫廊就在新浜樓上</li>
+<li>新浜的前身是鹽埕阿普</li>
+<li>前身是前衛藝術推展中心</li>
+<li>阿普有審查制，並瞄準30歲以上藝術家</li>
+<li>曾經還有台北阿普</li>
+<li>2001年，新浜開始被鄭明全當成公共財經營</li>
+<li>許自貴提到《自立晚報》曾想買下阿普</li>
+</ul>
+<h2 id="介紹新樂園藝術空間檔案" tabindex="-1">介紹新樂園藝術空間檔案 <a class="header-anchor" href="#介紹新樂園藝術空間檔案" aria-label="Permalink to &quot;介紹新樂園藝術空間檔案&quot;"></a></h2>
+<h3 id="汪怡君-1" tabindex="-1">汪怡君 <a class="header-anchor" href="#汪怡君-1" aria-label="Permalink to &quot;汪怡君&quot;"></a></h3>
+<ul>
+<li>新樂園出過刊物《藝術論談》</li>
+<li>蘇匯宇有參與《爛吧兒》</li>
+</ul>
+<h3 id="游崴" tabindex="-1">游崴 <a class="header-anchor" href="#游崴" aria-label="Permalink to &quot;游崴&quot;"></a></h3>
+<ul>
+<li>何佳興參與過新樂園</li>
+</ul>
+<h3 id="張雅萍" tabindex="-1">張雅萍 <a class="header-anchor" href="#張雅萍" aria-label="Permalink to &quot;張雅萍&quot;"></a></h3>
+<ul>
+<li>新樂園原來是香菸名</li>
+<li>鹽埕的一坪書室很類似森岡書店</li>
+</ul>
+<h2 id="介紹二號公寓檔案" tabindex="-1">介紹二號公寓檔案 <a class="header-anchor" href="#介紹二號公寓檔案" aria-label="Permalink to &quot;介紹二號公寓檔案&quot;"></a></h2>
+<h3 id="汪怡君-2" tabindex="-1">汪怡君 <a class="header-anchor" href="#汪怡君-2" aria-label="Permalink to &quot;汪怡君&quot;"></a></h3>
+<ul>
+<li>1986，菲國的人民力量革命影響519綠色行動</li>
+<li>英文名稱從Apartment 2演變成Space 2</li>
+<li>1991，二號公寓的展覽曾在北美館遇到火災</li>
+</ul>
+<h3 id="黃海鳴" tabindex="-1">黃海鳴 <a class="header-anchor" href="#黃海鳴" aria-label="Permalink to &quot;黃海鳴&quot;"></a></h3>
+<ul>
+<li>侯俊明曾創作展演《侯府喜事》</li>
+</ul>
 ]]></content:encoded>
             <enclosure url="https://haruowang.vercel.app/art/ia1.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[【The Type：字型知識補帖】]]></title>
+            <link>https://haruowang.vercel.app/pov/font/the-type.html</link>
+            <guid>https://haruowang.vercel.app/pov/font/the-type.html</guid>
+            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
+            <description><![CDATA[Podcast《字談字暢》的重點筆記]]></description>
+            <content:encoded><![CDATA[<h1 id="【the-type-字型知識補帖】" tabindex="-1">【The Type：字型知識補帖】 <a class="header-anchor" href="#【the-type-字型知識補帖】" aria-label="Permalink to &quot;【The Type：字型知識補帖】&quot;"></a></h1>
+<p><Badge type="info" text="🌱 Seedlings" /></P>
+<h2 id="大家都不容易" tabindex="-1">大家都不容易 <a class="header-anchor" href="#大家都不容易" aria-label="Permalink to &quot;大家都不容易&quot;"></a></h2>
+<ul>
+<li>方正蠻常做「多文種」</li>
+<li>方正的排版軟體叫飛翔</li>
+<li>雷丁的字體碩士要做拉丁+另一語種</li>
+<li>mark：mark to base</li>
+<li>mkmk：mark to mark</li>
+<li>mark和mkmk與阿拉伯文的連音符有關</li>
+<li>維哈柯：維吾爾、哈薩克、柯爾克孜</li>
+<li>維哈柯文類似阿拉伯文</li>
+<li>Borna和Toshi皆擅長多文種</li>
+<li>Nastaliq：波斯體／懸體，基線是斜的</li>
+<li>Ruqʿah：同屬阿拉伯六大書體，也是斜的</li>
+<li>Toshi設計的Klaket便是採用Ruqʿah風格</li>
+<li>Adobe-Japan1：統整外字規格</li>
+<li>一般日文字型會做到Adobe-Japan1-3</li>
+<li>方正蘭亭黑Pro Global：方正第一款全球字庫</li>
+</ul>
+<h2 id="多文種就在您身邊" tabindex="-1">多文種就在您身邊 <a class="header-anchor" href="#多文種就在您身邊" aria-label="Permalink to &quot;多文種就在您身邊&quot;"></a></h2>
+<ul>
+<li>戰國棟：TypeMeet大連的統籌兼主持人</li>
+<li>厲致謙：3type創始人，設計Meiloi Sans</li>
+<li>由小林章監製，蒙納的翔鶴黑體被Eric推薦</li>
+<li>滿文和傳統蒙文要豎排，藏文要橫排</li>
+</ul>
+<h2 id="在第九年看二十年" tabindex="-1">在第九年看二十年 <a class="header-anchor" href="#在第九年看二十年" aria-label="Permalink to &quot;在第九年看二十年&quot;"></a></h2>
+<ul>
+<li>Unicode 16.0已在9月發布，新增很多聖書體，只增加8款表情</li>
+<li>UAX：Unicode標準附件</li>
+<li>文字情報基盤：使用電子経済産業省推進費推動的資料庫</li>
+<li>今田欣一：金陵設計者</li>
+<li>薛天盟：錦華明朝設計者，茉莉字型創辦人之一</li>
+<li>華文黑體：蘋方前的Mac預設字型。後者是威鋒所開發</li>
+</ul>
+<h2 id="三榜定案修改單" tabindex="-1">三榜定案修改單 <a class="header-anchor" href="#三榜定案修改單" aria-label="Permalink to &quot;三榜定案修改單&quot;"></a></h2>
+<ul>
+<li>Monotype：自動鑄排機</li>
+<li>GB 18030-2022：中國最新的中文編碼字符集，2024年10月首次修改</li>
+<li>更新快慢：通常是Unicode &gt; ISO/IEC &gt; GB，但中方在2022先動作，自行使用了以0A為首的Plane 10</li>
+<li>CJK I：2023年9月，IRG將「公安人口信息專用字庫補充漢字」收錄於此，解決Plane 10問題</li>
+<li>Unification Rule：表意文字認同原則，相對於字集分離收錄規則</li>
+<li>Simsun-ExtG：Win11的新簡體字型</li>
+</ul>
+<h2 id="別頭痛醫頭腳痛醫腳" tabindex="-1">別頭痛醫頭腳痛醫腳 <a class="header-anchor" href="#別頭痛醫頭腳痛醫腳" aria-label="Permalink to &quot;別頭痛醫頭腳痛醫腳&quot;"></a></h2>
+<ul>
+<li>ID2025有支援MathML，但目前它的SVG轉成CMYK會有問題</li>
+<li>孤行：widow/orphan；孤字:runt</li>
+<li>中文排版不常討論river</li>
+</ul>
+<h2 id="分分合合的攝氏度" tabindex="-1">分分合合的攝氏度 <a class="header-anchor" href="#分分合合的攝氏度" aria-label="Permalink to &quot;分分合合的攝氏度&quot;"></a></h2>
+<ul>
+<li>鐵宋是柯熾堅老師的收官之作，搭配無襯線英文</li>
+<li>宋七體：源於徐學成老師為毛澤東著作設計的字體</li>
+<li>Canonical：標準等價，在分解映射時有長度限制</li>
+<li>Compatibility：相容等價，在分解映射時沒有長度限制</li>
+<li>西方認為°C是分開的，東亞認為°C是一體的</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[《少女歌劇再生產評論集》筆記]]></title>
+            <link>https://haruowang.vercel.app/pov/thinking/revue.html</link>
+            <guid>https://haruowang.vercel.app/pov/thinking/revue.html</guid>
+            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
+            <description><![CDATA[「2024少歌Only」評論文集之重點整理]]></description>
+            <content:encoded><![CDATA[<h1 id="《少女歌劇再生產評論集》筆記" tabindex="-1">《少女歌劇再生產評論集》筆記 <a class="header-anchor" href="#《少女歌劇再生產評論集》筆記" aria-label="Permalink to &quot;《少女歌劇再生產評論集》筆記&quot;"></a></h1>
+<p><Badge type="info" text="🌳 Evergreen" /></P>
+<h2 id="舞台少女們的畢業舞會" tabindex="-1">舞台少女們的畢業舞會 <a class="header-anchor" href="#舞台少女們的畢業舞會" aria-label="Permalink to &quot;舞台少女們的畢業舞會&quot;"></a></h2>
+<h3 id="作者-耿耿" tabindex="-1">作者：耿耿 <a class="header-anchor" href="#作者-耿耿" aria-label="Permalink to &quot;作者：耿耿&quot;"></a></h3>
+<ul>
+<li>單挑的日文是一騎打ち（いっきうち）</li>
+<li>迷宮組是西洋劍和步兵劍的碰撞</li>
+<li>劇場版猶如畢業舞會，將舞台私有化</li>
+</ul>
+<h2 id="高塔與舞台的荊棘路" tabindex="-1">高塔與舞台的荊棘路 <a class="header-anchor" href="#高塔與舞台的荊棘路" aria-label="Permalink to &quot;高塔與舞台的荊棘路&quot;"></a></h2>
+<h3 id="作者-mikopatche" tabindex="-1">作者：mikopatche <a class="header-anchor" href="#作者-mikopatche" aria-label="Permalink to &quot;作者：mikopatche&quot;"></a></h3>
+<ul>
+<li>塔羅牌的高塔（the tower）和意外有關</li>
+</ul>
+<h2 id="「命運舞台」的造價" tabindex="-1">「命運舞台」的造價 <a class="header-anchor" href="#「命運舞台」的造價" aria-label="Permalink to &quot;「命運舞台」的造價&quot;"></a></h2>
+<h3 id="作者-止水" tabindex="-1">作者：止水 <a class="header-anchor" href="#作者-止水" aria-label="Permalink to &quot;作者：止水&quot;"></a></h3>
+<p>這篇切入的角度很有趣，讓人注意到孕育舞台少女的環境。</p>
+<ul>
+<li>港區女子：在富裕地區活動的年輕女性</li>
+<li>3A1R：赤坂、麻布、青山、六本木</li>
+<li>LDK：客廳、餐廳、廚房</li>
+<li>不動產評價：買賣事例、收益換算、再建築</li>
+</ul>
+<p>ACG世界觀有奇人異事不稀奇，但沒想到華戀家要四千萬台幣啊。</p>
+<h2 id="少女歌劇包場主辦心得與指南" tabindex="-1">少女歌劇包場主辦心得與指南 <a class="header-anchor" href="#少女歌劇包場主辦心得與指南" aria-label="Permalink to &quot;少女歌劇包場主辦心得與指南&quot;"></a></h2>
+<h3 id="作者-馬步蜥蜴" tabindex="-1">作者：馬步蜥蜴 <a class="header-anchor" href="#作者-馬步蜥蜴" aria-label="Permalink to &quot;作者：馬步蜥蜴&quot;"></a></h3>
+<p>本評論集有兩篇文在聊包場，令人不禁對參與、甚至舉辦有些心癢。等廻天上映時，先看「馬步洗包場幫」有何動作吧。</p>
+<h3 id="包場小技巧" tabindex="-1">包場小技巧 <a class="header-anchor" href="#包場小技巧" aria-label="Permalink to &quot;包場小技巧&quot;"></a></h3>
+<ul>
+<li>三階段：意願調查、正式報名、匯款</li>
+<li>也可以採用更有效率的報名匯款合一</li>
+<li>以匯款順序作為排位或抽獎依據很不錯</li>
+<li>可以考慮要不要辦映後聚餐</li>
+</ul>
+<h3 id="包場小八卦" tabindex="-1">包場小八卦 <a class="header-anchor" href="#包場小八卦" aria-label="Permalink to &quot;包場小八卦&quot;"></a></h3>
+<ul>
+<li>美麗華和in89資訊較透明</li>
+<li>查帳推薦台新和玉山</li>
+<li>車庫娛樂和樂聲有合作</li>
+</ul>
+<h2 id="光戀的客體關係詮釋" tabindex="-1">光戀的客體關係詮釋 <a class="header-anchor" href="#光戀的客體關係詮釋" aria-label="Permalink to &quot;光戀的客體關係詮釋&quot;"></a></h2>
+<h3 id="作者-董彧" tabindex="-1">作者：董彧 <a class="header-anchor" href="#作者-董彧" aria-label="Permalink to &quot;作者：董彧&quot;"></a></h3>
+<p>從《精神現象學》一路寫到精神分析，驗證我心中所感：評論家或創作者都該去了解心理防衛機轉。</p>
+<h3 id="讀者反應" tabindex="-1">讀者反應 <a class="header-anchor" href="#讀者反應" aria-label="Permalink to &quot;讀者反應&quot;"></a></h3>
+<ul>
+<li>諾曼霍蘭德（Norman N. Holland）將文學批評分成三個範疇：作者人格分析、讀者反應分析、角色人格分析</li>
+<li>少女歌劇的劇情即是對劇中劇《Starlight》的讀者反應分析</li>
+</ul>
+<h3 id="原初依賴" tabindex="-1">原初依賴 <a class="header-anchor" href="#原初依賴" aria-label="Permalink to &quot;原初依賴&quot;"></a></h3>
+<ul>
+<li>黑格爾的「嗜欲」：當嬰兒發現欲望會傷害人</li>
+<li>有「原初依賴創傷」會對關係缺乏控制感</li>
+<li>「兩個人的夢想無法實現」——愛對神樂光來說是零和的</li>
+<li>神樂光從真晝身上感受到「攻擊性可以不殺死客體」</li>
+<li>設置律法：華戀讓自己被拋棄不再顯得沒道理</li>
+<li>精神分析將精神病視為「失去客體」，如同失去閃耀</li>
+<li>思覺失調：意識到愛會傷人並使自己空虛</li>
+<li>憂鬱症：認為比起因自身的愛傷人，不如用恨</li>
+</ul>
+<h3 id="客體關係" tabindex="-1">客體關係 <a class="header-anchor" href="#客體關係" aria-label="Permalink to &quot;客體關係&quot;"></a></h3>
+<ul>
+<li>由克萊恩（Melanie Klein）提出</li>
+<li>投射性認同：由內而外。例如把吃不飽歸咎於壞乳房</li>
+<li>內攝：由外而內。例如把被好乳房餵飽歸功於自己</li>
+<li>分裂：好乳房和壞乳房之間沒有灰色地帶</li>
+<li>偏執─類分裂心理位置：由投射性認同、內攝和分裂組成</li>
+<li>憂鬱心理位置：認知到乳房並不是非黑即白，想要補償</li>
+<li>修復：創造力源於試圖修復和客體的關係</li>
+</ul>
+<h3 id="無意識人格結構" tabindex="-1">無意識人格結構 <a class="header-anchor" href="#無意識人格結構" aria-label="Permalink to &quot;無意識人格結構&quot;"></a></h3>
+<ul>
+<li>由費爾貝恩（Ronald Fairbairn）提出</li>
+<li>無意識人格結構：為避免精神病，以最大恨壓制最大愛</li>
+<li>原欲我：追逐興奮客體（客體誘惑我的部分／我愛的部分）</li>
+<li>反原欲我：連結拒斥客體（客體抗拒我的部分／我恨的部分）</li>
+</ul>
+<h2 id="追逐無意義" tabindex="-1">追逐無意義 <a class="header-anchor" href="#追逐無意義" aria-label="Permalink to &quot;追逐無意義&quot;"></a></h2>
+<h3 id="作者-魚子" tabindex="-1">作者：魚子 <a class="header-anchor" href="#作者-魚子" aria-label="Permalink to &quot;作者：魚子&quot;"></a></h3>
+<ul>
+<li>創作亦是於追逐無意義後再生產</li>
+</ul>
+<h2 id="舞台和現實的界線" tabindex="-1">舞台和現實的界線 <a class="header-anchor" href="#舞台和現實的界線" aria-label="Permalink to &quot;舞台和現實的界線&quot;"></a></h2>
+<h3 id="作者-chow-cyrus" tabindex="-1">作者：Chow Cyrus <a class="header-anchor" href="#作者-chow-cyrus" aria-label="Permalink to &quot;作者：Chow Cyrus&quot;"></a></h3>
+<ul>
+<li>「沒有人要知道誰為蝙蝠車的輪胎充氣」——Grant Morrison</li>
+<li>安德露：於手遊中登場的鼴鼠，和艾露一同經營地下劇場</li>
+<li>動畫第一集開場時有多重凝視</li>
+</ul>
+<h2 id="不平等的衝突" tabindex="-1">不平等的衝突 <a class="header-anchor" href="#不平等的衝突" aria-label="Permalink to &quot;不平等的衝突&quot;"></a></h2>
+<h3 id="作者-羊毛" tabindex="-1">作者：羊毛 <a class="header-anchor" href="#作者-羊毛" aria-label="Permalink to &quot;作者：羊毛&quot;"></a></h3>
+<ul>
+<li>少歌的場景總是表現出不平等，特別是階梯等高低位置</li>
+<li>劇場版讓選拔不再如場域理論般同一化，使不平等重新定義</li>
+</ul>
+<h2 id="一起打造舞台吧" tabindex="-1">一起打造舞台吧 <a class="header-anchor" href="#一起打造舞台吧" aria-label="Permalink to &quot;一起打造舞台吧&quot;"></a></h2>
+<h3 id="作者-李翔宇" tabindex="-1">作者：李翔宇 <a class="header-anchor" href="#作者-李翔宇" aria-label="Permalink to &quot;作者：李翔宇&quot;"></a></h3>
+<ul>
+<li>應援場來自歌舞伎的「大向こう」文化</li>
+<li>馬薩拉的原型來自印度，被日本模仿後加入紙吹雪</li>
+<li>閱讀創造：包含聯想、補充、豐富、強化</li>
+<li>蕉鹿之夢：比喻人生如夢，也是少歌同人誌</li>
+</ul>
+<h2 id="從超越論到臨在" tabindex="-1">從超越論到臨在 <a class="header-anchor" href="#從超越論到臨在" aria-label="Permalink to &quot;從超越論到臨在&quot;"></a></h2>
+<h3 id="作者-李佾學" tabindex="-1">作者：李佾學 <a class="header-anchor" href="#作者-李佾學" aria-label="Permalink to &quot;作者：李佾學&quot;"></a></h3>
+<ul>
+<li>王爾德認為莎士比亞很擅長用服裝指涉人物性格</li>
+<li>大場奈奈身穿的軍服指涉226事件</li>
+<li>華戀戰勝奈奈：代表revue結果不隨可視強度的民主性</li>
+<li>「透過欲望的的可視化重新配享了觀眾的感受性」</li>
+<li>選拔要爭奪Top Star，屬於超越意義體系</li>
+<li>「下克上」是為了打破原有關係，讓世界變得沒有更多外部</li>
+<li>電視版之概念是「超越論的」；劇場版之概念是「臨在的」</li>
+<li>輪迴系主角和《金閣寺》的溝口一樣，注視著不變的超越性之美</li>
+<li>無法被通約的一次性才是美，所以奈奈不能讓舞台混入常態性</li>
+<li>《金閣寺》指出「超越論內涵著臨在的渴望本身」</li>
+<li>不再依靠他人言語的純那超克了自己</li>
+<li>巴洛克文體：接納外部性，保持交流</li>
+</ul>
+<p>特別喜歡後記中那一句「長頸鹿皆有斑紋，但位置從未一致。」</p>
+<p>或許有天，不務正業的我也能找到燃燒自己的機會。</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[居家裝修學習筆記]]></title>
+            <link>https://haruowang.vercel.app/wealth/dwelling/home.html</link>
+            <guid>https://haruowang.vercel.app/wealth/dwelling/home.html</guid>
+            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
+            <description><![CDATA[從建材到施工的知識點整理]]></description>
+            <content:encoded><![CDATA[<h1 id="居家裝修學習筆記" tabindex="-1">居家裝修學習筆記 <a class="header-anchor" href="#居家裝修學習筆記" aria-label="Permalink to &quot;居家裝修學習筆記&quot;"></a></h1>
+<p><Badge type="info" text="🌱 Seedlings" /></P>
+<h2 id="建材" tabindex="-1">建材 <a class="header-anchor" href="#建材" aria-label="Permalink to &quot;建材&quot;"></a></h2>
+<h3 id="地板" tabindex="-1">地板 <a class="header-anchor" href="#地板" aria-label="Permalink to &quot;地板&quot;"></a></h3>
+<ul>
+<li>SPC：防焰但地況要求高。怕熱易滑，要留伸縮縫</li>
+<li>LVT：比SPC更耐熱，對地況要求低</li>
+<li>海島型超耐磨地板：表層是木紋美耐板</li>
+<li>木地板有三種主要工法：直舖、平舖、架高</li>
+<li>地磚建議用瓷質磚（石英磚），較貴但不易裂</li>
+<li>石質磚適合室內地面，陶質磚適合室內牆壁</li>
+<li>舒適毯：仿木紋捲式地板，方便但也有些缺點</li>
+<li>水泥粉光地板：觸感蠻冷，容易裂開、起砂、變色</li>
+<li>磐多磨：以水泥為底，來自德國的無接縫地板</li>
+<li>磐多磨缺點：貴、不耐刮、易吃色</li>
+</ul>
+<h3 id="牆壁" tabindex="-1">牆壁 <a class="header-anchor" href="#牆壁" aria-label="Permalink to &quot;牆壁&quot;"></a></h3>
+<ul>
+<li>烤漆玻璃：一才200</li>
+<li>銀狐大理石：一才800-1000</li>
+</ul>
+<h3 id="板材" tabindex="-1">板材 <a class="header-anchor" href="#板材" aria-label="Permalink to &quot;板材&quot;"></a></h3>
+<ul>
+<li>麻六甲木心板：又稱麻仔、噴嚏板</li>
+<li>柳安木：又稱芯仔，比麻仔貴。紅肉蟲比較不愛</li>
+<li>富美家：美耐板大品牌</li>
+<li>透心美耐板：沒黑邊</li>
+<li>LVL：單板層積材。經過膠合，用的比較是人造林</li>
+<li>F3板材：甲醛釋放量平均1.5以下，市面上最便宜</li>
+<li>PVC的壓紋比PP和美耐皿深</li>
+<li>舒然銘版：木料格柵 + 銘木夾板</li>
+<li>氧化鎂板：防火，但用在天花板容易變形。還是矽酸鈣板適合</li>
+<li>FENIX的熱修復據說可以抗細微刮痕</li>
+<li>波音軟片：波音客機以前的裝飾材料，裁切容易，又可做無縫。因為很軟，所以很注重黏貼表面的平整</li>
+</ul>
+<h2 id="空間" tabindex="-1">空間 <a class="header-anchor" href="#空間" aria-label="Permalink to &quot;空間&quot;"></a></h2>
+<h3 id="浴室" tabindex="-1">浴室 <a class="header-anchor" href="#浴室" aria-label="Permalink to &quot;浴室&quot;"></a></h3>
+<ul>
+<li>C.S.R：穿鞋防滑係數。建議大於0.55</li>
+<li>C.S.R-B：赤腳防滑係數。建議大於0.6</li>
+<li>小洩：洩水坡度每公尺降1cm</li>
+<li>大洩：洩水坡度每公尺降2cm</li>
+<li>浴室燈的防塵防水等級建議達IP44</li>
+<li>單純IPX4只是防潑濺，固體防護力未知</li>
+<li>自平泥不適合用在浴室，不耐磨</li>
+<li>FRP浴缸：商務旅館常用。用的是玻璃纖維，比壓克力不耐用</li>
+</ul>
+<h3 id="窗台" tabindex="-1">窗台 <a class="header-anchor" href="#窗台" aria-label="Permalink to &quot;窗台&quot;"></a></h3>
+<ul>
+<li>飄窗：有270度視野，常改造成收納，要考量防水</li>
+<li>穿梭管：鋁製，直橫互相貫穿。是傳統鐵窗勁敵</li>
+</ul>
+<h3 id="結構" tabindex="-1">結構 <a class="header-anchor" href="#結構" aria-label="Permalink to &quot;結構&quot;"></a></h3>
+<ul>
+<li>RC常用於低樓層、SRC用於中、SC用於高</li>
+<li>剪力牆通常是RC結構</li>
+<li>化學錨栓：抗震強，適合施工時長不用趕的建案</li>
+<li>包泥現象：擋土的連續壁中混入泥沙</li>
+</ul>
+<h2 id="施工" tabindex="-1">施工 <a class="header-anchor" href="#施工" aria-label="Permalink to &quot;施工&quot;"></a></h2>
+<ul>
+<li>放樣：用雷射測量確認設計圖在現場的位置</li>
+<li>吊筋：骨架上方的垂直角料，透過樓板拉力穩住天花板</li>
+<li>喇叭鎖孔：直徑通常是5.4cm</li>
+<li>裝置距離：到門邊，通常是6cm</li>
+<li>甲蟲：一種拍拍手。讓門板輕按即可開啟</li>
+</ul>
+<h3 id="水電" tabindex="-1">水電 <a class="header-anchor" href="#水電" aria-label="Permalink to &quot;水電&quot;"></a></h3>
+<ul>
+<li>排水孔可用氣球灌水堵住</li>
+<li>浸泡式止漏劑易有結晶，排水後要刷洗</li>
+<li>分段火排：可按季節調整水溫，但小公升通常沒有</li>
+<li>2、30坪的空間大約要配電75A</li>
+<li>電箱總安培數至少應達75A，建議100A</li>
+<li>每坪需要的冷氣能力：0.5-0.64kW</li>
+<li>電線品牌中，太平洋廣受好評</li>
+<li>2024電費：每月120度以下，1度1.68元</li>
+</ul>
+<h3 id="泥漆" tabindex="-1">泥漆 <a class="header-anchor" href="#泥漆" aria-label="Permalink to &quot;泥漆&quot;"></a></h3>
+<ul>
+<li>模基：泥作參考基準。相當於麻糬、灰誌、標準餅</li>
+<li>硬底施工：費工費時又貴，品質最好。常用於牆面</li>
+<li>軟底施工：分成乾、濕式等。常用於地板，易膨拱</li>
+<li>對付插座破口：批土+石膏粉補兩次</li>
+<li>第一次比例2：1，第二次批土再多點</li>
+<li>壁癌粉：水 = 3：1</li>
+<li>乳膠漆：可耐濕抹布擦拭</li>
+<li>一底二度：通常是指上一次批土，刷兩次油漆</li>
+<li>防水漆要上一道底漆、兩道面漆</li>
+<li>陰陽角：牆面轉折的凹凸處</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[房屋租賃買賣筆記]]></title>
+            <link>https://haruowang.vercel.app/wealth/dwelling/house.html</link>
+            <guid>https://haruowang.vercel.app/wealth/dwelling/house.html</guid>
+            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
+            <description><![CDATA[從租房到買賣房的知識點整理]]></description>
+            <content:encoded><![CDATA[<h1 id="房屋租賃買賣筆記" tabindex="-1">房屋租賃買賣筆記 <a class="header-anchor" href="#房屋租賃買賣筆記" aria-label="Permalink to &quot;房屋租賃買賣筆記&quot;"></a></h1>
+<p><Badge type="info" text="🌱 Seedlings" /></P>
+<h2 id="租賃" tabindex="-1">租賃 <a class="header-anchor" href="#租賃" aria-label="Permalink to &quot;租賃&quot;"></a></h2>
+<ul>
+<li>公證時至少要帶三份租賃契約書</li>
+<li>兩押一租：因為押金不能超過兩個月</li>
+<li>不定期租約：租期一年以上但沒簽約，或租約到期沒更新</li>
+<li>不定期租約裡沒有「買賣不破租賃」</li>
+<li>租屋調解是免費的</li>
+<li>報稅時注意，目前租金扣除額最高12萬，房貸30萬</li>
+<li>房東的租賃所得如果分離課稅會比較透明</li>
+</ul>
+<h2 id="買賣" tabindex="-1">買賣 <a class="header-anchor" href="#買賣" aria-label="Permalink to &quot;買賣&quot;"></a></h2>
+<ul>
+<li>房市三大檔期：329、520、928</li>
+<li>價金信託：銀行版的履約保證。更有公信，卻也更不彈性</li>
+<li>新成屋自備款建議抓三成；裝潢建議抓一坪4-8萬</li>
+<li>簽約→用印→完稅→交屋，整個流程通常要抓45天</li>
+</ul>
+<h3 id="稅務" tabindex="-1">稅務 <a class="header-anchor" href="#稅務" aria-label="Permalink to &quot;稅務&quot;"></a></h3>
+<ul>
+<li>契稅：房屋移轉時要繳</li>
+<li>土地增值稅：土地移轉時要繳</li>
+<li>印花稅：對特殊憑證或文件徵收</li>
+<li>新北市是最慢通過囤房稅的直轄市</li>
+</ul>
+<h2 id="黑話" tabindex="-1">黑話 <a class="header-anchor" href="#黑話" aria-label="Permalink to &quot;黑話&quot;"></a></h2>
+<ul>
+<li>冒泡：成交</li>
+<li>冒大泡：成交金額高</li>
+<li>全泡：買賣雙方都是同仲介找的</li>
+<li>半泡：買賣雙方是不同仲介找的</li>
+<li>開底合一：開價即底價，不讓你殺價</li>
+<li>SAKURA：看房臨演</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[證券投資與財務分析]]></title>
+            <link>https://haruowang.vercel.app/wealth/finance/securities-specialist.html</link>
+            <guid>https://haruowang.vercel.app/wealth/finance/securities-specialist.html</guid>
+            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
+            <description><![CDATA[證券商業務員資格測驗教科書之筆記]]></description>
+            <content:encoded><![CDATA[<h1 id="證券投資與財務分析" tabindex="-1">證券投資與財務分析 <a class="header-anchor" href="#證券投資與財務分析" aria-label="Permalink to &quot;證券投資與財務分析&quot;"></a></h1>
+<p><Badge type="info" text="🌱 Seedlings" /></P>
+<h2 id="投資與金融市場概念" tabindex="-1">投資與金融市場概念 <a class="header-anchor" href="#投資與金融市場概念" aria-label="Permalink to &quot;投資與金融市場概念&quot;"></a></h2>
+<ul>
+<li>金融市場分成貨幣和資本市場</li>
+<li>貨幣市場：到期日一年以下</li>
+<li>貨幣市場透過OTC Market交易</li>
+<li>OTC Market：店頭市場</li>
+<li>CP1：第一類／交易性商業本票</li>
+<li>CP2：第二類／融資性商業本票</li>
+<li>RP：附買回交易</li>
+<li>RS：附賣回交易</li>
+<li>附條件交易以公債為主要標的</li>
+<li>半碼：0.125%</li>
+<li>權益證券：如普通股、特別股</li>
+<li>可轉換公司債：對投資人有利所以利率較低</li>
+<li>可贖回公司債：對投資人不利所以利率較高</li>
+<li>TDR：台灣存託憑證</li>
+<li>ADR：美國存託憑證</li>
+<li>Call Options：買權</li>
+<li>Put Options：賣權</li>
+<li>NAV：淨資產總值</li>
+<li>股票／基金手續費：千分之1.425</li>
+</ul>
+<h2 id="固定收益證券分析" tabindex="-1">固定收益證券分析 <a class="header-anchor" href="#固定收益證券分析" aria-label="Permalink to &quot;固定收益證券分析&quot;"></a></h2>
+<ul>
+<li>報價可分為貼現率、貨幣市場利率</li>
+<li>公債：目前採利率標</li>
+<li>BP：基點，相當於0.01%，債券單位</li>
+<li>買賣公債免繳證交及證所稅</li>
+<li>凍結期間：避免CB持有人過早轉換</li>
+<li>「附認股權公司債」持有人執行認股權利時，投資人要付錢，而公司債仍存在</li>
+<li>「可轉換公司債」持有人執行CB轉換時，投資人不用付錢。但公司債將不存在，投資人成為股東</li>
+<li>「零息債券」賺錢的部分還是被視為利息，要繳稅（總利息27萬額度內免稅）</li>
+<li>「歐洲債券」比「外國債券」彈性</li>
+<li>「REITs」投資人享10%分離課稅</li>
+<li>馬考列存續期間：你的債券要多久才能回本並拿到利息。可代表利率變動對債券價格的影響</li>
+<li>免疫策略：使投資期限等同存續期間。目標並非戰勝市場，消極</li>
+<li>債券殖利率又稱到期收益率（YTM）</li>
+</ul>
+<h3 id="馬凱爾五大定理" tabindex="-1">馬凱爾五大定理 <a class="header-anchor" href="#馬凱爾五大定理" aria-label="Permalink to &quot;馬凱爾五大定理&quot;"></a></h3>
+<ul>
+<li>債券價格與YTM成反向關係</li>
+<li>YTM下降使債券價格上漲的幅度，高於相反</li>
+<li>到期期間愈長，債券價格對YTM之敏感性越大</li>
+<li>此敏感性之增加程度隨到期期間延長而遞減</li>
+<li>低票面利率債券之YTM敏感性高於高票面</li>
+</ul>
+<h2 id="普通股價格分析" tabindex="-1">普通股價格分析 <a class="header-anchor" href="#普通股價格分析" aria-label="Permalink to &quot;普通股價格分析&quot;"></a></h2>
+<ul>
+<li>股利殖利率可分為現金殖利率和股票股利殖利率，通常討論前者</li>
+<li>現金殖利率又稱Dividend Yield</li>
+<li>現金殖利率代表股利在股價中的比例</li>
+<li>股利發放率代表股利在EPS中的比例，又稱Payout Ratio</li>
+<li>成長型股票：PE和PB高，股利殖利率低</li>
+<li>價值型股票：PE和PB低，股利殖利率高</li>
+</ul>
+<h3 id="股票評價模式" tabindex="-1">股票評價模式 <a class="header-anchor" href="#股票評價模式" aria-label="Permalink to &quot;股票評價模式&quot;"></a></h3>
+<ul>
+<li>本益比估價法：EPS*PE，適合牛市使用</li>
+<li>股價淨值比法：淨值*PB。PB&lt;1代表市價被低估</li>
+<li>現金殖利率法：現金股利／DY</li>
+</ul>
+<details class="details custom-block"><summary>Tips</summary>
+<p>合理本益比：股利發放率*(1+股利成長率)/(目標報酬率-股利成長率)。</p>
+</details>
+<h2 id="證券投資基本分析" tabindex="-1">證券投資基本分析 <a class="header-anchor" href="#證券投資基本分析" aria-label="Permalink to &quot;證券投資基本分析&quot;"></a></h2>
+<ul>
+<li>領先指標：如「M1b」實質貨幣總計數、「SEMI」接單出貨比</li>
+<li>同時指標：如製造業銷售量指數、非農就業人數</li>
+<li>落後指標：如金融業隔夜拆款利率、製造業存貨率</li>
+<li>WPI：躉售物價指數，關於批發價</li>
+<li>利率上升，外資進得來，即期匯率升值，遠期匯率貶值</li>
+<li>速動比率：又稱酸性測驗比率，比流動比率嚴格，一樣用來衡量短期償債能力</li>
+<li>杜邦方程式：ROE = 淨利率x 總資產週轉率x 權益乘數，用來分析獲利出處</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[台灣經濟四百年]]></title>
+            <link>https://haruowang.vercel.app/wealth/finance/taiwan400.html</link>
+            <guid>https://haruowang.vercel.app/wealth/finance/taiwan400.html</guid>
+            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
+            <description><![CDATA[吳聰敏教授《台灣經濟四百年》之課程筆記]]></description>
+            <content:encoded><![CDATA[<h1 id="台灣經濟四百年" tabindex="-1">台灣經濟四百年 <a class="header-anchor" href="#台灣經濟四百年" aria-label="Permalink to &quot;台灣經濟四百年&quot;"></a></h1>
+<p><Badge type="info" text="🌱 Seedlings" /></P>
+<h2 id="現在生活真的很好" tabindex="-1">現在生活真的很好 <a class="header-anchor" href="#現在生活真的很好" aria-label="Permalink to &quot;現在生活真的很好&quot;"></a></h2>
+<h3 id="跨國比較gdp" tabindex="-1">跨國比較GDP <a class="header-anchor" href="#跨國比較gdp" aria-label="Permalink to &quot;跨國比較GDP&quot;"></a></h3>
+<ul>
+<li>透過購買力平價（PPP）</li>
+<li>PPP分為絕對型及相對型</li>
+<li>前者遵循一價法則</li>
+</ul>
+<h3 id="經濟學者" tabindex="-1">經濟學者 <a class="header-anchor" href="#經濟學者" aria-label="Permalink to &quot;經濟學者&quot;"></a></h3>
+<ul>
+<li>Angus Maddison：Kuznets的學生</li>
+<li>溝口敏行：日治時期統計台灣GDP</li>
+</ul>
+<h2 id="鹿" tabindex="-1">鹿 <a class="header-anchor" href="#鹿" aria-label="Permalink to &quot;鹿&quot;"></a></h2>
+<h3 id="強制墮胎" tabindex="-1">強制墮胎 <a class="header-anchor" href="#強制墮胎" aria-label="Permalink to &quot;強制墮胎&quot;"></a></h3>
+<ul>
+<li>邵式柏引用荷蘭人文獻描寫西拉雅族的墮胎習俗</li>
+<li>他認為該習俗是因不想讓打仗的男人有後顧之憂</li>
+</ul>
+<h3 id="毛皮貿易" tabindex="-1">毛皮貿易 <a class="header-anchor" href="#毛皮貿易" aria-label="Permalink to &quot;毛皮貿易&quot;"></a></h3>
+<ul>
+<li>李蔻克發現「劃分私有地」解決了河狸毛皮利益衝突問題</li>
+<li>吳聰敏認為西拉雅一帶因貿易頻仍又無法劃地而衝突激烈</li>
+</ul>
+<h2 id="掌中明珠" tabindex="-1">掌中明珠 <a class="header-anchor" href="#掌中明珠" aria-label="Permalink to &quot;掌中明珠&quot;"></a></h2>
+<ul>
+<li>中村孝志認為台灣對VOC而言如同掌中明珠</li>
+<li>以現代方式計算利潤後發現其實不算</li>
+<li>目加溜灣社和約：第一個有紀錄的原民和約</li>
+<li>麻豆社和約：土地產權起源</li>
+<li>1646，台灣胡椒貿易利潤增加，因清兵打到福建</li>
+</ul>
+<h2 id="贌社" tabindex="-1">贌社 <a class="header-anchor" href="#贌社" aria-label="Permalink to &quot;贌社&quot;"></a></h2>
+<ul>
+<li>Tax Farming：包稅制度</li>
+<li>1647，贌金劇增。過往認為是因為贌商獨佔交易，但其實48已可繞過贌商交易</li>
+<li>吳聰敏認為是因為競標制度和福建戰事的影響所致</li>
+<li>鹿產區從嘉南轉移至虎尾</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[關於我]]></title>
+            <link>https://haruowang.vercel.app/about/about-me/haruo.html</link>
+            <guid>https://haruowang.vercel.app/about/about-me/haruo.html</guid>
+            <pubDate>Mon, 23 Sep 2024 06:26:31 GMT</pubDate>
+            <description><![CDATA[主修印刷出版及色彩，學士論文爬梳草率季。關注影像理論和軟體研究，自學前端、親近Web3。認同Live Coding與開源文化交織的關係]]></description>
+            <content:encoded><![CDATA[<h1 id="關於我" tabindex="-1">關於我 <a class="header-anchor" href="#關於我" aria-label="Permalink to &quot;關於我&quot;"></a></h1>
+<p><Badge type="info" text="🌿 Budding" /></P>
+<h2 id="簡介" tabindex="-1">簡介 <a class="header-anchor" href="#簡介" aria-label="Permalink to &quot;簡介&quot;"></a></h2>
+<p>主修印刷出版及色彩，學士論文爬梳草率季。關注影像理論和軟體研究，自學前端、親近Web3。認同Live Coding與開源文化交織的關係。</p>
+<p>Haruo Wang majored in printing, publishing, and color studies, with his bachelor's thesis explored the Taipei Art Book Fair. He has a keen interest in image theory and software studies, and closely engaging with front-end development and Web3 technologies. He agrees to the intertwined relationship between live coding and open source culture.</p>
+<h2 id="設計" tabindex="-1">設計 <a class="header-anchor" href="#設計" aria-label="Permalink to &quot;設計&quot;"></a></h2>
+<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=Figma&logoColor=fff" alt="Figma" style="display: inline">
+<img src="https://img.shields.io/badge/Blender-F57A3B?style=for-the-badge&logo=blender&logoColor=fff" alt="Blender" style="display: inline">
+<img src="https://img.shields.io/badge/PS-31A8FF?style=for-the-badge&logo=Adobe-Photoshop&logoColor=fff" alt="Adobe Photoshop" style="display: inline">
+<img src="https://img.shields.io/badge/AI-FF9A00?style=for-the-badge&logo=Adobe-Illustrator&logoColor=fff" alt="Adobe Illustrator" style="display: inline">
+<img src="https://img.shields.io/badge/ID-EE3D8F?style=for-the-badge&logo=Adobe-InDesign&logoColor=fff" alt="Adobe InDesign" style="display: inline">
+<img src="https://img.shields.io/badge/PR-EA77FF?style=for-the-badge&logo=Adobe-Premiere-Pro&logoColor=fff" alt="Adobe Premiere Pro" style="display: inline">
+<img src="https://img.shields.io/badge/AE-9999FF?style=for-the-badge&logo=Adobe-After-Effects&logoColor=fff" alt="Adobe After Effects" style="display: inline">
+<h2 id="技術" tabindex="-1">技術 <a class="header-anchor" href="#技術" aria-label="Permalink to &quot;技術&quot;"></a></h2>
+<img src="https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=fff" alt="HTML5" style="display: inline">
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3" alt="CSS3" style="display: inline">
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=333" alt="JavaScript" style="display: inline">
+<img src="https://img.shields.io/badge/p5.js-ED225D?style=for-the-badge&logo=p5.js" alt="p5.js" style="display: inline">
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=333" alt="React" style="display: inline">
+<img src="https://img.shields.io/badge/Vercel-333?style=for-the-badge&logo=vercel" alt="Vercel" style="display: inline">
+<img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=fff" alt="Postman" style="display: inline">
+<img src="https://img.shields.io/badge/VS%20CODE-007ACC?style=for-the-badge&logo=VisualStudioCode&logoColor=fff" alt="Visual Studio Code" style="display: inline">
+<img src="https://img.shields.io/badge/-GA4-E37400?style=for-the-badge&logo=google%20analytics&logoColor=fff" alt="Google Analytics" style="display: inline">
+<h2 id="常用語言" tabindex="-1">常用語言 <a class="header-anchor" href="#常用語言" aria-label="Permalink to &quot;常用語言&quot;"></a></h2>
+<p><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HaruoWang&amp;layout=compact" alt="Top Langs" loading="lazy"></p>
+]]></content:encoded>
+            <enclosure url="https://github-readme-stats.vercel.app/api/top-langs/?username=HaruoWang&amp;layout=compact" length="0" type="image//api/top-langs/"/>
+        </item>
+        <item>
+            <title><![CDATA[東京藝文展館指南]]></title>
+            <link>https://haruowang.vercel.app/global/japan/art-guide.html</link>
+            <guid>https://haruowang.vercel.app/global/japan/art-guide.html</guid>
+            <pubDate>Mon, 23 Sep 2024 05:21:05 GMT</pubDate>
+            <description><![CDATA[《美術手帖》2012年5月特集的景點蒐集]]></description>
+            <content:encoded><![CDATA[<h1 id="東京藝文展館指南" tabindex="-1">東京藝文展館指南 <a class="header-anchor" href="#東京藝文展館指南" aria-label="Permalink to &quot;東京藝文展館指南&quot;"></a></h1>
+<p><Badge type="info" text="🌱 Seedlings" /></P>
+<h2 id="東京國立近代美術館" tabindex="-1">東京國立近代美術館 <a class="header-anchor" href="#東京國立近代美術館" aria-label="Permalink to &quot;東京國立近代美術館&quot;"></a></h2>
+<ul>
+<li>日本最早的國立美術館</li>
+<li>位於千代田區，離竹橋站最近</li>
+<li>其電影中心似乎已歇業</li>
+</ul>
+<h2 id="東京都現代美術館" tabindex="-1">東京都現代美術館 <a class="header-anchor" href="#東京都現代美術館" aria-label="Permalink to &quot;東京都現代美術館&quot;"></a></h2>
+<ul>
+<li>日本最大的當代美術館</li>
+<li>位於江東區，離清澄白河站最近</li>
+<li>附設美術圖書室，旁有木場公園</li>
+<li>特色餐點有「100本のスプーン」</li>
+</ul>
+<h2 id="清澄ギャラリーコンプレックス" tabindex="-1">清澄ギャラリーコンプレックス <a class="header-anchor" href="#清澄ギャラリーコンプレックス" aria-label="Permalink to &quot;清澄ギャラリーコンプレックス&quot;"></a></h2>
+<ul>
+<li>2015年被拆除</li>
+<li>其中6、7樓的小山登美夫畫廊，目前遷移至港區六本木</li>
+</ul>
+<h2 id="原美術館" tabindex="-1">原美術館 <a class="header-anchor" href="#原美術館" aria-label="Permalink to &quot;原美術館&quot;"></a></h2>
+<ul>
+<li>目前遷移至原美術館ARC</li>
+<li>ARC位於群馬縣澀川市，離澀川站最近</li>
+<li>原建築由渡邊仁，ARC由磯崎新設計</li>
+</ul>
+<h2 id="_8" tabindex="-1">8/ <a class="header-anchor" href="#_8" aria-label="Permalink to &quot;8/&quot;"></a></h2>
+<ul>
+<li>位於澀谷HIKARIE</li>
+<li>離澀谷站最近</li>
+<li>內含d47食堂和不定期營業的澀谷○○書店</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[日本迷你電影院]]></title>
+            <link>https://haruowang.vercel.app/global/japan/mini-theater.html</link>
+            <guid>https://haruowang.vercel.app/global/japan/mini-theater.html</guid>
+            <pubDate>Mon, 23 Sep 2024 05:21:05 GMT</pubDate>
+            <description><![CDATA[由JFF Theater介紹的影廳整理]]></description>
+            <content:encoded><![CDATA[<h1 id="日本迷你電影院" tabindex="-1">日本迷你電影院 <a class="header-anchor" href="#日本迷你電影院" aria-label="Permalink to &quot;日本迷你電影院&quot;"></a></h1>
+<p><Badge type="info" text="🌱 Seedlings" /></P>
+<h2 id="theater-enya" tabindex="-1">THEATER ENYA <a class="header-anchor" href="#theater-enya" aria-label="Permalink to &quot;THEATER ENYA&quot;"></a></h2>
+<ul>
+<li>位於佐賀縣唐津市</li>
+<li>唐津演屋祭：從2021年開始舉行的電影放映活動</li>
+<li>唐津宮日祭：每年11月初舉行，特色是14輛曳山花車</li>
+<li>虹之松原：由唐津藩主寺澤廣高所種植</li>
+<li>日本三大松原：唐津虹之松原、靜岡三保松原、敦賀氣比松原</li>
+<li>大林宣彥《花筐》：於唐津市取景</li>
+</ul>
+<h2 id="桜坂劇場" tabindex="-1">桜坂劇場 <a class="header-anchor" href="#桜坂劇場" aria-label="Permalink to &quot;桜坂劇場&quot;"></a></h2>
+<ul>
+<li>位於沖繩縣那霸市</li>
+<li>原是名為珊瑚座的戲劇小屋</li>
+<li>被琉映改造成電影院，2005一度關閉</li>
+<li>現由建設公司株式会社クランク接手</li>
+<li>舉辦工作坊「桜坂市民大学」</li>
+<li>附近有第一牧志公設市場</li>
+</ul>
+<h2 id="シネマ尾道" tabindex="-1">シネマ尾道 <a class="header-anchor" href="#シネマ尾道" aria-label="Permalink to &quot;シネマ尾道&quot;"></a></h2>
+<ul>
+<li>深谷シネマ即使人口15萬也能運營</li>
+<li>原是名為尾道松竹的電影院</li>
+<li>招牌是滿島真之介和孩子在工作坊畫的</li>
+<li>尾道又被稱作「坡道上的城市」</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[JobMenta商用日文]]></title>
+            <link>https://haruowang.vercel.app/global/japan/work.html</link>
+            <guid>https://haruowang.vercel.app/global/japan/work.html</guid>
+            <pubDate>Mon, 23 Sep 2024 05:21:05 GMT</pubDate>
+            <description><![CDATA[Yourator商用日文單字小書中的生難字整理]]></description>
+            <content:encoded><![CDATA[<h1 id="jobmenta商用日文" tabindex="-1">JobMenta商用日文 <a class="header-anchor" href="#jobmenta商用日文" aria-label="Permalink to &quot;JobMenta商用日文&quot;"></a></h1>
+<p><Badge type="info" text="🌱 Seedlings" /></P>
+<ul>
+<li>アイミツ：比價</li>
+<li>アポ：約見</li>
+<li>アテンド：接待（客戶）</li>
+<li>イニシアチブ：主導權</li>
+<li>打ち合わせ：小型會議</li>
+<li>オンスケ：如期</li>
+<li>キャパ：能力</li>
+<li>キュレーション：蒐集資料</li>
+<li>コンプライアンス：遵守法規</li>
+<li>五⽉⾬式：斷斷續續</li>
+<li>〆切／締め切り：截止期限</li>
+</ul>
+]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[【《愛動物的人》：試讀短評】]]></title>
@@ -1516,7 +2962,7 @@
 <p>「日星的這個問題就必須有賴整個社會的了解，然後公共資源是不是可以協助，那跟整個社會資源的應用。這都有賴於說整個社會大家對日星的理解，那跟是不是願意共同來努力，保存我們在這塊土地上不只是日星——其實還有很多其他的傳統產業，能夠繼續的往下、往前走。」</p>
 </blockquote>
 <p>訪問結束前，張老闆不忘補上一句——要幫助的話就是來這裡消費(笑)！</p>
-<p>果然，閱歷豐富的長者不只能夠以睿智形象示人，還可以很幽默呢 — —</p>
+<p>果然，閱歷豐富的長者不只能夠以睿智形象示人，還可以很幽默呢——</p>
 ]]></content:encoded>
             <enclosure url="https://haruowang.vercel.app/other/ri1.webp" length="0" type="image/webp"/>
         </item>
@@ -2932,98 +4378,6 @@
             <enclosure url="https://haruowang.vercel.app/career/xc1.webp" length="0" type="image/webp"/>
         </item>
         <item>
-            <title><![CDATA[2024的生活]]></title>
-            <link>https://haruowang.vercel.app/about/lifelog/2024.html</link>
-            <guid>https://haruowang.vercel.app/about/lifelog/2024.html</guid>
-            <pubDate>Fri, 20 Sep 2024 14:29:45 GMT</pubDate>
-            <description><![CDATA[2024年，Haruo Wang的生活要事]]></description>
-            <content:encoded><![CDATA[<h1 id="_2024的生活" tabindex="-1">2024的生活 <a class="header-anchor" href="#_2024的生活" aria-label="Permalink to &quot;2024的生活&quot;"></a></h1>
-<p><Badge type="info" text="🌿 Budding" /></P>
-<h2 id="jan" tabindex="-1">Jan <a class="header-anchor" href="#jan" aria-label="Permalink to &quot;Jan&quot;"></a></h2>
-<ul>
-<li>完成臺藝大圖文系學士論文</li>
-<li>參與臺藝大藝教所教育劇場演出</li>
-<li>撰寫北藝大藝跨所及藝管所審查資料</li>
-<li>參與凌華科技年終尾牙</li>
-<li>參與TempoX《積沙成島》沙龍</li>
-</ul>
-<h2 id="feb" tabindex="-1">Feb <a class="header-anchor" href="#feb" aria-label="Permalink to &quot;Feb&quot;"></a></h2>
-<ul>
-<li>於月見ル君想フ聆聽《複鳴 Resonarmonic》</li>
-<li>觀賞黃彥超《娃娃國 娃娃町》表演與座談</li>
-<li>埋首臺藝大圖文系畢業製作</li>
-</ul>
-<h2 id="mar" tabindex="-1">Mar <a class="header-anchor" href="#mar" aria-label="Permalink to &quot;Mar&quot;"></a></h2>
-<ul>
-<li>觀賞張紋瑄《倒數第二個箱子》限定演出</li>
-<li>面試北藝大藝跨所及藝管所</li>
-<li>參與短片與影像教學研習《年尾巴》</li>
-<li>參與網路自由小聚《數位皮夾》</li>
-<li>參與卓新沙龍《短影音當道》</li>
-</ul>
-<h2 id="apr" tabindex="-1">Apr <a class="header-anchor" href="#apr" aria-label="Permalink to &quot;Apr&quot;"></a></h2>
-<ul>
-<li>投稿《聯合文學》小說新人賞</li>
-<li>發表臺藝大圖文系學士論文</li>
-<li>聆聽黃大旺《阿Q正傳》講述表演</li>
-<li>觀賞Gen3《必勝營 Demo Day》</li>
-<li>拍攝專題《潭底》，投件New Wave</li>
-<li>完成臺藝大圖文系畢業製作</li>
-</ul>
-<h2 id="may" tabindex="-1">May <a class="header-anchor" href="#may" aria-label="Permalink to &quot;May&quot;"></a></h2>
-<ul>
-<li>參與校內畢展及新一代設計展</li>
-<li>參與臺北文學季講座《一本雜誌影響時代的潛力》</li>
-<li>投件Postman Japan線上黑客松</li>
-<li>進場觀賞兩部TIDF紀錄片</li>
-<li>研究L系統和Shader，投件《台灣島。鏈》及《若水》</li>
-<li>優化臺藝大圖文系畢業製作</li>
-</ul>
-<h2 id="jun" tabindex="-1">Jun <a class="header-anchor" href="#jun" aria-label="Permalink to &quot;Jun&quot;"></a></h2>
-<ul>
-<li>逛《Starry Memoir》少歌Only</li>
-<li>參與XueDao前端工作坊</li>
-<li>開始數位人才探索計畫</li>
-<li>參與沈柏逸演講《注意力調控》</li>
-<li>受文總邀請觀賞《夏日的文化洋行》</li>
-</ul>
-<h2 id="jul" tabindex="-1">Jul <a class="header-anchor" href="#jul" aria-label="Permalink to &quot;Jul&quot;"></a></h2>
-<ul>
-<li>開始日本書籍reDesign計畫</li>
-<li>參與半路二BAR《暖暖飯糰屋》</li>
-<li>前往臺東市區與都蘭獨旅</li>
-<li>於王道銀行參與《形塑空響》演出</li>
-<li>投稿《愛動物的人》讀後短評</li>
-</ul>
-<h2 id="aug" tabindex="-1">Aug <a class="header-anchor" href="#aug" aria-label="Permalink to &quot;Aug&quot;"></a></h2>
-<ul>
-<li>延續日本書籍reDesign計畫</li>
-<li>參與2024《iThome鐵人賽》</li>
-<li>投件Solana Write-a-thon</li>
-<li>參與楊雨樵《音樂史》新書聽講會</li>
-<li>於剝皮寮觀賞Tshit-thô-lâng影展</li>
-<li>於月見ル君想フ觀賞Sunny Day Service紀錄片</li>
-</ul>
-<h2 id="sep" tabindex="-1">Sep <a class="header-anchor" href="#sep" aria-label="Permalink to &quot;Sep&quot;"></a></h2>
-<ul>
-<li>2024《iThome鐵人賽》完賽</li>
-<li>製作味噌湯、油封秋刀魚、起司鮪魚洋蔥</li>
-<li>製作油豆腐鯖魚、吻仔魚炒飯、豆皮包蛋</li>
-<li>嘗試用thirdweb快速開發dapp</li>
-<li>自架RSSHub，達成開源貢獻</li>
-<li>參與《開源祭》和《耳中手顫鐵汁黑暗》</li>
-<li>參與以太坊紀錄片放映活動</li>
-<li>參與網路自由小聚《AI基本法》</li>
-<li>為部落格加入RSS訂閱功能</li>
-<li>完成書籍reDesign計畫第一階段</li>
-<li>使用Strudel數位cover鷺巢詩郎名曲</li>
-</ul>
-<h2 id="oct" tabindex="-1">Oct <a class="header-anchor" href="#oct" aria-label="Permalink to &quot;Oct&quot;"></a></h2>
-<h2 id="nov" tabindex="-1">Nov <a class="header-anchor" href="#nov" aria-label="Permalink to &quot;Nov&quot;"></a></h2>
-<h2 id="dec" tabindex="-1">Dec <a class="header-anchor" href="#dec" aria-label="Permalink to &quot;Dec&quot;"></a></h2>
-]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[那些我曾經歷的挫敗]]></title>
             <link>https://haruowang.vercel.app/about/lifelog/failure.html</link>
             <guid>https://haruowang.vercel.app/about/lifelog/failure.html</guid>
@@ -3042,83 +4396,8 @@
 <li>《Solana Write-a-thon》徵文落選</li>
 <li>用thirdweb快速開發dapp，但是踩坑</li>
 <li>自架RSSHub到Cloudflare，但是不能關機</li>
+<li>護照規費補繳</li>
 </ul>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[2024的品味]]></title>
-            <link>https://haruowang.vercel.app/about/taste/2024.html</link>
-            <guid>https://haruowang.vercel.app/about/taste/2024.html</guid>
-            <pubDate>Fri, 20 Sep 2024 14:29:45 GMT</pubDate>
-            <description><![CDATA[2024年，Haruo Wang的音樂、影像、閱讀品味]]></description>
-            <content:encoded><![CDATA[<h1 id="_2024的品味" tabindex="-1">2024的品味 <a class="header-anchor" href="#_2024的品味" aria-label="Permalink to &quot;2024的品味&quot;"></a></h1>
-<p><Badge type="info" text="🌿 Budding" /></P>
-<h2 id="jan" tabindex="-1">Jan <a class="header-anchor" href="#jan" aria-label="Permalink to &quot;Jan&quot;"></a></h2>
-<h3 id="what-i-hear" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
-<p>謝銘祐《路》、スリーズブーケ《水彩世界》、芒果醬《我喜歡你》、Ave Mujica《Angles》、キタニタツヤ《聖者の行進》、四分衛《雨和眼淚》、稲本響《名残の指先》、夏之禹《姐姐》、神前曉《以下、回想》、Air《Alone in Kyoto》、コレサワ《これから》、back number《冬と春》、鷺巢詩郎《Instabilite:Orchestre》、回春丹《鮮花》</p>
-<h3 id="what-i-see" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
-<p>《日子》、《蜂巢的幽靈》、《君主計畫：神秘組織與怪獸之謎》、《150米的人生可能》</p>
-<h3 id="what-i-read" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
-<p>《社會參與藝術的十個關鍵概念》</p>
-<h2 id="feb" tabindex="-1">Feb <a class="header-anchor" href="#feb" aria-label="Permalink to &quot;Feb&quot;"></a></h2>
-<h3 id="what-i-hear-1" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-1" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
-<p>Lorne Balfe《Calling Home》、日向敏文《Good Evening, Heartache (Orchestra Version)》、鷺巢詩郎《M10 emotion strings edit》、大原ゆい子《風と行く道》、楠木ともり《アノーイング! さんさんウィーク!》、森英治《Proof》、薬師寺寛邦《楞嚴咒 -第五会- 》、Vivy《Fluorite Eye's Song》、黃嘉千《阿爸食飯》、千住明《The Intrepid》、My Chemical Romance《I Don't Love You》、Coldplay《The Scientist》、菅野洋子《some other time》、Jóhann Jóhannsson《Through Falling Snow》、Mira-Cra Park！《Milk》、關戶剛《ラナラウンド Pt.I (FF7R Ver.)》、倉持武志《YO (Acid Jazz Ver.)》、MyGO!!!!!《詩超絆》、津田朱里《Twinkle Snow '13》、昏鴉《Mickey Mouse》</p>
-<h3 id="what-i-see-1" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-1" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
-<p>《BanG Dream! Its MyGO!!!!!》、《度日》、《錄影帶謀殺案》</p>
-<h3 id="what-i-read-1" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-1" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
-<p>《如何書寫當代藝術》</p>
-<h2 id="mar" tabindex="-1">Mar <a class="header-anchor" href="#mar" aria-label="Permalink to &quot;Mar&quot;"></a></h2>
-<h3 id="what-i-hear-2" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-2" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
-<p>釘宮理惠、堀江由衣、喜多村英梨《プレパレード》、SELFKILL《Where are you going?》、優雅逆轉《五月的雨》、頭部組成者《生育叢林》、步行者《夜光信號》、2HRs《Startide Rising》、藤川千愛《好きになってはいけない理由》、我是機車少女《Yume》、the neverminds《melt》、Angela Aki《この世界のあちこちに》、Habak《Ningún muro consiguió jamás contener la primavera》、Trent Reznor &amp; Atticus Ross《Hand Covers Bruise》、yonige《walk walk》、具島直子《I Love You》、John Carpenter《My Name is Death》、久石讓《大崩壊》、鈴村健一《ババーンと推参! バーンブレイバーン - ブレイバーン》、Lambiris《残光》、菅野祐悟《Panic Sense》、DE DE MOUSE《Memory Lane》、rionos《Viator》 、CHEMISTRY《最期の川》、菅野洋子《Blue feat. Maya》、R-Tiat《暗光》</p>
-<h3 id="what-i-see-2" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-2" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
-<p>《勇氣爆發》、《聖血》、《社群網戰》、《年尾巴》、《霧中風景》、《冥王》、《周處除三害》</p>
-<h3 id="what-i-read-2" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-2" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
-<p>《2017鴻梅新人獎巡迴展作品集無人之地》、《藝術論壇Volume11》、《我將是你的鏡子：世界當代攝影家告白》</p>
-<h2 id="apr" tabindex="-1">Apr <a class="header-anchor" href="#apr" aria-label="Permalink to &quot;Apr&quot;"></a></h2>
-<h3 id="what-i-hear-3" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-3" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
-<p>靴腿《失去愛情的摩托車手》、JADE《Step By Step》、謝震廷feat.徐靖玟《你的行李》、沉舟樂隊《就讓我墜入海底》、SUGIZO feat. GLIM SPANKY《めぐりあい》、蓮ノ空《抱きしめる花びら》、sweet ARMS《ヒトヒラ》、岩崎琢《Rubicon》、芒果醬《小紫aka給我錢》、Eve《心海》、陳勢安《不想說晚安》、P-MODEL《2D OR NOT 2D》、梅林太郎《Yuri on ICE》、林奕匡《高山低谷》、山田珠露《Always in my heart》、鷺巢詩郎《閉塞の拡大》、Cerise Bouquet《Holiday Holiday》、Cocco《Raining》、既定偏離《人生逃避號》、Liella!《シェキラ》、reche《命運》、《ゴジランド》、張瑋瑋《米店》、Ivy to Fraudulent Game《青二才》、菅野陽子《piece by ten》、dress《Is the only》、藤間仁《表裏一体》、藤田淳平《月明り》、佐佐木惠梨《ロッホと旅人》</p>
-<h3 id="what-i-see-3" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-3" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
-<p>《浮光掠影：每個人心中的電影院》、《搬家》、《哥吉拉與金剛：新帝國》、《父親的房間》</p>
-<h3 id="what-i-read-3" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-3" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
-<p>《繩》、《裝幀時代》、《開店指「難」：第一次開獨立書店就 □□！》</p>
-<h2 id="may" tabindex="-1">May <a class="header-anchor" href="#may" aria-label="Permalink to &quot;May&quot;"></a></h2>
-<h3 id="what-i-hear-4" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-4" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
-<p>佐藤直紀《Godzilla-1.0 Last》、夏之禹《Hometown》、KUNTARI《Larynx, Pt. One》、Nirvana《Jesus Doesn't Want Me For A Sunbeam》、시온《O.o》、YEW《จะมอบความรัก》、WAVE9《Wave Night》、鷺巢詩郎《Robe des Champs》、Stephen Sanchez《Until I Found You》、toe《Mother》、Village People《YMCA》、遠藤ナオキ《あなたと私と私たちの夢》、粹垢《阿蘭姊》、ASMRZ《잘자요 아가씨》、CRYCHIC《人間になりたいうた》、Elements Garden《Sense》、The Cecilias《The End of Us》、新川崎(仮)《声なき魚》</p>
-<h3 id="what-i-see-4" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-4" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
-<p>《哥吉拉-1.0》、《到不了的遠方》、《重構破碎凝視》、《帝國浩劫：美國內戰》</p>
-<h3 id="what-i-read-4" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-4" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
-<p>《終點往往在他方》</p>
-<h2 id="jun" tabindex="-1">Jun <a class="header-anchor" href="#jun" aria-label="Permalink to &quot;Jun&quot;"></a></h2>
-<h3 id="what-i-hear-5" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-5" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
-<p>雷光夏《歇業的海水浴場》、陳奕迅《床頭燈》、Ivy to Fraudulent Game《糸遊》、林強《盒子內的時間》、Max Richter《Movement, Before All Flowers》、鷺巢詩郎《Start To Check Up》、Thomas Bangalter《Sangria》、美波《君と僕の154小節戦争》、Naum Gabo《Theme For Great Cites》、MONO《Oath》、꽃별《비익련리（比翼連里）》、SHIN IN RYU《For us, summer is always short》、Jun Futamata《Útdautt lag》、Katamari-Tai Jr.《さくらいろの季節》、谷內秀樹《ミサの孤独》、Pietro Mascagni《Intermezzo From Cavalleria Rusticana》、harmoe《愛と呼ぶなら》、Wolfram《Automatic Dub》、松崎ナオ／鹿の一族《清く、ただしく》、NONA REEVES《DJ! DJ! 〜とどかぬ想い〜》、Alejandro Jodorowsky《Eye of the Beholder》、溝口肇《Tree of Hearts》、菅野洋子《その時まで》、蔡琴《請假裝你會捨不得我》、吉那罐子《把燈關上（摎火扚忒）》、新垣結衣《heavenly days》、gnkosaiBAND《POSSE》</p>
-<h3 id="what-i-see-5" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-5" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
-<p>《我和吸血鬼有份合約》、《正欲》、《高潮》、《虹咲四格第二季》、《夜晚的水母不會游泳》、《聖山》、《夏日的文化洋行》、《見證》、《恐怖分子》、《Girls Band Cry》</p>
-<h3 id="what-i-read-5" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-5" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
-<p>《關鍵1987》、《新活水Vol.19》</p>
-<h2 id="jul" tabindex="-1">Jul <a class="header-anchor" href="#jul" aria-label="Permalink to &quot;Jul&quot;"></a></h2>
-<h3 id="what-i-hear-6" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-6" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
-<p>harmoe《ドキドキトキドキトキメキス♡》、秘部痺れ《Rollercoaster of the Universe》、我地希望《半箭》、Underworld《Between Stars》、石橋英子《Evil Does Not Exist》、LÜCY《Abettor》、濁水溪公社《港都情人》、透明雜誌《E的幽靈》、The CHANG《Holiday》、周杰倫《晴天》、TuT《You Got Me When I Stare At You》、Supercar《Lucky》、先知瑪莉《入睡》、검정치마《EVERYTHING》、楊乃文 feat. 傻子與白痴《思緒的盡頭》、濁水溪公社《孔雀開屏》、伍佰《淚橋》、Agua Blue《土偶》、Paranmaum《Linda Linda》、ZARD《DAN DAN 心魅かれてく》、Lexiu Liu《MAGICIAN》、遠野光《LOVE 2000》、中森明菜《東京砂漠》、麻枝准《夏気球》、MyGO!!!!!《端程山》、Homecomings《euphoria》、陳奕迅《內疚》、Charlene《I’ve Never Been to Me》、Kim Il Du《술 마시러 가는 길 (ballad ver.)》、MAMAMOO+《댕댕》、Ketil Bjørnstad《The Sea V》、Aqours《HAPPY PARTY TRAIN》、鮮于貞娥《what the hell》、徐行《也許我們會再見》、Woodkid《Guns for Hire》、Ludovico Einaudi《Fly》、TOŃ《Wdech/wydech》、山下達郎《Juvenileのテーマ～瞳の中のRainbow～》、Joni Nijo《Dreaming》、沈文程《小河之歌》、圖騰樂團《我在那邊唱》、Einstürzende Neubauten《Sabrina》、天野正道《新たなる旅立ち》、青木陽菜《独奏showtime》</p>
-<h3 id="what-i-see-6" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-6" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
-<p>《邪惡根本不存在》、《爛頭殼》、《長腿》、《奧術》</p>
-<h3 id="what-i-read-6" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-6" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
-<p>《少女歌劇再生產評論集》、《影視聽生活誌011 2024六月號》、《愛動物的人》</p>
-<h2 id="aug" tabindex="-1">Aug <a class="header-anchor" href="#aug" aria-label="Permalink to &quot;Aug&quot;"></a></h2>
-<h3 id="what-i-hear-7" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-7" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
-<p>Seaweed藻《Morning Sun》、The Mercury Program《Marianas》、青木陽菜《Colors of You》、Ivy to Fraudulent Game《賀歌》、河豚子《陳振昌，你是隻猴子》、松崎ナオ《ただ残るイメージ》、Lily Chou-Chou《Arabesque》、村松崇継《彼方の光》、漂流出口《仙人掌的花》、Alex G《Main Theme》、World's End Girlfriend《Les Enfants du paradis》、木嶋真優《鮫 (エスクアロ)》、JPBS《Rainy Day》、スタァライト九九組《Pride》、加藤達也《color temperature 》、我們的日子有限公司《遺書》、JPBS《Green Screen》、真名子新《網户》、Inspirative《Why》、The Darkest Romance《หมุน》、Kevin Colombin《Ending》、你太白了，去曬黑《主意》、蘇打綠《蟬想》、DeVotchKa《The Winner Is》、Thomas Foguenne《Once Again》、I Mean Us《Blue and Gold》、洛天依《摩的大飈客》（公婆版歌詞）、OYEOL《OH NEW SUPER WORLD》、BL!NDMAN《Electric Counterpoint》、London Grammar《Into Gold》、Hooverphonic《Eden》、JRJ Enterprises《水田不要賣》、步行者《橋》、Yufu《The Walls Are Coming In》、野外合作社《復活》、Sunny Day Service《コンビニのコーヒー》、Cozy《21 Grams》、魚條《279自救會》、てつくずおきば《エアーマンが倒せない》、曹永旭《Seorae》、岡本敦郎《みどりの馬車》、AiNA THE END《Love Sick》、戴荃《悟空》</p>
-<h3 id="what-i-see-7" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-7" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
-<p>《驀然回首》、《老狐狸》、《青春電幻物語》、《廣島》、《雨月物語》、《紀錄片：Sunny Day Service》、《蝙蝠俠》</p>
-<h3 id="what-i-read-7" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-7" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
-<p>《女性電影理論》、《觀光客的哲學》</p>
-<h2 id="sep" tabindex="-1">Sep <a class="header-anchor" href="#sep" aria-label="Permalink to &quot;Sep&quot;"></a></h2>
-<h3 id="what-i-hear-8" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-8" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
-<p>Flawed Mangoes《Dramamine》、남혜승、박상희 《그날의 바람》、羽毛田丈史、高見優《キセキ~for ROOKIES instrumental version ~》、洪佩瑜、聲子蟲《你是自由的》、hil《Sorrow_UBW Extend》、水瀬祈《Wishing》、Jung Woo《Love Song》、It's《Fading Person, Fading Love》、YOSHI《理性藝術家》、DRDR《反正我們就這樣》、Riya《神話》、きっとび《ユー》、아소토유니온《THINK ABOUT` CHU》、Mogwai《God Gets You Back》、麥浚龍《天與地的距離》、THE BLACKBAND、汐菜《KISSそれは》、Loveholic《The Flowerpot》、Superfly《Charade》、Adultchild《Sad Thing》、School Food Punishment《light prayer》、OnceGrace Forever《Dance to remember, dance to forget》、The Cure《Alone》、Hania Rani《24.03》、藤澤慶昌《ラジオたいそう》、倒車入庫《先走了》、神前曉《Sleep Well, Vivy》、牛尾憲輔《gentle heart》、Midicronica《San Francisco》、橫山克《Dear My Loneliness and Darkness》、小瀨村晶《Shutter Girl》、929《也許像星星》</p>
-<h3 id="what-i-see-8" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-8" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
-<p>《記憶花園》、《Vitalik：以太坊故事》、《再見機器人》、《擅長逃跑的殿下》</p>
-<h3 id="what-i-read-8" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-8" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
-<p>《幸福之路》、《相機女孩漫遊東京1》</p>
-<h2 id="oct" tabindex="-1">Oct <a class="header-anchor" href="#oct" aria-label="Permalink to &quot;Oct&quot;"></a></h2>
-<h2 id="nov" tabindex="-1">Nov <a class="header-anchor" href="#nov" aria-label="Permalink to &quot;Nov&quot;"></a></h2>
-<h2 id="dec" tabindex="-1">Dec <a class="header-anchor" href="#dec" aria-label="Permalink to &quot;Dec&quot;"></a></h2>
 ]]></content:encoded>
         </item>
         <item>
@@ -5201,93 +6480,6 @@
             <enclosure url="https://ithelp.ithome.com.tw/upload/images/20240806/20163002LNWRpukfpq.png" length="0" type="image/png"/>
         </item>
         <item>
-            <title><![CDATA[東吳英文小學堂]]></title>
-            <link>https://haruowang.vercel.app/global/english/scu.html</link>
-            <guid>https://haruowang.vercel.app/global/english/scu.html</guid>
-            <pubDate>Fri, 20 Sep 2024 14:29:45 GMT</pubDate>
-            <description><![CDATA[觀看《東吳英文小學堂》的學習筆記]]></description>
-            <content:encoded><![CDATA[<h1 id="東吳英文小學堂" tabindex="-1">東吳英文小學堂 <a class="header-anchor" href="#東吳英文小學堂" aria-label="Permalink to &quot;東吳英文小學堂&quot;"></a></h1>
-<p><Badge type="info" text="🌿 Budding" /></P>
-<h2 id="白鯨記" tabindex="-1">白鯨記 <a class="header-anchor" href="#白鯨記" aria-label="Permalink to &quot;白鯨記&quot;"></a></h2>
-<ul>
-<li>白鯨記被評論家視為酷兒小說</li>
-<li>New Bedford：曾是捕鯨中心</li>
-<li>pagan：異教徒</li>
-<li>食人族魚叉手Queequeg：Ishmael的友人</li>
-</ul>
-<h2 id="譯起學翻譯" tabindex="-1">譯起學翻譯 <a class="header-anchor" href="#譯起學翻譯" aria-label="Permalink to &quot;譯起學翻譯&quot;"></a></h2>
-<ul>
-<li>象寄之才：譯者</li>
-<li>林紓 &amp; 魏易：清末民初的翻譯拍檔</li>
-<li>Ezra Pound：意象派詩人，翻譯《國泰集》</li>
-<li>馬悅然：曾任諾獎評委的瑞典漢學家</li>
-</ul>
-<h2 id="福爾摩斯教文學" tabindex="-1">福爾摩斯教文學 <a class="header-anchor" href="#福爾摩斯教文學" aria-label="Permalink to &quot;福爾摩斯教文學&quot;"></a></h2>
-<ul>
-<li>Joseph Bell：Sherlock Holmes的原型</li>
-<li>最初連載於《Strand Magazine》</li>
-<li>the Speckled Band：經典探案花斑帶</li>
-</ul>
-<h2 id="猩球崛起" tabindex="-1">猩球崛起 <a class="header-anchor" href="#猩球崛起" aria-label="Permalink to &quot;猩球崛起&quot;"></a></h2>
-<ul>
-<li>在電影中，母親是缺席的</li>
-<li>John Donne和Locke都寫過猿猴性侵的故事</li>
-<li>Tarzan在猿猴的語言中，意為白皮膚</li>
-<li>可以將黑猩猩視為人類的doppelganger</li>
-<li>「視覺合作假說」來自小林洋美和幸島司郎，後由Tomasello提出</li>
-</ul>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[WORD UP藍色證書教材]]></title>
-            <link>https://haruowang.vercel.app/global/english/toeic.html</link>
-            <guid>https://haruowang.vercel.app/global/english/toeic.html</guid>
-            <pubDate>Fri, 20 Sep 2024 14:29:45 GMT</pubDate>
-            <description><![CDATA[透過WORD UP複習多益藍證的學習筆記]]></description>
-            <content:encoded><![CDATA[<h1 id="word-up藍色證書教材" tabindex="-1">WORD UP藍色證書教材 <a class="header-anchor" href="#word-up藍色證書教材" aria-label="Permalink to &quot;WORD UP藍色證書教材&quot;"></a></h1>
-<p><Badge type="info" text="🌱 Seedlings" /></P>
-<h2 id="句子填空" tabindex="-1">句子填空 <a class="header-anchor" href="#句子填空" aria-label="Permalink to &quot;句子填空&quot;"></a></h2>
-<h3 id="單字" tabindex="-1">單字 <a class="header-anchor" href="#單字" aria-label="Permalink to &quot;單字&quot;"></a></h3>
-<ul>
-<li>subcontracted：分包</li>
-<li>readiness：準備就緒</li>
-</ul>
-<h3 id="時態" tabindex="-1">時態 <a class="header-anchor" href="#時態" aria-label="Permalink to &quot;時態&quot;"></a></h3>
-<ul>
-<li>完成式搭配since</li>
-</ul>
-<h2 id="段落填空" tabindex="-1">段落填空 <a class="header-anchor" href="#段落填空" aria-label="Permalink to &quot;段落填空&quot;"></a></h2>
-<h3 id="單字-1" tabindex="-1">單字 <a class="header-anchor" href="#單字-1" aria-label="Permalink to &quot;單字&quot;"></a></h3>
-<ul>
-<li>recitation：背誦</li>
-<li>inquiry：詢問</li>
-<li>qualify：有資格</li>
-<li>statesmanship：政治家風度</li>
-<li>recession：衰退</li>
-</ul>
-<h3 id="連字形容詞" tabindex="-1">連字形容詞 <a class="header-anchor" href="#連字形容詞" aria-label="Permalink to &quot;連字形容詞&quot;"></a></h3>
-<ul>
-<li>state-of-the-art：先進的</li>
-<li>talk-of-the-town：受到談論的</li>
-<li>down-for-the-count：失敗的</li>
-<li>pick-of-the-litter：最佳選擇的</li>
-</ul>
-<h3 id="片語" tabindex="-1">片語 <a class="header-anchor" href="#片語" aria-label="Permalink to &quot;片語&quot;"></a></h3>
-<ul>
-<li>take on：與...較量</li>
-<li>have to do with：與...有關</li>
-<li>in advance：事先</li>
-</ul>
-<h3 id="時態-1" tabindex="-1">時態 <a class="header-anchor" href="#時態-1" aria-label="Permalink to &quot;時態&quot;"></a></h3>
-<ul>
-<li>通篇使用未來式時，子句會用到未來進行式</li>
-</ul>
-<details class="details custom-block"><summary>Tips</summary>
-<p>implement是動詞！</p>
-</details>
-]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[【形塑空響：編織中的開放空間】]]></title>
             <link>https://haruowang.vercel.app/live-coding/performance/obank.html</link>
             <guid>https://haruowang.vercel.app/live-coding/performance/obank.html</guid>
@@ -5640,41 +6832,6 @@ singular.boot
             <enclosure url="https://haruowang.vercel.app/color/ci1.webp" length="0" type="image/webp"/>
         </item>
         <item>
-            <title><![CDATA[【The Type：字型知識補帖】]]></title>
-            <link>https://haruowang.vercel.app/pov/font/the-type.html</link>
-            <guid>https://haruowang.vercel.app/pov/font/the-type.html</guid>
-            <pubDate>Fri, 20 Sep 2024 14:29:45 GMT</pubDate>
-            <description><![CDATA[Podcast《字談字暢》的重點筆記]]></description>
-            <content:encoded><![CDATA[<h1 id="【the-type-字型知識補帖】" tabindex="-1">【The Type：字型知識補帖】 <a class="header-anchor" href="#【the-type-字型知識補帖】" aria-label="Permalink to &quot;【The Type：字型知識補帖】&quot;"></a></h1>
-<p><Badge type="info" text="🌱 Seedlings" /></P>
-<h2 id="大家都不容易" tabindex="-1">大家都不容易 <a class="header-anchor" href="#大家都不容易" aria-label="Permalink to &quot;大家都不容易&quot;"></a></h2>
-<ul>
-<li>方正蠻常做「多文種」</li>
-<li>方正的排版軟體叫飛翔</li>
-<li>雷丁的字體碩士要做拉丁+另一語種</li>
-<li>mark：mark to base</li>
-<li>mkmk：mark to mark</li>
-<li>mark和mkmk與阿拉伯文的連音符有關</li>
-<li>維哈柯：維吾爾、哈薩克、柯爾克孜</li>
-<li>維哈柯文類似阿拉伯文</li>
-<li>Borna和Toshi皆擅長多文種</li>
-<li>Nastaliq：波斯體／懸體，基線是斜的</li>
-<li>Ruqʿah：同屬阿拉伯六大書體，也是斜的</li>
-<li>Toshi設計的Klaket便是採用Ruqʿah風格</li>
-<li>Adobe-Japan1：統整外字規格</li>
-<li>一般日文字型會做到Adobe-Japan1-3</li>
-<li>方正蘭亭黑Pro Global：方正第一款全球字庫</li>
-</ul>
-<h2 id="多文種就在您身邊" tabindex="-1">多文種就在您身邊 <a class="header-anchor" href="#多文種就在您身邊" aria-label="Permalink to &quot;多文種就在您身邊&quot;"></a></h2>
-<ul>
-<li>戰國棟：TypeMeet大連的統籌兼主持人</li>
-<li>厲致謙：3type創始人，設計Meiloi Sans</li>
-<li>由小林章監製，蒙納的翔鶴黑體被Eric推薦</li>
-<li>滿文和傳統蒙文要豎排，藏文要橫排</li>
-</ul>
-]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[【小聚小記：AI基本法】]]></title>
             <link>https://haruowang.vercel.app/pov/participation/ailaw.html</link>
             <guid>https://haruowang.vercel.app/pov/participation/ailaw.html</guid>
@@ -5907,121 +7064,6 @@ singular.boot
 </ul>
 ]]></content:encoded>
             <enclosure url="https://haruowang.vercel.app/publication/ta1.webp" length="0" type="image/webp"/>
-        </item>
-        <item>
-            <title><![CDATA[證券投資與財務分析]]></title>
-            <link>https://haruowang.vercel.app/wealth/finance/securities-specialist.html</link>
-            <guid>https://haruowang.vercel.app/wealth/finance/securities-specialist.html</guid>
-            <pubDate>Fri, 20 Sep 2024 14:29:45 GMT</pubDate>
-            <description><![CDATA[證券商業務員資格測驗教科書之筆記]]></description>
-            <content:encoded><![CDATA[<h1 id="證券投資與財務分析" tabindex="-1">證券投資與財務分析 <a class="header-anchor" href="#證券投資與財務分析" aria-label="Permalink to &quot;證券投資與財務分析&quot;"></a></h1>
-<p><Badge type="info" text="🌱 Seedlings" /></P>
-<h2 id="投資與金融市場概念" tabindex="-1">投資與金融市場概念 <a class="header-anchor" href="#投資與金融市場概念" aria-label="Permalink to &quot;投資與金融市場概念&quot;"></a></h2>
-<ul>
-<li>金融市場分成貨幣和資本市場</li>
-<li>貨幣市場：到期日一年以下</li>
-<li>貨幣市場透過OTC Market交易</li>
-<li>OTC Market：店頭市場</li>
-<li>CP1：第一類／交易性商業本票</li>
-<li>CP2：第二類／融資性商業本票</li>
-<li>RP：附買回交易</li>
-<li>RS：附賣回交易</li>
-<li>附條件交易以公債為主要標的</li>
-<li>半碼：0.125%</li>
-<li>權益證券：如普通股、特別股</li>
-<li>可轉換公司債：對投資人有利所以利率較低</li>
-<li>可贖回公司債：對投資人不利所以利率較高</li>
-<li>TDR：台灣存託憑證</li>
-<li>ADR：美國存託憑證</li>
-<li>Call Options：買權</li>
-<li>Put Options：賣權</li>
-<li>NAV：淨資產總值</li>
-<li>股票／基金手續費：千分之1.425</li>
-</ul>
-<h2 id="固定收益證券分析" tabindex="-1">固定收益證券分析 <a class="header-anchor" href="#固定收益證券分析" aria-label="Permalink to &quot;固定收益證券分析&quot;"></a></h2>
-<ul>
-<li>報價可分為貼現率、貨幣市場利率</li>
-<li>公債：目前採利率標</li>
-<li>BP：基點，相當於0.01%，債券單位</li>
-<li>買賣公債免繳證交及證所稅</li>
-<li>凍結期間：避免CB持有人過早轉換</li>
-<li>「附認股權公司債」持有人執行認股權利時，投資人要付錢，而公司債仍存在</li>
-<li>「可轉換公司債」持有人執行CB轉換時，投資人不用付錢。但公司債將不存在，投資人成為股東</li>
-<li>「零息債券」賺錢的部分還是被視為利息，要繳稅（總利息27萬額度內免稅）</li>
-<li>「歐洲債券」比「外國債券」彈性</li>
-<li>「REITs」投資人享10%分離課稅</li>
-<li>馬考列存續期間：你的債券要多久才能回本並拿到利息。可代表利率變動對債券價格的影響</li>
-<li>免疫策略：使投資期限等同存續期間。目標並非戰勝市場，消極</li>
-<li>債券殖利率又稱到期收益率（YTM）</li>
-</ul>
-<h3 id="馬凱爾五大定理" tabindex="-1">馬凱爾五大定理 <a class="header-anchor" href="#馬凱爾五大定理" aria-label="Permalink to &quot;馬凱爾五大定理&quot;"></a></h3>
-<ul>
-<li>債券價格與YTM成反向關係</li>
-<li>YTM下降使債券價格上漲的幅度，高於相反</li>
-<li>到期期間愈長，債券價格對YTM之敏感性越大</li>
-<li>此敏感性之增加程度隨到期期間延長而遞減</li>
-<li>低票面利率債券之YTM敏感性高於高票面</li>
-</ul>
-<h2 id="普通股價格分析" tabindex="-1">普通股價格分析 <a class="header-anchor" href="#普通股價格分析" aria-label="Permalink to &quot;普通股價格分析&quot;"></a></h2>
-<ul>
-<li>股利殖利率可分為現金殖利率和股票股利殖利率，通常討論前者</li>
-<li>現金殖利率又稱Dividend Yield</li>
-<li>現金殖利率代表股利在股價中的比例</li>
-<li>股利發放率代表股利在EPS中的比例，又稱Payout Ratio</li>
-<li>成長型股票：PE和PB高，股利殖利率低</li>
-<li>價值型股票：PE和PB低，股利殖利率高</li>
-</ul>
-<h3 id="股票評價模式" tabindex="-1">股票評價模式 <a class="header-anchor" href="#股票評價模式" aria-label="Permalink to &quot;股票評價模式&quot;"></a></h3>
-<ul>
-<li>本益比估價法：EPS*PE，適合牛市使用</li>
-<li>股價淨值比法：淨值*PB。PB&lt;1代表市價被低估</li>
-<li>現金殖利率法：現金股利／DY</li>
-</ul>
-<details class="details custom-block"><summary>Tips</summary>
-<p>合理本益比：股利發放率*(1+股利成長率)/(目標報酬率-股利成長率)。</p>
-</details>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[台灣經濟四百年]]></title>
-            <link>https://haruowang.vercel.app/wealth/finance/taiwan400.html</link>
-            <guid>https://haruowang.vercel.app/wealth/finance/taiwan400.html</guid>
-            <pubDate>Fri, 20 Sep 2024 14:29:45 GMT</pubDate>
-            <description><![CDATA[吳聰敏教授《台灣經濟四百年》之課程筆記]]></description>
-            <content:encoded><![CDATA[<h1 id="台灣經濟四百年" tabindex="-1">台灣經濟四百年 <a class="header-anchor" href="#台灣經濟四百年" aria-label="Permalink to &quot;台灣經濟四百年&quot;"></a></h1>
-<p><Badge type="info" text="🌱 Seedlings" /></P>
-<h2 id="現在生活真的很好" tabindex="-1">現在生活真的很好 <a class="header-anchor" href="#現在生活真的很好" aria-label="Permalink to &quot;現在生活真的很好&quot;"></a></h2>
-<h3 id="跨國比較gdp" tabindex="-1">跨國比較GDP <a class="header-anchor" href="#跨國比較gdp" aria-label="Permalink to &quot;跨國比較GDP&quot;"></a></h3>
-<ul>
-<li>透過購買力平價（PPP）</li>
-<li>PPP分為絕對型及相對型</li>
-<li>前者遵循一價法則</li>
-</ul>
-<h3 id="經濟學者" tabindex="-1">經濟學者 <a class="header-anchor" href="#經濟學者" aria-label="Permalink to &quot;經濟學者&quot;"></a></h3>
-<ul>
-<li>Angus Maddison：Kuznets的學生</li>
-<li>溝口敏行：日治時期統計台灣GDP</li>
-</ul>
-<h2 id="鹿" tabindex="-1">鹿 <a class="header-anchor" href="#鹿" aria-label="Permalink to &quot;鹿&quot;"></a></h2>
-<h3 id="強制墮胎" tabindex="-1">強制墮胎 <a class="header-anchor" href="#強制墮胎" aria-label="Permalink to &quot;強制墮胎&quot;"></a></h3>
-<ul>
-<li>邵式柏引用荷蘭人文獻描寫西拉雅族的墮胎習俗</li>
-<li>他認為該習俗是因不想讓打仗的男人有後顧之憂</li>
-</ul>
-<h3 id="毛皮貿易" tabindex="-1">毛皮貿易 <a class="header-anchor" href="#毛皮貿易" aria-label="Permalink to &quot;毛皮貿易&quot;"></a></h3>
-<ul>
-<li>李蔻克發現「劃分私有地」解決了河狸毛皮利益衝突問題</li>
-<li>吳聰敏認為西拉雅一帶因貿易頻仍又無法劃地而衝突激烈</li>
-</ul>
-<h2 id="掌中明珠" tabindex="-1">掌中明珠 <a class="header-anchor" href="#掌中明珠" aria-label="Permalink to &quot;掌中明珠&quot;"></a></h2>
-<ul>
-<li>中村孝志認為台灣對VOC而言如同掌中明珠</li>
-<li>以現代方式計算利潤後發現其實不算</li>
-<li>目加溜灣社和約：第一個有紀錄的原民和約</li>
-<li>麻豆社和約：土地產權起源</li>
-<li>1646，台灣胡椒貿易利潤增加，因清兵打到福建</li>
-</ul>
-]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[用thirdweb快速開發dapp，但是踩坑]]></title>

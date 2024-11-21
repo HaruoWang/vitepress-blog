@@ -41,3 +41,4 @@ head:
 - 《Solana Write-a-thon》徵文落選
 - 用thirdweb快速開發dapp，但是踩坑
 - 自架RSSHub到Cloudflare，但是不能關機
+- 護照規費補繳

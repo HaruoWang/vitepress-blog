@@ -70,6 +70,10 @@ head:
 - Reuters：路透社
 - obstruction：阻礙
 
+::: details Tips
+relief是寬慰。
+:::
+
 ## 0915｜停播政策
 - blackout：停播
 - la carte：單點
@@ -80,7 +84,7 @@ head:
 - avert：避免
 
 ::: details Tips
-抗拒是resist；prevert是變態。
+抗拒是resist；pervert是變態；revert是恢復。
 :::
 
 ## 0916｜抖音
@@ -185,5 +189,237 @@ divest的名詞是divestment，很近似0912的divestiture。
 - ominous：不祥的
 
 ::: details Tips
-omnious很近似0925的omnibus。
+ominous很近似0925的omnibus。
 :::
+
+## 1001｜Sep中譯英
+- 49.5% correct
+
+## 1002｜Sep英譯中
+- 83.0% correct
+
+## 1003｜Sep中譯英
+- 94.6% correct
+
+## 1004｜Sep英譯中
+- 96.6% correct
+
+## 1005｜Sep中譯英
+- 100% correct
+
+## 1006｜Sep英譯中
+- 88.2% correct
+
+## 1007｜老詹父子
+- draft：選秀
+- cardiac：心臟的
+
+## 1008｜水門案記者新書
+- peril：危險
+- deliver the goods：說到做到
+- verbatim：逐字地
+- Simon & Schuster：美國六大出版商之一
+- pull out all the stops：全力以赴
+- endorse：支持
+- chronicle：記事
+
+::: details Tips
+chronicle很近似chronic。
+:::
+
+## 1009｜馬斯克資助
+- outgun：超過
+- PAC：政治行動委員會
+- veteran：老將
+
+## 1010｜遺產月
+- Hispanic：西班牙裔
+- Roberto Clemente：海盜隊傳奇
+- RBI：打點
+
+## 1011｜自殺前的求助
+- stigma：污名
+- coalition：聯盟
+- ethnic：種族的
+- 988：美國自殺防治熱線
+
+## 1012｜租屋族不急買房
+- take the plunge：下定決心
+- amenity：便利（設施）
+- HOA fee：社區管理費
+- ludicrous：可笑的
+- perk：福利
+- woo：爭取
+- tumble：驟降
+- entice：誘惑
+- communal：公共的
+
+::: details Tips
+plunge是驟降，近似tumble。
+:::
+
+## 1013｜Podcast政治性
+- blitz：突襲
+- anecdote：軼事
+- banter：戲謔
+- dwindling：逐漸減少的
+
+## 1014｜哥倫布日與原住民日
+- Columbus：哥倫布
+- indigenous：本土的
+- Juneteenth：六月節
+
+## 1015｜納瓦尼的預言
+- penal：刑事的
+- posthumous：死後的
+- patriot：愛國者
+- testament：遺囑
+- unwavering：堅定不移的
+
+::: details Tips
+penal近似petal和peril。
+:::
+
+## 1016｜喬治亞搖擺州
+- injunction：禁令
+
+## 1017｜巨頭與供應鏈
+- lithium：鋰
+- (come) on the heels of：緊隨其後
+
+## 1018｜網飛訂閱
+- tier：層級
+- bellwether：領頭羊
+- stalled：停滯
+
+## 1019｜川普私人帳戶
+- opaque：不透明的
+- liability：責任
+- unconstitutional：違憲的
+- domestic：國內的
+- per diem：每日津貼
+- emolument：報酬
+- hypocrisy：虛偽
+- fruitless：無效的
+
+## 1020｜賀錦麗年紀
+- inauguration：就職典禮
+- scrutiny：審查
+
+## 1021｜上班族的孤獨
+- rack up：累計
+- introvert：內向者
+- culprit：罪魁禍首
+- cringe：尷尬
+- chitchat：閒聊
+- more bang for one's buck：物美價廉
+
+## 1022｜銀翼指控馬斯克
+- infringement：侵權
+- reminiscent：懷念的
+- evocative：引起的
+- capricious：任性的
+- arbitrary：隨意的
+- veer into：轉向
+- rally：集會
+
+## 1023｜瓦倫祖拉
+- Fernando Valenzuela：道奇墨西哥名將
+- autograph：名人親簽
+- cardinal：紅衣主教（鳳頭鳥）
+- unorthodox：非正統的
+- jersey：球衣
+
+## 1024｜俄國資訊戰
+- Kremlin：克里姆林宮
+- incompetent：無能的
+- exploit：利用
+- on par with：不相上下
+- adversary：對手
+- impede：阻礙
+
+::: details Tips
+一致的是consistent。
+:::
+
+## 1025｜美國各州計票
+- AP：美聯社
+- paralyzed：麻痺的
+- hinge：決定於
+
+## 1026｜華郵立場
+- resign：辭職
+
+## 1027｜以色列空襲
+- retaliatory：報復性的
+- stockpile：儲備
+- ballistic：彈道的
+- arsenal：兵工廠
+- replenish：補充
+- Hezbollah：真主黨
+- convene：召開
+- restraint：克制
+
+::: details Tips
+restraint近似於constraint。
+:::
+
+## 1028｜北韓參戰烏俄
+- incursion：侵入
+- press conference：記者會
+- pentagon：五角形
+
+## 1029｜知名演員被判一年零一天
+- amass：累積
+- restitution：賠償
+- remorseful：懊悔的
+- attorney：律師
+- notoriety：惡名
+
+::: details Tips
+restitution近似constitution。
+:::
+
+## 1030｜裴洛西丈夫攻擊案
+- parole：假釋
+- burglary：入室搶劫
+- unanimous：一致的
+- stifle：壓制
+
+::: details Tips
+animus是敵意，consistent也是一致的。
+:::
+
+## 1031｜全球威脅
+- bloc：陣營
+- rein：韁繩
+- contend：競爭
+- exacerbate：加劇
+- Sikh：錫克人
+- breach：違反
+- throttle：節流
+- exodus：出走
+
+## 1101｜Oct中譯英
+- 62.8% correct
+
+## 1102｜Oct英譯中
+- 73.6% correct
+
+## 1103｜Oct中譯英
+- 89.4% correct
+
+## 1104｜Oct英譯中
+- 93.6% correct
+
+## 1105｜Oct中譯英
+- 81.8% correct
+
+## 1106｜Oct英譯中
+- 87.5% correct
+
+## 1107｜Sep中譯英
+- 71.0% correct
+
+## 1108｜Sep英譯中
+- 89.7% correct

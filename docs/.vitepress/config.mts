@@ -262,6 +262,7 @@ export default defineConfig({
             { text: '從後現代角度看《駭客任務》', link: '/pov/thinking/matrix' },
             { text: '千賀健史《自殺潮》淺介', link: '/pov/thinking/kenji' },
             { text: '該如何看待薩爾加多', link: '/pov/thinking/salgado' },
+            { text: '《臺灣自然寫作選》心得', link: '/pov/thinking/nature' },
           ]
         },
         {
@@ -273,6 +274,7 @@ export default defineConfig({
             { text: 'V神紀錄片，首映小便箋', link: '/pov/participation/vitalik' },
             { text: '小聚小記：數位皮夾', link: '/pov/participation/did' },
             { text: '小聚小記：AI基本法', link: '/pov/participation/ailaw' },
+            { text: '區塊鏈愛好者年會筆記', link: '/pov/participation/tabei' },
           ]
         },
         {
@@ -288,6 +290,8 @@ export default defineConfig({
             { text: '吳清友的生命之旅', link: '/pov/other/eslite' },
             { text: '大一生在日星：訪談張介冠', link: '/pov/other/rixing' },
             { text: 'moom bookshop參訪心得', link: '/pov/other/moom' },
+            { text: '《裝幀時代》重點筆記', link: '/pov/other/bind60' },
+            { text: '《重寫臺灣百年新詩史》筆記', link: '/pov/other/poem100' },
           ]
         },
       ],
@@ -303,6 +307,9 @@ export default defineConfig({
             { text: '現在學React還來得及嗎：回顧', link: '/dev/react/recap' },
             { text: '現在學React還來得及嗎：R3F', link: '/dev/react/r3f' },
             { text: '現在學React還來得及嗎：地圖', link: '/dev/react/react-leaflet' },
+            { text: '微軟十年收購史', link: '/dev/react/msft' },
+            { text: '第一次微調GPT就上手', link: '/dev/react/jotaro' },
+            { text: 'Win95俄羅斯方塊', link: '/dev/react/w95' },
           ]
         },
         {
@@ -326,6 +333,7 @@ export default defineConfig({
           text: 'Knowledge',
           collapsed: false,
           items: [
+            { text: 'Web3知識庫', link: '/web3/knowledge/web3' },
             { text: 'Web3知識庫', link: '/web3/knowledge/web3' },
           ]
         },
