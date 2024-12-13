@@ -239,6 +239,7 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: 'The Type：字型知識補帖', link: '/pov/font/the-type' },
+            { text: '數位字型學習筆記', link: '/pov/font/digi' },
           ]
         },
         {
@@ -334,7 +335,6 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: 'Web3知識庫', link: '/web3/knowledge/web3' },
-            { text: 'Web3知識庫', link: '/web3/knowledge/web3' },
           ]
         },
         {
@@ -343,6 +343,7 @@ export default defineConfig({
           items: [
             { text: '第一次開發NFT就上手', link: '/web3/development/chip' },
             { text: '用thirdweb快速開發dapp', link: '/web3/development/thirdweb' },
+            { text: 'Mini App：臺股走勢小鏈遊', link: '/web3/development/tg' },
           ]
         },
         {

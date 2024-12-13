@@ -168,3 +168,42 @@ head:
 - FVM：Filecoin版的EVM
 - Bacalhau：Filecoin做的分散式系統，有點像docker
 - DeSci Nodes：讓論文可以互動，譬如連上IDE
+
+## DAO
+
+-	Recursive Public：遞迴公眾。持續關注自身作為公眾如何維護和創新的集體，由Christopher M. Kelty提出
+-	PDT：可悲點理論。將控制人類行為的力量分為社會規範、法律、市場和架構。由Lawrence Lessig提出
+
+### 文化與價值
+
+-	Liquid democracy：流動式民主。想託人投票或自己參與皆可
+-	Conviction voting：信念投票法。支持某議案越久，影響越大
+-	Rochdale Principles：羅虛戴爾原則。為合作社所設計
+-	凹凸決策：凹形彈性，凸形明確
+-	DPI：數位公共基礎建設，包含BB（建築模組）和DPG（數位公共財）
+
+### 法律與法規
+
+-	CFTC對Ooki DAO提告並獲得勝利，首開DAO需要負擔法律責任的先例
+-	DAO.LINK：曾預計提供一般公司和DAO合作之法律框架，但牽扯進The DAO事件
+-	Colorado的LCA法律架構較完善，但不能轉讓非財務利益
+-	COALA發布The DAO Model Law，具功能和監管等效性
+-	開曼群島的KYC較為嚴格，維京群島的KYC較為寬鬆
+-	XCA：組織及團體憑證
+
+### 美國公司組織類型
+
+-	S corp：採穿透課稅，但限制亦較多
+-	C corp：大部分公司屬於此類
+-	LLC：美國採穿透課稅，台灣無相似組織
+-	Delaware LLC：很適合DAO
+-	LP：美國採穿透課稅，台灣採公司方式申報
+-	LLP：台灣無相似組織
+
+### 科技與工具
+
+-	ERC-4824：DAO的API，也是DAOstar所提出的DAOIP-2
+-	Aragon：首個DAO框架
+-	Moloch：以Ragequit聞名
+-	Compound：常被DeFi使用，和OZ合作
+-	Praise可和DC串接，Shoutout可和Slack串接

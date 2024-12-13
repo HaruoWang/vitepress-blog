@@ -42,3 +42,4 @@ head:
 - 用thirdweb快速開發dapp，但是踩坑
 - 自架RSSHub到Cloudflare，但是不能關機
 - 護照規費補繳
+- 移動停利單沒刪乾淨

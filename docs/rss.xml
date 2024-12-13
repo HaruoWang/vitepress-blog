@@ -4,451 +4,113 @@
         <title>Feed Me, Haruo</title>
         <link>https://haruowang.vercel.app</link>
         <description>Digital Garden of Haruo Wang</description>
-        <lastBuildDate>Thu, 21 Nov 2024 14:47:23 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 13 Dec 2024 05:37:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <copyright>Copyright © 2024-present Haruo Wang</copyright>
         <item>
-            <title><![CDATA[第一次微調GPT就上手]]></title>
-            <link>https://haruowang.vercel.app/dev/react/jotaro.html</link>
-            <guid>https://haruowang.vercel.app/dev/react/jotaro.html</guid>
-            <pubDate>Thu, 21 Nov 2024 13:58:05 GMT</pubDate>
-            <description><![CDATA[即便一查發現OpenAI的微調限免時間延長到10/31，還是必須花5美金（時價161元台幣），將帳號升級到階層一才能使用……並且要稍微等個一兩天才會開通權限]]></description>
-            <content:encoded><![CDATA[<h1 id="第一次微調gpt就上手" tabindex="-1">第一次微調GPT就上手 <a class="header-anchor" href="#第一次微調gpt就上手" aria-label="Permalink to &quot;第一次微調GPT就上手&quot;"></a></h1>
+            <title><![CDATA[【TG Mini App：臺股走勢小鏈遊】]]></title>
+            <link>https://haruowang.vercel.app/web3/development/tg.html</link>
+            <guid>https://haruowang.vercel.app/web3/development/tg.html</guid>
+            <pubDate>Fri, 13 Dec 2024 05:11:04 GMT</pubDate>
+            <description><![CDATA[到env裡存api key，並在main.tsx裡引入`<ThirdwebProvider>`。這可說是使用thirdweb開發的基本動作]]></description>
+            <content:encoded><![CDATA[<h1 id="【tg-mini-app-臺股走勢小鏈遊】" tabindex="-1">【TG Mini App：臺股走勢小鏈遊】 <a class="header-anchor" href="#【tg-mini-app-臺股走勢小鏈遊】" aria-label="Permalink to &quot;【TG Mini App：臺股走勢小鏈遊】&quot;"></a></h1>
 <p><Badge type="info" text="🌳 Evergreen" /></P>
-<p><img src="/react/jo1.webp" alt="JotaroGPT" loading="lazy"></p>
-<h2 id="微調訓練" tabindex="-1">微調訓練 <a class="header-anchor" href="#微調訓練" aria-label="Permalink to &quot;微調訓練&quot;"></a></h2>
-<p>對前端有些理解的話就會覺得這個挑戰不算困難。</p>
-<p>首先Git clone完<a href="https://github.com/vercel-labs/shooketh" target="_blank" rel="noreferrer">repo</a>之後pnpm i，再pnpm run dev。</p>
-<p>此時會遇到500 error，記得申請OpenAI的金鑰，並把.env.example改成.env。</p>
-<p>準備好訓練資料data.jsonl後，修改fine-tune.ts，輸入pnpm run tune重新微調自己的模型。結果CMD提示我Fine-tuning jobs cannot be created on an Explore plan.</p>
-<p>即便一查發現OpenAI的微調限免時間延長到10/31，還是必須花5美金（時價161元台幣），將帳號升級到階層一才能使用……並且要稍微等個一兩天才會開通權限。</p>
-<p>既然都要試玩4o，想說那就讓GPT來幫我生成訓練內容。</p>
-<h2 id="提問內容" tabindex="-1">提問內容 <a class="header-anchor" href="#提問內容" aria-label="Permalink to &quot;提問內容&quot;"></a></h2>
-<p>以下列出我的簡單提問，ChatGPT每次大約會回答二十條：</p>
-<blockquote>
-<p>我想要微調（fine tune）出能夠以《JOJO的奇妙冒險：星塵鬥士》中主角「空條承太郎」身分和口吻回答提問的gpt。可以幫我透過類似以下範例的jsonl格式，想出至少一百條message的jsonl嗎？（user是提問的使用者，assistant是此gpt的回覆。所以兩者的content之間要有問答關係）</p>
-</blockquote>
-<blockquote>
-<p>範例：{&quot;messages&quot;: [{&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;Jotaro GPT&quot;}, {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;太慢了太慢了，『世界』才是最強的替身，即使不停止時間，光是速度和力量，也遠超你的『白金之星』。&quot;}, {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;看來和我的白金之星是同類型的替身呢，雖然活動距離不長，但動作卻精準而有力。&quot;}]}</p>
-</blockquote>
-<blockquote>
-<p>目前還不到一百條，請幫我繼續生成，並在content中適時加入更多和《JOJO的奇妙冒險：星塵鬥士》有關的角色、替身、技能或名台詞，如「波魯納雷夫」、「阿布德爾」、「伊奇」、「流星指刺」、「隱者之紫」、「難不成是……歐拉歐拉嗎？」、「呀咧呀咧」。</p>
-</blockquote>
-<blockquote>
-<p>加入其他作品關鍵字後繼續生成：如「史比特瓦根財團」、「死神13」、「恩雅婆婆」、「歐因哥與波因哥」、「小野大輔」、「子安武人」、「大衛社」、「荒木飛呂彥」。</p>
-</blockquote>
-<blockquote>
-<p>加入其他作品關鍵字後繼續生成：如「黃金精神」、「空條徐倫」、「廣瀨康一」、「埃及九榮神」、「半徑20米的綠寶石水花」、「廁所是波魯納雷夫的舞台」、「人類的讚歌是勇氣的讚歌」、「榮耀永遠屬於星塵遠征軍」。</p>
-</blockquote>
-<blockquote>
-<p>加入「替身使者會被替身使者吸引」、「皇帝」與「吊人」、「歐拉3頁」等關鍵字後繼續生成。</p>
-</blockquote>
-<p>GPT算是回應得相當不錯。只要糾正一些明顯的錯誤，像是把二喬寫成「老爹」這種就好。</p>
-<p>把安娜蘇的替身名改回「怒海潛將」，重新run tune，給OpenAI一點時間。完事後將route.ts裡的model改成訓練好的模型，system改成你設定的。途中一樣有可以用suppressHydrationWarning解決的bug，並要將stroke-width這種寫法改成駝峰。剩下就是慢慢調UI的時間了——</p>
-<h2 id="參考文獻" tabindex="-1">參考文獻 <a class="header-anchor" href="#參考文獻" aria-label="Permalink to &quot;參考文獻&quot;"></a></h2>
-<p><a href="https://vercel.com/guides/fine-tuning-openai-nextjs" target="_blank" rel="noreferrer">Fine-tuning GPT with OpenAI, Next.js and Vercel AI SDK</a></p>
-<h2 id="專案連結" tabindex="-1"><a href="https://jotarogpt.vercel.app" target="_blank" rel="noreferrer">專案連結</a> <a class="header-anchor" href="#專案連結" aria-label="Permalink to &quot;[專案連結](https://jotarogpt.vercel.app)&quot;"></a></h2>
-]]></content:encoded>
-            <enclosure url="https://haruowang.vercel.app/react/jo1.webp" length="0" type="image/webp"/>
-        </item>
-        <item>
-            <title><![CDATA[區塊鏈愛好者年會筆記]]></title>
-            <link>https://haruowang.vercel.app/pov/participation/tabei.html</link>
-            <guid>https://haruowang.vercel.app/pov/participation/tabei.html</guid>
-            <pubDate>Thu, 21 Nov 2024 13:52:38 GMT</pubDate>
-            <description><![CDATA[他的公司在做安全和託管，同時於側鏈Liquid Network發行LBTC來增加比特幣的流動性和穩定性。相較於前述的閃電網絡，Liquid將市場更著眼於交易所這樣的大客戶]]></description>
-            <content:encoded><![CDATA[<h1 id="區塊鏈愛好者年會筆記" tabindex="-1">區塊鏈愛好者年會筆記 <a class="header-anchor" href="#區塊鏈愛好者年會筆記" aria-label="Permalink to &quot;區塊鏈愛好者年會筆記&quot;"></a></h1>
-<p><Badge type="info" text="🌳 Evergreen" /></P>
-<p>很高興有這個機會來政大公企中心補充新知。</p>
-<h2 id="bitcoin" tabindex="-1">Bitcoin <a class="header-anchor" href="#bitcoin" aria-label="Permalink to &quot;Bitcoin&quot;"></a></h2>
-<p>從開場影片不難感受出，本場議程主要圍繞的是比特幣。</p>
-<p>從各路OG口中蹦出的關鍵字，有使用「雙向支付通道」，能增加虛擬幣擴展性的L2方案「閃電網絡」，和肇因於中國三大金融機構制裁，導致BTC狂瀉超過三成的「五一九事件」等。會場氣氛繼續醞釀。</p>
-<h2 id="blockstream" tabindex="-1">Blockstream <a class="header-anchor" href="#blockstream" aria-label="Permalink to &quot;Blockstream&quot;"></a></h2>
-<p>第九屆年會海報上的重磅嘉賓Adam Back率先登場。</p>
-<p>他的公司在做安全和託管，同時於側鏈Liquid Network發行LBTC來增加比特幣的流動性和穩定性。相較於前述的閃電網絡，Liquid將市場更著眼於交易所這樣的大客戶。</p>
-<p>而像是日本加密金融公司Crypto Garage，就曾在自家平台Settlenet上，透過Liquid來交易穩定幣JPYS。不過近年能查到的日圓穩定幣資訊，似乎都是DCJPY / GYEN / Tochika（存款擔保的數位貨幣）和JPYC（資金轉移型穩定幣）這些，Settlenet的官網也下架了。</p>
-<p>至於CMSTR，則是第一個完全被NASDAQ認可的代幣，還可以在SideSwap直接和BTC做點對點交易。</p>
-<p>此外Dr. Back還提及，即使對比特幣感到悲觀，投資人仍還是可以從資產撥個3%來投資。而他認為最佳的配置是9.5%。</p>
-<p>看看將引來更多傳統投資者的IBIT，這番言論值得深思。</p>
-<h2 id="rwa" tabindex="-1">RWA <a class="header-anchor" href="#rwa" aria-label="Permalink to &quot;RWA&quot;"></a></h2>
-<p>在接下來的講座中，由多位產業代表負責為會眾指點迷津。</p>
-<h3 id="台銀" tabindex="-1">台銀 <a class="header-anchor" href="#台銀" aria-label="Permalink to &quot;台銀&quot;"></a></h3>
-<p>特別提及銀行和新創合作的前景要注重「責任分攤」。</p>
-<h3 id="echox" tabindex="-1">EchoX <a class="header-anchor" href="#echox" aria-label="Permalink to &quot;EchoX&quot;"></a></h3>
-<p>之前就稍微知道EchoX有做日本生意，而東海的那一端最近在Web3衝得很快。</p>
-<p>像Circle就在政策助威下與SBI Holdings推行USDC合法化，而大阪更有著加密交易所ODX。</p>
-<p>作為亞洲境外金融中心之一，日本的動向備受關注。</p>
-<h3 id="元大" tabindex="-1">元大 <a class="header-anchor" href="#元大" aria-label="Permalink to &quot;元大&quot;"></a></h3>
-<p>2003，首檔ETF成立，走出不同於共同基金的路。</p>
-<p>現在，有什麼能讓不支息的穩定幣更吸引別人？</p>
-<p>元大發問者提到其上司希望未來能達成「基金即現金」，讓資產流動時不再有時間差。</p>
-<p>這勢必是可供開發者和熱錢探究的解方之一。</p>
-<h2 id="payfi" tabindex="-1">PayFi <a class="header-anchor" href="#payfi" aria-label="Permalink to &quot;PayFi&quot;"></a></h2>
-<h3 id="bsos" tabindex="-1">BSOS <a class="header-anchor" href="#bsos" aria-label="Permalink to &quot;BSOS&quot;"></a></h3>
-<p>Tether去年淨賺62億美金，今年只花了前三季就來到77億，超過Circle和DeFi裡最賺的MakerDAO。</p>
-<p>我個人蠻受CEO那句「只要有時間差就需要有金融支持」所啟發。</p>
-<h3 id="兩個大事件" tabindex="-1">兩個大事件 <a class="header-anchor" href="#兩個大事件" aria-label="Permalink to &quot;兩個大事件&quot;"></a></h3>
+<p><img src="/development/tg1.webp" alt="TW Chart Game｜臺股走勢小鏈遊" loading="lazy"></p>
+<h2 id="前置" tabindex="-1">前置 <a class="header-anchor" href="#前置" aria-label="Permalink to &quot;前置&quot;"></a></h2>
+<p>先pnpm create vite，cd進資料夾，然後add @vkruglikov/react-telegram-web-app。</p>
+<p>因為要讓網頁可以直接在Telegram裡開啟，到index.html加入<code>&lt;script src=&quot;https://telegram.org/js/telegram-web-app.js&quot;&gt;&lt;/script&gt;</code>。</p>
+<p>pnpm run dev之後，5713埠就會正確顯示。接著pnpm i thirdweb，在src資料夾新增一個client.ts。</p>
+<p>到env裡存api key，並在main.tsx裡引入<code>&lt;ThirdwebProvider&gt;</code>。這可說是使用thirdweb開發的基本動作。</p>
+<p>要記得去thirdweb網頁的contracts裡deploy合約喔。</p>
+<h2 id="lightweight" tabindex="-1">Lightweight <a class="header-anchor" href="#lightweight" aria-label="Permalink to &quot;Lightweight&quot;"></a></h2>
+<p>思考這個遊戲要做成什麼樣的時候，剛好打算要實作Lightweight Charts。</p>
+<p>它是TradingView圖表套件的開源免費版，資料自然要自己串證交所API。</p>
+<p>而根據線型讓使用者做出交易決策的應用，則有Chart Game和Trading Train這樣的先例。</p>
+<p>實際操作時有幾段語法比較有印象，簡單列出：</p>
 <ul>
-<li>PayPal成功將穩定幣PYUSD轉到EY（安永會計事務所）的Coinbase帳戶</li>
-<li>Stripe花11億美金收購Bridge.xyz，是Web3目前規模最大的一次收購</li>
+<li><code>chart.timeScale().fitContent()</code>：可以讓不同時間區段的圖形都符合圖表大小，好用</li>
+<li><code>lastValueVisible: false</code>：隱藏最後一個價格的標籤</li>
+<li><code>priceLineVisible: false</code>：隱藏最後一個價格的的標示線</li>
 </ul>
-<h2 id="vc" tabindex="-1">VC <a class="header-anchor" href="#vc" aria-label="Permalink to &quot;VC&quot;"></a></h2>
-<h3 id="amber" tabindex="-1">Amber <a class="header-anchor" href="#amber" aria-label="Permalink to &quot;Amber&quot;"></a></h3>
-<p>RGB協議：使用「客戶端驗證」和「一次性密封」的開源協議，安全性高。</p>
-<h3 id="兩個香港術語" tabindex="-1">兩個香港術語 <a class="header-anchor" href="#兩個香港術語" aria-label="Permalink to &quot;兩個香港術語&quot;"></a></h3>
-<ul>
-<li>VASP（虛擬資產服務提供者）</li>
-<li>VATP（虛擬資產交易平台）</li>
-</ul>
-<h3 id="tonx" tabindex="-1">TONX <a class="header-anchor" href="#tonx" aria-label="Permalink to &quot;TONX&quot;"></a></h3>
-<p>斯拉夫人的APP設計哲學是All-in-one的Super APP，因此Telegram上面有Mini Apps，甚至可以買eSIM。</p>
-<h2 id="singapore" tabindex="-1">Singapore <a class="header-anchor" href="#singapore" aria-label="Permalink to &quot;Singapore&quot;"></a></h2>
-<h3 id="tabei" tabindex="-1">Tabei <a class="header-anchor" href="#tabei" aria-label="Permalink to &quot;Tabei&quot;"></a></h3>
-<p>談到Project Guardian是公私合作的RWA計畫，包含花旗、標普等機構皆有參與。而DBS推出過星展數位交易平台。</p>
-<h3 id="coinseeker" tabindex="-1">Coinseeker <a class="header-anchor" href="#coinseeker" aria-label="Permalink to &quot;Coinseeker&quot;"></a></h3>
-<p>相當於給創投看的Web3資料庫。</p>
-<p>CEO聊到TOKEN2049每年在新加坡和杜拜各舉行一次，規模最大。</p>
-<h3 id="berru" tabindex="-1">Berru <a class="header-anchor" href="#berru" aria-label="Permalink to &quot;Berru&quot;"></a></h3>
-<p>與新加坡第一個，也是最大的合規交易所Coinhako合作，為企業提供公司註冊、管理等秘書服務。</p>
-<h3 id="gsg" tabindex="-1">GSG <a class="header-anchor" href="#gsg" aria-label="Permalink to &quot;GSG&quot;"></a></h3>
-<p>聊到新加坡的金管會叫MAS（新加坡金管局），也是Project Guardian的推手。</p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[《臺灣自然寫作選》心得]]></title>
-            <link>https://haruowang.vercel.app/pov/thinking/nature.html</link>
-            <guid>https://haruowang.vercel.app/pov/thinking/nature.html</guid>
-            <pubDate>Thu, 21 Nov 2024 13:51:36 GMT</pubDate>
-            <description><![CDATA[「我像一位天真的自然書寫讀者，持續期待與觀察這個文類的演化與火花，這是老去的上一代唯一能做的事。演化安靜，卻從不回頭。」]]></description>
-            <content:encoded><![CDATA[<h1 id="《臺灣自然寫作選》心得" tabindex="-1">《臺灣自然寫作選》心得 <a class="header-anchor" href="#《臺灣自然寫作選》心得" aria-label="Permalink to &quot;《臺灣自然寫作選》心得&quot;"></a></h1>
-<p><Badge type="info" text="🌳 Evergreen" /></P>
-<blockquote>
-<p>「我像一位天真的自然書寫讀者，持續期待與觀察這個文類的演化與火花，這是老去的上一代唯一能做的事。演化安靜，卻從不回頭。」——吳明益</p>
-</blockquote>
-<p>在散文和小說之外，環境史亦是自然寫作的重要一環。吳明益老師首先於前言提及兩位先驅：沃斯特（Donald Worster）及克羅斯比（Alfred W. Crosby）。一位從美國西部延伸到行星史，一位則以「哥倫布大交換」來引出生態殖民主義。而其實在環境史被納入學術正典前，寫出「野性蘊藏著世界的救贖」之李奧波（Aldo Leopold），就在1949年透過《沙郡年記》做出嘗試。</p>
-<p>還有兩位學者不約而同地，都在談論「宰制」。米爾布雷斯（Lester W. Milbrath）的「宰制性社會」很直觀；艾斯勒（Riane Eisler）除了將近代社會比作具「宰制力量」的「宰制關係社會」，亦於《聖餐杯與刀刃》中，稱遠古社會為擁有「實現力量」之「夥伴關係社會」。</p>
-<p>國際浪潮外，本土政治所帶來的影響同樣不容忽視。1980年，時任行政院長孫運璿指示應保護紅樹林，而蘭嶼卻迎來核廢料第一期。兩年後，首座國家公園在墾丁落成，與影響深遠的「全球大自然憲章」互相呼應。85、86年，則各別有因應大里三晃農藥事件而生，最早的民間環保團體「吾愛吾村公害防衛會」，以及於反杜邦運動中留下文獻，第一份反公害刊物《鄉情》月刊的亮相。</p>
-<h2 id="環保報導文學" tabindex="-1">環保報導文學 <a class="header-anchor" href="#環保報導文學" aria-label="Permalink to &quot;環保報導文學&quot;"></a></h2>
-<p>於是臺灣自然寫作「從人文到非人」的歷程，便始於80年代。由專欄集結而成，1983年出版的《我們只有一個地球》被視為最早文本。而晨星出版陳銘民推出的「自然公園書系」，則是進一步推波助瀾。書單其中可見王家祥和陳玉峯的名字，兩人的行文風格其實都較屬於傳統的環保報導文學。前者在《臺灣自然寫作選》中登場三回，和劉克襄並列最多，並時常書寫到荒野和前文提及的李奧波。更為大眾所知的作品，或許是魏德聖導演《台灣三部曲》的靈感來源《倒風內海》。其還著有歷史奇幻小說《小矮人之謎》、《魔神仔》等作。2004年搬至都蘭照料流浪貓狗，持續關懷自然的實踐中。後者致力森林保育，寫過玉山圓柏和秀姑坪，文筆中帶有更深的理性。並為柯金源導演的紀錄片《神殿》配音，更以《台灣生態史話15講》的卡帶，啟發當年聽眾心靈。陳教授亦是一眾自然寫作者中，特別看重921地震對土地之影響的。</p>
-<p>曾參與制定「台灣貓節」的貓奴心岱，也是那個時代便投入自然報導之作家。採用「新新聞學」筆法寫就，刻劃恆春林區管理處副技師林火星之心路，呈現出瓊麻產業史的《美麗新世界》，讓她蟬聯時報文學獎的「報導文學甄選獎」。作為繩索主要原料的瓊麻，曾能在經由日本轉運至利物浦的過程中製造大量利益。然而農民卻始終只能作為「山奴」，被掌權者所剝削，或流淚看著中美演習的坦克輾過田野，直到麻繩沒落。</p>
-<h2 id="簡樸生活文學" tabindex="-1">簡樸生活文學 <a class="header-anchor" href="#簡樸生活文學" aria-label="Permalink to &quot;簡樸生活文學&quot;"></a></h2>
-<p>陳冠學和孟東籬的路數則屬簡樸生活文學，有點像是隱逸派。妙的是兩人的文章都出現過宗教要素。個人對於陳冠學的《九月十日》別具感觸。閱讀該文時，彷彿和作者一同在別名為芒的菅茅中迷茫。從典雅的字裡行間遇見屏東糞箕湖的潘家人時，也確有柳暗花明又一村之感。孟東籬在《愛生哲學芻議》裡藉由比較「愛生」（Biophilia）和「愛死」（Necrophilia）來傳達自身提倡的環境倫理，其豐富情史和一些令人直呼「やばい」的發言，也使眾人確信他著實「愛戀這個世界」。而Biophilia一詞也被威爾森（E.O. Wilson）所用，稱之為「親生命性」。這位和道金斯（Richard Dawkins）有過論戰的螞蟻先生，另外還提出日後被《馴羊記》所引用的「孤寂世」（Eremocene）。</p>
-<h2 id="自然寫作的未來" tabindex="-1">自然寫作的未來 <a class="header-anchor" href="#自然寫作的未來" aria-label="Permalink to &quot;自然寫作的未來&quot;"></a></h2>
-<p>到了徐振輔和《馴羊記》登上文壇之時，最常為大眾聽聞的自然寫作者也許已是吳明益了。最後一篇選錄進來，不只是老「吳」賣瓜的《忘川》融合蝶類知識及希臘神話，打造出和傳統自然寫作滋味十分不同的新觀點，替2003年編完的《臺灣自然寫作選》留下豹尾。</p>
-<p>接下來呢？若要依我自身觀察，幫近年這類型的創作歸納出關鍵字，我會說是「生態」和「登山」。從投身西藏探查雪豹，跨足不同文體和歷史場景的《馴羊記》，到黃瀚嶢書寫知本溼地，同樣摘下金典獎的《沒口之河》，2024年還有新秀林敬峰入圍即是肯定，甚至觸及到標本和烹飪話題的《山獸與雜魚》。此外，《看不見的雨林》與《橫斷臺灣》等，剛好都來自森林系系友的暢銷書籍，也是一大亮點。讀者對於動植物的好奇並沒有停。</p>
-<p>至於登山，一個讓我印象深刻的點是臉譜籌畫的「meters山岳文學書系」。這本身就是相關市場具足夠規模的證明。在《雪水消融的季節》和《群山之島與不去會死的他們》系列各自斬獲影視獎項之時，劉宸君的《我所告訴你關於那座山的一切》與郭熊的《走進布農的山》，同樣被金典獎所眷顧。另外還有《爛頭殼》導演兼DJ陳德政參與K2遠征的報導作品《神在的地方》。</p>
-<p>這說明山依舊是那樣危險又極具魅力。而未來的自然寫作更會多元並立。</p>
+<h2 id="子傳父" tabindex="-1">子傳父 <a class="header-anchor" href="#子傳父" aria-label="Permalink to &quot;子傳父&quot;"></a></h2>
+<p>算是開發途中，比起讀教學更能切身體會到React邏輯的一段插曲。</p>
+<p>由於子組件裡showModal的狀態會影響到父組件，遂將<code>const [showModal, setShowModal] = useState(false)</code>移至父組件，再用prop傳下來。類似狀態提升。</p>
+<h2 id="mini-app" tabindex="-1">Mini App <a class="header-anchor" href="#mini-app" aria-label="Permalink to &quot;Mini App&quot;"></a></h2>
+<ol>
+<li>和Telegram機器人BotFather互動</li>
+<li>/start</li>
+<li>/newbot</li>
+<li>命名你的App</li>
+<li>命名你的Bot（某某bot，相當於帳號）</li>
+<li>/newapp</li>
+<li>命名（影響不大）</li>
+<li>提供描述</li>
+<li>上傳圖片（640*360px）</li>
+<li>上傳gif</li>
+<li>BotFather回傳url（t.me/某某bot）</li>
+<li>路徑子名稱（t.me/某某bot/子名稱）</li>
+</ol>
 <h2 id="參考文獻" tabindex="-1">參考文獻 <a class="header-anchor" href="#參考文獻" aria-label="Permalink to &quot;參考文獻&quot;"></a></h2>
 <ul>
-<li>吳明益（2003）。臺灣自然寫作選。二魚文化</li>
-<li>康瓅揚（2022）。臺灣自然導向文學的非人轉向。國立臺灣大學臺灣文學研究所</li>
+<li><a href="https://blog.thirdweb.com/guides/build-web3-telegram-mini-game" target="_blank" rel="noreferrer">How to Build a Web3 Telegram Mini App</a></li>
 </ul>
+<h2 id="專案連結" tabindex="-1"><a href="https://twchartgame.vercel.app" target="_blank" rel="noreferrer">專案連結</a> <a class="header-anchor" href="#專案連結" aria-label="Permalink to &quot;[專案連結](https://twchartgame.vercel.app)&quot;"></a></h2>
 ]]></content:encoded>
+            <enclosure url="https://haruowang.vercel.app/development/tg1.webp" length="0" type="image/webp"/>
         </item>
         <item>
-            <title><![CDATA[【Win95俄羅斯方塊：開發紀錄】]]></title>
-            <link>https://haruowang.vercel.app/dev/react/w95.html</link>
-            <guid>https://haruowang.vercel.app/dev/react/w95.html</guid>
-            <pubDate>Thu, 21 Nov 2024 11:55:25 GMT</pubDate>
-            <description><![CDATA[Cursor和v0聽久了，這次發現bolt可以線上秀出程式執行結果，決定一試]]></description>
-            <content:encoded><![CDATA[<h1 id="【win95俄羅斯方塊-開發紀錄】" tabindex="-1">【Win95俄羅斯方塊：開發紀錄】 <a class="header-anchor" href="#【win95俄羅斯方塊-開發紀錄】" aria-label="Permalink to &quot;【Win95俄羅斯方塊：開發紀錄】&quot;"></a></h1>
-<p><Badge type="info" text="🌳 Evergreen" /></P>
-<p><img src="/react/w91.webp" alt="Windows 95 Tetris" loading="lazy"></p>
-<p>Cursor和v0聽久了，這次發現bolt可以線上秀出程式執行結果，決定一試。</p>
-<p>這次挑戰開發的是「Windows 95風格的俄羅斯方塊」。基本架構請bolt幫我寫好，就可以專注在調整細節。</p>
-<h2 id="controls" tabindex="-1">Controls <a class="header-anchor" href="#controls" aria-label="Permalink to &quot;Controls&quot;"></a></h2>
-<p>雖說俄羅斯方塊的遊玩方式很簡單，但原有程式碼中並沒有給使用者「如何操作」的指南，所以我另外寫了「按向上的箭頭是旋轉」等提示，以「▲ Rotate」呈現。</p>
-<h2 id="pause" tabindex="-1">Pause <a class="header-anchor" href="#pause" aria-label="Permalink to &quot;Pause&quot;"></a></h2>
-<p>一款遊戲如果不能暫停，那實在是有些太緊湊了，不太人性。因此我另外定義一個布林值isPaused作為判斷，讓play鍵在遊戲途中能化為pause。</p>
-<h2 id="next-piece" tabindex="-1">Next Piece <a class="header-anchor" href="#next-piece" aria-label="Permalink to &quot;Next Piece&quot;"></a></h2>
-<p>原有程式碼中有個明顯問題是「下個方塊」的預覽有bug，研究一番後發現原來是沒有正確斷行，所以每個小方塊都想擠到同一行。加上style={ {gridColumnStart: piece.length == 2 &amp;&amp; j == 0 ? '1' : 'auto'} }即可解決。</p>
-<h2 id="mobile" tabindex="-1">Mobile <a class="header-anchor" href="#mobile" aria-label="Permalink to &quot;Mobile&quot;"></a></h2>
-<p>手機畢竟沒有實體鍵盤，所以另在Controls那寫了幾個供手指點擊的按鈕。</p>
-<h2 id="favicon" tabindex="-1">Favicon <a class="header-anchor" href="#favicon" aria-label="Permalink to &quot;Favicon&quot;"></a></h2>
-<p>從電腦上可以看到俄羅斯方塊在瀏覽器標籤上動起來。</p>
-<p>其實也有專門為React設計的<a href="https://github.com/oflisback/react-favicon" target="_blank" rel="noreferrer">react-favicon</a>，不過我這次是直接用AE Studio提供的<a href="https://www.faviconvideo.com" target="_blank" rel="noreferrer">Animated Favicon Generator</a>。</p>
-<h2 id="font" tabindex="-1">Font <a class="header-anchor" href="#font" aria-label="Permalink to &quot;Font&quot;"></a></h2>
-<p>W95FA好用，而且是OFL授權。</p>
-<h2 id="cursor" tabindex="-1">Cursor <a class="header-anchor" href="#cursor" aria-label="Permalink to &quot;Cursor&quot;"></a></h2>
-<p>既然是90年代的介面，自然要來玩玩<a href="https://tholman.com/cursor-effects" target="_blank" rel="noreferrer">90’s Cursor Effects</a>。</p>
-<h2 id="專案連結" tabindex="-1"><a href="https://w95tetris.vercel.app" target="_blank" rel="noreferrer">專案連結</a> <a class="header-anchor" href="#專案連結" aria-label="Permalink to &quot;[專案連結](https://w95tetris.vercel.app)&quot;"></a></h2>
-]]></content:encoded>
-            <enclosure url="https://haruowang.vercel.app/react/w91.webp" length="0" type="image/webp"/>
-        </item>
-        <item>
-            <title><![CDATA[【微軟收購史：開發紀錄】]]></title>
-            <link>https://haruowang.vercel.app/dev/react/msft.html</link>
-            <guid>https://haruowang.vercel.app/dev/react/msft.html</guid>
-            <pubDate>Thu, 21 Nov 2024 11:47:52 GMT</pubDate>
-            <description><![CDATA[按照官方給的dotlottie-react，程式碼可以寫到很簡潔，但做不到onScroll的效果。查找之後發現目前還可以用Lottie for React達成，寫法大致如下]]></description>
-            <content:encoded><![CDATA[<h1 id="【微軟收購史-開發紀錄】" tabindex="-1">【微軟收購史：開發紀錄】 <a class="header-anchor" href="#【微軟收購史-開發紀錄】" aria-label="Permalink to &quot;【微軟收購史：開發紀錄】&quot;"></a></h1>
-<p><Badge type="info" text="🌳 Evergreen" /></P>
-<p><img src="/react/ms1.webp" alt="Microsoft's Top-10 Acquisitions" loading="lazy"></p>
-<h2 id="shadecn" tabindex="-1">shadecn <a class="header-anchor" href="#shadecn" aria-label="Permalink to &quot;shadecn&quot;"></a></h2>
-<p>趁這次做side project，來試用心儀已久的shadcn/ui。</p>
-<p>首先照著指示輸入pnpm dlx shadcn@latest init -d，但這個官方指令會跳出&quot;Something went wrong creating a new Next.js project. Please try again.”</p>
-<p>也就是說，必須要先建立next專案。輸入pnpm create next-app@latest my-app --typescript --tailwind –eslint，再按照官方設定來。一個大重點是記得cd進my-app，再執行pnpm dlx shadcn@latest init -d。</p>
-<p>完成後便可以pnpm run dev。這時主控台出現Warning: Extra attributes from the server，在layout.tsx裡的html標籤加入suppressHydrationWarning解決問題。</p>
-<p>可以用pnpm dlx shadcn@latest add button先新增一個按鈕試試看。接下來要注意的就剩下：「每次新增組件時都要先add！」</p>
-<p>在「微軟十大收購」這個網站中，我本來就打算放入數位專題常用的圖表。add chart完之後，在調整XAxis（圖表的X軸）時會跳出警告：”XAxis: Support for defaultProps will be removed from function components in a future major release”，這時要裝一下recharts的alpha版。而recharts其實就是shadcn背後所用到的圖表庫。</p>
-<p>這次還有玩到card、carousel和progress組件等，運用得宜真的會很吸睛。</p>
-<h2 id="lottie" tabindex="-1">Lottie <a class="header-anchor" href="#lottie" aria-label="Permalink to &quot;Lottie&quot;"></a></h2>
-<p>除了長條圖之外，近年一直在UI領域被提及的Lottie也是我打算應用的。但想要不依賴AE來做MG還是有些坑要踩。像是官方提供的Lottie Creator實在太占瀏覽器資源，跑起來很卡。不過這也讓我發現到了Jitter的好，甚至可以直接匯出Lottie檔。</p>
-<p>按照官方給的dotlottie-react，程式碼可以寫到很簡潔，但做不到onScroll的效果。查找之後發現目前還可以用<a href="https://lottiereact.com" target="_blank" rel="noreferrer">Lottie for React</a>達成，寫法大致如下：</p>
-<div class="language-ts vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { useLottie, useLottieInteractivity } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> "lottie-react"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> msftLogo </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> "./msftLogo.json"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> options</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  animationData: msftLogo,</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">};</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> style</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  maxWidth: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">640</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">};</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> lottieObj</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> useLottie</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(options, style);</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> Animation</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> useLottieInteractivity</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    lottieObj,</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    mode: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"scroll"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    actions: [</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      {</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        visibility: [</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        type: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"seek"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        frames: [</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">120</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    ]</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  });</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{Animation}</span></span></code></pre>
-</div><p>現在的Lottie東一個限制西一個限制，尤其是免費版只能上傳十次檔案（不是十個）真的很惱人，所以要借重一些過往的小工具作為輔助。個人很推薦<a href="https://lottiefiles.com/tools/lottie-to-dotlottie" target="_blank" rel="noreferrer">dotLottie轉換器</a>和<a href="https://lottiefiles.github.io/lottie-docs/playground/json_editor" target="_blank" rel="noreferrer">JSON編輯器</a>。</p>
-<h2 id="設定" tabindex="-1">設定 <a class="header-anchor" href="#設定" aria-label="Permalink to &quot;設定&quot;"></a></h2>
-<p>幫網站調標題時發現這個專案的metadata不在next/head裡，要去layout.tsx裡找到export const metadata: Metadata進行修改。</p>
-<p>另外就是部署當下遇到eslint和vercel相互衝突的解法。這部分我稍微取巧了點，直接在.eslintrc.json關閉規則：</p>
-<div class="language-json vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">json</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{</span></span>
-<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  "extends"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"next"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
-<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  "rules"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: {</span></span>
-<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    "react/no-unescaped-entities"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"off"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
-<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    "@next/next/no-page-custom-font"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"off"</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
-</div><h2 id="文本" tabindex="-1">文本 <a class="header-anchor" href="#文本" aria-label="Permalink to &quot;文本&quot;"></a></h2>
-<p>最後列出網站中的文字內容，也算是我選擇這個主題的原因之一：趁機了解並整理一間科技大廠近年的故事。</p>
-<blockquote>
-<p>「自從2000年開始，微軟的併購規模越來越大。其中2022年的動視暴雪一案，付出比LinkedIn昂貴不只兩倍的代價。還是靠著總裁Brad Smith和政府的良好關係，以及讓渡歐盟外「雲端媒體權益」給予育碧的善意，才躲過聯邦貿易委員會（FTC）和英國競爭與市場管理局（CMA）的反壟斷審查。」</p>
-</blockquote>
-<blockquote>
-<p>「回顧往昔的大買賣，不乏能找出敗筆。其中像廣告商aQuantive的62億美元商譽減值，就幾乎把這檔投資賠光了。而Nokia從手機霸主摔落，被HMD和「鴻海小金雞」富智康納入旗下的故事，亦是老生常談。吃下「工程師交友平台」GitHub的決定，更讓開源社群褒貶不一。」</p>
-</blockquote>
-<blockquote>
-<p>「不過，微軟畢竟能在科技圈站穩一席之地，自仍有其高明之處。特別是近年來和OpenAI之間的恩怨情仇，令這間老牌大廠在街談巷議中重現活力。提前部署AI醫療，進補Nuance Communications的效應也正逐漸發酵。了解歷史，梳理資訊。從圖表製作到AI，微軟至2024為止的十大併購，讓我們一探究竟。」</p>
-</blockquote>
-<blockquote>
-<p>「誠如所見，超過10億美元規模的案例目前只有三件。而就是仰仗動視暴雪、LinkedIn和Nuance Communications，讓微軟在目前最大的那些科技收購案中，分別佔據第一、第七和第九名。」</p>
-</blockquote>
-<h2 id="專案連結" tabindex="-1"><a href="https://msft-acquisition.vercel.app" target="_blank" rel="noreferrer">專案連結</a> <a class="header-anchor" href="#專案連結" aria-label="Permalink to &quot;[專案連結](https://msft-acquisition.vercel.app)&quot;"></a></h2>
-]]></content:encoded>
-            <enclosure url="https://haruowang.vercel.app/react/ms1.webp" length="0" type="image/webp"/>
-        </item>
-        <item>
-            <title><![CDATA[《裝幀時代》重點筆記]]></title>
-            <link>https://haruowang.vercel.app/pov/other/bind60.html</link>
-            <guid>https://haruowang.vercel.app/pov/other/bind60.html</guid>
-            <pubDate>Thu, 21 Nov 2024 10:25:17 GMT</pubDate>
-            <description><![CDATA[文學光啟：六、七零年代時，盛況接近大業書店和文壇社]]></description>
-            <content:encoded><![CDATA[<h1 id="《裝幀時代》重點筆記" tabindex="-1">《裝幀時代》重點筆記 <a class="header-anchor" href="#《裝幀時代》重點筆記" aria-label="Permalink to &quot;《裝幀時代》重點筆記&quot;"></a></h1>
-<p><Badge type="info" text="🌳 Evergreen" /></P>
-<blockquote>
-<p>「對我而言，編排一本書和構思一幅畫並無差別。」——Henri Matisse</p>
-</blockquote>
+            <title><![CDATA[數位字型學習筆記]]></title>
+            <link>https://haruowang.vercel.app/pov/font/digi.html</link>
+            <guid>https://haruowang.vercel.app/pov/font/digi.html</guid>
+            <pubDate>Fri, 13 Dec 2024 01:02:53 GMT</pubDate>
+            <description><![CDATA[關於OpenType等數位字型技術的知識整理]]></description>
+            <content:encoded><![CDATA[<h1 id="數位字型學習筆記" tabindex="-1">數位字型學習筆記 <a class="header-anchor" href="#數位字型學習筆記" aria-label="Permalink to &quot;數位字型學習筆記&quot;"></a></h1>
+<p><Badge type="info" text="🌱 Seedlings" /></P>
+<h2 id="知識" tabindex="-1">知識 <a class="header-anchor" href="#知識" aria-label="Permalink to &quot;知識&quot;"></a></h2>
 <ul>
-<li>台灣美術和世界接軌：1927的台展三少年林玉山、陳進、郭雪湖</li>
-<li>台灣美術的兩次斷代：1949的政權交替和1980的數位普及</li>
-<li>台灣第一間廣告公司：1961的國華廣告</li>
+<li>Ikarus字型軟體：使用樣條函數</li>
+<li>Metafont語言：使用三次樣條插值</li>
+<li>Hinting渲染提示：PostScript的突破</li>
+<li>Adobe的T1字型有支援Hinting</li>
+<li>TrueType GX和AAT：後來影響OpenType的Apple規格</li>
+<li>PUA私人使用區：BMP後半部 + Plane 15&amp;16</li>
+<li>utf8mb3：MySQL規格。無法使用emoji，因此有第四代</li>
+<li>CJK A的位置在BMP之前，因為韓文有搬遷過</li>
+<li>Carolingian minuscule：小寫體之祖</li>
+<li>Zalgo：套用很多ccmp</li>
+<li>AFKDO和VOLT都是標記語言</li>
+<li>COLR/CPAL是目前emoji主流技術</li>
+<li>Noto Color Emoji在Safari無法正常顯示，因為用到COLR/CPAL v1</li>
+<li>Plakato：使用COLRv1的經典範例</li>
+<li>臺灣道路體：使用COLR+SVG</li>
+<li>Fitzpatrick Modifier：將六種膚色對應至五種選擇</li>
+<li>ZWJ：零寬連字，用來接合</li>
 </ul>
-<h2 id="裝幀家和他們的產地" tabindex="-1">裝幀家和他們的產地 <a class="header-anchor" href="#裝幀家和他們的產地" aria-label="Permalink to &quot;裝幀家和他們的產地&quot;"></a></h2>
+<h2 id="特性" tabindex="-1">特性 <a class="header-anchor" href="#特性" aria-label="Permalink to &quot;特性&quot;"></a></h2>
 <ul>
-<li>廖未林與「大業書店」</li>
-<li>龍思良與「文星雜誌」</li>
-<li>黃華成與「遠景遠行」</li>
-<li>高山嵐與「皇冠雜誌」</li>
-<li>朱嘯秋與「文壇月刊」</li>
-<li>陳其茂與「光啟出版社」</li>
+<li>dlig：可選連字</li>
+<li>hlig：歷史連字</li>
+<li>c2sc：大寫轉小字大寫</li>
+<li>swsh：花飾字</li>
+<li>salt：風格替代字</li>
+<li>calt：上下文替代</li>
+<li>vrt2：豎排，比vert精準</li>
+<li>ccmp：字符組合</li>
 </ul>
-<h2 id="廖未林" tabindex="-1">廖未林 <a class="header-anchor" href="#廖未林" aria-label="Permalink to &quot;廖未林&quot;"></a></h2>
+<h2 id="參考文獻" tabindex="-1">參考文獻 <a class="header-anchor" href="#參考文獻" aria-label="Permalink to &quot;參考文獻&quot;"></a></h2>
 <ul>
-<li>擅於配色，並承接「新藝術」風格</li>
-<li>知名作品有《藍與黑》、《心鎖》等</li>
-<li>曾於巴金的「文化生活出版社」打工</li>
-<li>常在杭州藝專參加戲劇活動，學會化妝</li>
-<li>曾和席德進一同居住在臨沂街</li>
-<li>設計第11屆亞洲影展的翠鳳金禾獎盃</li>
+<li><a href="https://ithelp.ithome.com.tw/users/20162880/ironman/6994" target="_blank" rel="noreferrer">一起成為新世紀文字藝術師：深入玩轉 Unicode 和 OpenType</a></li>
 </ul>
-<h2 id="龍思良" tabindex="-1">龍思良 <a class="header-anchor" href="#龍思良" aria-label="Permalink to &quot;龍思良&quot;"></a></h2>
-<ul>
-<li>V-10視覺藝術群元老及古龍封面御用畫家</li>
-<li>其封面字體設計和手繪人物受到肯定</li>
-<li>1964，跟黃華成一起進台視當美術指導</li>
-<li>白先勇表示《現代文學》24期的封面「很刺激」</li>
-<li>曾替幼獅主編朱橋開的「文藝沙龍」做室內設計</li>
-<li>七等生在「文藝沙龍」打工過，軍中詩人沙牧也會來買醉</li>
-</ul>
-<h2 id="黃華成" tabindex="-1">黃華成 <a class="header-anchor" href="#黃華成" aria-label="Permalink to &quot;黃華成&quot;"></a></h2>
-<ul>
-<li>以「設計攝影」風格聞名</li>
-<li>身為《劇場》季刊核心成員</li>
-<li>被莊靈稱為「設計界的拓荒者」</li>
-<li>1974，為「出版小巨人」沈登恩成立的遠景設計封面</li>
-<li>隸屬於只有一人的「大台北畫派」</li>
-<li>其大台北畫派宣言格式仿自《道德經》之81章</li>
-</ul>
-<h2 id="高山嵐" tabindex="-1">高山嵐 <a class="header-anchor" href="#高山嵐" aria-label="Permalink to &quot;高山嵐&quot;"></a></h2>
-<ul>
-<li>於「志文男與皇冠女」中，屬於後者</li>
-<li>會在土紙（金銀紙）上作畫</li>
-<li>擔綱美新處編輯，及《今日世界》雜誌美術設計</li>
-<li>被譽為水彩畫家暨豐年社創辦者藍蔭鼎第一接班人</li>
-<li>因參與《黑白展》結識平鑫濤</li>
-<li>插畫風格類似極簡寫實主義的Charley Harper</li>
-<li>創作台灣第一部紙上電影《幸運草》</li>
-</ul>
-<h2 id="楊英風" tabindex="-1">楊英風 <a class="header-anchor" href="#楊英風" aria-label="Permalink to &quot;楊英風&quot;"></a></h2>
-<ul>
-<li>擔任豐年社美編</li>
-<li>拜於郭柏川門下，並受朝倉文夫啟發</li>
-<li>在師大編《龍安文藝》時遭遇四六事件</li>
-<li>設計藍星徽章和藍星詩獎獎座</li>
-</ul>
-<h2 id="梁雲坡" tabindex="-1">梁雲坡 <a class="header-anchor" href="#梁雲坡" aria-label="Permalink to &quot;梁雲坡&quot;"></a></h2>
-<ul>
-<li>藝壇三傑都是梁家人：梁鼎銘、中銘、又銘</li>
-<li>因數學掛零而報考北平藝專</li>
-<li>在文協見過廖未林，兩人都拿過金爵獎</li>
-<li>常用倒影手法</li>
-</ul>
-<h2 id="朱嘯秋" tabindex="-1">朱嘯秋 <a class="header-anchor" href="#朱嘯秋" aria-label="Permalink to &quot;朱嘯秋&quot;"></a></h2>
-<ul>
-<li>執掌《文壇》，被稱為朱老編</li>
-<li>創辦《詩．散文．木刻》、《青年俱樂部》時接連使用十六開本</li>
-<li>小說家朱西甯將這股大開本風潮稱為「朱嘯秋時代」</li>
-<li>參與「戰鬥木刻」運動</li>
-</ul>
-<h2 id="陳其茂" tabindex="-1">陳其茂 <a class="header-anchor" href="#陳其茂" aria-label="Permalink to &quot;陳其茂&quot;"></a></h2>
-<ul>
-<li>外號是「台灣現代版畫的拓荒者」</li>
-<li>同時是花蓮師專的老師</li>
-<li>《文藝列車》主編一員</li>
-<li>光啟的雷煥章神父會騎車到東海和大學生聊天</li>
-<li>文學光啟：六、七零年代時，盛況接近大業書店和文壇社</li>
-</ul>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[《重寫臺灣百年新詩史》筆記]]></title>
-            <link>https://haruowang.vercel.app/pov/other/poem100.html</link>
-            <guid>https://haruowang.vercel.app/pov/other/poem100.html</guid>
-            <pubDate>Thu, 21 Nov 2024 10:17:01 GMT</pubDate>
-            <description><![CDATA[相較《台灣新詩史》的「文本主義」，《台灣現代詩史》的「文本至上」更注重文本自身，被本文作者所認同，並收錄了沒那麼主流，曾是夫妻檔的張健和蘇白宇之作品。而洛夫則同時受到兩本詩史之肯定]]></description>
-            <content:encoded><![CDATA[<h1 id="《重寫臺灣百年新詩史》筆記" tabindex="-1">《重寫臺灣百年新詩史》筆記 <a class="header-anchor" href="#《重寫臺灣百年新詩史》筆記" aria-label="Permalink to &quot;《重寫臺灣百年新詩史》筆記&quot;"></a></h1>
-<p><Badge type="info" text="🌳 Evergreen" /></P>
-<ul>
-<li>1925，楊雲萍創辦第一本白話刊物《人人》</li>
-<li>張我軍的台灣第一本新詩集《亂都之戀》，也曾部分刊載於此</li>
-</ul>
-<h2 id="詩史的波瀾風景" tabindex="-1">詩史的波瀾風景 <a class="header-anchor" href="#詩史的波瀾風景" aria-label="Permalink to &quot;詩史的波瀾風景&quot;"></a></h2>
-<ul>
-<li>目前為止，台灣有五本新詩史</li>
-<li>相較《台灣新詩史》的「文本主義」，《台灣現代詩史》的「文本至上」更注重文本自身，被本文作者所認同，並收錄了沒那麼主流，曾是夫妻檔的張健和蘇白宇之作品。而洛夫則同時受到兩本詩史之肯定</li>
-</ul>
-<h2 id="臺灣大陸新詩百年交流史" tabindex="-1">臺灣大陸新詩百年交流史 <a class="header-anchor" href="#臺灣大陸新詩百年交流史" aria-label="Permalink to &quot;臺灣大陸新詩百年交流史&quot;"></a></h2>
-<ul>
-<li>五四時期是所有華文新詩的共同源頭</li>
-<li>沈奇和陳仲義都是關注臺灣詩壇的中國詩評</li>
-</ul>
-<h3 id="三種痛苦" tabindex="-1">三種痛苦 <a class="header-anchor" href="#三種痛苦" aria-label="Permalink to &quot;三種痛苦&quot;"></a></h3>
-<ul>
-<li>洛夫的痛苦：孤身來台，選擇大陸或台灣</li>
-<li>林亨泰的痛苦：從日治到民國的語言轉換</li>
-<li>張我軍的痛苦：類似洛夫，但方向相反</li>
-</ul>
-<h2 id="台灣女詩人互文文本" tabindex="-1">台灣女詩人互文文本 <a class="header-anchor" href="#台灣女詩人互文文本" aria-label="Permalink to &quot;台灣女詩人互文文本&quot;"></a></h2>
-<ul>
-<li>葉紅女性詩獎：華文圈唯一女性詩獎</li>
-<li>女鯨詩社：台灣第一個女性詩社</li>
-<li>李元貞：除了參與女鯨，還創辦「婦女新知雜誌社」，是臺灣婦運先鋒</li>
-<li>克里斯蒂娃將文本分成種動文本（genotext）和現象文本（phenotext），前者被視為拓撲，屬於符號化過程，較深層；後者被視為代數，是人們日常溝通的語言</li>
-</ul>
-<h2 id="笠社政治詩的歷史語境" tabindex="-1">笠社政治詩的歷史語境 <a class="header-anchor" href="#笠社政治詩的歷史語境" aria-label="Permalink to &quot;笠社政治詩的歷史語境&quot;"></a></h2>
-<ul>
-<li>1964年，笠詩刊和吳濁流的台灣文藝創刊</li>
-<li>許世楷：台灣新憲法草案發起人</li>
-<li>李敏勇：拿過國家文藝獎</li>
-</ul>
-<h3 id="三位醫生詩人" tabindex="-1">三位醫生詩人 <a class="header-anchor" href="#三位醫生詩人" aria-label="Permalink to &quot;三位醫生詩人&quot;"></a></h3>
-<ul>
-<li>鄭炯明被陳千武提拔</li>
-<li>關鍵字是「抵抗的詩學」</li>
-<li>鄭炯明的兒子是鄭秉泓</li>
-<li>江自得以病理介入社會</li>
-<li>擔任過阿米巴社長</li>
-<li>相較鄭和江，曾貴海是最激進的</li>
-<li>受《生之慾》影響而投入南方綠色革命</li>
-<li>三人合著過《三稜鏡》</li>
-</ul>
-<h2 id="大陸遷台詩人的主流匯成" tabindex="-1">大陸遷台詩人的主流匯成 <a class="header-anchor" href="#大陸遷台詩人的主流匯成" aria-label="Permalink to &quot;大陸遷台詩人的主流匯成&quot;"></a></h2>
-<ul>
-<li>1951年，新詩週刊由「詩壇三老」 鍾鼎文、葛賢寧、紀弦共同開辦</li>
-<li>鍾鼎文是自立晚報總主筆</li>
-<li>蘇雪林發起省婦協，曾登上文訊創刊號封面</li>
-<li>洛夫和瘂弦曾服務於明德新村的海軍電台</li>
-<li>文曉村是葡萄園詩刊的總編</li>
-<li>野風雜誌由台糖職員所創，走抒情風格</li>
-<li>「天狼星論戰」由余光中對上洛夫</li>
-<li>楊喚曾是葉泥下屬，兩人想過一起辦詩刊</li>
-<li>葉泥還發起過「獵人集」詩人小聚</li>
-<li>《南北笛》季刊是南北部詩人的串聯，不屬於任何詩社和詩派</li>
-<li>作者認為紀弦和覃子豪會賞識本土詩人，可能是因為懂日文。兩人都致力新詩的教育推廣</li>
-<li>黃荷生是紀弦的「路門五傑」之一，經典詩集為《觸覺生活》</li>
-<li>胡楚卿帶花蓮學生編印海鷗詩刊。敻虹投過</li>
-</ul>
-<h2 id="《六十年代詩選》與《七十年代詩選》" tabindex="-1">《六十年代詩選》與《七十年代詩選》 <a class="header-anchor" href="#《六十年代詩選》與《七十年代詩選》" aria-label="Permalink to &quot;《六十年代詩選》與《七十年代詩選》&quot;"></a></h2>
-<ul>
-<li>也斯在1962受前者影響</li>
-<li>楊牧有批評過後者</li>
-<li>「六十年代」只是觀念標示，實則收錄五十年代的作品</li>
-<li>羈魂說《詩朵》是「第一本由香港年青一代所創辦的詩刊。」</li>
-<li>劉以鬯曾主編香港時報的副刊《淺水灣》</li>
-<li>《好望角》和《創世紀》合作密切</li>
-<li>古倉梧曾任漢聲主編，認為三、四十年代的山峰比較明朗，並發表《請走出文字的迷宮》評論《七十年代詩選》</li>
-</ul>
-<h2 id="論散文詩的生成與泯滅" tabindex="-1">論散文詩的生成與泯滅 <a class="header-anchor" href="#論散文詩的生成與泯滅" aria-label="Permalink to &quot;論散文詩的生成與泯滅&quot;"></a></h2>
-<ul>
-<li>劉半農將波特萊爾的Poème en prose翻譯成「散文詩」</li>
-<li>散文詩也有兩個根球，分別是劉半農、魯迅等人對波特萊爾、泰戈爾等文體之臨摹。另一半則是風車詩社的超現實</li>
-<li>秀陶的《白色的衝刺》被商禽視為「驚心」論之濫觴，但本身高呼「散文詩何必獨沽驚心一味」</li>
-<li>驚心的代表是蘇紹連</li>
-<li>紀德的《地糧》影響蘇紹連</li>
-<li>《詩學》將文學分作抒情、敘事、戲劇</li>
-<li>沈臨彬寫各種手記，人稱「方壺漁夫」</li>
-<li>杜十三被白靈稱作跨媒介的「火焰之子」，認為文學該從先驗式第一自然和人造式第二自然轉往聲光電波構築的第三自然</li>
-<li>莫渝熟悉世界散文詩史，曾任笠詩刊主編。積極譯介法文詩，主編《台灣自然生態詩語》</li>
-</ul>
-<h2 id="顏元叔與《中外文學》的批評實踐" tabindex="-1">顏元叔與《中外文學》的批評實踐 <a class="header-anchor" href="#顏元叔與《中外文學》的批評實踐" aria-label="Permalink to &quot;顏元叔與《中外文學》的批評實踐&quot;"></a></h2>
-<ul>
-<li>顏元叔用「定向疊景」來說明葉維廉的詩作</li>
-<li>比起重視形式的新批評，顏元叔更重視主題</li>
-<li>他認為「文學是哲學的戲劇化」，重視詩的道德，所以喜歡余光中的民族情感</li>
-<li>結構字質相對說：由蘭森提出，將結構視為詩可被轉述的「內容」，將字質視為詩的本質，兩者可分開。不同於提倡反諷的布魯克斯</li>
-<li>唐文標事件：認為現代詩太舶來而引發論戰</li>
-<li>中外文學是包容新舊世代的平台</li>
-</ul>
+<p>作者是justfont字型工程師何青儒，在網路上還有Rutopio和嗜字綠等筆名。</p>
+<p>是位用一篇篇優質文將大家領進數位字型之門的引路人。</p>
 ]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[2024的生活]]></title>
             <link>https://haruowang.vercel.app/about/lifelog/2024.html</link>
             <guid>https://haruowang.vercel.app/about/lifelog/2024.html</guid>
-            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
+            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
             <description><![CDATA[2024年，Haruo Wang的生活要事]]></description>
             <content:encoded><![CDATA[<h1 id="_2024的生活" tabindex="-1">2024的生活 <a class="header-anchor" href="#_2024的生活" aria-label="Permalink to &quot;2024的生活&quot;"></a></h1>
 <p><Badge type="info" text="🌿 Budding" /></P>
@@ -547,14 +209,49 @@
 <li>參與北藝策展社首場社團聚會</li>
 </ul>
 <h2 id="nov" tabindex="-1">Nov <a class="header-anchor" href="#nov" aria-label="Permalink to &quot;Nov&quot;"></a></h2>
+<ul>
+<li>快閃《北流好日子》及《白晝之夜》</li>
+<li>製作蜜汁排骨、烤布蕾</li>
+<li>製作馬鈴薯小雞腿、金針菇海苔捲</li>
+<li>前往領事局辦護照及完成國防抵免</li>
+<li>響應《打開台北》，參觀樹火及質物霽畫</li>
+<li>於日幣利率低時嘗試換匯</li>
+<li>參與《第九屆區塊鏈愛好者年會》</li>
+<li>完成一次完整的股票買賣交割</li>
+<li>參與《聲波薩滿》並走訪飛機巷</li>
+</ul>
 <h2 id="dec" tabindex="-1">Dec <a class="header-anchor" href="#dec" aria-label="Permalink to &quot;Dec&quot;"></a></h2>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[那些我曾經歷的挫敗]]></title>
+            <link>https://haruowang.vercel.app/about/lifelog/failure.html</link>
+            <guid>https://haruowang.vercel.app/about/lifelog/failure.html</guid>
+            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
+            <description><![CDATA[2024年開始，Haruo Wang的失敗整理]]></description>
+            <content:encoded><![CDATA[<h1 id="那些我曾經歷的挫敗" tabindex="-1">那些我曾經歷的挫敗 <a class="header-anchor" href="#那些我曾經歷的挫敗" aria-label="Permalink to &quot;那些我曾經歷的挫敗&quot;"></a></h1>
+<p><Badge type="info" text="🌿 Budding" /></P>
+<h2 id="_2024" tabindex="-1">2024 <a class="header-anchor" href="#_2024" aria-label="Permalink to &quot;2024&quot;"></a></h2>
+<ul>
+<li>北藝大藝跨所備取二，藝管所未達標</li>
+<li>《聯合文學》小說新人賞落選一次</li>
+<li>《New Wave攝影創作獎》初審落選</li>
+<li>《金點設計獎》初審落選</li>
+<li>《台灣島。鏈》獎助計畫落選一次</li>
+<li>《若水NFT藝術獎》落選一次</li>
+<li>《Solana Write-a-thon》徵文落選</li>
+<li>用thirdweb快速開發dapp，但是踩坑</li>
+<li>自架RSSHub到Cloudflare，但是不能關機</li>
+<li>護照規費補繳</li>
+<li>移動停利單沒刪乾淨</li>
+</ul>
 ]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[2024的品味]]></title>
             <link>https://haruowang.vercel.app/about/taste/2024.html</link>
             <guid>https://haruowang.vercel.app/about/taste/2024.html</guid>
-            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
+            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
             <description><![CDATA[2024年，Haruo Wang的音樂、影像、閱讀品味]]></description>
             <content:encoded><![CDATA[<h1 id="_2024的品味" tabindex="-1">2024的品味 <a class="header-anchor" href="#_2024的品味" aria-label="Permalink to &quot;2024的品味&quot;"></a></h1>
 <p><Badge type="info" text="🌿 Budding" /></P>
@@ -581,7 +278,7 @@
 <p>《2017鴻梅新人獎巡迴展作品集無人之地》、《藝術論壇Volume11》、《我將是你的鏡子：世界當代攝影家告白》</p>
 <h2 id="apr" tabindex="-1">Apr <a class="header-anchor" href="#apr" aria-label="Permalink to &quot;Apr&quot;"></a></h2>
 <h3 id="what-i-hear-3" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-3" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
-<p>靴腿《失去愛情的摩托車手》、JADE《Step By Step》、謝震廷feat.徐靖玟《你的行李》、沉舟樂隊《就讓我墜入海底》、SUGIZO feat. GLIM SPANKY《めぐりあい》、蓮ノ空《抱きしめる花びら》、sweet ARMS《ヒトヒラ》、岩崎琢《Rubicon》、芒果醬《小紫aka給我錢》、Eve《心海》、陳勢安《不想說晚安》、P-MODEL《2D OR NOT 2D》、梅林太郎《Yuri on ICE》、林奕匡《高山低谷》、山田珠露《Always in my heart》、鷺巢詩郎《閉塞の拡大》、Cerise Bouquet《Holiday Holiday》、Cocco《Raining》、既定偏離《人生逃避號》、Liella!《シェキラ》、reche《命運》、《ゴジランド》、張瑋瑋《米店》、Ivy to Fraudulent Game《青二才》、菅野陽子《piece by ten》、dress《Is the only》、藤間仁《表裏一体》、藤田淳平《月明り》、佐佐木惠梨《ロッホと旅人》</p>
+<p>靴腿《失去愛情的摩托車手》、JADE《Step By Step》、謝震廷feat.徐靖玟《你的行李》、沉舟樂隊《就讓我墜入海底》、SUGIZO feat. GLIM SPANKY《めぐりあい》、蓮ノ空《抱きしめる花びら》、sweet ARMS《ヒトヒラ》、岩崎琢《Rubicon》、芒果醬《小紫aka給我錢》、Eve《心海》、陳勢安《不想說晚安》、P-MODEL《2D OR NOT 2D》、梅林太郎《Yuri on ICE》、林奕匡《高山低谷》、山田珠露《Always in my heart》、鷺巢詩郎《閉塞の拡大》、Cerise Bouquet《Holiday Holiday》、Cocco《Raining》、既定偏離《人生逃避號》、Liella!《シェキラ》、reche《命運》、《ゴジランド》、張瑋瑋《米店》、Ivy to Fraudulent Game《青二才》、菅野洋子《piece by ten》、dress《Is the only》、藤間仁《表裏一体》、藤田淳平《月明り》、佐佐木惠梨《ロッホと旅人》</p>
 <h3 id="what-i-see-3" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-3" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
 <p>《浮光掠影：每個人心中的電影院》、《搬家》、《哥吉拉與金剛：新帝國》、《父親的房間》</p>
 <h3 id="what-i-read-3" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-3" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
@@ -609,7 +306,7 @@
 <p>《少女歌劇再生產評論集》、《影視聽生活誌011 2024六月號》、《愛動物的人》</p>
 <h2 id="aug" tabindex="-1">Aug <a class="header-anchor" href="#aug" aria-label="Permalink to &quot;Aug&quot;"></a></h2>
 <h3 id="what-i-hear-7" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-7" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
-<p>Seaweed藻《Morning Sun》、The Mercury Program《Marianas》、青木陽菜《Colors of You》、Ivy to Fraudulent Game《賀歌》、河豚子《陳振昌，你是隻猴子》、松崎ナオ《ただ残るイメージ》、Lily Chou-Chou《Arabesque》、村松崇継《彼方の光》、漂流出口《仙人掌的花》、Alex G《Main Theme》、World's End Girlfriend《Les Enfants du paradis》、木嶋真優《鮫 (エスクアロ)》、JPBS《Rainy Day》、スタァライト九九組《Pride》、加藤達也《color temperature 》、我們的日子有限公司《遺書》、JPBS《Green Screen》、真名子新《網户》、Inspirative《Why》、The Darkest Romance《หมุน》、Kevin Colombin《Ending》、你太白了，去曬黑《主意》、蘇打綠《蟬想》、DeVotchKa《The Winner Is》、Thomas Foguenne《Once Again》、I Mean Us《Blue and Gold》、洛天依《摩的大飈客》（公婆版歌詞）、OYEOL《OH NEW SUPER WORLD》、BL!NDMAN《Electric Counterpoint》、London Grammar《Into Gold》、Hooverphonic《Eden》、JRJ Enterprises《水田不要賣》、步行者《橋》、Yufu《The Walls Are Coming In》、野外合作社《復活》、Sunny Day Service《コンビニのコーヒー》、Cozy《21 Grams》、魚條《279自救會》、てつくずおきば《エアーマンが倒せない》、曹永旭《Seorae》、岡本敦郎《みどりの馬車》、AiNA THE END《Love Sick》、戴荃《悟空》</p>
+<p>Seaweed藻《Morning Sun》、The Mercury Program《Marianas》、青木陽菜《Colors of You》、Ivy to Fraudulent Game《賀歌》、河豚子《陳振昌，你是隻猴子》、松崎ナオ《ただ残るイメージ》、Lily Chou-Chou《Arabesque》、村松崇継《彼方の光》、漂流出口《仙人掌的花》、Alex G《Main Theme》、World's End Girlfriend《Les Enfants du paradis》、木嶋真優《鮫 (エスクアロ)》、JPBS《Rainy Day》、スタァライト九九組《Pride》、加藤達也《color temperature》、我們的日子有限公司《遺書》、JPBS《Green Screen》、真名子新《網户》、Inspirative《Why》、The Darkest Romance《หมุน》、Kevin Colombin《Ending》、你太白了，去曬黑《主意》、蘇打綠《蟬想》、DeVotchKa《The Winner Is》、Thomas Foguenne《Once Again》、I Mean Us《Blue and Gold》、洛天依《摩的大飈客》（公婆版歌詞）、OYEOL《OH NEW SUPER WORLD》、BL!NDMAN《Electric Counterpoint》、London Grammar《Into Gold》、Hooverphonic《Eden》、JRJ Enterprises《水田不要賣》、步行者《橋》、Yufu《The Walls Are Coming In》、野外合作社《復活》、Sunny Day Service《コンビニのコーヒー》、Cozy《21 Grams》、魚條《279自救會》、てつくずおきば《エアーマンが倒せない》、曹永旭《Seorae》、岡本敦郎《みどりの馬車》、AiNA THE END《Love Sick》、戴荃《悟空》</p>
 <h3 id="what-i-see-7" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-7" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
 <p>《驀然回首》、《老狐狸》、《青春電幻物語》、《廣島》、《雨月物語》、《紀錄片：Sunny Day Service》、《蝙蝠俠》</p>
 <h3 id="what-i-read-7" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-7" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
@@ -629,228 +326,168 @@
 <h3 id="what-i-read-9" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-9" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
 <p>《臺灣詩學學刊40期》、《臺灣自然寫作選》、《歇斯底里的案件》、《蔡國強又來了！》、《交陪美學論》</p>
 <h2 id="nov" tabindex="-1">Nov <a class="header-anchor" href="#nov" aria-label="Permalink to &quot;Nov&quot;"></a></h2>
+<h3 id="what-i-hear-10" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-10" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
+<p>高見優《JIN-仁- Main Title》、DSPS《成為日常》、BRADD《Caged Birds》、邱淑蟬《望》、聲子蟲《印象派》、《Pilence Pee》、橘娃娃《18碎》、Pучной Pептилоид《Я хочу быть 2д》、春麵樂隊《我在你的眼睛我看到了你》、Ruud Hall《The Aftermath Of Loss》、Anna von Hausswolff《Ugly and Vengeful》、牛尾憲輔《paranormal funk》、中村誠一《驢馬》、MONO《Death in Rebirth》、Homecomings《slowboat》、擊沉女孩《Something Old》、黃小楨《Secret (OMD cover)》、Kronos Quartet《Runaway Horses》、橫山克《oOoOo #JELEE》、Lagrimas《Validations》、Wounded Masquerade《I ruin everything》、笑琴《漂洋》、靈魂咆哮《二十年》、陳奕迅《這樣很好》、Chage《永遠の謎》、Iglooghost《Coral Mimic》、陳佩賢《You Are》、伍佰《純真年代》</p>
+<h3 id="what-i-see-10" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-10" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
+<p>《詩》、《瑞秋》、《懼裂》、《白南準：月亮是最古早的電視》、《三島由紀夫：人間四幕》、《群山之島與不去會死的他們2》、《一家子兒咕咕叫》、《奧術2》、《掬水月在手》</p>
+<h3 id="what-i-read-10" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-10" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
+<p>《設計·Design·デザイン》、《馴羊記》、《Play．紙標本》、《小說生活》</p>
 <h2 id="dec" tabindex="-1">Dec <a class="header-anchor" href="#dec" aria-label="Permalink to &quot;Dec&quot;"></a></h2>
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[用VitePress玩轉SSG]]></title>
-            <link>https://haruowang.vercel.app/dev/vitepress/blog.html</link>
-            <guid>https://haruowang.vercel.app/dev/vitepress/blog.html</guid>
-            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
-            <description><![CDATA[使用VitePress開發部落格的經驗分享]]></description>
-            <content:encoded><![CDATA[<h1 id="用vitepress玩轉ssg" tabindex="-1">用VitePress玩轉SSG <a class="header-anchor" href="#用vitepress玩轉ssg" aria-label="Permalink to &quot;用VitePress玩轉SSG&quot;"></a></h1>
-<p><Badge type="info" text="🌿 Budding" /></P>
-<p><img src="/og-image.webp" alt="VitePress Blog" loading="lazy"></p>
-<h2 id="基本設定" tabindex="-1"><a href="https://vitepress.dev/guide/getting-started" target="_blank" rel="noreferrer">基本設定</a> <a class="header-anchor" href="#基本設定" aria-label="Permalink to &quot;[基本設定](https://vitepress.dev/guide/getting-started)&quot;"></a></h2>
-<p>在終端機輸入node -v確認版本，要大於18。目前我的是18.12.1，可以使用。</p>
-<p>之前有裝過pnpm，所以直接輸入<code>pnpm add -D vitepress</code>。</p>
-<p>再來透過<code>pnpm vitepress init</code>進行初始化。</p>
-<p>接下來的一連串問題我是這麼選：</p>
-<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span>┌  Welcome to VitePress!</span></span>
-<span class="line"><span>│</span></span>
-<span class="line"><span>◇  Where should VitePress initialize the config?</span></span>
-<span class="line"><span>│  ./docs</span></span>
-<span class="line"><span>│</span></span>
-<span class="line"><span>◇  Site title:</span></span>
-<span class="line"><span>│  Feed Me, Haruo</span></span>
-<span class="line"><span>│</span></span>
-<span class="line"><span>◇  Site description:</span></span>
-<span class="line"><span>│  Digital Garden of Haruo Wang</span></span>
-<span class="line"><span>│</span></span>
-<span class="line"><span>◇  Theme:</span></span>
-<span class="line"><span>│  Default Theme + Customization</span></span>
-<span class="line"><span>│</span></span>
-<span class="line"><span>◇  Use TypeScript for config and theme files?</span></span>
-<span class="line"><span>│  Yes</span></span>
-<span class="line"><span>│</span></span>
-<span class="line"><span>◇  Add VitePress npm scripts to package.json?</span></span>
-<span class="line"><span>│  Yes</span></span>
-<span class="line"><span>│</span></span>
-<span class="line"><span>└　開始用VitePress玩轉SSG</span></span></code></pre>
-</div><p>想說保留一下Customization的可能性，所以也裝了Vue和VS Code的官方外掛Vue – Official。目前暫時還沒用到。</p>
-<p>輸入指令<code>pnpm run docs:dev</code>後，便可進行開發。</p>
-<h2 id="基本版面" tabindex="-1">基本版面 <a class="header-anchor" href="#基本版面" aria-label="Permalink to &quot;基本版面&quot;"></a></h2>
-<p>我們主要會頻繁更動的檔案，是./vitepress底下的config.mts。從網站語言、網站地圖到設定lazy loading，無所不包。</p>
-<h3 id="下拉選單" tabindex="-1">下拉選單 <a class="header-anchor" href="#下拉選單" aria-label="Permalink to &quot;下拉選單&quot;"></a></h3>
+            <title><![CDATA[第一次微調GPT就上手]]></title>
+            <link>https://haruowang.vercel.app/dev/react/jotaro.html</link>
+            <guid>https://haruowang.vercel.app/dev/react/jotaro.html</guid>
+            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
+            <description><![CDATA[即便一查發現OpenAI的微調限免時間延長到10/31，還是必須花5美金（時價161元台幣），將帳號升級到階層一才能使用……並且要稍微等個一兩天才會開通權限]]></description>
+            <content:encoded><![CDATA[<h1 id="第一次微調gpt就上手" tabindex="-1">第一次微調GPT就上手 <a class="header-anchor" href="#第一次微調gpt就上手" aria-label="Permalink to &quot;第一次微調GPT就上手&quot;"></a></h1>
+<p><Badge type="info" text="🌳 Evergreen" /></P>
+<p><img src="/react/jo1.webp" alt="JotaroGPT" loading="lazy"></p>
+<h2 id="微調訓練" tabindex="-1">微調訓練 <a class="header-anchor" href="#微調訓練" aria-label="Permalink to &quot;微調訓練&quot;"></a></h2>
+<p>對前端有些理解的話就會覺得這個挑戰不算困難。</p>
+<p>首先Git clone完<a href="https://github.com/vercel-labs/shooketh" target="_blank" rel="noreferrer">repo</a>之後pnpm i，再pnpm run dev。</p>
+<p>此時會遇到500 error，記得申請OpenAI的金鑰，並把.env.example改成.env。</p>
+<p>準備好訓練資料data.jsonl後，修改fine-tune.ts，輸入pnpm run tune重新微調自己的模型。結果CMD提示我Fine-tuning jobs cannot be created on an Explore plan.</p>
+<p>即便一查發現OpenAI的微調限免時間延長到10/31，還是必須花5美金（時價161元台幣），將帳號升級到階層一才能使用……並且要稍微等個一兩天才會開通權限。</p>
+<p>既然都要試玩4o，想說那就讓GPT來幫我生成訓練內容。</p>
+<h2 id="提問內容" tabindex="-1">提問內容 <a class="header-anchor" href="#提問內容" aria-label="Permalink to &quot;提問內容&quot;"></a></h2>
+<p>以下列出我的簡單提問，ChatGPT每次大約會回答二十條：</p>
 <blockquote>
-<p>config.mts &gt; themeConfig &gt; nav &gt; text + items</p>
+<p>我想要微調（fine tune）出能夠以《JOJO的奇妙冒險：星塵鬥士》中主角「空條承太郎」身分和口吻回答提問的gpt。可以幫我透過類似以下範例的jsonl格式，想出至少一百條message的jsonl嗎？（user是提問的使用者，assistant是此gpt的回覆。所以兩者的content之間要有問答關係）</p>
 </blockquote>
-<h3 id="左側欄" tabindex="-1">左側欄 <a class="header-anchor" href="#左側欄" aria-label="Permalink to &quot;左側欄&quot;"></a></h3>
 <blockquote>
-<p>config.mts &gt; themeConfig &gt; sidebar &gt; text + items</p>
+<p>範例：{&quot;messages&quot;: [{&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;Jotaro GPT&quot;}, {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;太慢了太慢了，『世界』才是最強的替身，即使不停止時間，光是速度和力量，也遠超你的『白金之星』。&quot;}, {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;看來和我的白金之星是同類型的替身呢，雖然活動距離不長，但動作卻精準而有力。&quot;}]}</p>
 </blockquote>
-<p>需要多寫<code>'/about/'</code>、<code>'/pov/'</code>或<code>'/dev/'</code>，根據路由指定使用者顯示哪個側邊欄。加上collapsed可以實作「收縮小按鈕」。</p>
-<h3 id="右側索引" tabindex="-1">右側索引 <a class="header-anchor" href="#右側索引" aria-label="Permalink to &quot;右側索引&quot;"></a></h3>
 <blockquote>
-<p>config.mts &gt; themeConfig &gt; outline</p>
+<p>目前還不到一百條，請幫我繼續生成，並在content中適時加入更多和《JOJO的奇妙冒險：星塵鬥士》有關的角色、替身、技能或名台詞，如「波魯納雷夫」、「阿布德爾」、「伊奇」、「流星指刺」、「隱者之紫」、「難不成是……歐拉歐拉嗎？」、「呀咧呀咧」。</p>
 </blockquote>
-<p>outline裡可以設定level deep，讓h3也能成為索引。</p>
-<p>另外可以用label修改預設的目錄名稱On this page。像我就改成TOC。</p>
-<h3 id="搜尋功能" tabindex="-1">搜尋功能 <a class="header-anchor" href="#搜尋功能" aria-label="Permalink to &quot;搜尋功能&quot;"></a></h3>
 <blockquote>
-<p>config.mts &gt; themeConfig &gt; search</p>
+<p>加入其他作品關鍵字後繼續生成：如「史比特瓦根財團」、「死神13」、「恩雅婆婆」、「歐因哥與波因哥」、「小野大輔」、「子安武人」、「大衛社」、「荒木飛呂彥」。</p>
 </blockquote>
-<p>MiniSearch其實已經很好用了，把provider設成local就好。也可以選用Algolia，但就是要連他們家的API。</p>
-<h3 id="導覽列logo" tabindex="-1">導覽列logo <a class="header-anchor" href="#導覽列logo" aria-label="Permalink to &quot;導覽列logo&quot;"></a></h3>
 <blockquote>
-<p>config.mts &gt; themeConfig &gt; logo</p>
+<p>加入其他作品關鍵字後繼續生成：如「黃金精神」、「空條徐倫」、「廣瀨康一」、「埃及九榮神」、「半徑20米的綠寶石水花」、「廁所是波魯納雷夫的舞台」、「人類的讚歌是勇氣的讚歌」、「榮耀永遠屬於星塵遠征軍」。</p>
 </blockquote>
-<h3 id="首頁主題" tabindex="-1">首頁主題 <a class="header-anchor" href="#首頁主題" aria-label="Permalink to &quot;首頁主題&quot;"></a></h3>
 <blockquote>
-<p>style.css</p>
+<p>加入「替身使者會被替身使者吸引」、「皇帝」與「吊人」、「歐拉3頁」等關鍵字後繼續生成。</p>
 </blockquote>
-<ul>
-<li>--vp-home-hero-name-background：改標題顏色</li>
-<li>--vp-home-hero-image-background-image：改圖片襯底顏色</li>
-</ul>
-<h2 id="head" tabindex="-1"><code>&lt;head&gt;</code> <a class="header-anchor" href="#head" aria-label="Permalink to &quot;`&lt;head&gt;`&quot;"></a></h2>
-<h3 id="標準網址宣告" tabindex="-1">標準網址宣告 <a class="header-anchor" href="#標準網址宣告" aria-label="Permalink to &quot;標準網址宣告&quot;"></a></h3>
-<blockquote>
-<p>config.mts &gt; head</p>
-</blockquote>
-<div class="language-ts vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
-<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'link'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { rel: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'canonical'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, href: 網址 }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]</span></span></code></pre>
-</div><h3 id="favicon" tabindex="-1">favicon <a class="header-anchor" href="#favicon" aria-label="Permalink to &quot;favicon&quot;"></a></h3>
-<blockquote>
-<p>config.mts &gt; head</p>
-</blockquote>
-<div class="language-ts vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
-<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'link'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { rel: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'apple-touch-icon'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, sizes: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'180x180'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, href: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'/apple-touch-icon.png'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
-<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'link'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { rel: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'icon'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, type: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'image/png'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, sizes: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'32x32'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, href: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'/favicon-32x32.png'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
-<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'link'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { rel: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'icon'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, type: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'image/png'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, sizes: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'16x16'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, href: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'/favicon-16x16.png'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
-<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'link'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { rel: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'manifest'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, href: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'/site.webmanifest'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
-<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'link'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { rel: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'mask-icon'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, href: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'/safari-pinned-tab.svg'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, color: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'#5bbad5'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
-<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'link'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { name: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'msapplication-TileColor'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, content: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'#da532c'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
-<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'link'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { name: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'theme-color'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, content: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'#ffffff'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span></code></pre>
-</div><h3 id="oggraph" tabindex="-1">OGgraph <a class="header-anchor" href="#oggraph" aria-label="Permalink to &quot;OGgraph&quot;"></a></h3>
-<blockquote>
-<p>config.mts &gt; head</p>
-</blockquote>
-<div class="language-ts vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
-<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'meta'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { property: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'og:url'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, content: 網址 }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
-<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'meta'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { property: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'og:type'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, content: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'website'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
-<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'meta'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { property: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'og:title'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, content: 標題 }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
-<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'meta'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { property: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'og:description'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, content: 描述 }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
-<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'meta'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { property: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'og:image'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, content: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'/og-image.webp'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
-<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'meta'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { property: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'twitter:card'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, content: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'summary_large_image'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
-<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'meta'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { property: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'twitter:domain'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, content: 網址 }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
-<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'meta'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { property: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'twitter:title'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, content: 標題 }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
-<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'meta'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { property: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'twitter:description'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, content: 描述 }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
-<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'meta'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { property: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'twitter:image'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, content: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'/og-image.webp'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]</span></span></code></pre>
-</div><p>OGgraph這邊後來我抽出部分讓各頁用frontmatter處理，才不會每頁都只讀到首頁的資訊。</p>
-<h3 id="ga4" tabindex="-1">GA4 <a class="header-anchor" href="#ga4" aria-label="Permalink to &quot;GA4&quot;"></a></h3>
-<blockquote>
-<p>config.mts &gt; head</p>
-</blockquote>
-<p>reference: <a href="https://zhichao.org/posts/4d69f1" target="_blank" rel="noreferrer">只抄</a></p>
-<div class="language-ts vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
-<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'script'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    {</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    async: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">''</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    src: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX'</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
-<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'script'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    {},</span></span>
-<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    "window.dataLayer = window.dataLayer || [];</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\n</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">function gtag(){dataLayer.push(arguments);}</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\n</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">gtag('js', new Date());</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\n</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">gtag('config', 'G-XXXXXXXXXX');"</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]</span></span></code></pre>
-</div><h3 id="rss-feed" tabindex="-1">RSS Feed <a class="header-anchor" href="#rss-feed" aria-label="Permalink to &quot;RSS Feed&quot;"></a></h3>
-<blockquote>
-<p>config.mts</p>
-</blockquote>
-<p>使用<a href="https://www.npmjs.com/package/vitepress-plugin-rss" target="_blank" rel="noreferrer">vitepress-plugin-rss</a>。</p>
-<p>照官方描述，先<code>pnpm add vitepress-plugin-rss</code>。</p>
-<p>設定一些基本資訊後，<code>pnpm run docs:build</code>，在生產環境的dist資料夾裡即可找到你的rss.xml。</p>
-<p>結果XML頁面跳出警告EntityRef。本以為把XML裡出錯那行的<code>&amp;</code>改成<code>&amp;amp;</code>就好了，但實際上必須回去改原本md檔裡的網址，再重新build一次才行。</p>
-<h2 id="其他妙招" tabindex="-1">其他妙招 <a class="header-anchor" href="#其他妙招" aria-label="Permalink to &quot;其他妙招&quot;"></a></h2>
-<h3 id="嵌入yt影片" tabindex="-1">嵌入YT影片 <a class="header-anchor" href="#嵌入yt影片" aria-label="Permalink to &quot;嵌入YT影片&quot;"></a></h3>
-<blockquote>
-<p>style.css &gt; 自訂class</p>
-</blockquote>
-<p>YouTube提供的iframe沒有RWD，所以要另外寫一個div搭配CSS。</p>
-<div class="language-html vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">html</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"videobox"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">iframe</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> frameborder</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"0"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> src</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"嵌入連結"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> allowFullScreen</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">iframe</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span></code></pre>
-</div><div class="language-css vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">css</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">.videobox</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
-<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  position</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">relative</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
-<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  width</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">100</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">%</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
-<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  height</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
-<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  padding-bottom</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">56.25</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">%</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">.videobox</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D"> iframe</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
-<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  position</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">absolute</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
-<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  top</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
-<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  left</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
-<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  width</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">100</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">%</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
-<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  height</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">100</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">%</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
-</div><h3 id="shield-io" tabindex="-1">Shield.io <a class="header-anchor" href="#shield-io" aria-label="Permalink to &quot;Shield.io&quot;"></a></h3>
-<p>因為img的設定是區塊元素，會自動換行。為了改成行內元素，沒有使用Markdown一般的圖片語法<code>![](圖片位置)</code>，而是直接寫img標籤。</p>
-<div class="language-html vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">html</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">//以GA4的Badge為例</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">img</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> src</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"https://img.shields.io/badge/-GA4-E37400?style=for-the-badge&#x26;logo=google%20analytics&#x26;logoColor=fff"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> alt</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"Google Analytics"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> style</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"display: inline"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span></code></pre>
-</div><h2 id="專案連結" tabindex="-1"><a href="https://github.com/HaruoWang/vitepress-blog" target="_blank" rel="noreferrer">專案連結</a> <a class="header-anchor" href="#專案連結" aria-label="Permalink to &quot;[專案連結](https://github.com/HaruoWang/vitepress-blog)&quot;"></a></h2>
+<p>GPT算是回應得相當不錯。只要糾正一些明顯的錯誤，像是把二喬寫成「老爹」這種就好。</p>
+<p>把安娜蘇的替身名改回「怒海潛將」，重新run tune，給OpenAI一點時間。完事後將route.ts裡的model改成訓練好的模型，system改成你設定的。途中一樣有可以用suppressHydrationWarning解決的bug，並要將stroke-width這種寫法改成駝峰。剩下就是慢慢調UI的時間了——</p>
+<h2 id="參考文獻" tabindex="-1">參考文獻 <a class="header-anchor" href="#參考文獻" aria-label="Permalink to &quot;參考文獻&quot;"></a></h2>
+<p><a href="https://vercel.com/guides/fine-tuning-openai-nextjs" target="_blank" rel="noreferrer">Fine-tuning GPT with OpenAI, Next.js and Vercel AI SDK</a></p>
+<h2 id="專案連結" tabindex="-1"><a href="https://jotarogpt.vercel.app" target="_blank" rel="noreferrer">專案連結</a> <a class="header-anchor" href="#專案連結" aria-label="Permalink to &quot;[專案連結](https://jotarogpt.vercel.app)&quot;"></a></h2>
 ]]></content:encoded>
-            <enclosure url="https://haruowang.vercel.app/og-image.webp" length="0" type="image/webp"/>
+            <enclosure url="https://haruowang.vercel.app/react/jo1.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[【微軟收購史：開發紀錄】]]></title>
+            <link>https://haruowang.vercel.app/dev/react/msft.html</link>
+            <guid>https://haruowang.vercel.app/dev/react/msft.html</guid>
+            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
+            <description><![CDATA[按照官方給的dotlottie-react，程式碼可以寫到很簡潔，但做不到onScroll的效果。查找之後發現目前還可以用Lottie for React達成，寫法大致如下]]></description>
+            <content:encoded><![CDATA[<h1 id="【微軟收購史-開發紀錄】" tabindex="-1">【微軟收購史：開發紀錄】 <a class="header-anchor" href="#【微軟收購史-開發紀錄】" aria-label="Permalink to &quot;【微軟收購史：開發紀錄】&quot;"></a></h1>
+<p><Badge type="info" text="🌳 Evergreen" /></P>
+<p><img src="/react/ms1.webp" alt="Microsoft's Top-10 Acquisitions" loading="lazy"></p>
+<h2 id="shadecn" tabindex="-1">shadecn <a class="header-anchor" href="#shadecn" aria-label="Permalink to &quot;shadecn&quot;"></a></h2>
+<p>趁這次做side project，來試用心儀已久的shadcn/ui。</p>
+<p>首先照著指示輸入pnpm dlx shadcn@latest init -d，但這個官方指令會跳出&quot;Something went wrong creating a new Next.js project. Please try again.”</p>
+<p>也就是說，必須要先建立next專案。輸入pnpm create next-app@latest my-app --typescript --tailwind –eslint，再按照官方設定來。一個大重點是記得cd進my-app，再執行pnpm dlx shadcn@latest init -d。</p>
+<p>完成後便可以pnpm run dev。這時主控台出現Warning: Extra attributes from the server，在layout.tsx裡的html標籤加入suppressHydrationWarning解決問題。</p>
+<p>可以用pnpm dlx shadcn@latest add button先新增一個按鈕試試看。接下來要注意的就剩下：「每次新增組件時都要先add！」</p>
+<p>在「微軟十大收購」這個網站中，我本來就打算放入數位專題常用的圖表。add chart完之後，在調整XAxis（圖表的X軸）時會跳出警告：”XAxis: Support for defaultProps will be removed from function components in a future major release”，這時要裝一下recharts的alpha版。而recharts其實就是shadcn背後所用到的圖表庫。</p>
+<p>這次還有玩到card、carousel和progress組件等，運用得宜真的會很吸睛。</p>
+<h2 id="lottie" tabindex="-1">Lottie <a class="header-anchor" href="#lottie" aria-label="Permalink to &quot;Lottie&quot;"></a></h2>
+<p>除了長條圖之外，近年一直在UI領域被提及的Lottie也是我打算應用的。但想要不依賴AE來做MG還是有些坑要踩。像是官方提供的Lottie Creator實在太占瀏覽器資源，跑起來很卡。不過這也讓我發現到了Jitter的好，甚至可以直接匯出Lottie檔。</p>
+<p>按照官方給的dotlottie-react，程式碼可以寫到很簡潔，但做不到onScroll的效果。查找之後發現目前還可以用<a href="https://lottiereact.com" target="_blank" rel="noreferrer">Lottie for React</a>達成，寫法大致如下：</p>
+<div class="language-ts vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { useLottie, useLottieInteractivity } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> "lottie-react"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> msftLogo </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> "./msftLogo.json"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> options</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  animationData: msftLogo,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">};</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> style</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  maxWidth: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">640</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">};</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> lottieObj</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> useLottie</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(options, style);</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> Animation</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> useLottieInteractivity</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    lottieObj,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    mode: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"scroll"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    actions: [</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        visibility: [</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        type: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"seek"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        frames: [</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">120</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    ]</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  });</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{Animation}</span></span></code></pre>
+</div><p>現在的Lottie東一個限制西一個限制，尤其是免費版只能上傳十次檔案（不是十個）真的很惱人，所以要借重一些過往的小工具作為輔助。個人很推薦<a href="https://lottiefiles.com/tools/lottie-to-dotlottie" target="_blank" rel="noreferrer">dotLottie轉換器</a>和<a href="https://lottiefiles.github.io/lottie-docs/playground/json_editor" target="_blank" rel="noreferrer">JSON編輯器</a>。</p>
+<h2 id="設定" tabindex="-1">設定 <a class="header-anchor" href="#設定" aria-label="Permalink to &quot;設定&quot;"></a></h2>
+<p>幫網站調標題時發現這個專案的metadata不在next/head裡，要去layout.tsx裡找到export const metadata: Metadata進行修改。</p>
+<p>另外就是部署當下遇到eslint和vercel相互衝突的解法。這部分我稍微取巧了點，直接在.eslintrc.json關閉規則：</p>
+<div class="language-json vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">json</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  "extends"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"next"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  "rules"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    "react/no-unescaped-entities"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"off"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    "@next/next/no-page-custom-font"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"off"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div><h2 id="文本" tabindex="-1">文本 <a class="header-anchor" href="#文本" aria-label="Permalink to &quot;文本&quot;"></a></h2>
+<p>最後列出網站中的文字內容，也算是我選擇這個主題的原因之一：趁機了解並整理一間科技大廠近年的故事。</p>
+<blockquote>
+<p>「自從2000年開始，微軟的併購規模越來越大。其中2022年的動視暴雪一案，付出比LinkedIn昂貴不只兩倍的代價。還是靠著總裁Brad Smith和政府的良好關係，以及讓渡歐盟外「雲端媒體權益」給予育碧的善意，才躲過聯邦貿易委員會（FTC）和英國競爭與市場管理局（CMA）的反壟斷審查。」</p>
+</blockquote>
+<blockquote>
+<p>「回顧往昔的大買賣，不乏能找出敗筆。其中像廣告商aQuantive的62億美元商譽減值，就幾乎把這檔投資賠光了。而Nokia從手機霸主摔落，被HMD和「鴻海小金雞」富智康納入旗下的故事，亦是老生常談。吃下「工程師交友平台」GitHub的決定，更讓開源社群褒貶不一。」</p>
+</blockquote>
+<blockquote>
+<p>「不過，微軟畢竟能在科技圈站穩一席之地，自仍有其高明之處。特別是近年來和OpenAI之間的恩怨情仇，令這間老牌大廠在街談巷議中重現活力。提前部署AI醫療，進補Nuance Communications的效應也正逐漸發酵。了解歷史，梳理資訊。從圖表製作到AI，微軟至2024為止的十大併購，讓我們一探究竟。」</p>
+</blockquote>
+<blockquote>
+<p>「誠如所見，超過10億美元規模的案例目前只有三件。而就是仰仗動視暴雪、LinkedIn和Nuance Communications，讓微軟在目前最大的那些科技收購案中，分別佔據第一、第七和第九名。」</p>
+</blockquote>
+<h2 id="專案連結" tabindex="-1"><a href="https://msft-acquisition.vercel.app" target="_blank" rel="noreferrer">專案連結</a> <a class="header-anchor" href="#專案連結" aria-label="Permalink to &quot;[專案連結](https://msft-acquisition.vercel.app)&quot;"></a></h2>
+]]></content:encoded>
+            <enclosure url="https://haruowang.vercel.app/react/ms1.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[【Win95俄羅斯方塊：開發紀錄】]]></title>
+            <link>https://haruowang.vercel.app/dev/react/w95.html</link>
+            <guid>https://haruowang.vercel.app/dev/react/w95.html</guid>
+            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
+            <description><![CDATA[Cursor和v0聽久了，這次發現bolt可以線上秀出程式執行結果，決定一試]]></description>
+            <content:encoded><![CDATA[<h1 id="【win95俄羅斯方塊-開發紀錄】" tabindex="-1">【Win95俄羅斯方塊：開發紀錄】 <a class="header-anchor" href="#【win95俄羅斯方塊-開發紀錄】" aria-label="Permalink to &quot;【Win95俄羅斯方塊：開發紀錄】&quot;"></a></h1>
+<p><Badge type="info" text="🌳 Evergreen" /></P>
+<p><img src="/react/w91.webp" alt="Windows 95 Tetris" loading="lazy"></p>
+<p>Cursor和v0聽久了，這次發現bolt可以線上秀出程式執行結果，決定一試。</p>
+<p>這次挑戰開發的是「Windows 95風格的俄羅斯方塊」。基本架構請bolt幫我寫好，就可以專注在調整細節。</p>
+<h2 id="controls" tabindex="-1">Controls <a class="header-anchor" href="#controls" aria-label="Permalink to &quot;Controls&quot;"></a></h2>
+<p>雖說俄羅斯方塊的遊玩方式很簡單，但原有程式碼中並沒有給使用者「如何操作」的指南，所以我另外寫了「按向上的箭頭是旋轉」等提示，以「▲ Rotate」呈現。</p>
+<h2 id="pause" tabindex="-1">Pause <a class="header-anchor" href="#pause" aria-label="Permalink to &quot;Pause&quot;"></a></h2>
+<p>一款遊戲如果不能暫停，那實在是有些太緊湊了，不太人性。因此我另外定義一個布林值isPaused作為判斷，讓play鍵在遊戲途中能化為pause。</p>
+<h2 id="next-piece" tabindex="-1">Next Piece <a class="header-anchor" href="#next-piece" aria-label="Permalink to &quot;Next Piece&quot;"></a></h2>
+<p>原有程式碼中有個明顯問題是「下個方塊」的預覽有bug，研究一番後發現原來是沒有正確斷行，所以每個小方塊都想擠到同一行。加上style={ {gridColumnStart: piece.length == 2 &amp;&amp; j == 0 ? '1' : 'auto'} }即可解決。</p>
+<h2 id="mobile" tabindex="-1">Mobile <a class="header-anchor" href="#mobile" aria-label="Permalink to &quot;Mobile&quot;"></a></h2>
+<p>手機畢竟沒有實體鍵盤，所以另在Controls那寫了幾個供手指點擊的按鈕。</p>
+<h2 id="favicon" tabindex="-1">Favicon <a class="header-anchor" href="#favicon" aria-label="Permalink to &quot;Favicon&quot;"></a></h2>
+<p>從電腦上可以看到俄羅斯方塊在瀏覽器標籤上動起來。</p>
+<p>其實也有專門為React設計的<a href="https://github.com/oflisback/react-favicon" target="_blank" rel="noreferrer">react-favicon</a>，不過我這次是直接用AE Studio提供的<a href="https://www.faviconvideo.com" target="_blank" rel="noreferrer">Animated Favicon Generator</a>。</p>
+<h2 id="font" tabindex="-1">Font <a class="header-anchor" href="#font" aria-label="Permalink to &quot;Font&quot;"></a></h2>
+<p>W95FA好用，而且是OFL授權。</p>
+<h2 id="cursor" tabindex="-1">Cursor <a class="header-anchor" href="#cursor" aria-label="Permalink to &quot;Cursor&quot;"></a></h2>
+<p>既然是90年代的介面，自然要來玩玩<a href="https://tholman.com/cursor-effects" target="_blank" rel="noreferrer">90’s Cursor Effects</a>。</p>
+<h2 id="專案連結" tabindex="-1"><a href="https://w95tetris.vercel.app" target="_blank" rel="noreferrer">專案連結</a> <a class="header-anchor" href="#專案連結" aria-label="Permalink to &quot;[專案連結](https://w95tetris.vercel.app)&quot;"></a></h2>
+]]></content:encoded>
+            <enclosure url="https://haruowang.vercel.app/react/w91.webp" length="0" type="image/webp"/>
         </item>
         <item>
             <title><![CDATA[Axios Daily]]></title>
             <link>https://haruowang.vercel.app/global/english/axios.html</link>
             <guid>https://haruowang.vercel.app/global/english/axios.html</guid>
-            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
+            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
             <description><![CDATA[每日閱讀Axios英文新聞的學習筆記]]></description>
             <content:encoded><![CDATA[<h1 id="axios-daily" tabindex="-1">Axios Daily <a class="header-anchor" href="#axios-daily" aria-label="Permalink to &quot;Axios Daily&quot;"></a></h1>
 <p><Badge type="info" text="🌱 Seedlings" /></P>
@@ -1296,48 +933,10 @@
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[東吳英文小學堂]]></title>
-            <link>https://haruowang.vercel.app/global/english/scu.html</link>
-            <guid>https://haruowang.vercel.app/global/english/scu.html</guid>
-            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
-            <description><![CDATA[觀看《東吳英文小學堂》的學習筆記]]></description>
-            <content:encoded><![CDATA[<h1 id="東吳英文小學堂" tabindex="-1">東吳英文小學堂 <a class="header-anchor" href="#東吳英文小學堂" aria-label="Permalink to &quot;東吳英文小學堂&quot;"></a></h1>
-<p><Badge type="info" text="🌿 Budding" /></P>
-<h2 id="白鯨記" tabindex="-1">白鯨記 <a class="header-anchor" href="#白鯨記" aria-label="Permalink to &quot;白鯨記&quot;"></a></h2>
-<ul>
-<li>白鯨記被評論家視為酷兒小說</li>
-<li>New Bedford：曾是捕鯨中心</li>
-<li>pagan：異教徒</li>
-<li>食人族魚叉手Queequeg：Ishmael的友人</li>
-</ul>
-<h2 id="譯起學翻譯" tabindex="-1">譯起學翻譯 <a class="header-anchor" href="#譯起學翻譯" aria-label="Permalink to &quot;譯起學翻譯&quot;"></a></h2>
-<ul>
-<li>象寄之才：譯者</li>
-<li>林紓 &amp; 魏易：清末民初的翻譯拍檔</li>
-<li>Ezra Pound：意象派詩人，翻譯《國泰集》</li>
-<li>馬悅然：曾任諾獎評委的瑞典漢學家</li>
-</ul>
-<h2 id="福爾摩斯教文學" tabindex="-1">福爾摩斯教文學 <a class="header-anchor" href="#福爾摩斯教文學" aria-label="Permalink to &quot;福爾摩斯教文學&quot;"></a></h2>
-<ul>
-<li>Joseph Bell：Sherlock Holmes的原型</li>
-<li>最初連載於《Strand Magazine》</li>
-<li>the Speckled Band：經典探案花斑帶</li>
-</ul>
-<h2 id="猩球崛起" tabindex="-1">猩球崛起 <a class="header-anchor" href="#猩球崛起" aria-label="Permalink to &quot;猩球崛起&quot;"></a></h2>
-<ul>
-<li>在電影中，母親是缺席的</li>
-<li>John Donne和Locke都寫過猿猴性侵的故事</li>
-<li>Tarzan在猿猴的語言中，意為白皮膚</li>
-<li>可以將黑猩猩視為人類的doppelganger</li>
-<li>「視覺合作假說」來自小林洋美和幸島司郎，後由Tomasello提出</li>
-</ul>
-]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[WORD UP藍色證書教材]]></title>
             <link>https://haruowang.vercel.app/global/english/toeic.html</link>
             <guid>https://haruowang.vercel.app/global/english/toeic.html</guid>
-            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
+            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
             <description><![CDATA[透過WORD UP複習多益藍證的學習筆記]]></description>
             <content:encoded><![CDATA[<h1 id="word-up藍色證書教材" tabindex="-1">WORD UP藍色證書教材 <a class="header-anchor" href="#word-up藍色證書教材" aria-label="Permalink to &quot;WORD UP藍色證書教材&quot;"></a></h1>
 <p><Badge type="info" text="🌱 Seedlings" /></P>
@@ -1387,10 +986,85 @@
 ]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[東京藝文展館指南]]></title>
+            <link>https://haruowang.vercel.app/global/japan/art-guide.html</link>
+            <guid>https://haruowang.vercel.app/global/japan/art-guide.html</guid>
+            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
+            <description><![CDATA[《美術手帖》2012年5月特集的景點蒐集]]></description>
+            <content:encoded><![CDATA[<h1 id="東京藝文展館指南" tabindex="-1">東京藝文展館指南 <a class="header-anchor" href="#東京藝文展館指南" aria-label="Permalink to &quot;東京藝文展館指南&quot;"></a></h1>
+<p><Badge type="info" text="🌱 Seedlings" /></P>
+<h2 id="東京國立近代美術館" tabindex="-1">東京國立近代美術館 <a class="header-anchor" href="#東京國立近代美術館" aria-label="Permalink to &quot;東京國立近代美術館&quot;"></a></h2>
+<ul>
+<li>日本最早的國立美術館</li>
+<li>位於千代田區，離竹橋站最近</li>
+<li>其電影中心似乎已歇業</li>
+</ul>
+<h2 id="東京都現代美術館" tabindex="-1">東京都現代美術館 <a class="header-anchor" href="#東京都現代美術館" aria-label="Permalink to &quot;東京都現代美術館&quot;"></a></h2>
+<ul>
+<li>日本最大的當代美術館</li>
+<li>位於江東區，離清澄白河站最近</li>
+<li>附設美術圖書室，旁有木場公園</li>
+<li>特色餐點有「100本のスプーン」</li>
+</ul>
+<h2 id="清澄ギャラリーコンプレックス" tabindex="-1">清澄ギャラリーコンプレックス <a class="header-anchor" href="#清澄ギャラリーコンプレックス" aria-label="Permalink to &quot;清澄ギャラリーコンプレックス&quot;"></a></h2>
+<ul>
+<li>2015年被拆除</li>
+<li>其中6、7樓的小山登美夫畫廊，目前遷移至港區六本木</li>
+</ul>
+<h2 id="原美術館" tabindex="-1">原美術館 <a class="header-anchor" href="#原美術館" aria-label="Permalink to &quot;原美術館&quot;"></a></h2>
+<ul>
+<li>目前遷移至原美術館ARC</li>
+<li>ARC位於群馬縣澀川市，離澀川站最近</li>
+<li>原建築由渡邊仁，ARC由磯崎新設計</li>
+</ul>
+<h2 id="_8" tabindex="-1">8/ <a class="header-anchor" href="#_8" aria-label="Permalink to &quot;8/&quot;"></a></h2>
+<ul>
+<li>位於澀谷HIKARIE</li>
+<li>離澀谷站最近</li>
+<li>內含d47食堂和不定期營業的澀谷○○書店</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[日本迷你電影院]]></title>
+            <link>https://haruowang.vercel.app/global/japan/mini-theater.html</link>
+            <guid>https://haruowang.vercel.app/global/japan/mini-theater.html</guid>
+            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
+            <description><![CDATA[由JFF Theater介紹的影廳整理]]></description>
+            <content:encoded><![CDATA[<h1 id="日本迷你電影院" tabindex="-1">日本迷你電影院 <a class="header-anchor" href="#日本迷你電影院" aria-label="Permalink to &quot;日本迷你電影院&quot;"></a></h1>
+<p><Badge type="info" text="🌱 Seedlings" /></P>
+<h2 id="theater-enya" tabindex="-1">THEATER ENYA <a class="header-anchor" href="#theater-enya" aria-label="Permalink to &quot;THEATER ENYA&quot;"></a></h2>
+<ul>
+<li>位於佐賀縣唐津市</li>
+<li>唐津演屋祭：從2021年開始舉行的電影放映活動</li>
+<li>唐津宮日祭：每年11月初舉行，特色是14輛曳山花車</li>
+<li>虹之松原：由唐津藩主寺澤廣高所種植</li>
+<li>日本三大松原：唐津虹之松原、靜岡三保松原、敦賀氣比松原</li>
+<li>大林宣彥《花筐》：於唐津市取景</li>
+</ul>
+<h2 id="桜坂劇場" tabindex="-1">桜坂劇場 <a class="header-anchor" href="#桜坂劇場" aria-label="Permalink to &quot;桜坂劇場&quot;"></a></h2>
+<ul>
+<li>位於沖繩縣那霸市</li>
+<li>原是名為珊瑚座的戲劇小屋</li>
+<li>被琉映改造成電影院，2005一度關閉</li>
+<li>現由建設公司株式会社クランク接手</li>
+<li>舉辦工作坊「桜坂市民大学」</li>
+<li>附近有第一牧志公設市場</li>
+</ul>
+<h2 id="シネマ尾道" tabindex="-1">シネマ尾道 <a class="header-anchor" href="#シネマ尾道" aria-label="Permalink to &quot;シネマ尾道&quot;"></a></h2>
+<ul>
+<li>深谷シネマ即使人口15萬也能運營</li>
+<li>原是名為尾道松竹的電影院</li>
+<li>招牌是滿島真之介和孩子在工作坊畫的</li>
+<li>尾道又被稱作「坡道上的城市」</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[出口日語N4文法]]></title>
             <link>https://haruowang.vercel.app/global/japan/n4.html</link>
             <guid>https://haruowang.vercel.app/global/japan/n4.html</guid>
-            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
+            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
             <description><![CDATA[跟隨出口仁老師學習N4文法的重點筆記]]></description>
             <content:encoded><![CDATA[<h1 id="出口日語n4文法" tabindex="-1">出口日語N4文法 <a class="header-anchor" href="#出口日語n4文法" aria-label="Permalink to &quot;出口日語N4文法&quot;"></a></h1>
 <p><Badge type="info" text="🌱 Seedlings" /></P>
@@ -1590,140 +1264,10 @@
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[《相機女孩漫遊東京》筆記]]></title>
-            <link>https://haruowang.vercel.app/global/japan/shutter-girl.html</link>
-            <guid>https://haruowang.vercel.app/global/japan/shutter-girl.html</guid>
-            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
-            <description><![CDATA[漫畫《相機女孩漫遊東京》中出現的景點整理]]></description>
-            <content:encoded><![CDATA[<h1 id="《相機女孩漫遊東京》筆記" tabindex="-1">《相機女孩漫遊東京》筆記 <a class="header-anchor" href="#《相機女孩漫遊東京》筆記" aria-label="Permalink to &quot;《相機女孩漫遊東京》筆記&quot;"></a></h1>
-<p><Badge type="info" text="🌳 Evergreen" /></P>
-<p><img src="/japan/sg1.webp" alt="相機女孩漫遊東京地圖" loading="lazy"></p>
-<h2 id="隅田公園" tabindex="-1">隅田公園 <a class="header-anchor" href="#隅田公園" aria-label="Permalink to &quot;隅田公園&quot;"></a></h2>
-<ul>
-<li>適合拍晴空塔</li>
-<li>內有牛嶋神社</li>
-<li>離淺草站最近</li>
-</ul>
-<h2 id="築地" tabindex="-1">築地 <a class="header-anchor" href="#築地" aria-label="Permalink to &quot;築地&quot;"></a></h2>
-<ul>
-<li>該地帶被稱作明石町</li>
-<li>鏑木清方曾繪製相關畫作</li>
-<li>築地本願寺的建築具印度風格</li>
-<li>本願寺咖啡還有「18品早餐」</li>
-</ul>
-<h2 id="神田" tabindex="-1">神田 <a class="header-anchor" href="#神田" aria-label="Permalink to &quot;神田&quot;"></a></h2>
-<ul>
-<li>萬世橋站現為「mAAch ecute」複合空間</li>
-<li>松榮亭的招牌是「西式炸什錦餅」，漱石最愛</li>
-<li>正岡子規：獺祭書屋主人，對野球影響很大</li>
-</ul>
-<h2 id="田端文士村" tabindex="-1">田端文士村 <a class="header-anchor" href="#田端文士村" aria-label="Permalink to &quot;田端文士村&quot;"></a></h2>
-<ul>
-<li>室生犀星和萩原朔太郎都與芥川有深厚交情</li>
-<li>離田端站最近</li>
-</ul>
-<h2 id="等等力溪谷" tabindex="-1">等等力溪谷 <a class="header-anchor" href="#等等力溪谷" aria-label="Permalink to &quot;等等力溪谷&quot;"></a></h2>
-<ul>
-<li>內有不動瀑布和傳統茶屋「雪月花」</li>
-<li>離等等力站最近</li>
-</ul>
-<h2 id="本鄉" tabindex="-1">本鄉 <a class="header-anchor" href="#本鄉" aria-label="Permalink to &quot;本鄉&quot;"></a></h2>
-<ul>
-<li>樋口一葉居住於此，師事半井桃水</li>
-<li>東大主校區即位於此</li>
-<li>炭團坂有坪內逍遙的故居</li>
-<li>離宮澤賢治舊居遺址也不遠</li>
-</ul>
-<h2 id="小名木川" tabindex="-1">小名木川 <a class="header-anchor" href="#小名木川" aria-label="Permalink to &quot;小名木川&quot;"></a></h2>
-<ul>
-<li>被家康開墾來運鹽，因此又名鹽道</li>
-<li>常出現在名畫的萬年橋正是橫跨其上</li>
-<li>接到隅田川，後者夏天有煙火大會</li>
-<li>離清澄白河站最近</li>
-</ul>
-<h2 id="椎名町" tabindex="-1">椎名町 <a class="header-anchor" href="#椎名町" aria-label="Permalink to &quot;椎名町&quot;"></a></h2>
-<ul>
-<li>常磐莊便位於此</li>
-<li>還有東京写真工芸社</li>
-<li>赤塚不二夫承租過紫雲莊</li>
-</ul>
-<h2 id="池袋" tabindex="-1">池袋 <a class="header-anchor" href="#池袋" aria-label="Permalink to &quot;池袋&quot;"></a></h2>
-<ul>
-<li>亂步的書房在立教大學</li>
-<li>被稱作「幻影城」</li>
-<li>亂步名句：「現世如夢，夜夢方真」</li>
-<li>附近還有東京藝術劇場</li>
-<li>池袋三原堂有甜點「亂步之藏」和「薯蘋饅頭」</li>
-<li>池袋蒙帕納斯：30年代的藝術區，由小熊秀雄所稱</li>
-<li>熊谷守一美術館也在豐島區一帶</li>
-</ul>
-<h2 id="淺草" tabindex="-1">淺草 <a class="header-anchor" href="#淺草" aria-label="Permalink to &quot;淺草&quot;"></a></h2>
-<ul>
-<li>十二月中有羽子板市</li>
-<li>羽子板用來為女孩祈福，如破魔箭之於男孩</li>
-<li>淺草寺附近有明星廣場和花屋敷樂園</li>
-<li>還有原是神社新年活動的淺草流鏑馬</li>
-</ul>
-<h2 id="神樂坂" tabindex="-1">神樂坂 <a class="header-anchor" href="#神樂坂" aria-label="Permalink to &quot;神樂坂&quot;"></a></h2>
-<ul>
-<li>可以在東京大神宮祈求結緣</li>
-<li>其屬於東京五社之一</li>
-<li>兵庫橫丁有老街道</li>
-<li>離飯田橋站最近</li>
-</ul>
-<h2 id="吉野梅鄉" tabindex="-1">吉野梅鄉 <a class="header-anchor" href="#吉野梅鄉" aria-label="Permalink to &quot;吉野梅鄉&quot;"></a></h2>
-<ul>
-<li>二、三月可去賞梅</li>
-<li>有間青梅和服博物館</li>
-</ul>
-<h2 id="弁天洞窟" tabindex="-1">弁天洞窟 <a class="header-anchor" href="#弁天洞窟" aria-label="Permalink to &quot;弁天洞窟&quot;"></a></h2>
-<ul>
-<li>在威光寺裡，可以繞一圈做胎內巡禮</li>
-<li>離京王讀賣樂園站最近，適合順便看巨人二軍球賽</li>
-</ul>
-<h2 id="舊古河庭園" tabindex="-1">舊古河庭園 <a class="header-anchor" href="#舊古河庭園" aria-label="Permalink to &quot;舊古河庭園&quot;"></a></h2>
-<ul>
-<li>五、六月有春季玫瑰節</li>
-<li>離上中里站最近</li>
-</ul>
-<h2 id="西荻窪" tabindex="-1">西荻窪 <a class="header-anchor" href="#西荻窪" aria-label="Permalink to &quot;西荻窪&quot;"></a></h2>
-<ul>
-<li>很多骨董店</li>
-<li>駱駝：玻璃名店</li>
-</ul>
-<h2 id="都電回憶廣場" tabindex="-1">都電回憶廣場 <a class="header-anchor" href="#都電回憶廣場" aria-label="Permalink to &quot;都電回憶廣場&quot;"></a></h2>
-<ul>
-<li>荒川線是東京現存唯一的公營路面電車</li>
-<li>明美製菓有「都電最中餅」</li>
-<li>和梶原站相連的梶原書店已經拆了</li>
-<li>離荒川車庫前最近</li>
-</ul>
-<h2 id="城南島海濱公園" tabindex="-1">城南島海濱公園 <a class="header-anchor" href="#城南島海濱公園" aria-label="Permalink to &quot;城南島海濱公園&quot;"></a></h2>
-<ul>
-<li>有汽車露營區</li>
-<li>離羽田很近，適合航空迷</li>
-<li>離大森海岸站最近</li>
-</ul>
-<h2 id="世田谷" tabindex="-1">世田谷 <a class="header-anchor" href="#世田谷" aria-label="Permalink to &quot;世田谷&quot;"></a></h2>
-<ul>
-<li>蘆花恆春園：德冨蘆花的舊宅</li>
-<li>德冨蘆花和托爾斯泰往來甚密</li>
-<li>離蘆花公園站最近</li>
-<li>年尾年頭有「襤褸市」，必吃代官餅</li>
-<li>世田谷線是東京現存唯一的私營路面電車</li>
-<li>離上町站最近</li>
-</ul>
-<h2 id="互動地圖" tabindex="-1">互動地圖 <a class="header-anchor" href="#互動地圖" aria-label="Permalink to &quot;互動地圖&quot;"></a></h2>
-<div class="videobox four3">
-    <iframe src="https://www.google.com/maps/d/embed?mid=1-40Aiz8mzgNjQbv2tE59jv_sAvu8lh4&ehbc=2E312F"></iframe>
-</div>]]></content:encoded>
-            <enclosure url="https://haruowang.vercel.app/japan/sg1.webp" length="0" type="image/webp"/>
-        </item>
-        <item>
             <title><![CDATA[内田秀のVlog]]></title>
             <link>https://haruowang.vercel.app/global/japan/shutube.html</link>
             <guid>https://haruowang.vercel.app/global/japan/shutube.html</guid>
-            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
+            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
             <description><![CDATA[觀看聲優內田秀生活影片的摘要整理]]></description>
             <content:encoded><![CDATA[<h1 id="内田秀のvlog" tabindex="-1">内田秀のVlog <a class="header-anchor" href="#内田秀のvlog" aria-label="Permalink to &quot;内田秀のVlog&quot;"></a></h1>
 <p><Badge type="info" text="🌱 Seedlings" /></P>
@@ -1756,51 +1300,10 @@
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[【Strudel Work：Persecution Of The Masses】]]></title>
-            <link>https://haruowang.vercel.app/live-coding/tidal/potm.html</link>
-            <guid>https://haruowang.vercel.app/live-coding/tidal/potm.html</guid>
-            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
-            <description><![CDATA[Using Strudel to cover Shiro Sagisu's Persecution Of The Masses]]></description>
-            <content:encoded><![CDATA[<h1 id="【strudel-work-persecution-of-the-masses】" tabindex="-1">【Strudel Work：Persecution Of The Masses】 <a class="header-anchor" href="#【strudel-work-persecution-of-the-masses】" aria-label="Permalink to &quot;【Strudel Work：Persecution Of The Masses】&quot;"></a></h1>
-<p><Badge type="info" text="🌳 Evergreen" /></P>
-<div class="videobox">
-    <iframe frameborder="0" src="https://www.youtube.com/embed/LcXZvQNIc6U" allowFullScreen>
-    </iframe>
-</div>
-<h2 id="cpm" tabindex="-1">CPM <a class="header-anchor" href="#cpm" aria-label="Permalink to &quot;CPM&quot;"></a></h2>
-<ul>
-<li>cpm = bpm / bpc</li>
-<li>bpc: How many beats are required to complete a cycle? The smaller the number, the faster the speed.</li>
-</ul>
-<h2 id="drum" tabindex="-1">Drum <a class="header-anchor" href="#drum" aria-label="Permalink to &quot;Drum&quot;"></a></h2>
-<ul>
-<li>stack(sound.bank)</li>
-<li>e.g. <code>stack(s(&quot;&lt;hh ~&gt;*8&quot;).bank(&quot;LinnDrum&quot;), s(&quot;&lt;bd&gt;*8&quot;).bank(&quot;RolandTR909&quot;));</code></li>
-</ul>
-<h2 id="note" tabindex="-1">Note <a class="header-anchor" href="#note" aria-label="Permalink to &quot;Note&quot;"></a></h2>
-<ul>
-<li>cat.note.sound</li>
-<li>e.g. <code>cat(&quot;&lt;eb3!2 f3@2&gt;*4&quot;, &quot;&lt;c3&gt;*4&quot;).note().n(3).s(&quot;gm_synth_bass_1&quot;);</code></li>
-</ul>
-<h2 id="tips" tabindex="-1">Tips <a class="header-anchor" href="#tips" aria-label="Permalink to &quot;Tips&quot;"></a></h2>
-<ul>
-<li>~ / -: rests</li>
-<li>!: replicate</li>
-<li>@: elongate</li>
-<li>n(3).s(&quot;gm_synth_bass_1&quot;) = s(&quot;gm_synth_bass_1&quot;:3)</li>
-<li>transpose(+-12): pitch shifting</li>
-<li>arrange.cpm(cpm): as an integration</li>
-</ul>
-<h2 id="demo" tabindex="-1">Demo <a class="header-anchor" href="#demo" aria-label="Permalink to &quot;Demo&quot;"></a></h2>
-<div class="videobox one1">
-    <iframe src="https://strudel.cc/?ObIDhpp7APMx"></iframe>
-</div>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[【松學校導讀：重點筆記】]]></title>
             <link>https://haruowang.vercel.app/pov/art/arthon.html</link>
             <guid>https://haruowang.vercel.app/pov/art/arthon.html</guid>
-            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
+            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
             <description><![CDATA[觀看數位藝術基金會《松學校導讀》之摘要整理]]></description>
             <content:encoded><![CDATA[<h1 id="【松學校導讀-重點筆記】" tabindex="-1">【松學校導讀：重點筆記】 <a class="header-anchor" href="#【松學校導讀-重點筆記】" aria-label="Permalink to &quot;【松學校導讀：重點筆記】&quot;"></a></h1>
 <p><Badge type="info" text="🌱 Seedlings" /></P>
@@ -1918,13 +1421,39 @@
 <li>1994，奈良真實性文件。修正1964的威尼斯憲章，更注重場所精神</li>
 <li>Nelson Goodman將藝術區分為Autographic和Allographic</li>
 </ul>
+<h2 id="媒體藝術蒐藏保存" tabindex="-1">媒體藝術蒐藏保存 <a class="header-anchor" href="#媒體藝術蒐藏保存" aria-label="Permalink to &quot;媒體藝術蒐藏保存&quot;"></a></h2>
+<ul>
+<li>U-matic:VHS對手Betamax的前身</li>
+<li>ada.web：第一個網路藝術策展計畫</li>
+</ul>
+<h2 id="自拍風潮與敘事技術" tabindex="-1">自拍風潮與敘事技術 <a class="header-anchor" href="#自拍風潮與敘事技術" aria-label="Permalink to &quot;自拍風潮與敘事技術&quot;"></a></h2>
+<ul>
+<li>記憶減損：沒有目標的拍照無助於記憶</li>
+</ul>
+<h2 id="這裡沒有影像" tabindex="-1">這裡沒有影像 <a class="header-anchor" href="#這裡沒有影像" aria-label="Permalink to &quot;這裡沒有影像&quot;"></a></h2>
+<ul>
+<li>圖像轉向：Pictorial Turn，由W. J. T. Mitchell所提出。源自Rorty的語言學轉向（Linguistic Turn）</li>
+<li>數位影像讓視覺不再依附於物質性上</li>
+</ul>
+<h2 id="後數位攝影" tabindex="-1">後數位攝影 <a class="header-anchor" href="#後數位攝影" aria-label="Permalink to &quot;後數位攝影&quot;"></a></h2>
+<ul>
+<li>Kim Cascone提出過後數位音像美學</li>
+</ul>
+<h2 id="因機構而死" tabindex="-1">因機構而死 <a class="header-anchor" href="#因機構而死" aria-label="Permalink to &quot;因機構而死&quot;"></a></h2>
+<ul>
+<li>MANS：Media Art Notation System，使用XML作為標準</li>
+</ul>
+<h2 id="ai可以創造藝術嗎" tabindex="-1">AI可以創造藝術嗎 <a class="header-anchor" href="#ai可以創造藝術嗎" aria-label="Permalink to &quot;AI可以創造藝術嗎&quot;"></a></h2>
+<ul>
+<li>Morris Weitz：藝術是一種開放概念</li>
+</ul>
 ]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[臺灣獨立藝術空間檔案計劃]]></title>
             <link>https://haruowang.vercel.app/pov/art/iast.html</link>
             <guid>https://haruowang.vercel.app/pov/art/iast.html</guid>
-            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
+            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
             <description><![CDATA[觀看空總《臺灣獨立藝術空間檔案計畫》之摘要整理]]></description>
             <content:encoded><![CDATA[<h1 id="臺灣獨立藝術空間檔案計劃" tabindex="-1">臺灣獨立藝術空間檔案計劃 <a class="header-anchor" href="#臺灣獨立藝術空間檔案計劃" aria-label="Permalink to &quot;臺灣獨立藝術空間檔案計劃&quot;"></a></h1>
 <p><Badge type="info" text="🌱 Seedlings" /></P>
@@ -2173,7 +1702,7 @@
             <title><![CDATA[【The Type：字型知識補帖】]]></title>
             <link>https://haruowang.vercel.app/pov/font/the-type.html</link>
             <guid>https://haruowang.vercel.app/pov/font/the-type.html</guid>
-            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
+            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
             <description><![CDATA[Podcast《字談字暢》的重點筆記]]></description>
             <content:encoded><![CDATA[<h1 id="【the-type-字型知識補帖】" tabindex="-1">【The Type：字型知識補帖】 <a class="header-anchor" href="#【the-type-字型知識補帖】" aria-label="Permalink to &quot;【The Type：字型知識補帖】&quot;"></a></h1>
 <p><Badge type="info" text="🌱 Seedlings" /></P>
@@ -2234,7 +1763,890 @@
 <li>Compatibility：相容等價，在分解映射時沒有長度限制</li>
 <li>西方認為°C是分開的，東亞認為°C是一體的</li>
 </ul>
+<h2 id="百年照排光與影" tabindex="-1">百年照排光與影 <a class="header-anchor" href="#百年照排光與影" aria-label="Permalink to &quot;百年照排光與影&quot;"></a></h2>
+<ul>
+<li>照排專利申請日：1924/7/24</li>
+<li>照排的兩位發明者分別是森澤和寫研的創始人</li>
+<li>據說中國在1935年製造過華文照排機</li>
+<li>照排單位：級（Q）和齒（H），都是0.25mm（中國則寫成K和Y）</li>
+<li>「告別鉛與火，走向光與電」：出自完成748工程的王選院士</li>
+<li>C字體：最早的向量日文字，1983年由寫研出品</li>
+</ul>
 ]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[《裝幀時代》重點筆記]]></title>
+            <link>https://haruowang.vercel.app/pov/other/bind60.html</link>
+            <guid>https://haruowang.vercel.app/pov/other/bind60.html</guid>
+            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
+            <description><![CDATA[文學光啟：六、七零年代時，盛況接近大業書店和文壇社]]></description>
+            <content:encoded><![CDATA[<h1 id="《裝幀時代》重點筆記" tabindex="-1">《裝幀時代》重點筆記 <a class="header-anchor" href="#《裝幀時代》重點筆記" aria-label="Permalink to &quot;《裝幀時代》重點筆記&quot;"></a></h1>
+<p><Badge type="info" text="🌳 Evergreen" /></P>
+<blockquote>
+<p>「對我而言，編排一本書和構思一幅畫並無差別。」——Henri Matisse</p>
+</blockquote>
+<ul>
+<li>台灣美術和世界接軌：1927的台展三少年林玉山、陳進、郭雪湖</li>
+<li>台灣美術的兩次斷代：1949的政權交替和1980的數位普及</li>
+<li>台灣第一間廣告公司：1961的國華廣告</li>
+</ul>
+<h2 id="裝幀家和他們的產地" tabindex="-1">裝幀家和他們的產地 <a class="header-anchor" href="#裝幀家和他們的產地" aria-label="Permalink to &quot;裝幀家和他們的產地&quot;"></a></h2>
+<ul>
+<li>廖未林與「大業書店」</li>
+<li>龍思良與「文星雜誌」</li>
+<li>黃華成與「遠景遠行」</li>
+<li>高山嵐與「皇冠雜誌」</li>
+<li>朱嘯秋與「文壇月刊」</li>
+<li>陳其茂與「光啟出版社」</li>
+</ul>
+<h2 id="廖未林" tabindex="-1">廖未林 <a class="header-anchor" href="#廖未林" aria-label="Permalink to &quot;廖未林&quot;"></a></h2>
+<ul>
+<li>擅於配色，並承接「新藝術」風格</li>
+<li>知名作品有《藍與黑》、《心鎖》等</li>
+<li>曾於巴金的「文化生活出版社」打工</li>
+<li>常在杭州藝專參加戲劇活動，學會化妝</li>
+<li>曾和席德進一同居住在臨沂街</li>
+<li>設計第11屆亞洲影展的翠鳳金禾獎盃</li>
+</ul>
+<h2 id="龍思良" tabindex="-1">龍思良 <a class="header-anchor" href="#龍思良" aria-label="Permalink to &quot;龍思良&quot;"></a></h2>
+<ul>
+<li>V-10視覺藝術群元老及古龍封面御用畫家</li>
+<li>其封面字體設計和手繪人物受到肯定</li>
+<li>1964，跟黃華成一起進台視當美術指導</li>
+<li>白先勇表示《現代文學》24期的封面「很刺激」</li>
+<li>曾替幼獅主編朱橋開的「文藝沙龍」做室內設計</li>
+<li>七等生在「文藝沙龍」打工過，軍中詩人沙牧也會來買醉</li>
+</ul>
+<h2 id="黃華成" tabindex="-1">黃華成 <a class="header-anchor" href="#黃華成" aria-label="Permalink to &quot;黃華成&quot;"></a></h2>
+<ul>
+<li>以「設計攝影」風格聞名</li>
+<li>身為《劇場》季刊核心成員</li>
+<li>被莊靈稱為「設計界的拓荒者」</li>
+<li>1974，為「出版小巨人」沈登恩成立的遠景設計封面</li>
+<li>隸屬於只有一人的「大台北畫派」</li>
+<li>其大台北畫派宣言格式仿自《道德經》之81章</li>
+</ul>
+<h2 id="高山嵐" tabindex="-1">高山嵐 <a class="header-anchor" href="#高山嵐" aria-label="Permalink to &quot;高山嵐&quot;"></a></h2>
+<ul>
+<li>於「志文男與皇冠女」中，屬於後者</li>
+<li>會在土紙（金銀紙）上作畫</li>
+<li>擔綱美新處編輯，及《今日世界》雜誌美術設計</li>
+<li>被譽為水彩畫家暨豐年社創辦者藍蔭鼎第一接班人</li>
+<li>因參與《黑白展》結識平鑫濤</li>
+<li>插畫風格類似極簡寫實主義的Charley Harper</li>
+<li>創作台灣第一部紙上電影《幸運草》</li>
+</ul>
+<h2 id="楊英風" tabindex="-1">楊英風 <a class="header-anchor" href="#楊英風" aria-label="Permalink to &quot;楊英風&quot;"></a></h2>
+<ul>
+<li>擔任豐年社美編</li>
+<li>拜於郭柏川門下，並受朝倉文夫啟發</li>
+<li>在師大編《龍安文藝》時遭遇四六事件</li>
+<li>設計藍星徽章和藍星詩獎獎座</li>
+</ul>
+<h2 id="梁雲坡" tabindex="-1">梁雲坡 <a class="header-anchor" href="#梁雲坡" aria-label="Permalink to &quot;梁雲坡&quot;"></a></h2>
+<ul>
+<li>藝壇三傑都是梁家人：梁鼎銘、中銘、又銘</li>
+<li>因數學掛零而報考北平藝專</li>
+<li>在文協見過廖未林，兩人都拿過金爵獎</li>
+<li>常用倒影手法</li>
+</ul>
+<h2 id="朱嘯秋" tabindex="-1">朱嘯秋 <a class="header-anchor" href="#朱嘯秋" aria-label="Permalink to &quot;朱嘯秋&quot;"></a></h2>
+<ul>
+<li>執掌《文壇》，被稱為朱老編</li>
+<li>創辦《詩．散文．木刻》、《青年俱樂部》時接連使用十六開本</li>
+<li>小說家朱西甯將這股大開本風潮稱為「朱嘯秋時代」</li>
+<li>參與「戰鬥木刻」運動</li>
+</ul>
+<h2 id="陳其茂" tabindex="-1">陳其茂 <a class="header-anchor" href="#陳其茂" aria-label="Permalink to &quot;陳其茂&quot;"></a></h2>
+<ul>
+<li>外號是「台灣現代版畫的拓荒者」</li>
+<li>同時是花蓮師專的老師</li>
+<li>《文藝列車》主編一員</li>
+<li>光啟的雷煥章神父會騎車到東海和大學生聊天</li>
+<li>文學光啟：六、七零年代時，盛況接近大業書店和文壇社</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[《重寫臺灣百年新詩史》筆記]]></title>
+            <link>https://haruowang.vercel.app/pov/other/poem100.html</link>
+            <guid>https://haruowang.vercel.app/pov/other/poem100.html</guid>
+            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
+            <description><![CDATA[相較《台灣新詩史》的「文本主義」，《台灣現代詩史》的「文本至上」更注重文本自身，被本文作者所認同，並收錄了沒那麼主流，曾是夫妻檔的張健和蘇白宇之作品。而洛夫則同時受到兩本詩史之肯定]]></description>
+            <content:encoded><![CDATA[<h1 id="《重寫臺灣百年新詩史》筆記" tabindex="-1">《重寫臺灣百年新詩史》筆記 <a class="header-anchor" href="#《重寫臺灣百年新詩史》筆記" aria-label="Permalink to &quot;《重寫臺灣百年新詩史》筆記&quot;"></a></h1>
+<p><Badge type="info" text="🌳 Evergreen" /></P>
+<ul>
+<li>1925，楊雲萍創辦第一本白話刊物《人人》</li>
+<li>張我軍的台灣第一本新詩集《亂都之戀》，也曾部分刊載於此</li>
+</ul>
+<h2 id="詩史的波瀾風景" tabindex="-1">詩史的波瀾風景 <a class="header-anchor" href="#詩史的波瀾風景" aria-label="Permalink to &quot;詩史的波瀾風景&quot;"></a></h2>
+<ul>
+<li>目前為止，台灣有五本新詩史</li>
+<li>相較《台灣新詩史》的「文本主義」，《台灣現代詩史》的「文本至上」更注重文本自身，被本文作者所認同，並收錄了沒那麼主流，曾是夫妻檔的張健和蘇白宇之作品。而洛夫則同時受到兩本詩史之肯定</li>
+</ul>
+<h2 id="臺灣大陸新詩百年交流史" tabindex="-1">臺灣大陸新詩百年交流史 <a class="header-anchor" href="#臺灣大陸新詩百年交流史" aria-label="Permalink to &quot;臺灣大陸新詩百年交流史&quot;"></a></h2>
+<ul>
+<li>五四時期是所有華文新詩的共同源頭</li>
+<li>沈奇和陳仲義都是關注臺灣詩壇的中國詩評</li>
+</ul>
+<h3 id="三種痛苦" tabindex="-1">三種痛苦 <a class="header-anchor" href="#三種痛苦" aria-label="Permalink to &quot;三種痛苦&quot;"></a></h3>
+<ul>
+<li>洛夫的痛苦：孤身來台，選擇大陸或台灣</li>
+<li>林亨泰的痛苦：從日治到民國的語言轉換</li>
+<li>張我軍的痛苦：類似洛夫，但方向相反</li>
+</ul>
+<h2 id="台灣女詩人互文文本" tabindex="-1">台灣女詩人互文文本 <a class="header-anchor" href="#台灣女詩人互文文本" aria-label="Permalink to &quot;台灣女詩人互文文本&quot;"></a></h2>
+<ul>
+<li>葉紅女性詩獎：華文圈唯一女性詩獎</li>
+<li>女鯨詩社：台灣第一個女性詩社</li>
+<li>李元貞：除了參與女鯨，還創辦「婦女新知雜誌社」，是臺灣婦運先鋒</li>
+<li>克里斯蒂娃將文本分成種動文本（genotext）和現象文本（phenotext），前者被視為拓撲，屬於符號化過程，較深層；後者被視為代數，是人們日常溝通的語言</li>
+</ul>
+<h2 id="笠社政治詩的歷史語境" tabindex="-1">笠社政治詩的歷史語境 <a class="header-anchor" href="#笠社政治詩的歷史語境" aria-label="Permalink to &quot;笠社政治詩的歷史語境&quot;"></a></h2>
+<ul>
+<li>1964年，笠詩刊和吳濁流的台灣文藝創刊</li>
+<li>許世楷：台灣新憲法草案發起人</li>
+<li>李敏勇：拿過國家文藝獎</li>
+</ul>
+<h3 id="三位醫生詩人" tabindex="-1">三位醫生詩人 <a class="header-anchor" href="#三位醫生詩人" aria-label="Permalink to &quot;三位醫生詩人&quot;"></a></h3>
+<ul>
+<li>鄭炯明被陳千武提拔</li>
+<li>關鍵字是「抵抗的詩學」</li>
+<li>鄭炯明的兒子是鄭秉泓</li>
+<li>江自得以病理介入社會</li>
+<li>擔任過阿米巴社長</li>
+<li>相較鄭和江，曾貴海是最激進的</li>
+<li>受《生之慾》影響而投入南方綠色革命</li>
+<li>三人合著過《三稜鏡》</li>
+</ul>
+<h2 id="大陸遷台詩人的主流匯成" tabindex="-1">大陸遷台詩人的主流匯成 <a class="header-anchor" href="#大陸遷台詩人的主流匯成" aria-label="Permalink to &quot;大陸遷台詩人的主流匯成&quot;"></a></h2>
+<ul>
+<li>1951年，新詩週刊由「詩壇三老」 鍾鼎文、葛賢寧、紀弦共同開辦</li>
+<li>鍾鼎文是自立晚報總主筆</li>
+<li>蘇雪林發起省婦協，曾登上文訊創刊號封面</li>
+<li>洛夫和瘂弦曾服務於明德新村的海軍電台</li>
+<li>文曉村是葡萄園詩刊的總編</li>
+<li>野風雜誌由台糖職員所創，走抒情風格</li>
+<li>「天狼星論戰」由余光中對上洛夫</li>
+<li>楊喚曾是葉泥下屬，兩人想過一起辦詩刊</li>
+<li>葉泥還發起過「獵人集」詩人小聚</li>
+<li>《南北笛》季刊是南北部詩人的串聯，不屬於任何詩社和詩派</li>
+<li>作者認為紀弦和覃子豪會賞識本土詩人，可能是因為懂日文。兩人都致力新詩的教育推廣</li>
+<li>黃荷生是紀弦的「路門五傑」之一，經典詩集為《觸覺生活》</li>
+<li>胡楚卿帶花蓮學生編印海鷗詩刊。敻虹投過</li>
+</ul>
+<h2 id="《六十年代詩選》與《七十年代詩選》" tabindex="-1">《六十年代詩選》與《七十年代詩選》 <a class="header-anchor" href="#《六十年代詩選》與《七十年代詩選》" aria-label="Permalink to &quot;《六十年代詩選》與《七十年代詩選》&quot;"></a></h2>
+<ul>
+<li>也斯在1962受前者影響</li>
+<li>楊牧有批評過後者</li>
+<li>「六十年代」只是觀念標示，實則收錄五十年代的作品</li>
+<li>羈魂說《詩朵》是「第一本由香港年青一代所創辦的詩刊。」</li>
+<li>劉以鬯曾主編香港時報的副刊《淺水灣》</li>
+<li>《好望角》和《創世紀》合作密切</li>
+<li>古倉梧曾任漢聲主編，認為三、四十年代的山峰比較明朗，並發表《請走出文字的迷宮》評論《七十年代詩選》</li>
+</ul>
+<h2 id="論散文詩的生成與泯滅" tabindex="-1">論散文詩的生成與泯滅 <a class="header-anchor" href="#論散文詩的生成與泯滅" aria-label="Permalink to &quot;論散文詩的生成與泯滅&quot;"></a></h2>
+<ul>
+<li>劉半農將波特萊爾的Poème en prose翻譯成「散文詩」</li>
+<li>散文詩也有兩個根球，分別是劉半農、魯迅等人對波特萊爾、泰戈爾等文體之臨摹。另一半則是風車詩社的超現實</li>
+<li>秀陶的《白色的衝刺》被商禽視為「驚心」論之濫觴，但本身高呼「散文詩何必獨沽驚心一味」</li>
+<li>驚心的代表是蘇紹連</li>
+<li>紀德的《地糧》影響蘇紹連</li>
+<li>《詩學》將文學分作抒情、敘事、戲劇</li>
+<li>沈臨彬寫各種手記，人稱「方壺漁夫」</li>
+<li>杜十三被白靈稱作跨媒介的「火焰之子」，認為文學該從先驗式第一自然和人造式第二自然轉往聲光電波構築的第三自然</li>
+<li>莫渝熟悉世界散文詩史，曾任笠詩刊主編。積極譯介法文詩，主編《台灣自然生態詩語》</li>
+</ul>
+<h2 id="顏元叔與《中外文學》的批評實踐" tabindex="-1">顏元叔與《中外文學》的批評實踐 <a class="header-anchor" href="#顏元叔與《中外文學》的批評實踐" aria-label="Permalink to &quot;顏元叔與《中外文學》的批評實踐&quot;"></a></h2>
+<ul>
+<li>顏元叔用「定向疊景」來說明葉維廉的詩作</li>
+<li>比起重視形式的新批評，顏元叔更重視主題</li>
+<li>他認為「文學是哲學的戲劇化」，重視詩的道德，所以喜歡余光中的民族情感</li>
+<li>結構字質相對說：由蘭森提出，將結構視為詩可被轉述的「內容」，將字質視為詩的本質，兩者可分開。不同於提倡反諷的布魯克斯</li>
+<li>唐文標事件：認為現代詩太舶來而引發論戰</li>
+<li>中外文學是包容新舊世代的平台</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[【大一生在日星：訪談張介冠】]]></title>
+            <link>https://haruowang.vercel.app/pov/other/rixing.html</link>
+            <guid>https://haruowang.vercel.app/pov/other/rixing.html</guid>
+            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
+            <description><![CDATA[對於視覺藝術領域相關的學生而言，這間臺灣現存最後的鑄字行，和守住它不被時代潮流吞沒的名諱，肯定都不是陌生的字彙]]></description>
+            <content:encoded><![CDATA[<h1 id="【大一生在日星-訪談張介冠】" tabindex="-1">【大一生在日星：訪談張介冠】 <a class="header-anchor" href="#【大一生在日星-訪談張介冠】" aria-label="Permalink to &quot;【大一生在日星：訪談張介冠】&quot;"></a></h1>
+<p><Badge type="info" text="🌳 Evergreen" /></P>
+<p><img src="/other/ri1.webp" alt="moom bookshop" loading="lazy"></p>
+<p>傳統二字，指的是「歷史沿傳而來的思想、道德、風俗、藝術、制度」。若要論起在設計和傳播背後一脈相承的傳統是什麼，筆者會回答是活字印刷——一切文明發展的幕後推手。</p>
+<p>這次很榮幸可以採訪到「日星鑄字行」的張介冠張老闆。對於視覺藝術領域相關的學生而言，這間臺灣現存最後的鑄字行，和守住它不被時代潮流吞沒的名諱，肯定都不是陌生的字彙——或者說，如果不知道就等於白唸了。</p>
+<p>以下段落將順著採訪時的脈絡來走，透過筆者和張老闆之間的對談，來呈現出長者對於傳統文化的看法，並希冀能使年輕人更願意關心往昔事物。</p>
+<p>首先，筆者和張老闆談到，對於合版印刷浪潮席捲全世界，活版印刷逐漸退出市場的看法。老闆回道：「印刷的方式有四種，每一種所呈現出來的獨特性都不一樣。其實每種印刷方式都有它的不可取代性。」</p>
+<p>其實，有許多在新世代眼中看來繁文縟節的傳統即面臨到如此的問題。如果排除掉過於迷信、有違平權或永續發展的那部分——剩下的，一定能被挖掘出它本身的獨特性跟美感。重點不過在於「去推廣、讓大家去了解，以及如何尋求新的商機。」</p>
+<p>張老闆也提到，現代人對於事物的看法都是要「快快快」。如何讓傳統的技藝或是產業能夠讓世人再進一步地重新認識，都需要付出相當大的資源去克服效益主義才有辦法。最後終歸一句：「盡人事要聽天命。」</p>
+<p>對於部分篤信人定勝天的年輕人而言，這樣的想法未免有些消極。但要知道，在那個沒有什麼選擇的時代，當時還只有十六、七歲的那位少年，就已經開始學習鑄字了。當我們聊起當今大學生和以往的差距，張老闆面帶微笑地說：「這是一個社會的演變，沒辦法說用人為的力量去做大幅度的改變。每一個年代都有不同的狀態。」說著說著，話鋒便順勢一轉，提到了在時代進步和少子化的衝擊下，讓傳統產業能夠得以引進新血，再繼續往下走、往前走的困難之處。</p>
+<p>那麼，人生中最大的困難是什麼呢？「其實每天都有不同的困難。遇到困難是正常的，不遇到困難反而是不正常。」——老闆是這樣回覆筆者的。你我浮生畢竟苦短，糟心事肯定常有，但沒有什麼坎是過不去的。「其實每個困難都很大，重要的是自己要認清，還要有毅力，去克服這些困難。」</p>
+<p>而在這眾多的困難中，鉛字銅模修復絕對是相當棘手的一環。張老闆分析，字型修復跟新造其實是有相當大的差距。「修復的話，你要先學習到相關的技術之外，還要去分析、去了解到原來的、要修復的這套字體的特徵，它的優缺點，它有沒有什麼問題沒有。」當近年來人們逐漸了解字型產業，意識到置身於風頭浪尖的新銳設計師有多麼辛苦，感嘆著每套字型的得來不易時，也應該更加關注暗自努力的、對文化奉獻身心的修復者們。</p>
+<p>「光修復人員的訓練，我們的經驗大概五到十年是跑不掉的。所以到現在為止，這種修復人員我們還是在完全是無產值的訓練階段。」——筆者也沒有料到，現況是連老闆也曾估算錯誤的嚴峻。「早期在網路上發起銅模修復、字型修復的這個活動是我們太輕忽。」——那是一種在時代裡逆風而行所發出的慨嘆。怎能要求電腦世代的年輕人像老一輩的美工人員那樣，只要鴨嘴筆在手，就能信手拈來地畫出比貝茲曲線還優美的弧線？而那在人前顯得光鮮亮麗的「日星初號楷體」，也不過只是稍微經過描邊，就轉成電腦字型的實驗品。老闆的復刻大業，仍有很長一段路需要努力。</p>
+<p>於是筆者問起了目前有多少教育工作者曾經與日星合作，以及張老闆自己對藝術教育的看法。得到的回應是，中原商設的林昆範老師曾經協助在校內成立活版印刷工坊。這個Workshop還有保留，但是運作上受限於大環境，很難再造就更大的突破。聽到這，內心不禁感到一陣羞愧。只因身為印刷科系學子，在技術尚嫌不足的大一此時，只能以採訪的形式替活版保存盡一己棉薄之力。「在台灣，單以就平面設計學系來說，學校裡面找不到這種師資，也找不到這種技職師傅。那更重要的，也沒有設備。在教育體系裡面完全沒有這樣子的一個教學，這是一個非常非常可惜的地方。」——言談之間，盡是比銅模修復更深層的無奈。</p>
+<p>我們繼續朝著結構性問題刨挖下去……聊到了文創產業的弊病所在。而張老闆是如此給出他的見解的——「所謂文化創意，要植基於文化本身的再應用，包括技藝——就是技術性的東西，還有就是它的本質的再應用。如果有，我才認為它是文化創意產業；如果沒有，它只是一個文化創意的空殼，一個表徵而已。」這番話不知會影響多少既得利益者，但既然傳統與創新勢必要真正融合才能共榮，台灣社會還是該服下苦口的良藥。</p>
+<p>最後，筆者的採訪收束到一個切身的提問上——也就是像我這樣的年輕人，有哪些途徑能夠直接幫助到日星呢？張老闆以他應答的一貫態度回覆：「其實日星鑄字行以目前的情況來說，大部分都需要能夠深蹲，就是能夠長期在這裡學習相關技術的人。那問題是，日星鑄字行並沒有那麼大的經濟能力，去支付足夠的、合理的，一些所謂的酬薪，讓年輕人可以得到一個合理的待遇。這是日星的問題，而不是年輕人的問題。」</p>
+<p>他的面容好似閃過一絲憂慮，但仍不失樂天知命的慈祥和智慧。</p>
+<blockquote>
+<p>「日星的這個問題就必須有賴整個社會的了解，然後公共資源是不是可以協助，那跟整個社會資源的應用。這都有賴於說整個社會大家對日星的理解，那跟是不是願意共同來努力，保存我們在這塊土地上不只是日星——其實還有很多其他的傳統產業，能夠繼續的往下、往前走。」</p>
+</blockquote>
+<p>訪問結束前，張老闆不忘補上一句——要幫助的話就是來這裡消費(笑)！</p>
+<p>果然，閱歷豐富的長者不只能夠以睿智形象示人，還可以很幽默呢——</p>
+]]></content:encoded>
+            <enclosure url="https://haruowang.vercel.app/other/ri1.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[區塊鏈愛好者年會筆記]]></title>
+            <link>https://haruowang.vercel.app/pov/participation/tabei.html</link>
+            <guid>https://haruowang.vercel.app/pov/participation/tabei.html</guid>
+            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
+            <description><![CDATA[他的公司在做安全和託管，同時於側鏈Liquid Network發行LBTC來增加比特幣的流動性和穩定性。相較於前述的閃電網絡，Liquid將市場更著眼於交易所這樣的大客戶]]></description>
+            <content:encoded><![CDATA[<h1 id="區塊鏈愛好者年會筆記" tabindex="-1">區塊鏈愛好者年會筆記 <a class="header-anchor" href="#區塊鏈愛好者年會筆記" aria-label="Permalink to &quot;區塊鏈愛好者年會筆記&quot;"></a></h1>
+<p><Badge type="info" text="🌳 Evergreen" /></P>
+<p>很高興有這個機會來政大公企中心補充新知。</p>
+<h2 id="bitcoin" tabindex="-1">Bitcoin <a class="header-anchor" href="#bitcoin" aria-label="Permalink to &quot;Bitcoin&quot;"></a></h2>
+<p>從開場影片不難感受出，本場議程主要圍繞的是比特幣。</p>
+<p>從各路OG口中蹦出的關鍵字，有使用「雙向支付通道」，能增加虛擬幣擴展性的L2方案「閃電網絡」，和肇因於中國三大金融機構制裁，導致BTC狂瀉超過三成的「五一九事件」等。會場氣氛繼續醞釀。</p>
+<h2 id="blockstream" tabindex="-1">Blockstream <a class="header-anchor" href="#blockstream" aria-label="Permalink to &quot;Blockstream&quot;"></a></h2>
+<p>第九屆年會海報上的重磅嘉賓Adam Back率先登場。</p>
+<p>他的公司在做安全和託管，同時於側鏈Liquid Network發行LBTC來增加比特幣的流動性和穩定性。相較於前述的閃電網絡，Liquid將市場更著眼於交易所這樣的大客戶。</p>
+<p>而像是日本加密金融公司Crypto Garage，就曾在自家平台Settlenet上，透過Liquid來交易穩定幣JPYS。不過近年能查到的日圓穩定幣資訊，似乎都是DCJPY / GYEN / Tochika（存款擔保的數位貨幣）和JPYC（資金轉移型穩定幣）這些，Settlenet的官網也下架了。</p>
+<p>至於CMSTR，則是第一個完全被NASDAQ認可的代幣，還可以在SideSwap直接和BTC做點對點交易。</p>
+<p>此外Dr. Back還提及，即使對比特幣感到悲觀，投資人仍還是可以從資產撥個3%來投資。而他認為最佳的配置是9.5%。</p>
+<p>看看將引來更多傳統投資者的IBIT，這番言論值得深思。</p>
+<h2 id="rwa" tabindex="-1">RWA <a class="header-anchor" href="#rwa" aria-label="Permalink to &quot;RWA&quot;"></a></h2>
+<p>在接下來的講座中，由多位產業代表負責為會眾指點迷津。</p>
+<h3 id="台銀" tabindex="-1">台銀 <a class="header-anchor" href="#台銀" aria-label="Permalink to &quot;台銀&quot;"></a></h3>
+<p>特別提及銀行和新創合作的前景要注重「責任分攤」。</p>
+<h3 id="echox" tabindex="-1">EchoX <a class="header-anchor" href="#echox" aria-label="Permalink to &quot;EchoX&quot;"></a></h3>
+<p>之前就稍微知道EchoX有做日本生意，而東海的那一端最近在Web3衝得很快。</p>
+<p>像Circle就在政策助威下與SBI Holdings推行USDC合法化，而大阪更有著加密交易所ODX。</p>
+<p>作為亞洲境外金融中心之一，日本的動向備受關注。</p>
+<h3 id="元大" tabindex="-1">元大 <a class="header-anchor" href="#元大" aria-label="Permalink to &quot;元大&quot;"></a></h3>
+<p>2003，首檔ETF成立，走出不同於共同基金的路。</p>
+<p>現在，有什麼能讓不支息的穩定幣更吸引別人？</p>
+<p>元大發問者提到其上司希望未來能達成「基金即現金」，讓資產流動時不再有時間差。</p>
+<p>這勢必是可供開發者和熱錢探究的解方之一。</p>
+<h2 id="payfi" tabindex="-1">PayFi <a class="header-anchor" href="#payfi" aria-label="Permalink to &quot;PayFi&quot;"></a></h2>
+<h3 id="bsos" tabindex="-1">BSOS <a class="header-anchor" href="#bsos" aria-label="Permalink to &quot;BSOS&quot;"></a></h3>
+<p>Tether去年淨賺62億美金，今年只花了前三季就來到77億，超過Circle和DeFi裡最賺的MakerDAO。</p>
+<p>我個人蠻受CEO那句「只要有時間差就需要有金融支持」所啟發。</p>
+<h3 id="兩個大事件" tabindex="-1">兩個大事件 <a class="header-anchor" href="#兩個大事件" aria-label="Permalink to &quot;兩個大事件&quot;"></a></h3>
+<ul>
+<li>PayPal成功將穩定幣PYUSD轉到EY（安永會計事務所）的Coinbase帳戶</li>
+<li>Stripe花11億美金收購Bridge.xyz，是Web3目前規模最大的一次收購</li>
+</ul>
+<h2 id="vc" tabindex="-1">VC <a class="header-anchor" href="#vc" aria-label="Permalink to &quot;VC&quot;"></a></h2>
+<h3 id="amber" tabindex="-1">Amber <a class="header-anchor" href="#amber" aria-label="Permalink to &quot;Amber&quot;"></a></h3>
+<p>RGB協議：使用「客戶端驗證」和「一次性密封」的開源協議，安全性高。</p>
+<h3 id="兩個香港術語" tabindex="-1">兩個香港術語 <a class="header-anchor" href="#兩個香港術語" aria-label="Permalink to &quot;兩個香港術語&quot;"></a></h3>
+<ul>
+<li>VASP（虛擬資產服務提供者）</li>
+<li>VATP（虛擬資產交易平台）</li>
+</ul>
+<h3 id="tonx" tabindex="-1">TONX <a class="header-anchor" href="#tonx" aria-label="Permalink to &quot;TONX&quot;"></a></h3>
+<p>斯拉夫人的APP設計哲學是All-in-one的Super APP，因此Telegram上面有Mini Apps，甚至可以買eSIM。</p>
+<h2 id="singapore" tabindex="-1">Singapore <a class="header-anchor" href="#singapore" aria-label="Permalink to &quot;Singapore&quot;"></a></h2>
+<h3 id="tabei" tabindex="-1">Tabei <a class="header-anchor" href="#tabei" aria-label="Permalink to &quot;Tabei&quot;"></a></h3>
+<p>談到Project Guardian是公私合作的RWA計畫，包含花旗、標普等機構皆有參與。而DBS推出過星展數位交易平台。</p>
+<h3 id="coinseeker" tabindex="-1">Coinseeker <a class="header-anchor" href="#coinseeker" aria-label="Permalink to &quot;Coinseeker&quot;"></a></h3>
+<p>相當於給創投看的Web3資料庫。</p>
+<p>CEO聊到TOKEN2049每年在新加坡和杜拜各舉行一次，規模最大。</p>
+<h3 id="berru" tabindex="-1">Berru <a class="header-anchor" href="#berru" aria-label="Permalink to &quot;Berru&quot;"></a></h3>
+<p>與新加坡第一個，也是最大的合規交易所Coinhako合作，為企業提供公司註冊、管理等秘書服務。</p>
+<h3 id="gsg" tabindex="-1">GSG <a class="header-anchor" href="#gsg" aria-label="Permalink to &quot;GSG&quot;"></a></h3>
+<p>聊到新加坡的金管會叫MAS（新加坡金管局），也是Project Guardian的推手。</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[《臺灣自然寫作選》心得]]></title>
+            <link>https://haruowang.vercel.app/pov/thinking/nature.html</link>
+            <guid>https://haruowang.vercel.app/pov/thinking/nature.html</guid>
+            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
+            <description><![CDATA[「我像一位天真的自然書寫讀者，持續期待與觀察這個文類的演化與火花，這是老去的上一代唯一能做的事。演化安靜，卻從不回頭。」]]></description>
+            <content:encoded><![CDATA[<h1 id="《臺灣自然寫作選》心得" tabindex="-1">《臺灣自然寫作選》心得 <a class="header-anchor" href="#《臺灣自然寫作選》心得" aria-label="Permalink to &quot;《臺灣自然寫作選》心得&quot;"></a></h1>
+<p><Badge type="info" text="🌳 Evergreen" /></P>
+<blockquote>
+<p>「我像一位天真的自然書寫讀者，持續期待與觀察這個文類的演化與火花，這是老去的上一代唯一能做的事。演化安靜，卻從不回頭。」——吳明益</p>
+</blockquote>
+<p>在散文和小說之外，環境史亦是自然寫作的重要一環。吳明益老師首先於前言提及兩位先驅：沃斯特（Donald Worster）及克羅斯比（Alfred W. Crosby）。一位從美國西部延伸到行星史，一位則以「哥倫布大交換」來引出生態殖民主義。而其實在環境史被納入學術正典前，寫出「野性蘊藏著世界的救贖」之李奧波（Aldo Leopold），就在1949年透過《沙郡年記》做出嘗試。</p>
+<p>還有兩位學者不約而同地，都在談論「宰制」。米爾布雷斯（Lester W. Milbrath）的「宰制性社會」很直觀；艾斯勒（Riane Eisler）除了將近代社會比作具「宰制力量」的「宰制關係社會」，亦於《聖餐杯與刀刃》中，稱遠古社會為擁有「實現力量」之「夥伴關係社會」。</p>
+<p>國際浪潮外，本土政治所帶來的影響同樣不容忽視。1980年，時任行政院長孫運璿指示應保護紅樹林，而蘭嶼卻迎來核廢料第一期。兩年後，首座國家公園在墾丁落成，與影響深遠的「全球大自然憲章」互相呼應。85、86年，則各別有因應大里三晃農藥事件而生，最早的民間環保團體「吾愛吾村公害防衛會」，以及於反杜邦運動中留下文獻，第一份反公害刊物《鄉情》月刊的亮相。</p>
+<h2 id="環保報導文學" tabindex="-1">環保報導文學 <a class="header-anchor" href="#環保報導文學" aria-label="Permalink to &quot;環保報導文學&quot;"></a></h2>
+<p>於是臺灣自然寫作「從人文到非人」的歷程，便始於80年代。由專欄集結而成，1983年出版的《我們只有一個地球》被視為最早文本。而晨星出版陳銘民推出的「自然公園書系」，則是進一步推波助瀾。書單其中可見王家祥和陳玉峯的名字，兩人的行文風格其實都較屬於傳統的環保報導文學。前者在《臺灣自然寫作選》中登場三回，和劉克襄並列最多，並時常書寫到荒野和前文提及的李奧波。更為大眾所知的作品，或許是魏德聖導演《台灣三部曲》的靈感來源《倒風內海》。其還著有歷史奇幻小說《小矮人之謎》、《魔神仔》等作。2004年搬至都蘭照料流浪貓狗，持續關懷自然的實踐中。後者致力森林保育，寫過玉山圓柏和秀姑坪，文筆中帶有更深的理性。並為柯金源導演的紀錄片《神殿》配音，更以《台灣生態史話15講》的卡帶，啟發當年聽眾心靈。陳教授亦是一眾自然寫作者中，特別看重921地震對土地之影響的。</p>
+<p>曾參與制定「台灣貓節」的貓奴心岱，也是那個時代便投入自然報導之作家。採用「新新聞學」筆法寫就，刻劃恆春林區管理處副技師林火星之心路，呈現出瓊麻產業史的《美麗新世界》，讓她蟬聯時報文學獎的「報導文學甄選獎」。作為繩索主要原料的瓊麻，曾能在經由日本轉運至利物浦的過程中製造大量利益。然而農民卻始終只能作為「山奴」，被掌權者所剝削，或流淚看著中美演習的坦克輾過田野，直到麻繩沒落。</p>
+<h2 id="簡樸生活文學" tabindex="-1">簡樸生活文學 <a class="header-anchor" href="#簡樸生活文學" aria-label="Permalink to &quot;簡樸生活文學&quot;"></a></h2>
+<p>陳冠學和孟東籬的路數則屬簡樸生活文學，有點像是隱逸派。妙的是兩人的文章都出現過宗教要素。個人對於陳冠學的《九月十日》別具感觸。閱讀該文時，彷彿和作者一同在別名為芒的菅茅中迷茫。從典雅的字裡行間遇見屏東糞箕湖的潘家人時，也確有柳暗花明又一村之感。孟東籬在《愛生哲學芻議》裡藉由比較「愛生」（Biophilia）和「愛死」（Necrophilia）來傳達自身提倡的環境倫理，其豐富情史和一些令人直呼「やばい」的發言，也使眾人確信他著實「愛戀這個世界」。而Biophilia一詞也被威爾森（E.O. Wilson）所用，稱之為「親生命性」。這位和道金斯（Richard Dawkins）有過論戰的螞蟻先生，另外還提出日後被《馴羊記》所引用的「孤寂世」（Eremocene）。</p>
+<h2 id="自然寫作的未來" tabindex="-1">自然寫作的未來 <a class="header-anchor" href="#自然寫作的未來" aria-label="Permalink to &quot;自然寫作的未來&quot;"></a></h2>
+<p>到了徐振輔和《馴羊記》登上文壇之時，最常為大眾聽聞的自然寫作者也許已是吳明益了。最後一篇選錄進來，不只是老「吳」賣瓜的《忘川》融合蝶類知識及希臘神話，打造出和傳統自然寫作滋味十分不同的新觀點，替2003年編完的《臺灣自然寫作選》留下豹尾。</p>
+<p>接下來呢？若要依我自身觀察，幫近年這類型的創作歸納出關鍵字，我會說是「生態」和「登山」。從投身西藏探查雪豹，跨足不同文體和歷史場景的《馴羊記》，到黃瀚嶢書寫知本溼地，同樣摘下金典獎的《沒口之河》，2024年還有新秀林敬峰入圍即是肯定，甚至觸及到標本和烹飪話題的《山獸與雜魚》。此外，《看不見的雨林》與《橫斷臺灣》等，剛好都來自森林系系友的暢銷書籍，也是一大亮點。讀者對於動植物的好奇並沒有停。</p>
+<p>至於登山，一個讓我印象深刻的點是臉譜籌畫的「meters山岳文學書系」。這本身就是相關市場具足夠規模的證明。在《雪水消融的季節》和《群山之島與不去會死的他們》系列各自斬獲影視獎項之時，劉宸君的《我所告訴你關於那座山的一切》與郭熊的《走進布農的山》，同樣被金典獎所眷顧。另外還有《爛頭殼》導演兼DJ陳德政參與K2遠征的報導作品《神在的地方》。</p>
+<p>這說明山依舊是那樣危險又極具魅力。而未來的自然寫作更會多元並立。</p>
+<h2 id="參考文獻" tabindex="-1">參考文獻 <a class="header-anchor" href="#參考文獻" aria-label="Permalink to &quot;參考文獻&quot;"></a></h2>
+<ul>
+<li>吳明益（2003）。臺灣自然寫作選。二魚文化</li>
+<li>康瓅揚（2022）。臺灣自然導向文學的非人轉向。國立臺灣大學臺灣文學研究所</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[證券投資與財務分析]]></title>
+            <link>https://haruowang.vercel.app/wealth/finance/securities-specialist.html</link>
+            <guid>https://haruowang.vercel.app/wealth/finance/securities-specialist.html</guid>
+            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
+            <description><![CDATA[證券商業務員資格測驗教科書之筆記]]></description>
+            <content:encoded><![CDATA[<h1 id="證券投資與財務分析" tabindex="-1">證券投資與財務分析 <a class="header-anchor" href="#證券投資與財務分析" aria-label="Permalink to &quot;證券投資與財務分析&quot;"></a></h1>
+<p><Badge type="info" text="🌱 Seedlings" /></P>
+<h2 id="投資與金融市場概念" tabindex="-1">投資與金融市場概念 <a class="header-anchor" href="#投資與金融市場概念" aria-label="Permalink to &quot;投資與金融市場概念&quot;"></a></h2>
+<ul>
+<li>金融市場分成貨幣和資本市場</li>
+<li>貨幣市場：到期日一年以下</li>
+<li>貨幣市場透過OTC Market交易</li>
+<li>OTC Market：店頭市場</li>
+<li>CP1：第一類／交易性商業本票</li>
+<li>CP2：第二類／融資性商業本票</li>
+<li>RP：附買回交易</li>
+<li>RS：附賣回交易</li>
+<li>附條件交易以公債為主要標的</li>
+<li>半碼：0.125%</li>
+<li>權益證券：如普通股、特別股</li>
+<li>可轉換公司債：對投資人有利所以利率較低</li>
+<li>可贖回公司債：對投資人不利所以利率較高</li>
+<li>TDR：台灣存託憑證</li>
+<li>ADR：美國存託憑證</li>
+<li>Call Options：買權</li>
+<li>Put Options：賣權</li>
+<li>NAV：淨資產總值</li>
+<li>股票／基金手續費：千分之1.425</li>
+</ul>
+<h2 id="固定收益證券分析" tabindex="-1">固定收益證券分析 <a class="header-anchor" href="#固定收益證券分析" aria-label="Permalink to &quot;固定收益證券分析&quot;"></a></h2>
+<ul>
+<li>報價可分為貼現率、貨幣市場利率</li>
+<li>公債：目前採利率標</li>
+<li>BP：基點，相當於0.01%，債券單位</li>
+<li>買賣公債免繳證交及證所稅</li>
+<li>凍結期間：避免CB持有人過早轉換</li>
+<li>「附認股權公司債」持有人執行認股權利時，投資人要付錢，而公司債仍存在</li>
+<li>「可轉換公司債」持有人執行CB轉換時，投資人不用付錢。但公司債將不存在，投資人成為股東</li>
+<li>「零息債券」賺錢的部分還是被視為利息，要繳稅（總利息27萬額度內免稅）</li>
+<li>「歐洲債券」比「外國債券」彈性</li>
+<li>「REITs」投資人享10%分離課稅</li>
+<li>馬考列存續期間：你的債券要多久才能回本並拿到利息。可代表利率變動對債券價格的影響</li>
+<li>免疫策略：使投資期限等同存續期間。目標並非戰勝市場，消極</li>
+<li>債券殖利率又稱到期收益率（YTM）</li>
+</ul>
+<h3 id="馬凱爾五大定理" tabindex="-1">馬凱爾五大定理 <a class="header-anchor" href="#馬凱爾五大定理" aria-label="Permalink to &quot;馬凱爾五大定理&quot;"></a></h3>
+<ul>
+<li>債券價格與YTM成反向關係</li>
+<li>YTM下降使債券價格上漲的幅度，高於相反</li>
+<li>到期期間愈長，債券價格對YTM之敏感性越大</li>
+<li>此敏感性之增加程度隨到期期間延長而遞減</li>
+<li>低票面利率債券之YTM敏感性高於高票面</li>
+</ul>
+<h2 id="普通股價格分析" tabindex="-1">普通股價格分析 <a class="header-anchor" href="#普通股價格分析" aria-label="Permalink to &quot;普通股價格分析&quot;"></a></h2>
+<ul>
+<li>股利殖利率可分為現金殖利率和股票股利殖利率，通常討論前者</li>
+<li>現金殖利率又稱Dividend Yield</li>
+<li>現金殖利率代表股利在股價中的比例</li>
+<li>股利發放率代表股利在EPS中的比例，又稱Payout Ratio</li>
+<li>成長型股票：PE和PB高，股利殖利率低</li>
+<li>價值型股票：PE和PB低，股利殖利率高</li>
+</ul>
+<h3 id="股票評價模式" tabindex="-1">股票評價模式 <a class="header-anchor" href="#股票評價模式" aria-label="Permalink to &quot;股票評價模式&quot;"></a></h3>
+<ul>
+<li>本益比估價法：EPS*PE，適合牛市使用</li>
+<li>股價淨值比法：淨值*PB。PB&lt;1代表市價被低估</li>
+<li>現金殖利率法：現金股利／DY</li>
+</ul>
+<details class="details custom-block"><summary>Tips</summary>
+<p>合理本益比：股利發放率*(1+股利成長率)/(目標報酬率-股利成長率)。</p>
+</details>
+<h2 id="證券投資基本分析" tabindex="-1">證券投資基本分析 <a class="header-anchor" href="#證券投資基本分析" aria-label="Permalink to &quot;證券投資基本分析&quot;"></a></h2>
+<ul>
+<li>領先指標：如「M1b」實質貨幣總計數、「SEMI」接單出貨比</li>
+<li>同時指標：如製造業銷售量指數、非農就業人數</li>
+<li>落後指標：如金融業隔夜拆款利率、製造業存貨率</li>
+<li>WPI：躉售物價指數，關於批發價</li>
+<li>利率上升，外資進得來，即期匯率升值，遠期匯率貶值</li>
+<li>速動比率：又稱酸性測驗比率，比流動比率嚴格，一樣用來衡量短期償債能力</li>
+<li>杜邦方程式：ROE = 淨利率x 總資產週轉率x 權益乘數，用來分析獲利出處</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[台灣經濟四百年]]></title>
+            <link>https://haruowang.vercel.app/wealth/finance/taiwan400.html</link>
+            <guid>https://haruowang.vercel.app/wealth/finance/taiwan400.html</guid>
+            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
+            <description><![CDATA[吳聰敏教授《台灣經濟四百年》之課程筆記]]></description>
+            <content:encoded><![CDATA[<h1 id="台灣經濟四百年" tabindex="-1">台灣經濟四百年 <a class="header-anchor" href="#台灣經濟四百年" aria-label="Permalink to &quot;台灣經濟四百年&quot;"></a></h1>
+<p><Badge type="info" text="🌱 Seedlings" /></P>
+<h2 id="現在生活真的很好" tabindex="-1">現在生活真的很好 <a class="header-anchor" href="#現在生活真的很好" aria-label="Permalink to &quot;現在生活真的很好&quot;"></a></h2>
+<h3 id="跨國比較gdp" tabindex="-1">跨國比較GDP <a class="header-anchor" href="#跨國比較gdp" aria-label="Permalink to &quot;跨國比較GDP&quot;"></a></h3>
+<ul>
+<li>透過購買力平價（PPP）</li>
+<li>PPP分為絕對型及相對型</li>
+<li>前者遵循一價法則</li>
+</ul>
+<h3 id="經濟學者" tabindex="-1">經濟學者 <a class="header-anchor" href="#經濟學者" aria-label="Permalink to &quot;經濟學者&quot;"></a></h3>
+<ul>
+<li>Angus Maddison：Kuznets的學生</li>
+<li>溝口敏行：日治時期統計台灣GDP</li>
+</ul>
+<h2 id="鹿" tabindex="-1">鹿 <a class="header-anchor" href="#鹿" aria-label="Permalink to &quot;鹿&quot;"></a></h2>
+<h3 id="強制墮胎" tabindex="-1">強制墮胎 <a class="header-anchor" href="#強制墮胎" aria-label="Permalink to &quot;強制墮胎&quot;"></a></h3>
+<ul>
+<li>邵式柏引用荷蘭人文獻描寫西拉雅族的墮胎習俗</li>
+<li>他認為該習俗是因不想讓打仗的男人有後顧之憂</li>
+</ul>
+<h3 id="毛皮貿易" tabindex="-1">毛皮貿易 <a class="header-anchor" href="#毛皮貿易" aria-label="Permalink to &quot;毛皮貿易&quot;"></a></h3>
+<ul>
+<li>李蔻克發現「劃分私有地」解決了河狸毛皮利益衝突問題</li>
+<li>吳聰敏認為西拉雅一帶因貿易頻仍又無法劃地而衝突激烈</li>
+</ul>
+<h2 id="掌中明珠" tabindex="-1">掌中明珠 <a class="header-anchor" href="#掌中明珠" aria-label="Permalink to &quot;掌中明珠&quot;"></a></h2>
+<ul>
+<li>中村孝志認為台灣對VOC而言如同掌中明珠</li>
+<li>以現代方式計算利潤後發現其實不算</li>
+<li>目加溜灣社和約：第一個有紀錄的原民和約</li>
+<li>麻豆社和約：土地產權起源</li>
+<li>1646，台灣胡椒貿易利潤增加，因清兵打到福建</li>
+</ul>
+<h2 id="贌社" tabindex="-1">贌社 <a class="header-anchor" href="#贌社" aria-label="Permalink to &quot;贌社&quot;"></a></h2>
+<ul>
+<li>Tax Farming：包稅制度</li>
+<li>1647，贌金劇增。過往認為是因為贌商獨佔交易，但其實48已可繞過贌商交易</li>
+<li>吳聰敏認為是因為競標制度和福建戰事的影響所致</li>
+<li>鹿產區從嘉南轉移至虎尾</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[用VitePress玩轉SSG]]></title>
+            <link>https://haruowang.vercel.app/dev/vitepress/blog.html</link>
+            <guid>https://haruowang.vercel.app/dev/vitepress/blog.html</guid>
+            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
+            <description><![CDATA[使用VitePress開發部落格的經驗分享]]></description>
+            <content:encoded><![CDATA[<h1 id="用vitepress玩轉ssg" tabindex="-1">用VitePress玩轉SSG <a class="header-anchor" href="#用vitepress玩轉ssg" aria-label="Permalink to &quot;用VitePress玩轉SSG&quot;"></a></h1>
+<p><Badge type="info" text="🌿 Budding" /></P>
+<p><img src="/og-image.webp" alt="VitePress Blog" loading="lazy"></p>
+<h2 id="基本設定" tabindex="-1"><a href="https://vitepress.dev/guide/getting-started" target="_blank" rel="noreferrer">基本設定</a> <a class="header-anchor" href="#基本設定" aria-label="Permalink to &quot;[基本設定](https://vitepress.dev/guide/getting-started)&quot;"></a></h2>
+<p>在終端機輸入node -v確認版本，要大於18。目前我的是18.12.1，可以使用。</p>
+<p>之前有裝過pnpm，所以直接輸入<code>pnpm add -D vitepress</code>。</p>
+<p>再來透過<code>pnpm vitepress init</code>進行初始化。</p>
+<p>接下來的一連串問題我是這麼選：</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span>┌  Welcome to VitePress!</span></span>
+<span class="line"><span>│</span></span>
+<span class="line"><span>◇  Where should VitePress initialize the config?</span></span>
+<span class="line"><span>│  ./docs</span></span>
+<span class="line"><span>│</span></span>
+<span class="line"><span>◇  Site title:</span></span>
+<span class="line"><span>│  Feed Me, Haruo</span></span>
+<span class="line"><span>│</span></span>
+<span class="line"><span>◇  Site description:</span></span>
+<span class="line"><span>│  Digital Garden of Haruo Wang</span></span>
+<span class="line"><span>│</span></span>
+<span class="line"><span>◇  Theme:</span></span>
+<span class="line"><span>│  Default Theme + Customization</span></span>
+<span class="line"><span>│</span></span>
+<span class="line"><span>◇  Use TypeScript for config and theme files?</span></span>
+<span class="line"><span>│  Yes</span></span>
+<span class="line"><span>│</span></span>
+<span class="line"><span>◇  Add VitePress npm scripts to package.json?</span></span>
+<span class="line"><span>│  Yes</span></span>
+<span class="line"><span>│</span></span>
+<span class="line"><span>└　開始用VitePress玩轉SSG</span></span></code></pre>
+</div><p>想說保留一下Customization的可能性，所以也裝了Vue和VS Code的官方外掛Vue – Official。目前暫時還沒用到。</p>
+<p>輸入指令<code>pnpm run docs:dev</code>後，便可進行開發。</p>
+<h2 id="基本版面" tabindex="-1">基本版面 <a class="header-anchor" href="#基本版面" aria-label="Permalink to &quot;基本版面&quot;"></a></h2>
+<p>我們主要會頻繁更動的檔案，是./vitepress底下的config.mts。從網站語言、網站地圖到設定lazy loading，無所不包。</p>
+<h3 id="下拉選單" tabindex="-1">下拉選單 <a class="header-anchor" href="#下拉選單" aria-label="Permalink to &quot;下拉選單&quot;"></a></h3>
+<blockquote>
+<p>config.mts &gt; themeConfig &gt; nav &gt; text + items</p>
+</blockquote>
+<h3 id="左側欄" tabindex="-1">左側欄 <a class="header-anchor" href="#左側欄" aria-label="Permalink to &quot;左側欄&quot;"></a></h3>
+<blockquote>
+<p>config.mts &gt; themeConfig &gt; sidebar &gt; text + items</p>
+</blockquote>
+<p>需要多寫<code>'/about/'</code>、<code>'/pov/'</code>或<code>'/dev/'</code>，根據路由指定使用者顯示哪個側邊欄。加上collapsed可以實作「收縮小按鈕」。</p>
+<h3 id="右側索引" tabindex="-1">右側索引 <a class="header-anchor" href="#右側索引" aria-label="Permalink to &quot;右側索引&quot;"></a></h3>
+<blockquote>
+<p>config.mts &gt; themeConfig &gt; outline</p>
+</blockquote>
+<p>outline裡可以設定level deep，讓h3也能成為索引。</p>
+<p>另外可以用label修改預設的目錄名稱On this page。像我就改成TOC。</p>
+<h3 id="搜尋功能" tabindex="-1">搜尋功能 <a class="header-anchor" href="#搜尋功能" aria-label="Permalink to &quot;搜尋功能&quot;"></a></h3>
+<blockquote>
+<p>config.mts &gt; themeConfig &gt; search</p>
+</blockquote>
+<p>MiniSearch其實已經很好用了，把provider設成local就好。也可以選用Algolia，但就是要連他們家的API。</p>
+<h3 id="導覽列logo" tabindex="-1">導覽列logo <a class="header-anchor" href="#導覽列logo" aria-label="Permalink to &quot;導覽列logo&quot;"></a></h3>
+<blockquote>
+<p>config.mts &gt; themeConfig &gt; logo</p>
+</blockquote>
+<h3 id="首頁主題" tabindex="-1">首頁主題 <a class="header-anchor" href="#首頁主題" aria-label="Permalink to &quot;首頁主題&quot;"></a></h3>
+<blockquote>
+<p>style.css</p>
+</blockquote>
+<ul>
+<li>--vp-home-hero-name-background：改標題顏色</li>
+<li>--vp-home-hero-image-background-image：改圖片襯底顏色</li>
+</ul>
+<h2 id="head" tabindex="-1"><code>&lt;head&gt;</code> <a class="header-anchor" href="#head" aria-label="Permalink to &quot;`&lt;head&gt;`&quot;"></a></h2>
+<h3 id="標準網址宣告" tabindex="-1">標準網址宣告 <a class="header-anchor" href="#標準網址宣告" aria-label="Permalink to &quot;標準網址宣告&quot;"></a></h3>
+<blockquote>
+<p>config.mts &gt; head</p>
+</blockquote>
+<div class="language-ts vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'link'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { rel: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'canonical'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, href: 網址 }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]</span></span></code></pre>
+</div><h3 id="favicon" tabindex="-1">favicon <a class="header-anchor" href="#favicon" aria-label="Permalink to &quot;favicon&quot;"></a></h3>
+<blockquote>
+<p>config.mts &gt; head</p>
+</blockquote>
+<div class="language-ts vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'link'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { rel: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'apple-touch-icon'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, sizes: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'180x180'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, href: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'/apple-touch-icon.png'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'link'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { rel: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'icon'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, type: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'image/png'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, sizes: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'32x32'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, href: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'/favicon-32x32.png'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'link'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { rel: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'icon'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, type: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'image/png'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, sizes: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'16x16'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, href: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'/favicon-16x16.png'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'link'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { rel: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'manifest'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, href: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'/site.webmanifest'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'link'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { rel: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'mask-icon'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, href: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'/safari-pinned-tab.svg'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, color: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'#5bbad5'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'link'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { name: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'msapplication-TileColor'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, content: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'#da532c'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'link'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { name: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'theme-color'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, content: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'#ffffff'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span></code></pre>
+</div><h3 id="oggraph" tabindex="-1">OGgraph <a class="header-anchor" href="#oggraph" aria-label="Permalink to &quot;OGgraph&quot;"></a></h3>
+<blockquote>
+<p>config.mts &gt; head</p>
+</blockquote>
+<div class="language-ts vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'meta'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { property: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'og:url'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, content: 網址 }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'meta'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { property: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'og:type'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, content: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'website'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'meta'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { property: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'og:title'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, content: 標題 }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'meta'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { property: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'og:description'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, content: 描述 }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'meta'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { property: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'og:image'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, content: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'/og-image.webp'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'meta'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { property: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'twitter:card'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, content: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'summary_large_image'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'meta'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { property: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'twitter:domain'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, content: 網址 }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'meta'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { property: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'twitter:title'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, content: 標題 }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'meta'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { property: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'twitter:description'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, content: 描述 }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'meta'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    { property: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'twitter:image'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, content: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'/og-image.webp'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]</span></span></code></pre>
+</div><p>OGgraph這邊後來我抽出部分讓各頁用frontmatter處理，才不會每頁都只讀到首頁的資訊。</p>
+<h3 id="ga4" tabindex="-1">GA4 <a class="header-anchor" href="#ga4" aria-label="Permalink to &quot;GA4&quot;"></a></h3>
+<blockquote>
+<p>config.mts &gt; head</p>
+</blockquote>
+<p>reference: <a href="https://zhichao.org/posts/4d69f1" target="_blank" rel="noreferrer">只抄</a></p>
+<div class="language-ts vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'script'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    async: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">''</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    src: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX'</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    'script'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    {},</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    "window.dataLayer = window.dataLayer || [];</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\n</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">function gtag(){dataLayer.push(arguments);}</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\n</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">gtag('js', new Date());</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\n</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">gtag('config', 'G-XXXXXXXXXX');"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]</span></span></code></pre>
+</div><h3 id="rss-feed" tabindex="-1">RSS Feed <a class="header-anchor" href="#rss-feed" aria-label="Permalink to &quot;RSS Feed&quot;"></a></h3>
+<blockquote>
+<p>config.mts</p>
+</blockquote>
+<p>使用<a href="https://www.npmjs.com/package/vitepress-plugin-rss" target="_blank" rel="noreferrer">vitepress-plugin-rss</a>。</p>
+<p>照官方描述，先<code>pnpm add vitepress-plugin-rss</code>。</p>
+<p>設定一些基本資訊後，<code>pnpm run docs:build</code>，在生產環境的dist資料夾裡即可找到你的rss.xml。</p>
+<p>結果XML頁面跳出警告EntityRef。本以為把XML裡出錯那行的<code>&amp;</code>改成<code>&amp;amp;</code>就好了，但實際上必須回去改原本md檔裡的網址，再重新build一次才行。</p>
+<h2 id="其他妙招" tabindex="-1">其他妙招 <a class="header-anchor" href="#其他妙招" aria-label="Permalink to &quot;其他妙招&quot;"></a></h2>
+<h3 id="嵌入yt影片" tabindex="-1">嵌入YT影片 <a class="header-anchor" href="#嵌入yt影片" aria-label="Permalink to &quot;嵌入YT影片&quot;"></a></h3>
+<blockquote>
+<p>style.css &gt; 自訂class</p>
+</blockquote>
+<p>YouTube提供的iframe沒有RWD，所以要另外寫一個div搭配CSS。</p>
+<div class="language-html vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">html</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"videobox"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">iframe</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> frameborder</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"0"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> src</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"嵌入連結"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> allowFullScreen</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">iframe</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span></code></pre>
+</div><div class="language-css vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">css</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">.videobox</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  position</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">relative</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  width</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">100</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">%</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  height</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  padding-bottom</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">56.25</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">%</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">.videobox</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D"> iframe</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  position</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">absolute</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  top</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  left</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  width</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">100</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">%</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  height</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">100</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">%</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div><h3 id="shield-io" tabindex="-1">Shield.io <a class="header-anchor" href="#shield-io" aria-label="Permalink to &quot;Shield.io&quot;"></a></h3>
+<p>因為img的設定是區塊元素，會自動換行。為了改成行內元素，沒有使用Markdown一般的圖片語法<code>![](圖片位置)</code>，而是直接寫img標籤。</p>
+<div class="language-html vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">html</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">//以GA4的Badge為例</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">img</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> src</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"https://img.shields.io/badge/-GA4-E37400?style=for-the-badge&#x26;logo=google%20analytics&#x26;logoColor=fff"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> alt</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"Google Analytics"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> style</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"display: inline"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span></code></pre>
+</div><h2 id="專案連結" tabindex="-1"><a href="https://github.com/HaruoWang/vitepress-blog" target="_blank" rel="noreferrer">專案連結</a> <a class="header-anchor" href="#專案連結" aria-label="Permalink to &quot;[專案連結](https://github.com/HaruoWang/vitepress-blog)&quot;"></a></h2>
+]]></content:encoded>
+            <enclosure url="https://haruowang.vercel.app/og-image.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[東吳英文小學堂]]></title>
+            <link>https://haruowang.vercel.app/global/english/scu.html</link>
+            <guid>https://haruowang.vercel.app/global/english/scu.html</guid>
+            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
+            <description><![CDATA[觀看《東吳英文小學堂》的學習筆記]]></description>
+            <content:encoded><![CDATA[<h1 id="東吳英文小學堂" tabindex="-1">東吳英文小學堂 <a class="header-anchor" href="#東吳英文小學堂" aria-label="Permalink to &quot;東吳英文小學堂&quot;"></a></h1>
+<p><Badge type="info" text="🌿 Budding" /></P>
+<h2 id="白鯨記" tabindex="-1">白鯨記 <a class="header-anchor" href="#白鯨記" aria-label="Permalink to &quot;白鯨記&quot;"></a></h2>
+<ul>
+<li>白鯨記被評論家視為酷兒小說</li>
+<li>New Bedford：曾是捕鯨中心</li>
+<li>pagan：異教徒</li>
+<li>食人族魚叉手Queequeg：Ishmael的友人</li>
+</ul>
+<h2 id="譯起學翻譯" tabindex="-1">譯起學翻譯 <a class="header-anchor" href="#譯起學翻譯" aria-label="Permalink to &quot;譯起學翻譯&quot;"></a></h2>
+<ul>
+<li>象寄之才：譯者</li>
+<li>林紓 &amp; 魏易：清末民初的翻譯拍檔</li>
+<li>Ezra Pound：意象派詩人，翻譯《國泰集》</li>
+<li>馬悅然：曾任諾獎評委的瑞典漢學家</li>
+</ul>
+<h2 id="福爾摩斯教文學" tabindex="-1">福爾摩斯教文學 <a class="header-anchor" href="#福爾摩斯教文學" aria-label="Permalink to &quot;福爾摩斯教文學&quot;"></a></h2>
+<ul>
+<li>Joseph Bell：Sherlock Holmes的原型</li>
+<li>最初連載於《Strand Magazine》</li>
+<li>the Speckled Band：經典探案花斑帶</li>
+</ul>
+<h2 id="猩球崛起" tabindex="-1">猩球崛起 <a class="header-anchor" href="#猩球崛起" aria-label="Permalink to &quot;猩球崛起&quot;"></a></h2>
+<ul>
+<li>在電影中，母親是缺席的</li>
+<li>John Donne和Locke都寫過猿猴性侵的故事</li>
+<li>Tarzan在猿猴的語言中，意為白皮膚</li>
+<li>可以將黑猩猩視為人類的doppelganger</li>
+<li>「視覺合作假說」來自小林洋美和幸島司郎，後由Tomasello提出</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[《相機女孩漫遊東京》筆記]]></title>
+            <link>https://haruowang.vercel.app/global/japan/shutter-girl.html</link>
+            <guid>https://haruowang.vercel.app/global/japan/shutter-girl.html</guid>
+            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
+            <description><![CDATA[漫畫《相機女孩漫遊東京》中出現的景點整理]]></description>
+            <content:encoded><![CDATA[<h1 id="《相機女孩漫遊東京》筆記" tabindex="-1">《相機女孩漫遊東京》筆記 <a class="header-anchor" href="#《相機女孩漫遊東京》筆記" aria-label="Permalink to &quot;《相機女孩漫遊東京》筆記&quot;"></a></h1>
+<p><Badge type="info" text="🌳 Evergreen" /></P>
+<p><img src="/japan/sg1.webp" alt="相機女孩漫遊東京地圖" loading="lazy"></p>
+<h2 id="隅田公園" tabindex="-1">隅田公園 <a class="header-anchor" href="#隅田公園" aria-label="Permalink to &quot;隅田公園&quot;"></a></h2>
+<ul>
+<li>適合拍晴空塔</li>
+<li>內有牛嶋神社</li>
+<li>離淺草站最近</li>
+</ul>
+<h2 id="築地" tabindex="-1">築地 <a class="header-anchor" href="#築地" aria-label="Permalink to &quot;築地&quot;"></a></h2>
+<ul>
+<li>該地帶被稱作明石町</li>
+<li>鏑木清方曾繪製相關畫作</li>
+<li>築地本願寺的建築具印度風格</li>
+<li>本願寺咖啡還有「18品早餐」</li>
+</ul>
+<h2 id="神田" tabindex="-1">神田 <a class="header-anchor" href="#神田" aria-label="Permalink to &quot;神田&quot;"></a></h2>
+<ul>
+<li>萬世橋站現為「mAAch ecute」複合空間</li>
+<li>松榮亭的招牌是「西式炸什錦餅」，漱石最愛</li>
+<li>正岡子規：獺祭書屋主人，對野球影響很大</li>
+</ul>
+<h2 id="田端文士村" tabindex="-1">田端文士村 <a class="header-anchor" href="#田端文士村" aria-label="Permalink to &quot;田端文士村&quot;"></a></h2>
+<ul>
+<li>室生犀星和萩原朔太郎都與芥川有深厚交情</li>
+<li>離田端站最近</li>
+</ul>
+<h2 id="等等力溪谷" tabindex="-1">等等力溪谷 <a class="header-anchor" href="#等等力溪谷" aria-label="Permalink to &quot;等等力溪谷&quot;"></a></h2>
+<ul>
+<li>內有不動瀑布和傳統茶屋「雪月花」</li>
+<li>離等等力站最近</li>
+</ul>
+<h2 id="本鄉" tabindex="-1">本鄉 <a class="header-anchor" href="#本鄉" aria-label="Permalink to &quot;本鄉&quot;"></a></h2>
+<ul>
+<li>樋口一葉居住於此，師事半井桃水</li>
+<li>東大主校區即位於此</li>
+<li>炭團坂有坪內逍遙的故居</li>
+<li>離宮澤賢治舊居遺址也不遠</li>
+</ul>
+<h2 id="小名木川" tabindex="-1">小名木川 <a class="header-anchor" href="#小名木川" aria-label="Permalink to &quot;小名木川&quot;"></a></h2>
+<ul>
+<li>被家康開墾來運鹽，因此又名鹽道</li>
+<li>常出現在名畫的萬年橋正是橫跨其上</li>
+<li>接到隅田川，後者夏天有煙火大會</li>
+<li>離清澄白河站最近</li>
+</ul>
+<h2 id="椎名町" tabindex="-1">椎名町 <a class="header-anchor" href="#椎名町" aria-label="Permalink to &quot;椎名町&quot;"></a></h2>
+<ul>
+<li>常磐莊便位於此</li>
+<li>還有東京写真工芸社</li>
+<li>赤塚不二夫承租過紫雲莊</li>
+</ul>
+<h2 id="池袋" tabindex="-1">池袋 <a class="header-anchor" href="#池袋" aria-label="Permalink to &quot;池袋&quot;"></a></h2>
+<ul>
+<li>亂步的書房在立教大學</li>
+<li>被稱作「幻影城」</li>
+<li>亂步名句：「現世如夢，夜夢方真」</li>
+<li>附近還有東京藝術劇場</li>
+<li>池袋三原堂有甜點「亂步之藏」和「薯蘋饅頭」</li>
+<li>池袋蒙帕納斯：30年代的藝術區，由小熊秀雄所稱</li>
+<li>熊谷守一美術館也在豐島區一帶</li>
+</ul>
+<h2 id="淺草" tabindex="-1">淺草 <a class="header-anchor" href="#淺草" aria-label="Permalink to &quot;淺草&quot;"></a></h2>
+<ul>
+<li>十二月中有羽子板市</li>
+<li>羽子板用來為女孩祈福，如破魔箭之於男孩</li>
+<li>淺草寺附近有明星廣場和花屋敷樂園</li>
+<li>還有原是神社新年活動的淺草流鏑馬</li>
+</ul>
+<h2 id="神樂坂" tabindex="-1">神樂坂 <a class="header-anchor" href="#神樂坂" aria-label="Permalink to &quot;神樂坂&quot;"></a></h2>
+<ul>
+<li>可以在東京大神宮祈求結緣</li>
+<li>其屬於東京五社之一</li>
+<li>兵庫橫丁有老街道</li>
+<li>離飯田橋站最近</li>
+</ul>
+<h2 id="吉野梅鄉" tabindex="-1">吉野梅鄉 <a class="header-anchor" href="#吉野梅鄉" aria-label="Permalink to &quot;吉野梅鄉&quot;"></a></h2>
+<ul>
+<li>二、三月可去賞梅</li>
+<li>有間青梅和服博物館</li>
+</ul>
+<h2 id="弁天洞窟" tabindex="-1">弁天洞窟 <a class="header-anchor" href="#弁天洞窟" aria-label="Permalink to &quot;弁天洞窟&quot;"></a></h2>
+<ul>
+<li>在威光寺裡，可以繞一圈做胎內巡禮</li>
+<li>離京王讀賣樂園站最近，適合順便看巨人二軍球賽</li>
+</ul>
+<h2 id="舊古河庭園" tabindex="-1">舊古河庭園 <a class="header-anchor" href="#舊古河庭園" aria-label="Permalink to &quot;舊古河庭園&quot;"></a></h2>
+<ul>
+<li>五、六月有春季玫瑰節</li>
+<li>離上中里站最近</li>
+</ul>
+<h2 id="西荻窪" tabindex="-1">西荻窪 <a class="header-anchor" href="#西荻窪" aria-label="Permalink to &quot;西荻窪&quot;"></a></h2>
+<ul>
+<li>很多骨董店</li>
+<li>駱駝：玻璃名店</li>
+</ul>
+<h2 id="都電回憶廣場" tabindex="-1">都電回憶廣場 <a class="header-anchor" href="#都電回憶廣場" aria-label="Permalink to &quot;都電回憶廣場&quot;"></a></h2>
+<ul>
+<li>荒川線是東京現存唯一的公營路面電車</li>
+<li>明美製菓有「都電最中餅」</li>
+<li>和梶原站相連的梶原書店已經拆了</li>
+<li>離荒川車庫前最近</li>
+</ul>
+<h2 id="城南島海濱公園" tabindex="-1">城南島海濱公園 <a class="header-anchor" href="#城南島海濱公園" aria-label="Permalink to &quot;城南島海濱公園&quot;"></a></h2>
+<ul>
+<li>有汽車露營區</li>
+<li>離羽田很近，適合航空迷</li>
+<li>離大森海岸站最近</li>
+</ul>
+<h2 id="世田谷" tabindex="-1">世田谷 <a class="header-anchor" href="#世田谷" aria-label="Permalink to &quot;世田谷&quot;"></a></h2>
+<ul>
+<li>蘆花恆春園：德冨蘆花的舊宅</li>
+<li>德冨蘆花和托爾斯泰往來甚密</li>
+<li>離蘆花公園站最近</li>
+<li>年尾年頭有「襤褸市」，必吃代官餅</li>
+<li>世田谷線是東京現存唯一的私營路面電車</li>
+<li>離上町站最近</li>
+</ul>
+<h2 id="互動地圖" tabindex="-1">互動地圖 <a class="header-anchor" href="#互動地圖" aria-label="Permalink to &quot;互動地圖&quot;"></a></h2>
+<div class="videobox four3">
+    <iframe src="https://www.google.com/maps/d/embed?mid=1-40Aiz8mzgNjQbv2tE59jv_sAvu8lh4&ehbc=2E312F"></iframe>
+</div>]]></content:encoded>
+            <enclosure url="https://haruowang.vercel.app/japan/sg1.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[【Strudel Work：Persecution Of The Masses】]]></title>
+            <link>https://haruowang.vercel.app/live-coding/tidal/potm.html</link>
+            <guid>https://haruowang.vercel.app/live-coding/tidal/potm.html</guid>
+            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
+            <description><![CDATA[Using Strudel to cover Shiro Sagisu's Persecution Of The Masses]]></description>
+            <content:encoded><![CDATA[<h1 id="【strudel-work-persecution-of-the-masses】" tabindex="-1">【Strudel Work：Persecution Of The Masses】 <a class="header-anchor" href="#【strudel-work-persecution-of-the-masses】" aria-label="Permalink to &quot;【Strudel Work：Persecution Of The Masses】&quot;"></a></h1>
+<p><Badge type="info" text="🌳 Evergreen" /></P>
+<div class="videobox">
+    <iframe frameborder="0" src="https://www.youtube.com/embed/LcXZvQNIc6U" allowFullScreen>
+    </iframe>
+</div>
+<h2 id="cpm" tabindex="-1">CPM <a class="header-anchor" href="#cpm" aria-label="Permalink to &quot;CPM&quot;"></a></h2>
+<ul>
+<li>cpm = bpm / bpc</li>
+<li>bpc: How many beats are required to complete a cycle? The smaller the number, the faster the speed.</li>
+</ul>
+<h2 id="drum" tabindex="-1">Drum <a class="header-anchor" href="#drum" aria-label="Permalink to &quot;Drum&quot;"></a></h2>
+<ul>
+<li>stack(sound.bank)</li>
+<li>e.g. <code>stack(s(&quot;&lt;hh ~&gt;*8&quot;).bank(&quot;LinnDrum&quot;), s(&quot;&lt;bd&gt;*8&quot;).bank(&quot;RolandTR909&quot;));</code></li>
+</ul>
+<h2 id="note" tabindex="-1">Note <a class="header-anchor" href="#note" aria-label="Permalink to &quot;Note&quot;"></a></h2>
+<ul>
+<li>cat.note.sound</li>
+<li>e.g. <code>cat(&quot;&lt;eb3!2 f3@2&gt;*4&quot;, &quot;&lt;c3&gt;*4&quot;).note().n(3).s(&quot;gm_synth_bass_1&quot;);</code></li>
+</ul>
+<h2 id="tips" tabindex="-1">Tips <a class="header-anchor" href="#tips" aria-label="Permalink to &quot;Tips&quot;"></a></h2>
+<ul>
+<li>~ / -: rests</li>
+<li>!: replicate</li>
+<li>@: elongate</li>
+<li>n(3).s(&quot;gm_synth_bass_1&quot;) = s(&quot;gm_synth_bass_1&quot;:3)</li>
+<li>transpose(+-12): pitch shifting</li>
+<li>arrange.cpm(cpm): as an integration</li>
+</ul>
+<h2 id="demo" tabindex="-1">Demo <a class="header-anchor" href="#demo" aria-label="Permalink to &quot;Demo&quot;"></a></h2>
+<div class="videobox one1">
+    <iframe src="https://strudel.cc/?ObIDhpp7APMx"></iframe>
+</div>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[《少女歌劇再生產評論集》筆記]]></title>
@@ -2507,138 +2919,6 @@
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[證券投資與財務分析]]></title>
-            <link>https://haruowang.vercel.app/wealth/finance/securities-specialist.html</link>
-            <guid>https://haruowang.vercel.app/wealth/finance/securities-specialist.html</guid>
-            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
-            <description><![CDATA[證券商業務員資格測驗教科書之筆記]]></description>
-            <content:encoded><![CDATA[<h1 id="證券投資與財務分析" tabindex="-1">證券投資與財務分析 <a class="header-anchor" href="#證券投資與財務分析" aria-label="Permalink to &quot;證券投資與財務分析&quot;"></a></h1>
-<p><Badge type="info" text="🌱 Seedlings" /></P>
-<h2 id="投資與金融市場概念" tabindex="-1">投資與金融市場概念 <a class="header-anchor" href="#投資與金融市場概念" aria-label="Permalink to &quot;投資與金融市場概念&quot;"></a></h2>
-<ul>
-<li>金融市場分成貨幣和資本市場</li>
-<li>貨幣市場：到期日一年以下</li>
-<li>貨幣市場透過OTC Market交易</li>
-<li>OTC Market：店頭市場</li>
-<li>CP1：第一類／交易性商業本票</li>
-<li>CP2：第二類／融資性商業本票</li>
-<li>RP：附買回交易</li>
-<li>RS：附賣回交易</li>
-<li>附條件交易以公債為主要標的</li>
-<li>半碼：0.125%</li>
-<li>權益證券：如普通股、特別股</li>
-<li>可轉換公司債：對投資人有利所以利率較低</li>
-<li>可贖回公司債：對投資人不利所以利率較高</li>
-<li>TDR：台灣存託憑證</li>
-<li>ADR：美國存託憑證</li>
-<li>Call Options：買權</li>
-<li>Put Options：賣權</li>
-<li>NAV：淨資產總值</li>
-<li>股票／基金手續費：千分之1.425</li>
-</ul>
-<h2 id="固定收益證券分析" tabindex="-1">固定收益證券分析 <a class="header-anchor" href="#固定收益證券分析" aria-label="Permalink to &quot;固定收益證券分析&quot;"></a></h2>
-<ul>
-<li>報價可分為貼現率、貨幣市場利率</li>
-<li>公債：目前採利率標</li>
-<li>BP：基點，相當於0.01%，債券單位</li>
-<li>買賣公債免繳證交及證所稅</li>
-<li>凍結期間：避免CB持有人過早轉換</li>
-<li>「附認股權公司債」持有人執行認股權利時，投資人要付錢，而公司債仍存在</li>
-<li>「可轉換公司債」持有人執行CB轉換時，投資人不用付錢。但公司債將不存在，投資人成為股東</li>
-<li>「零息債券」賺錢的部分還是被視為利息，要繳稅（總利息27萬額度內免稅）</li>
-<li>「歐洲債券」比「外國債券」彈性</li>
-<li>「REITs」投資人享10%分離課稅</li>
-<li>馬考列存續期間：你的債券要多久才能回本並拿到利息。可代表利率變動對債券價格的影響</li>
-<li>免疫策略：使投資期限等同存續期間。目標並非戰勝市場，消極</li>
-<li>債券殖利率又稱到期收益率（YTM）</li>
-</ul>
-<h3 id="馬凱爾五大定理" tabindex="-1">馬凱爾五大定理 <a class="header-anchor" href="#馬凱爾五大定理" aria-label="Permalink to &quot;馬凱爾五大定理&quot;"></a></h3>
-<ul>
-<li>債券價格與YTM成反向關係</li>
-<li>YTM下降使債券價格上漲的幅度，高於相反</li>
-<li>到期期間愈長，債券價格對YTM之敏感性越大</li>
-<li>此敏感性之增加程度隨到期期間延長而遞減</li>
-<li>低票面利率債券之YTM敏感性高於高票面</li>
-</ul>
-<h2 id="普通股價格分析" tabindex="-1">普通股價格分析 <a class="header-anchor" href="#普通股價格分析" aria-label="Permalink to &quot;普通股價格分析&quot;"></a></h2>
-<ul>
-<li>股利殖利率可分為現金殖利率和股票股利殖利率，通常討論前者</li>
-<li>現金殖利率又稱Dividend Yield</li>
-<li>現金殖利率代表股利在股價中的比例</li>
-<li>股利發放率代表股利在EPS中的比例，又稱Payout Ratio</li>
-<li>成長型股票：PE和PB高，股利殖利率低</li>
-<li>價值型股票：PE和PB低，股利殖利率高</li>
-</ul>
-<h3 id="股票評價模式" tabindex="-1">股票評價模式 <a class="header-anchor" href="#股票評價模式" aria-label="Permalink to &quot;股票評價模式&quot;"></a></h3>
-<ul>
-<li>本益比估價法：EPS*PE，適合牛市使用</li>
-<li>股價淨值比法：淨值*PB。PB&lt;1代表市價被低估</li>
-<li>現金殖利率法：現金股利／DY</li>
-</ul>
-<details class="details custom-block"><summary>Tips</summary>
-<p>合理本益比：股利發放率*(1+股利成長率)/(目標報酬率-股利成長率)。</p>
-</details>
-<h2 id="證券投資基本分析" tabindex="-1">證券投資基本分析 <a class="header-anchor" href="#證券投資基本分析" aria-label="Permalink to &quot;證券投資基本分析&quot;"></a></h2>
-<ul>
-<li>領先指標：如「M1b」實質貨幣總計數、「SEMI」接單出貨比</li>
-<li>同時指標：如製造業銷售量指數、非農就業人數</li>
-<li>落後指標：如金融業隔夜拆款利率、製造業存貨率</li>
-<li>WPI：躉售物價指數，關於批發價</li>
-<li>利率上升，外資進得來，即期匯率升值，遠期匯率貶值</li>
-<li>速動比率：又稱酸性測驗比率，比流動比率嚴格，一樣用來衡量短期償債能力</li>
-<li>杜邦方程式：ROE = 淨利率x 總資產週轉率x 權益乘數，用來分析獲利出處</li>
-</ul>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[台灣經濟四百年]]></title>
-            <link>https://haruowang.vercel.app/wealth/finance/taiwan400.html</link>
-            <guid>https://haruowang.vercel.app/wealth/finance/taiwan400.html</guid>
-            <pubDate>Tue, 01 Oct 2024 06:27:24 GMT</pubDate>
-            <description><![CDATA[吳聰敏教授《台灣經濟四百年》之課程筆記]]></description>
-            <content:encoded><![CDATA[<h1 id="台灣經濟四百年" tabindex="-1">台灣經濟四百年 <a class="header-anchor" href="#台灣經濟四百年" aria-label="Permalink to &quot;台灣經濟四百年&quot;"></a></h1>
-<p><Badge type="info" text="🌱 Seedlings" /></P>
-<h2 id="現在生活真的很好" tabindex="-1">現在生活真的很好 <a class="header-anchor" href="#現在生活真的很好" aria-label="Permalink to &quot;現在生活真的很好&quot;"></a></h2>
-<h3 id="跨國比較gdp" tabindex="-1">跨國比較GDP <a class="header-anchor" href="#跨國比較gdp" aria-label="Permalink to &quot;跨國比較GDP&quot;"></a></h3>
-<ul>
-<li>透過購買力平價（PPP）</li>
-<li>PPP分為絕對型及相對型</li>
-<li>前者遵循一價法則</li>
-</ul>
-<h3 id="經濟學者" tabindex="-1">經濟學者 <a class="header-anchor" href="#經濟學者" aria-label="Permalink to &quot;經濟學者&quot;"></a></h3>
-<ul>
-<li>Angus Maddison：Kuznets的學生</li>
-<li>溝口敏行：日治時期統計台灣GDP</li>
-</ul>
-<h2 id="鹿" tabindex="-1">鹿 <a class="header-anchor" href="#鹿" aria-label="Permalink to &quot;鹿&quot;"></a></h2>
-<h3 id="強制墮胎" tabindex="-1">強制墮胎 <a class="header-anchor" href="#強制墮胎" aria-label="Permalink to &quot;強制墮胎&quot;"></a></h3>
-<ul>
-<li>邵式柏引用荷蘭人文獻描寫西拉雅族的墮胎習俗</li>
-<li>他認為該習俗是因不想讓打仗的男人有後顧之憂</li>
-</ul>
-<h3 id="毛皮貿易" tabindex="-1">毛皮貿易 <a class="header-anchor" href="#毛皮貿易" aria-label="Permalink to &quot;毛皮貿易&quot;"></a></h3>
-<ul>
-<li>李蔻克發現「劃分私有地」解決了河狸毛皮利益衝突問題</li>
-<li>吳聰敏認為西拉雅一帶因貿易頻仍又無法劃地而衝突激烈</li>
-</ul>
-<h2 id="掌中明珠" tabindex="-1">掌中明珠 <a class="header-anchor" href="#掌中明珠" aria-label="Permalink to &quot;掌中明珠&quot;"></a></h2>
-<ul>
-<li>中村孝志認為台灣對VOC而言如同掌中明珠</li>
-<li>以現代方式計算利潤後發現其實不算</li>
-<li>目加溜灣社和約：第一個有紀錄的原民和約</li>
-<li>麻豆社和約：土地產權起源</li>
-<li>1646，台灣胡椒貿易利潤增加，因清兵打到福建</li>
-</ul>
-<h2 id="贌社" tabindex="-1">贌社 <a class="header-anchor" href="#贌社" aria-label="Permalink to &quot;贌社&quot;"></a></h2>
-<ul>
-<li>Tax Farming：包稅制度</li>
-<li>1647，贌金劇增。過往認為是因為贌商獨佔交易，但其實48已可繞過贌商交易</li>
-<li>吳聰敏認為是因為競標制度和福建戰事的影響所致</li>
-<li>鹿產區從嘉南轉移至虎尾</li>
-</ul>
-]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[關於我]]></title>
             <link>https://haruowang.vercel.app/about/about-me/haruo.html</link>
             <guid>https://haruowang.vercel.app/about/about-me/haruo.html</guid>
@@ -2671,81 +2951,6 @@
 <p><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HaruoWang&amp;layout=compact" alt="Top Langs" loading="lazy"></p>
 ]]></content:encoded>
             <enclosure url="https://github-readme-stats.vercel.app/api/top-langs/?username=HaruoWang&amp;layout=compact" length="0" type="image//api/top-langs/"/>
-        </item>
-        <item>
-            <title><![CDATA[東京藝文展館指南]]></title>
-            <link>https://haruowang.vercel.app/global/japan/art-guide.html</link>
-            <guid>https://haruowang.vercel.app/global/japan/art-guide.html</guid>
-            <pubDate>Mon, 23 Sep 2024 05:21:05 GMT</pubDate>
-            <description><![CDATA[《美術手帖》2012年5月特集的景點蒐集]]></description>
-            <content:encoded><![CDATA[<h1 id="東京藝文展館指南" tabindex="-1">東京藝文展館指南 <a class="header-anchor" href="#東京藝文展館指南" aria-label="Permalink to &quot;東京藝文展館指南&quot;"></a></h1>
-<p><Badge type="info" text="🌱 Seedlings" /></P>
-<h2 id="東京國立近代美術館" tabindex="-1">東京國立近代美術館 <a class="header-anchor" href="#東京國立近代美術館" aria-label="Permalink to &quot;東京國立近代美術館&quot;"></a></h2>
-<ul>
-<li>日本最早的國立美術館</li>
-<li>位於千代田區，離竹橋站最近</li>
-<li>其電影中心似乎已歇業</li>
-</ul>
-<h2 id="東京都現代美術館" tabindex="-1">東京都現代美術館 <a class="header-anchor" href="#東京都現代美術館" aria-label="Permalink to &quot;東京都現代美術館&quot;"></a></h2>
-<ul>
-<li>日本最大的當代美術館</li>
-<li>位於江東區，離清澄白河站最近</li>
-<li>附設美術圖書室，旁有木場公園</li>
-<li>特色餐點有「100本のスプーン」</li>
-</ul>
-<h2 id="清澄ギャラリーコンプレックス" tabindex="-1">清澄ギャラリーコンプレックス <a class="header-anchor" href="#清澄ギャラリーコンプレックス" aria-label="Permalink to &quot;清澄ギャラリーコンプレックス&quot;"></a></h2>
-<ul>
-<li>2015年被拆除</li>
-<li>其中6、7樓的小山登美夫畫廊，目前遷移至港區六本木</li>
-</ul>
-<h2 id="原美術館" tabindex="-1">原美術館 <a class="header-anchor" href="#原美術館" aria-label="Permalink to &quot;原美術館&quot;"></a></h2>
-<ul>
-<li>目前遷移至原美術館ARC</li>
-<li>ARC位於群馬縣澀川市，離澀川站最近</li>
-<li>原建築由渡邊仁，ARC由磯崎新設計</li>
-</ul>
-<h2 id="_8" tabindex="-1">8/ <a class="header-anchor" href="#_8" aria-label="Permalink to &quot;8/&quot;"></a></h2>
-<ul>
-<li>位於澀谷HIKARIE</li>
-<li>離澀谷站最近</li>
-<li>內含d47食堂和不定期營業的澀谷○○書店</li>
-</ul>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[日本迷你電影院]]></title>
-            <link>https://haruowang.vercel.app/global/japan/mini-theater.html</link>
-            <guid>https://haruowang.vercel.app/global/japan/mini-theater.html</guid>
-            <pubDate>Mon, 23 Sep 2024 05:21:05 GMT</pubDate>
-            <description><![CDATA[由JFF Theater介紹的影廳整理]]></description>
-            <content:encoded><![CDATA[<h1 id="日本迷你電影院" tabindex="-1">日本迷你電影院 <a class="header-anchor" href="#日本迷你電影院" aria-label="Permalink to &quot;日本迷你電影院&quot;"></a></h1>
-<p><Badge type="info" text="🌱 Seedlings" /></P>
-<h2 id="theater-enya" tabindex="-1">THEATER ENYA <a class="header-anchor" href="#theater-enya" aria-label="Permalink to &quot;THEATER ENYA&quot;"></a></h2>
-<ul>
-<li>位於佐賀縣唐津市</li>
-<li>唐津演屋祭：從2021年開始舉行的電影放映活動</li>
-<li>唐津宮日祭：每年11月初舉行，特色是14輛曳山花車</li>
-<li>虹之松原：由唐津藩主寺澤廣高所種植</li>
-<li>日本三大松原：唐津虹之松原、靜岡三保松原、敦賀氣比松原</li>
-<li>大林宣彥《花筐》：於唐津市取景</li>
-</ul>
-<h2 id="桜坂劇場" tabindex="-1">桜坂劇場 <a class="header-anchor" href="#桜坂劇場" aria-label="Permalink to &quot;桜坂劇場&quot;"></a></h2>
-<ul>
-<li>位於沖繩縣那霸市</li>
-<li>原是名為珊瑚座的戲劇小屋</li>
-<li>被琉映改造成電影院，2005一度關閉</li>
-<li>現由建設公司株式会社クランク接手</li>
-<li>舉辦工作坊「桜坂市民大学」</li>
-<li>附近有第一牧志公設市場</li>
-</ul>
-<h2 id="シネマ尾道" tabindex="-1">シネマ尾道 <a class="header-anchor" href="#シネマ尾道" aria-label="Permalink to &quot;シネマ尾道&quot;"></a></h2>
-<ul>
-<li>深谷シネマ即使人口15萬也能運營</li>
-<li>原是名為尾道松竹的電影院</li>
-<li>招牌是滿島真之介和孩子在工作坊畫的</li>
-<li>尾道又被稱作「坡道上的城市」</li>
-</ul>
-]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[JobMenta商用日文]]></title>
@@ -2934,37 +3139,6 @@
 <p>如果你追求品味或特立獨行，如果你熱愛攝影藝術，如果你單純想過上一個不同於以往的週末，moom bookshop都將是一個適合走訪的去處。畢竟像這樣的特色書店在台灣不算多，經營也比較困難……有閒暇時間的話可以多走走、逛逛。碰上攝影書展覽是常有的事，順道挖掘出個人的愛書吧。</p>
 ]]></content:encoded>
             <enclosure url="https://haruowang.vercel.app/other/mo1.webp" length="0" type="image/webp"/>
-        </item>
-        <item>
-            <title><![CDATA[【大一生在日星：訪談張介冠】]]></title>
-            <link>https://haruowang.vercel.app/pov/other/rixing.html</link>
-            <guid>https://haruowang.vercel.app/pov/other/rixing.html</guid>
-            <pubDate>Sat, 21 Sep 2024 15:36:45 GMT</pubDate>
-            <description><![CDATA[對於視覺藝術領域相關的學生而言，這間臺灣現存最後的鑄字行，和守住它不被時代潮流吞沒的名諱，肯定都不是陌生的字彙]]></description>
-            <content:encoded><![CDATA[<h1 id="【大一生在日星-訪談張介冠】" tabindex="-1">【大一生在日星：訪談張介冠】 <a class="header-anchor" href="#【大一生在日星-訪談張介冠】" aria-label="Permalink to &quot;【大一生在日星：訪談張介冠】&quot;"></a></h1>
-<p><Badge type="info" text="🌳 Evergreen" /></P>
-<p><img src="/other/ri1.webp" alt="moom bookshop" loading="lazy"></p>
-<p>傳統二字，指的是「歷史沿傳而來的思想、道德、風俗、藝術、制度」。若要論起在設計和傳播背後一脈相承的傳統是什麼，筆者會回答是活字印刷——一切文明發展的幕後推手。</p>
-<p>這次很榮幸可以採訪到「日星鑄字行」的張介冠張老闆。對於視覺藝術領域相關的學生而言，這間臺灣現存最後的鑄字行，和守住它不被時代潮流吞沒的名諱，肯定都不是陌生的字彙——或者說，如果不知道就等於白唸了。</p>
-<p>以下段落將順著採訪時的脈絡來走，透過筆者和張老闆之間的對談，來呈現出長者對於傳統文化的看法，並希冀能使年輕人更願意關心往昔事物。</p>
-<p>首先，筆者和張老闆談到，對於合版印刷浪潮席捲全世界，活版印刷逐漸退出市場的看法。老闆回道：「印刷的方式有四種，每一種所呈現出來的獨特性都不一樣。其實每種印刷方式都有它的不可取代性。」</p>
-<p>其實，有許多在新世代眼中看來繁文縟節的傳統即面臨到如此的問題。如果排除掉過於迷信、有違平權或永續發展的那部分——剩下的，一定能被挖掘出它本身的獨特性跟美感。重點不過在於「去推廣、讓大家去了解，以及如何尋求新的商機。」</p>
-<p>張老闆也提到，現代人對於事物的看法都是要「快快快」。如何讓傳統的技藝或是產業能夠讓世人再進一步地重新認識，都需要付出相當大的資源去克服效益主義才有辦法。最後終歸一句：「盡人事要聽天命。」</p>
-<p>對於部分篤信人定勝天的年輕人而言，這樣的想法未免有些消極。但要知道，在那個沒有什麼選擇的時代，當時還只有十六、七歲的那位少年，就已經開始學習鑄字了。當我們聊起當今大學生和以往的差距，張老闆面帶微笑地說：「這是一個社會的演變，沒辦法說用人為的力量去做大幅度的改變。每一個年代都有不同的狀態。」說著說著，話鋒便順勢一轉，提到了在時代進步和少子化的衝擊下，讓傳統產業能夠得以引進新血，再繼續往下走、往前走的困難之處。</p>
-<p>那麼，人生中最大的困難是什麼呢？「其實每天都有不同的困難。遇到困難是正常的，不遇到困難反而是不正常。」——老闆是這樣回覆筆者的。你我浮生畢竟苦短，糟心事肯定常有，但沒有什麼坎是過不去的。「其實每個困難都很大，重要的是自己要認清，還要有毅力，去克服這些困難。」</p>
-<p>而在這眾多的困難中，鉛字銅模修復絕對是相當棘手的一環。張老闆分析，字型修復跟新造其實是有相當大的差距。「修復的話，你要先學習到相關的技術之外，還要去分析、去了解到原來的、要修復的這套字體的特徵，它的優缺點，它有沒有什麼問題沒有。」當近年來人們逐漸了解字型產業，意識到置身於風頭浪尖的新銳設計師有多麼辛苦，感嘆著每套字型的得來不易時，也應該更加關注暗自努力的、對文化奉獻身心的修復者們。</p>
-<p>「光修復人員的訓練，我們的經驗大概五到十年是跑不掉的。所以到現在為止，這種修復人員我們還是在完全是無產值的訓練階段。」——筆者也沒有料到，現況是連老闆也曾估算錯誤的嚴峻。「早期在網路上發起銅模修復、字型修復的這個活動是我們太輕忽。」——那是一種在時代裡逆風而行所發出的慨嘆。怎能要求電腦世代的年輕人像老一輩的美工人員那樣，只要鴨嘴筆在手，就能信手拈來地畫出比貝茲曲線還優美的弧線？而那在人前顯得光鮮亮麗的「日星初號楷體」，也不過只是稍微經過描邊，就轉成電腦字型的實驗品。老闆的復刻大業，仍有很長一段路需要努力。</p>
-<p>於是筆者問起了目前有多少教育工作者曾經與日星合作，以及張老闆自己對藝術教育的看法。得到的回應是，中原商設的林昆範老師曾經協助在校內成立活版印刷工坊。這個Workshop還有保留，但是運作上受限於大環境，很難再造就更大的突破。聽到這，內心不禁感到一陣羞愧。只因身為印刷科系學子，在技術尚嫌不足的大一此時，只能以採訪的形式替活版保存盡一己棉薄之力。「在台灣，單以就平面設計學系來說，學校裡面找不到這種師資，也找不到這種技職師傅。那更重要的，也沒有設備。在教育體系裡面完全沒有這樣子的一個教學，這是一個非常非常可惜的地方。」——言談之間，盡是比銅模修復更深層的無奈。</p>
-<p>我們繼續朝著結構性問題刨挖下去……聊到了文創產業的弊病所在。而張老闆是如此給出他的見解的——「所謂文化創意，要植基於文化本身的再應用，包括技藝——就是技術性的東西，還有就是它的本質的再應用。如果有，我才認為它是文化創意產業；如果沒有，它只是一個文化創意的空殼，一個表徵而已。」這番話不知會影響多少既得利益者，但既然傳統與創新勢必要真正融合才能共榮，台灣社會還是該服下苦口的良藥。</p>
-<p>最後，筆者的採訪收束到一個切身的提問上——也就是像我這樣的年輕人，有哪些途徑能夠直接幫助到日星呢？張老闆以他應答的一貫態度回覆：「其實日星鑄字行以目前的情況來說，大部分都需要能夠深蹲，就是能夠長期在這裡學習相關技術的人。那問題是，日星鑄字行並沒有那麼大的經濟能力，去支付足夠的、合理的，一些所謂的酬薪，讓年輕人可以得到一個合理的待遇。這是日星的問題，而不是年輕人的問題。」</p>
-<p>他的面容好似閃過一絲憂慮，但仍不失樂天知命的慈祥和智慧。</p>
-<blockquote>
-<p>「日星的這個問題就必須有賴整個社會的了解，然後公共資源是不是可以協助，那跟整個社會資源的應用。這都有賴於說整個社會大家對日星的理解，那跟是不是願意共同來努力，保存我們在這塊土地上不只是日星——其實還有很多其他的傳統產業，能夠繼續的往下、往前走。」</p>
-</blockquote>
-<p>訪問結束前，張老闆不忘補上一句——要幫助的話就是來這裡消費(笑)！</p>
-<p>果然，閱歷豐富的長者不只能夠以睿智形象示人，還可以很幽默呢——</p>
-]]></content:encoded>
-            <enclosure url="https://haruowang.vercel.app/other/ri1.webp" length="0" type="image/webp"/>
         </item>
         <item>
             <title><![CDATA[【不期而遇：《菜場搜神記》】]]></title>
@@ -4376,29 +4550,6 @@
 <p>這裡影響我的，早已潛移默化，難以償還。能夠成為被命運眷顧的9%，真的只有鳴謝。</p>
 ]]></content:encoded>
             <enclosure url="https://haruowang.vercel.app/career/xc1.webp" length="0" type="image/webp"/>
-        </item>
-        <item>
-            <title><![CDATA[那些我曾經歷的挫敗]]></title>
-            <link>https://haruowang.vercel.app/about/lifelog/failure.html</link>
-            <guid>https://haruowang.vercel.app/about/lifelog/failure.html</guid>
-            <pubDate>Fri, 20 Sep 2024 14:29:45 GMT</pubDate>
-            <description><![CDATA[2024年開始，Haruo Wang的失敗整理]]></description>
-            <content:encoded><![CDATA[<h1 id="那些我曾經歷的挫敗" tabindex="-1">那些我曾經歷的挫敗 <a class="header-anchor" href="#那些我曾經歷的挫敗" aria-label="Permalink to &quot;那些我曾經歷的挫敗&quot;"></a></h1>
-<p><Badge type="info" text="🌿 Budding" /></P>
-<h2 id="_2024" tabindex="-1">2024 <a class="header-anchor" href="#_2024" aria-label="Permalink to &quot;2024&quot;"></a></h2>
-<ul>
-<li>北藝大藝跨所備取二，藝管所未達標</li>
-<li>《聯合文學》小說新人賞落選一次</li>
-<li>《New Wave攝影創作獎》初審落選</li>
-<li>《金點設計獎》初審落選</li>
-<li>《台灣島。鏈》獎助計畫落選一次</li>
-<li>《若水NFT藝術獎》落選一次</li>
-<li>《Solana Write-a-thon》徵文落選</li>
-<li>用thirdweb快速開發dapp，但是踩坑</li>
-<li>自架RSSHub到Cloudflare，但是不能關機</li>
-<li>護照規費補繳</li>
-</ul>
-]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[自架RSSHub到Cloudflare]]></title>
@@ -7393,6 +7544,45 @@ singular.boot
 <li>FVM：Filecoin版的EVM</li>
 <li>Bacalhau：Filecoin做的分散式系統，有點像docker</li>
 <li>DeSci Nodes：讓論文可以互動，譬如連上IDE</li>
+</ul>
+<h2 id="dao" tabindex="-1">DAO <a class="header-anchor" href="#dao" aria-label="Permalink to &quot;DAO&quot;"></a></h2>
+<ul>
+<li>Recursive Public：遞迴公眾。持續關注自身作為公眾如何維護和創新的集體，由Christopher M. Kelty提出</li>
+<li>PDT：可悲點理論。將控制人類行為的力量分為社會規範、法律、市場和架構。由Lawrence Lessig提出</li>
+</ul>
+<h3 id="文化與價值" tabindex="-1">文化與價值 <a class="header-anchor" href="#文化與價值" aria-label="Permalink to &quot;文化與價值&quot;"></a></h3>
+<ul>
+<li>Liquid democracy：流動式民主。想託人投票或自己參與皆可</li>
+<li>Conviction voting：信念投票法。支持某議案越久，影響越大</li>
+<li>Rochdale Principles：羅虛戴爾原則。為合作社所設計</li>
+<li>凹凸決策：凹形彈性，凸形明確</li>
+<li>DPI：數位公共基礎建設，包含BB（建築模組）和DPG（數位公共財）</li>
+</ul>
+<h3 id="法律與法規" tabindex="-1">法律與法規 <a class="header-anchor" href="#法律與法規" aria-label="Permalink to &quot;法律與法規&quot;"></a></h3>
+<ul>
+<li>CFTC對Ooki DAO提告並獲得勝利，首開DAO需要負擔法律責任的先例</li>
+<li>DAO.LINK：曾預計提供一般公司和DAO合作之法律框架，但牽扯進The DAO事件</li>
+<li>Colorado的LCA法律架構較完善，但不能轉讓非財務利益</li>
+<li>COALA發布The DAO Model Law，具功能和監管等效性</li>
+<li>開曼群島的KYC較為嚴格，維京群島的KYC較為寬鬆</li>
+<li>XCA：組織及團體憑證</li>
+</ul>
+<h3 id="美國公司組織類型" tabindex="-1">美國公司組織類型 <a class="header-anchor" href="#美國公司組織類型" aria-label="Permalink to &quot;美國公司組織類型&quot;"></a></h3>
+<ul>
+<li>S corp：採穿透課稅，但限制亦較多</li>
+<li>C corp：大部分公司屬於此類</li>
+<li>LLC：美國採穿透課稅，台灣無相似組織</li>
+<li>Delaware LLC：很適合DAO</li>
+<li>LP：美國採穿透課稅，台灣採公司方式申報</li>
+<li>LLP：台灣無相似組織</li>
+</ul>
+<h3 id="科技與工具" tabindex="-1">科技與工具 <a class="header-anchor" href="#科技與工具" aria-label="Permalink to &quot;科技與工具&quot;"></a></h3>
+<ul>
+<li>ERC-4824：DAO的API，也是DAOstar所提出的DAOIP-2</li>
+<li>Aragon：首個DAO框架</li>
+<li>Moloch：以Ragequit聞名</li>
+<li>Compound：常被DeFi使用，和OZ合作</li>
+<li>Praise可和DC串接，Shoutout可和Slack串接</li>
 </ul>
 ]]></content:encoded>
         </item>

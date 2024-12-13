@@ -125,3 +125,23 @@ head:
 ## 時基媒體
 - 1994，奈良真實性文件。修正1964的威尼斯憲章，更注重場所精神
 - Nelson Goodman將藝術區分為Autographic和Allographic
+
+## 媒體藝術蒐藏保存
+- U-matic:VHS對手Betamax的前身
+- ada.web：第一個網路藝術策展計畫
+
+## 自拍風潮與敘事技術
+- 記憶減損：沒有目標的拍照無助於記憶
+
+## 這裡沒有影像
+- 圖像轉向：Pictorial Turn，由W. J. T. Mitchell所提出。源自Rorty的語言學轉向（Linguistic Turn）
+- 數位影像讓視覺不再依附於物質性上
+
+## 後數位攝影
+- Kim Cascone提出過後數位音像美學
+
+## 因機構而死
+- MANS：Media Art Notation System，使用XML作為標準
+
+## AI可以創造藝術嗎
+- Morris Weitz：藝術是一種開放概念
