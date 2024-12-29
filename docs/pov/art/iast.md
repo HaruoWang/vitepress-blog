@@ -29,7 +29,7 @@ head:
 
 # 臺灣獨立藝術空間檔案計劃
 
-<p><Badge type="info" text="🌱 Seedlings" /></P>
+<p><Badge type="info" text="🌳 Evergreen" /></P>
 
 ## 空間作為一種回應
 ### 譚鴻鈞

@@ -127,7 +127,7 @@ head:
 - Nelson Goodman將藝術區分為Autographic和Allographic
 
 ## 媒體藝術蒐藏保存
-- U-matic:VHS對手Betamax的前身
+- U-matic：VHS對手Betamax的前身
 - ada.web：第一個網路藝術策展計畫
 
 ## 自拍風潮與敘事技術

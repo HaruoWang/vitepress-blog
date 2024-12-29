@@ -4,113 +4,15 @@
         <title>Feed Me, Haruo</title>
         <link>https://haruowang.vercel.app</link>
         <description>Digital Garden of Haruo Wang</description>
-        <lastBuildDate>Fri, 13 Dec 2024 05:37:41 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 29 Dec 2024 12:12:39 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <copyright>Copyright © 2024-present Haruo Wang</copyright>
         <item>
-            <title><![CDATA[【TG Mini App：臺股走勢小鏈遊】]]></title>
-            <link>https://haruowang.vercel.app/web3/development/tg.html</link>
-            <guid>https://haruowang.vercel.app/web3/development/tg.html</guid>
-            <pubDate>Fri, 13 Dec 2024 05:11:04 GMT</pubDate>
-            <description><![CDATA[到env裡存api key，並在main.tsx裡引入`<ThirdwebProvider>`。這可說是使用thirdweb開發的基本動作]]></description>
-            <content:encoded><![CDATA[<h1 id="【tg-mini-app-臺股走勢小鏈遊】" tabindex="-1">【TG Mini App：臺股走勢小鏈遊】 <a class="header-anchor" href="#【tg-mini-app-臺股走勢小鏈遊】" aria-label="Permalink to &quot;【TG Mini App：臺股走勢小鏈遊】&quot;"></a></h1>
-<p><Badge type="info" text="🌳 Evergreen" /></P>
-<p><img src="/development/tg1.webp" alt="TW Chart Game｜臺股走勢小鏈遊" loading="lazy"></p>
-<h2 id="前置" tabindex="-1">前置 <a class="header-anchor" href="#前置" aria-label="Permalink to &quot;前置&quot;"></a></h2>
-<p>先pnpm create vite，cd進資料夾，然後add @vkruglikov/react-telegram-web-app。</p>
-<p>因為要讓網頁可以直接在Telegram裡開啟，到index.html加入<code>&lt;script src=&quot;https://telegram.org/js/telegram-web-app.js&quot;&gt;&lt;/script&gt;</code>。</p>
-<p>pnpm run dev之後，5713埠就會正確顯示。接著pnpm i thirdweb，在src資料夾新增一個client.ts。</p>
-<p>到env裡存api key，並在main.tsx裡引入<code>&lt;ThirdwebProvider&gt;</code>。這可說是使用thirdweb開發的基本動作。</p>
-<p>要記得去thirdweb網頁的contracts裡deploy合約喔。</p>
-<h2 id="lightweight" tabindex="-1">Lightweight <a class="header-anchor" href="#lightweight" aria-label="Permalink to &quot;Lightweight&quot;"></a></h2>
-<p>思考這個遊戲要做成什麼樣的時候，剛好打算要實作Lightweight Charts。</p>
-<p>它是TradingView圖表套件的開源免費版，資料自然要自己串證交所API。</p>
-<p>而根據線型讓使用者做出交易決策的應用，則有Chart Game和Trading Train這樣的先例。</p>
-<p>實際操作時有幾段語法比較有印象，簡單列出：</p>
-<ul>
-<li><code>chart.timeScale().fitContent()</code>：可以讓不同時間區段的圖形都符合圖表大小，好用</li>
-<li><code>lastValueVisible: false</code>：隱藏最後一個價格的標籤</li>
-<li><code>priceLineVisible: false</code>：隱藏最後一個價格的的標示線</li>
-</ul>
-<h2 id="子傳父" tabindex="-1">子傳父 <a class="header-anchor" href="#子傳父" aria-label="Permalink to &quot;子傳父&quot;"></a></h2>
-<p>算是開發途中，比起讀教學更能切身體會到React邏輯的一段插曲。</p>
-<p>由於子組件裡showModal的狀態會影響到父組件，遂將<code>const [showModal, setShowModal] = useState(false)</code>移至父組件，再用prop傳下來。類似狀態提升。</p>
-<h2 id="mini-app" tabindex="-1">Mini App <a class="header-anchor" href="#mini-app" aria-label="Permalink to &quot;Mini App&quot;"></a></h2>
-<ol>
-<li>和Telegram機器人BotFather互動</li>
-<li>/start</li>
-<li>/newbot</li>
-<li>命名你的App</li>
-<li>命名你的Bot（某某bot，相當於帳號）</li>
-<li>/newapp</li>
-<li>命名（影響不大）</li>
-<li>提供描述</li>
-<li>上傳圖片（640*360px）</li>
-<li>上傳gif</li>
-<li>BotFather回傳url（t.me/某某bot）</li>
-<li>路徑子名稱（t.me/某某bot/子名稱）</li>
-</ol>
-<h2 id="參考文獻" tabindex="-1">參考文獻 <a class="header-anchor" href="#參考文獻" aria-label="Permalink to &quot;參考文獻&quot;"></a></h2>
-<ul>
-<li><a href="https://blog.thirdweb.com/guides/build-web3-telegram-mini-game" target="_blank" rel="noreferrer">How to Build a Web3 Telegram Mini App</a></li>
-</ul>
-<h2 id="專案連結" tabindex="-1"><a href="https://twchartgame.vercel.app" target="_blank" rel="noreferrer">專案連結</a> <a class="header-anchor" href="#專案連結" aria-label="Permalink to &quot;[專案連結](https://twchartgame.vercel.app)&quot;"></a></h2>
-]]></content:encoded>
-            <enclosure url="https://haruowang.vercel.app/development/tg1.webp" length="0" type="image/webp"/>
-        </item>
-        <item>
-            <title><![CDATA[數位字型學習筆記]]></title>
-            <link>https://haruowang.vercel.app/pov/font/digi.html</link>
-            <guid>https://haruowang.vercel.app/pov/font/digi.html</guid>
-            <pubDate>Fri, 13 Dec 2024 01:02:53 GMT</pubDate>
-            <description><![CDATA[關於OpenType等數位字型技術的知識整理]]></description>
-            <content:encoded><![CDATA[<h1 id="數位字型學習筆記" tabindex="-1">數位字型學習筆記 <a class="header-anchor" href="#數位字型學習筆記" aria-label="Permalink to &quot;數位字型學習筆記&quot;"></a></h1>
-<p><Badge type="info" text="🌱 Seedlings" /></P>
-<h2 id="知識" tabindex="-1">知識 <a class="header-anchor" href="#知識" aria-label="Permalink to &quot;知識&quot;"></a></h2>
-<ul>
-<li>Ikarus字型軟體：使用樣條函數</li>
-<li>Metafont語言：使用三次樣條插值</li>
-<li>Hinting渲染提示：PostScript的突破</li>
-<li>Adobe的T1字型有支援Hinting</li>
-<li>TrueType GX和AAT：後來影響OpenType的Apple規格</li>
-<li>PUA私人使用區：BMP後半部 + Plane 15&amp;16</li>
-<li>utf8mb3：MySQL規格。無法使用emoji，因此有第四代</li>
-<li>CJK A的位置在BMP之前，因為韓文有搬遷過</li>
-<li>Carolingian minuscule：小寫體之祖</li>
-<li>Zalgo：套用很多ccmp</li>
-<li>AFKDO和VOLT都是標記語言</li>
-<li>COLR/CPAL是目前emoji主流技術</li>
-<li>Noto Color Emoji在Safari無法正常顯示，因為用到COLR/CPAL v1</li>
-<li>Plakato：使用COLRv1的經典範例</li>
-<li>臺灣道路體：使用COLR+SVG</li>
-<li>Fitzpatrick Modifier：將六種膚色對應至五種選擇</li>
-<li>ZWJ：零寬連字，用來接合</li>
-</ul>
-<h2 id="特性" tabindex="-1">特性 <a class="header-anchor" href="#特性" aria-label="Permalink to &quot;特性&quot;"></a></h2>
-<ul>
-<li>dlig：可選連字</li>
-<li>hlig：歷史連字</li>
-<li>c2sc：大寫轉小字大寫</li>
-<li>swsh：花飾字</li>
-<li>salt：風格替代字</li>
-<li>calt：上下文替代</li>
-<li>vrt2：豎排，比vert精準</li>
-<li>ccmp：字符組合</li>
-</ul>
-<h2 id="參考文獻" tabindex="-1">參考文獻 <a class="header-anchor" href="#參考文獻" aria-label="Permalink to &quot;參考文獻&quot;"></a></h2>
-<ul>
-<li><a href="https://ithelp.ithome.com.tw/users/20162880/ironman/6994" target="_blank" rel="noreferrer">一起成為新世紀文字藝術師：深入玩轉 Unicode 和 OpenType</a></li>
-</ul>
-<p>作者是justfont字型工程師何青儒，在網路上還有Rutopio和嗜字綠等筆名。</p>
-<p>是位用一篇篇優質文將大家領進數位字型之門的引路人。</p>
-]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[2024的生活]]></title>
             <link>https://haruowang.vercel.app/about/lifelog/2024.html</link>
             <guid>https://haruowang.vercel.app/about/lifelog/2024.html</guid>
-            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
+            <pubDate>Fri, 13 Dec 2024 05:39:24 GMT</pubDate>
             <description><![CDATA[2024年，Haruo Wang的生活要事]]></description>
             <content:encoded><![CDATA[<h1 id="_2024的生活" tabindex="-1">2024的生活 <a class="header-anchor" href="#_2024的生活" aria-label="Permalink to &quot;2024的生活&quot;"></a></h1>
 <p><Badge type="info" text="🌿 Budding" /></P>
@@ -221,13 +123,19 @@
 <li>參與《聲波薩滿》並走訪飛機巷</li>
 </ul>
 <h2 id="dec" tabindex="-1">Dec <a class="header-anchor" href="#dec" aria-label="Permalink to &quot;Dec&quot;"></a></h2>
+<ul>
+<li>完成TG Mini App臺股走勢小鏈遊</li>
+<li>完成《花開藝文誌》森人號設計</li>
+<li>製作起司蛋糕、麻油雞飯</li>
+<li>準備並入營服軍事訓練役</li>
+</ul>
 ]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[那些我曾經歷的挫敗]]></title>
             <link>https://haruowang.vercel.app/about/lifelog/failure.html</link>
             <guid>https://haruowang.vercel.app/about/lifelog/failure.html</guid>
-            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
+            <pubDate>Fri, 13 Dec 2024 05:39:24 GMT</pubDate>
             <description><![CDATA[2024年開始，Haruo Wang的失敗整理]]></description>
             <content:encoded><![CDATA[<h1 id="那些我曾經歷的挫敗" tabindex="-1">那些我曾經歷的挫敗 <a class="header-anchor" href="#那些我曾經歷的挫敗" aria-label="Permalink to &quot;那些我曾經歷的挫敗&quot;"></a></h1>
 <p><Badge type="info" text="🌿 Budding" /></P>
@@ -244,6 +152,7 @@
 <li>自架RSSHub到Cloudflare，但是不能關機</li>
 <li>護照規費補繳</li>
 <li>移動停利單沒刪乾淨</li>
+<li>《iThome鐵人賽》落選一次</li>
 </ul>
 ]]></content:encoded>
         </item>
@@ -251,7 +160,7 @@
             <title><![CDATA[2024的品味]]></title>
             <link>https://haruowang.vercel.app/about/taste/2024.html</link>
             <guid>https://haruowang.vercel.app/about/taste/2024.html</guid>
-            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
+            <pubDate>Fri, 13 Dec 2024 05:39:24 GMT</pubDate>
             <description><![CDATA[2024年，Haruo Wang的音樂、影像、閱讀品味]]></description>
             <content:encoded><![CDATA[<h1 id="_2024的品味" tabindex="-1">2024的品味 <a class="header-anchor" href="#_2024的品味" aria-label="Permalink to &quot;2024的品味&quot;"></a></h1>
 <p><Badge type="info" text="🌿 Budding" /></P>
@@ -333,6 +242,527 @@
 <h3 id="what-i-read-10" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-10" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
 <p>《設計·Design·デザイン》、《馴羊記》、《Play．紙標本》、《小說生活》</p>
 <h2 id="dec" tabindex="-1">Dec <a class="header-anchor" href="#dec" aria-label="Permalink to &quot;Dec&quot;"></a></h2>
+<h3 id="what-i-hear-11" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-11" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
+<p>山田豐《Mvt.11 &quot;Memories&quot;》、遠藤ナオキ《Flavors》、Cory Wong《Starship Syncopation》、紙鳶《都是媽逼的》、白百《我不是完美小孩》、Homecomings《Moon Shaped》、The Fearless Flyers《Blue Angels》、陳奕迅《給你》、菊地成孔《ただ泣くだけ〜Oh god, I'm alone〜》、Daniel Pemberton《Spider-Woman (Gwen Stacy)》、常田大希《祝祭》、ALI、The Crane《NEON》、方大同《沒啥好說》、柯智棠《My Nova》、西川貴教《天叢雲劍-SKYBREAKER-》、坂本龍一《SILK Endroll》、Ólafur Arnalds《Hægt, Kemur Ljósið》、艾怡良《那時有你》、Hello Nico《花》、ACIDMAN《sonet》、回聲樂團《Silent Night In Shinjuku》、南西肯恩《大海》、福島章嗣《May You Stay Forever Young》、The Biscats《あなたへ》、冬野ユミ《光の扉》、冬野ユミ《Estate-夏の日》</p>
+<h3 id="what-i-see-11" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-11" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
+<p>《12.12：首爾之春》、《喜劇之王》、《蜘蛛人：新宇宙》、《蜘蛛人：穿越新宇宙》、《膽大黨》、《一部未完成的電影》、《東離劍遊紀4》、《少年》、《里斯本的故事》</p>
+<h3 id="what-i-read-11" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-11" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
+<p>《花開藝文誌：森人號》</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[【松學校導讀：重點筆記】]]></title>
+            <link>https://haruowang.vercel.app/pov/art/arthon.html</link>
+            <guid>https://haruowang.vercel.app/pov/art/arthon.html</guid>
+            <pubDate>Fri, 13 Dec 2024 05:39:24 GMT</pubDate>
+            <description><![CDATA[觀看數位藝術基金會《松學校導讀》之摘要整理]]></description>
+            <content:encoded><![CDATA[<h1 id="【松學校導讀-重點筆記】" tabindex="-1">【松學校導讀：重點筆記】 <a class="header-anchor" href="#【松學校導讀-重點筆記】" aria-label="Permalink to &quot;【松學校導讀：重點筆記】&quot;"></a></h1>
+<p><Badge type="info" text="🌱 Seedlings" /></P>
+<h2 id="旁觀他人之痛苦" tabindex="-1">旁觀他人之痛苦 <a class="header-anchor" href="#旁觀他人之痛苦" aria-label="Permalink to &quot;旁觀他人之痛苦&quot;"></a></h2>
+<ul>
+<li>克里米亞戰爭：佚名的全景攝影</li>
+<li>西班牙內戰：萊卡相機發明</li>
+<li>二戰結束：攝影成為認知現實的主要媒介</li>
+<li>越戰：戰爭影像成為日常奇觀</li>
+<li>Roger Fenton與Felice Beato皆有編導特色</li>
+<li>Sontag認同Jeff Wall的《亡軍對話》</li>
+</ul>
+<h2 id="洪席耶美感論" tabindex="-1">洪席耶美感論 <a class="header-anchor" href="#洪席耶美感論" aria-label="Permalink to &quot;洪席耶美感論&quot;"></a></h2>
+<ul>
+<li>藝術起源於18世紀階層社會的動搖</li>
+<li>藝術的現代性：藝術和日常審美間，邊界的推移</li>
+<li>14個場景都是感性的共同體</li>
+<li>先感知革命再社會革命</li>
+</ul>
+<h2 id="資料庫美學" tabindex="-1">資料庫美學 <a class="header-anchor" href="#資料庫美學" aria-label="Permalink to &quot;資料庫美學&quot;"></a></h2>
+<ul>
+<li>Bradford Paley曾創作《TextArc》</li>
+<li>Manovich認為遊戲並非資料庫，而是演算法邏輯</li>
+<li>資料庫反轉符號學，將歷時性和共時性的明確／隱晦關係顛倒</li>
+<li>Rosalind Krauss認為錄像是自戀的媒體</li>
+<li>資料庫電影創作者：Greenaway、Vertov</li>
+</ul>
+<h2 id="賦予形體的chimera" tabindex="-1">賦予形體的Chimera <a class="header-anchor" href="#賦予形體的chimera" aria-label="Permalink to &quot;賦予形體的Chimera&quot;"></a></h2>
+<ul>
+<li>根據Jean-Louis Fischer研究，Teratology一詞在1830年後出現</li>
+<li>Max Marcuzzi稱「怪物學是最寬廣的生物學」</li>
+</ul>
+<h2 id="改變邏輯的機器" tabindex="-1">改變邏輯的機器 <a class="header-anchor" href="#改變邏輯的機器" aria-label="Permalink to &quot;改變邏輯的機器&quot;"></a></h2>
+<ul>
+<li>50年代末期，Frank Rosenblatt發明感知機（Mark I Perceptron）</li>
+<li>兩大AI：符號主義（Symbolic）、聯結主義（Connectionist）</li>
+<li>DNN的三層：輸入層、隱藏層、輸出層</li>
+<li>Charles Peirce的三種推論：演繹、歸納、溯因</li>
+<li>Matteo Pasquinelli認為AI有「弱溯因」能力</li>
+<li>隱喻才是「強溯因」，Eco稱「沒有演算法是為了隱喻存在」</li>
+</ul>
+<h2 id="殘酷劇場與再現的關閉" tabindex="-1">殘酷劇場與再現的關閉 <a class="header-anchor" href="#殘酷劇場與再現的關閉" aria-label="Permalink to &quot;殘酷劇場與再現的關閉&quot;"></a></h2>
+<ul>
+<li>浪漫主義否定劇場的想像，在意空缺和死亡</li>
+<li>殘酷劇場在意「生命自身」，而非再現</li>
+<li>Artaud想回到戲劇的原初狀態，破除文字性，回歸感官性</li>
+<li>殘酷劇場可以發生在每一個當下，是積極的遺忘</li>
+</ul>
+<h2 id="缺席的美學" tabindex="-1">缺席的美學 <a class="header-anchor" href="#缺席的美學" aria-label="Permalink to &quot;缺席的美學&quot;"></a></h2>
+<ul>
+<li>堆（the pile）：911廢墟中的物件</li>
+<li>911博物館沒有重建雙子星，只是用水池留下足跡（the footprints）</li>
+<li>「藝術提出一個問題，設計提供一個答案」</li>
+</ul>
+<h2 id="可變、不變、微變" tabindex="-1">可變、不變、微變 <a class="header-anchor" href="#可變、不變、微變" aria-label="Permalink to &quot;可變、不變、微變&quot;"></a></h2>
+<ul>
+<li>「複製」的演變</li>
+<li>文藝復興後，建築才有複本，設計者才獨立出來</li>
+<li>數位表現主義案例：畢爾包美術館</li>
+</ul>
+<h2 id="rfid" tabindex="-1">RFID <a class="header-anchor" href="#rfid" aria-label="Permalink to &quot;RFID&quot;"></a></h2>
+<ul>
+<li>最初應用在蘇聯對美國大使館的監控</li>
+<li>Katherine Hayles認為科技物也有它的認知過程</li>
+</ul>
+<h2 id="後設博物館" tabindex="-1">後設博物館 <a class="header-anchor" href="#後設博物館" aria-label="Permalink to &quot;後設博物館&quot;"></a></h2>
+<ul>
+<li>BYOD：自攜設備</li>
+<li>來自「由下而上」的生態博物館</li>
+</ul>
+<h2 id="認知組裝體" tabindex="-1">認知組裝體 <a class="header-anchor" href="#認知組裝體" aria-label="Permalink to &quot;認知組裝體&quot;"></a></h2>
+<ul>
+<li>ATSAC：洛杉磯自動交通監控系統</li>
+<li>Viv：由Siri開發者打造，曾是Siri頭號對手</li>
+<li>Sociometer：MIT開發的穿戴式感知裝置，能探知社交時的誠實訊號</li>
+</ul>
+<h2 id="資料在地化" tabindex="-1">資料在地化 <a class="header-anchor" href="#資料在地化" aria-label="Permalink to &quot;資料在地化&quot;"></a></h2>
+<ul>
+<li>datum：基準點</li>
+<li>immutable mobile：不可變的可移動體，由Latour提出。「現象或物件被轉譯到不同脈絡中，在抽象化過程，轉變了存在方式的物件、現象等，以此不同脈絡中的事物，可以匯集在一起並被運算。」</li>
+<li>situated：ANT領域常用，類似local</li>
+<li>local不一定規模較小，而要和global相對來看</li>
+</ul>
+<h2 id="新媒體與社會記憶" tabindex="-1">新媒體與社會記憶 <a class="header-anchor" href="#新媒體與社會記憶" aria-label="Permalink to &quot;新媒體與社會記憶&quot;"></a></h2>
+<ul>
+<li>社會記憶有正規和非正規</li>
+<li>皮克斯認為比起DCP，可編輯檔案的保存價值更高</li>
+</ul>
+<h2 id="談ar實境之敘事" tabindex="-1">談AR實境之敘事 <a class="header-anchor" href="#談ar實境之敘事" aria-label="Permalink to &quot;談AR實境之敘事&quot;"></a></h2>
+<ul>
+<li>Epic Wandering：開放式空間體驗</li>
+<li>MoMAR：旨在透過AR使展覽民主化，致敬MoMA</li>
+</ul>
+<h2 id="the-image-of-objectivity" tabindex="-1">The Image of Objectivity <a class="header-anchor" href="#the-image-of-objectivity" aria-label="Permalink to &quot;The Image of Objectivity&quot;"></a></h2>
+<ul>
+<li>客觀性在19世紀誕生</li>
+</ul>
+<h2 id="論象徵性的物質性" tabindex="-1">論象徵性的物質性 <a class="header-anchor" href="#論象徵性的物質性" aria-label="Permalink to &quot;論象徵性的物質性&quot;"></a></h2>
+<ul>
+<li>文化技術可以製造差異</li>
+<li>海德格認為自動門是某種納粹的起源，讓人不會留心他人</li>
+</ul>
+<h2 id="談虛擬技術的空間介面性" tabindex="-1">談虛擬技術的空間介面性 <a class="header-anchor" href="#談虛擬技術的空間介面性" aria-label="Permalink to &quot;談虛擬技術的空間介面性&quot;"></a></h2>
+<ul>
+<li>Matterport：全景應用</li>
+<li>DIKW：資訊、訊息、知識、智慧</li>
+</ul>
+<h2 id="大社會資訊的承諾與挑戰" tabindex="-1">大社會資訊的承諾與挑戰 <a class="header-anchor" href="#大社會資訊的承諾與挑戰" aria-label="Permalink to &quot;大社會資訊的承諾與挑戰&quot;"></a></h2>
+<ul>
+<li>Social Computing：社會運算（挖掘真實）</li>
+<li>三種資料階級：創造者、收集者、運用者</li>
+</ul>
+<h2 id="時基媒體" tabindex="-1">時基媒體 <a class="header-anchor" href="#時基媒體" aria-label="Permalink to &quot;時基媒體&quot;"></a></h2>
+<ul>
+<li>1994，奈良真實性文件。修正1964的威尼斯憲章，更注重場所精神</li>
+<li>Nelson Goodman將藝術區分為Autographic和Allographic</li>
+</ul>
+<h2 id="媒體藝術蒐藏保存" tabindex="-1">媒體藝術蒐藏保存 <a class="header-anchor" href="#媒體藝術蒐藏保存" aria-label="Permalink to &quot;媒體藝術蒐藏保存&quot;"></a></h2>
+<ul>
+<li>U-matic：VHS對手Betamax的前身</li>
+<li>ada.web：第一個網路藝術策展計畫</li>
+</ul>
+<h2 id="自拍風潮與敘事技術" tabindex="-1">自拍風潮與敘事技術 <a class="header-anchor" href="#自拍風潮與敘事技術" aria-label="Permalink to &quot;自拍風潮與敘事技術&quot;"></a></h2>
+<ul>
+<li>記憶減損：沒有目標的拍照無助於記憶</li>
+</ul>
+<h2 id="這裡沒有影像" tabindex="-1">這裡沒有影像 <a class="header-anchor" href="#這裡沒有影像" aria-label="Permalink to &quot;這裡沒有影像&quot;"></a></h2>
+<ul>
+<li>圖像轉向：Pictorial Turn，由W. J. T. Mitchell所提出。源自Rorty的語言學轉向（Linguistic Turn）</li>
+<li>數位影像讓視覺不再依附於物質性上</li>
+</ul>
+<h2 id="後數位攝影" tabindex="-1">後數位攝影 <a class="header-anchor" href="#後數位攝影" aria-label="Permalink to &quot;後數位攝影&quot;"></a></h2>
+<ul>
+<li>Kim Cascone提出過後數位音像美學</li>
+</ul>
+<h2 id="因機構而死" tabindex="-1">因機構而死 <a class="header-anchor" href="#因機構而死" aria-label="Permalink to &quot;因機構而死&quot;"></a></h2>
+<ul>
+<li>MANS：Media Art Notation System，使用XML作為標準</li>
+</ul>
+<h2 id="ai可以創造藝術嗎" tabindex="-1">AI可以創造藝術嗎 <a class="header-anchor" href="#ai可以創造藝術嗎" aria-label="Permalink to &quot;AI可以創造藝術嗎&quot;"></a></h2>
+<ul>
+<li>Morris Weitz：藝術是一種開放概念</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[數位字型學習筆記]]></title>
+            <link>https://haruowang.vercel.app/pov/font/digi.html</link>
+            <guid>https://haruowang.vercel.app/pov/font/digi.html</guid>
+            <pubDate>Fri, 13 Dec 2024 05:39:24 GMT</pubDate>
+            <description><![CDATA[關於OpenType等數位字型技術的知識整理]]></description>
+            <content:encoded><![CDATA[<h1 id="數位字型學習筆記" tabindex="-1">數位字型學習筆記 <a class="header-anchor" href="#數位字型學習筆記" aria-label="Permalink to &quot;數位字型學習筆記&quot;"></a></h1>
+<p><Badge type="info" text="🌱 Seedlings" /></P>
+<h2 id="知識" tabindex="-1">知識 <a class="header-anchor" href="#知識" aria-label="Permalink to &quot;知識&quot;"></a></h2>
+<ul>
+<li>Ikarus字型軟體：使用樣條函數</li>
+<li>Metafont語言：使用三次樣條插值</li>
+<li>Hinting渲染提示：PostScript的突破</li>
+<li>Adobe的T1字型有支援Hinting</li>
+<li>TrueType GX和AAT：後來影響OpenType的Apple規格</li>
+<li>PUA私人使用區：BMP後半部 + Plane 15&amp;16</li>
+<li>utf8mb3：MySQL規格。無法使用emoji，因此有第四代</li>
+<li>CJK A的位置在BMP之前，因為韓文有搬遷過</li>
+<li>Carolingian minuscule：小寫體之祖</li>
+<li>Zalgo：套用很多ccmp</li>
+<li>AFKDO和VOLT都是標記語言</li>
+<li>COLR/CPAL是目前emoji主流技術</li>
+<li>Noto Color Emoji在Safari無法正常顯示，因為用到COLR/CPAL v1</li>
+<li>Plakato：使用COLRv1的經典範例</li>
+<li>臺灣道路體：使用COLR+SVG</li>
+<li>Fitzpatrick Modifier：將六種膚色對應至五種選擇</li>
+<li>ZWJ：零寬連字，用來接合</li>
+</ul>
+<h2 id="特性" tabindex="-1">特性 <a class="header-anchor" href="#特性" aria-label="Permalink to &quot;特性&quot;"></a></h2>
+<ul>
+<li>dlig：可選連字</li>
+<li>hlig：歷史連字</li>
+<li>c2sc：大寫轉小字大寫</li>
+<li>swsh：花飾字</li>
+<li>salt：風格替代字</li>
+<li>calt：上下文替代</li>
+<li>vrt2：豎排，比vert精準</li>
+<li>ccmp：字符組合</li>
+</ul>
+<h2 id="參考文獻" tabindex="-1">參考文獻 <a class="header-anchor" href="#參考文獻" aria-label="Permalink to &quot;參考文獻&quot;"></a></h2>
+<ul>
+<li><a href="https://ithelp.ithome.com.tw/users/20162880/ironman/6994" target="_blank" rel="noreferrer">一起成為新世紀文字藝術師：深入玩轉 Unicode 和 OpenType</a></li>
+</ul>
+<p>作者是justfont字型工程師何青儒，在網路上還有Rutopio和嗜字綠等筆名。</p>
+<p>是位用一篇篇優質文將大家領進數位字型之門的引路人。</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[【The Type：字型知識補帖】]]></title>
+            <link>https://haruowang.vercel.app/pov/font/the-type.html</link>
+            <guid>https://haruowang.vercel.app/pov/font/the-type.html</guid>
+            <pubDate>Fri, 13 Dec 2024 05:39:24 GMT</pubDate>
+            <description><![CDATA[Podcast《字談字暢》的重點筆記]]></description>
+            <content:encoded><![CDATA[<h1 id="【the-type-字型知識補帖】" tabindex="-1">【The Type：字型知識補帖】 <a class="header-anchor" href="#【the-type-字型知識補帖】" aria-label="Permalink to &quot;【The Type：字型知識補帖】&quot;"></a></h1>
+<p><Badge type="info" text="🌱 Seedlings" /></P>
+<h2 id="大家都不容易" tabindex="-1">大家都不容易 <a class="header-anchor" href="#大家都不容易" aria-label="Permalink to &quot;大家都不容易&quot;"></a></h2>
+<ul>
+<li>方正蠻常做「多文種」</li>
+<li>方正的排版軟體叫飛翔</li>
+<li>雷丁的字體碩士要做拉丁+另一語種</li>
+<li>mark：mark to base</li>
+<li>mkmk：mark to mark</li>
+<li>mark和mkmk與阿拉伯文的連音符有關</li>
+<li>維哈柯：維吾爾、哈薩克、柯爾克孜</li>
+<li>維哈柯文類似阿拉伯文</li>
+<li>Borna和Toshi皆擅長多文種</li>
+<li>Nastaliq：波斯體／懸體，基線是斜的</li>
+<li>Ruqʿah：同屬阿拉伯六大書體，也是斜的</li>
+<li>Toshi設計的Klaket便是採用Ruqʿah風格</li>
+<li>Adobe-Japan1：統整外字規格</li>
+<li>一般日文字型會做到Adobe-Japan1-3</li>
+<li>方正蘭亭黑Pro Global：方正第一款全球字庫</li>
+</ul>
+<h2 id="多文種就在您身邊" tabindex="-1">多文種就在您身邊 <a class="header-anchor" href="#多文種就在您身邊" aria-label="Permalink to &quot;多文種就在您身邊&quot;"></a></h2>
+<ul>
+<li>戰國棟：TypeMeet大連的統籌兼主持人</li>
+<li>厲致謙：3type創始人，設計Meiloi Sans</li>
+<li>由小林章監製，蒙納的翔鶴黑體被Eric推薦</li>
+<li>滿文和傳統蒙文要豎排，藏文要橫排</li>
+</ul>
+<h2 id="在第九年看二十年" tabindex="-1">在第九年看二十年 <a class="header-anchor" href="#在第九年看二十年" aria-label="Permalink to &quot;在第九年看二十年&quot;"></a></h2>
+<ul>
+<li>Unicode 16.0已在9月發布，新增很多聖書體，只增加8款表情</li>
+<li>UAX：Unicode標準附件</li>
+<li>文字情報基盤：使用電子経済産業省推進費推動的資料庫</li>
+<li>今田欣一：金陵設計者</li>
+<li>薛天盟：錦華明朝設計者，茉莉字型創辦人之一</li>
+<li>華文黑體：蘋方前的Mac預設字型。後者是威鋒所開發</li>
+</ul>
+<h2 id="三榜定案修改單" tabindex="-1">三榜定案修改單 <a class="header-anchor" href="#三榜定案修改單" aria-label="Permalink to &quot;三榜定案修改單&quot;"></a></h2>
+<ul>
+<li>Monotype：自動鑄排機</li>
+<li>GB 18030-2022：中國最新的中文編碼字符集，2024年10月首次修改</li>
+<li>更新快慢：通常是Unicode &gt; ISO/IEC &gt; GB，但中方在2022先動作，自行使用了以0A為首的Plane 10</li>
+<li>CJK I：2023年9月，IRG將「公安人口信息專用字庫補充漢字」收錄於此，解決Plane 10問題</li>
+<li>Unification Rule：表意文字認同原則，相對於字集分離收錄規則</li>
+<li>Simsun-ExtG：Win11的新簡體字型</li>
+</ul>
+<h2 id="別頭痛醫頭腳痛醫腳" tabindex="-1">別頭痛醫頭腳痛醫腳 <a class="header-anchor" href="#別頭痛醫頭腳痛醫腳" aria-label="Permalink to &quot;別頭痛醫頭腳痛醫腳&quot;"></a></h2>
+<ul>
+<li>ID2025有支援MathML，但目前它的SVG轉成CMYK會有問題</li>
+<li>孤行：widow/orphan；孤字：runt</li>
+<li>中文排版不常討論river</li>
+</ul>
+<h2 id="分分合合的攝氏度" tabindex="-1">分分合合的攝氏度 <a class="header-anchor" href="#分分合合的攝氏度" aria-label="Permalink to &quot;分分合合的攝氏度&quot;"></a></h2>
+<ul>
+<li>鐵宋是柯熾堅老師的收官之作，搭配無襯線英文</li>
+<li>宋七體：源於徐學成老師為毛澤東著作設計的字體</li>
+<li>Canonical：標準等價，在分解映射時有長度限制</li>
+<li>Compatibility：相容等價，在分解映射時沒有長度限制</li>
+<li>西方認為°C是分開的，東亞認為°C是一體的</li>
+</ul>
+<h2 id="百年照排光與影" tabindex="-1">百年照排光與影 <a class="header-anchor" href="#百年照排光與影" aria-label="Permalink to &quot;百年照排光與影&quot;"></a></h2>
+<ul>
+<li>照排專利申請日：1924/7/24</li>
+<li>照排的兩位發明者分別是森澤和寫研的創始人</li>
+<li>據說中國在1935年製造過華文照排機</li>
+<li>照排單位：級（Q）和齒（H），都是0.25mm（中國則寫成K和Y）</li>
+<li>「告別鉛與火，走向光與電」：出自完成748工程的王選院士</li>
+<li>C字體：最早的向量日文字，1983年由寫研出品</li>
+</ul>
+<h2 id="不得不說的秘密" tabindex="-1">不得不說的秘密 <a class="header-anchor" href="#不得不說的秘密" aria-label="Permalink to &quot;不得不說的秘密&quot;"></a></h2>
+<ul>
+<li>Mike Abbink：IBM創意總監</li>
+<li>Plex比Helvetica（新怪誕體）更貼近怪誕體</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[【TG Mini App：臺股走勢小鏈遊】]]></title>
+            <link>https://haruowang.vercel.app/web3/development/tg.html</link>
+            <guid>https://haruowang.vercel.app/web3/development/tg.html</guid>
+            <pubDate>Fri, 13 Dec 2024 05:39:24 GMT</pubDate>
+            <description><![CDATA[到env裡存api key，並在main.tsx裡引入`<ThirdwebProvider>`。這可說是使用thirdweb開發的基本動作]]></description>
+            <content:encoded><![CDATA[<h1 id="【tg-mini-app-臺股走勢小鏈遊】" tabindex="-1">【TG Mini App：臺股走勢小鏈遊】 <a class="header-anchor" href="#【tg-mini-app-臺股走勢小鏈遊】" aria-label="Permalink to &quot;【TG Mini App：臺股走勢小鏈遊】&quot;"></a></h1>
+<p><Badge type="info" text="🌳 Evergreen" /></P>
+<p><img src="/development/tg1.webp" alt="TW Chart Game｜臺股走勢小鏈遊" loading="lazy"></p>
+<h2 id="前置" tabindex="-1">前置 <a class="header-anchor" href="#前置" aria-label="Permalink to &quot;前置&quot;"></a></h2>
+<p>先pnpm create vite，cd進資料夾，然後add @vkruglikov/react-telegram-web-app。</p>
+<p>因為要讓網頁可以直接在Telegram裡開啟，到index.html加入<code>&lt;script src=&quot;https://telegram.org/js/telegram-web-app.js&quot;&gt;&lt;/script&gt;</code>。</p>
+<p>pnpm run dev之後，5713埠就會正確顯示。接著pnpm i thirdweb，在src資料夾新增一個client.ts。</p>
+<p>到env裡存api key，並在main.tsx裡引入<code>&lt;ThirdwebProvider&gt;</code>。這可說是使用thirdweb開發的基本動作。</p>
+<p>要記得去thirdweb網頁的contracts裡deploy合約喔。</p>
+<h2 id="lightweight" tabindex="-1">Lightweight <a class="header-anchor" href="#lightweight" aria-label="Permalink to &quot;Lightweight&quot;"></a></h2>
+<p>思考這個遊戲要做成什麼樣的時候，剛好打算要實作Lightweight Charts。</p>
+<p>它是TradingView圖表套件的開源免費版，資料自然要自己串證交所API。</p>
+<p>而根據線型讓使用者做出交易決策的應用，則有Chart Game和Trading Train這樣的先例。</p>
+<p>實際操作時有幾段語法比較有印象，簡單列出：</p>
+<ul>
+<li><code>chart.timeScale().fitContent()</code>：可以讓不同時間區段的圖形都符合圖表大小，好用</li>
+<li><code>lastValueVisible: false</code>：隱藏最後一個價格的標籤</li>
+<li><code>priceLineVisible: false</code>：隱藏最後一個價格的的標示線</li>
+</ul>
+<h2 id="子傳父" tabindex="-1">子傳父 <a class="header-anchor" href="#子傳父" aria-label="Permalink to &quot;子傳父&quot;"></a></h2>
+<p>算是開發途中，比起讀教學更能切身體會到React邏輯的一段插曲。</p>
+<p>由於子組件裡showModal的狀態會影響到父組件，遂將<code>const [showModal, setShowModal] = useState(false)</code>移至父組件，再用prop傳下來。類似狀態提升。</p>
+<h2 id="mini-app" tabindex="-1">Mini App <a class="header-anchor" href="#mini-app" aria-label="Permalink to &quot;Mini App&quot;"></a></h2>
+<ol>
+<li>和Telegram機器人BotFather互動</li>
+<li>/start</li>
+<li>/newbot</li>
+<li>命名你的App</li>
+<li>命名你的Bot（某某bot，相當於帳號）</li>
+<li>/newapp</li>
+<li>命名（影響不大）</li>
+<li>提供描述</li>
+<li>上傳圖片（640*360px）</li>
+<li>上傳gif</li>
+<li>BotFather回傳url（t.me/某某bot）</li>
+<li>路徑子名稱（t.me/某某bot/子名稱）</li>
+</ol>
+<h2 id="參考文獻" tabindex="-1">參考文獻 <a class="header-anchor" href="#參考文獻" aria-label="Permalink to &quot;參考文獻&quot;"></a></h2>
+<ul>
+<li><a href="https://blog.thirdweb.com/guides/build-web3-telegram-mini-game" target="_blank" rel="noreferrer">How to Build a Web3 Telegram Mini App</a></li>
+</ul>
+<h2 id="專案連結" tabindex="-1"><a href="https://twchartgame.vercel.app" target="_blank" rel="noreferrer">專案連結</a> <a class="header-anchor" href="#專案連結" aria-label="Permalink to &quot;[專案連結](https://twchartgame.vercel.app)&quot;"></a></h2>
+]]></content:encoded>
+            <enclosure url="https://haruowang.vercel.app/development/tg1.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[Web3知識庫]]></title>
+            <link>https://haruowang.vercel.app/web3/knowledge/web3.html</link>
+            <guid>https://haruowang.vercel.app/web3/knowledge/web3.html</guid>
+            <pubDate>Fri, 13 Dec 2024 05:39:24 GMT</pubDate>
+            <description><![CDATA[Haruo Wang的Web3關鍵字整理]]></description>
+            <content:encoded><![CDATA[<h1 id="web3知識庫" tabindex="-1">Web3知識庫 <a class="header-anchor" href="#web3知識庫" aria-label="Permalink to &quot;Web3知識庫&quot;"></a></h1>
+<p><Badge type="info" text="🌿 Budding" /></P>
+<h2 id="og" tabindex="-1">OG <a class="header-anchor" href="#og" aria-label="Permalink to &quot;OG&quot;"></a></h2>
+<ul>
+<li>Timothy May：起草《加密無政府主義者宣言》</li>
+<li>Nick Szabo：智能合約之父</li>
+<li>Roger Ver：比特幣耶穌</li>
+<li>Gavin Wood：以太坊創立者</li>
+<li>Craig Wright：澳本聰</li>
+<li>Ulbricht：「絲路」管理員DPR</li>
+<li>Amir Taaki：革命家</li>
+<li>Glen Weyl：《激進市場》作者</li>
+</ul>
+<h2 id="重要單位" tabindex="-1">重要單位 <a class="header-anchor" href="#重要單位" aria-label="Permalink to &quot;重要單位&quot;"></a></h2>
+<ul>
+<li>MakerDao：使用DAI+MKR。ETH鏈的借貸平台</li>
+<li>MakerDao的勁敵有Aave和Compound</li>
+<li>Uniswap：使用UNI。ETH鏈的DEX</li>
+<li>Osmosis：使用OSMO。Cosmos鏈的DEX</li>
+<li>Aragon：使用ANT。解散了</li>
+<li>Terra：使用UST。脫鉤了</li>
+<li>Art blocks：ETH鏈的創作平台</li>
+<li>fxhash 2.0也會支援ETH鏈</li>
+<li>Arweave：去中心化儲存服務</li>
+<li>KlimaDAO：把碳權代幣化</li>
+<li>BCH：比特幣現金，由耶穌領導，使用鏈上擴展</li>
+<li>ETC：以太坊經典，The DAO事件後硬分叉的產物</li>
+<li>SAT：比特幣最小單位，10的-8次方顆</li>
+<li>Avalanche：雪崩鏈。由三條公鏈組成</li>
+<li>Polkadot：波卡鏈。類似Cosmos，比常見的L1還底層</li>
+<li>名幣：採用域名發行</li>
+<li>萊特幣：基於比特幣建立，區塊時間更快</li>
+<li>維卡幣：龐氏騙局</li>
+</ul>
+<h2 id="重要歷史" tabindex="-1">重要歷史 <a class="header-anchor" href="#重要歷史" aria-label="Permalink to &quot;重要歷史&quot;"></a></h2>
+<ul>
+<li>創世區塊：2009年1月4日</li>
+<li>加密寒冬：2018年</li>
+<li>2021年3月，HEN上線，11月關閉。後被TEIA取代</li>
+</ul>
+<h2 id="重要觀念" tabindex="-1">重要觀念 <a class="header-anchor" href="#重要觀念" aria-label="Permalink to &quot;重要觀念&quot;"></a></h2>
+<h3 id="兩種礦池" tabindex="-1">兩種礦池 <a class="header-anchor" href="#兩種礦池" aria-label="Permalink to &quot;兩種礦池&quot;"></a></h3>
+<ul>
+<li>一池：白嫖池，單幣挖礦</li>
+<li>二池：LP，流動性挖礦</li>
+</ul>
+<h3 id="三種穩定幣" tabindex="-1">三種穩定幣 <a class="header-anchor" href="#三種穩定幣" aria-label="Permalink to &quot;三種穩定幣&quot;"></a></h3>
+<ul>
+<li>法幣儲備：USDT</li>
+<li>超額抵押：DAI</li>
+<li>演算法：UST</li>
+</ul>
+<h3 id="三種代幣發行" tabindex="-1">三種代幣發行 <a class="header-anchor" href="#三種代幣發行" aria-label="Permalink to &quot;三種代幣發行&quot;"></a></h3>
+<ul>
+<li>ICO：首次代幣發行（最大的ICO是EOS）</li>
+<li>STO：證券型代幣發行（要通過豪威測試）</li>
+<li>IEO：首次交易發行</li>
+</ul>
+<h3 id="各種帳戶" tabindex="-1">各種帳戶 <a class="header-anchor" href="#各種帳戶" aria-label="Permalink to &quot;各種帳戶&quot;"></a></h3>
+<ul>
+<li>EOA：外部帳戶。如小狐狸</li>
+<li>CA：合約帳戶。沒私鑰的智能合約</li>
+<li>MPC：多方運算。安全性高的過渡選擇，但V神不愛</li>
+<li>SCW：智能合約錢包。基於AA，其中ERC-4337最有前景</li>
+</ul>
+<h3 id="其他" tabindex="-1">其他 <a class="header-anchor" href="#其他" aria-label="Permalink to &quot;其他&quot;"></a></h3>
+<ul>
+<li>AML：防制洗錢</li>
+<li>AMM：自動造市商，常被DEX所用</li>
+<li>ATH：歷史新高</li>
+<li>BFT：拜占庭容錯。採用共識算法解決，如PoA，DPoS</li>
+<li>COST：共同所有權自評稅制。改良版平均地權，有哈柏格稅</li>
+<li>FUD：錯誤報導</li>
+<li>GM：早安</li>
+<li>hodl：長期持有</li>
+<li>LFG：媽的衝啊</li>
+<li>NFT Flipper：和Holder相對</li>
+<li>POAP：出席證明協議</li>
+<li>Rug Pull：跑路</li>
+<li>SBT：靈魂綁定代幣</li>
+<li>SPOF：單點故障</li>
+<li>Sybil Attack：多重身分攻擊</li>
+<li>Uptober：比特幣常在十月漲</li>
+<li>UXA：藝術的使用者體驗</li>
+<li>WAGMI：咱們都能做到</li>
+<li>薩博定律：相信協議不該更動</li>
+<li>圖靈完備：憑藉某幾行指令就可以解決所有可計算問題</li>
+<li>奧地利學派：認為貨幣「自身」應有價值。以海耶克為首，和凱因斯是對頭</li>
+</ul>
+<h2 id="零時小筆記" tabindex="-1">零時小筆記 <a class="header-anchor" href="#零時小筆記" aria-label="Permalink to &quot;零時小筆記&quot;"></a></h2>
+<ul>
+<li>Hypercerts：超證／影響力證書，可以讓企業認購</li>
+<li>Hypercerts採用ERC-1155</li>
+<li>x-risk的觀點：認為AI最危險</li>
+<li>VWH脆弱世界假設：可能抽到黑球，如簡單核武</li>
+<li>SBF：加密貨幣之王，FTX創辦人</li>
+<li>mechanism design：從結果發想規則</li>
+<li>Roko's Basilisk：關於AI的思想實驗</li>
+<li>Pascal's Wager：不信神比信神危險</li>
+<li>CEV連貫推斷意志：關於人類想讓AI做什麼</li>
+<li>PFS為成功付費：如SIB社會影響力債券</li>
+<li>Bitmark和Casey Reas建過Feral File</li>
+<li>Project Together：先發糧再募款</li>
+<li>OP鏈的RetroPGF贊助計畫也是類似概念</li>
+<li>半同質化代幣：ERC-3525和ERC-1155</li>
+<li>SFT比 FT 更客製化，比 NFT 更高效</li>
+<li>Mt. Gox：位處東京，2014被駭的門頭溝交易所</li>
+<li>Tezos底層語言：Michelson</li>
+<li>Tezos高層語言：LIGO／SmartPy／Archetype</li>
+<li>Better call dev：比TZKT更適合開發者</li>
+<li>Taquito：Tezos錢包套件</li>
+<li>Kleros：DAO法庭</li>
+<li>Estonia DAO：關於愛沙尼亞的E-resident</li>
+<li>code deference agreement：LexDAO的尊重代碼協議</li>
+<li>Moloch：處理公共分配問題</li>
+<li>ragequit()：怒退。讓表達反對更方便</li>
+<li>ERC-4337：關於帳戶抽象</li>
+<li>Gnosis Safe：常見的多簽錢包</li>
+<li>Ricardian Contract：整合法律與合約，讓人類機器皆可讀</li>
+<li>Flamingo DAO曾透過OpenLaw實作李嘉圖合約</li>
+<li>Aaron Swartz：共同制定RSS和MD標準，因JSTOR事件輕生</li>
+<li>AR幣：在Arweave幫忙存資料的回饋</li>
+<li>imToken：移動端錢包，主攻亞洲</li>
+<li>Flashbots：跟MEV保護有關</li>
+<li>Gasper：跟PoS有關的演算法</li>
+<li>TPS：每秒交易量。Solana最快</li>
+<li>Rollup：打包資料</li>
+<li>DEX aggregator：聚合器</li>
+<li>有些聚合器可以買到更便宜的代幣，如Matcha</li>
+<li>ERC20對應同質代幣，ERC721對應NFT</li>
+<li>Passkey標準：由FIDO聯手W3C推動的無密碼登入方式</li>
+<li>Open Petase：打算讓家家戶戶都可以自己分解PET</li>
+<li>Superfluid：資金流協議</li>
+<li>Ocean Protocol：交易「資料」的平台，類似流動池</li>
+<li>Lens Protocol：web3的社交協議</li>
+<li>FVM：Filecoin版的EVM</li>
+<li>Bacalhau：Filecoin做的分散式系統，有點像docker</li>
+<li>DeSci Nodes：讓論文可以互動，譬如連上IDE</li>
+</ul>
+<h2 id="dao" tabindex="-1">DAO <a class="header-anchor" href="#dao" aria-label="Permalink to &quot;DAO&quot;"></a></h2>
+<ul>
+<li>Recursive Public：遞迴公眾。持續關注自身作為公眾如何維護和創新的集體，由Christopher M. Kelty提出</li>
+<li>PDT：可悲點理論。將控制人類行為的力量分為社會規範、法律、市場和架構。由Lawrence Lessig提出</li>
+</ul>
+<h3 id="文化與價值" tabindex="-1">文化與價值 <a class="header-anchor" href="#文化與價值" aria-label="Permalink to &quot;文化與價值&quot;"></a></h3>
+<ul>
+<li>Liquid democracy：流動式民主。想託人投票或自己參與皆可</li>
+<li>Conviction voting：信念投票法。支持某議案越久，影響越大</li>
+<li>Rochdale Principles：羅虛戴爾原則。為合作社所設計</li>
+<li>凹凸決策：凹形彈性，凸形明確</li>
+<li>DPI：數位公共基礎建設，包含BB（建築模組）和DPG（數位公共財）</li>
+</ul>
+<h3 id="法律與法規" tabindex="-1">法律與法規 <a class="header-anchor" href="#法律與法規" aria-label="Permalink to &quot;法律與法規&quot;"></a></h3>
+<ul>
+<li>CFTC對Ooki DAO提告並獲得勝利，首開DAO需要負擔法律責任的先例</li>
+<li>DAO.LINK：曾預計提供一般公司和DAO合作之法律框架，但牽扯進The DAO事件</li>
+<li>Colorado的LCA法律架構較完善，但不能轉讓非財務利益</li>
+<li>COALA發布The DAO Model Law，具功能和監管等效性</li>
+<li>開曼群島的KYC較為嚴格，維京群島的KYC較為寬鬆</li>
+<li>XCA：組織及團體憑證</li>
+</ul>
+<h3 id="美國公司組織類型" tabindex="-1">美國公司組織類型 <a class="header-anchor" href="#美國公司組織類型" aria-label="Permalink to &quot;美國公司組織類型&quot;"></a></h3>
+<ul>
+<li>S corp：採穿透課稅，但限制亦較多</li>
+<li>C corp：大部分公司屬於此類</li>
+<li>LLC：美國採穿透課稅，台灣無相似組織</li>
+<li>Delaware LLC：很適合DAO</li>
+<li>LP：美國採穿透課稅，台灣採公司方式申報</li>
+<li>LLP：台灣無相似組織</li>
+</ul>
+<h3 id="科技與工具" tabindex="-1">科技與工具 <a class="header-anchor" href="#科技與工具" aria-label="Permalink to &quot;科技與工具&quot;"></a></h3>
+<ul>
+<li>ERC-4824：DAO的API，也是DAOstar所提出的DAOIP-2</li>
+<li>Aragon：首個DAO框架</li>
+<li>Moloch：以Ragequit聞名</li>
+<li>Compound：常被DeFi使用，和OZ合作</li>
+<li>Praise可和DC串接，Shoutout可和Slack串接</li>
+</ul>
 ]]></content:encoded>
         </item>
         <item>
@@ -930,6 +1360,7 @@
 <ul>
 <li>89.7% correct</li>
 </ul>
+<h2 id="_11-12-準備入伍" tabindex="-1">11-12｜準備入伍 <a class="header-anchor" href="#_11-12-準備入伍" aria-label="Permalink to &quot;11-12｜準備入伍&quot;"></a></h2>
 ]]></content:encoded>
         </item>
         <item>
@@ -1300,163 +1731,13 @@
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[【松學校導讀：重點筆記】]]></title>
-            <link>https://haruowang.vercel.app/pov/art/arthon.html</link>
-            <guid>https://haruowang.vercel.app/pov/art/arthon.html</guid>
-            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
-            <description><![CDATA[觀看數位藝術基金會《松學校導讀》之摘要整理]]></description>
-            <content:encoded><![CDATA[<h1 id="【松學校導讀-重點筆記】" tabindex="-1">【松學校導讀：重點筆記】 <a class="header-anchor" href="#【松學校導讀-重點筆記】" aria-label="Permalink to &quot;【松學校導讀：重點筆記】&quot;"></a></h1>
-<p><Badge type="info" text="🌱 Seedlings" /></P>
-<h2 id="旁觀他人之痛苦" tabindex="-1">旁觀他人之痛苦 <a class="header-anchor" href="#旁觀他人之痛苦" aria-label="Permalink to &quot;旁觀他人之痛苦&quot;"></a></h2>
-<ul>
-<li>克里米亞戰爭：佚名的全景攝影</li>
-<li>西班牙內戰：萊卡相機發明</li>
-<li>二戰結束：攝影成為認知現實的主要媒介</li>
-<li>越戰：戰爭影像成為日常奇觀</li>
-<li>Roger Fenton與Felice Beato皆有編導特色</li>
-<li>Sontag認同Jeff Wall的《亡軍對話》</li>
-</ul>
-<h2 id="洪席耶美感論" tabindex="-1">洪席耶美感論 <a class="header-anchor" href="#洪席耶美感論" aria-label="Permalink to &quot;洪席耶美感論&quot;"></a></h2>
-<ul>
-<li>藝術起源於18世紀階層社會的動搖</li>
-<li>藝術的現代性：藝術和日常審美間，邊界的推移</li>
-<li>14個場景都是感性的共同體</li>
-<li>先感知革命再社會革命</li>
-</ul>
-<h2 id="資料庫美學" tabindex="-1">資料庫美學 <a class="header-anchor" href="#資料庫美學" aria-label="Permalink to &quot;資料庫美學&quot;"></a></h2>
-<ul>
-<li>Bradford Paley曾創作《TextArc》</li>
-<li>Manovich認為遊戲並非資料庫，而是演算法邏輯</li>
-<li>資料庫反轉符號學，將歷時性和共時性的明確／隱晦關係顛倒</li>
-<li>Rosalind Krauss認為錄像是自戀的媒體</li>
-<li>資料庫電影創作者：Greenaway、Vertov</li>
-</ul>
-<h2 id="賦予形體的chimera" tabindex="-1">賦予形體的Chimera <a class="header-anchor" href="#賦予形體的chimera" aria-label="Permalink to &quot;賦予形體的Chimera&quot;"></a></h2>
-<ul>
-<li>根據Jean-Louis Fischer研究，Teratology一詞在1830年後出現</li>
-<li>Max Marcuzzi稱「怪物學是最寬廣的生物學」</li>
-</ul>
-<h2 id="改變邏輯的機器" tabindex="-1">改變邏輯的機器 <a class="header-anchor" href="#改變邏輯的機器" aria-label="Permalink to &quot;改變邏輯的機器&quot;"></a></h2>
-<ul>
-<li>50年代末期，Frank Rosenblatt發明感知機（Mark I Perceptron）</li>
-<li>兩大AI：符號主義（Symbolic）、聯結主義（Connectionist）</li>
-<li>DNN的三層：輸入層、隱藏層、輸出層</li>
-<li>Charles Peirce的三種推論：演繹、歸納、溯因</li>
-<li>Matteo Pasquinelli認為AI有「弱溯因」能力</li>
-<li>隱喻才是「強溯因」，Eco稱「沒有演算法是為了隱喻存在」</li>
-</ul>
-<h2 id="殘酷劇場與再現的關閉" tabindex="-1">殘酷劇場與再現的關閉 <a class="header-anchor" href="#殘酷劇場與再現的關閉" aria-label="Permalink to &quot;殘酷劇場與再現的關閉&quot;"></a></h2>
-<ul>
-<li>浪漫主義否定劇場的想像，在意空缺和死亡</li>
-<li>殘酷劇場在意「生命自身」，而非再現</li>
-<li>Artaud想回到戲劇的原初狀態，破除文字性，回歸感官性</li>
-<li>殘酷劇場可以發生在每一個當下，是積極的遺忘</li>
-</ul>
-<h2 id="缺席的美學" tabindex="-1">缺席的美學 <a class="header-anchor" href="#缺席的美學" aria-label="Permalink to &quot;缺席的美學&quot;"></a></h2>
-<ul>
-<li>堆（the pile）：911廢墟中的物件</li>
-<li>911博物館沒有重建雙子星，只是用水池留下足跡（the footprints）</li>
-<li>「藝術提出一個問題，設計提供一個答案」</li>
-</ul>
-<h2 id="可變、不變、微變" tabindex="-1">可變、不變、微變 <a class="header-anchor" href="#可變、不變、微變" aria-label="Permalink to &quot;可變、不變、微變&quot;"></a></h2>
-<ul>
-<li>「複製」的演變</li>
-<li>文藝復興後，建築才有複本，設計者才獨立出來</li>
-<li>數位表現主義案例：畢爾包美術館</li>
-</ul>
-<h2 id="rfid" tabindex="-1">RFID <a class="header-anchor" href="#rfid" aria-label="Permalink to &quot;RFID&quot;"></a></h2>
-<ul>
-<li>最初應用在蘇聯對美國大使館的監控</li>
-<li>Katherine Hayles認為科技物也有它的認知過程</li>
-</ul>
-<h2 id="後設博物館" tabindex="-1">後設博物館 <a class="header-anchor" href="#後設博物館" aria-label="Permalink to &quot;後設博物館&quot;"></a></h2>
-<ul>
-<li>BYOD：自攜設備</li>
-<li>來自「由下而上」的生態博物館</li>
-</ul>
-<h2 id="認知組裝體" tabindex="-1">認知組裝體 <a class="header-anchor" href="#認知組裝體" aria-label="Permalink to &quot;認知組裝體&quot;"></a></h2>
-<ul>
-<li>ATSAC：洛杉磯自動交通監控系統</li>
-<li>Viv：由Siri開發者打造，曾是Siri頭號對手</li>
-<li>Sociometer：MIT開發的穿戴式感知裝置，能探知社交時的誠實訊號</li>
-</ul>
-<h2 id="資料在地化" tabindex="-1">資料在地化 <a class="header-anchor" href="#資料在地化" aria-label="Permalink to &quot;資料在地化&quot;"></a></h2>
-<ul>
-<li>datum：基準點</li>
-<li>immutable mobile：不可變的可移動體，由Latour提出。「現象或物件被轉譯到不同脈絡中，在抽象化過程，轉變了存在方式的物件、現象等，以此不同脈絡中的事物，可以匯集在一起並被運算。」</li>
-<li>situated：ANT領域常用，類似local</li>
-<li>local不一定規模較小，而要和global相對來看</li>
-</ul>
-<h2 id="新媒體與社會記憶" tabindex="-1">新媒體與社會記憶 <a class="header-anchor" href="#新媒體與社會記憶" aria-label="Permalink to &quot;新媒體與社會記憶&quot;"></a></h2>
-<ul>
-<li>社會記憶有正規和非正規</li>
-<li>皮克斯認為比起DCP，可編輯檔案的保存價值更高</li>
-</ul>
-<h2 id="談ar實境之敘事" tabindex="-1">談AR實境之敘事 <a class="header-anchor" href="#談ar實境之敘事" aria-label="Permalink to &quot;談AR實境之敘事&quot;"></a></h2>
-<ul>
-<li>Epic Wandering：開放式空間體驗</li>
-<li>MoMAR：旨在透過AR使展覽民主化，致敬MoMA</li>
-</ul>
-<h2 id="the-image-of-objectivity" tabindex="-1">The Image of Objectivity <a class="header-anchor" href="#the-image-of-objectivity" aria-label="Permalink to &quot;The Image of Objectivity&quot;"></a></h2>
-<ul>
-<li>客觀性在19世紀誕生</li>
-</ul>
-<h2 id="論象徵性的物質性" tabindex="-1">論象徵性的物質性 <a class="header-anchor" href="#論象徵性的物質性" aria-label="Permalink to &quot;論象徵性的物質性&quot;"></a></h2>
-<ul>
-<li>文化技術可以製造差異</li>
-<li>海德格認為自動門是某種納粹的起源，讓人不會留心他人</li>
-</ul>
-<h2 id="談虛擬技術的空間介面性" tabindex="-1">談虛擬技術的空間介面性 <a class="header-anchor" href="#談虛擬技術的空間介面性" aria-label="Permalink to &quot;談虛擬技術的空間介面性&quot;"></a></h2>
-<ul>
-<li>Matterport：全景應用</li>
-<li>DIKW：資訊、訊息、知識、智慧</li>
-</ul>
-<h2 id="大社會資訊的承諾與挑戰" tabindex="-1">大社會資訊的承諾與挑戰 <a class="header-anchor" href="#大社會資訊的承諾與挑戰" aria-label="Permalink to &quot;大社會資訊的承諾與挑戰&quot;"></a></h2>
-<ul>
-<li>Social Computing：社會運算（挖掘真實）</li>
-<li>三種資料階級：創造者、收集者、運用者</li>
-</ul>
-<h2 id="時基媒體" tabindex="-1">時基媒體 <a class="header-anchor" href="#時基媒體" aria-label="Permalink to &quot;時基媒體&quot;"></a></h2>
-<ul>
-<li>1994，奈良真實性文件。修正1964的威尼斯憲章，更注重場所精神</li>
-<li>Nelson Goodman將藝術區分為Autographic和Allographic</li>
-</ul>
-<h2 id="媒體藝術蒐藏保存" tabindex="-1">媒體藝術蒐藏保存 <a class="header-anchor" href="#媒體藝術蒐藏保存" aria-label="Permalink to &quot;媒體藝術蒐藏保存&quot;"></a></h2>
-<ul>
-<li>U-matic:VHS對手Betamax的前身</li>
-<li>ada.web：第一個網路藝術策展計畫</li>
-</ul>
-<h2 id="自拍風潮與敘事技術" tabindex="-1">自拍風潮與敘事技術 <a class="header-anchor" href="#自拍風潮與敘事技術" aria-label="Permalink to &quot;自拍風潮與敘事技術&quot;"></a></h2>
-<ul>
-<li>記憶減損：沒有目標的拍照無助於記憶</li>
-</ul>
-<h2 id="這裡沒有影像" tabindex="-1">這裡沒有影像 <a class="header-anchor" href="#這裡沒有影像" aria-label="Permalink to &quot;這裡沒有影像&quot;"></a></h2>
-<ul>
-<li>圖像轉向：Pictorial Turn，由W. J. T. Mitchell所提出。源自Rorty的語言學轉向（Linguistic Turn）</li>
-<li>數位影像讓視覺不再依附於物質性上</li>
-</ul>
-<h2 id="後數位攝影" tabindex="-1">後數位攝影 <a class="header-anchor" href="#後數位攝影" aria-label="Permalink to &quot;後數位攝影&quot;"></a></h2>
-<ul>
-<li>Kim Cascone提出過後數位音像美學</li>
-</ul>
-<h2 id="因機構而死" tabindex="-1">因機構而死 <a class="header-anchor" href="#因機構而死" aria-label="Permalink to &quot;因機構而死&quot;"></a></h2>
-<ul>
-<li>MANS：Media Art Notation System，使用XML作為標準</li>
-</ul>
-<h2 id="ai可以創造藝術嗎" tabindex="-1">AI可以創造藝術嗎 <a class="header-anchor" href="#ai可以創造藝術嗎" aria-label="Permalink to &quot;AI可以創造藝術嗎&quot;"></a></h2>
-<ul>
-<li>Morris Weitz：藝術是一種開放概念</li>
-</ul>
-]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[臺灣獨立藝術空間檔案計劃]]></title>
             <link>https://haruowang.vercel.app/pov/art/iast.html</link>
             <guid>https://haruowang.vercel.app/pov/art/iast.html</guid>
             <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
             <description><![CDATA[觀看空總《臺灣獨立藝術空間檔案計畫》之摘要整理]]></description>
             <content:encoded><![CDATA[<h1 id="臺灣獨立藝術空間檔案計劃" tabindex="-1">臺灣獨立藝術空間檔案計劃 <a class="header-anchor" href="#臺灣獨立藝術空間檔案計劃" aria-label="Permalink to &quot;臺灣獨立藝術空間檔案計劃&quot;"></a></h1>
-<p><Badge type="info" text="🌱 Seedlings" /></P>
+<p><Badge type="info" text="🌳 Evergreen" /></P>
 <h2 id="空間作為一種回應" tabindex="-1">空間作為一種回應 <a class="header-anchor" href="#空間作為一種回應" aria-label="Permalink to &quot;空間作為一種回應&quot;"></a></h2>
 <h3 id="譚鴻鈞" tabindex="-1">譚鴻鈞 <a class="header-anchor" href="#譚鴻鈞" aria-label="Permalink to &quot;譚鴻鈞&quot;"></a></h3>
 <ul>
@@ -1697,82 +1978,6 @@
 </ul>
 ]]></content:encoded>
             <enclosure url="https://haruowang.vercel.app/art/ia1.webp" length="0" type="image/webp"/>
-        </item>
-        <item>
-            <title><![CDATA[【The Type：字型知識補帖】]]></title>
-            <link>https://haruowang.vercel.app/pov/font/the-type.html</link>
-            <guid>https://haruowang.vercel.app/pov/font/the-type.html</guid>
-            <pubDate>Thu, 21 Nov 2024 14:50:21 GMT</pubDate>
-            <description><![CDATA[Podcast《字談字暢》的重點筆記]]></description>
-            <content:encoded><![CDATA[<h1 id="【the-type-字型知識補帖】" tabindex="-1">【The Type：字型知識補帖】 <a class="header-anchor" href="#【the-type-字型知識補帖】" aria-label="Permalink to &quot;【The Type：字型知識補帖】&quot;"></a></h1>
-<p><Badge type="info" text="🌱 Seedlings" /></P>
-<h2 id="大家都不容易" tabindex="-1">大家都不容易 <a class="header-anchor" href="#大家都不容易" aria-label="Permalink to &quot;大家都不容易&quot;"></a></h2>
-<ul>
-<li>方正蠻常做「多文種」</li>
-<li>方正的排版軟體叫飛翔</li>
-<li>雷丁的字體碩士要做拉丁+另一語種</li>
-<li>mark：mark to base</li>
-<li>mkmk：mark to mark</li>
-<li>mark和mkmk與阿拉伯文的連音符有關</li>
-<li>維哈柯：維吾爾、哈薩克、柯爾克孜</li>
-<li>維哈柯文類似阿拉伯文</li>
-<li>Borna和Toshi皆擅長多文種</li>
-<li>Nastaliq：波斯體／懸體，基線是斜的</li>
-<li>Ruqʿah：同屬阿拉伯六大書體，也是斜的</li>
-<li>Toshi設計的Klaket便是採用Ruqʿah風格</li>
-<li>Adobe-Japan1：統整外字規格</li>
-<li>一般日文字型會做到Adobe-Japan1-3</li>
-<li>方正蘭亭黑Pro Global：方正第一款全球字庫</li>
-</ul>
-<h2 id="多文種就在您身邊" tabindex="-1">多文種就在您身邊 <a class="header-anchor" href="#多文種就在您身邊" aria-label="Permalink to &quot;多文種就在您身邊&quot;"></a></h2>
-<ul>
-<li>戰國棟：TypeMeet大連的統籌兼主持人</li>
-<li>厲致謙：3type創始人，設計Meiloi Sans</li>
-<li>由小林章監製，蒙納的翔鶴黑體被Eric推薦</li>
-<li>滿文和傳統蒙文要豎排，藏文要橫排</li>
-</ul>
-<h2 id="在第九年看二十年" tabindex="-1">在第九年看二十年 <a class="header-anchor" href="#在第九年看二十年" aria-label="Permalink to &quot;在第九年看二十年&quot;"></a></h2>
-<ul>
-<li>Unicode 16.0已在9月發布，新增很多聖書體，只增加8款表情</li>
-<li>UAX：Unicode標準附件</li>
-<li>文字情報基盤：使用電子経済産業省推進費推動的資料庫</li>
-<li>今田欣一：金陵設計者</li>
-<li>薛天盟：錦華明朝設計者，茉莉字型創辦人之一</li>
-<li>華文黑體：蘋方前的Mac預設字型。後者是威鋒所開發</li>
-</ul>
-<h2 id="三榜定案修改單" tabindex="-1">三榜定案修改單 <a class="header-anchor" href="#三榜定案修改單" aria-label="Permalink to &quot;三榜定案修改單&quot;"></a></h2>
-<ul>
-<li>Monotype：自動鑄排機</li>
-<li>GB 18030-2022：中國最新的中文編碼字符集，2024年10月首次修改</li>
-<li>更新快慢：通常是Unicode &gt; ISO/IEC &gt; GB，但中方在2022先動作，自行使用了以0A為首的Plane 10</li>
-<li>CJK I：2023年9月，IRG將「公安人口信息專用字庫補充漢字」收錄於此，解決Plane 10問題</li>
-<li>Unification Rule：表意文字認同原則，相對於字集分離收錄規則</li>
-<li>Simsun-ExtG：Win11的新簡體字型</li>
-</ul>
-<h2 id="別頭痛醫頭腳痛醫腳" tabindex="-1">別頭痛醫頭腳痛醫腳 <a class="header-anchor" href="#別頭痛醫頭腳痛醫腳" aria-label="Permalink to &quot;別頭痛醫頭腳痛醫腳&quot;"></a></h2>
-<ul>
-<li>ID2025有支援MathML，但目前它的SVG轉成CMYK會有問題</li>
-<li>孤行：widow/orphan；孤字:runt</li>
-<li>中文排版不常討論river</li>
-</ul>
-<h2 id="分分合合的攝氏度" tabindex="-1">分分合合的攝氏度 <a class="header-anchor" href="#分分合合的攝氏度" aria-label="Permalink to &quot;分分合合的攝氏度&quot;"></a></h2>
-<ul>
-<li>鐵宋是柯熾堅老師的收官之作，搭配無襯線英文</li>
-<li>宋七體：源於徐學成老師為毛澤東著作設計的字體</li>
-<li>Canonical：標準等價，在分解映射時有長度限制</li>
-<li>Compatibility：相容等價，在分解映射時沒有長度限制</li>
-<li>西方認為°C是分開的，東亞認為°C是一體的</li>
-</ul>
-<h2 id="百年照排光與影" tabindex="-1">百年照排光與影 <a class="header-anchor" href="#百年照排光與影" aria-label="Permalink to &quot;百年照排光與影&quot;"></a></h2>
-<ul>
-<li>照排專利申請日：1924/7/24</li>
-<li>照排的兩位發明者分別是森澤和寫研的創始人</li>
-<li>據說中國在1935年製造過華文照排機</li>
-<li>照排單位：級（Q）和齒（H），都是0.25mm（中國則寫成K和Y）</li>
-<li>「告別鉛與火，走向光與電」：出自完成748工程的王選院士</li>
-<li>C字體：最早的向量日文字，1983年由寫研出品</li>
-</ul>
-]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[《裝幀時代》重點筆記]]></title>
@@ -7399,192 +7604,6 @@ singular.boot
 <p><img src="/gitcoin-grants/g913.webp" alt="Thank you for supporting our community" loading="lazy"></p>
 ]]></content:encoded>
             <enclosure url="https://haruowang.vercel.app/gitcoin-grants/g91.webp" length="0" type="image/webp"/>
-        </item>
-        <item>
-            <title><![CDATA[Web3知識庫]]></title>
-            <link>https://haruowang.vercel.app/web3/knowledge/web3.html</link>
-            <guid>https://haruowang.vercel.app/web3/knowledge/web3.html</guid>
-            <pubDate>Fri, 20 Sep 2024 14:29:45 GMT</pubDate>
-            <description><![CDATA[Haruo Wang的Web3關鍵字整理]]></description>
-            <content:encoded><![CDATA[<h1 id="web3知識庫" tabindex="-1">Web3知識庫 <a class="header-anchor" href="#web3知識庫" aria-label="Permalink to &quot;Web3知識庫&quot;"></a></h1>
-<p><Badge type="info" text="🌿 Budding" /></P>
-<h2 id="og" tabindex="-1">OG <a class="header-anchor" href="#og" aria-label="Permalink to &quot;OG&quot;"></a></h2>
-<ul>
-<li>Timothy May：起草《加密無政府主義者宣言》</li>
-<li>Nick Szabo：智能合約之父</li>
-<li>Roger Ver：比特幣耶穌</li>
-<li>Gavin Wood：以太坊創立者</li>
-<li>Craig Wright：澳本聰</li>
-<li>Ulbricht：「絲路」管理員DPR</li>
-<li>Amir Taaki：革命家</li>
-<li>Glen Weyl：《激進市場》作者</li>
-</ul>
-<h2 id="重要單位" tabindex="-1">重要單位 <a class="header-anchor" href="#重要單位" aria-label="Permalink to &quot;重要單位&quot;"></a></h2>
-<ul>
-<li>MakerDao：使用DAI+MKR。ETH鏈的借貸平台</li>
-<li>MakerDao的勁敵有Aave和Compound</li>
-<li>Uniswap：使用UNI。ETH鏈的DEX</li>
-<li>Osmosis：使用OSMO。Cosmos鏈的DEX</li>
-<li>Aragon：使用ANT。解散了</li>
-<li>Terra：使用UST。脫鉤了</li>
-<li>Art blocks：ETH鏈的創作平台</li>
-<li>fxhash 2.0也會支援ETH鏈</li>
-<li>Arweave：去中心化儲存服務</li>
-<li>KlimaDAO：把碳權代幣化</li>
-<li>BCH：比特幣現金，由耶穌領導，使用鏈上擴展</li>
-<li>ETC：以太坊經典，The DAO事件後硬分叉的產物</li>
-<li>SAT：比特幣最小單位，10的-8次方顆</li>
-<li>Avalanche：雪崩鏈。由三條公鏈組成</li>
-<li>Polkadot：波卡鏈。類似Cosmos，比常見的L1還底層</li>
-<li>名幣：採用域名發行</li>
-<li>萊特幣：基於比特幣建立，區塊時間更快</li>
-<li>維卡幣：龐氏騙局</li>
-</ul>
-<h2 id="重要歷史" tabindex="-1">重要歷史 <a class="header-anchor" href="#重要歷史" aria-label="Permalink to &quot;重要歷史&quot;"></a></h2>
-<ul>
-<li>創世區塊：2009年1月4日</li>
-<li>加密寒冬：2018年</li>
-<li>2021年3月，HEN上線，11月關閉。後被TEIA取代</li>
-</ul>
-<h2 id="重要觀念" tabindex="-1">重要觀念 <a class="header-anchor" href="#重要觀念" aria-label="Permalink to &quot;重要觀念&quot;"></a></h2>
-<h3 id="兩種礦池" tabindex="-1">兩種礦池 <a class="header-anchor" href="#兩種礦池" aria-label="Permalink to &quot;兩種礦池&quot;"></a></h3>
-<ul>
-<li>一池：白嫖池，單幣挖礦</li>
-<li>二池：LP，流動性挖礦</li>
-</ul>
-<h3 id="三種穩定幣" tabindex="-1">三種穩定幣 <a class="header-anchor" href="#三種穩定幣" aria-label="Permalink to &quot;三種穩定幣&quot;"></a></h3>
-<ul>
-<li>法幣儲備：USDT</li>
-<li>超額抵押：DAI</li>
-<li>演算法：UST</li>
-</ul>
-<h3 id="三種代幣發行" tabindex="-1">三種代幣發行 <a class="header-anchor" href="#三種代幣發行" aria-label="Permalink to &quot;三種代幣發行&quot;"></a></h3>
-<ul>
-<li>ICO：首次代幣發行（最大的ICO是EOS）</li>
-<li>STO：證券型代幣發行（要通過豪威測試）</li>
-<li>IEO：首次交易發行</li>
-</ul>
-<h3 id="各種帳戶" tabindex="-1">各種帳戶 <a class="header-anchor" href="#各種帳戶" aria-label="Permalink to &quot;各種帳戶&quot;"></a></h3>
-<ul>
-<li>EOA：外部帳戶。如小狐狸</li>
-<li>CA：合約帳戶。沒私鑰的智能合約</li>
-<li>MPC：多方運算。安全性高的過渡選擇，但V神不愛</li>
-<li>SCW：智能合約錢包。基於AA，其中ERC-4337最有前景</li>
-</ul>
-<h3 id="其他" tabindex="-1">其他 <a class="header-anchor" href="#其他" aria-label="Permalink to &quot;其他&quot;"></a></h3>
-<ul>
-<li>AML：防制洗錢</li>
-<li>AMM：自動造市商，常被DEX所用</li>
-<li>ATH：歷史新高</li>
-<li>BFT：拜占庭容錯。採用共識算法解決，如PoA，DPoS</li>
-<li>COST：共同所有權自評稅制。改良版平均地權，有哈柏格稅</li>
-<li>FUD：錯誤報導</li>
-<li>GM：早安</li>
-<li>hodl：長期持有</li>
-<li>LFG：媽的衝啊</li>
-<li>NFT Flipper：和Holder相對</li>
-<li>POAP：出席證明協議</li>
-<li>Rug Pull：跑路</li>
-<li>SBT：靈魂綁定代幣</li>
-<li>SPOF：單點故障</li>
-<li>Sybil Attack：多重身分攻擊</li>
-<li>Uptober：比特幣常在十月漲</li>
-<li>UXA：藝術的使用者體驗</li>
-<li>WAGMI：咱們都能做到</li>
-<li>薩博定律：相信協議不該更動</li>
-<li>圖靈完備：憑藉某幾行指令就可以解決所有可計算問題</li>
-<li>奧地利學派：認為貨幣「自身」應有價值。以海耶克為首，和凱因斯是對頭</li>
-</ul>
-<h2 id="零時小筆記" tabindex="-1">零時小筆記 <a class="header-anchor" href="#零時小筆記" aria-label="Permalink to &quot;零時小筆記&quot;"></a></h2>
-<ul>
-<li>Hypercerts：超證／影響力證書，可以讓企業認購</li>
-<li>Hypercerts採用ERC-1155</li>
-<li>x-risk的觀點：認為AI最危險</li>
-<li>VWH脆弱世界假設：可能抽到黑球，如簡單核武</li>
-<li>SBF：加密貨幣之王，FTX創辦人</li>
-<li>mechanism design：從結果發想規則</li>
-<li>Roko's Basilisk：關於AI的思想實驗</li>
-<li>Pascal's Wager：不信神比信神危險</li>
-<li>CEV連貫推斷意志：關於人類想讓AI做什麼</li>
-<li>PFS為成功付費：如SIB社會影響力債券</li>
-<li>Bitmark和Casey Reas建過Feral File</li>
-<li>Project Together：先發糧再募款</li>
-<li>OP鏈的RetroPGF贊助計畫也是類似概念</li>
-<li>半同質化代幣：ERC-3525和ERC-1155</li>
-<li>SFT比 FT 更客製化，比 NFT 更高效</li>
-<li>Mt. Gox：位處東京，2014被駭的門頭溝交易所</li>
-<li>Tezos底層語言：Michelson</li>
-<li>Tezos高層語言：LIGO／SmartPy／Archetype</li>
-<li>Better call dev：比TZKT更適合開發者</li>
-<li>Taquito：Tezos錢包套件</li>
-<li>Kleros：DAO法庭</li>
-<li>Estonia DAO：關於愛沙尼亞的E-resident</li>
-<li>code deference agreement：LexDAO的尊重代碼協議</li>
-<li>Moloch：處理公共分配問題</li>
-<li>ragequit()：怒退。讓表達反對更方便</li>
-<li>ERC-4337：關於帳戶抽象</li>
-<li>Gnosis Safe：常見的多簽錢包</li>
-<li>Ricardian Contract：整合法律與合約，讓人類機器皆可讀</li>
-<li>Flamingo DAO曾透過OpenLaw實作李嘉圖合約</li>
-<li>Aaron Swartz：共同制定RSS和MD標準，因JSTOR事件輕生</li>
-<li>AR幣：在Arweave幫忙存資料的回饋</li>
-<li>imToken：移動端錢包，主攻亞洲</li>
-<li>Flashbots：跟MEV保護有關</li>
-<li>Gasper：跟PoS有關的演算法</li>
-<li>TPS：每秒交易量。Solana最快</li>
-<li>Rollup：打包資料</li>
-<li>DEX aggregator：聚合器</li>
-<li>有些聚合器可以買到更便宜的代幣，如Matcha</li>
-<li>ERC20對應同質代幣，ERC721對應NFT</li>
-<li>Passkey標準：由FIDO聯手W3C推動的無密碼登入方式</li>
-<li>Open Petase：打算讓家家戶戶都可以自己分解PET</li>
-<li>Superfluid：資金流協議</li>
-<li>Ocean Protocol：交易「資料」的平台，類似流動池</li>
-<li>Lens Protocol：web3的社交協議</li>
-<li>FVM：Filecoin版的EVM</li>
-<li>Bacalhau：Filecoin做的分散式系統，有點像docker</li>
-<li>DeSci Nodes：讓論文可以互動，譬如連上IDE</li>
-</ul>
-<h2 id="dao" tabindex="-1">DAO <a class="header-anchor" href="#dao" aria-label="Permalink to &quot;DAO&quot;"></a></h2>
-<ul>
-<li>Recursive Public：遞迴公眾。持續關注自身作為公眾如何維護和創新的集體，由Christopher M. Kelty提出</li>
-<li>PDT：可悲點理論。將控制人類行為的力量分為社會規範、法律、市場和架構。由Lawrence Lessig提出</li>
-</ul>
-<h3 id="文化與價值" tabindex="-1">文化與價值 <a class="header-anchor" href="#文化與價值" aria-label="Permalink to &quot;文化與價值&quot;"></a></h3>
-<ul>
-<li>Liquid democracy：流動式民主。想託人投票或自己參與皆可</li>
-<li>Conviction voting：信念投票法。支持某議案越久，影響越大</li>
-<li>Rochdale Principles：羅虛戴爾原則。為合作社所設計</li>
-<li>凹凸決策：凹形彈性，凸形明確</li>
-<li>DPI：數位公共基礎建設，包含BB（建築模組）和DPG（數位公共財）</li>
-</ul>
-<h3 id="法律與法規" tabindex="-1">法律與法規 <a class="header-anchor" href="#法律與法規" aria-label="Permalink to &quot;法律與法規&quot;"></a></h3>
-<ul>
-<li>CFTC對Ooki DAO提告並獲得勝利，首開DAO需要負擔法律責任的先例</li>
-<li>DAO.LINK：曾預計提供一般公司和DAO合作之法律框架，但牽扯進The DAO事件</li>
-<li>Colorado的LCA法律架構較完善，但不能轉讓非財務利益</li>
-<li>COALA發布The DAO Model Law，具功能和監管等效性</li>
-<li>開曼群島的KYC較為嚴格，維京群島的KYC較為寬鬆</li>
-<li>XCA：組織及團體憑證</li>
-</ul>
-<h3 id="美國公司組織類型" tabindex="-1">美國公司組織類型 <a class="header-anchor" href="#美國公司組織類型" aria-label="Permalink to &quot;美國公司組織類型&quot;"></a></h3>
-<ul>
-<li>S corp：採穿透課稅，但限制亦較多</li>
-<li>C corp：大部分公司屬於此類</li>
-<li>LLC：美國採穿透課稅，台灣無相似組織</li>
-<li>Delaware LLC：很適合DAO</li>
-<li>LP：美國採穿透課稅，台灣採公司方式申報</li>
-<li>LLP：台灣無相似組織</li>
-</ul>
-<h3 id="科技與工具" tabindex="-1">科技與工具 <a class="header-anchor" href="#科技與工具" aria-label="Permalink to &quot;科技與工具&quot;"></a></h3>
-<ul>
-<li>ERC-4824：DAO的API，也是DAOstar所提出的DAOIP-2</li>
-<li>Aragon：首個DAO框架</li>
-<li>Moloch：以Ragequit聞名</li>
-<li>Compound：常被DeFi使用，和OZ合作</li>
-<li>Praise可和DC串接，Shoutout可和Slack串接</li>
-</ul>
-]]></content:encoded>
         </item>
     </channel>
 </rss>

@@ -43,3 +43,4 @@ head:
 - 自架RSSHub到Cloudflare，但是不能關機
 - 護照規費補繳
 - 移動停利單沒刪乾淨
+- 《iThome鐵人賽》落選一次

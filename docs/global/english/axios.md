@@ -423,3 +423,5 @@ animus是敵意，consistent也是一致的。
 
 ## 1108｜Sep英譯中
 - 89.7% correct
+
+## 11-12｜準備入伍
