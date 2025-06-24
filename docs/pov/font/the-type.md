@@ -93,3 +93,15 @@ head:
 ## 不得不說的秘密
 - Mike Abbink：IBM創意總監
 - Plex比Helvetica（新怪誕體）更貼近怪誕體
+
+## 「最好能包圍一下拉丁」
+- lazy dog：出自全字母句（pangram）
+- Riccardo Olocco設計的Sole Sans有用在G20 2021
+
+## 「我們可以再哭一把」
+- 新版的中文排版需求有符合language enablement
+- 新版的CLReq第七章還有涉及表單設計
+
+## 全球字體新聞聯播
+- 舟連假名：舟山貴士設計，沒有使用合字
+- Affiche：法語的「海報」
