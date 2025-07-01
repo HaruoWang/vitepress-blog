@@ -193,6 +193,7 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: '2024的生活', link: '/about/lifelog/2024' },
+            { text: '2025的生活', link: '/about/lifelog/2025' },
             { text: '那些我曾經歷的挫敗', link: '/about/lifelog/failure' },
           ]
         },
@@ -201,6 +202,7 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: '2024的品味', link: '/about/taste/2024' },
+            { text: '2025的品味', link: '/about/taste/2025' },
           ]
         },
         {
