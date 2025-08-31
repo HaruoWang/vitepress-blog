@@ -119,3 +119,8 @@ head:
 - 嘉瑞工房：從井上嘉瑞、高岡重藏一路繼承到高岡昌生
 - Caslon：最早專為英文設計、最後的古典字體，是過渡和現代字體的鼻祖。被用在獨立宣言中
 - Ahn Graphics由安尚秀所創立
+
+## 「唯一的缺點就是太冷了」
+- DLT OTMaster：OpenType測試工具，可無損修改字體
+- Peter Biľak：斯洛伐克設計師，曾撰文討論Reverse Contrast，也協助過Typotheque做泰文研究
+- Optima Nova：小林章設計的Optima現代版
