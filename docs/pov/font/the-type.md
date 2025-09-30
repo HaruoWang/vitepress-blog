@@ -124,3 +124,69 @@ head:
 - DLT OTMaster：OpenType測試工具，可無損修改字體
 - Peter Biľak：斯洛伐克設計師，曾撰文討論Reverse Contrast，也協助過Typotheque做泰文研究
 - Optima Nova：小林章設計的Optima現代版
+
+## 「等二十周年我都要退休了」
+- Minecraft使用GNU Unifont顯示漢字
+- ISO 15924：文字編碼標準
+- BCP-47：定義IETF語言標籤的文檔
+
+## 你對小學課本還有印象嗎
+- 小林章設計的鉛字叫AK Renaissance Pb
+- text-autospace 是CSS Text Module Level的新屬性
+- GB是中國國標，GB/T是中國推薦國標
+
+## 「九年過後，您的西文排版進步了嗎？」
+- Solid Setting：密排
+- 中文排版時，行長應為文字尺寸的整數倍，使用兩端對齊時注意段落最後一行
+- 藏文的基線是懸掛的
+- 段落視覺調整時CJK的行高是頂線到頂線，西文是看基線
+
+## 「丹麥就像歐洲的日本」
+- jf7000當務字集好用
+- 開元路土魠魚羹事件：因缺字導致特斯拉重開機
+- Danish G：雙層切斷式（Double-story g with a cut loop）
+- 松雲軒：台灣最早與最大的雕版印刷機構
+- Bo Linnemann：丹麥知名設計師，創立Kontrapunkt
+- Kontrapunkt曾和近畿大學合作開發東大阪市專屬字體HIGASHIOSAKA FONT
+
+## 「順便搞個同學會」
+- TWB2：Adobe內部設計工具，影響了Glyphs的Smart components
+- PICO Sans：方正字庫為VR設備所打造的黑體
+- Joost Grootens：荷蘭資訊圖表、書籍及地圖設計師，設計《范達勒辭典》
+- Doug Wilson：專注於Linotype的CD
+- 《華英字典》：第一本漢英對照書籍，由馬禮遜編撰。小宮山老師有收藏
+
+## 「互相了解的前提是能看見」
+- 藏文和泰文一樣屬於母音附標文字
+- 烏金體：藏文襯線體
+- 烏梅體：藏文無襯線體
+- GSUB：字圖替換
+- KhaWa：藏文的雪
+- Backslanted：反斜體
+
+## 論AI與預製菜
+- Snow White：蘋果曾使用的工業設計語言
+- 張弛：在漢儀負責商務，字由創辦人
+- 殷葉航：璇璣造字創辦人，擅AI，打造朱雀仿宋
+
+## 「今年的宅味太嗆了」
+- Bitcount Ink：發展了50年的像素可變彩色字體
+- TypoFix：歐文排印工具，目標是支援24種歐盟官方語言
+
+## 「北歐真的是太鬆弛了」
+- KnownUnknown：曾和蒙納合作Helvetica NFT的創意公司
+- Petr van Blokland：設計第一款螢幕字型Proforma
+- Prix Charles Peignot：表彰35歲以下青年設計師的ATypI獎項
+
+## 「不是亂，而是多元」
+- Franck Jalleau：法國最後一位字沖雕刻師
+- Sofie Beier：《字型設計訣竅》的作者
+- 丹青：傳承字形經典案例
+- IVS：針對異體字的Unicode特殊規格，比GSUB新
+
+## 「我們是先擁抱了五分鐘？」
+- 上海活字：厲致謙的專案，特別介紹徐學成和金偉民
+
+## 人性化的字體排印
+- OCR-A：《駭客任務》海報字體
+- OCR-B：Frutiger設計的
