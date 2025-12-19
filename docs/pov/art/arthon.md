@@ -159,9 +159,32 @@ head:
 
 ## 電影與倫理
 - 高達：「跟拍鏡頭是個道德問題。」
-- 肯定性表現：把優勢族群的形象賦予在少數族群上
+- 肯定性表現：把優勢族群的形象賦予在少數族群上，如白人良心電影
 - 否定性表現更能顯示出意識形態
 
 ## 賤斥藝術
 - Screen有對抗外來事物的意涵
 - 將Cindy Sherman的創作經歷分成三階段
+- Kristeva：賤斥物是主體成為主體時，必須擺脫之物
+- Hal Foster認為賤斥創作的第三條路較好：揭露象徵界危機並探索可能性
+- Freud：文明是透過人類對肛門的抵抗而建立
+- Hal Foster認為屍體是能超越差異政治，代表賤斥文化唯一的主體
+
+## 保存維護的當代理論
+- Brustolon paradox：文資的定義並非透過修復方式來認定
+- Mustang paradox：文資的定義並非透過物件本身來認定
+- Burra Charter提出Cultural Significance
+- David Lowenthal："The Past Is a Foreign Country"
+
+## 影像、景觀與視覺機器
+- 馬克思主義認為，意識形態如黑箱，人們的歷史生命過程是身體生命過程的倒像
+- 再次提及米歇爾的圖像轉向，即人為賦予視覺影像與語言相等的地位
+
+## 檔案衝動
+- Douglas Gordon：常調用希區考克所拍攝的影像
+- 區分資料庫藝術和檔案藝術
+- Tacita Dean稱置放檔案的方式為Collection
+- Joachim Koester稱置放檔案的方式為Comparison
+- Sam Durant稱置放檔案的方式為Combination
+- Thomas Hirschhorn稱置放檔案的方式為Ramification
+- Hirschhorn將自身創作分為Direct Sculptures, Altars, Kiosks和Monuments
