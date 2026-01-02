@@ -158,9 +158,11 @@ head:
 - 為了生存（繁殖）而對他者進行剝奪
 
 ## 電影與倫理
-- 高達：「跟拍鏡頭是個道德問題。」
+- Godard：「跟拍鏡頭是個道德問題。」
 - 肯定性表現：把優勢族群的形象賦予在少數族群上，如白人良心電影
 - 否定性表現更能顯示出意識形態
+- Lévinas引用十戒之不可雕刻偶像，認為他者也不可用視覺化呈現
+- Lanzmann更重視聆聽與文字，呼應Lévinas重視他者的哲學，並挑戰視覺化
 
 ## 賤斥藝術
 - Screen有對抗外來事物的意涵
@@ -188,3 +190,11 @@ head:
 - Sam Durant稱置放檔案的方式為Combination
 - Thomas Hirschhorn稱置放檔案的方式為Ramification
 - Hirschhorn將自身創作分為Direct Sculptures, Altars, Kiosks和Monuments
+
+## 自然景色
+- Wordsworthian：華滋華斯，意指自然本身即是上帝之意志。畫家如Constable
+
+## 獨自來到世界上
+- 《疊韻》書中提及：創作獨舞，等於是在創造一種自我的觀看
+- Mathilde Monnier：內部朝向外部的獨舞狀態形同「全然的赤裸」
+- Nancy：運動就像是世界的一道摺痕，讓獨舞與世界產生縫隙

@@ -212,3 +212,22 @@ head:
 
 ## 「這個獎可以推著我」
 - Aa字庫：被漢儀收購的字庫品牌
+
+## 「就像網戀對象要線下見面了」
+- ÉCAL：洛桑藝術學院
+- Nimonic：王乃謙畢製，2024森澤獎歐文組金獎，名稱源於Mnemonic
+- M-Formula：由W.A. Dwiggins提出，又稱Marionette Formula。即設計太精細有時會失真
+- Nordvest：由Nina Stössinger設計的經典逆反差字體
+- 王乃謙目前最喜歡的字體設計師是Roger Excoffon
+
+## 「我確實覺得這個字體不太莊重」
+- Calibri曾獲2005年紐約TDC，從Vista時期開始使用
+- ClearType：XP就有，但Vista才預設開啟的微軟Subpixel技術
+- Subpixel Rendering：針對LCD的可讀性所開發
+- ClearType Font Collection：六款名稱以C開頭的字體。同時推出的還有微軟正黑、雅黑及Meiryo
+- CoolType：Adobe的Subpixel技術，當年相較於微軟，還能支援PostScript
+- Multiple master fonts：即多重母版字型。可說是OpenType可變字型的前身
+- Calibri的Hinting是Luc(as) de Groot自己做的
+- Hinting：在低解析度時微調字型
+- 早期ClearType只能調整豎畫，因而在中文使用上效果不佳
+- Optical Size：光學尺寸。指該字體適合顯示的大小，在CSS中的可變軸是opsz
