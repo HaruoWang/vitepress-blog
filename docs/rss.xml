@@ -4,139 +4,50 @@
         <title>Feed Me, Haruo</title>
         <link>https://haruowang.vercel.app</link>
         <description>Digital Garden of Haruo Wang</description>
-        <lastBuildDate>Fri, 16 Jan 2026 01:44:52 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 16 Jan 2026 02:14:18 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <copyright>Copyright © 2024-present Haruo Wang</copyright>
         <item>
-            <title><![CDATA[部落部落同樂會]]></title>
-            <link>https://haruowang.vercel.app/about/lifelog/blogblog.html</link>
-            <guid>https://haruowang.vercel.app/about/lifelog/blogblog.html</guid>
-            <pubDate>Fri, 16 Jan 2026 01:23:01 GMT</pubDate>
-            <description><![CDATA[BlogBlog同樂會參與紀錄]]></description>
-            <content:encoded><![CDATA[<h1 id="部落部落同樂會" tabindex="-1">部落部落同樂會 <a class="header-anchor" href="#部落部落同樂會" aria-label="Permalink to &quot;部落部落同樂會&quot;"></a></h1>
+            <title><![CDATA[關於我]]></title>
+            <link>https://haruowang.vercel.app/about/about-me/haruo.html</link>
+            <guid>https://haruowang.vercel.app/about/about-me/haruo.html</guid>
+            <pubDate>Fri, 16 Jan 2026 01:49:37 GMT</pubDate>
+            <description><![CDATA[主修印刷出版及色彩，學士論文爬梳草率季。關注影像理論和軟體研究，自學前端、親近Web3。認同Live Coding與開源文化交織的關係]]></description>
+            <content:encoded><![CDATA[<h1 id="關於我" tabindex="-1">關於我 <a class="header-anchor" href="#關於我" aria-label="Permalink to &quot;關於我&quot;"></a></h1>
 <p><Badge type="info" text="🌿 Budding" /></P>
-<h2 id="推坑" tabindex="-1">推坑 <a class="header-anchor" href="#推坑" aria-label="Permalink to &quot;推坑&quot;"></a></h2>
-<h3 id="電子報《幀頁植物》" tabindex="-1">電子報《幀頁植物》 <a class="header-anchor" href="#電子報《幀頁植物》" aria-label="Permalink to &quot;電子報《幀頁植物》&quot;"></a></h3>
-<p>從Inoreader愛用者，到2024年開始幫自家網站加上<a href="https://haruowang.vercel.app/rss.xml" target="_blank" rel="noreferrer">RSS訂閱</a>功能，雖然不是活躍在部落格興盛時代的年紀，但我想自己對於Feed的熱愛，還是勝於社群媒體的。</p>
-<p>相較競逐注意力的演算法，RSS更精準導向，像是不會被誤判為垃圾郵件的電子報，使用者也不會漏接訊息。因此當訂閱源多到一個程度時，其實很容易被好東西淹沒。</p>
-<p>為了不讓自己學習的輸入和輸出失衡，25年12月我開始了定期在Substack寫雙週報<a href="https://haruowang.substack.com/" target="_blank" rel="noreferrer">《幀頁植物》</a>的計畫。主題還蠻雜的，目前包含藝術家書籍、閱讀、字型、品牌、策展、Web3。可以想像不會有多少讀者，但我仍要藉此理由督促自己。</p>
-<p>這或許不是份有用的電子報，甚至可以說不太好讀，卻是我行經泥地的印記，期望能對得起自己的證明。我可以確保內容會像舊選物店的寶貝，並非精品卻稀奇。推薦給看到這裡的你。</p>
+<h2 id="簡介" tabindex="-1">簡介 <a class="header-anchor" href="#簡介" aria-label="Permalink to &quot;簡介&quot;"></a></h2>
+<p>主修印刷出版及色彩，學士論文爬梳草率季。關注影像理論和軟體研究，自學前端、親近Web3。認同Live Coding與開源文化交織的關係。</p>
+<p>Haruo Wang majored in printing, publishing, and color studies, with his bachelor's thesis explored the Taipei Art Book Fair. He has a keen interest in image theory and software studies, and closely engaging with front-end development and Web3 technologies. He agrees to the intertwined relationship between live coding and open source culture.</p>
+<h2 id="設計" tabindex="-1">設計 <a class="header-anchor" href="#設計" aria-label="Permalink to &quot;設計&quot;"></a></h2>
+<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=Figma&logoColor=fff" alt="Figma" style="display: inline">
+<img src="https://img.shields.io/badge/Blender-F57A3B?style=for-the-badge&logo=blender&logoColor=fff" alt="Blender" style="display: inline">
+<img src="https://img.shields.io/badge/PS-31A8FF?style=for-the-badge&logo=Adobe-Photoshop&logoColor=fff" alt="Adobe Photoshop" style="display: inline">
+<img src="https://img.shields.io/badge/AI-FF9A00?style=for-the-badge&logo=Adobe-Illustrator&logoColor=fff" alt="Adobe Illustrator" style="display: inline">
+<img src="https://img.shields.io/badge/ID-EE3D8F?style=for-the-badge&logo=Adobe-InDesign&logoColor=fff" alt="Adobe InDesign" style="display: inline">
+<img src="https://img.shields.io/badge/PR-EA77FF?style=for-the-badge&logo=Adobe-Premiere-Pro&logoColor=fff" alt="Adobe Premiere Pro" style="display: inline">
+<img src="https://img.shields.io/badge/AE-9999FF?style=for-the-badge&logo=Adobe-After-Effects&logoColor=fff" alt="Adobe After Effects" style="display: inline">
+<h2 id="技術" tabindex="-1">技術 <a class="header-anchor" href="#技術" aria-label="Permalink to &quot;技術&quot;"></a></h2>
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=fff" alt="HTML5" style="display: inline">
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3" alt="CSS3" style="display: inline">
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=333" alt="JavaScript" style="display: inline">
+<img src="https://img.shields.io/badge/p5.js-ED225D?style=for-the-badge&logo=p5.js" alt="p5.js" style="display: inline">
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=333" alt="React" style="display: inline">
+<img src="https://img.shields.io/badge/Vercel-333?style=for-the-badge&logo=vercel" alt="Vercel" style="display: inline">
+<img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=fff" alt="Postman" style="display: inline">
+<img src="https://img.shields.io/badge/VS%20CODE-007ACC?style=for-the-badge&logo=VisualStudioCode&logoColor=fff" alt="Visual Studio Code" style="display: inline">
+<img src="https://img.shields.io/badge/GA4-E37400?style=for-the-badge&logo=google%20analytics&logoColor=fff" alt="Google Analytics" style="display: inline">
+<img src="https://img.shields.io/badge/Unity-57b9d3?style=for-the-badge&logo=unity" alt="Unity" style="display: inline">
+<h2 id="常用語言" tabindex="-1">常用語言 <a class="header-anchor" href="#常用語言" aria-label="Permalink to &quot;常用語言&quot;"></a></h2>
+<p><img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=HaruoWang&amp;layout=compact" alt="Top Langs" loading="lazy"></p>
 ]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[編輯手記]]></title>
-            <link>https://haruowang.vercel.app/about/lifelog/editorial.html</link>
-            <guid>https://haruowang.vercel.app/about/lifelog/editorial.html</guid>
-            <pubDate>Fri, 16 Jan 2026 01:18:08 GMT</pubDate>
-            <description><![CDATA[近期的創作、隨想，與對當下的評論]]></description>
-            <content:encoded><![CDATA[<h1 id="編輯手記" tabindex="-1">編輯手記 <a class="header-anchor" href="#編輯手記" aria-label="Permalink to &quot;編輯手記&quot;"></a></h1>
-<p><Badge type="info" text="🌿 Budding" /></P>
-<h2 id="創作終究是" tabindex="-1">創作終究是 <a class="header-anchor" href="#創作終究是" aria-label="Permalink to &quot;創作終究是&quot;"></a></h2>
-<h3 id="_2025-12-05-2025-12-19" tabindex="-1">2025/12/05-2025/12/19 <a class="header-anchor" href="#_2025-12-05-2025-12-19" aria-label="Permalink to &quot;2025/12/05-2025/12/19&quot;"></a></h3>
-<p>聽聞Disney和OpenAI合作，只嘆時代一直在前進。Brien John的<a href="https://www.facebook.com/brienjohn/posts/pfbid02uJZ5X4dootCoZ5obWBkmkTy5VkE9WdJdtD8Dr1Hrux5pkS9Rmqzhw8a1urY6P2NCl" target="_blank" rel="noreferrer">臉文</a>也昭示了，需要深度知識的音樂產業分析，在這個時代可以怎麼寫會「更有效率」。然而在看完相聲短劇<a href="https://www.youtube.com/watch?v=3malck0qrOg" target="_blank" rel="noreferrer">《我的捧哏》</a>，和同人NIKE廣告<a href="https://www.youtube.com/watch?v=EzTxWRpObhQ" target="_blank" rel="noreferrer">”WHATEVER YOUR GAME”</a>後，我相信創意人不會輸掉這場戰爭。即使對手包含沒有品味的同類。</p>
-<p>始終覺得次文化場景能長出很多人與人的火花。注意到草率季的小誌分享大會時有點慢了，當晚預計會去字戀小聚的聖誕趴晃晃。提及藝術書，近來才在羨慕《事物通信》於北歐觀察到的情狀。</p>
-<blockquote>
-<p>「最驚訝的就是——瑞典書都是免費送！因為國家補助資源豐富，從美術館到個人出版都可以申請出版補助，而且是全額補助，所以 everyone gets paid！於是經常遇到做書的人會送自己的書，簡直拿到手軟。」——<a href="https://muluoffice.substack.com/p/office-post-07" target="_blank" rel="noreferrer">事物通信 OFFICE POST 07</a></p>
-</blockquote>
-<h2 id="胡鬧的樂趣" tabindex="-1">胡鬧的樂趣 <a class="header-anchor" href="#胡鬧的樂趣" aria-label="Permalink to &quot;胡鬧的樂趣&quot;"></a></h2>
-<h3 id="_2025-12-20-2026-01-02" tabindex="-1">2025/12/20-2026/01/02 <a class="header-anchor" href="#_2025-12-20-2026-01-02" aria-label="Permalink to &quot;2025/12/20-2026/01/02&quot;"></a></h3>
-<p>前不久NVIDIA官宣「通用遊戲模型」NitroGen，加上微軟正推動的Gaming Copilot，即使本身不算常打遊戲，卻總感覺不對勁。除非這些舉措能推動無障礙開發的發展，否則我更期望看到Vedal和Neuro 3D相遇的溫馨，而不是讓新功能剝奪玩家在胡鬧中探索的樂趣。</p>
-<p>從「暴力電玩展」相關影像中，我也經由”Dead Island“的<a href="https://www.youtube.com/watch?v=lZqrG1bdGtg" target="_blank" rel="noreferrer">經典預告</a>，以及BJ McDonnell的真人翻拍，再次認識到遊戲所能帶來的詩意。</p>
-<p>光譜另一端，但同樣富有魅力的，對自己來說是Bilibili上惡搞陶喆的「Apiano」系列影片。果然這種「活字印刷」古法，還是眼下最不被AI浪潮淹沒的人類讚歌。</p>
-<p>讀空總文章時發現到，陳德政、羅悅全、鄭慧華這幾號人物，有著「都在藝文圈叱咤」以外的共通點：</p>
-<blockquote>
-<p>「『憂鬱馬戲團』在他們各自的部落格中出現，如同共同標記的中間名，像是一種隱性的血盟連結關係，在部落格時代留下秘密結社般的印記。」——<a href="https://mag.clab.org.tw/clabo-article/arts-and-cultural-writing-in-the-blog-era/" target="_blank" rel="noreferrer">尋訪部落格時代的藝文書寫與群體性（在這個演算法的爛時代）</a></p>
-</blockquote>
-<p>據說2013年的網頁連結到現在已經有快四成都壞了，猶如<a href="https://dang.ai/ai-graveyard" target="_blank" rel="noreferrer">AI Graveyard</a>般觸目驚心。更不用說部落格，簡直要和紙本雜誌一起邁向死語。不過提到後者，收看《紐約客》100年紀錄片時，還是對這種媒體抱有熱情。除了被《寂靜的春天》和《冷血》都在此連載，以及嚴謹的「事實查核部」編制所震驚，還認識了John Hersey的「新新聞」經典”Hiroshima”，與James Baldwin對「黑人伊斯蘭運動」的書寫。印象深刻的還有一句，第四任總編Tina Brown所說的：「讓嚴肅變得性感，讓性感變得嚴肅。」</p>
-<p>是啊，能在娛樂中帶來啟發，讓聽者因一秒四破認識方大同的曲，正是創作者胡鬧一場的樂趣。</p>
-<h2 id="為了抵抗" tabindex="-1">為了抵抗 <a class="header-anchor" href="#為了抵抗" aria-label="Permalink to &quot;為了抵抗&quot;"></a></h2>
-<h3 id="_2026-01-03-2026-01-16" tabindex="-1">2026/01/03-2026/01/16 <a class="header-anchor" href="#_2026-01-03-2026-01-16" aria-label="Permalink to &quot;2026/01/03-2026/01/16&quot;"></a></h3>
-<p>因為不希望自己變成那樣。</p>
-<p>像是<a href="https://www.facebook.com/share/p/18GfXHF2SH/" target="_blank" rel="noreferrer">自稱粉絲</a>，卻無法接受偶像默默找到幸福，終於公開婚訊的；或是在面試提供的Repo裡<a href="https://opensourcemalware.com/blog/contagious-interview-vscode" target="_blank" rel="noreferrer">暗藏後門</a>，盜取使用者虛擬貨幣的。</p>
-<p>因為不希望年紀輕輕就失去未來。</p>
-<p>不用經歷羅毓嘉筆下的空襲，光是幾片不講理的碎玻璃，或不得不逃離所面臨的寒氣，就足以改寫一個人的內心。</p>
-<blockquote>
-<p>「你比昨天的你更靠近活著。」——<a href="https://vocus.cc/article/6965b7f4fd8978000173fbca" target="_blank" rel="noreferrer">空襲生存指南</a></p>
-</blockquote>
-<p>因為不希望內容從王淪為階下囚。</p>
-<p>我想在<a href="https://blogblog.club/party/" target="_blank" rel="noreferrer">BlogBlog 同樂會</a>的實驗中，一起向演算法和AI Slop的時代發起挑戰。像Tailwind工程團隊那種從4人裁至1人的辛酸，或許增進了效率，但我不忍心看到再演。</p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[【展學合作：策展研究筆記】]]></title>
-            <link>https://haruowang.vercel.app/pov/art/curatorial-studies.html</link>
-            <guid>https://haruowang.vercel.app/pov/art/curatorial-studies.html</guid>
-            <pubDate>Fri, 16 Jan 2026 01:09:14 GMT</pubDate>
-            <description><![CDATA[從理論、展評甚至是實踐角度來靠近策展]]></description>
-            <content:encoded><![CDATA[<h1 id="【展學合作-策展研究筆記】" tabindex="-1">【展學合作：策展研究筆記】 <a class="header-anchor" href="#【展學合作-策展研究筆記】" aria-label="Permalink to &quot;【展學合作：策展研究筆記】&quot;"></a></h1>
-<p><Badge type="info" text="🌱 Seedlings" /></P>
-<h2 id="新廢墟攝影" tabindex="-1">新廢墟攝影 <a class="header-anchor" href="#新廢墟攝影" aria-label="Permalink to &quot;新廢墟攝影&quot;"></a></h2>
-<p>一段時間沒參與北藝大策展研究社的活動，這次來聽世育聊「新廢墟攝影」。</p>
-<p>從造船廠，弔詭畫廊到轉型為「一菅空間」，在這個離大勇路64號不遠的位址中，其實有著如題的同名展覽正在發生。所以新廢墟到底是什麼？和廢墟的差別又在哪呢？其實，就像後現代總是反動現代，新廢墟定義的廢墟本身，也不一定是長得破破爛爛的建築結構。重點在於一種被日常排除的例外狀態，以及議題是否切合當代的「新」。</p>
-<p>論及廢墟，首先回溯的是「廢墟探索」（Urbex）。城市探險家及小誌《Infiltration》創辦人Ninjalicious，可說是這個新興領域的鼻祖。而相關文化近年也在中國興起。廢墟在此被定義為TOADS（Temporary, Obsolete, Abandoned and Derelict Spaces），潛入其中似乎有種跑酷的刺激感，甚至被路易威爾大學的地理教授Carrie Mott等人認為是在強調男性氣概。</p>
-<p>我直覺想到，超過十年前一部海報令人過目難忘、關於巴黎地下墓穴的偽紀錄片《忐忑》，還有尋寶題材的《盜墓筆記》和《鬼吹燈》。而若將思考範圍再擴大，如「後室」（The Backrooms）那樣的閾限空間（Liminal space），也能帶來同樣的陌生和獵奇感。「閾」本身是指內外交界的門檻，知名建築師山本理顯也將其運用於自身的社區哲學中。當人們跨越邊界，似乎就能抵達、或回到某處。</p>
-<p>「曾不知夏之為丘兮，孰兩東門之可蕪？」像屈原的《九章．哀郢》，就被美術史學者巫鴻視為中國最早的廢墟詩。其中傳達的更是一種感懷，於我而言也較接近新廢墟攝影想要表達的。</p>
-<p>點開廢墟攝影在維基百科的英文頁面，赫然寫著別名Ruin Porn，被視為一種戀物癖。因為怪獸電影喜歡上荒廢街景的我，是不是也在「旁觀廢墟之痛苦」呢？而在《被新聞出賣的世界》書中，提及一個關於底特律廢墟的案例也發人深省：僅僅只因為相片中有人的存在，就讓Magnum相關照片的評論數輸了HuffPost快兩百倍。實際上造就此差異的成因我相信更複雜，然則現有資訊便已能開啟討論。</p>
-<h2 id="同志數位博物館-憂鬱的年代" tabindex="-1">同志數位博物館：憂鬱的年代 <a class="header-anchor" href="#同志數位博物館-憂鬱的年代" aria-label="Permalink to &quot;同志數位博物館：憂鬱的年代&quot;"></a></h2>
-<blockquote>
-<p>「定時遺忘自己的憂鬱症是道德的，定量地嘗一點百憂解是必須的；自由進出、不負責任是道德的，說話發聲、自省自覺是必須的。」——<a href="https://plaza.openmuseum.tw/muse/curation/91b6564b0fd472c3b897286d21d09ad6/7152" target="_blank" rel="noreferrer">台灣同志數位博物館 | 開放博物館．參與</a></p>
-</blockquote>
-<p>喜歡《鱷魚計畫研究計畫》的呈現，善用數位優勢。從2045年一位研究生的角度出發，像在聽廣播劇。錄音中也論及，中文數位化的起點之一，是1946年高仲芹發明的電華打字機。感覺該來拜讀一下《中文打字機》了。還有倉頡輸入法很難打出「鸛鳥踟躕」這點。</p>
-<p>「讓觀者協作參與，和檔案對話」的實踐，在學術上則被稱為「有機史觀」呢。</p>
-<p>憂鬱年代大事記：</p>
-<ul>
-<li>1990年，台灣最早的女同志團體「我們之間」成立，具有高匿名性</li>
-<li>1992年，「Haven酒吧」偷拍事件</li>
-<li>1994年，北一女自殺事件</li>
-<li>1994到2003年間，「我們之間」發行《女朋友》雜誌</li>
-<li>1995年，邱妙津離世</li>
-<li>1995年，台大浪達社發行《我們是女同性戀》</li>
-<li>該書的自我定位是，「台灣第一本由女同性戀團體自己編寫整理的書籍」</li>
-<li>1995年，陳若菲導演推出《強迫曝光》</li>
-<li>1996年，「壞站」架站。全名為「厭棄／反拒將女人視為妻子的異性戀生殖機制之動物園的壞女兒們」，英文簡稱「dawz」則來自四位初代站長的ID（dora、antichrist、waiter、zick），同時也是「daughters against wives’ zoo」</li>
-<li>1996年，「To-Get-Her」開站。站長Dingo於同年成立搖滾樂團「幫幫忙」</li>
-<li>1998年，「Alivila音樂酒館」偷拍事件</li>
-<li>1999年，「我們之間」在女書店舉辦行動裝置展「久久的彩虹天空」</li>
-<li>2000年，《蒙馬特遺書——女朋友作品2號》，於國家劇院實驗劇場演出</li>
-</ul>
-<h2 id="_2025陽明山藝術季" tabindex="-1">2025陽明山藝術季 <a class="header-anchor" href="#_2025陽明山藝術季" aria-label="Permalink to &quot;2025陽明山藝術季&quot;"></a></h2>
-<ul>
-<li>以溫泉與打石作為主軸</li>
-<li>與人本教育基金會合作，和文大、北市大、義芳國小的學生共同建造《漲巢》等義築</li>
-<li>文大國樂系則與在地長輩持續保持交流</li>
-<li>老師還幫裝置藝術作品《明日天光；夜未央》辦拆除派對</li>
-<li>在相關的USR計畫中，和「庶民發電」的泉源里頂湖電廠合作</li>
-</ul>
-<p>是在一場小到比起講座，更貼近「研究群活動」的講座中聽說這個藝術季的。</p>
-<p>講者劉惠芳除了談到剛來城鄉所演講的Elke Krasny，還提及去Maison à Bordeaux所在城市之「波爾多建築中心」，參與「兒童建築教育及策展計畫」的所見所聞。和孩子討論「在裡面還是外面」，不免令人想到竹林七賢。而關於「建築法庭」（Architecture Trial）的思考，予人啟發之餘，也對各美術館兒藝中心所肩負的更感期待。</p>
-<h2 id="反叛農界" tabindex="-1"><a href="https://cdn.aaa.org.hk/_source/zine-insurrectionary-agricultural-milieu.pdf" target="_blank" rel="noreferrer">反叛農界</a> <a class="header-anchor" href="#反叛農界" aria-label="Permalink to &quot;[反叛農界](https://cdn.aaa.org.hk/_source/zine-insurrectionary-agricultural-milieu.pdf)&quot;"></a></h2>
-<ul>
-<li>以塊莖形式回應生物政治和新自由主義</li>
-</ul>
-<p>佔領之前：</p>
-<ul>
-<li>挖掘派（Diggers）：思想近似農業社會主義（Agrarian Socialism），與平等派（Levellers）同屬英國內戰重要派別</li>
-<li>游擊園藝運動（Guerrilla Gardening Movement）：影響2015年的透納獎得主Assemble。台大曾有「大猩猩綠色游擊隊」響應</li>
-<li>隱形委員會（Comité Invisible）：法國匿名作者群。曾出版《革命將至：資本主義崩壞宣言》（The Coming Insurrection）和《致我們的朋友：資本主義反抗宣言》（To Our Friends）</li>
-</ul>
-<p>案例整理：</p>
-<ul>
-<li>佔領華爾街（Occupy Wall Street）：由Mobile Design Lab於Zuccotti Park建立一套灰水系統（Greywater System），處理廢水中的食物和油脂後循環利用</li>
-<li>Grow Heathrow：反對Heathrow Airport持續擴張</li>
-<li>Mondeggi Bene Comune：進入Firenze的閒置農地製作橄欖油</li>
-<li>596 Acres：在New York推動共享空地</li>
-<li>芒果王（Mango King）：使用海狸集水法（Beaver Water Collection Technique）攔截政府排水系統，在九龍一帶耕種</li>
-<li>金鐘農耕實驗社區（Admiralty Demonstration Farm）：反對新界東北開發計畫，啟發杜可風導演的《香港三部曲》（Hong Kong Trilogy）</li>
-<li>馬屎埔村佔領行動（Ma Shi Po Village Squatting）：抗議恆基兆業地產。鄰近綠悠軒</li>
-</ul>
-]]></content:encoded>
+            <enclosure url="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=HaruoWang&amp;layout=compact" length="0" type="image//api/top-langs/"/>
         </item>
         <item>
             <title><![CDATA[2025的生活]]></title>
             <link>https://haruowang.vercel.app/about/lifelog/2025.html</link>
             <guid>https://haruowang.vercel.app/about/lifelog/2025.html</guid>
-            <pubDate>Fri, 02 Jan 2026 15:23:53 GMT</pubDate>
+            <pubDate>Fri, 16 Jan 2026 01:49:37 GMT</pubDate>
             <description><![CDATA[2025年，Haruo Wang的生活要事]]></description>
             <content:encoded><![CDATA[<h1 id="_2025的生活" tabindex="-1">2025的生活 <a class="header-anchor" href="#_2025的生活" aria-label="Permalink to &quot;2025的生活&quot;"></a></h1>
 <p><Badge type="info" text="🌳 Evergreen" /></P>
@@ -245,10 +156,209 @@
 ]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[部落部落同樂會]]></title>
+            <link>https://haruowang.vercel.app/about/lifelog/blogblog.html</link>
+            <guid>https://haruowang.vercel.app/about/lifelog/blogblog.html</guid>
+            <pubDate>Fri, 16 Jan 2026 01:49:37 GMT</pubDate>
+            <description><![CDATA[BlogBlog同樂會參與紀錄]]></description>
+            <content:encoded><![CDATA[<h1 id="部落部落同樂會" tabindex="-1">部落部落同樂會 <a class="header-anchor" href="#部落部落同樂會" aria-label="Permalink to &quot;部落部落同樂會&quot;"></a></h1>
+<p><Badge type="info" text="🌿 Budding" /></P>
+<h2 id="推坑" tabindex="-1">推坑 <a class="header-anchor" href="#推坑" aria-label="Permalink to &quot;推坑&quot;"></a></h2>
+<h3 id="電子報《幀頁植物》" tabindex="-1">電子報《幀頁植物》 <a class="header-anchor" href="#電子報《幀頁植物》" aria-label="Permalink to &quot;電子報《幀頁植物》&quot;"></a></h3>
+<p>從Inoreader愛用者，到2024年開始幫自家網站加上<a href="https://haruowang.vercel.app/rss.xml" target="_blank" rel="noreferrer">RSS訂閱</a>功能，雖然不是活躍在部落格興盛時代的年紀，但我想自己對於Feed的熱愛，還是勝於社群媒體的。</p>
+<p>相較競逐注意力的演算法，RSS更精準導向，像是不會被誤判為垃圾郵件的電子報，使用者也不會漏接訊息。因此當訂閱源多到一個程度時，其實很容易被好東西淹沒。</p>
+<p>為了不讓自己學習的輸入和輸出失衡，25年12月我開始了定期在Substack寫雙週報<a href="https://haruowang.substack.com/" target="_blank" rel="noreferrer">《幀頁植物》</a>的計畫。主題還蠻雜的，目前包含藝術家書籍、閱讀、字型、品牌、策展、Web3。可以想像不會有多少讀者，但我仍要藉此理由督促自己。</p>
+<p>這或許不是份有用的電子報，甚至可以說不太好讀，卻是我行經泥地的印記，期望能對得起自己的證明。我可以確保內容會像舊選物店的寶貝，並非精品卻稀奇。推薦給看到這裡的你。</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[編輯手記]]></title>
+            <link>https://haruowang.vercel.app/about/lifelog/editorial.html</link>
+            <guid>https://haruowang.vercel.app/about/lifelog/editorial.html</guid>
+            <pubDate>Fri, 16 Jan 2026 01:49:37 GMT</pubDate>
+            <description><![CDATA[近期的創作、隨想，與對當下的評論]]></description>
+            <content:encoded><![CDATA[<h1 id="編輯手記" tabindex="-1">編輯手記 <a class="header-anchor" href="#編輯手記" aria-label="Permalink to &quot;編輯手記&quot;"></a></h1>
+<p><Badge type="info" text="🌿 Budding" /></P>
+<h2 id="創作終究是" tabindex="-1">創作終究是 <a class="header-anchor" href="#創作終究是" aria-label="Permalink to &quot;創作終究是&quot;"></a></h2>
+<h3 id="_2025-12-05-2025-12-19" tabindex="-1">2025/12/05-2025/12/19 <a class="header-anchor" href="#_2025-12-05-2025-12-19" aria-label="Permalink to &quot;2025/12/05-2025/12/19&quot;"></a></h3>
+<p>聽聞Disney和OpenAI合作，只嘆時代一直在前進。Brien John的<a href="https://www.facebook.com/brienjohn/posts/pfbid02uJZ5X4dootCoZ5obWBkmkTy5VkE9WdJdtD8Dr1Hrux5pkS9Rmqzhw8a1urY6P2NCl" target="_blank" rel="noreferrer">臉文</a>也昭示了，需要深度知識的音樂產業分析，在這個時代可以怎麼寫會「更有效率」。然而在看完相聲短劇<a href="https://www.youtube.com/watch?v=3malck0qrOg" target="_blank" rel="noreferrer">《我的捧哏》</a>，和同人NIKE廣告<a href="https://www.youtube.com/watch?v=EzTxWRpObhQ" target="_blank" rel="noreferrer">”WHATEVER YOUR GAME”</a>後，我相信創意人不會輸掉這場戰爭。即使對手包含沒有品味的同類。</p>
+<p>始終覺得次文化場景能長出很多人與人的火花。注意到草率季的小誌分享大會時有點慢了，當晚預計會去字戀小聚的聖誕趴晃晃。提及藝術書，近來才在羨慕《事物通信》於北歐觀察到的情狀。</p>
+<blockquote>
+<p>「最驚訝的就是——瑞典書都是免費送！因為國家補助資源豐富，從美術館到個人出版都可以申請出版補助，而且是全額補助，所以 everyone gets paid！於是經常遇到做書的人會送自己的書，簡直拿到手軟。」——<a href="https://muluoffice.substack.com/p/office-post-07" target="_blank" rel="noreferrer">事物通信 OFFICE POST 07</a></p>
+</blockquote>
+<h2 id="胡鬧的樂趣" tabindex="-1">胡鬧的樂趣 <a class="header-anchor" href="#胡鬧的樂趣" aria-label="Permalink to &quot;胡鬧的樂趣&quot;"></a></h2>
+<h3 id="_2025-12-20-2026-01-02" tabindex="-1">2025/12/20-2026/01/02 <a class="header-anchor" href="#_2025-12-20-2026-01-02" aria-label="Permalink to &quot;2025/12/20-2026/01/02&quot;"></a></h3>
+<p>前不久NVIDIA官宣「通用遊戲模型」NitroGen，加上微軟正推動的Gaming Copilot，即使本身不算常打遊戲，卻總感覺不對勁。除非這些舉措能推動無障礙開發的發展，否則我更期望看到Vedal和Neuro 3D相遇的溫馨，而不是讓新功能剝奪玩家在胡鬧中探索的樂趣。</p>
+<p>從「暴力電玩展」相關影像中，我也經由”Dead Island“的<a href="https://www.youtube.com/watch?v=lZqrG1bdGtg" target="_blank" rel="noreferrer">經典預告</a>，以及BJ McDonnell的真人翻拍，再次認識到遊戲所能帶來的詩意。</p>
+<p>光譜另一端，但同樣富有魅力的，對自己來說是Bilibili上惡搞陶喆的「Apiano」系列影片。果然這種「活字印刷」古法，還是眼下最不被AI浪潮淹沒的人類讚歌。</p>
+<p>讀空總文章時發現到，陳德政、羅悅全、鄭慧華這幾號人物，有著「都在藝文圈叱咤」以外的共通點：</p>
+<blockquote>
+<p>「『憂鬱馬戲團』在他們各自的部落格中出現，如同共同標記的中間名，像是一種隱性的血盟連結關係，在部落格時代留下秘密結社般的印記。」——<a href="https://mag.clab.org.tw/clabo-article/arts-and-cultural-writing-in-the-blog-era/" target="_blank" rel="noreferrer">尋訪部落格時代的藝文書寫與群體性（在這個演算法的爛時代）</a></p>
+</blockquote>
+<p>據說2013年的網頁連結到現在已經有快四成都壞了，猶如<a href="https://dang.ai/ai-graveyard" target="_blank" rel="noreferrer">AI Graveyard</a>般觸目驚心。更不用說部落格，簡直要和紙本雜誌一起邁向死語。不過提到後者，收看《紐約客》100年紀錄片時，還是對這種媒體抱有熱情。除了被《寂靜的春天》和《冷血》都在此連載，以及嚴謹的「事實查核部」編制所震驚，還認識了John Hersey的「新新聞」經典”Hiroshima”，與James Baldwin對「黑人伊斯蘭運動」的書寫。印象深刻的還有一句，第四任總編Tina Brown所說的：「讓嚴肅變得性感，讓性感變得嚴肅。」</p>
+<p>是啊，能在娛樂中帶來啟發，讓聽者因一秒四破認識方大同的曲，正是創作者胡鬧一場的樂趣。</p>
+<h2 id="為了抵抗" tabindex="-1">為了抵抗 <a class="header-anchor" href="#為了抵抗" aria-label="Permalink to &quot;為了抵抗&quot;"></a></h2>
+<h3 id="_2026-01-03-2026-01-16" tabindex="-1">2026/01/03-2026/01/16 <a class="header-anchor" href="#_2026-01-03-2026-01-16" aria-label="Permalink to &quot;2026/01/03-2026/01/16&quot;"></a></h3>
+<p>因為不希望自己變成那樣。</p>
+<p>像是<a href="https://www.facebook.com/share/p/18GfXHF2SH/" target="_blank" rel="noreferrer">自稱粉絲</a>，卻無法接受偶像默默找到幸福，終於公開婚訊的；或是在面試提供的Repo裡<a href="https://opensourcemalware.com/blog/contagious-interview-vscode" target="_blank" rel="noreferrer">暗藏後門</a>，盜取使用者虛擬貨幣的。</p>
+<p>因為不希望年紀輕輕就失去未來。</p>
+<p>不用經歷羅毓嘉筆下的空襲，光是幾片不講理的碎玻璃，或不得不逃離所面臨的寒氣，就足以改寫一個人的內心。</p>
+<blockquote>
+<p>「你比昨天的你更靠近活著。」——<a href="https://vocus.cc/article/6965b7f4fd8978000173fbca" target="_blank" rel="noreferrer">空襲生存指南</a></p>
+</blockquote>
+<p>因為不希望內容從王淪為階下囚。</p>
+<p>我想在<a href="https://blogblog.club/party/" target="_blank" rel="noreferrer">BlogBlog 同樂會</a>的實驗中，一起向演算法和AI Slop的時代發起挑戰。像Tailwind工程團隊那種從4人裁至1人的辛酸，或許增進了效率，但我不忍心看到再演。</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[那些我曾經歷的挫敗]]></title>
+            <link>https://haruowang.vercel.app/about/lifelog/failure.html</link>
+            <guid>https://haruowang.vercel.app/about/lifelog/failure.html</guid>
+            <pubDate>Fri, 16 Jan 2026 01:49:37 GMT</pubDate>
+            <description><![CDATA[2024年開始，Haruo Wang的失敗整理]]></description>
+            <content:encoded><![CDATA[<h1 id="那些我曾經歷的挫敗" tabindex="-1">那些我曾經歷的挫敗 <a class="header-anchor" href="#那些我曾經歷的挫敗" aria-label="Permalink to &quot;那些我曾經歷的挫敗&quot;"></a></h1>
+<p><Badge type="info" text="🌿 Budding" /></P>
+<h2 id="_2024" tabindex="-1">2024 <a class="header-anchor" href="#_2024" aria-label="Permalink to &quot;2024&quot;"></a></h2>
+<ul>
+<li>北藝大藝跨所備取二，藝管所未達標</li>
+<li>《聯合文學》小說新人賞落選一次</li>
+<li>《New Wave攝影創作獎》初審落選</li>
+<li>《金點設計獎》初審落選</li>
+<li>《台灣島。鏈》獎助計畫落選一次</li>
+<li>《若水NFT藝術獎》落選一次</li>
+<li>《Solana Write-a-thon》徵文落選</li>
+<li>用thirdweb快速開發dapp，但是踩坑</li>
+<li>自架RSSHub到Cloudflare，但是不能關機</li>
+<li>護照規費補繳</li>
+<li>移動停利單沒刪乾淨</li>
+<li>《iThome鐵人賽》落選一次</li>
+</ul>
+<h2 id="_2025" tabindex="-1">2025 <a class="header-anchor" href="#_2025" aria-label="Permalink to &quot;2025&quot;"></a></h2>
+<ul>
+<li>國軍雨衣一度不見</li>
+<li>國軍三色筆消失</li>
+<li>郵局金融卡被鎖</li>
+<li>首次打靶九發有五發脫靶</li>
+<li>大部分解練習前插銷拆不下來</li>
+<li>大部分解練習第二次沒找到後插銷</li>
+<li>雨中175公尺射擊第一次只中一發</li>
+<li>雨中175公尺射擊靶位站錯</li>
+<li>被士官長點名綁腿</li>
+<li>無線電UV-5R第一次驗機失敗</li>
+<li>Teach For Taiwan未進入面試</li>
+<li>教科書設計創新補助計畫未入選</li>
+<li>《我所看見的未來》徵文未入選</li>
+<li>典藏ARTouch社群編輯三面未過</li>
+<li>《台灣島。鏈》獎助計畫落選二次</li>
+<li>《台灣新聞攝影大賽》落選</li>
+<li>差點在五之神把悠遊卡搞丟</li>
+</ul>
+<h2 id="_2026" tabindex="-1">2026 <a class="header-anchor" href="#_2026" aria-label="Permalink to &quot;2026&quot;"></a></h2>
+<ul>
+<li>鴻梅2026春季進駐計劃落選一次</li>
+<li>創世紀詩雜誌「草本」專輯落選二次</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[2024的品味]]></title>
+            <link>https://haruowang.vercel.app/about/taste/2024.html</link>
+            <guid>https://haruowang.vercel.app/about/taste/2024.html</guid>
+            <pubDate>Fri, 16 Jan 2026 01:49:37 GMT</pubDate>
+            <description><![CDATA[2024年，Haruo Wang的音樂、影像、閱讀品味]]></description>
+            <content:encoded><![CDATA[<h1 id="_2024的品味" tabindex="-1">2024的品味 <a class="header-anchor" href="#_2024的品味" aria-label="Permalink to &quot;2024的品味&quot;"></a></h1>
+<p><Badge type="info" text="🌳 Evergreen" /></P>
+<h2 id="jan" tabindex="-1">Jan <a class="header-anchor" href="#jan" aria-label="Permalink to &quot;Jan&quot;"></a></h2>
+<h3 id="what-i-hear" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
+<p>謝銘祐《路》、スリーズブーケ《水彩世界》、芒果醬《我喜歡你》、Ave Mujica《Angles》、キタニタツヤ《聖者の行進》、四分衛《雨和眼淚》、稲本響《名残の指先》、夏之禹《姐姐》、神前曉《以下、回想》、Air《Alone in Kyoto》、コレサワ《これから》、back number《冬と春》、鷺巢詩郎《Instabilite:Orchestre》、回春丹《鮮花》</p>
+<h3 id="what-i-see" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
+<p>《日子》、《蜂巢的幽靈》、《君主計畫：神秘組織與怪獸之謎》、《150米的人生可能》</p>
+<h3 id="what-i-read" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
+<p>《社會參與藝術的十個關鍵概念》</p>
+<h2 id="feb" tabindex="-1">Feb <a class="header-anchor" href="#feb" aria-label="Permalink to &quot;Feb&quot;"></a></h2>
+<h3 id="what-i-hear-1" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-1" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
+<p>Lorne Balfe《Calling Home》、日向敏文《Good Evening, Heartache (Orchestra Version)》、鷺巢詩郎《M10 emotion strings edit》、大原ゆい子《風と行く道》、楠木ともり《アノーイング! さんさんウィーク!》、森英治《Proof》、薬師寺寛邦《楞嚴咒 -第五会- 》、Vivy《Fluorite Eye's Song》、黃嘉千《阿爸食飯》、千住明《The Intrepid》、My Chemical Romance《I Don't Love You》、Coldplay《The Scientist》、菅野洋子《some other time》、Jóhann Jóhannsson《Through Falling Snow》、Mira-Cra Park！《Milk》、關戶剛《ラナラウンド Pt.I (FF7R Ver.)》、倉持武志《YO (Acid Jazz Ver.)》、MyGO!!!!!《詩超絆》、津田朱里《Twinkle Snow '13》、昏鴉《Mickey Mouse》</p>
+<h3 id="what-i-see-1" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-1" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
+<p>《BanG Dream! Its MyGO!!!!!》、《度日》、《錄影帶謀殺案》</p>
+<h3 id="what-i-read-1" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-1" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
+<p>《如何書寫當代藝術》</p>
+<h2 id="mar" tabindex="-1">Mar <a class="header-anchor" href="#mar" aria-label="Permalink to &quot;Mar&quot;"></a></h2>
+<h3 id="what-i-hear-2" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-2" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
+<p>釘宮理惠、堀江由衣、喜多村英梨《プレパレード》、SELFKILL《Where are you going?》、優雅逆轉《五月的雨》、頭部組成者《生育叢林》、步行者《夜光信號》、2HRs《Startide Rising》、藤川千愛《好きになってはいけない理由》、我是機車少女《Yume》、the neverminds《melt》、Angela Aki《この世界のあちこちに》、Habak《Ningún muro consiguió jamás contener la primavera》、Trent Reznor &amp; Atticus Ross《Hand Covers Bruise》、yonige《walk walk》、具島直子《I Love You》、John Carpenter《My Name is Death》、久石讓《大崩壊》、鈴村健一《ババーンと推参! バーンブレイバーン - ブレイバーン》、Lambiris《残光》、菅野祐悟《Panic Sense》、DE DE MOUSE《Memory Lane》、rionos《Viator》 、CHEMISTRY《最期の川》、菅野洋子《Blue feat. Maya》、R-Tiat《暗光》</p>
+<h3 id="what-i-see-2" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-2" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
+<p>《勇氣爆發》、《聖血》、《社群網戰》、《年尾巴》、《霧中風景》、《冥王》、《周處除三害》</p>
+<h3 id="what-i-read-2" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-2" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
+<p>《2017鴻梅新人獎巡迴展作品集無人之地》、《藝術論壇Volume11》、《我將是你的鏡子：世界當代攝影家告白》</p>
+<h2 id="apr" tabindex="-1">Apr <a class="header-anchor" href="#apr" aria-label="Permalink to &quot;Apr&quot;"></a></h2>
+<h3 id="what-i-hear-3" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-3" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
+<p>靴腿《失去愛情的摩托車手》、JADE《Step By Step》、謝震廷feat. 徐靖玟《你的行李》、沉舟樂隊《就讓我墜入海底》、SUGIZO feat. GLIM SPANKY《めぐりあい》、蓮ノ空《抱きしめる花びら》、sweet ARMS《ヒトヒラ》、岩崎琢《Rubicon》、芒果醬《小紫aka給我錢》、Eve《心海》、陳勢安《不想說晚安》、P-MODEL《2D OR NOT 2D》、梅林太郎《Yuri on ICE》、林奕匡《高山低谷》、山田珠露《Always in my heart》、鷺巢詩郎《閉塞の拡大》、Cerise Bouquet《Holiday Holiday》、Cocco《Raining》、既定偏離《人生逃避號》、Liella!《シェキラ》、reche《命運》、《ゴジランド》、張瑋瑋《米店》、Ivy to Fraudulent Game《青二才》、菅野洋子《piece by ten》、dress《Is the only》、藤間仁《表裏一体》、藤田淳平《月明り》、佐佐木惠梨《ロッホと旅人》</p>
+<h3 id="what-i-see-3" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-3" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
+<p>《浮光掠影：每個人心中的電影院》、《搬家》、《哥吉拉與金剛：新帝國》、《父親的房間》</p>
+<h3 id="what-i-read-3" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-3" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
+<p>《繩》、《裝幀時代》、《開店指「難」：第一次開獨立書店就 □□！》</p>
+<h2 id="may" tabindex="-1">May <a class="header-anchor" href="#may" aria-label="Permalink to &quot;May&quot;"></a></h2>
+<h3 id="what-i-hear-4" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-4" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
+<p>佐藤直紀《Godzilla-1.0 Last》、夏之禹《Hometown》、KUNTARI《Larynx, Pt. One》、Nirvana《Jesus Doesn't Want Me For A Sunbeam》、시온《O.o》、YEW《จะมอบความรัก》、WAVE9《Wave Night》、鷺巢詩郎《Robe des Champs》、Stephen Sanchez《Until I Found You》、toe《Mother》、Village People《YMCA》、遠藤ナオキ《あなたと私と私たちの夢》、粹垢《阿蘭姊》、ASMRZ《잘자요 아가씨》、CRYCHIC《人間になりたいうた》、Elements Garden《Sense》、The Cecilias《The End of Us》、新川崎(仮)《声なき魚》</p>
+<h3 id="what-i-see-4" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-4" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
+<p>《哥吉拉-1.0》、《到不了的遠方》、《重構破碎凝視》、《帝國浩劫：美國內戰》</p>
+<h3 id="what-i-read-4" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-4" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
+<p>《終點往往在他方》</p>
+<h2 id="jun" tabindex="-1">Jun <a class="header-anchor" href="#jun" aria-label="Permalink to &quot;Jun&quot;"></a></h2>
+<h3 id="what-i-hear-5" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-5" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
+<p>雷光夏《歇業的海水浴場》、陳奕迅《床頭燈》、Ivy to Fraudulent Game《糸遊》、林強《盒子內的時間》、Max Richter《Movement, Before All Flowers》、鷺巢詩郎《Start To Check Up》、Thomas Bangalter《Sangria》、美波《君と僕の154小節戦争》、Naum Gabo《Theme For Great Cites》、MONO《Oath》、꽃별《비익련리（比翼連里）》、SHIN IN RYU《For us, summer is always short》、Jun Futamata《Útdautt lag》、Katamari-Tai Jr.《さくらいろの季節》、谷內秀樹《ミサの孤独》、Pietro Mascagni《Intermezzo From Cavalleria Rusticana》、harmoe《愛と呼ぶなら》、Wolfram《Automatic Dub》、松崎ナオ／鹿の一族《清く、ただしく》、NONA REEVES《DJ! DJ! 〜とどかぬ想い〜》、Alejandro Jodorowsky《Eye of the Beholder》、溝口肇《Tree of Hearts》、菅野洋子《その時まで》、蔡琴《請假裝你會捨不得我》、吉那罐子《把燈關上（摎火扚忒）》、新垣結衣《heavenly days》、gnkosaiBAND《POSSE》</p>
+<h3 id="what-i-see-5" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-5" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
+<p>《我和吸血鬼有份合約》、《正欲》、《高潮》、《虹咲四格第二季》、《夜晚的水母不會游泳》、《聖山》、《夏日的文化洋行》、《見證》、《恐怖分子》、《Girls Band Cry》</p>
+<h3 id="what-i-read-5" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-5" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
+<p>《關鍵1987》、《新活水Vol.19》</p>
+<h2 id="jul" tabindex="-1">Jul <a class="header-anchor" href="#jul" aria-label="Permalink to &quot;Jul&quot;"></a></h2>
+<h3 id="what-i-hear-6" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-6" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
+<p>harmoe《ドキドキトキドキトキメキス♡》、秘部痺れ《Rollercoaster of the Universe》、我地希望《半箭》、Underworld《Between Stars》、石橋英子《Evil Does Not Exist》、LÜCY《Abettor》、濁水溪公社《港都情人》、透明雜誌《E的幽靈》、The CHANG《Holiday》、周杰倫《晴天》、TuT《You Got Me When I Stare At You》、Supercar《Lucky》、先知瑪莉《入睡》、검정치마《EVERYTHING》、楊乃文 feat. 傻子與白痴《思緒的盡頭》、濁水溪公社《孔雀開屏》、伍佰《淚橋》、Agua Blue《土偶》、Paranmaum《Linda Linda》、ZARD《DAN DAN 心魅かれてく》、Lexiu Liu《MAGICIAN》、遠野光《LOVE 2000》、中森明菜《東京砂漠》、麻枝准《夏気球》、MyGO!!!!!《端程山》、Homecomings《euphoria》、陳奕迅《內疚》、Charlene《I’ve Never Been to Me》、Kim Il Du《술 마시러 가는 길 (ballad ver.)》、MAMAMOO+《댕댕》、Ketil Bjørnstad《The Sea V》、Aqours《HAPPY PARTY TRAIN》、鮮于貞娥《what the hell》、徐行《也許我們會再見》、Woodkid《Guns for Hire》、Ludovico Einaudi《Fly》、TOŃ《Wdech/wydech》、山下達郎《Juvenileのテーマ～瞳の中のRainbow～》、Joni Nijo《Dreaming》、沈文程《小河之歌》、圖騰樂團《我在那邊唱》、Einstürzende Neubauten《Sabrina》、天野正道《新たなる旅立ち》、青木陽菜《独奏showtime》</p>
+<h3 id="what-i-see-6" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-6" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
+<p>《邪惡根本不存在》、《爛頭殼》、《長腿》、《奧術》</p>
+<h3 id="what-i-read-6" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-6" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
+<p>《少女歌劇再生產評論集》、《影視聽生活誌011》、《愛動物的人》</p>
+<h2 id="aug" tabindex="-1">Aug <a class="header-anchor" href="#aug" aria-label="Permalink to &quot;Aug&quot;"></a></h2>
+<h3 id="what-i-hear-7" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-7" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
+<p>Seaweed藻《Morning Sun》、The Mercury Program《Marianas》、青木陽菜《Colors of You》、Ivy to Fraudulent Game《賀歌》、河豚子《陳振昌，你是隻猴子》、松崎ナオ《ただ残るイメージ》、Lily Chou-Chou《Arabesque》、村松崇継《彼方の光》、漂流出口《仙人掌的花》、Alex G《Main Theme》、World's End Girlfriend《Les Enfants du paradis》、木嶋真優《鮫 (エスクアロ)》、JPBS《Rainy Day》、スタァライト九九組《Pride》、加藤達也《color temperature》、我們的日子有限公司《遺書》、JPBS《Green Screen》、真名子新《網户》、Inspirative《Why》、The Darkest Romance《หมุน》、Kevin Colombin《Ending》、你太白了，去曬黑《主意》、蘇打綠《蟬想》、DeVotchKa《The Winner Is》、Thomas Foguenne《Once Again》、I Mean Us《Blue and Gold》、洛天依《摩的大飈客》（公婆版歌詞）、OYEOL《OH NEW SUPER WORLD》、BL!NDMAN《Electric Counterpoint》、London Grammar《Into Gold》、Hooverphonic《Eden》、JRJ Enterprises《水田不要賣》、步行者《橋》、Yufu《The Walls Are Coming In》、野外合作社《復活》、Sunny Day Service《コンビニのコーヒー》、Cozy《21 Grams》、魚條《279自救會》、てつくずおきば《エアーマンが倒せない》、曹永旭《Seorae》、岡本敦郎《みどりの馬車》、AiNA THE END《Love Sick》、戴荃《悟空》</p>
+<h3 id="what-i-see-7" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-7" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
+<p>《驀然回首》、《老狐狸》、《青春電幻物語》、《廣島》、《雨月物語》、《紀錄片：Sunny Day Service》、《蝙蝠俠》</p>
+<h3 id="what-i-read-7" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-7" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
+<p>《女性電影理論》、《觀光客的哲學》</p>
+<h2 id="sep" tabindex="-1">Sep <a class="header-anchor" href="#sep" aria-label="Permalink to &quot;Sep&quot;"></a></h2>
+<h3 id="what-i-hear-8" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-8" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
+<p>Flawed Mangoes《Dramamine》、남혜승、박상희 《그날의 바람》、羽毛田丈史、高見優《キセキ~for ROOKIES instrumental version ~》、洪佩瑜、聲子蟲《你是自由的》、hil《Sorrow_UBW Extend》、水瀬祈《Wishing》、Jung Woo《Love Song》、It's《Fading Person, Fading Love》、YOSHI《理性藝術家》、DRDR《反正我們就這樣》、Riya《神話》、きっとび《ユー》、아소토유니온《THINK ABOUT` CHU》、Mogwai《God Gets You Back》、麥浚龍《天與地的距離》、THE BLACKBAND、汐菜《KISSそれは》、Loveholic《The Flowerpot》、Superfly《Charade》、Adultchild《Sad Thing》、School Food Punishment《light prayer》、OnceGrace Forever《Dance to remember, dance to forget》、The Cure《Alone》、Hania Rani《24.03》、藤澤慶昌《ラジオたいそう》、倒車入庫《先走了》、神前曉《Sleep Well, Vivy》、牛尾憲輔《gentle heart》、Midicronica《San Francisco》、橫山克《Dear My Loneliness and Darkness》、小瀨村晶《Shutter Girl》、929《也許像星星》</p>
+<h3 id="what-i-see-8" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-8" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
+<p>《記憶花園》、《Vitalik：以太坊故事》、《再見機器人》、《擅長逃跑的殿下》</p>
+<h3 id="what-i-read-8" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-8" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
+<p>《幸福之路》、《相機女孩漫遊東京1》</p>
+<h2 id="oct" tabindex="-1">Oct <a class="header-anchor" href="#oct" aria-label="Permalink to &quot;Oct&quot;"></a></h2>
+<h3 id="what-i-hear-9" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-9" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
+<p>草東沒有派對《滔滔》、鐘嵐珠《PHOENIX》、上原步夢《Stellar Stream》、12.8Twelve.eight《Pioneer》、12.8Twelve.eight《Blind》、美波《TIME GRAM》、ミト《White Lies》、橫山克《Tsurune the Movie - The Sound of Origin》、都留教博《End Place》、曹雅雯《抱一個》、Myles Kennedy《How The Story Ends》、戶松遙《ユメセカイ》、葉穎《你哭完該笑了》、渡邊琢磨《Fate》、坂本龍一《Solitude》、雷光夏《紅尾巴》、橋本由香利《En fermant les yeux》、Suneohair《Speed》、HUSH《第三人稱》、橫山克《Again》、Michel Moulinié《Le Ballet Des Mouches》、渋さ知らズ《ひこーき》、SALVALAI《MORAL》、四喜丸子《道》</p>
+<h3 id="what-i-see-9" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-9" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
+<p>《愛麗絲與特蕾絲的虛幻工廠》、《聽海湧》、《東尼瀧谷》、《異形：羅穆路斯》、《藍色巨星》、《塔爾》、《潛行者》、《墜惡真相》、《英雄》、《小丑：雙重瘋狂》</p>
+<h3 id="what-i-read-9" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-9" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
+<p>《臺灣詩學學刊40期》、《臺灣自然寫作選》、《歇斯底里的案件》、《蔡國強又來了！》、《交陪美學論》</p>
+<h2 id="nov" tabindex="-1">Nov <a class="header-anchor" href="#nov" aria-label="Permalink to &quot;Nov&quot;"></a></h2>
+<h3 id="what-i-hear-10" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-10" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
+<p>高見優《JIN-仁- Main Title》、DSPS《成為日常》、BRADD《Caged Birds》、邱淑蟬《望》、聲子蟲《印象派》、《Pilence Pee》、橘娃娃《18碎》、Pучной Pептилоид《Я хочу быть 2д》、春麵樂隊《我在你的眼睛我看到了你》、Ruud Hall《The Aftermath Of Loss》、Anna von Hausswolff《Ugly and Vengeful》、牛尾憲輔《paranormal funk》、中村誠一《驢馬》、MONO《Death in Rebirth》、Homecomings《slowboat》、擊沉女孩《Something Old》、黃小楨《Secret (OMD cover)》、Kronos Quartet《Runaway Horses》、橫山克《oOoOo #JELEE》、Lagrimas《Validations》、Wounded Masquerade《I ruin everything》、笑琴《漂洋》、靈魂咆哮《二十年》、陳奕迅《這樣很好》、Chage《永遠の謎》、Iglooghost《Coral Mimic》、陳佩賢《You Are》、伍佰《純真年代》</p>
+<h3 id="what-i-see-10" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-10" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
+<p>《詩》、《瑞秋》、《懼裂》、《白南準：月亮是最古早的電視》、《三島由紀夫：人間四幕》、《群山之島與不去會死的他們2》、《一家子兒咕咕叫》、《奧術2》、《掬水月在手》</p>
+<h3 id="what-i-read-10" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-10" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
+<p>《設計·Design·デザイン》、《馴羊記》、《Play．紙標本》、《小說生活》</p>
+<h2 id="dec" tabindex="-1">Dec <a class="header-anchor" href="#dec" aria-label="Permalink to &quot;Dec&quot;"></a></h2>
+<h3 id="what-i-hear-11" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-11" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
+<p>山田豐《Mvt.11 &quot;Memories&quot;》、遠藤ナオキ《Flavors》、Cory Wong《Starship Syncopation》、紙鳶《都是媽逼的》、白百《我不是完美小孩》、Homecomings《Moon Shaped》、The Fearless Flyers《Blue Angels》、陳奕迅《給你》、菊地成孔《ただ泣くだけ〜Oh god, I'm alone〜》、Daniel Pemberton《Spider-Woman (Gwen Stacy)》、常田大希《祝祭》、ALI、The Crane《NEON》、方大同《沒啥好說》、柯智棠《My Nova》、西川貴教《天叢雲劍-SKYBREAKER-》、坂本龍一《SILK Endroll》、Ólafur Arnalds《Hægt, Kemur Ljósið》、艾怡良《那時有你》、Hello Nico《花》、ACIDMAN《sonet》、回聲樂團《Silent Night In Shinjuku》、南西肯恩《大海》、福島章嗣《May You Stay Forever Young》、The Biscats《あなたへ》、冬野ユミ《光の扉》、冬野ユミ《Estate-夏の日》</p>
+<h3 id="what-i-see-11" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-11" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
+<p>《12.12：首爾之春》、《喜劇之王》、《蜘蛛人：新宇宙》、《蜘蛛人：穿越新宇宙》、《膽大黨》、《一部未完成的電影》、《東離劍遊紀4》、《少年》、《里斯本的故事》</p>
+<h3 id="what-i-read-11" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-11" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
+<p>《花開藝文誌：森人號》</p>
+]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[2025的品味]]></title>
             <link>https://haruowang.vercel.app/about/taste/2025.html</link>
             <guid>https://haruowang.vercel.app/about/taste/2025.html</guid>
-            <pubDate>Fri, 02 Jan 2026 15:23:53 GMT</pubDate>
+            <pubDate>Fri, 16 Jan 2026 01:49:37 GMT</pubDate>
             <description><![CDATA[2025年，Haruo Wang的音樂、影像、閱讀品味]]></description>
             <content:encoded><![CDATA[<h1 id="_2025的品味" tabindex="-1">2025的品味 <a class="header-anchor" href="#_2025的品味" aria-label="Permalink to &quot;2025的品味&quot;"></a></h1>
 <p><Badge type="info" text="🌳 Evergreen" /></P>
@@ -339,10 +449,215 @@
 ]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[出口日語N4文法]]></title>
+            <link>https://haruowang.vercel.app/global/japan/n4.html</link>
+            <guid>https://haruowang.vercel.app/global/japan/n4.html</guid>
+            <pubDate>Fri, 16 Jan 2026 01:49:37 GMT</pubDate>
+            <description><![CDATA[跟隨出口仁老師學習N4文法的重點筆記]]></description>
+            <content:encoded><![CDATA[<h1 id="出口日語n4文法" tabindex="-1">出口日語N4文法 <a class="header-anchor" href="#出口日語n4文法" aria-label="Permalink to &quot;出口日語N4文法&quot;"></a></h1>
+<p><Badge type="info" text="🌱 Seedlings" /></P>
+<h2 id="までに" tabindex="-1">～までに <a class="header-anchor" href="#までに" aria-label="Permalink to &quot;～までに&quot;"></a></h2>
+<blockquote>
+<p>在…之前（做什麼）</p>
+</blockquote>
+<ul>
+<li>名詞／辭書形 + までに</li>
+<li>まで則表示「持續」的狀態</li>
+</ul>
+<details class="details custom-block"><summary>Tips</summary>
+<p>辭書形：動詞原形。</p>
+</details>
+<h2 id="つもり" tabindex="-1">～つもり <a class="header-anchor" href="#つもり" aria-label="Permalink to &quot;～つもり&quot;"></a></h2>
+<blockquote>
+<p>打算（做什麼）</p>
+</blockquote>
+<ul>
+<li>辭書形／ない形 + つもりです</li>
+<li>辭書形 + つもりはありません</li>
+<li>第二種否定比第一種強烈</li>
+<li>つもりです作為問句要注意，問太多了</li>
+<li>類似於意向形 + と思います</li>
+<li>類似於意向形 + と思っています</li>
+<li>具體性：つもりです &gt; と思っています &gt; と思います</li>
+<li>「現在才打算要幹嘛」就要用と思います</li>
+</ul>
+<details class="details custom-block"><summary>Tips</summary>
+<p>意向形：通常以よう結尾。</p>
+</details>
+<h2 id="かもしれません" tabindex="-1">～かもしれません <a class="header-anchor" href="#かもしれません" aria-label="Permalink to &quot;～かもしれません&quot;"></a></h2>
+<blockquote>
+<p>搞不好</p>
+</blockquote>
+<ul>
+<li>可以簡寫成かも</li>
+</ul>
+<h2 id="は-より" tabindex="-1">～は...より <a class="header-anchor" href="#は-より" aria-label="Permalink to &quot;～は...より&quot;"></a></h2>
+<blockquote>
+<p>A比B</p>
+</blockquote>
+<ul>
+<li>可以顛倒順序，但「被比的」還是より前的名詞</li>
+</ul>
+<h2 id="やすい" tabindex="-1">～やすい <a class="header-anchor" href="#やすい" aria-label="Permalink to &quot;～やすい&quot;"></a></h2>
+<blockquote>
+<p>容易（做）</p>
+</blockquote>
+<ul>
+<li><s>ます</s>形 + やすいです</li>
+<li>整體可視為い形容詞</li>
+<li>反義：にくいです</li>
+</ul>
+<details class="details custom-block"><summary>Tips</summary>
+<p>ます形：比原形禮貌，表示習慣或未來動作。</p>
+</details>
+<h2 id="にくい" tabindex="-1">～にくい <a class="header-anchor" href="#にくい" aria-label="Permalink to &quot;～にくい&quot;"></a></h2>
+<blockquote>
+<p>不容易（做）</p>
+</blockquote>
+<ul>
+<li><s>ます</s>形 + にくいです</li>
+<li>類似於なかなか～ない</li>
+</ul>
+<h2 id="方" tabindex="-1">～方 <a class="header-anchor" href="#方" aria-label="Permalink to &quot;～方&quot;"></a></h2>
+<blockquote>
+<p>方法</p>
+</blockquote>
+<ul>
+<li><s>ます</s>形 + 方</li>
+<li>かた是訓讀，ほう是音讀</li>
+<li>表示方法和「ひと」的禮貌用途時念かた</li>
+<li>表示方向和哪一方時念ほう</li>
+</ul>
+<h2 id="ので" tabindex="-1">～ので <a class="header-anchor" href="#ので" aria-label="Permalink to &quot;～ので&quot;"></a></h2>
+<blockquote>
+<p>因為</p>
+</blockquote>
+<ul>
+<li>普通形／丁寧形 + ので</li>
+<li>名詞／な形容詞 + なので</li>
+<li>ので比から更鄭重，所以不能用命令和禁止形</li>
+<li>ので不像から可以放句尾</li>
+</ul>
+<details class="details custom-block"><summary>Tips</summary>
+<p>な形容詞：即形容動詞，基本形有詞尾だ。</p>
+</details>
+<h2 id="のに" tabindex="-1">～のに <a class="header-anchor" href="#のに" aria-label="Permalink to &quot;～のに&quot;"></a></h2>
+<blockquote>
+<p>明明…卻</p>
+</blockquote>
+<ul>
+<li>普通形／丁寧形 + のに</li>
+<li>名詞／な形容詞 + なのに</li>
+</ul>
+<h2 id="ことができます" tabindex="-1">～ことができます <a class="header-anchor" href="#ことができます" aria-label="Permalink to &quot;～ことができます&quot;"></a></h2>
+<blockquote>
+<p>可以做…</p>
+</blockquote>
+<ul>
+<li>辭書形 + ことができます</li>
+<li>「形式名詞」こと可以用名詞取代</li>
+<li>肯定時類似てもいいです</li>
+<li>否定時類似てはいけません，但後者更強烈</li>
+</ul>
+<h2 id="たことがあります" tabindex="-1">～たことがあります <a class="header-anchor" href="#たことがあります" aria-label="Permalink to &quot;～たことがあります&quot;"></a></h2>
+<blockquote>
+<p>有做過</p>
+</blockquote>
+<ul>
+<li>た形 + ことがあります</li>
+<li>が換成も就是「也做過」</li>
+<li>「有看過但沒吃過」的第二個が會換成は</li>
+</ul>
+<h2 id="ほうがいいです" tabindex="-1">～ほうがいいです <a class="header-anchor" href="#ほうがいいです" aria-label="Permalink to &quot;～ほうがいいです&quot;"></a></h2>
+<blockquote>
+<p>做…比較好</p>
+</blockquote>
+<ul>
+<li>辭書形／た形  + ほうがいいです</li>
+<li>類似たらいいです，但ほうがいいです的叮囑語氣更強</li>
+</ul>
+<h2 id="すぎます-です" tabindex="-1">～すぎます／です <a class="header-anchor" href="#すぎます-です" aria-label="Permalink to &quot;～すぎます／です&quot;"></a></h2>
+<blockquote>
+<p>太過…</p>
+</blockquote>
+<ul>
+<li>用すぎます視為動詞</li>
+<li>用すぎです視為名詞或な形容詞</li>
+<li><s>ます</s>形 + すぎます／です</li>
+<li><s>い／な</s>形容詞 + すぎます／です</li>
+<li>否定時是なさすぎます</li>
+</ul>
+<h2 id="なさい" tabindex="-1">～なさい <a class="header-anchor" href="#なさい" aria-label="Permalink to &quot;～なさい&quot;"></a></h2>
+<blockquote>
+<p>命令語氣</p>
+</blockquote>
+<ul>
+<li><s>ます</s>形 + なさい</li>
+<li>晚安的なさい是用來寒暄</li>
+<li>お帰りなさい其實也是，但不限制上對下</li>
+</ul>
+<h2 id="てもいいです" tabindex="-1">～てもいいです <a class="header-anchor" href="#てもいいです" aria-label="Permalink to &quot;～てもいいです&quot;"></a></h2>
+<blockquote>
+<p>可以做</p>
+</blockquote>
+<ul>
+<li>相當於～てもかまいません</li>
+<li>動詞+て，名詞和な形容詞+で，い形容詞+くて</li>
+<li>只有許可，沒有建議的意思</li>
+<li>後三者有即使...也可以的語氣</li>
+</ul>
+<h2 id="てはいけません" tabindex="-1">～てはいけません <a class="header-anchor" href="#てはいけません" aria-label="Permalink to &quot;～てはいけません&quot;"></a></h2>
+<blockquote>
+<p>不可以做</p>
+</blockquote>
+<ul>
+<li>相當於～てはだめです</li>
+<li>動詞+て，名詞和な形容詞+で，い形容詞+くて</li>
+<li>ないでください的語氣較不強硬</li>
+<li>てはなりません的語氣更拘謹</li>
+</ul>
+<details class="details custom-block"><summary>Tips</summary>
+<p>ては的縮約表現是ちゃ。</p>
+</details>
+<h2 id="なくてもいいです" tabindex="-1">～なくてもいいです <a class="header-anchor" href="#なくてもいいです" aria-label="Permalink to &quot;～なくてもいいです&quot;"></a></h2>
+<blockquote>
+<p>可以不做</p>
+</blockquote>
+<ul>
+<li>相當於～なくてもかまいません</li>
+<li>就是～てもいいです的開頭加上「なく」</li>
+<li>動詞+なく，名詞和な形容詞+じゃなく／でなく，い形容詞+くなく</li>
+</ul>
+<h2 id="なくてはいけません" tabindex="-1">～なくてはいけません <a class="header-anchor" href="#なくてはいけません" aria-label="Permalink to &quot;～なくてはいけません&quot;"></a></h2>
+<blockquote>
+<p>一定要</p>
+</blockquote>
+<ul>
+<li>相當於～なければなりません／～ないとだめです</li>
+<li>就是～てはいけません的開頭加上「なく」</li>
+<li>動詞+なく，名詞和な形容詞+じゃなく／でなく，い形容詞+くなく</li>
+</ul>
+<h2 id="ことになります" tabindex="-1">～ことになります <a class="header-anchor" href="#ことになります" aria-label="Permalink to &quot;～ことになります&quot;"></a></h2>
+<blockquote>
+<p>（非只由自己）決定</p>
+</blockquote>
+<ul>
+<li>辭書形／ない形 + ことになります</li>
+</ul>
+<h2 id="ことにします" tabindex="-1">～ことにします <a class="header-anchor" href="#ことにします" aria-label="Permalink to &quot;～ことにします&quot;"></a></h2>
+<blockquote>
+<p>（自己）決定</p>
+</blockquote>
+<ul>
+<li>辭書形／ない形 + ことにします</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[【松學校導讀：重點筆記】]]></title>
             <link>https://haruowang.vercel.app/pov/art/arthon.html</link>
             <guid>https://haruowang.vercel.app/pov/art/arthon.html</guid>
-            <pubDate>Fri, 02 Jan 2026 15:23:53 GMT</pubDate>
+            <pubDate>Fri, 16 Jan 2026 01:49:37 GMT</pubDate>
             <description><![CDATA[觀看數位藝術基金會《松學校導讀》之摘要整理]]></description>
             <content:encoded><![CDATA[<h1 id="【松學校導讀-重點筆記】" tabindex="-1">【松學校導讀：重點筆記】 <a class="header-anchor" href="#【松學校導讀-重點筆記】" aria-label="Permalink to &quot;【松學校導讀：重點筆記】&quot;"></a></h1>
 <p><Badge type="info" text="🌱 Seedlings" /></P>
@@ -559,6 +874,75 @@
 <h2 id="foster談模擬" tabindex="-1">Foster談模擬 <a class="header-anchor" href="#foster談模擬" aria-label="Permalink to &quot;Foster談模擬&quot;"></a></h2>
 <ul>
 <li>Hermann Broch將媚俗視為藝術價值系統中的惡</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[【展學合作：策展研究筆記】]]></title>
+            <link>https://haruowang.vercel.app/pov/art/curatorial-studies.html</link>
+            <guid>https://haruowang.vercel.app/pov/art/curatorial-studies.html</guid>
+            <pubDate>Fri, 16 Jan 2026 01:49:37 GMT</pubDate>
+            <description><![CDATA[從理論、展評甚至是實踐角度來靠近策展]]></description>
+            <content:encoded><![CDATA[<h1 id="【展學合作-策展研究筆記】" tabindex="-1">【展學合作：策展研究筆記】 <a class="header-anchor" href="#【展學合作-策展研究筆記】" aria-label="Permalink to &quot;【展學合作：策展研究筆記】&quot;"></a></h1>
+<p><Badge type="info" text="🌱 Seedlings" /></P>
+<h2 id="新廢墟攝影" tabindex="-1">新廢墟攝影 <a class="header-anchor" href="#新廢墟攝影" aria-label="Permalink to &quot;新廢墟攝影&quot;"></a></h2>
+<p>一段時間沒參與北藝大策展研究社的活動，這次來聽世育聊「新廢墟攝影」。</p>
+<p>從造船廠，弔詭畫廊到轉型為「一菅空間」，在這個離大勇路64號不遠的位址中，其實有著如題的同名展覽正在發生。所以新廢墟到底是什麼？和廢墟的差別又在哪呢？其實，就像後現代總是反動現代，新廢墟定義的廢墟本身，也不一定是長得破破爛爛的建築結構。重點在於一種被日常排除的例外狀態，以及議題是否切合當代的「新」。</p>
+<p>論及廢墟，首先回溯的是「廢墟探索」（Urbex）。城市探險家及小誌《Infiltration》創辦人Ninjalicious，可說是這個新興領域的鼻祖。而相關文化近年也在中國興起。廢墟在此被定義為TOADS（Temporary, Obsolete, Abandoned and Derelict Spaces），潛入其中似乎有種跑酷的刺激感，甚至被路易威爾大學的地理教授Carrie Mott等人認為是在強調男性氣概。</p>
+<p>我直覺想到，超過十年前一部海報令人過目難忘、關於巴黎地下墓穴的偽紀錄片《忐忑》，還有尋寶題材的《盜墓筆記》和《鬼吹燈》。而若將思考範圍再擴大，如「後室」（The Backrooms）那樣的閾限空間（Liminal space），也能帶來同樣的陌生和獵奇感。「閾」本身是指內外交界的門檻，知名建築師山本理顯也將其運用於自身的社區哲學中。當人們跨越邊界，似乎就能抵達、或回到某處。</p>
+<p>「曾不知夏之為丘兮，孰兩東門之可蕪？」像屈原的《九章．哀郢》，就被美術史學者巫鴻視為中國最早的廢墟詩。其中傳達的更是一種感懷，於我而言也較接近新廢墟攝影想要表達的。</p>
+<p>點開廢墟攝影在維基百科的英文頁面，赫然寫著別名Ruin Porn，被視為一種戀物癖。因為怪獸電影喜歡上荒廢街景的我，是不是也在「旁觀廢墟之痛苦」呢？而在《被新聞出賣的世界》書中，提及一個關於底特律廢墟的案例也發人深省：僅僅只因為相片中有人的存在，就讓Magnum相關照片的評論數輸了HuffPost快兩百倍。實際上造就此差異的成因我相信更複雜，然則現有資訊便已能開啟討論。</p>
+<h2 id="同志數位博物館-憂鬱的年代" tabindex="-1">同志數位博物館：憂鬱的年代 <a class="header-anchor" href="#同志數位博物館-憂鬱的年代" aria-label="Permalink to &quot;同志數位博物館：憂鬱的年代&quot;"></a></h2>
+<blockquote>
+<p>「定時遺忘自己的憂鬱症是道德的，定量地嘗一點百憂解是必須的；自由進出、不負責任是道德的，說話發聲、自省自覺是必須的。」——<a href="https://plaza.openmuseum.tw/muse/curation/91b6564b0fd472c3b897286d21d09ad6/7152" target="_blank" rel="noreferrer">台灣同志數位博物館 | 開放博物館．參與</a></p>
+</blockquote>
+<p>喜歡《鱷魚計畫研究計畫》的呈現，善用數位優勢。從2045年一位研究生的角度出發，像在聽廣播劇。錄音中也論及，中文數位化的起點之一，是1946年高仲芹發明的電華打字機。感覺該來拜讀一下《中文打字機》了。還有倉頡輸入法很難打出「鸛鳥踟躕」這點。</p>
+<p>「讓觀者協作參與，和檔案對話」的實踐，在學術上則被稱為「有機史觀」呢。</p>
+<p>憂鬱年代大事記：</p>
+<ul>
+<li>1990年，台灣最早的女同志團體「我們之間」成立，具有高匿名性</li>
+<li>1992年，「Haven酒吧」偷拍事件</li>
+<li>1994年，北一女自殺事件</li>
+<li>1994到2003年間，「我們之間」發行《女朋友》雜誌</li>
+<li>1995年，邱妙津離世</li>
+<li>1995年，台大浪達社發行《我們是女同性戀》</li>
+<li>該書的自我定位是，「台灣第一本由女同性戀團體自己編寫整理的書籍」</li>
+<li>1995年，陳若菲導演推出《強迫曝光》</li>
+<li>1996年，「壞站」架站。全名為「厭棄／反拒將女人視為妻子的異性戀生殖機制之動物園的壞女兒們」，英文簡稱「dawz」則來自四位初代站長的ID（dora、antichrist、waiter、zick），同時也是「daughters against wives’ zoo」</li>
+<li>1996年，「To-Get-Her」開站。站長Dingo於同年成立搖滾樂團「幫幫忙」</li>
+<li>1998年，「Alivila音樂酒館」偷拍事件</li>
+<li>1999年，「我們之間」在女書店舉辦行動裝置展「久久的彩虹天空」</li>
+<li>2000年，《蒙馬特遺書——女朋友作品2號》，於國家劇院實驗劇場演出</li>
+</ul>
+<h2 id="_2025陽明山藝術季" tabindex="-1">2025陽明山藝術季 <a class="header-anchor" href="#_2025陽明山藝術季" aria-label="Permalink to &quot;2025陽明山藝術季&quot;"></a></h2>
+<ul>
+<li>以溫泉與打石作為主軸</li>
+<li>與人本教育基金會合作，和文大、北市大、義芳國小的學生共同建造《漲巢》等義築</li>
+<li>文大國樂系則與在地長輩持續保持交流</li>
+<li>老師還幫裝置藝術作品《明日天光；夜未央》辦拆除派對</li>
+<li>在相關的USR計畫中，和「庶民發電」的泉源里頂湖電廠合作</li>
+</ul>
+<p>是在一場小到比起講座，更貼近「研究群活動」的講座中聽說這個藝術季的。</p>
+<p>講者劉惠芳除了談到剛來城鄉所演講的Elke Krasny，還提及去Maison à Bordeaux所在城市之「波爾多建築中心」，參與「兒童建築教育及策展計畫」的所見所聞。和孩子討論「在裡面還是外面」，不免令人想到竹林七賢。而關於「建築法庭」（Architecture Trial）的思考，予人啟發之餘，也對各美術館兒藝中心所肩負的更感期待。</p>
+<h2 id="反叛農界" tabindex="-1"><a href="https://cdn.aaa.org.hk/_source/zine-insurrectionary-agricultural-milieu.pdf" target="_blank" rel="noreferrer">反叛農界</a> <a class="header-anchor" href="#反叛農界" aria-label="Permalink to &quot;[反叛農界](https://cdn.aaa.org.hk/_source/zine-insurrectionary-agricultural-milieu.pdf)&quot;"></a></h2>
+<ul>
+<li>以塊莖形式回應生物政治和新自由主義</li>
+</ul>
+<p>佔領之前：</p>
+<ul>
+<li>挖掘派（Diggers）：思想近似農業社會主義（Agrarian Socialism），與平等派（Levellers）同屬英國內戰重要派別</li>
+<li>游擊園藝運動（Guerrilla Gardening Movement）：影響2015年的透納獎得主Assemble。台大曾有「大猩猩綠色游擊隊」響應</li>
+<li>隱形委員會（Comité Invisible）：法國匿名作者群。曾出版《革命將至：資本主義崩壞宣言》（The Coming Insurrection）和《致我們的朋友：資本主義反抗宣言》（To Our Friends）</li>
+</ul>
+<p>案例整理：</p>
+<ul>
+<li>佔領華爾街（Occupy Wall Street）：由Mobile Design Lab於Zuccotti Park建立一套灰水系統（Greywater System），處理廢水中的食物和油脂後循環利用</li>
+<li>Grow Heathrow：反對Heathrow Airport持續擴張</li>
+<li>Mondeggi Bene Comune：進入Firenze的閒置農地製作橄欖油</li>
+<li>596 Acres：在New York推動共享空地</li>
+<li>芒果王（Mango King）：使用海狸集水法（Beaver Water Collection Technique）攔截政府排水系統，在九龍一帶耕種</li>
+<li>金鐘農耕實驗社區（Admiralty Demonstration Farm）：反對新界東北開發計畫，啟發杜可風導演的《香港三部曲》（Hong Kong Trilogy）</li>
+<li>馬屎埔村佔領行動（Ma Shi Po Village Squatting）：抗議恆基兆業地產。鄰近綠悠軒</li>
 </ul>
 ]]></content:encoded>
         </item>
@@ -803,355 +1187,6 @@
 <li>Hinting：在低解析度時微調字型</li>
 <li>早期ClearType只能調整豎畫，因而在中文使用上效果不佳</li>
 <li>Optical Size：光學尺寸。指該字體適合顯示的大小，在CSS中的可變軸是opsz</li>
-</ul>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[那些我曾經歷的挫敗]]></title>
-            <link>https://haruowang.vercel.app/about/lifelog/failure.html</link>
-            <guid>https://haruowang.vercel.app/about/lifelog/failure.html</guid>
-            <pubDate>Sun, 02 Nov 2025 08:11:39 GMT</pubDate>
-            <description><![CDATA[2024年開始，Haruo Wang的失敗整理]]></description>
-            <content:encoded><![CDATA[<h1 id="那些我曾經歷的挫敗" tabindex="-1">那些我曾經歷的挫敗 <a class="header-anchor" href="#那些我曾經歷的挫敗" aria-label="Permalink to &quot;那些我曾經歷的挫敗&quot;"></a></h1>
-<p><Badge type="info" text="🌿 Budding" /></P>
-<h2 id="_2024" tabindex="-1">2024 <a class="header-anchor" href="#_2024" aria-label="Permalink to &quot;2024&quot;"></a></h2>
-<ul>
-<li>北藝大藝跨所備取二，藝管所未達標</li>
-<li>《聯合文學》小說新人賞落選一次</li>
-<li>《New Wave攝影創作獎》初審落選</li>
-<li>《金點設計獎》初審落選</li>
-<li>《台灣島。鏈》獎助計畫落選一次</li>
-<li>《若水NFT藝術獎》落選一次</li>
-<li>《Solana Write-a-thon》徵文落選</li>
-<li>用thirdweb快速開發dapp，但是踩坑</li>
-<li>自架RSSHub到Cloudflare，但是不能關機</li>
-<li>護照規費補繳</li>
-<li>移動停利單沒刪乾淨</li>
-<li>《iThome鐵人賽》落選一次</li>
-</ul>
-<h2 id="_2025" tabindex="-1">2025 <a class="header-anchor" href="#_2025" aria-label="Permalink to &quot;2025&quot;"></a></h2>
-<ul>
-<li>國軍雨衣一度不見</li>
-<li>國軍三色筆消失</li>
-<li>郵局金融卡被鎖</li>
-<li>首次打靶九發有五發脫靶</li>
-<li>大部分解練習前插銷拆不下來</li>
-<li>大部分解練習第二次沒找到後插銷</li>
-<li>雨中175公尺射擊第一次只中一發</li>
-<li>雨中175公尺射擊靶位站錯</li>
-<li>被士官長點名綁腿</li>
-<li>無線電UV-5R第一次驗機失敗</li>
-<li>Teach For Taiwan未進入面試</li>
-<li>教科書設計創新補助計畫未入選</li>
-<li>《我所看見的未來》徵文未入選</li>
-<li>典藏ARTouch社群編輯三面未過</li>
-<li>《台灣島。鏈》獎助計畫落選二次</li>
-<li>《台灣新聞攝影大賽》落選</li>
-<li>差點在五之神把悠遊卡搞丟</li>
-</ul>
-<h2 id="_2026" tabindex="-1">2026 <a class="header-anchor" href="#_2026" aria-label="Permalink to &quot;2026&quot;"></a></h2>
-<ul>
-<li>鴻梅2026春季進駐計劃落選一次</li>
-<li>創世紀詩雜誌「草本」專輯落選二次</li>
-</ul>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[2024的品味]]></title>
-            <link>https://haruowang.vercel.app/about/taste/2024.html</link>
-            <guid>https://haruowang.vercel.app/about/taste/2024.html</guid>
-            <pubDate>Sun, 02 Nov 2025 08:11:39 GMT</pubDate>
-            <description><![CDATA[2024年，Haruo Wang的音樂、影像、閱讀品味]]></description>
-            <content:encoded><![CDATA[<h1 id="_2024的品味" tabindex="-1">2024的品味 <a class="header-anchor" href="#_2024的品味" aria-label="Permalink to &quot;2024的品味&quot;"></a></h1>
-<p><Badge type="info" text="🌳 Evergreen" /></P>
-<h2 id="jan" tabindex="-1">Jan <a class="header-anchor" href="#jan" aria-label="Permalink to &quot;Jan&quot;"></a></h2>
-<h3 id="what-i-hear" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
-<p>謝銘祐《路》、スリーズブーケ《水彩世界》、芒果醬《我喜歡你》、Ave Mujica《Angles》、キタニタツヤ《聖者の行進》、四分衛《雨和眼淚》、稲本響《名残の指先》、夏之禹《姐姐》、神前曉《以下、回想》、Air《Alone in Kyoto》、コレサワ《これから》、back number《冬と春》、鷺巢詩郎《Instabilite:Orchestre》、回春丹《鮮花》</p>
-<h3 id="what-i-see" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
-<p>《日子》、《蜂巢的幽靈》、《君主計畫：神秘組織與怪獸之謎》、《150米的人生可能》</p>
-<h3 id="what-i-read" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
-<p>《社會參與藝術的十個關鍵概念》</p>
-<h2 id="feb" tabindex="-1">Feb <a class="header-anchor" href="#feb" aria-label="Permalink to &quot;Feb&quot;"></a></h2>
-<h3 id="what-i-hear-1" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-1" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
-<p>Lorne Balfe《Calling Home》、日向敏文《Good Evening, Heartache (Orchestra Version)》、鷺巢詩郎《M10 emotion strings edit》、大原ゆい子《風と行く道》、楠木ともり《アノーイング! さんさんウィーク!》、森英治《Proof》、薬師寺寛邦《楞嚴咒 -第五会- 》、Vivy《Fluorite Eye's Song》、黃嘉千《阿爸食飯》、千住明《The Intrepid》、My Chemical Romance《I Don't Love You》、Coldplay《The Scientist》、菅野洋子《some other time》、Jóhann Jóhannsson《Through Falling Snow》、Mira-Cra Park！《Milk》、關戶剛《ラナラウンド Pt.I (FF7R Ver.)》、倉持武志《YO (Acid Jazz Ver.)》、MyGO!!!!!《詩超絆》、津田朱里《Twinkle Snow '13》、昏鴉《Mickey Mouse》</p>
-<h3 id="what-i-see-1" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-1" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
-<p>《BanG Dream! Its MyGO!!!!!》、《度日》、《錄影帶謀殺案》</p>
-<h3 id="what-i-read-1" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-1" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
-<p>《如何書寫當代藝術》</p>
-<h2 id="mar" tabindex="-1">Mar <a class="header-anchor" href="#mar" aria-label="Permalink to &quot;Mar&quot;"></a></h2>
-<h3 id="what-i-hear-2" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-2" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
-<p>釘宮理惠、堀江由衣、喜多村英梨《プレパレード》、SELFKILL《Where are you going?》、優雅逆轉《五月的雨》、頭部組成者《生育叢林》、步行者《夜光信號》、2HRs《Startide Rising》、藤川千愛《好きになってはいけない理由》、我是機車少女《Yume》、the neverminds《melt》、Angela Aki《この世界のあちこちに》、Habak《Ningún muro consiguió jamás contener la primavera》、Trent Reznor &amp; Atticus Ross《Hand Covers Bruise》、yonige《walk walk》、具島直子《I Love You》、John Carpenter《My Name is Death》、久石讓《大崩壊》、鈴村健一《ババーンと推参! バーンブレイバーン - ブレイバーン》、Lambiris《残光》、菅野祐悟《Panic Sense》、DE DE MOUSE《Memory Lane》、rionos《Viator》 、CHEMISTRY《最期の川》、菅野洋子《Blue feat. Maya》、R-Tiat《暗光》</p>
-<h3 id="what-i-see-2" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-2" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
-<p>《勇氣爆發》、《聖血》、《社群網戰》、《年尾巴》、《霧中風景》、《冥王》、《周處除三害》</p>
-<h3 id="what-i-read-2" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-2" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
-<p>《2017鴻梅新人獎巡迴展作品集無人之地》、《藝術論壇Volume11》、《我將是你的鏡子：世界當代攝影家告白》</p>
-<h2 id="apr" tabindex="-1">Apr <a class="header-anchor" href="#apr" aria-label="Permalink to &quot;Apr&quot;"></a></h2>
-<h3 id="what-i-hear-3" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-3" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
-<p>靴腿《失去愛情的摩托車手》、JADE《Step By Step》、謝震廷feat. 徐靖玟《你的行李》、沉舟樂隊《就讓我墜入海底》、SUGIZO feat. GLIM SPANKY《めぐりあい》、蓮ノ空《抱きしめる花びら》、sweet ARMS《ヒトヒラ》、岩崎琢《Rubicon》、芒果醬《小紫aka給我錢》、Eve《心海》、陳勢安《不想說晚安》、P-MODEL《2D OR NOT 2D》、梅林太郎《Yuri on ICE》、林奕匡《高山低谷》、山田珠露《Always in my heart》、鷺巢詩郎《閉塞の拡大》、Cerise Bouquet《Holiday Holiday》、Cocco《Raining》、既定偏離《人生逃避號》、Liella!《シェキラ》、reche《命運》、《ゴジランド》、張瑋瑋《米店》、Ivy to Fraudulent Game《青二才》、菅野洋子《piece by ten》、dress《Is the only》、藤間仁《表裏一体》、藤田淳平《月明り》、佐佐木惠梨《ロッホと旅人》</p>
-<h3 id="what-i-see-3" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-3" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
-<p>《浮光掠影：每個人心中的電影院》、《搬家》、《哥吉拉與金剛：新帝國》、《父親的房間》</p>
-<h3 id="what-i-read-3" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-3" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
-<p>《繩》、《裝幀時代》、《開店指「難」：第一次開獨立書店就 □□！》</p>
-<h2 id="may" tabindex="-1">May <a class="header-anchor" href="#may" aria-label="Permalink to &quot;May&quot;"></a></h2>
-<h3 id="what-i-hear-4" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-4" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
-<p>佐藤直紀《Godzilla-1.0 Last》、夏之禹《Hometown》、KUNTARI《Larynx, Pt. One》、Nirvana《Jesus Doesn't Want Me For A Sunbeam》、시온《O.o》、YEW《จะมอบความรัก》、WAVE9《Wave Night》、鷺巢詩郎《Robe des Champs》、Stephen Sanchez《Until I Found You》、toe《Mother》、Village People《YMCA》、遠藤ナオキ《あなたと私と私たちの夢》、粹垢《阿蘭姊》、ASMRZ《잘자요 아가씨》、CRYCHIC《人間になりたいうた》、Elements Garden《Sense》、The Cecilias《The End of Us》、新川崎(仮)《声なき魚》</p>
-<h3 id="what-i-see-4" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-4" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
-<p>《哥吉拉-1.0》、《到不了的遠方》、《重構破碎凝視》、《帝國浩劫：美國內戰》</p>
-<h3 id="what-i-read-4" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-4" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
-<p>《終點往往在他方》</p>
-<h2 id="jun" tabindex="-1">Jun <a class="header-anchor" href="#jun" aria-label="Permalink to &quot;Jun&quot;"></a></h2>
-<h3 id="what-i-hear-5" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-5" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
-<p>雷光夏《歇業的海水浴場》、陳奕迅《床頭燈》、Ivy to Fraudulent Game《糸遊》、林強《盒子內的時間》、Max Richter《Movement, Before All Flowers》、鷺巢詩郎《Start To Check Up》、Thomas Bangalter《Sangria》、美波《君と僕の154小節戦争》、Naum Gabo《Theme For Great Cites》、MONO《Oath》、꽃별《비익련리（比翼連里）》、SHIN IN RYU《For us, summer is always short》、Jun Futamata《Útdautt lag》、Katamari-Tai Jr.《さくらいろの季節》、谷內秀樹《ミサの孤独》、Pietro Mascagni《Intermezzo From Cavalleria Rusticana》、harmoe《愛と呼ぶなら》、Wolfram《Automatic Dub》、松崎ナオ／鹿の一族《清く、ただしく》、NONA REEVES《DJ! DJ! 〜とどかぬ想い〜》、Alejandro Jodorowsky《Eye of the Beholder》、溝口肇《Tree of Hearts》、菅野洋子《その時まで》、蔡琴《請假裝你會捨不得我》、吉那罐子《把燈關上（摎火扚忒）》、新垣結衣《heavenly days》、gnkosaiBAND《POSSE》</p>
-<h3 id="what-i-see-5" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-5" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
-<p>《我和吸血鬼有份合約》、《正欲》、《高潮》、《虹咲四格第二季》、《夜晚的水母不會游泳》、《聖山》、《夏日的文化洋行》、《見證》、《恐怖分子》、《Girls Band Cry》</p>
-<h3 id="what-i-read-5" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-5" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
-<p>《關鍵1987》、《新活水Vol.19》</p>
-<h2 id="jul" tabindex="-1">Jul <a class="header-anchor" href="#jul" aria-label="Permalink to &quot;Jul&quot;"></a></h2>
-<h3 id="what-i-hear-6" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-6" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
-<p>harmoe《ドキドキトキドキトキメキス♡》、秘部痺れ《Rollercoaster of the Universe》、我地希望《半箭》、Underworld《Between Stars》、石橋英子《Evil Does Not Exist》、LÜCY《Abettor》、濁水溪公社《港都情人》、透明雜誌《E的幽靈》、The CHANG《Holiday》、周杰倫《晴天》、TuT《You Got Me When I Stare At You》、Supercar《Lucky》、先知瑪莉《入睡》、검정치마《EVERYTHING》、楊乃文 feat. 傻子與白痴《思緒的盡頭》、濁水溪公社《孔雀開屏》、伍佰《淚橋》、Agua Blue《土偶》、Paranmaum《Linda Linda》、ZARD《DAN DAN 心魅かれてく》、Lexiu Liu《MAGICIAN》、遠野光《LOVE 2000》、中森明菜《東京砂漠》、麻枝准《夏気球》、MyGO!!!!!《端程山》、Homecomings《euphoria》、陳奕迅《內疚》、Charlene《I’ve Never Been to Me》、Kim Il Du《술 마시러 가는 길 (ballad ver.)》、MAMAMOO+《댕댕》、Ketil Bjørnstad《The Sea V》、Aqours《HAPPY PARTY TRAIN》、鮮于貞娥《what the hell》、徐行《也許我們會再見》、Woodkid《Guns for Hire》、Ludovico Einaudi《Fly》、TOŃ《Wdech/wydech》、山下達郎《Juvenileのテーマ～瞳の中のRainbow～》、Joni Nijo《Dreaming》、沈文程《小河之歌》、圖騰樂團《我在那邊唱》、Einstürzende Neubauten《Sabrina》、天野正道《新たなる旅立ち》、青木陽菜《独奏showtime》</p>
-<h3 id="what-i-see-6" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-6" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
-<p>《邪惡根本不存在》、《爛頭殼》、《長腿》、《奧術》</p>
-<h3 id="what-i-read-6" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-6" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
-<p>《少女歌劇再生產評論集》、《影視聽生活誌011》、《愛動物的人》</p>
-<h2 id="aug" tabindex="-1">Aug <a class="header-anchor" href="#aug" aria-label="Permalink to &quot;Aug&quot;"></a></h2>
-<h3 id="what-i-hear-7" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-7" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
-<p>Seaweed藻《Morning Sun》、The Mercury Program《Marianas》、青木陽菜《Colors of You》、Ivy to Fraudulent Game《賀歌》、河豚子《陳振昌，你是隻猴子》、松崎ナオ《ただ残るイメージ》、Lily Chou-Chou《Arabesque》、村松崇継《彼方の光》、漂流出口《仙人掌的花》、Alex G《Main Theme》、World's End Girlfriend《Les Enfants du paradis》、木嶋真優《鮫 (エスクアロ)》、JPBS《Rainy Day》、スタァライト九九組《Pride》、加藤達也《color temperature》、我們的日子有限公司《遺書》、JPBS《Green Screen》、真名子新《網户》、Inspirative《Why》、The Darkest Romance《หมุน》、Kevin Colombin《Ending》、你太白了，去曬黑《主意》、蘇打綠《蟬想》、DeVotchKa《The Winner Is》、Thomas Foguenne《Once Again》、I Mean Us《Blue and Gold》、洛天依《摩的大飈客》（公婆版歌詞）、OYEOL《OH NEW SUPER WORLD》、BL!NDMAN《Electric Counterpoint》、London Grammar《Into Gold》、Hooverphonic《Eden》、JRJ Enterprises《水田不要賣》、步行者《橋》、Yufu《The Walls Are Coming In》、野外合作社《復活》、Sunny Day Service《コンビニのコーヒー》、Cozy《21 Grams》、魚條《279自救會》、てつくずおきば《エアーマンが倒せない》、曹永旭《Seorae》、岡本敦郎《みどりの馬車》、AiNA THE END《Love Sick》、戴荃《悟空》</p>
-<h3 id="what-i-see-7" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-7" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
-<p>《驀然回首》、《老狐狸》、《青春電幻物語》、《廣島》、《雨月物語》、《紀錄片：Sunny Day Service》、《蝙蝠俠》</p>
-<h3 id="what-i-read-7" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-7" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
-<p>《女性電影理論》、《觀光客的哲學》</p>
-<h2 id="sep" tabindex="-1">Sep <a class="header-anchor" href="#sep" aria-label="Permalink to &quot;Sep&quot;"></a></h2>
-<h3 id="what-i-hear-8" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-8" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
-<p>Flawed Mangoes《Dramamine》、남혜승、박상희 《그날의 바람》、羽毛田丈史、高見優《キセキ~for ROOKIES instrumental version ~》、洪佩瑜、聲子蟲《你是自由的》、hil《Sorrow_UBW Extend》、水瀬祈《Wishing》、Jung Woo《Love Song》、It's《Fading Person, Fading Love》、YOSHI《理性藝術家》、DRDR《反正我們就這樣》、Riya《神話》、きっとび《ユー》、아소토유니온《THINK ABOUT` CHU》、Mogwai《God Gets You Back》、麥浚龍《天與地的距離》、THE BLACKBAND、汐菜《KISSそれは》、Loveholic《The Flowerpot》、Superfly《Charade》、Adultchild《Sad Thing》、School Food Punishment《light prayer》、OnceGrace Forever《Dance to remember, dance to forget》、The Cure《Alone》、Hania Rani《24.03》、藤澤慶昌《ラジオたいそう》、倒車入庫《先走了》、神前曉《Sleep Well, Vivy》、牛尾憲輔《gentle heart》、Midicronica《San Francisco》、橫山克《Dear My Loneliness and Darkness》、小瀨村晶《Shutter Girl》、929《也許像星星》</p>
-<h3 id="what-i-see-8" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-8" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
-<p>《記憶花園》、《Vitalik：以太坊故事》、《再見機器人》、《擅長逃跑的殿下》</p>
-<h3 id="what-i-read-8" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-8" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
-<p>《幸福之路》、《相機女孩漫遊東京1》</p>
-<h2 id="oct" tabindex="-1">Oct <a class="header-anchor" href="#oct" aria-label="Permalink to &quot;Oct&quot;"></a></h2>
-<h3 id="what-i-hear-9" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-9" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
-<p>草東沒有派對《滔滔》、鐘嵐珠《PHOENIX》、上原步夢《Stellar Stream》、12.8Twelve.eight《Pioneer》、12.8Twelve.eight《Blind》、美波《TIME GRAM》、ミト《White Lies》、橫山克《Tsurune the Movie - The Sound of Origin》、都留教博《End Place》、曹雅雯《抱一個》、Myles Kennedy《How The Story Ends》、戶松遙《ユメセカイ》、葉穎《你哭完該笑了》、渡邊琢磨《Fate》、坂本龍一《Solitude》、雷光夏《紅尾巴》、橋本由香利《En fermant les yeux》、Suneohair《Speed》、HUSH《第三人稱》、橫山克《Again》、Michel Moulinié《Le Ballet Des Mouches》、渋さ知らズ《ひこーき》、SALVALAI《MORAL》、四喜丸子《道》</p>
-<h3 id="what-i-see-9" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-9" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
-<p>《愛麗絲與特蕾絲的虛幻工廠》、《聽海湧》、《東尼瀧谷》、《異形：羅穆路斯》、《藍色巨星》、《塔爾》、《潛行者》、《墜惡真相》、《英雄》、《小丑：雙重瘋狂》</p>
-<h3 id="what-i-read-9" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-9" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
-<p>《臺灣詩學學刊40期》、《臺灣自然寫作選》、《歇斯底里的案件》、《蔡國強又來了！》、《交陪美學論》</p>
-<h2 id="nov" tabindex="-1">Nov <a class="header-anchor" href="#nov" aria-label="Permalink to &quot;Nov&quot;"></a></h2>
-<h3 id="what-i-hear-10" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-10" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
-<p>高見優《JIN-仁- Main Title》、DSPS《成為日常》、BRADD《Caged Birds》、邱淑蟬《望》、聲子蟲《印象派》、《Pilence Pee》、橘娃娃《18碎》、Pучной Pептилоид《Я хочу быть 2д》、春麵樂隊《我在你的眼睛我看到了你》、Ruud Hall《The Aftermath Of Loss》、Anna von Hausswolff《Ugly and Vengeful》、牛尾憲輔《paranormal funk》、中村誠一《驢馬》、MONO《Death in Rebirth》、Homecomings《slowboat》、擊沉女孩《Something Old》、黃小楨《Secret (OMD cover)》、Kronos Quartet《Runaway Horses》、橫山克《oOoOo #JELEE》、Lagrimas《Validations》、Wounded Masquerade《I ruin everything》、笑琴《漂洋》、靈魂咆哮《二十年》、陳奕迅《這樣很好》、Chage《永遠の謎》、Iglooghost《Coral Mimic》、陳佩賢《You Are》、伍佰《純真年代》</p>
-<h3 id="what-i-see-10" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-10" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
-<p>《詩》、《瑞秋》、《懼裂》、《白南準：月亮是最古早的電視》、《三島由紀夫：人間四幕》、《群山之島與不去會死的他們2》、《一家子兒咕咕叫》、《奧術2》、《掬水月在手》</p>
-<h3 id="what-i-read-10" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-10" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
-<p>《設計·Design·デザイン》、《馴羊記》、《Play．紙標本》、《小說生活》</p>
-<h2 id="dec" tabindex="-1">Dec <a class="header-anchor" href="#dec" aria-label="Permalink to &quot;Dec&quot;"></a></h2>
-<h3 id="what-i-hear-11" tabindex="-1">What I Hear <a class="header-anchor" href="#what-i-hear-11" aria-label="Permalink to &quot;What I Hear&quot;"></a></h3>
-<p>山田豐《Mvt.11 &quot;Memories&quot;》、遠藤ナオキ《Flavors》、Cory Wong《Starship Syncopation》、紙鳶《都是媽逼的》、白百《我不是完美小孩》、Homecomings《Moon Shaped》、The Fearless Flyers《Blue Angels》、陳奕迅《給你》、菊地成孔《ただ泣くだけ〜Oh god, I'm alone〜》、Daniel Pemberton《Spider-Woman (Gwen Stacy)》、常田大希《祝祭》、ALI、The Crane《NEON》、方大同《沒啥好說》、柯智棠《My Nova》、西川貴教《天叢雲劍-SKYBREAKER-》、坂本龍一《SILK Endroll》、Ólafur Arnalds《Hægt, Kemur Ljósið》、艾怡良《那時有你》、Hello Nico《花》、ACIDMAN《sonet》、回聲樂團《Silent Night In Shinjuku》、南西肯恩《大海》、福島章嗣《May You Stay Forever Young》、The Biscats《あなたへ》、冬野ユミ《光の扉》、冬野ユミ《Estate-夏の日》</p>
-<h3 id="what-i-see-11" tabindex="-1">What I See <a class="header-anchor" href="#what-i-see-11" aria-label="Permalink to &quot;What I See&quot;"></a></h3>
-<p>《12.12：首爾之春》、《喜劇之王》、《蜘蛛人：新宇宙》、《蜘蛛人：穿越新宇宙》、《膽大黨》、《一部未完成的電影》、《東離劍遊紀4》、《少年》、《里斯本的故事》</p>
-<h3 id="what-i-read-11" tabindex="-1">What I Read <a class="header-anchor" href="#what-i-read-11" aria-label="Permalink to &quot;What I Read&quot;"></a></h3>
-<p>《花開藝文誌：森人號》</p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[出口日語N4文法]]></title>
-            <link>https://haruowang.vercel.app/global/japan/n4.html</link>
-            <guid>https://haruowang.vercel.app/global/japan/n4.html</guid>
-            <pubDate>Wed, 06 Aug 2025 11:24:59 GMT</pubDate>
-            <description><![CDATA[跟隨出口仁老師學習N4文法的重點筆記]]></description>
-            <content:encoded><![CDATA[<h1 id="出口日語n4文法" tabindex="-1">出口日語N4文法 <a class="header-anchor" href="#出口日語n4文法" aria-label="Permalink to &quot;出口日語N4文法&quot;"></a></h1>
-<p><Badge type="info" text="🌱 Seedlings" /></P>
-<h2 id="までに" tabindex="-1">～までに <a class="header-anchor" href="#までに" aria-label="Permalink to &quot;～までに&quot;"></a></h2>
-<blockquote>
-<p>在…之前（做什麼）</p>
-</blockquote>
-<ul>
-<li>名詞／辭書形 + までに</li>
-<li>まで則表示「持續」的狀態</li>
-</ul>
-<details class="details custom-block"><summary>Tips</summary>
-<p>辭書形：動詞原形。</p>
-</details>
-<h2 id="つもり" tabindex="-1">～つもり <a class="header-anchor" href="#つもり" aria-label="Permalink to &quot;～つもり&quot;"></a></h2>
-<blockquote>
-<p>打算（做什麼）</p>
-</blockquote>
-<ul>
-<li>辭書形／ない形 + つもりです</li>
-<li>辭書形 + つもりはありません</li>
-<li>第二種否定比第一種強烈</li>
-<li>つもりです作為問句要注意，問太多了</li>
-<li>類似於意向形 + と思います</li>
-<li>類似於意向形 + と思っています</li>
-<li>具體性：つもりです &gt; と思っています &gt; と思います</li>
-<li>「現在才打算要幹嘛」就要用と思います</li>
-</ul>
-<details class="details custom-block"><summary>Tips</summary>
-<p>意向形：通常以よう結尾。</p>
-</details>
-<h2 id="かもしれません" tabindex="-1">～かもしれません <a class="header-anchor" href="#かもしれません" aria-label="Permalink to &quot;～かもしれません&quot;"></a></h2>
-<blockquote>
-<p>搞不好</p>
-</blockquote>
-<ul>
-<li>可以簡寫成かも</li>
-</ul>
-<h2 id="は-より" tabindex="-1">～は...より <a class="header-anchor" href="#は-より" aria-label="Permalink to &quot;～は...より&quot;"></a></h2>
-<blockquote>
-<p>A比B</p>
-</blockquote>
-<ul>
-<li>可以顛倒順序，但「被比的」還是より前的名詞</li>
-</ul>
-<h2 id="やすい" tabindex="-1">～やすい <a class="header-anchor" href="#やすい" aria-label="Permalink to &quot;～やすい&quot;"></a></h2>
-<blockquote>
-<p>容易（做）</p>
-</blockquote>
-<ul>
-<li><s>ます</s>形 + やすいです</li>
-<li>整體可視為い形容詞</li>
-<li>反義：にくいです</li>
-</ul>
-<details class="details custom-block"><summary>Tips</summary>
-<p>ます形：比原形禮貌，表示習慣或未來動作。</p>
-</details>
-<h2 id="にくい" tabindex="-1">～にくい <a class="header-anchor" href="#にくい" aria-label="Permalink to &quot;～にくい&quot;"></a></h2>
-<blockquote>
-<p>不容易（做）</p>
-</blockquote>
-<ul>
-<li><s>ます</s>形 + にくいです</li>
-<li>類似於なかなか～ない</li>
-</ul>
-<h2 id="方" tabindex="-1">～方 <a class="header-anchor" href="#方" aria-label="Permalink to &quot;～方&quot;"></a></h2>
-<blockquote>
-<p>方法</p>
-</blockquote>
-<ul>
-<li><s>ます</s>形 + 方</li>
-<li>かた是訓讀，ほう是音讀</li>
-<li>表示方法和「ひと」的禮貌用途時念かた</li>
-<li>表示方向和哪一方時念ほう</li>
-</ul>
-<h2 id="ので" tabindex="-1">～ので <a class="header-anchor" href="#ので" aria-label="Permalink to &quot;～ので&quot;"></a></h2>
-<blockquote>
-<p>因為</p>
-</blockquote>
-<ul>
-<li>普通形／丁寧形 + ので</li>
-<li>名詞／な形容詞 + なので</li>
-<li>ので比から更鄭重，所以不能用命令和禁止形</li>
-<li>ので不像から可以放句尾</li>
-</ul>
-<details class="details custom-block"><summary>Tips</summary>
-<p>な形容詞：即形容動詞，基本形有詞尾だ。</p>
-</details>
-<h2 id="のに" tabindex="-1">～のに <a class="header-anchor" href="#のに" aria-label="Permalink to &quot;～のに&quot;"></a></h2>
-<blockquote>
-<p>明明…卻</p>
-</blockquote>
-<ul>
-<li>普通形／丁寧形 + のに</li>
-<li>名詞／な形容詞 + なのに</li>
-</ul>
-<h2 id="ことができます" tabindex="-1">～ことができます <a class="header-anchor" href="#ことができます" aria-label="Permalink to &quot;～ことができます&quot;"></a></h2>
-<blockquote>
-<p>可以做…</p>
-</blockquote>
-<ul>
-<li>辭書形 + ことができます</li>
-<li>「形式名詞」こと可以用名詞取代</li>
-<li>肯定時類似てもいいです</li>
-<li>否定時類似てはいけません，但後者更強烈</li>
-</ul>
-<h2 id="たことがあります" tabindex="-1">～たことがあります <a class="header-anchor" href="#たことがあります" aria-label="Permalink to &quot;～たことがあります&quot;"></a></h2>
-<blockquote>
-<p>有做過</p>
-</blockquote>
-<ul>
-<li>た形 + ことがあります</li>
-<li>が換成も就是「也做過」</li>
-<li>「有看過但沒吃過」的第二個が會換成は</li>
-</ul>
-<h2 id="ほうがいいです" tabindex="-1">～ほうがいいです <a class="header-anchor" href="#ほうがいいです" aria-label="Permalink to &quot;～ほうがいいです&quot;"></a></h2>
-<blockquote>
-<p>做…比較好</p>
-</blockquote>
-<ul>
-<li>辭書形／た形  + ほうがいいです</li>
-<li>類似たらいいです，但ほうがいいです的叮囑語氣更強</li>
-</ul>
-<h2 id="すぎます-です" tabindex="-1">～すぎます／です <a class="header-anchor" href="#すぎます-です" aria-label="Permalink to &quot;～すぎます／です&quot;"></a></h2>
-<blockquote>
-<p>太過…</p>
-</blockquote>
-<ul>
-<li>用すぎます視為動詞</li>
-<li>用すぎです視為名詞或な形容詞</li>
-<li><s>ます</s>形 + すぎます／です</li>
-<li><s>い／な</s>形容詞 + すぎます／です</li>
-<li>否定時是なさすぎます</li>
-</ul>
-<h2 id="なさい" tabindex="-1">～なさい <a class="header-anchor" href="#なさい" aria-label="Permalink to &quot;～なさい&quot;"></a></h2>
-<blockquote>
-<p>命令語氣</p>
-</blockquote>
-<ul>
-<li><s>ます</s>形 + なさい</li>
-<li>晚安的なさい是用來寒暄</li>
-<li>お帰りなさい其實也是，但不限制上對下</li>
-</ul>
-<h2 id="てもいいです" tabindex="-1">～てもいいです <a class="header-anchor" href="#てもいいです" aria-label="Permalink to &quot;～てもいいです&quot;"></a></h2>
-<blockquote>
-<p>可以做</p>
-</blockquote>
-<ul>
-<li>相當於～てもかまいません</li>
-<li>動詞+て，名詞和な形容詞+で，い形容詞+くて</li>
-<li>只有許可，沒有建議的意思</li>
-<li>後三者有即使...也可以的語氣</li>
-</ul>
-<h2 id="てはいけません" tabindex="-1">～てはいけません <a class="header-anchor" href="#てはいけません" aria-label="Permalink to &quot;～てはいけません&quot;"></a></h2>
-<blockquote>
-<p>不可以做</p>
-</blockquote>
-<ul>
-<li>相當於～てはだめです</li>
-<li>動詞+て，名詞和な形容詞+で，い形容詞+くて</li>
-<li>ないでください的語氣較不強硬</li>
-<li>てはなりません的語氣更拘謹</li>
-</ul>
-<details class="details custom-block"><summary>Tips</summary>
-<p>ては的縮約表現是ちゃ。</p>
-</details>
-<h2 id="なくてもいいです" tabindex="-1">～なくてもいいです <a class="header-anchor" href="#なくてもいいです" aria-label="Permalink to &quot;～なくてもいいです&quot;"></a></h2>
-<blockquote>
-<p>可以不做</p>
-</blockquote>
-<ul>
-<li>相當於～なくてもかまいません</li>
-<li>就是～てもいいです的開頭加上「なく」</li>
-<li>動詞+なく，名詞和な形容詞+じゃなく／でなく，い形容詞+くなく</li>
-</ul>
-<h2 id="なくてはいけません" tabindex="-1">～なくてはいけません <a class="header-anchor" href="#なくてはいけません" aria-label="Permalink to &quot;～なくてはいけません&quot;"></a></h2>
-<blockquote>
-<p>一定要</p>
-</blockquote>
-<ul>
-<li>相當於～なければなりません／～ないとだめです</li>
-<li>就是～てはいけません的開頭加上「なく」</li>
-<li>動詞+なく，名詞和な形容詞+じゃなく／でなく，い形容詞+くなく</li>
-</ul>
-<h2 id="ことになります" tabindex="-1">～ことになります <a class="header-anchor" href="#ことになります" aria-label="Permalink to &quot;～ことになります&quot;"></a></h2>
-<blockquote>
-<p>（非只由自己）決定</p>
-</blockquote>
-<ul>
-<li>辭書形／ない形 + ことになります</li>
-</ul>
-<h2 id="ことにします" tabindex="-1">～ことにします <a class="header-anchor" href="#ことにします" aria-label="Permalink to &quot;～ことにします&quot;"></a></h2>
-<blockquote>
-<p>（自己）決定</p>
-</blockquote>
-<ul>
-<li>辭書形／ない形 + ことにします</li>
 </ul>
 ]]></content:encoded>
         </item>
@@ -3716,41 +3751,6 @@
 <li>SAKURA：看房臨演</li>
 </ul>
 ]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[關於我]]></title>
-            <link>https://haruowang.vercel.app/about/about-me/haruo.html</link>
-            <guid>https://haruowang.vercel.app/about/about-me/haruo.html</guid>
-            <pubDate>Mon, 23 Sep 2024 06:26:31 GMT</pubDate>
-            <description><![CDATA[主修印刷出版及色彩，學士論文爬梳草率季。關注影像理論和軟體研究，自學前端、親近Web3。認同Live Coding與開源文化交織的關係]]></description>
-            <content:encoded><![CDATA[<h1 id="關於我" tabindex="-1">關於我 <a class="header-anchor" href="#關於我" aria-label="Permalink to &quot;關於我&quot;"></a></h1>
-<p><Badge type="info" text="🌿 Budding" /></P>
-<h2 id="簡介" tabindex="-1">簡介 <a class="header-anchor" href="#簡介" aria-label="Permalink to &quot;簡介&quot;"></a></h2>
-<p>主修印刷出版及色彩，學士論文爬梳草率季。關注影像理論和軟體研究，自學前端、親近Web3。認同Live Coding與開源文化交織的關係。</p>
-<p>Haruo Wang majored in printing, publishing, and color studies, with his bachelor's thesis explored the Taipei Art Book Fair. He has a keen interest in image theory and software studies, and closely engaging with front-end development and Web3 technologies. He agrees to the intertwined relationship between live coding and open source culture.</p>
-<h2 id="設計" tabindex="-1">設計 <a class="header-anchor" href="#設計" aria-label="Permalink to &quot;設計&quot;"></a></h2>
-<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=Figma&logoColor=fff" alt="Figma" style="display: inline">
-<img src="https://img.shields.io/badge/Blender-F57A3B?style=for-the-badge&logo=blender&logoColor=fff" alt="Blender" style="display: inline">
-<img src="https://img.shields.io/badge/PS-31A8FF?style=for-the-badge&logo=Adobe-Photoshop&logoColor=fff" alt="Adobe Photoshop" style="display: inline">
-<img src="https://img.shields.io/badge/AI-FF9A00?style=for-the-badge&logo=Adobe-Illustrator&logoColor=fff" alt="Adobe Illustrator" style="display: inline">
-<img src="https://img.shields.io/badge/ID-EE3D8F?style=for-the-badge&logo=Adobe-InDesign&logoColor=fff" alt="Adobe InDesign" style="display: inline">
-<img src="https://img.shields.io/badge/PR-EA77FF?style=for-the-badge&logo=Adobe-Premiere-Pro&logoColor=fff" alt="Adobe Premiere Pro" style="display: inline">
-<img src="https://img.shields.io/badge/AE-9999FF?style=for-the-badge&logo=Adobe-After-Effects&logoColor=fff" alt="Adobe After Effects" style="display: inline">
-<h2 id="技術" tabindex="-1">技術 <a class="header-anchor" href="#技術" aria-label="Permalink to &quot;技術&quot;"></a></h2>
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=fff" alt="HTML5" style="display: inline">
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3" alt="CSS3" style="display: inline">
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=333" alt="JavaScript" style="display: inline">
-<img src="https://img.shields.io/badge/p5.js-ED225D?style=for-the-badge&logo=p5.js" alt="p5.js" style="display: inline">
-<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=333" alt="React" style="display: inline">
-<img src="https://img.shields.io/badge/Vercel-333?style=for-the-badge&logo=vercel" alt="Vercel" style="display: inline">
-<img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=fff" alt="Postman" style="display: inline">
-<img src="https://img.shields.io/badge/VS%20CODE-007ACC?style=for-the-badge&logo=VisualStudioCode&logoColor=fff" alt="Visual Studio Code" style="display: inline">
-<img src="https://img.shields.io/badge/GA4-E37400?style=for-the-badge&logo=google%20analytics&logoColor=fff" alt="Google Analytics" style="display: inline">
-<img src="https://img.shields.io/badge/Unity-57b9d3?style=for-the-badge&logo=unity" alt="Unity" style="display: inline">
-<h2 id="常用語言" tabindex="-1">常用語言 <a class="header-anchor" href="#常用語言" aria-label="Permalink to &quot;常用語言&quot;"></a></h2>
-<p><img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=HaruoWang&amp;layout=compact" alt="Top Langs" loading="lazy"></p>
-]]></content:encoded>
-            <enclosure url="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=HaruoWang&amp;layout=compact" length="0" type="image//api/top-langs/"/>
         </item>
         <item>
             <title><![CDATA[JobMenta商用日文]]></title>

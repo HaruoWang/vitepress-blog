@@ -62,4 +62,4 @@ Haruo Wang majored in printing, publishing, and color studies, with his bachelor
 
 ## 常用語言
 
-![Top Langs](https://github-readme-stats-fast.vercel.app/api/top-langs/?username=HaruoWang&layout=compact)
+![Top Langs](https://github-readme-stats-fast.vercel.app/api/top-langs/?username=HaruoWang&amp;layout=compact)
