@@ -195,6 +195,8 @@ export default defineConfig({
             { text: '2024的生活', link: '/about/lifelog/2024' },
             { text: '2025的生活', link: '/about/lifelog/2025' },
             { text: '那些我曾經歷的挫敗', link: '/about/lifelog/failure' },
+            { text: '編輯手記', link: '/about/lifelog/editorial' },
+            { text: '部落部落同樂會', link: '/about/lifelog/blogblog' },
           ]
         },
         {
@@ -225,6 +227,7 @@ export default defineConfig({
             { text: '幀議人物：影像藝術家36選', link: '/pov/art/video-artist' },
             { text: '松學校導讀：重點筆記', link: '/pov/art/arthon' },
             { text: '臺灣獨立藝術空間檔案計劃', link: '/pov/art/iast' },
+            { text: '展學合作：策展研究筆記', link: '/pov/art/curatorial-studies' },
           ]
         },
         {
