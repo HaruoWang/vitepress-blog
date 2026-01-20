@@ -4,15 +4,104 @@
         <title>Feed Me, Haruo</title>
         <link>https://haruowang.vercel.app</link>
         <description>Digital Garden of Haruo Wang</description>
-        <lastBuildDate>Fri, 16 Jan 2026 02:14:18 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 20 Jan 2026 04:03:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <copyright>Copyright © 2024-present Haruo Wang</copyright>
         <item>
+            <title><![CDATA[【WCAP Training：從數位憑證到可驗證憑證】]]></title>
+            <link>https://haruowang.vercel.app/about/career/wcap-vc.html</link>
+            <guid>https://haruowang.vercel.app/about/career/wcap-vc.html</guid>
+            <pubDate>Tue, 20 Jan 2026 04:01:23 GMT</pubDate>
+            <description><![CDATA[參與2025年WCAP VC Training的知識點整理]]></description>
+            <content:encoded><![CDATA[<h1 id="【wcap-training-從數位憑證到可驗證憑證】" tabindex="-1">【WCAP Training：從數位憑證到可驗證憑證】 <a class="header-anchor" href="#【wcap-training-從數位憑證到可驗證憑證】" aria-label="Permalink to &quot;【WCAP Training：從數位憑證到可驗證憑證】&quot;"></a></h1>
+<p><Badge type="info" text="🌳 Evergreen" /></P>
+<div class="info custom-block"><p class="custom-block-title">2025/11 - 2025/11</p>
+<p>WCAP可驗證憑證培訓課程 結業</p>
+</div>
+<p><img src="/career/wv1.webp" alt="WCAP VC Training結業證書" loading="lazy"></p>
+<h2 id="數位憑證、pki和pgp" tabindex="-1">數位憑證、PKI和PGP <a class="header-anchor" href="#數位憑證、pki和pgp" aria-label="Permalink to &quot;數位憑證、PKI和PGP&quot;"></a></h2>
+<ul>
+<li>PKI（Public Key Infrastructure）：，將各種資訊打包成CSR（Certificate Signing Request）給CA（Certificate Authority）的系統，如券商憑證。其中CSR文件可使用OpenSSL產生</li>
+<li>PGP（Pretty Good Privacy）：，一種採用WoT（Web of Trust）的PKI加密方式</li>
+<li>PKI規模較大，由CA進行驗證，簽發數位憑證（Digital Certificate）。因Netscape的SSL而生；PGP規模較小，由使用者互相驗證，不經CA。源自Phil Zimmermann，與IETF合作的標準為OpenPGP</li>
+<li>SSH（Secure Shell）：類似SSL/TLS，但和PGP一樣不經CA。為Github連線方式之一</li>
+<li>Root Certificate：即瀏覽器中（如Chrome Root Store）預先安裝的根憑證，擔任Trust Anchor角色。參見中華電信事件</li>
+<li>X.509：數位憑證標準</li>
+<li>OSCP（Online Certificate Status Protocol）：可即時查詢線上憑證狀態的協定</li>
+<li>2003年，根據Forbes資料所示，證書偽造產業鏈可創造70億美元產值</li>
+</ul>
+<h2 id="加密算法和數位簽名" tabindex="-1">加密算法和數位簽名 <a class="header-anchor" href="#加密算法和數位簽名" aria-label="Permalink to &quot;加密算法和數位簽名&quot;"></a></h2>
+<ul>
+<li>Symmetric/Common-key Cryptography：對稱加密／共有密鑰加密。如DES、AES</li>
+<li>Asymmetric/Public-key Cryptography：非對稱加密／公鑰加密。如RSA、DSA、ECDSA</li>
+<li>Hybrid Cryptography：混合加密。訊息封裝用對稱，金鑰封裝用非對稱，速度還是快</li>
+<li>公鑰是拿來傳送和驗證的，私鑰只是用來簽章雜湊值</li>
+<li>encrypt可以decrypt，hash不能</li>
+<li>hash可以讓無論多大的資料都變成同樣長度的字串</li>
+<li>salt：密碼加鹽</li>
+</ul>
+<h2 id="數位簽名" tabindex="-1">數位簽名 <a class="header-anchor" href="#數位簽名" aria-label="Permalink to &quot;數位簽名&quot;"></a></h2>
+<p>Sender</p>
+<ol>
+<li>產生公私鑰對</li>
+<li>將明文雜湊成簽名</li>
+<li>使用私鑰進行簽章</li>
+<li>將明文、公鑰和簽名一起傳送</li>
+</ol>
+<p>Receiver</p>
+<ol>
+<li>對收到的明文進行雜湊</li>
+<li>使用收到的公鑰驗證，確認身分</li>
+<li>比對兩端的雜湊值是否一致（送來的簽名 = 在此雜湊的明文）</li>
+</ol>
+<h2 id="did" tabindex="-1">DID <a class="header-anchor" href="#did" aria-label="Permalink to &quot;DID&quot;"></a></h2>
+<ul>
+<li>DID（Decentralized Identifier）：去中心化標示符</li>
+<li>DID Document包含DID和公鑰</li>
+<li>可用DID URL指向特定位址，如did:example:123456789abcdefghi#keys-1</li>
+<li>目前常用的DID格式是JSON-LD</li>
+</ul>
+<h2 id="可驗證憑證、ihv-model和產業應用" tabindex="-1">可驗證憑證、IHV model和產業應用 <a class="header-anchor" href="#可驗證憑證、ihv-model和產業應用" aria-label="Permalink to &quot;可驗證憑證、IHV model和產業應用&quot;"></a></h2>
+<ul>
+<li>VC（Verifiable Credential）：可驗證憑證。遵循W3C的DID標準</li>
+<li>SD（Selective Disclosure）：選擇性揭露。適用於買酒等時機</li>
+<li>VP（Verifiable Presentation）：可驗證展示文件。即使用者決定要揭露的VC部分，達成SD</li>
+<li>VC的組成：Credentail Metadata + Claim + Proof</li>
+<li>IHV模型：Issuer → Holder → Verifier</li>
+<li>VC的精神就是，Verifier想驗證時不須聯繫Issuer</li>
+<li>Issuer和Holder雙方先向Registry註冊DID Document，然後IH之間做VC Issuing&amp;Auth，最後由Verifier根據DID的公鑰進行Verifing
+<img src="/career/wv2.webp" alt="IHV model" loading="lazy"></li>
+<li>Meta Akita與Heirloom合作，為秋田犬協會提供Digital Pedigree</li>
+<li>Heirloom在知名演唱會Coachella也有使用VC進行承包商管理</li>
+</ul>
+<h2 id="身分和登入" tabindex="-1">身分和登入 <a class="header-anchor" href="#身分和登入" aria-label="Permalink to &quot;身分和登入&quot;"></a></h2>
+<ul>
+<li>ISO對於身分的定義：ISO/IEC 24760–1:2019</li>
+<li>entity下有attribute和identity，像是鍵值對</li>
+<li>Identifier就是用來區分identity</li>
+<li>identity verification：確認現實身分</li>
+<li>user authentication：確認使用者身分</li>
+<li>SSI（Self-sovereign Identity）：身分自主權</li>
+<li>IMS（Identity Management Model）：身分管理系統</li>
+<li>IMS可分為Centralized Identity Management Model和Federation Model，即一般登入和社交帳號登入</li>
+<li>SAML（Security Assertion Markup Language）：基於XML</li>
+<li>OIDC（OpenID Connect）：基於JWT</li>
+<li>SAML中，SP（Service Provider）依賴於IdP（Identity Provider）；OIDC中，RP（Relying Party）依賴於OP（OpenID Provider）</li>
+<li>WebAuthn：採用FIDO2規範。常搭配生物識別或實體金鑰</li>
+<li>FIDO2包含WebAuthn和CTAP（Client-to-Authenticator Protocol）</li>
+</ul>
+<h2 id="感言" tabindex="-1">感言 <a class="header-anchor" href="#感言" aria-label="Permalink to &quot;感言&quot;"></a></h2>
+<p>這次很幸運，剛好有機會到digiBlock C 數位創新基地，參與W3C子組織WCAP（亞太網路聯盟）和資策會合辦，並由Internet Academy所執行的<a href="https://wcap.jp/training/taiwan2025/" target="_blank" rel="noreferrer">「可驗證憑證培訓課」（Verifiable Credentials Training）</a>。後者採用的數位學習平台是BOHR for Business，使用下來也蠻直觀順利的。特別感謝，講師湖林貴子兩天下來的授課。</p>
+<p>延伸閱讀：<a href="https://haruowang.vercel.app/pov/participation/did.html" target="_blank" rel="noreferrer">【小聚小記：數位皮夾】 | Feed Me, Haruo</a></p>
+]]></content:encoded>
+            <enclosure url="https://haruowang.vercel.app/career/wv1.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
             <title><![CDATA[關於我]]></title>
             <link>https://haruowang.vercel.app/about/about-me/haruo.html</link>
             <guid>https://haruowang.vercel.app/about/about-me/haruo.html</guid>
-            <pubDate>Fri, 16 Jan 2026 01:49:37 GMT</pubDate>
+            <pubDate>Fri, 16 Jan 2026 02:15:07 GMT</pubDate>
             <description><![CDATA[主修印刷出版及色彩，學士論文爬梳草率季。關注影像理論和軟體研究，自學前端、親近Web3。認同Live Coding與開源文化交織的關係]]></description>
             <content:encoded><![CDATA[<h1 id="關於我" tabindex="-1">關於我 <a class="header-anchor" href="#關於我" aria-label="Permalink to &quot;關於我&quot;"></a></h1>
 <p><Badge type="info" text="🌿 Budding" /></P>
@@ -650,6 +739,13 @@
 </blockquote>
 <ul>
 <li>辭書形／ない形 + ことにします</li>
+</ul>
+<h2 id="てきます" tabindex="-1">～てきます <a class="header-anchor" href="#てきます" aria-label="Permalink to &quot;～てきます&quot;"></a></h2>
+<blockquote>
+<p>~再來</p>
+</blockquote>
+<ul>
+<li>也有~過來、或是時間變化的意思</li>
 </ul>
 ]]></content:encoded>
         </item>

@@ -215,6 +215,7 @@ export default defineConfig({
             { text: '凌華策展經歷分享', link: '/about/career/adlink' },
             { text: 'Postman黑客松第三名', link: '/about/career/postman' },
             { text: '數位人才探索計畫', link: '/about/career/google-mkt' },
+            { text: 'WCAP可驗證憑證培訓', link: '/about/career/wcap-vc' },
           ]
         },
       ],
