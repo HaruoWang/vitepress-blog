@@ -230,4 +230,11 @@ head:
 - Calibri的Hinting是Luc(as) de Groot自己做的
 - Hinting：在低解析度時微調字型
 - 早期ClearType只能調整豎畫，因而在中文使用上效果不佳
-- Optical Size：光學尺寸。指該字體適合顯示的大小，在CSS中的可變軸是opsz
+- Optical Size：視覺尺寸。指該字體適合顯示的大小，在CSS中的可變軸是opsz
+
+## 鞋合不合腳要穿一下才知道
+- 2026年東京TDC的大獎得主是Futura 100
+- Affinity在被Canva收購前的老東家是Serif
+- DTP一詞是由Aldus的創辦人Paul Brainerd所提出
+- InDesign的日文版於2001年推出，比英文版晚兩年
+- QuarkXPress因較晚支援Mac OS X，從此在競爭中落後

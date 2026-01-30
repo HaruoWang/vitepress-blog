@@ -67,3 +67,4 @@ head:
 ## 2026
 - 鴻梅2026春季進駐計劃落選一次
 - 創世紀詩雜誌「草本」專輯落選二次
+- non-syntax Experimental Image未入選
