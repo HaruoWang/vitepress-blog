@@ -238,3 +238,12 @@ head:
 - DTP一詞是由Aldus的創辦人Paul Brainerd所提出
 - InDesign的日文版於2001年推出，比英文版晚兩年
 - QuarkXPress因較晚支援Mac OS X，從此在競爭中落後
+
+## 「我們多久沒做聽眾反饋了」
+- Seoul Arim：首爾地鐵新字體，由荷蘭的July Type和韓國的Tlab合作推出
+- Bill Hill：ClearType發明人
+
+## 「它可以拓寬你的認知邊界」
+- Glyphs開發者Georg Seifert和Rainer Scheichelbauer獲得2026年的RIT Goudy Award
+- Incremental Font Transfer：W3C草案，可以提升大型字體檔案的傳輸效率
+- contrast-color()：CSS草案，動態指定有足夠對比度的文字色彩

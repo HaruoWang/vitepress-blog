@@ -173,3 +173,18 @@ head:
 - 2019年，參與高美館和森美術館合辦的「太陽雨」
 - 2020年，在TKG+舉辦個展「The King and I」
 - 個展名稱致敬被泰國禁演的同名美國戲劇
+
+## [Vegetal Realism](https://www.youtube.com/watch?v=uBMDQSj1u2I)
+- 寫實主義攸關建構（construction）和意識形態
+- Aloi在演講前段常提及標本剝製（taxidermy）和植物標本集（herbarium）二字
+- Aloi曾為Lucian Freud撰文。這位佛洛伊德的孫子繪製過許多植物畫
+- Aloi認為透過畫作中的涵義來傳達宗教涵義，亦是種植物盲
+- 他並不認同「所有藝術都是生態的。」此思想是由提出暗黑生態學的Timothy Morton所述
+- 他也不認同「所有藝術都是政治的。」其中他更偏愛Paul Delaroche的拿破崙畫作，勝過經典那張
+- 1936年，《史泰欽式翠雀花》（Steichen Delphiniums）於MoMA展出。因配套不足而僅展出一周
+- “The science of heredity when applied to plant breeding, which has as its ultimate purpose the aesthetic appeal of beauty, is a creative art.” - Edward Steichen
+- Hélio Oiticica：巴西藝術家。1967年推出堪稱最早的裝置藝術《熱帶》（Tropicália），開展熱帶主義運動（Tropicália）。還提出「Creleisure」，倡議結合創造和休閒
+- Eduardo Kac：巴西裔美籍藝術家。1994年展出《論人類理解》（Essay Concerning Human Understanding），讓相差六百哩的金絲雀和黃蘗對話
+- Joseph Kosuth的經典作品還有《一棵和三棵植物》（One and Three Plants）
+- Eddie Rodolfo Aparicio使用巴拿馬橡膠樹進行創作
+- Tʼuyʼtʼtanat-Cease Wyss則透過建造花園作為藝術實踐
