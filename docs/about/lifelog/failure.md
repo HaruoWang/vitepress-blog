@@ -70,3 +70,5 @@ head:
 - non-syntax Experimental Image未入選
 - 2026年TIDF未入選
 - 2026年IRCAM聲鬥陣未入選
+- FILE SP 2026未入選
+- 政大數位內容備取一
