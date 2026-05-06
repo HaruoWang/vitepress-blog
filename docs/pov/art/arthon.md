@@ -165,6 +165,8 @@ head:
 - Lanzmann更重視聆聽與文字，呼應Lévinas重視他者的哲學，並挑戰視覺化
 - 《易爾先生》打破黑色電影傳統，出現不只一種窺視
 - 《日煩夜煩》揭示性變態是性科學的發明
+- Lee Edelman認為Hitchcock在作品中對於生值未來進行批判
+- Baudrillard提出「文化沙漠」，指出學者多半認為後現代無法開展倫理學討論
 
 ## 賤斥藝術
 - Screen有對抗外來事物的意涵
@@ -207,7 +209,33 @@ head:
 
 ## Foster談模擬
 - Hermann Broch將媚俗視為藝術價值系統中的惡
+- Jon Kessler透過《凌晨四點的宮殿》（The Palace at 4 A.M.）諷刺伊拉克戰爭
+- Isa Genzken的《達文西》（Da Vinci）則使人聯想起飛機被有心者利用的可怖
+- Adorno在《美學理論》中提到Baudelaire透過模擬現實使藝術演變為現代藝術
 
 ## 社會加速度
 - Hartmut Rosa的加速度三角：技術、社會變遷、生活步調
 - 透過「共鳴」讓速度慢下來
+- 可參考藝術家賴志盛的創作
+
+## 電玩裡的勞工史
+- 1995年VNS Matrix的遊戲《All New Gen》，是賽博女性主義的先驅
+
+## Foster談垂危
+- Precariat流眾：Precarious + Proletariat
+- 流眾是黃孫權的翻譯
+- Deleuze：「代表他人發言是一種無禮的行為。」
+- Hirschhorn認為追星族也是無頭（盲目）的，因此有反抗的力量
+
+## 身體機器
+- 生命機器拒絕加速度政治，也拒絕給予整體
+- 文件化機器可以挪用加速度政治，也可以給予整體
+- Peggy Phelan：「行為表演的唯一生命存在於當下。」
+
+## 知識生產的問題
+- Tom Holert創立Academy of the Arts of the World和Harun Farocki Institut
+- 第11屆文件展重新安置「知識生產」之定義
+
+## 關於艾森斯坦
+- Eisenstein形容自己的特寫鏡頭是「剁碎的肢體」
+- 1923年，Eisenstein發展出吸引力蒙太奇理論
