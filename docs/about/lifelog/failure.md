@@ -74,3 +74,5 @@ head:
 - 政大數位內容備取一
 - 交大應用藝術未錄取
 - 北科互動設計備取一
+- SparkLabs Taiwan Fellowship未錄取
+- 「攝影上桌：爽」未入選

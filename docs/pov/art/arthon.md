@@ -239,3 +239,19 @@ head:
 ## 關於艾森斯坦
 - Eisenstein形容自己的特寫鏡頭是「剁碎的肢體」
 - 1923年，Eisenstein發展出吸引力蒙太奇理論
+- 節奏蒙太奇和遠景組成的調性蒙太奇相反
+- Eisenstein使用灰度一詞，將色彩作為情緒值
+
+## 媒介考古學
+- Siegfried Zielinski是德國除Kittler以外的代表
+- Thomas Elsaesser研究的是新電影史
+- Ernst Robert Curtius提及主題（Topos）只適用於文學傳統
+- Curtius寫書是為了緬懷Aby Warburg，卻認為藝術不是思想的媒介
+- Curtius認為寫作總有共通主題的思想，受到Bergson和Jung的影響
+
+## 溝通媒介史
+- 1794年，法國政治家Lakanai建議鋪設光學電報系統「夏普塔」
+
+## 困在平台上
+- Soren Pold發明Zoomopticon一詞，相當於線上會議的全景監獄
+- Geert Lovink用Foucault的Pastoral Power比喻臉書的平台政治
