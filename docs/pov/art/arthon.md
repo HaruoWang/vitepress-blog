@@ -255,3 +255,13 @@ head:
 ## 困在平台上
 - Soren Pold發明Zoomopticon一詞，相當於線上會議的全景監獄
 - Geert Lovink用Foucault的Pastoral Power比喻臉書的平台政治
+- 從2014年開始，網絡文化研究所便持續推行MoneyLab計畫，設想金融民主化
+
+## 監控敘事和實況電影
+- 《時間索引的修辭學》由Thomas Y. Levin撰寫
+- Echelon project是五眼聯盟背後的計畫，即為梯隊系統
+- 丹麥頻閃攝影機Jai可以高速拍照
+- 拋物面麥克風足以接收到一公里外的音訊
+- 德國PKI Electronic的雷射麥克風能夠隔著窗玻璃錄到對話
+- 電影《出獄》（Call Northside）中，有幕James Stewart的背影彷彿在環形監獄
+- David Bordwell曾談論「復述演繹」
