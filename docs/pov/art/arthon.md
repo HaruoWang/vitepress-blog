@@ -265,3 +265,7 @@ head:
 - 德國PKI Electronic的雷射麥克風能夠隔著窗玻璃錄到對話
 - 電影《出獄》（Call Northside）中，有幕James Stewart的背影彷彿在環形監獄
 - David Bordwell曾談論「復述演繹」
+
+## 可見的城市
+- Victor Burgin認為城市可以被視為無數相機的聚集體
+- Photosynth：將照片縫合成3D全景的微軟軟體

@@ -9,7 +9,7 @@ head:
       content: https://haruowang.vercel.app/wealth/finance/taiwan400.html
   - - meta
     - property: og:title
-      content: 台灣經濟四百年
+      content: 台灣經濟四百年｜Feed Me, Haruo
   - - meta
     - name: og:description
       content: 吳聰敏教授《台灣經濟四百年》之課程筆記
@@ -18,7 +18,7 @@ head:
       content: /og-image.webp
   - - meta
     - property: twitter:title
-      content: 台灣經濟四百年
+      content: 台灣經濟四百年｜Feed Me, Haruo
   - - meta
     - name: twitter:description
       content: 吳聰敏教授《台灣經濟四百年》之課程筆記
@@ -67,3 +67,11 @@ head:
 - 季麒光減稅，競標從1685不再存在
 - 鹿產區繼續北移，鹿皮減少但番餉仍不變
 - 1737乾隆減稅，但產業已轉型
+
+## 土牛溝
+- 朱一貴事件使清廷態度轉變為鼓勵開墾
+
+## 大小租
+- 鄭氏王朝曾有「盡歸民業」之土地政策
+- 施侯租：施琅及其後代所佔土地的收入
+- 1905年3月，總督府消滅大租權

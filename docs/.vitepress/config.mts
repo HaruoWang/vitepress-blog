@@ -301,6 +301,7 @@ export default defineConfig({
             { text: 'moom bookshop參訪心得', link: '/pov/other/moom' },
             { text: '《裝幀時代》重點筆記', link: '/pov/other/bind60' },
             { text: '《重寫臺灣百年新詩史》筆記', link: '/pov/other/poem100' },
+            { text: '關於城市科學的一切', link: '/pov/other/city-science' },
           ]
         },
       ],
@@ -401,8 +402,9 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: 'WORD UP藍色證書教材', link: '/global/english/toeic' },
+            { text: 'Vox英聽筆記', link: '/global/english/vox' },
             { text: 'Axios Daily', link: '/global/english/axios' },
-            { text: '東吳英文小學堂', link: '/global/english/scu' },
+            { text: '關於翻譯與文學', link: '/global/english/trans' },
           ]
         },
       ],
@@ -413,6 +415,7 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: '證券投資與財務分析', link: '/wealth/finance/securities-specialist' },
+            { text: '投資大小事', link: '/wealth/finance/investment' },
             { text: '台灣經濟四百年', link: '/wealth/finance/taiwan400' },
           ]
         },

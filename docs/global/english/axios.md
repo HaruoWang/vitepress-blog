@@ -1,5 +1,5 @@
 ---
-description: 每日閱讀Axios英文新聞的學習筆記
+description: 2024年9-10月每日閱讀Axios英文新聞的學習筆記
 head:
   - - link
     - rel: canonical
@@ -12,7 +12,7 @@ head:
       content: Axios Daily｜Feed Me, Haruo
   - - meta
     - name: og:description
-      content: 每日閱讀Axios英文新聞的學習筆記
+      content: 2024年9-10月每日閱讀Axios英文新聞的學習筆記
   - - meta
     - name: og:image
       content: /og-image.webp
@@ -21,7 +21,7 @@ head:
       content: Axios Daily｜Feed Me, Haruo
   - - meta
     - name: twitter:description
-      content: 每日閱讀Axios英文新聞的學習筆記
+      content: 2024年9-10月每日閱讀Axios英文新聞的學習筆記
   - - meta
     - name: twitter:image
       content: https://haruowang.vercel.app/og-image.webp
@@ -29,7 +29,7 @@ head:
 
 # Axios Daily
 
-<p><Badge type="info" text="🌱 Seedlings" /></P>
+<p><Badge type="info" text="🌿 Budding" /></P>
 
 ## 0910｜以巴戰事
 - stun grenades：閃光彈
@@ -388,80 +388,6 @@ restitution近似constitution。
 
 ::: details Tips
 animus是敵意，consistent也是一致的。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 :::
 
 ## 1031｜全球威脅
