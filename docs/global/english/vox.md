@@ -111,3 +111,8 @@ head:
 - bulldoze：強迫
 - co-opt：招攏
 - 開始：embark on
+
+## Are soccer players the most fit athletes on the planet?
+- drill：訓練
+- lateral：側向的
+- 急停：stop on a dime

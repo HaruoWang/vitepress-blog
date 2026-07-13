@@ -29,7 +29,7 @@ head:
 
 # Axios Daily
 
-<p><Badge type="info" text="🌿 Budding" /></P>
+<p><Badge type="info" text="🌳 Evergreen" /></P>
 
 ## 0910｜以巴戰事
 - stun grenades：閃光彈
