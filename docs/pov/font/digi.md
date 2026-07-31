@@ -31,6 +31,12 @@ head:
 
 <p><Badge type="info" text="🌱 Seedlings" /></P>
 
+::: info References
+[一起成為新世紀文字藝術師：深入玩轉 Unicode 和 OpenType](https://ithelp.ithome.com.tw/users/20162880/ironman/6994)
+
+作者是justfont字型工程師何青儒，在網路上還有Rutopio和嗜字綠等筆名。
+:::
+
 ## 知識
 
 - Ikarus字型軟體：使用樣條函數
@@ -61,11 +67,3 @@ head:
 - calt：上下文替代
 - vrt2：豎排，比vert精準
 - ccmp：字符組合
-
-## 參考文獻
-
-- [一起成為新世紀文字藝術師：深入玩轉 Unicode 和 OpenType](https://ithelp.ithome.com.tw/users/20162880/ironman/6994)
-
-作者是justfont字型工程師何青儒，在網路上還有Rutopio和嗜字綠等筆名。
-
-是位用一篇篇優質文將大家領進數位字型之門的引路人。

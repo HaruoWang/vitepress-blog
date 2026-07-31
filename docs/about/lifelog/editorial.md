@@ -212,3 +212,33 @@ Anthropic設計主管Jenny Wen於Podcast中提及，公司的Slack群組裡可�
 > 「人只有在成為完整的人時才會遊戲，也只有在遊戲時才會成為完整的人。」——Friedrich Schiller
 
 再來，我想是DIY、維修和裝潢一類的手藝活。在喜歡拆家的年紀沒有感興趣，錯過時機後，又更不容易跨越需要花時間的那道坎了。雖已知道有instructables和iFixit這樣的資源，但依然被各種重要和沒那麼重要的瑣事卡住。不過很有趣的是歐盟在2024年頒布《維修權指令》，規定消費者應享有獲得合理修繕的權利，並將於26年7月正式生效。未來相信我還有胡亂嘗試的勇氣，也希望終能打造出理想的居所。
+
+## 答案不標準
+### 2026/07/10-2026/07/24
+
+友人傳來Diag的專題，說希望自己中年也能像迪拉一樣酷。
+
+我比較自找麻煩，心裡考慮的是所謂「帥潮」和「時尚」，有沒有更加邊緣、不被選物填滿的模樣。
+
+創作沒有標準答案，活著也沒有。
+
+憑運氣在脆上滑到《Filipiñana》每幀畫面都很令人驚豔的[預告](https://www.youtube.com/watch?v=Mq-7rJqNJ4I)：菲律賓導演Rafael Manuel的同名短片曾獲柏林影展銀熊獎，長片企劃更在釜山亞洲創投市場（APM）拿下文策院的TAICCA Award等三大獎。同場獲得肯定的還有《裝幀人生》導演廣瀨奈奈子新作《このごにおよんで愛など》。
+
+另外，有幸校對其中一個章節的《美學程式設計》實體書終於寄來啦！很喜歡原子夾的裝訂方式。這邊也截出該篇章的幾個案例分享。是說最近我還在[免費迷因](https://www.facebook.com/groups/freememe/posts/1929432367725473/)逛到ELIZA的梗圖。
+
+〈機器反學習〉
+
+- Joseph Weizenbaum：「最早的聊天機器」ELIZA創造者
+- 其名來自Bernard Shaw劇作《Pygmalion》中，渴望變得優雅的「賣花女」Eliza Doolittle
+- 2005年，懷舊開發者Norbert Landsteiner打造[ELIZA Terminal](https://www.masswerk.at/elizabot/eliza.html)專案
+- Cockney：倫敦工人階級所使用的方言
+- 微軟聊天機器人Tay曾被網友調教成帶有種族歧視傾向
+- [Queer AI](https://benlerchin.com/portfolio/queer-ai/)：由藝術家Ben Lerchin所訓練，現只剩下專案介紹頁面
+- 1959年，Arthur Samuel在IBM開發遊戲時，提出Machine Learning一詞
+- Elisa Giardina Papa：關注「數位情感勞動」的義大利藝術家
+- [12 Hours of ImageNet](https://www.youtube.com/watch?v=PC60JL-lMzA)：Nicolas Malevé播放ImageNet資料集的創作
+- [Anatomies of Intelligence](https://anatomiesofintelligence.github.io/workshop_presentation.html)：Joana Chicau和Jonathan Reus關於資料分類和分群的研究計畫
+- LLM之中的Temperature值，其實和Softmax函數有關
+- Ruha Benjamin將沒有社會學深度的運算稱為Superficial Learning
+- 李飛飛認為，提供演算法更加優質、猶如三歲孩子眼睛所獲的訓練資料，要比尋找更好的演算法來得重要
+- Philip E. Agre提出Critical Technical Practice

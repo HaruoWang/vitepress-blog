@@ -109,6 +109,7 @@ export default defineConfig({
           {
             items: [
               { text: 'Art', link: '/pov/art/video-artist' },
+              { text: 'Design', link: '/pov/design/classic' },
               { text: 'Publication', link: '/pov/publication/tabf' },
               { text: 'Font', link: '/pov/font/the-type' },
               { text: 'Color', link: '/pov/color/cie' },
@@ -231,6 +232,13 @@ export default defineConfig({
             { text: '松學校導讀：重點筆記', link: '/pov/art/arthon' },
             { text: '臺灣獨立藝術空間檔案計劃', link: '/pov/art/iast' },
             { text: '展學合作：策展研究筆記', link: '/pov/art/curatorial-studies' },
+          ]
+        },
+        {
+          text: 'Design',
+          collapsed: false,
+          items: [
+            { text: '經典的脈絡', link: '/pov/design/classic' },
           ]
         },
         {
@@ -395,6 +403,7 @@ export default defineConfig({
             { text: '内田秀のVlog', link: '/global/japan/shutube' },
             { text: '日本迷你電影院', link: '/global/japan/mini-theater' },
             { text: '《相機女孩漫遊東京》筆記', link: '/global/japan/shutter-girl' },
+            { text: '上伊那酒單，醉姿如百合', link: '/global/japan/botan' },
           ]
         },
         {
@@ -416,7 +425,6 @@ export default defineConfig({
           items: [
             { text: '證券投資與財務分析', link: '/wealth/finance/securities-specialist' },
             { text: '投資大小事', link: '/wealth/finance/investment' },
-            { text: '台灣經濟四百年', link: '/wealth/finance/taiwan400' },
           ]
         },
         {

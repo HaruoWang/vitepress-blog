@@ -31,6 +31,10 @@ head:
 
 <p><Badge type="info" text="🌳 Evergreen" /></P>
 
+::: info References
+[🏛️ MINI THEATER JOURNEY | JFF+ INDEPENDENT CINEMA 2023](https://www.youtube.com/playlist?list=PL_EYAB7Gbwzk1PoHlgZYiwN5hwi4MiNka)
+:::
+
 ## THEATER ENYA
 - 位於佐賀縣唐津市
 - 唐津演屋祭：從2021年開始舉行的電影放映活動

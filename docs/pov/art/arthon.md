@@ -248,6 +248,7 @@ head:
 - Ernst Robert Curtius提及主題（Topos）只適用於文學傳統
 - Curtius寫書是為了緬懷Aby Warburg，卻認為藝術不是思想的媒介
 - Curtius認為寫作總有共通主題的思想，受到Bergson和Jung的影響
+- Baby Talkie不只是日本的西洋鏡，設計目的是為留聲機加入影像
 
 ## 溝通媒介史
 - 1794年，法國政治家Lakanai建議鋪設光學電報系統「夏普塔」
@@ -272,3 +273,7 @@ head:
 
 ## 電影中的聲音
 - 臍帶網：由Denis Vasse提出，將臍帶視為小他物
+- 法國片的聲音精準對位，義大利電影的聲音異步且喧嘩
+
+## 奇雲
+- Vestal Fire：由Stephen J. Pyne提出，指涉逐漸背景化但沒有被馴化的火

@@ -116,3 +116,19 @@ head:
 - drill：訓練
 - lateral：側向的
 - 急停：stop on a dime
+
+## How F1 drivers survive their own cars
+- cardio：有氧運動
+- regimen：訓練方法
+- VO₂ max：最大攝氧量
+
+## The truth about gut health
+- gimmick：噱頭
+- microbe：微生物
+- probiotic：益生菌
+- dysbiosis：微生態失調
+- Pew Research Center：皮尤研究中心
+
+::: details Takeaway
+- #GutTok在TikTok上有超過60億次觀看
+:::

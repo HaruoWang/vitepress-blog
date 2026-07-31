@@ -33,6 +33,7 @@ head:
 
 ## 城市設計史
 - 1960年，Harvard成立Urban Design學科，MIT的Kevin Lynch出版《The Image of the City》
+- 1990年代，新都市主義規劃師Peter Calthorpe提出TOD（大眾運輸導向型發展），本意其實是避免城市蔓延
 ### 新城市科學
 -  Metcalfe's Law：網路總價值和使用者數量之平方呈現正相關
 -  Bettencourt-West Law：城市規模和居民收入呈現超越線性的關係
@@ -47,9 +48,25 @@ head:
 - 北捷、NVIDIA和Linker Vision攜手展開「文湖線人流模擬暨數位孿生」計畫，預計27年完成
 - MIT教授Kent Larson曾使用CityScope協助安道爾成為智慧國家
 - MIT SCL的[Octopus](https://mit-senseable-city-lab.github.io/octopus-documentation/)可以測量里約乃至世界各地的空汙
+- DestinE是歐盟的孿生地球，DestinE是輝達的孿生地球
 ### 資料視覺化
 - Ed Hawkins：[Climate stripes](https://showyourstripes.info/) & [Climate spirals](https://www.climate-lab-book.ac.uk/2016/spiralling-global-temperatures/)
 - Eric Fischer：[See something or say something](https://www.flickr.com/photos/walkingsf/albums/72157627140310742/)
+
+## MIT CSN Talks 2026
+### Hamburg
+- City Science Lab Hamburg的姊妹研究單位：UNITAC（聯合國城市創新技術加速器）
+- CSLH的三大方向：co-creation / modeling the city / data storytelling
+- 負責人Gesa Ziemer和Gabriela Billa的研究：關於桑人（San People）以岩畫敘事的族群連結，並稱之為Ancestral Intelligence
+- CARE4HH：將能源系統整合至城市數位規劃工具的專案
+- CARE4HH與HAW Hamburg和TUHH合作，後者有專案TransiEnt（Modelica函式庫）和iNeP（整合電網規劃）
+- DiDEK：城市工程資料中心。其中功能如Wheelbarrow試圖完成ETL
+- DIPAS：促進官民合作的數位參與系統
+- PaKOMM：結合觸控桌和XR的公民參與專案
+- CCmCC：將城市科學結合創意編碼的活動
+### Be'er Sheva
+- The Right to Shelter：分析貝都因族群避難所在Negev可及性的互動地圖
+- Scor.CH：可以計算實時UTCI（通用熱氣候指數）的平台。過程包含計算MRT（平均輻射溫度）和EPW等
 
 ## 地理知識
 ### 分析技巧
@@ -83,6 +100,10 @@ head:
 - 相較碳捕捉，去碳燃氫更環保，但高熱
 
 ## 永續政策
+- 2008年，厄瓜多將「自然權利」寫進憲法
+- 2016年，加拿大市鎮Terrasse-Vaudreuil承認《樹木權利世界宣言》
+- 2017年，紐西蘭北島的旺阿努伊河受《河流之魂法》保障擁有人格權
+### TCAN
 - 四種碳定價機制：碳費、自主減量計畫、碳排放交易制度、碳邊境調整機制
 - ETS是歐盟的碳排放交易制度，CBAM是歐盟的碳邊境調整機制
 - 2030年後，每公噸碳費費率會落在1200至1800元
@@ -93,9 +114,12 @@ head:
 - 除了歐盟ETS，還有加州ETS、日本GX-ETS和韓國K-ETS等
 - 德國則是推行「碳差價合約」（CCfD）補貼企業使用低碳技術
 - CCUS是「碳捕捉利用與封存」，比CCU多了Storage
-- 2008年，厄瓜多將「自然權利」寫進憲法
-- 2016年，加拿大市鎮Terrasse-Vaudreuil承認《樹木權利世界宣言》
-- 2017年，紐西蘭北島的旺阿努伊河受《河流之魂法》保障擁有人格權
+
+## 永續計畫
+- CMIP（耦合模式對比計畫）：IPCC報告（AR）中使用的氣候模型
+- LEAP（長期能源替代規劃系統）：斯德哥爾摩環境研究院研發的評估模型
+- WUDAPT（世界城市資料庫）：全球性的公民科學計畫。香港目前為亞洲主要推動者
+- TReAD（歷史氣候重建資料）：根據ERA5進行「動力降尺度」的臺灣大氣資料庫
 
 ## 永續活動
 - IRENA（國際再生能源總署）年會
@@ -110,6 +134,7 @@ head:
 - GRI（全球報告倡議組織）
 - SASB（永續會計準則委員會）
 - NZBA（淨零銀行聯盟）
+- IPCC（政府間氣候變化專門委員會）
 
 ## 永續宣言
 - Brundtland Report（布倫特蘭報告）
@@ -120,6 +145,9 @@ head:
 - SFDR（歐盟永續金融揭露規範）
 - ETS（歐盟碳排放交易制度）
 - CBAM（歐盟碳邊境調整機制）
+- CDM（清潔發展機制）
+- TCFD（氣候相關財務揭露）
+- TNFD（自然相關財務揭露）
 
 ## 永續賽場
 ### 足球
