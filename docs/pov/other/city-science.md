@@ -33,7 +33,8 @@ head:
 
 ## 城市設計史
 - 1960年，Harvard成立Urban Design學科，MIT的Kevin Lynch出版《The Image of the City》
-- 1990年代，新都市主義規劃師Peter Calthorpe提出TOD（大眾運輸導向型發展），本意其實是避免城市蔓延
+- 1980年代，新都市主義繼承Kevin Lynch和Jane Jacobs等人的都市批判思考而生。如Léon Krier一般注重步行尺度和公共空間，也像Michael Graves那樣在意美感和可近性
+- 1990年代，新都市主義規劃師Peter Calthorpe提出TOD（大眾運輸導向型發展），本意其實是避免城市蔓延 
 ### 新城市科學
 -  Metcalfe's Law：網路總價值和使用者數量之平方呈現正相關
 -  Bettencourt-West Law：城市規模和居民收入呈現超越線性的關係

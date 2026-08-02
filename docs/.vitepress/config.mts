@@ -239,6 +239,7 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: '經典的脈絡', link: '/pov/design/classic' },
+            { text: '構築的解剖', link: '/pov/design/tectonic' },
           ]
         },
         {
@@ -352,6 +353,7 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: 'Web3知識庫', link: '/web3/knowledge/web3' },
+            { text: '給自己的區塊鏈指南', link: '/web3/knowledge/blockchain-guide' },
           ]
         },
         {

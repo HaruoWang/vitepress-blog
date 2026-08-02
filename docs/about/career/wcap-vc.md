@@ -109,6 +109,6 @@ Receiver
 
 ## 感言
 
-這次很幸運，剛好有機會到digiBlock C 數位創新基地，參與W3C子組織WCAP（亞太網路聯盟）和資策會合辦，並由Internet Academy所執行的[「可驗證憑證培訓課」（Verifiable Credentials Training）](https://wcap.jp/training/taiwan2025/)。後者採用的數位學習平台是BOHR for Business，使用下來也蠻直觀順利的。特別感謝，講師湖林貴子兩天下來的授課。
+這次很幸運，剛好有機會到digiBlock C數位創新基地，參與W3C子組織WCAP（亞太網路聯盟）和資策會合辦，並由Internet Academy所執行的[「可驗證憑證培訓課」（Verifiable Credentials Training）](https://wcap.jp/training/taiwan2025/)。後者採用的數位學習平台是BOHR for Business，使用下來也蠻直觀順利的。特別感謝，講師湖林貴子兩天下來的授課。
 
-延伸閱讀：[【小聚小記：數位皮夾】 | Feed Me, Haruo](https://haruowang.vercel.app/pov/participation/did.html)
+延伸閱讀：[【小聚小記：數位皮夾】 | Feed Me, Haruo](../../pov/participation/did.md)
