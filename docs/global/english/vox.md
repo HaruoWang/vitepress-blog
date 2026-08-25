@@ -132,3 +132,7 @@ head:
 ::: details Takeaway
 - #GutTok在TikTok上有超過60億次觀看
 :::
+
+## How a Super El Niño affects the global climate
+- El Niño：聖嬰現象
+- ENSO：聖嬰-南方振盪

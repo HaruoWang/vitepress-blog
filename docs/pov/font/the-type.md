@@ -282,3 +282,7 @@ head:
 - 藏文書法日：4/30
 - SILICON：Stanford關於保存弱勢語言的計畫
 - 華康金剛黑預計會支持宗喀語
+
+## 一百年前的〇〇後
+- Jan Tschichold也可以譯成楊清秋
+- 其最經典的著作是《新字體排印》（Die neue Typographie）

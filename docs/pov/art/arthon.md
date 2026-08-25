@@ -249,6 +249,8 @@ head:
 - Curtius寫書是為了緬懷Aby Warburg，卻認為藝術不是思想的媒介
 - Curtius認為寫作總有共通主題的思想，受到Bergson和Jung的影響
 - Baby Talkie不只是日本的西洋鏡，設計目的是為留聲機加入影像
+- Roger Caillois認為留影盤、費納奇鏡、西洋鏡、活動視鏡屬於模仿的範疇
+- Wanda Strauven則認為以上玩具屬於暈眩的範疇，借用自Caillois的遊戲四分類法
 
 ## 溝通媒介史
 - 1794年，法國政治家Lakanai建議鋪設光學電報系統「夏普塔」

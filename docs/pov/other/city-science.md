@@ -43,13 +43,28 @@ head:
 -  Tobler's First Law of Geography：兩地越近越相關
 -  Bussiere's Law：城市發展和中心區域之人口密度呈現負相關
 -  Brand’s Law：城市規模和永續程度呈現正相關
+### [新莊街之都市運動](https://doi.org/10.6752/JCS.202204_(34).0003)
+- David Harvey認為，「城市權應該被視為一種集體權利，而非私人物權，因為後者正是新自由主義市場邏輯背後的基礎。」
+- Manuel Castells：都市社會運動代表人物
+#### 新莊街文化治理三階段
+1. 廟街協會和黃林玲玲的伊始：人行徒步區和廟街入口意象正於此時設立
+2. 五年改造計畫和周錫瑋的宏願：從中港大排到新莊碼頭，宣告大河時代來臨。都改組織OURs的參與，點燃了啟蒙的火種
+3. 財政困局和朱立倫的轉型：蘇貞昌表示台北縣曾舉債600億，朱立倫則提出新北市負債達1503億。於是土地開發成為開源選項，五年改造計劃告吹
+#### 兩個倡議組織
+1. 永續聯盟：更關心歷史文化
+2. 新莊青盟：更關心公地公用
+#### 派出所都更一度暫緩的三個原因
+1. 副市長許志堅收賄
+2. 皇翔建設想解約
+3. 新北房地產不景氣
 
 ## 案例整理
 - CityAI的三大特色是Tool Preamble / Human-in-the-loop / Data Lineage
 - 北捷、NVIDIA和Linker Vision攜手展開「文湖線人流模擬暨數位孿生」計畫，預計27年完成
 - MIT教授Kent Larson曾使用CityScope協助安道爾成為智慧國家
 - MIT SCL的[Octopus](https://mit-senseable-city-lab.github.io/octopus-documentation/)可以測量里約乃至世界各地的空汙
-- DestinE是歐盟的孿生地球，DestinE是輝達的孿生地球
+- DestinE是歐盟的孿生地球，Earth-2是輝達的孿生地球
+- ZHA事務所曾發起專案Walkable London，試圖從Oxford Street的可步行化向外擴延
 ### 資料視覺化
 - Ed Hawkins：[Climate stripes](https://showyourstripes.info/) & [Climate spirals](https://www.climate-lab-book.ac.uk/2016/spiralling-global-temperatures/)
 - Eric Fischer：[See something or say something](https://www.flickr.com/photos/walkingsf/albums/72157627140310742/)

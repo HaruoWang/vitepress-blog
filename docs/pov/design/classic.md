@@ -63,6 +63,7 @@ head:
 - Greenhouse：SFF（斯德哥爾摩家具展）的新銳展區
 - Älvsjö gård：SFF的實驗平台，原為老莊園
 - 3daysofdesign：哥本哈根三日設計節
+- Jia CURATED：精神為Gotong Royong（互助共創）的峇里島展會
 
 ## 材料工法
 - Lyocell：萊賽爾纖維，木質纖維第三代，前兩代是嫘縈和莫代爾
