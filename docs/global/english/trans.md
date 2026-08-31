@@ -31,6 +31,8 @@ head:
 
 <p><Badge type="info" text="🌱 Seedlings" /></P>
 
+> "What is translation? On a platter. A poet's pale and glaring head, A parrot's screech, a monkey's chatter, And profanation of the dead." - Vladimir Nabokov
+
 ## 東吳英文小學堂
 ### 白鯨記
 - 白鯨記被評論家視為酷兒小說
