@@ -240,6 +240,7 @@ export default defineConfig({
           items: [
             { text: '經典的脈絡', link: '/pov/design/classic' },
             { text: '構築的解剖', link: '/pov/design/tectonic' },
+            { text: '研究的累積', link: '/pov/design/research' },
           ]
         },
         {
