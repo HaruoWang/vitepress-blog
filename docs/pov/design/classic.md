@@ -64,6 +64,8 @@ head:
 - Älvsjö gård：SFF的實驗平台，原為老莊園
 - 3daysofdesign：哥本哈根三日設計節
 - Jia CURATED：精神為Gotong Royong（互助共創）的峇里島展會
+- Homo Faber：由米開朗基羅基金會舉辦，威尼斯的工藝雙年展
+- Material Matters：倫敦材料設計展
 
 ## 材料工法
 - Lyocell：萊賽爾纖維，木質纖維第三代，前兩代是嫘縈和莫代爾
@@ -83,3 +85,4 @@ head:
 - Procel：哥本哈根工作室Natural Material Studio推出的生物塑膠
 - Avocado Seed Brick：委內瑞拉設計師María-Elena Pombo推出的酪梨籽磚
 - EcoLattice：由Yash Shah推出，使用TPU（熱塑性聚氨酯）製成的未來泡棉
+- Mimmik Tile：由前身為StoneCycling的FRONT公司推出，借助細菌生長的磁磚

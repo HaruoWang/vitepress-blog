@@ -136,3 +136,15 @@ head:
 ## How a Super El Niño affects the global climate
 - El Niño：聖嬰現象
 - ENSO：聖嬰-南方振盪
+
+## India’s internet war
+- BJP：印度人民黨
+- CJP：蟑螂人民黨
+- meritocracy：菁英政治
+
+## Nonalcoholic drinks SHOULD cost more. Here's why.
+- Dr. Mihaela Mihnea：現職在瑞典NA公司Oddbird非鳥酒莊的非酒精專家
+- evaporate：蒸發
+- Vacuum Distillation：真空蒸餾
+- Reverse Osmosis：逆滲透
+- Spinning Cone Column：旋轉錐柱技術

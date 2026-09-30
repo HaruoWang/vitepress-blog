@@ -50,7 +50,16 @@ head:
 - 批判傳統GIS的gaze from nowhere視角
 - 發現官方資料集偏重記錄大型的西方船隻，而排除小型的原民水上工具
 
+### [Sensibilities as Knowledge in Design Research](https://dl.acm.org/doi/10.1145/3800645.3813069)
+- 是一篇反身性（Reflexive）的研究，如作者在文末注意到建築學太過父權而試圖帶入女性主義
+- 強調關係性（Relational）的價值，就像衍射性（Diffractive）的粒子也會相互糾纏
+- 將主流HCI形容為無菌（Aseptic）狀態
+- 將感官形容為皮膚，而非鏡片。受Juhani Pallasmaa於《肌膚之眼》（The Eyes of the Skin）之批判所啟發
+- 關注Atmosphere的理論家有：Juhani Pallasmaa、Gernot Böhme、Christian Borch、Peter Sloterdijk、Peter Zumthor等人
+- Peter Zumthor更偏好真實材質，而非使用紙板做模型
+
 ## 研究方法
+- BPMRC：研究經典架構，分為Background、Purpose、Method、Result和Conclusion
 - Reflexive Thematic Analysis：更在意研究者自身的專業想法
 - Pictorial：鼓勵以圖像傳達研究結果，ACM DIS和TEI都有收
 
@@ -74,6 +83,9 @@ head:
     - 分別是面對自己的牆、面對研究參與者的牆、面對學術社群的牆
 - Counterfactual Artifacts，由Ron Wakkary提出，足以使可能世界和真實世界產生交集
 - Experiential Turn：由Stuart Candy與Jake Dunagan提出，將未來透過設計具體化，如未來考古學
+- Feldenkrais Method：世界三大身心學派之一，藉由微小調整使大腦覺察到新的動作模式
+- Non-Places：由Marc Augé提出，意指那些人們短暫停留的空間
+- Slow Technology：由Johan Redström提出，反思過於加速的科技文化
 
 ## 專案整理
 
@@ -89,3 +101,12 @@ head:
 - Roden Crater：由「光與空間運動」先驅James Turrell創作，在亞利桑那的火山口蓋了觀測台
 - Re-Animated：由Jakob Kudsk Steensen創作，關於奧亞吸蜜鳥的VR影像
 - ALEF：由Oxman Studio創作的生物多樣性監測系統，呼應該工作室的Krebs Cycle理念
+- OpenSurgery：由Frank Kolkman創作的DIY手術機器人
+- Digiti Sonus：由Yoon Chung Han創作的指紋聲波化裝置
+- Satelliten：由Quadrature創作的衛星路徑繪製系統
+- DeepWear：由落合陽一開發，透過DCGANS協助衣物設計的工具
+- Robotype：由勝本雄一朗開發，透過機械裝置達成多維度字體顯示
+- AI DJ Project：由Qosmo創辦人德井直生領銜的如題演出
+- Brainlight：由Laura Jade創作，將腦電波轉換為照明的裝置
+- Errant: The Kinetic Propensity of Images：由羅海德創作，透過ML分析胡金銓作品，版本二對焦溝口
+- PCW-DC：由Xue Dong等人發想，根據Amazon資料進行分析的膠囊衣櫥
