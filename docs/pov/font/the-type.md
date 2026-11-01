@@ -286,3 +286,7 @@ head:
 ## 一百年前的〇〇後
 - Jan Tschichold也可以譯成楊清秋
 - 其最經典的著作是《新字體排印》（Die neue Typographie）
+
+## 矽谷論字史丹佛
+- Emigre：由Zuzana Licko和Rudy VanderLans共同創辦，最早探索Mac的字體鑄造廠之一，1984年推出同名雜誌
+- Alexandre Bassi：專長是馬雅文字的法國設計師，畢業於巴黎ECV

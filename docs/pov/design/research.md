@@ -110,3 +110,6 @@ head:
 - Brainlight：由Laura Jade創作，將腦電波轉換為照明的裝置
 - Errant: The Kinetic Propensity of Images：由羅海德創作，透過ML分析胡金銓作品，版本二對焦溝口
 - PCW-DC：由Xue Dong等人發想，根據Amazon資料進行分析的膠囊衣櫥
+- 《城市之臉》遠距版：由狠劇場創作，原訂在荷蘭北方太陽藝術節（Nooderzon）演出，後更延伸XR版
+- Hylozoic Ground：由Philip Beesley創作，2010年威尼斯建築雙年展的加拿大館。藝術家曾來台參展「機動．森林」
+- Anomy：由Patrick Monte和Brian Questa創作，使用C#和SuperCollider撰寫，遮蔽新聞中字母「e」的音像作品

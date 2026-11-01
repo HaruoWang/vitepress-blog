@@ -83,6 +83,12 @@ head:
 ### Be'er Sheva
 - The Right to Shelter：分析貝都因族群避難所在Negev可及性的互動地圖
 - Scor.CH：可以計算實時UTCI（通用熱氣候指數）的平台。過程包含計算MRT（平均輻射溫度）和EPW等
+### Shanghai
+- Dragon Program：ESA（歐洲太空總署）和MOST（中國科學技術部）合作的地球觀測計畫，2024到28年為第六階段。使用到Diff-MRCD技術
+- Laytex：發表於UbiComp/ISWC 2025，透過織物獲取動作捕捉數據的資料驅動工具
+### Biobío
+- 是MIT CSN在南美洲的第一間實驗室，位於智利
+- Visor Colaborativo Incendios Forestales：與Imagine-IT和Deep-Hub合作，追蹤野火蔓延情況
 
 ## 地理知識
 ### 分析技巧
