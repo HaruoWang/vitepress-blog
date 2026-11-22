@@ -155,3 +155,9 @@ head:
 在臺科上EMI課程，和瑞典組員討論時，特別能感受到口說的重要性。相較聽讀，口說更難以訓練，是道頭痛難題。或許可以錄一些自己講英文的影片吧。也聽說過多語言咖啡或語言交換這樣的互惠機制，未來可能會去嘗試。有機會也想去國外駐村啊。
 
 聽力的話我之前會看[Vox](../../global/english/vox.md)，但最近停滯許久哈哈。查詢雅思備考資料時，注意到[Writing9](https://writing9.com/ielts-writing-samples)這個網站有列出不同分數的範文，希望之後可以潛心練習寫作。另外就是發現有文章推薦劍橋考古題《Cambridge IELTS 1~15》和《連雅思主考官都讚嘆的雅思》全系列，如果有什麼閱讀心得再說囉。
+
+## 部落格文章（與他們的產地）
+### 那些我經由同樂會認識的部落格
+- [Dyron503](https://career.dyron503.top/)：七月看到時有很多遊戲相關的文章，但他的網站好像暫時不在了。Dyron蠻喜歡Bethesda出品的遊戲，像《Hi-Fi RUSH》；芬蘭獨立開發者Hempuli的《Baba is You》貌似也值得一玩。其對於開發工具的引介也值得一提：像2D遊戲關卡編輯器LDtk有一定名氣，而mhgolkar開發的Arrow和MothCocoon的FlowGame則是單純做敘事設計。
+- [CC](https://liangcc.me/zh-tw/)：人社書評和技術文集散地。寫諾蘭那篇相當有趣：我這才意識到這位大導是拿固定片酬和票房分潤的「高階經理人」，而《超級專案管理》書中則是提及皮克斯在分鏡表階段就會舉行觀眾試映。讀CC的評論更可以種下求知種子：被Robert Lucas這句「一旦人們開始思考經濟成長，就很難再去想其他的事情了」勾住後，就想多認識點研究「經濟成長」的學者Joel Mokyr和Paul Romer，還有推動腎臟交換的Alvin Roth。此外仍有些軼事：比方說氣象學家大石和三郎早就發現高空急流，但習慣用世界語發表害美軍吃鱉；以及iRobot創辦人Rodney Brooks透過模仿線蟲行為的掃地機器人Roomba，早就賺得盆滿缽滿等。科技部分，除了寫到我之前有小小接觸的數位憑證，同時有些鏈上的實踐，未來或許可以試試。
+- [Boring Game](https://boringgame.codeberg.page/)：從這學到蠻多我不熟的東西。例如Geometry Dash這款節奏遊戲，或開源音樂播放器cmus。內文裡最大宗的，則是老bo自介提到的同人音樂。雖然目前的我不怎麼聽EDM，但至少因為Boring Game聽說了Lilysse Collective這個廠牌。

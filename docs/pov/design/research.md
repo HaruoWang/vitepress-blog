@@ -113,3 +113,4 @@ head:
 - 《城市之臉》遠距版：由狠劇場創作，原訂在荷蘭北方太陽藝術節（Nooderzon）演出，後更延伸XR版
 - Hylozoic Ground：由Philip Beesley創作，2010年威尼斯建築雙年展的加拿大館。藝術家曾來台參展「機動．森林」
 - Anomy：由Patrick Monte和Brian Questa創作，使用C#和SuperCollider撰寫，遮蔽新聞中字母「e」的音像作品
+- Electrolysis Bubble Display based Art Installations：透過電解氣泡作為顯示媒介的互動裝置
